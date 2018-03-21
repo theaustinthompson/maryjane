@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\Users\borde_000\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.4.0\support-annotations-23.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
+        <dex dex="C:\Users\borde_000\Desktop\Apps\maryjane\maryjane\build\Android\Preview1\app\build\intermediates\pre-dexed\debug\support-annotations-23.4.0_e42c163b16d5634cbae30999f99558a7433facfc.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\borde_000\Desktop\Apps\maryjane\maryjane\build\Android\Preview1\app\src\main\libs\nv-websocket-client.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="2e2859df4b1c217c768c1b4a23f54ef66af50140">
+        <dex dex="C:\Users\borde_000\Desktop\Apps\maryjane\maryjane\build\Android\Preview1\app\build\intermediates\pre-dexed\debug\nv-websocket-client_4be5f36b6f994b84dc8b66e2dc60782211457ee0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\borde_000\Desktop\Apps\maryjane\maryjane\build\Android\Preview1\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
+        <dex dex="C:\Users\borde_000\Desktop\Apps\maryjane\maryjane\build\Android\Preview1\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-23.4.0_b3f5168402efe1b6e3df488f383cb4bfcb870fea.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\borde_000\Desktop\Apps\maryjane\maryjane\build\Android\Preview1\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="ec75036c3c52e451d0cde50a5aedaf5fd32354a0">
+        <dex dex="C:\Users\borde_000\Desktop\Apps\maryjane\maryjane\build\Android\Preview1\app\build\intermediates\pre-dexed\debug\com.android.support-recyclerview-v7-23.4.0_7b331b857eabcadc2d841498715f6dfc6a8a0c80.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\borde_000\.gradle\caches\modules-2\files-2.1\com.adobe.xmp\xmpcore\5.1.3\57e70c3b10ff269fff9adfa7a31d61af0df30757\xmpcore-5.1.3.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="57e70c3b10ff269fff9adfa7a31d61af0df30757">
+        <dex dex="C:\Users\borde_000\Desktop\Apps\maryjane\maryjane\build\Android\Preview1\app\build\intermediates\pre-dexed\debug\xmpcore-5.1.3_6fa9eed436675f3ed4c9582a9012b6bd17f68b89.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\borde_000\Desktop\Apps\maryjane\maryjane\build\Android\Preview1\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
+        <dex dex="C:\Users\borde_000\Desktop\Apps\maryjane\maryjane\build\Android\Preview1\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-23.4.0_e431944477b781019be4dcff1d26481366b4afbd.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\borde_000\Desktop\Apps\maryjane\maryjane\build\Android\Preview1\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
+        <dex dex="C:\Users\borde_000\Desktop\Apps\maryjane\maryjane\build\Android\Preview1\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-23.4.0_7bcde029458f18e4617e4005274e0fb12c2cb351.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\borde_000\Desktop\Apps\maryjane\maryjane\build\Android\Preview1\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\libs\internal_impl-23.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
+        <dex dex="C:\Users\borde_000\Desktop\Apps\maryjane\maryjane\build\Android\Preview1\app\build\intermediates\pre-dexed\debug\internal_impl-23.4.0_062d5bacade9cca213046f6fa2c0138c5663c167.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\borde_000\.gradle\caches\modules-2\files-2.1\com.drewnoakes\metadata-extractor\2.10.1\e1852a8f519dbb0196fdb41bf2c584a8858189f8\metadata-extractor-2.10.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="e1852a8f519dbb0196fdb41bf2c584a8858189f8">
+        <dex dex="C:\Users\borde_000\Desktop\Apps\maryjane\maryjane\build\Android\Preview1\app\build\intermediates\pre-dexed\debug\metadata-extractor-2.10.1_97514a7c165a501d14bd7921336b2a85f3847ad9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\borde_000\Desktop\Apps\maryjane\maryjane\build\Android\Preview1\app\build\intermediates\exploded-aar\com.android.support\design\23.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="5326d9a850d491714fef8cbfaa9ea3416f0bf0d2">
+        <dex dex="C:\Users\borde_000\Desktop\Apps\maryjane\maryjane\build\Android\Preview1\app\build\intermediates\pre-dexed\debug\com.android.support-design-23.4.0_d5e28ca6e9bd826d028d26ae165fa30231f3a0f7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\borde_000\Desktop\Apps\maryjane\maryjane\build\Android\Preview1\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
+        <dex dex="C:\Users\borde_000\Desktop\Apps\maryjane\maryjane\build\Android\Preview1\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-23.4.0_b72b1947783030123c37ad3be6de59bd78ba055a.jar" />
+    </item>
+
+</items>

@@ -1,4 +1,4 @@
-// This file was generated based on C:/Users/borde_000/Desktop/Apps/maryjane/build/Android/Preview/preamble/$.uno.
+// This file was generated based on C:/Users/borde_000/Desktop/Apps/maryjane/maryjane/build/Android/Preview/preamble/$.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once

@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/borde_000/Desktop/Apps/maryjane/build/Android/Preview/app/src/main
+# Install script for directory: C:/Users/borde_000/Desktop/Apps/maryjane/maryjane/build/Android/Preview/app/src/main
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/borde_000/Desktop/Apps/maryjane/build/Android/Preview/app/.externalNativeBuild/cmake/debug/armeabi-v7a/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/borde_000/Desktop/Apps/maryjane/maryjane/build/Android/Preview/app/.externalNativeBuild/cmake/debug/armeabi-v7a/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

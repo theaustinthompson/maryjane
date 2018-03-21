@@ -1,11 +1,11 @@
 Executable : C:\Users\borde_000\AppData\Local\Android\sdk\cmake\3.6.4111459\bin\cmake.exe
 arguments : 
--HC:\Users\borde_000\Desktop\Apps\maryjane\build\Android\Preview\app\src\main
--BC:\Users\borde_000\Desktop\Apps\maryjane\build\Android\Preview\app\.externalNativeBuild\cmake\debug\armeabi-v7a
+-HC:\Users\borde_000\Desktop\Apps\maryjane\maryjane\build\Android\Preview\app\src\main
+-BC:\Users\borde_000\Desktop\Apps\maryjane\maryjane\build\Android\Preview\app\.externalNativeBuild\cmake\debug\armeabi-v7a
 -GAndroid Gradle - Ninja
 -DANDROID_ABI=armeabi-v7a
 -DANDROID_NDK=C:\Users\borde_000\AppData\Local\Android\sdk\ndk-bundle
--DCMAKE_LIBRARY_OUTPUT_DIRECTORY=C:\Users\borde_000\Desktop\Apps\maryjane\build\Android\Preview\app\.externalNativeBuild\cmake\debug\obj\armeabi-v7a
+-DCMAKE_LIBRARY_OUTPUT_DIRECTORY=C:\Users\borde_000\Desktop\Apps\maryjane\maryjane\build\Android\Preview\app\.externalNativeBuild\cmake\debug\obj\armeabi-v7a
 -DCMAKE_BUILD_TYPE=Debug
 -DCMAKE_MAKE_PROGRAM=C:\Users\borde_000\AppData\Local\Android\sdk\cmake\3.6.4111459\bin\ninja.exe
 -DCMAKE_TOOLCHAIN_FILE=C:\Users\borde_000\AppData\Local\Android\sdk\ndk-bundle\build\cmake\android.toolchain.cmake
