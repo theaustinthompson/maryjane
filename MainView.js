@@ -48,7 +48,7 @@ function getMe(){
 	});
 
 
-	console.log("Trying to get picture");
+	console.log("Fetching picture");
 	var pictureUrl = "https://graph.facebook.com/v2.5/me/picture?type=large&redirect=false&access_token=" + accessToken.value;
 	fetch(pictureUrl, {
 		method:"GET"

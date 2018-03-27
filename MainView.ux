@@ -7,6 +7,7 @@
 		<BottomBarBackground Dock="Bottom"/>
 		
 		<Panel>
+
 			<Panel>
 				<WhileTrue Value="{showWebView}">
 					<NativeViewHost ux:Name="nvh" Background="#ddd">
@@ -24,6 +25,7 @@
 					</NativeViewHost>
 				</WhileTrue>
 			</Panel>
+
 			<Panel>
 				<WhileTrue Value="{hasProfile}">
 					<StackPanel Alignment="Center" Padding="20">
@@ -42,18 +44,14 @@
 
 						<StackPanel Margin="10" Alignment="Center">
 							<Text Value="Welcome" FontSize="22" TextAlignment="Center"/>
-							<Text Value="{myName}" FontSize="26" TextAlignment="Center"/>
-							
-							
+							<Text Value="{myName}" FontSize="26" TextAlignment="Center"/>		
 						</StackPanel>
-
-
 
 						<AddingAnimation>
 							<Move RelativeTo="ParentSize" Y="1" Duration="1.5" Easing="BackIn" />
 						</AddingAnimation>
-					</StackPanel>
 
+					</StackPanel>
 
 				</WhileTrue>
 			</Panel>
@@ -62,15 +60,13 @@
 				<DockPanel Clicked="{login}" Height="60" Padding="5,5,15,5"
 					   Alignment="Center">
 					<Rectangle Layer="Background" CornerRadius="4" Fill="#3B5998" />
-					<Image File="Assets/FB-f-Logo__white_512.png" Dock="Left" Margin="8,8,10,8"/>
+					<Image File="Assets/fblogo.png" Dock="Left" Margin="8,8,10,8"/>
 					<Text Value="Log In" Alignment="Center" Color="#fff"
 						  FontSize="20"/>
 				</DockPanel>
 			</WhileFalse>
+
 		</Panel>
 	</DockPanel>
-
-
-
 
 </App>

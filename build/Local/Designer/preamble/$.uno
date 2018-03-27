@@ -13,10 +13,10 @@ namespace Outracks.Simulator
 		public GeneratedApplication()
 			: base(
 				new [] 
-				{new Uno.Net.IPEndPoint(Uno.Net.IPAddress.Parse("127.0.0.1"), 12124), new Uno.Net.IPEndPoint(Uno.Net.IPAddress.Parse("10.10.1.198"), 12124)},"C:\\Users\\borde_000\\Desktop\\Apps\\maryjane\\maryjane\\maryjane.unoproj",new string[] 
+				{new Uno.Net.IPEndPoint(Uno.Net.IPAddress.Parse("127.0.0.1"), 12124), new Uno.Net.IPEndPoint(Uno.Net.IPAddress.Parse("10.10.1.198"), 12124)},"C:\\Users\\borde_000\\Desktop\\Apps\\maryjane\\maryjane\\MaryJane.unoproj",new string[] 
 				{ })
 		{
-			Runtime.Bundle.Initialize("maryjane");
+			Runtime.Bundle.Initialize("MaryJane");
 
 			if defined(DotNet)
 				Reflection = new UnoHostReflection();
