@@ -67,7 +67,7 @@ namespace Fuse{
 namespace Drawing{
 namespace Primitives{
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing.Primitives\1.7.4\Circle.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing.Primitives\1.8.1\Circle.uno
 // --------------------------------------------------------------------------------------------
 
 // public sealed class Circle :20
@@ -1238,7 +1238,7 @@ Circle* Circle::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing.Primitives\1.7.4\Wedge.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing.Primitives\1.8.1\Wedge.uno
 // -------------------------------------------------------------------------------------------
 
 // internal sealed class ConcaveWedgeCoverage :46
@@ -1291,7 +1291,7 @@ ConcaveWedgeCoverage* ConcaveWedgeCoverage::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing.Primitives\1.7.4\Wedge.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing.Primitives\1.8.1\Wedge.uno
 // -------------------------------------------------------------------------------------------
 
 // internal sealed class ConvexWedgeCoverage :41
@@ -1344,7 +1344,7 @@ ConvexWedgeCoverage* ConvexWedgeCoverage::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing.Primitives\1.7.4\Rectangle.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing.Primitives\1.8.1\Rectangle.uno
 // -----------------------------------------------------------------------------------------------
 
 // internal abstract class Coverage :36
@@ -1378,7 +1378,7 @@ void Coverage::ctor_()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing.Primitives\1.7.4\Rectangle.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing.Primitives\1.8.1\Rectangle.uno
 // -----------------------------------------------------------------------------------------------
 
 // internal class Falloff :55
@@ -1427,7 +1427,7 @@ Falloff* Falloff::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing.Primitives\1.7.4\Rectangle.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing.Primitives\1.8.1\Rectangle.uno
 // -----------------------------------------------------------------------------------------------
 
 // internal sealed class FillCoverage :40
@@ -1478,7 +1478,7 @@ FillCoverage* FillCoverage::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing.Primitives\1.7.4\Circle.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing.Primitives\1.8.1\Circle.uno
 // --------------------------------------------------------------------------------------------
 
 // internal abstract class LimitCoverage :11
@@ -1512,7 +1512,7 @@ void LimitCoverage::ctor_()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing.Primitives\1.7.4\Circle.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing.Primitives\1.8.1\Circle.uno
 // --------------------------------------------------------------------------------------------
 
 // internal sealed class OneLimitCoverage :15
@@ -1563,7 +1563,7 @@ OneLimitCoverage* OneLimitCoverage::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing.Primitives\1.7.4\Rectangle.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing.Primitives\1.8.1\Rectangle.uno
 // -----------------------------------------------------------------------------------------------
 
 // public sealed class Rectangle :67
@@ -2542,7 +2542,7 @@ Rectangle* Rectangle::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing.Primitives\1.7.4\Rectangle.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing.Primitives\1.8.1\Rectangle.uno
 // -----------------------------------------------------------------------------------------------
 
 // internal sealed class ShadowFalloff :60
@@ -2593,7 +2593,7 @@ ShadowFalloff* ShadowFalloff::New2()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing.Primitives\1.7.4\Rectangle.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing.Primitives\1.8.1\Rectangle.uno
 // -----------------------------------------------------------------------------------------------
 
 // internal sealed class StrokeCoverage :46
@@ -2650,7 +2650,7 @@ StrokeCoverage* StrokeCoverage::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing.Primitives\1.7.4\Wedge.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing.Primitives\1.8.1\Wedge.uno
 // -------------------------------------------------------------------------------------------
 
 // public sealed class Wedge :51
@@ -2787,7 +2787,7 @@ Wedge* Wedge::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing.Primitives\1.7.4\Wedge.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing.Primitives\1.8.1\Wedge.uno
 // -------------------------------------------------------------------------------------------
 
 // internal abstract class WedgeCoverage :10

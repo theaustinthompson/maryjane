@@ -97,7 +97,7 @@ namespace g{
 namespace Fuse{
 namespace Resources{
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Elements\1.7.4\Resources\HttpImageSource.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Elements\1.8.1\Resources\HttpImageSource.uno
 // -----------------------------------------------------------------------------------------------------
 
 // private sealed class HttpImageSourceImpl.BackgroundLoad :160
@@ -235,7 +235,7 @@ HttpImageSourceImpl__BackgroundLoad* HttpImageSourceImpl__BackgroundLoad::New1(u
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Elements\1.7.4\Resources\FileImageSource.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Elements\1.8.1\Resources\FileImageSource.uno
 // -----------------------------------------------------------------------------------------------------
 
 // private sealed class FileImageSourceImpl.BackgroundLoad :243
@@ -374,7 +374,7 @@ FileImageSourceImpl__BackgroundLoad* FileImageSourceImpl__BackgroundLoad::New1(:
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Elements\1.7.4\Resources\LoadingImageSource.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Elements\1.8.1\Resources\LoadingImageSource.uno
 // --------------------------------------------------------------------------------------------------------
 
 // protected enum LoadingImageSource.CleanupReason :10
@@ -391,7 +391,7 @@ uEnumType* LoadingImageSource__CleanupReason_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.7.4\Resources\DisposalManager.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.8.1\Resources\DisposalManager.uno
 // ---------------------------------------------------------------------------------------------------
 
 // internal static class DisposalManager :7
@@ -592,7 +592,7 @@ void DisposalManager::VerifyAttach()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.7.4\Resources\DisposalPolicy.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.8.1\Resources\DisposalPolicy.uno
 // --------------------------------------------------------------------------------------------------
 
 // internal abstract class DisposalPolicy :7
@@ -626,7 +626,7 @@ void DisposalPolicy::ctor_()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.7.4\Resources\IDeferredDisposable.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.8.1\Resources\IDeferredDisposable.uno
 // -------------------------------------------------------------------------------------------------------
 
 // public enum DisposalRequest :6
@@ -643,7 +643,7 @@ uEnumType* DisposalRequest_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.7.4\Resources\DisposalPolicy.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.8.1\Resources\DisposalPolicy.uno
 // --------------------------------------------------------------------------------------------------
 
 // internal sealed class ExpirationDisposalPolicy :14
@@ -756,7 +756,7 @@ ExpirationDisposalPolicy* ExpirationDisposalPolicy::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Elements\1.7.4\Resources\FileImageSource.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Elements\1.8.1\Resources\FileImageSource.uno
 // -----------------------------------------------------------------------------------------------------
 
 // public sealed class FileImageSource :67
@@ -1016,7 +1016,7 @@ FileImageSource* FileImageSource::New3(::g::Uno::UX::FileSource* file)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Elements\1.7.4\Resources\FileImageSource.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Elements\1.8.1\Resources\FileImageSource.uno
 // -----------------------------------------------------------------------------------------------------
 
 // internal static class FileImageSourceCache :11
@@ -1082,7 +1082,7 @@ uSStrong< ::g::Uno::Collections::Dictionary*> FileImageSourceCache::_cache_;
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Elements\1.7.4\Resources\FileImageSource.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Elements\1.8.1\Resources\FileImageSource.uno
 // -----------------------------------------------------------------------------------------------------
 
 // internal sealed class FileImageSourceImpl :142
@@ -1212,7 +1212,7 @@ void FileImageSourceImpl::FailureCallback(::g::Uno::Exception* e)
     uStackFrame __("Fuse.Resources.FileImageSourceImpl", "FailureCallback(Uno.Exception)");
     _loading = false;
     Cleanup(1);
-    OnError(uString::Const("BundleFileImageSource-failed-conversion"), e);
+    OnError(::g::Uno::String::op_Addition2(uString::Const("Loading image from file failed. "), uPtr(e)->Message()), e);
 }
 
 // public Uno.UX.FileSource get_File() [instance] :149
@@ -1274,7 +1274,7 @@ void FileImageSourceImpl::SyncLoad()
     {
         ::g::Uno::Exception* e = __t.Exception;
         Cleanup(1);
-        OnError(uString::Const("BundleFileImageSource-failed-conversion"), e);
+        OnError(::g::Uno::String::op_Addition2(uString::Const("Loading image from file failed. "), uPtr(e)->Message()), e);
     }
 }
 
@@ -1287,7 +1287,7 @@ FileImageSourceImpl* FileImageSourceImpl::New2(::g::Uno::UX::FileSource* file)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.7.4\Resources\FileResource.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.8.1\Resources\FileResource.uno
 // ------------------------------------------------------------------------------------------------
 
 // public sealed class FileResource :7
@@ -1352,7 +1352,7 @@ FileResource* FileResource::New1(::g::Uno::UX::FileSource* file)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Elements\1.7.4\Resources\HttpImageSource.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Elements\1.8.1\Resources\HttpImageSource.uno
 // -----------------------------------------------------------------------------------------------------
 
 // public sealed class HttpImageSource :24
@@ -1611,7 +1611,7 @@ HttpImageSource* HttpImageSource::New3(uString* url)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Elements\1.7.4\Resources\HttpImageSource.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Elements\1.8.1\Resources\HttpImageSource.uno
 // -----------------------------------------------------------------------------------------------------
 
 // internal static class HttpImageSourceCache :73
@@ -1682,7 +1682,7 @@ uSStrong< ::g::Uno::Collections::Dictionary*> HttpImageSourceCache::_cache_;
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Elements\1.7.4\Resources\HttpImageSource.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Elements\1.8.1\Resources\HttpImageSource.uno
 // -----------------------------------------------------------------------------------------------------
 
 // internal sealed class HttpImageSourceImpl :97
@@ -1742,7 +1742,7 @@ void HttpImageSourceImpl__AttemptLoad_fn(HttpImageSourceImpl* __this)
     catch (const uThrowable& __t)
     {
         ::g::Uno::Exception* e = __t.Exception;
-        __this->Fail(uString::Const("HttpImageSource-failed-request"), e);
+        __this->Fail(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(uString::Const("Loading image from '"), __this->Url()), uString::Const("' failed. ")), uPtr(e)->Message()), e);
     }
 }
 
@@ -1814,7 +1814,7 @@ void HttpImageSourceImpl::FailureCallback(::g::Uno::Exception* e)
 {
     uStackFrame __("Fuse.Resources.HttpImageSourceImpl", "FailureCallback(Uno.Exception)");
     _loading = false;
-    Fail(uString::Const("HttpImageSource-failed-conversion"), e);
+    Fail(::g::Uno::String::op_Addition2(uString::Const("Loading image from HTTP failed. "), uPtr(e)->Message()), e);
 }
 
 // private void HttpCallback(Experimental.Http.HttpResponseHeader response, byte[] data) [instance] :140
@@ -1825,7 +1825,7 @@ void HttpImageSourceImpl::HttpCallback(::g::Experimental::Http::HttpResponseHead
 
     if (uPtr(response)->StatusCode() != 200)
     {
-        Fail(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition1(uString::Const("HttpImageSource-failed-status: "), uBox<int32_t>(::g::Uno::Int_typeof(), uPtr(response)->StatusCode())), uString::Const(" ")), uPtr(response)->ReasonPhrase()), NULL);
+        Fail(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition1(uString::Const("Loading image from HTTP failed with HTTP Status: "), uBox<int32_t>(::g::Uno::Int_typeof(), uPtr(response)->StatusCode())), uString::Const(" ")), uPtr(response)->ReasonPhrase()), NULL);
         return;
     }
 
@@ -1844,7 +1844,7 @@ void HttpImageSourceImpl::HttpCallback(::g::Experimental::Http::HttpResponseHead
 void HttpImageSourceImpl::LoadFailed(uString* reason)
 {
     uStackFrame __("Fuse.Resources.HttpImageSourceImpl", "LoadFailed(string)");
-    Fail(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(uString::Const("HttpImageSource-protocol-failure for url '"), Url()), uString::Const("' : ")), reason), NULL);
+    Fail(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(uString::Const("Loading image from '"), Url()), uString::Const("' failed: ")), reason), NULL);
 }
 
 // private void SuccessCallback(texture2D texture) [instance] :122
@@ -1870,7 +1870,7 @@ HttpImageSourceImpl* HttpImageSourceImpl::New2(uString* url)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.7.4\Resources\IDeferredDisposable.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.8.1\Resources\IDeferredDisposable.uno
 // -------------------------------------------------------------------------------------------------------
 
 // internal abstract interface IDeferredDisposable :13
@@ -1885,7 +1885,7 @@ uInterfaceType* IDeferredDisposable_typeof()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Elements\1.7.4\Resources\ImageSource.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Elements\1.8.1\Resources\ImageSource.uno
 // -------------------------------------------------------------------------------------------------
 
 // public abstract class ImageSource :87
@@ -1894,7 +1894,7 @@ static void ImageSource_build(uType* type)
 {
     ::STRINGS[1] = uString::Const("ImageSource error: '");
     ::STRINGS[2] = uString::Const("'");
-    ::STRINGS[3] = uString::Const("C:\\Users\\borde_000\\AppData\\Local\\Fusetools\\Packages\\Fuse.Elements\\1.7.4\\Resources\\ImageSource.uno");
+    ::STRINGS[3] = uString::Const("C:\\Users\\borde_000\\AppData\\Local\\Fusetools\\Packages\\Fuse.Elements\\1.8.1\\Resources\\ImageSource.uno");
     ::STRINGS[4] = uString::Const("OnError");
     ::TYPES[0] = ::g::Uno::Action_typeof();
     ::TYPES[14] = ::g::Uno::EventHandler_typeof();
@@ -2155,7 +2155,7 @@ void ImageSource::Unpin()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Elements\1.7.4\Resources\ImageSource.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Elements\1.8.1\Resources\ImageSource.uno
 // -------------------------------------------------------------------------------------------------
 
 // internal sealed class ImageSourceChangedArgs :52
@@ -2222,7 +2222,7 @@ ImageSourceChangedArgs* ImageSourceChangedArgs::New2(::g::Fuse::Resources::Image
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Elements\1.7.4\Resources\ImageSource.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Elements\1.8.1\Resources\ImageSource.uno
 // -------------------------------------------------------------------------------------------------
 
 // public sealed class ImageSourceErrorArgs :26
@@ -2307,7 +2307,7 @@ ImageSourceErrorArgs* ImageSourceErrorArgs::New2(::g::Fuse::Resources::ImageSour
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Elements\1.7.4\Resources\ImageSource.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Elements\1.8.1\Resources\ImageSource.uno
 // -------------------------------------------------------------------------------------------------
 
 // public delegate void ImageSourceErrorHandler(object sender, Fuse.Resources.ImageSourceErrorArgs args) :50
@@ -2323,7 +2323,7 @@ uDelegateType* ImageSourceErrorHandler_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Elements\1.7.4\Resources\ImageSource.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Elements\1.8.1\Resources\ImageSource.uno
 // -------------------------------------------------------------------------------------------------
 
 // public enum ImageSourceState :14
@@ -2341,7 +2341,7 @@ uEnumType* ImageSourceState_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.7.4\Resources\MemoryPolicy.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.8.1\Resources\MemoryPolicy.uno
 // ------------------------------------------------------------------------------------------------
 
 // internal abstract interface IMemoryResource :86
@@ -2356,7 +2356,7 @@ uInterfaceType* IMemoryResource_typeof()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.7.4\Resources\ISoftDisposable.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.8.1\Resources\ISoftDisposable.uno
 // ---------------------------------------------------------------------------------------------------
 
 // internal abstract interface ISoftDisposable :5
@@ -2371,7 +2371,7 @@ uInterfaceType* ISoftDisposable_typeof()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Elements\1.7.4\Resources\LoadingImageSource.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Elements\1.8.1\Resources\LoadingImageSource.uno
 // --------------------------------------------------------------------------------------------------------
 
 // internal abstract class LoadingImageSource :8
@@ -2656,7 +2656,7 @@ void LoadingImageSource::SetTexture(::g::Uno::Graphics::Texture2D* texture)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.7.4\Resources\MemoryPolicy.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.8.1\Resources\MemoryPolicy.uno
 // ------------------------------------------------------------------------------------------------
 
 // public sealed class MemoryPolicy :10
@@ -2901,7 +2901,7 @@ MemoryPolicy* MemoryPolicy::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Elements\1.7.4\Resources\MultiDensityImageSource.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Elements\1.8.1\Resources\MultiDensityImageSource.uno
 // -------------------------------------------------------------------------------------------------------------
 
 // public sealed class MultiDensityImageSource :28
@@ -3244,7 +3244,7 @@ MultiDensityImageSource* MultiDensityImageSource::New2()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.7.4\Resources\IDeferredDisposable.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.8.1\Resources\IDeferredDisposable.uno
 // -------------------------------------------------------------------------------------------------------
 
 // internal abstract class PolicyDeferredDisposable :20
@@ -3331,7 +3331,7 @@ void PolicyDeferredDisposable::MarkUsed()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Elements\1.7.4\Resources\ProxyImageSource.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Elements\1.8.1\Resources\ProxyImageSource.uno
 // ------------------------------------------------------------------------------------------------------
 
 // internal sealed class ProxyImageSource :7
@@ -3687,7 +3687,7 @@ ProxyImageSource* ProxyImageSource::New1(::g::Fuse::Resources::ImageSource* oute
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\ResourceSetter.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\ResourceSetter.uno
 // ---------------------------------------------------------------------------------------
 
 // public sealed class ResourceBool :70
@@ -3766,7 +3766,7 @@ ResourceBool* ResourceBool::New2()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\ResourceSetter.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\ResourceSetter.uno
 // ---------------------------------------------------------------------------------------
 
 // public sealed class ResourceFloat :71
@@ -3845,7 +3845,7 @@ ResourceFloat* ResourceFloat::New2()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\ResourceSetter.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\ResourceSetter.uno
 // ---------------------------------------------------------------------------------------
 
 // public sealed class ResourceFloat2 :72
@@ -3924,7 +3924,7 @@ ResourceFloat2* ResourceFloat2::New2()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\ResourceSetter.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\ResourceSetter.uno
 // ---------------------------------------------------------------------------------------
 
 // public sealed class ResourceFloat3 :73
@@ -4003,7 +4003,7 @@ ResourceFloat3* ResourceFloat3::New2()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\ResourceSetter.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\ResourceSetter.uno
 // ---------------------------------------------------------------------------------------
 
 // public sealed class ResourceFloat4 :74
@@ -4082,7 +4082,7 @@ ResourceFloat4* ResourceFloat4::New2()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\ResourceSetter.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\ResourceSetter.uno
 // ---------------------------------------------------------------------------------------
 
 // public sealed class ResourceObject :69
@@ -4161,7 +4161,7 @@ ResourceObject* ResourceObject::New2()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.7.4\Resources\ResourceRegistry.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.8.1\Resources\ResourceRegistry.uno
 // ----------------------------------------------------------------------------------------------------
 
 // public static class ResourceRegistry :8
@@ -4291,7 +4291,7 @@ void ResourceRegistry::RemoveResourceChangedHandler(uString* key, uDelegate* han
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\ResourceSetter.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\ResourceSetter.uno
 // ---------------------------------------------------------------------------------------
 
 // public abstract class ResourceSetter<T> :26
@@ -4428,7 +4428,7 @@ void ResourceSetter::OnChanged()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\ResourceSetter.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\ResourceSetter.uno
 // ---------------------------------------------------------------------------------------
 
 // public sealed class ResourceString :68
@@ -4507,7 +4507,7 @@ ResourceString* ResourceString::New2()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.7.4\Resources\DisposalPolicy.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.8.1\Resources\DisposalPolicy.uno
 // --------------------------------------------------------------------------------------------------
 
 // internal sealed class RetainDisposalPolicy :47
@@ -4578,7 +4578,7 @@ RetainDisposalPolicy* RetainDisposalPolicy::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.7.4\Resources\SystemFileSource.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.8.1\Resources\SystemFileSource.uno
 // ----------------------------------------------------------------------------------------------------
 
 // internal sealed class SystemFileSource :6
@@ -4638,7 +4638,7 @@ SystemFileSource* SystemFileSource::New1(uString* file)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Elements\1.7.4\Resources\TextureImageSource.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Elements\1.8.1\Resources\TextureImageSource.uno
 // --------------------------------------------------------------------------------------------------------
 
 // public sealed class TextureImageSource :17

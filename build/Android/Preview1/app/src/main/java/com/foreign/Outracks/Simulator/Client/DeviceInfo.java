@@ -26,12 +26,12 @@ public class DeviceInfo
         android.util.Log.d("maryjane", (message==null ? "null" : message.toString()));
     }
 
-    public static String GetGUID386()
+    public static String GetGUID378()
     {
         return Build.SERIAL;
     }
     
-    public static String GetName387()
+    public static String GetName379()
     {
         return Build.MODEL;
     }

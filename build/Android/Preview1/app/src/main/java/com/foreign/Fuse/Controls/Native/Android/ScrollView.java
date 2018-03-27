@@ -23,30 +23,30 @@ public class ScrollView
         android.util.Log.d("maryjane", (message==null ? "null" : message.toString()));
     }
 
-    public static Object AddCallback165(final UnoObject _this, final Object handle)
+    public static Object AddCallback164(final UnoObject _this, final Object handle)
     {
         com.fuse.android.views.IScroll iscroll = new com.fuse.android.views.IScroll() {
         	public void OnScrollChanged(int x, int y, int oldX, int oldY) {
-        		ExternedBlockHost.callUno_Fuse_Controls_Native_Android_ScrollView_OnScrollChanged166((UnoObject)_this,(int)x,(int)y,(int)oldX,(int)oldY);
+        		ExternedBlockHost.callUno_Fuse_Controls_Native_Android_ScrollView_OnScrollChanged165((UnoObject)_this,(int)x,(int)y,(int)oldX,(int)oldY);
         	}
         };
         ((com.fuse.android.views.VerticalScrollView)handle).SetIScroll(iscroll);
         return iscroll;
     }
     
-    public static Object Create167()
+    public static Object Create166()
     {
         return new com.fuse.android.views.VerticalScrollView(com.fuse.Activity.getRootActivity());
     }
     
-    public static void SetClipToBounds1168(final Object handle,final boolean clipToBounds)
+    public static void SetClipToBounds1167(final Object handle,final boolean clipToBounds)
     {
         android.view.ViewGroup viewGroup = (android.view.ViewGroup)handle;
         viewGroup.setClipChildren(clipToBounds);
         viewGroup.setClipToPadding(clipToBounds);
     }
     
-    public static void SetScrollPosition169(final Object handle,final int x,final int y)
+    public static void SetScrollPosition168(final Object handle,final int x,final int y)
     {
         android.widget.ScrollView sv = (android.widget.ScrollView)handle;
         sv.setScrollX(x);

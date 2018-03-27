@@ -1,4 +1,4 @@
-// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/Fuse.Controls.Panels/1.7.4/Backgrounds/RightFrameBackground.uno.
+// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/Fuse.Controls.Panels/1.8.1/Backgrounds/RightFrameBackground.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -27,7 +27,7 @@ namespace g{
 namespace Fuse{
 namespace Controls{
 
-// public sealed class RightFrameBackground :6
+// public sealed class RightFrameBackground :8
 // {
 ::g::Fuse::Controls::Control_type* RightFrameBackground_typeof();
 void RightFrameBackground__ctor_5_fn(RightFrameBackground* __this);

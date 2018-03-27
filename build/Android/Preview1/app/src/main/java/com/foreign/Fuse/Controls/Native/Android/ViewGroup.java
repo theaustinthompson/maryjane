@@ -23,21 +23,21 @@ public class ViewGroup
         android.util.Log.d("maryjane", (message==null ? "null" : message.toString()));
     }
 
-    public static void AddView230(final Object parentHandle,final Object childHandle)
+    public static void AddView222(final Object parentHandle,final Object childHandle)
     {
         android.view.ViewGroup viewGroup = (android.view.ViewGroup)parentHandle;
         android.view.View childView = (android.view.View)childHandle;
         viewGroup.addView(childView);
     }
     
-    public static void AddView1231(final Object parentHandle,final Object childHandle,final int index)
+    public static void AddView1223(final Object parentHandle,final Object childHandle,final int index)
     {
         android.view.ViewGroup viewGroup = (android.view.ViewGroup)parentHandle;
         android.view.View childView = (android.view.View)childHandle;
         viewGroup.addView(childView, index);
     }
     
-    public static Object Create232()
+    public static Object Create224()
     {
         android.widget.FrameLayout frameLayout = new com.fuse.android.views.ViewGroup(com.fuse.Activity.getRootActivity());
         frameLayout.setFocusable(true);
@@ -46,7 +46,7 @@ public class ViewGroup
         return frameLayout;
     }
     
-    public static void RemoveView233(final Object parentHandle,final Object childHandle)
+    public static void RemoveView225(final Object parentHandle,final Object childHandle)
     {
         android.view.ViewGroup viewGroup = (android.view.ViewGroup)parentHandle;
         android.view.View childView = (android.view.View)childHandle;

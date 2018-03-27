@@ -27,7 +27,7 @@ namespace g{
 namespace Experimental{
 namespace TextureLoader{
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Experimental.TextureLoader\1.7.4\TextureLoader.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Experimental.TextureLoader\1.8.1\TextureLoader.uno
 // ------------------------------------------------------------------------------------------------------
 
 // internal sealed class Callback :9
@@ -92,7 +92,7 @@ Callback* Callback::New1(uDelegate* action)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Experimental.TextureLoader\1.7.4\TextureLoader.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Experimental.TextureLoader\1.8.1\TextureLoader.uno
 // ------------------------------------------------------------------------------------------------------
 
 // public sealed class InvalidContentTypeException :25
@@ -146,7 +146,7 @@ InvalidContentTypeException* InvalidContentTypeException::New4(uString* reason)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Experimental.TextureLoader\1.7.4\TextureLoader.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Experimental.TextureLoader\1.8.1\TextureLoader.uno
 // ------------------------------------------------------------------------------------------------------
 
 // public static class TextureLoader :30
@@ -296,7 +296,7 @@ void TextureLoader::PngByteArrayToTexture2D(::g::Uno::Buffer* arr, uDelegate* ca
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Experimental.TextureLoader\1.7.4\TextureLoaderImpl.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Experimental.TextureLoader\1.8.1\TextureLoaderImpl.uno
 // ----------------------------------------------------------------------------------------------------------
 
 // internal static class TextureLoaderImpl :7

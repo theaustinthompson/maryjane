@@ -1654,7 +1654,7 @@ static void DeveloperMenu_build(uType* type)
         ::g::Fuse::IActualPlacement_typeof(), offsetof(::g::Fuse::Controls::Panel_type, interface15),
         ::g::Fuse::Animations::IResize_typeof(), offsetof(::g::Fuse::Controls::Panel_type, interface16),
         ::g::Fuse::Drawing::ISurfaceDrawable_typeof(), offsetof(::g::Fuse::Controls::Panel_type, interface17));
-    type->SetFields(117,
+    type->SetFields(118,
         ::g::Uno::UX::Property1_typeof()->MakeType(::g::Uno::Float_typeof(), NULL), offsetof(DeveloperMenu, this_Opacity_inst), 0,
         ::g::Uno::UX::Selector_typeof(), (uintptr_t)&DeveloperMenu::__selector0_, uFieldFlagsStatic);
     type->Reflection.SetFunctions(1,
@@ -1668,7 +1668,7 @@ static void DeveloperMenu_build(uType* type)
 
     uTypeOptions options;
     options.BaseDefinition = ::g::Fuse::Controls::Panel_typeof();
-    options.FieldCount = 119;
+    options.FieldCount = 120;
     options.InterfaceCount = 18;
     options.DependencyCount = 3;
     options.ObjectSize = sizeof(DeveloperMenu);
@@ -2618,7 +2618,7 @@ static void ImmutableList_build(uType* type)
         ::g::Uno::Array_typeof()->MakeMethod(1/*Copy<T>*/, type->T(0), NULL),
         ::g::Uno::Collections::IEnumerable_typeof()->MakeType(type->T(0), NULL),
         ::g::Outracks::Simulator::StringSplitting_typeof()->MakeMethod(0/*JoinToString<T>*/, type->T(0), NULL),
-        ::g::Uno::Collections::EnumerableExtensions_typeof()->MakeMethod(9/*ToArray<T>*/, type->T(0), NULL));
+        ::g::Uno::Collections::EnumerableExtensions_typeof()->MakeMethod(8/*ToArray<T>*/, type->T(0), NULL));
     type->SetInterfaces(
         ::TYPES[40/*Uno.Collections.IEnumerable`1*/]->MakeType(type->T(0), NULL), offsetof(ImmutableList_type, interface0));
     type->SetFields(0,
@@ -2816,7 +2816,7 @@ static void IndentString_build(uType* type)
     ::STRINGS[21] = uString::Const("\n"
         "");
     ::STRINGS[22] = uString::Const("\t");
-    ::TYPES[44] = ::g::Uno::Collections::EnumerableExtensions_typeof()->MakeMethod(7/*Select<string, string>*/, ::g::Uno::String_typeof(), ::g::Uno::String_typeof(), NULL);
+    ::TYPES[44] = ::g::Uno::Collections::EnumerableExtensions_typeof()->MakeMethod(6/*Select<string, string>*/, ::g::Uno::String_typeof(), ::g::Uno::String_typeof(), NULL);
     ::TYPES[45] = ::g::Uno::Runtime::Implementation::Internal::ArrayEnumerable_typeof()->MakeType(::g::Uno::String_typeof(), NULL);
     ::TYPES[46] = ::g::Uno::Char_typeof()->Array();
     ::TYPES[47] = ::g::Uno::Func1_typeof()->MakeType(::g::Uno::String_typeof(), ::g::Uno::String_typeof(), NULL);
@@ -3138,7 +3138,7 @@ static void List_build(uType* type)
     ::TYPES[50] = ::g::Uno::Collections::IEnumerator1_typeof();
     ::TYPES[28] = ::g::Uno::IDisposable_typeof();
     ::TYPES[40] = ::g::Uno::Collections::IEnumerable_typeof();
-    ::TYPES[51] = ::TYPES[42/*Uno.Collections.EnumerableExtensions*/]->MakeMethod(9/*ToArray<object>*/, uObject_typeof(), NULL);
+    ::TYPES[51] = ::TYPES[42/*Uno.Collections.EnumerableExtensions*/]->MakeMethod(8/*ToArray<object>*/, uObject_typeof(), NULL);
     type->MethodTypes[0]->SetPrecalc(
         ::TYPES[48/*Outracks.Simulator.ImmutableList`1*/]->MakeType(type->MethodTypes[0]->U(0), NULL));
     type->MethodTypes[1]->SetPrecalc(
@@ -3148,7 +3148,7 @@ static void List_build(uType* type)
         ::TYPES[48/*Outracks.Simulator.ImmutableList`1*/]->MakeType(type->MethodTypes[2]->U(0), NULL));
     type->MethodTypes[3]->SetPrecalc(
         ::TYPES[48/*Outracks.Simulator.ImmutableList`1*/]->MakeType(type->MethodTypes[3]->U(0), NULL),
-        ::TYPES[42/*Uno.Collections.EnumerableExtensions*/]->MakeMethod(9/*ToArray<T>*/, type->MethodTypes[3]->U(0), NULL));
+        ::TYPES[42/*Uno.Collections.EnumerableExtensions*/]->MakeMethod(8/*ToArray<T>*/, type->MethodTypes[3]->U(0), NULL));
     type->MethodTypes[4]->SetPrecalc(
         ::TYPES[49/*Outracks.Optional`1*/]->MakeType(type->MethodTypes[4]->U(0), NULL),
         ::TYPES[48/*Outracks.Simulator.ImmutableList`1*/]->MakeType(type->MethodTypes[4]->U(0), NULL),
@@ -3839,7 +3839,7 @@ static void ProxyClient_build(uType* type)
     ::TYPES[25] = ::g::Uno::Collections::IEnumerator1_typeof()->MakeType(::g::Uno::Net::IPEndPoint_typeof(), NULL);
     ::TYPES[54] = ::g::Outracks::Simulator::Tasks_typeof()->MakeMethod(0/*Run<Uno.Net.IPEndPoint[]>*/, ::g::Uno::Net::IPEndPoint_typeof()->Array(), NULL);
     ::TYPES[55] = ::g::Uno::Func_typeof()->MakeType(::g::Uno::Net::IPEndPoint_typeof()->Array(), NULL);
-    ::TYPES[56] = ::g::Uno::Collections::EnumerableExtensions_typeof()->MakeMethod(9/*ToArray<string>*/, ::g::Uno::String_typeof(), NULL);
+    ::TYPES[56] = ::g::Uno::Collections::EnumerableExtensions_typeof()->MakeMethod(8/*ToArray<string>*/, ::g::Uno::String_typeof(), NULL);
     ::TYPES[28] = ::g::Uno::IDisposable_typeof();
     ::TYPES[57] = ::g::Outracks::Simulator::Tasks_typeof()->MakeMethod(1/*WaitForFirstResult<Uno.Net.IPEndPoint[]>*/, ::g::Uno::Net::IPEndPoint_typeof()->Array(), NULL);
     ::TYPES[58] = ::g::Uno::Func1_typeof()->MakeType(::g::Uno::Collections::IEnumerable_typeof()->MakeType(::g::Uno::Exception_typeof(), NULL), ::g::Uno::Net::IPEndPoint_typeof()->Array(), NULL);
@@ -5602,7 +5602,7 @@ static void WaitForFirstResult_build(uType* type)
     ::TYPES[42] = ::g::Uno::Collections::EnumerableExtensions_typeof();
     ::TYPES[78] = ::g::Uno::Collections::List_typeof()->MakeType(::g::Uno::Exception_typeof(), NULL);
     type->SetPrecalc(
-        ::g::Uno::Collections::EnumerableExtensions_typeof()->MakeMethod(10/*ToList<Outracks.Simulator.Task<T>>*/, ::g::Outracks::Simulator::Task_typeof()->MakeType(type->T(0), NULL), NULL));
+        ::g::Uno::Collections::EnumerableExtensions_typeof()->MakeMethod(9/*ToList<Outracks.Simulator.Task<T>>*/, ::g::Outracks::Simulator::Task_typeof()->MakeType(type->T(0), NULL), NULL));
     type->SetFields(0,
         ::g::Uno::Collections::List_typeof()->MakeType(::g::Outracks::Simulator::Task_typeof()->MakeType(type->T(0), NULL), NULL), offsetof(WaitForFirstResult, _pending), 0,
         ::g::Uno::Func1_typeof()->MakeType(::g::Uno::Collections::IEnumerable_typeof()->MakeType(::g::Uno::Exception_typeof(), NULL), type->T(0), NULL), offsetof(WaitForFirstResult, _onNoResult), 0);

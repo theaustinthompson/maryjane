@@ -1,25 +1,22 @@
-// This file was generated based on C:/Users/borde_000/Desktop/Apps/maryjane/maryjane/build/Android/Preview/cache/ux13/MainView.g.uno.
+// This file was generated based on C:/Users/borde_000/Desktop/Apps/maryjane/maryjane/build/Android/Preview/cache/ux14/MainView.g.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
 #include <Fuse.App.h>
 #include <Fuse.IProperties.h>
 #include <Fuse.IRootVisualProvider.h>
-namespace g{namespace Fuse{namespace Controls{struct Page;}}}
-namespace g{namespace Fuse{namespace Controls{struct PageControl;}}}
-namespace g{namespace Fuse{namespace Controls{struct Panel;}}}
-namespace g{namespace Fuse{namespace Controls{struct Rectangle;}}}
+namespace g{namespace Fuse{namespace Controls{struct NativeViewHost;}}}
+namespace g{namespace Fuse{namespace Controls{struct WebView;}}}
 namespace g{namespace Fuse{namespace Drawing{struct BrushConverter;}}}
-namespace g{namespace Fuse{namespace Elements{struct Element;}}}
 namespace g{namespace Fuse{namespace FileSystem{struct FileSystemModule;}}}
 namespace g{namespace Fuse{namespace Reactive{namespace FuseJS{struct DiagnosticsImplModule;}}}}
 namespace g{namespace Fuse{namespace Reactive{namespace FuseJS{struct Http;}}}}
 namespace g{namespace Fuse{namespace Reactive{namespace FuseJS{struct TimerModule;}}}}
+namespace g{namespace Fuse{namespace Reactive{struct EventBinding;}}}
 namespace g{namespace Fuse{namespace Storage{struct StorageModule;}}}
 namespace g{namespace Fuse{namespace Testing{struct UnoTestingHelper;}}}
 namespace g{namespace Fuse{namespace Triggers{struct BusyTaskModule;}}}
 namespace g{namespace Fuse{namespace WebSocket{struct WebSocketClientModule;}}}
-namespace g{namespace Fuse{struct Visual;}}
 namespace g{namespace FuseJS{struct Base64;}}
 namespace g{namespace FuseJS{struct Bundle;}}
 namespace g{namespace FuseJS{struct Environment;}}
@@ -28,6 +25,7 @@ namespace g{namespace FuseJS{struct Globals;}}
 namespace g{namespace FuseJS{struct Lifecycle;}}
 namespace g{namespace FuseJS{struct UserEvents;}}
 namespace g{namespace Polyfills{namespace Window{struct WindowModule;}}}
+namespace g{namespace Uno{namespace UX{struct NameTable;}}}
 namespace g{namespace Uno{namespace UX{struct Property1;}}}
 namespace g{namespace Uno{namespace UX{struct Selector;}}}
 namespace g{struct MainView;}
@@ -43,16 +41,21 @@ void MainView__New1_fn(MainView** __retval);
 
 struct MainView : ::g::Fuse::App
 {
-    uStrong< ::g::Uno::UX::Property1*> navigation_Active_inst;
-    uStrong< ::g::Uno::UX::Property1*> indicator_Element_LayoutMaster_inst;
-    uStrong< ::g::Fuse::Controls::Rectangle*> indicator;
-    uStrong< ::g::Fuse::Controls::Panel*> page1Tab;
-    uStrong< ::g::Fuse::Controls::Panel*> page2Tab;
-    uStrong< ::g::Fuse::Controls::Panel*> page3Tab;
-    uStrong< ::g::Fuse::Controls::PageControl*> navigation;
-    uStrong< ::g::Fuse::Controls::Page*> page1;
-    uStrong< ::g::Fuse::Controls::Page*> page2;
-    uStrong< ::g::Fuse::Controls::Page*> page3;
+    uStrong< ::g::Uno::UX::Property1*> webView_Url_inst;
+    uStrong< ::g::Uno::UX::Property1*> nvh_Opacity_inst;
+    uStrong< ::g::Uno::UX::Property1*> temp_Value_inst;
+    uStrong< ::g::Uno::UX::Property1*> temp1_Url_inst;
+    uStrong< ::g::Uno::UX::Property1*> temp2_Message_inst;
+    uStrong< ::g::Uno::UX::Property1*> temp3_Value_inst;
+    uStrong< ::g::Uno::UX::Property1*> temp4_Value_inst;
+    uStrong< ::g::Uno::UX::Property1*> temp5_Value_inst;
+    uStrong< ::g::Fuse::Controls::NativeViewHost*> nvh;
+    uStrong< ::g::Fuse::Controls::WebView*> webView;
+    uStrong< ::g::Fuse::Reactive::EventBinding*> temp_eb0;
+    uStrong< ::g::Fuse::Reactive::EventBinding*> temp_eb1;
+    uStrong< ::g::Uno::UX::NameTable*> __g_nametable1;
+    static uSStrong<uArray*> __g_static_nametable1_;
+    static uSStrong<uArray*>& __g_static_nametable1() { return MainView_typeof()->Init(), __g_static_nametable1_; }
     uStrong< ::g::Fuse::Reactive::FuseJS::DiagnosticsImplModule*> FuseReactiveFuseJSDiagnosticsImplModule;
     uStrong< ::g::Fuse::Reactive::FuseJS::Http*> FuseReactiveFuseJSHttp;
     uStrong< ::g::Fuse::Reactive::FuseJS::TimerModule*> FuseReactiveFuseJSTimerModule;
@@ -82,14 +85,6 @@ struct MainView : ::g::Fuse::App
     static ::g::Uno::UX::Selector& __selector4() { return MainView_typeof()->Init(), __selector4_; }
     static ::g::Uno::UX::Selector __selector5_;
     static ::g::Uno::UX::Selector& __selector5() { return MainView_typeof()->Init(), __selector5_; }
-    static ::g::Uno::UX::Selector __selector6_;
-    static ::g::Uno::UX::Selector& __selector6() { return MainView_typeof()->Init(), __selector6_; }
-    static ::g::Uno::UX::Selector __selector7_;
-    static ::g::Uno::UX::Selector& __selector7() { return MainView_typeof()->Init(), __selector7_; }
-    static ::g::Uno::UX::Selector __selector8_;
-    static ::g::Uno::UX::Selector& __selector8() { return MainView_typeof()->Init(), __selector8_; }
-    static ::g::Uno::UX::Selector __selector9_;
-    static ::g::Uno::UX::Selector& __selector9() { return MainView_typeof()->Init(), __selector9_; }
 
     void ctor_4();
     void InitializeUX();

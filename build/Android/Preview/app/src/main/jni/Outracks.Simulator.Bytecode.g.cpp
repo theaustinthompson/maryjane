@@ -4444,7 +4444,7 @@ static void Statement_build(uType* type)
     ::TYPES[92] = ::g::Outracks::Simulator::List_typeof()->MakeMethod(0/*Create<Outracks.Simulator.Bytecode.Statement>*/, type, NULL);
     ::TYPES[31] = type->Array();
     ::TYPES[93] = ::TYPES[88/*Outracks.Simulator.Bytecode.Expression*/]->Array();
-    ::TYPES[94] = ::g::Uno::Collections::EnumerableExtensions_typeof()->MakeMethod(11/*Union<Outracks.Simulator.Bytecode.Statement>*/, type, NULL);
+    ::TYPES[94] = ::g::Uno::Collections::EnumerableExtensions_typeof()->MakeMethod(10/*Union<Outracks.Simulator.Bytecode.Statement>*/, type, NULL);
     ::TYPES[30] = ::g::Uno::Runtime::Implementation::Internal::ArrayEnumerable_typeof()->MakeType(type, NULL);
     type->SetDependencies(
         ::g::Outracks::Simulator::Bytecode::Expression_typeof(),

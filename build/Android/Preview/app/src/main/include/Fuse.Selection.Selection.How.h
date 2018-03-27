@@ -1,4 +1,4 @@
-// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/Fuse.Selection/1.7.4/Selection.uno.
+// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/Fuse.Selection/1.8.1/Selection.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once

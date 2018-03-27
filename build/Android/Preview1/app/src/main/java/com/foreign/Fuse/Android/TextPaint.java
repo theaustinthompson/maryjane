@@ -23,12 +23,12 @@ public class TextPaint
         android.util.Log.d("maryjane", (message==null ? "null" : message.toString()));
     }
 
-    public static Object Create365()
+    public static Object Create357()
     {
         return new android.text.TextPaint();
     }
     
-    public static void GetTextBounds366(final Object handle,final String text,final int start,final int end,final com.uno.IntArray r)
+    public static void GetTextBounds358(final Object handle,final String text,final int start,final int end,final com.uno.IntArray r)
     {
         android.graphics.Rect rect = new android.graphics.Rect();
         ((android.text.TextPaint)handle).getTextBounds(text, start, end, rect);
@@ -38,22 +38,22 @@ public class TextPaint
         r.set(3, rect.bottom);
     }
     
-    public static void SetAntiAlias367(final Object handle,final boolean value)
+    public static void SetAntiAlias359(final Object handle,final boolean value)
     {
         ((android.text.TextPaint)handle).setAntiAlias(value);
     }
     
-    public static void SetColor368(final Object handle,final int color)
+    public static void SetColor360(final Object handle,final int color)
     {
         ((android.text.TextPaint)handle).setColor(color);
     }
     
-    public static void SetTextSize369(final Object handle,final float textSize)
+    public static void SetTextSize361(final Object handle,final float textSize)
     {
         ((android.text.TextPaint)handle).setTextSize(textSize);
     }
     
-    public static void SetTypeface370(final Object paintHandle,final Object typefaceHandle)
+    public static void SetTypeface362(final Object paintHandle,final Object typefaceHandle)
     {
         ((android.text.TextPaint)paintHandle).setTypeface(((android.graphics.Typeface)typefaceHandle));
     }

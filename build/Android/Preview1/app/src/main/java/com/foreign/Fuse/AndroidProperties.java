@@ -23,12 +23,12 @@ public class AndroidProperties
         android.util.Log.d("maryjane", (message==null ? "null" : message.toString()));
     }
 
-    public static int GetBuildVersion377()
+    public static int GetBuildVersion369()
     {
         return android.os.Build.VERSION.SDK_INT;
     }
     
-    public static String GetReleaseVersion378()
+    public static String GetReleaseVersion370()
     {
         return android.os.Build.VERSION.RELEASE;
     }

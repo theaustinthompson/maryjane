@@ -29,7 +29,7 @@ namespace Android{
 namespace Base{
 namespace Primitives{
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Targets\Android\Uno\Base\Primitives.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Targets\Android\Uno\Base\Primitives.uno
 // ---------------------------------------------------------------------------------------------------------
 
 // public extern struct ConstCharPtr :9
@@ -53,7 +53,7 @@ uStructType* ConstCharPtr_typeof()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Targets\Android\Uno\Base\Primitives.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Targets\Android\Uno\Base\Primitives.uno
 // ---------------------------------------------------------------------------------------------------------
 
 // public extern struct JavaVMPtr :12
@@ -77,7 +77,7 @@ uStructType* JavaVMPtr_typeof()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Targets\Android\Uno\Base\Primitives.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Targets\Android\Uno\Base\Primitives.uno
 // ---------------------------------------------------------------------------------------------------------
 
 // public extern struct jfieldID :144
@@ -101,7 +101,7 @@ uStructType* jfieldID_typeof()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Targets\Android\Uno\Base\Primitives.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Targets\Android\Uno\Base\Primitives.uno
 // ---------------------------------------------------------------------------------------------------------
 
 // public extern struct jmethodID :139
@@ -125,7 +125,7 @@ uStructType* jmethodID_typeof()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Targets\Android\Uno\Base\Primitives.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Targets\Android\Uno\Base\Primitives.uno
 // ---------------------------------------------------------------------------------------------------------
 
 // public extern struct JNIEnvPtr :15
@@ -149,7 +149,7 @@ uStructType* JNIEnvPtr_typeof()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Targets\Android\Uno\Base\Primitives.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Targets\Android\Uno\Base\Primitives.uno
 // ---------------------------------------------------------------------------------------------------------
 
 // public extern struct JNINativeMethod :136
@@ -173,7 +173,7 @@ uStructType* JNINativeMethod_typeof()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Targets\Android\Uno\Base\Primitives.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Targets\Android\Uno\Base\Primitives.uno
 // ---------------------------------------------------------------------------------------------------------
 
 // public extern struct jweak :18
@@ -197,7 +197,7 @@ uStructType* jweak_typeof()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Targets\Android\Uno\Base\Primitives.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Targets\Android\Uno\Base\Primitives.uno
 // ---------------------------------------------------------------------------------------------------------
 
 // public extern struct ujboolean :24
@@ -221,7 +221,7 @@ uStructType* ujboolean_typeof()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Targets\Android\Uno\Base\Primitives.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Targets\Android\Uno\Base\Primitives.uno
 // ---------------------------------------------------------------------------------------------------------
 
 // public extern struct ujbyte :38
@@ -245,7 +245,7 @@ uStructType* ujbyte_typeof()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Targets\Android\Uno\Base\Primitives.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Targets\Android\Uno\Base\Primitives.uno
 // ---------------------------------------------------------------------------------------------------------
 
 // public extern struct ujchar :52
@@ -269,7 +269,7 @@ uStructType* ujchar_typeof()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Targets\Android\Uno\Base\Primitives.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Targets\Android\Uno\Base\Primitives.uno
 // ---------------------------------------------------------------------------------------------------------
 
 // public extern struct ujclass :147
@@ -319,7 +319,7 @@ jclass ujclass::Null()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Targets\Android\Uno\Base\Primitives.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Targets\Android\Uno\Base\Primitives.uno
 // ---------------------------------------------------------------------------------------------------------
 
 // public extern struct ujdouble :122
@@ -343,7 +343,7 @@ uStructType* ujdouble_typeof()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Targets\Android\Uno\Base\Primitives.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Targets\Android\Uno\Base\Primitives.uno
 // ---------------------------------------------------------------------------------------------------------
 
 // public extern struct ujfloat :108
@@ -367,7 +367,7 @@ uStructType* ujfloat_typeof()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Targets\Android\Uno\Base\Primitives.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Targets\Android\Uno\Base\Primitives.uno
 // ---------------------------------------------------------------------------------------------------------
 
 // public extern struct ujint :80
@@ -391,7 +391,7 @@ uStructType* ujint_typeof()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Targets\Android\Uno\Base\Primitives.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Targets\Android\Uno\Base\Primitives.uno
 // ---------------------------------------------------------------------------------------------------------
 
 // public extern struct ujlong :94
@@ -415,7 +415,7 @@ uStructType* ujlong_typeof()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Targets\Android\Uno\Base\Primitives.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Targets\Android\Uno\Base\Primitives.uno
 // ---------------------------------------------------------------------------------------------------------
 
 // public extern struct ujobject :175
@@ -501,7 +501,7 @@ jobject ujobject::Null()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Targets\Android\Uno\Base\Primitives.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Targets\Android\Uno\Base\Primitives.uno
 // ---------------------------------------------------------------------------------------------------------
 
 // public extern struct ujshort :66
@@ -525,7 +525,7 @@ uStructType* ujshort_typeof()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Targets\Android\Uno\Base\Primitives.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Targets\Android\Uno\Base\Primitives.uno
 // ---------------------------------------------------------------------------------------------------------
 
 // public extern struct ujstring :166
@@ -549,7 +549,7 @@ uStructType* ujstring_typeof()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Targets\Android\Uno\Base\Primitives.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Targets\Android\Uno\Base\Primitives.uno
 // ---------------------------------------------------------------------------------------------------------
 
 // public extern struct ujvalue :215
@@ -573,7 +573,7 @@ uStructType* ujvalue_typeof()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Targets\Android\Uno\Base\Primitives.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Targets\Android\Uno\Base\Primitives.uno
 // ---------------------------------------------------------------------------------------------------------
 
 // public extern struct uweakptr :21

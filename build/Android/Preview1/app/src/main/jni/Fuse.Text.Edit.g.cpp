@@ -25,7 +25,7 @@ namespace Fuse{
 namespace Text{
 namespace Edit{
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Text\1.7.4\Edit.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Text\1.8.1\Edit.uno
 // ----------------------------------------------------------------------------
 
 // internal struct Caret :9
@@ -84,7 +84,7 @@ Caret Caret__New1(int32_t cluster, int32_t lineIndex, int32_t runIndex, ::g::Uno
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Text\1.7.4\Edit.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Text\1.8.1\Edit.uno
 // ----------------------------------------------------------------------------
 
 // public struct CaretContext :25
@@ -713,7 +713,7 @@ float CaretContext__WeightedSquaredDist(::g::Uno::Float2 p, ::g::Uno::Float2 q, 
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Text\1.7.4\Edit.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Text\1.8.1\Edit.uno
 // ----------------------------------------------------------------------------
 
 // public enum CaretIndex :7

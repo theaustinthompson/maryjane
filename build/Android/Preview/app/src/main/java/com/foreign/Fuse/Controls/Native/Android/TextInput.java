@@ -26,16 +26,16 @@ public class TextInput
         android.util.Log.d("maryjane", (message==null ? "null" : message.toString()));
     }
 
-    public static void AddEditorActionListener195(final UnoObject _this, final Object handle)
+    public static void AddEditorActionListener187(final UnoObject _this, final Object handle)
     {
         ((android.widget.TextView)handle).setOnEditorActionListener(new android.widget.TextView.OnEditorActionListener() {
         	public boolean onEditorAction(android.widget.TextView v, int actionId, android.view.KeyEvent ke) {
-        		return ExternedBlockHost.callUno_Fuse_Controls_Native_Android_TextInput_OnEditorAction196((UnoObject)_this,(int)actionId);
+        		return ExternedBlockHost.callUno_Fuse_Controls_Native_Android_TextInput_OnEditorAction188((UnoObject)_this,(int)actionId);
         	}
         });
     }
     
-    public static void AddTextChangedListener197(final UnoObject _this, final Object handle)
+    public static void AddTextChangedListener189(final UnoObject _this, final Object handle)
     {
         ((android.widget.TextView)handle).addTextChangedListener(new android.text.TextWatcher() {
         	public void afterTextChanged(android.text.Editable e) {
@@ -46,28 +46,28 @@ public class TextInput
         	}
         	public void onTextChanged(java.lang.CharSequence cs, int start, int before, int count) {
         		java.lang.String str = cs.toString();
-        		ExternedBlockHost.callUno_Fuse_Controls_Native_Android_TextInput_OnTextChanged198((UnoObject)_this,(String)str);
+        		ExternedBlockHost.callUno_Fuse_Controls_Native_Android_TextInput_OnTextChanged190((UnoObject)_this,(String)str);
         	}
         });
     }
     
-    public static void ClearFocus199(final Object handle)
+    public static void ClearFocus191(final Object handle)
     {
         android.widget.TextView t = (android.widget.TextView)handle;
         t.clearFocus();
     }
     
-    public static Object Create1200()
+    public static Object Create1192()
     {
         return new android.widget.EditText(com.fuse.Activity.getRootActivity());
     }
     
-    public static boolean HasFocus201(final Object viewHandle)
+    public static boolean HasFocus193(final Object viewHandle)
     {
         return ((android.view.View)viewHandle).hasFocus();
     }
     
-    public static void Measure2202(final Object handle,final int w,final int h,final boolean hasX,final boolean hasY,final com.uno.IntArray measuredSize)
+    public static void Measure2194(final Object handle,final int w,final int h,final boolean hasX,final boolean hasY,final com.uno.IntArray measuredSize)
     {
         int wSpec = MeasureSpec.makeMeasureSpec(w, hasX ? MeasureSpec.EXACTLY : MeasureSpec.UNSPECIFIED);
         int hSpec = MeasureSpec.makeMeasureSpec(h, hasY ? MeasureSpec.EXACTLY : MeasureSpec.UNSPECIFIED);
@@ -82,12 +82,12 @@ public class TextInput
         measuredSize.set(1, view.getMeasuredHeight());
     }
     
-    public static void RequestFocus203(final Object viewHandle)
+    public static void RequestFocus195(final Object viewHandle)
     {
         ((android.view.View)viewHandle).requestFocus();
     }
     
-    public static void SetCursorDrawableColor204(final UnoObject _this, final Object handle,final int color)
+    public static void SetCursorDrawableColor196(final UnoObject _this, final Object handle,final int color)
     {
         android.widget.EditText editText = (android.widget.EditText)handle;
         try {
@@ -114,12 +114,12 @@ public class TextInput
         }
     }
     
-    public static void SetImeOptions205(final Object handle,final int value)
+    public static void SetImeOptions197(final Object handle,final int value)
     {
         ((android.widget.TextView)handle).setImeOptions(value);
     }
     
-    public static void SetInputType206(final Object handle,final int value)
+    public static void SetInputType198(final Object handle,final int value)
     {
         android.widget.EditText et = (android.widget.EditText)handle;
         
@@ -140,17 +140,17 @@ public class TextInput
         et.setSelection(start, end);
     }
     
-    public static void SetPlaceholderColor207(final Object handle,final int value)
+    public static void SetPlaceholderColor199(final Object handle,final int value)
     {
         ((android.widget.TextView)handle).setHintTextColor(value);
     }
     
-    public static void SetPlaceholderText208(final Object handle,final String value)
+    public static void SetPlaceholderText200(final Object handle,final String value)
     {
         ((android.widget.TextView)handle).setHint(value);
     }
     
-    public static void SetSelectionColor209(final Object handle,final int color)
+    public static void SetSelectionColor201(final Object handle,final int color)
     {
         ((android.widget.TextView)handle).setHighlightColor(color);
     }

@@ -27,7 +27,7 @@ namespace g{
 namespace Uno{
 namespace Text{
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\Text\Ascii.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\Text\Ascii.uno
 // -------------------------------------------------------------------------------------------
 
 // public static class Ascii :5
@@ -97,7 +97,7 @@ uString* Ascii::GetString(uArray* value)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\Text\Base64.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\Text\Base64.uno
 // --------------------------------------------------------------------------------------------
 
 // public static class Base64 :8
@@ -253,7 +253,7 @@ uString* Base64::GetString(uArray* value)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\Text\Utf8.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\Text\Utf8.uno
 // ------------------------------------------------------------------------------------------
 
 // public abstract class Decoder :7
@@ -289,7 +289,7 @@ void Decoder::ctor_()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\Text\Utf8.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\Text\Utf8.uno
 // ------------------------------------------------------------------------------------------
 
 // public abstract class Encoding :258
@@ -346,7 +346,7 @@ Encoding* Encoding::UTF8()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\Text\StringBuilder.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\Text\StringBuilder.uno
 // ---------------------------------------------------------------------------------------------------
 
 // public sealed class StringBuilder :7
@@ -524,7 +524,7 @@ StringBuilder* StringBuilder::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\Text\Utf8.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\Text\Utf8.uno
 // ------------------------------------------------------------------------------------------
 
 // public static class Utf8 :292
@@ -575,7 +575,7 @@ uString* Utf8::GetString(uArray* value)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\Text\Utf8.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\Text\Utf8.uno
 // ------------------------------------------------------------------------------------------
 
 // internal sealed class UTF8Decoder :14
@@ -867,7 +867,7 @@ UTF8Decoder* UTF8Decoder::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\Text\Utf8.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\Text\Utf8.uno
 // ------------------------------------------------------------------------------------------
 
 // public sealed class UTF8Encoding :284

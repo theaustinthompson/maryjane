@@ -52,7 +52,7 @@ namespace Runtime{
 namespace Implementation{
 namespace Internal{
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\Runtime\Implementation\Internal\ArrayEnumerable.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\Runtime\Implementation\Internal\ArrayEnumerable.uno
 // --------------------------------------------------------------------------------------------------------------------------------
 
 // public sealed class ArrayEnumerable<T> :47
@@ -132,7 +132,7 @@ ArrayEnumerable* ArrayEnumerable::New1(uType* __type, uArray* source)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\Runtime\Implementation\Internal\ArrayEnumerable.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\Runtime\Implementation\Internal\ArrayEnumerable.uno
 // --------------------------------------------------------------------------------------------------------------------------------
 
 // public sealed class ArrayEnumerator<T> :5
@@ -254,7 +254,7 @@ ArrayEnumerator* ArrayEnumerator::New1(uType* __type, uArray* source)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\Runtime\Implementation\Internal\ArrayEnumerable.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\Runtime\Implementation\Internal\ArrayEnumerable.uno
 // --------------------------------------------------------------------------------------------------------------------------------
 
 // public sealed class ArrayList<T> :62
@@ -449,7 +449,7 @@ ArrayList* ArrayList::New1(uType* __type, uArray* source)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\Runtime\Implementation\Internal\BufferConverters.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\Runtime\Implementation\Internal\BufferConverters.uno
 // ---------------------------------------------------------------------------------------------------------------------------------
 
 // public static class BufferConverters :3
@@ -548,7 +548,7 @@ void BufferConverters__ToBuffer9_fn(uArray* data, ::g::Uno::Buffer** __retval)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\Runtime\Implementation\Internal\NumericFormatter.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\Runtime\Implementation\Internal\NumericFormatter.uno
 // ---------------------------------------------------------------------------------------------------------------------------------
 
 // internal enum FormatSpecifier :6
@@ -570,7 +570,7 @@ uEnumType* FormatSpecifier_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\Runtime\Implementation\Internal\FormatStringItem.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\Runtime\Implementation\Internal\FormatStringItem.uno
 // ---------------------------------------------------------------------------------------------------------------------------------
 
 // public sealed class FormatStringItem :3
@@ -768,7 +768,7 @@ FormatStringItem* FormatStringItem::New1(uString* lexeme)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\Runtime\Implementation\Internal\FormatStringLiteral.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\Runtime\Implementation\Internal\FormatStringLiteral.uno
 // ------------------------------------------------------------------------------------------------------------------------------------
 
 // public sealed class FormatStringLiteral :3
@@ -854,7 +854,7 @@ FormatStringLiteral* FormatStringLiteral::New1(uString* lexeme)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\Runtime\Implementation\Internal\FormatStringToken.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\Runtime\Implementation\Internal\FormatStringToken.uno
 // ----------------------------------------------------------------------------------------------------------------------------------
 
 // public abstract class FormatStringToken :3
@@ -919,7 +919,7 @@ void FormatStringToken::Lexeme(uString* value)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\Runtime\Implementation\Internal\FormatStringTokenizer.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\Runtime\Implementation\Internal\FormatStringTokenizer.uno
 // --------------------------------------------------------------------------------------------------------------------------------------
 
 // public sealed class FormatStringTokenizer :5
@@ -1135,7 +1135,7 @@ FormatStringTokenizer* FormatStringTokenizer::New1(uString* format)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\Runtime\Implementation\Internal\NumericFormatter.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\Runtime\Implementation\Internal\NumericFormatter.uno
 // ---------------------------------------------------------------------------------------------------------------------------------
 
 // public static class NumericFormatter :18
@@ -2090,7 +2090,7 @@ uString* NumericFormatter::DecimalPoint()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\Runtime\Implementation\Internal\FormatStringTokenizer.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\Runtime\Implementation\Internal\FormatStringTokenizer.uno
 // --------------------------------------------------------------------------------------------------------------------------------------
 
 // private enum FormatStringTokenizer.State :7
@@ -2109,7 +2109,7 @@ uEnumType* FormatStringTokenizer__State_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\Runtime\Implementation\Internal\Unsafe.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\Runtime\Implementation\Internal\Unsafe.uno
 // -----------------------------------------------------------------------------------------------------------------------
 
 // public static class Unsafe :7

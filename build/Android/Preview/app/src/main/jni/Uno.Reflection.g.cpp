@@ -15,7 +15,7 @@ namespace g{
 namespace Uno{
 namespace Reflection{
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\Reflection\CppReflection.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\Reflection\CppReflection.uno
 // ---------------------------------------------------------------------------------------------------------
 
 // public extern struct CppField :32
@@ -122,7 +122,7 @@ uField* CppField::Null()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\Reflection\CppReflection.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\Reflection\CppReflection.uno
 // ---------------------------------------------------------------------------------------------------------
 
 // public extern struct CppFunction :78
@@ -236,7 +236,7 @@ uFunction* CppFunction::Null()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\Reflection\CppReflection.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\Reflection\CppReflection.uno
 // ---------------------------------------------------------------------------------------------------------
 
 // public sealed extern class CppReflection :133
@@ -380,7 +380,7 @@ CppReflection* CppReflection::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\Reflection\CppReflection.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\Reflection\CppReflection.uno
 // ---------------------------------------------------------------------------------------------------------
 
 // public abstract interface IField :5
@@ -398,7 +398,7 @@ uInterfaceType* IField_typeof()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\Reflection\CppReflection.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\Reflection\CppReflection.uno
 // ---------------------------------------------------------------------------------------------------------
 
 // public abstract interface IFunction :16

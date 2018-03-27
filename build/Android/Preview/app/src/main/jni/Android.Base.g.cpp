@@ -38,7 +38,7 @@ namespace g{
 namespace Android{
 namespace Base{
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Targets\Android\Uno\Base\JNI.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Targets\Android\Uno\Base\JNI.uno
 // --------------------------------------------------------------------------------------------------
 
 // public static extern class AndroidBindingMacros :11
@@ -60,7 +60,7 @@ uClassType* AndroidBindingMacros_typeof()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Targets\Android\Uno\Base\JNI.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Targets\Android\Uno\Base\JNI.uno
 // --------------------------------------------------------------------------------------------------
 
 // public static extern class JNI :14
@@ -556,7 +556,7 @@ jmethodID JNI::GetStaticMethodID(jclass cls, uString* methodName, uString* metho
 int64_t JNI::GetUnoRef(jobject obj)
 {
     uStackFrame __("Android.Base.JNI", "GetUnoRef(Android.Base.Primitives.ujobject)");
-    ::g::Uno::Diagnostics::Debug::Assert(JNI::_inited_, uString::Const("Android.Base.JNI._inited"), uString::Const("C:/Users/borde_000/AppData/Local/Fusetools/Packages/UnoCore/1.7.1/Targets/Android/Uno/Base/JNI.uno"), 296, uArray::New(uObject_typeof()->Array(), 0));
+    ::g::Uno::Diagnostics::Debug::Assert(JNI::_inited_, uString::Const("Android.Base.JNI._inited"), uString::Const("C:/Users/borde_000/AppData/Local/Fusetools/Packages/UnoCore/1.8.0/Targets/Android/Uno/Base/JNI.uno"), 296, uArray::New(uObject_typeof()->Array(), 0));
 
     if (::g::Android::Base::Primitives::ujobject::op_Inequality(obj, ::g::Android::Base::Primitives::ujobject::Null()))
         return (int64_t)JNI::GetEnvPtr()->CallStaticLongMethod(JNI::_helperCls_, JNI::_getUnoRefMid_, obj);
@@ -624,7 +624,7 @@ jclass JNI::LoadClass(JNIEnv* jni, const char* name)
 jclass JNI::LoadClass1(JNIEnv* jni, const char* name, bool systemClass)
 {
     uStackFrame __("Android.Base.JNI", "LoadClass(Android.Base.Primitives.JNIEnvPtr,Android.Base.Primitives.ConstCharPtr,bool)");
-    ::g::Uno::Diagnostics::Debug::Assert(JNI::_inited_, uString::Const("Android.Base.JNI._inited"), uString::Const("C:/Users/borde_000/AppData/Local/Fusetools/Packages/UnoCore/1.7.1/Targets/Android/Uno/Base/JNI.uno"), 109, uArray::New(uObject_typeof()->Array(), 0));
+    ::g::Uno::Diagnostics::Debug::Assert(JNI::_inited_, uString::Const("Android.Base.JNI._inited"), uString::Const("C:/Users/borde_000/AppData/Local/Fusetools/Packages/UnoCore/1.8.0/Targets/Android/Uno/Base/JNI.uno"), 109, uArray::New(uObject_typeof()->Array(), 0));
     jclass result;
     jstring jname = jni->NewStringUTF(name);
 
@@ -819,7 +819,7 @@ void JNI::ThrowNewException(uString* message_)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Targets\Android\Uno\Base\JNI.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Targets\Android\Uno\Base\JNI.uno
 // --------------------------------------------------------------------------------------------------
 
 // public enum JNI.RefType :95

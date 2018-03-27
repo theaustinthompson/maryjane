@@ -27,7 +27,7 @@ namespace g{
 namespace Experimental{
 namespace Http{
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Experimental.Http\1.7.4\BinaryLoader.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Experimental.Http\1.8.1\BinaryLoader.uno
 // --------------------------------------------------------------------------------------------
 
 // internal sealed class BinaryLoader :14
@@ -196,7 +196,7 @@ BinaryLoader* BinaryLoader::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Experimental.Http\1.7.4\HttpLoader.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Experimental.Http\1.8.1\HttpLoader.uno
 // ------------------------------------------------------------------------------------------
 
 // public static class HttpLoader :9
@@ -248,7 +248,7 @@ void HttpLoader::LoadBinary(uString* requestUri, uDelegate* callback, uDelegate*
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Experimental.Http\1.7.4\HttpResponseHeader.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Experimental.Http\1.8.1\HttpResponseHeader.uno
 // --------------------------------------------------------------------------------------------------
 
 // public sealed class HttpResponseHeader :7
@@ -379,7 +379,7 @@ HttpResponseHeader* HttpResponseHeader::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Experimental.Http\1.7.4\BinaryLoader.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Experimental.Http\1.8.1\BinaryLoader.uno
 // --------------------------------------------------------------------------------------------
 
 // internal static class LoaderConst :9

@@ -1,4 +1,4 @@
-// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/Fuse.Elements/1.7.4/Element.ITreeRenderer.uno.
+// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/Fuse.Elements/1.8.1/Element.ITreeRenderer.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -27,6 +27,7 @@ struct ITreeRenderer
     void(*fp_Measure)(uObject*, ::g::Fuse::Elements::Element*, ::g::Fuse::LayoutParams*, ::g::Uno::Float2*, bool*);
     void(*fp_OpacityChanged)(uObject*, ::g::Fuse::Elements::Element*, float*);
     void(*fp_Placed)(uObject*, ::g::Fuse::Elements::Element*);
+    void(*fp_RenderBoundsChanged)(uObject*, ::g::Fuse::Elements::Element*);
     void(*fp_Rooted)(uObject*, ::g::Fuse::Elements::Element*);
     void(*fp_RootingStarted)(uObject*, ::g::Fuse::Elements::Element*);
     void(*fp_TransformChanged)(uObject*, ::g::Fuse::Elements::Element*);
@@ -40,6 +41,7 @@ struct ITreeRenderer
     static bool Measure(const uInterface& __this, ::g::Fuse::Elements::Element* e, ::g::Fuse::LayoutParams lp, ::g::Uno::Float2* size);
     static void OpacityChanged(const uInterface& __this, ::g::Fuse::Elements::Element* e, float opacity) { __this.VTable<ITreeRenderer>()->fp_OpacityChanged(__this, e, &opacity); }
     static void Placed(const uInterface& __this, ::g::Fuse::Elements::Element* e) { __this.VTable<ITreeRenderer>()->fp_Placed(__this, e); }
+    static void RenderBoundsChanged(const uInterface& __this, ::g::Fuse::Elements::Element* e) { __this.VTable<ITreeRenderer>()->fp_RenderBoundsChanged(__this, e); }
     static void Rooted(const uInterface& __this, ::g::Fuse::Elements::Element* e) { __this.VTable<ITreeRenderer>()->fp_Rooted(__this, e); }
     static void RootingStarted(const uInterface& __this, ::g::Fuse::Elements::Element* e) { __this.VTable<ITreeRenderer>()->fp_RootingStarted(__this, e); }
     static void TransformChanged(const uInterface& __this, ::g::Fuse::Elements::Element* e) { __this.VTable<ITreeRenderer>()->fp_TransformChanged(__this, e); }

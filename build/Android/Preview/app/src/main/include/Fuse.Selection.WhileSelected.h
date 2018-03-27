@@ -1,4 +1,4 @@
-// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/Fuse.Selection/1.7.4/WhileSelected.uno.
+// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/Fuse.Selection/1.8.1/WhileSelected.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -23,7 +23,7 @@ namespace g{
 namespace Fuse{
 namespace Selection{
 
-// public sealed class WhileSelected :15
+// public sealed class WhileSelected :17
 // {
 struct WhileSelected_type : ::g::Fuse::Triggers::Trigger_type
 {

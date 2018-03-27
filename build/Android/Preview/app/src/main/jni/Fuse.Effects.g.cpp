@@ -66,7 +66,7 @@ namespace g{
 namespace Fuse{
 namespace Effects{
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Effects\1.7.4\BasicEffect.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Effects\1.8.1\BasicEffect.uno
 // --------------------------------------------------------------------------------------
 
 // public abstract class BasicEffect :7
@@ -164,7 +164,7 @@ void BasicEffect::ctor_3(int32_t effectType)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Effects\1.7.4\DropShadow.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Effects\1.8.1\DropShadow.uno
 // -------------------------------------------------------------------------------------
 
 // private sealed class DropShadow.Blitter :172
@@ -288,7 +288,7 @@ DropShadow__Blitter* DropShadow__Blitter::Instance()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Effects\1.7.4\Blur.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Effects\1.8.1\Blur.uno
 // -------------------------------------------------------------------------------
 
 // public sealed class Blur :14
@@ -462,7 +462,7 @@ Blur* Blur::New2()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Effects\1.7.4\Desaturate.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Effects\1.8.1\Desaturate.uno
 // -------------------------------------------------------------------------------------
 
 // public sealed class Desaturate :11
@@ -629,7 +629,7 @@ Desaturate* Desaturate::New2()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Effects\1.7.4\DropShadow.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Effects\1.8.1\DropShadow.uno
 // -------------------------------------------------------------------------------------
 
 // public sealed class DropShadow :11
@@ -982,7 +982,7 @@ DropShadow* DropShadow::New2()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Effects\1.7.4\Duotone.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Effects\1.8.1\Duotone.uno
 // ----------------------------------------------------------------------------------
 
 // public sealed class Duotone :13
@@ -1219,7 +1219,7 @@ Duotone* Duotone::New2()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Elements\1.7.4\Effects\Effect.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Elements\1.8.1\Effects\Effect.uno
 // ------------------------------------------------------------------------------------------
 
 // public abstract class Effect :15
@@ -1455,7 +1455,7 @@ int32_t Effect::Type()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Effects\1.7.4\EffectHelpers.Blur.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Effects\1.8.1\EffectHelpers.Blur.uno
 // ---------------------------------------------------------------------------------------------
 
 // internal partial sealed class EffectHelpers :9
@@ -1727,7 +1727,7 @@ EffectHelpers* EffectHelpers::Instance()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Elements\1.7.4\Effects\Effect.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Elements\1.8.1\Effects\Effect.uno
 // ------------------------------------------------------------------------------------------
 
 // public enum EffectType :8
@@ -1744,7 +1744,7 @@ uEnumType* EffectType_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Effects\1.7.4\Halftone.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Effects\1.8.1\Halftone.uno
 // -----------------------------------------------------------------------------------
 
 // public sealed class Halftone :12
@@ -2060,7 +2060,7 @@ Halftone* Halftone::New2()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Effects\1.7.4\Mask.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Effects\1.8.1\Mask.uno
 // -------------------------------------------------------------------------------
 
 // public sealed class Mask :13
@@ -2401,7 +2401,7 @@ Mask* Mask::New2()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Effects\1.7.4\Mask.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Effects\1.8.1\Mask.uno
 // -------------------------------------------------------------------------------
 
 // public enum Mask.MaskMode :52

@@ -1,4 +1,4 @@
-// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/Fuse.Gestures/1.7.4/Swipe.uno.
+// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/Fuse.Gestures/1.8.1/Swipe.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -23,7 +23,7 @@ namespace g{
 namespace Fuse{
 namespace Gestures{
 
-// public sealed class WhileSwipeActive :436
+// public sealed class WhileSwipeActive :462
 // {
 struct WhileSwipeActive_type : ::g::Fuse::Triggers::Trigger_type
 {

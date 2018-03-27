@@ -1,4 +1,4 @@
-// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/Fuse.Reactive.Bindings/1.7.4/Instantiator.uno.
+// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/Fuse.Reactive.Bindings/1.8.1/Instantiator.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -10,7 +10,7 @@ namespace g{
 namespace Fuse{
 namespace Reactive{
 
-// internal struct TemplateMatch :67
+// internal struct TemplateMatch :82
 // {
 uStructType* TemplateMatch_typeof();
 void TemplateMatch__Matches_fn(TemplateMatch* __this, TemplateMatch* b, bool* __retval);

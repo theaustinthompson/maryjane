@@ -33,7 +33,7 @@ public class ExifAndroidImpl
         android.util.Log.d("maryjane", (message==null ? "null" : message.toString()));
     }
 
-    public static int GetOrientation111(final Object stream)
+    public static int GetOrientation113(final Object stream)
     {
         InputStream s = (InputStream)stream;
         try {
@@ -50,7 +50,7 @@ public class ExifAndroidImpl
         return -1;
     }
     
-    public static Object InputStreamFromByteArray112(final Object buf)
+    public static Object InputStreamFromByteArray114(final Object buf)
     {
         return new com.fuse.android.ByteBufferInputStream((com.uno.UnoBackedByteBuffer)buf);
     }

@@ -1,4 +1,4 @@
-// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/Fuse.Navigation/1.7.4/TriggerActions.uno.
+// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/Fuse.Navigation/1.8.1/TriggerActions.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once

@@ -1,4 +1,4 @@
-// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/Fuse.Controls.Navigation/1.7.4/NavigationControl.BlockInput.uno.
+// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/Fuse.Controls.Navigation/1.8.1/NavigationControl.BlockInput.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -69,7 +69,6 @@ void NavigationControl__BlockInputUnrooted_fn(NavigationControl* __this);
 void NavigationControl__get_CanGoBack_fn(NavigationControl* __this, bool* __retval);
 void NavigationControl__get_CanGoForward_fn(NavigationControl* __this, bool* __retval);
 void NavigationControl__CleanupTriggers_fn(NavigationControl* __this, ::g::Fuse::Elements::Element* page, NavigationControl__ControlPageData* data);
-void NavigationControl__CompatibleParameter_fn(NavigationControl* __this, uString* a, uString* b, bool* __retval);
 void NavigationControl__DisableBlockInput_fn(NavigationControl* __this);
 void NavigationControl__EnableBlockInput_fn(NavigationControl* __this);
 void NavigationControl__FullUpdatePages_fn(NavigationControl* __this, int32_t* flags);
@@ -96,13 +95,13 @@ void NavigationControl__Goto_fn(NavigationControl* __this, ::g::Fuse::Visual* no
 void NavigationControl__gotoPath_fn(NavigationControl* nav, uArray* args);
 void NavigationControl__add_HistoryChanged_fn(NavigationControl* __this, uDelegate* value);
 void NavigationControl__remove_HistoryChanged_fn(NavigationControl* __this, uDelegate* value);
-void NavigationControl__IsEmptyParameter_fn(NavigationControl* __this, uString* a, bool* __retval);
 void NavigationControl__get_IsRouterOutlet_fn(NavigationControl* __this, bool* __retval);
 void NavigationControl__set_IsRouterOutlet_fn(NavigationControl* __this, bool* value);
 void NavigationControl__modifyPath_fn(NavigationControl* nav, uArray* args);
 void NavigationControl__add_Navigated_fn(NavigationControl* __this, uDelegate* value);
 void NavigationControl__remove_Navigated_fn(NavigationControl* __this, uDelegate* value);
 void NavigationControl__get_Navigation_fn(NavigationControl* __this, ::g::Fuse::Navigation::VisualNavigation** __retval);
+void NavigationControl__OnActivePageChanged_fn(NavigationControl* __this, uObject* sender, ::g::Fuse::Visual* active);
 void NavigationControl__OnChildAdded_fn(NavigationControl* __this, ::g::Fuse::Node* n);
 void NavigationControl__OnChildRemoved_fn(NavigationControl* __this, ::g::Fuse::Node* n);
 void NavigationControl__OnChildRouterPagesUpdated_fn(NavigationControl* __this);
@@ -120,6 +119,7 @@ void NavigationControl__set_PageHistory_fn(NavigationControl* __this, uObject* v
 void NavigationControl__add_PageProgressChanged_fn(NavigationControl* __this, uDelegate* value);
 void NavigationControl__remove_PageProgressChanged_fn(NavigationControl* __this, uDelegate* value);
 void NavigationControl__PageTransition_fn(NavigationControl* __this, ::g::Fuse::Visual* elm, int32_t* __retval);
+void NavigationControl__RootActivePage_fn(NavigationControl* __this);
 void NavigationControl__get_RouterOutletType_fn(NavigationControl* __this, int32_t* __retval);
 void NavigationControl__seekToPath_fn(NavigationControl* nav, uArray* args);
 void NavigationControl__SetNavigation_fn(NavigationControl* __this, ::g::Fuse::Navigation::VisualNavigation* nav);
@@ -129,6 +129,7 @@ void NavigationControl__remove_StateChanged_fn(NavigationControl* __this, uDeleg
 void NavigationControl__Toggle_fn(NavigationControl* __this, ::g::Fuse::Visual* node);
 void NavigationControl__get_Transition_fn(NavigationControl* __this, int32_t* __retval);
 void NavigationControl__set_Transition_fn(NavigationControl* __this, int32_t* value);
+void NavigationControl__UnrootActivePage_fn(NavigationControl* __this);
 void NavigationControl__UpdateBlockInput_fn(NavigationControl* __this);
 void NavigationControl__UpdateChild_fn(NavigationControl* __this, ::g::Fuse::Elements::Element* c);
 void NavigationControl__UpdateInteraction_fn(NavigationControl* __this);
@@ -164,7 +165,6 @@ struct NavigationControl : ::g::Fuse::Controls::Panel
     bool CanGoBack();
     bool CanGoForward();
     void CleanupTriggers(::g::Fuse::Elements::Element* page, NavigationControl__ControlPageData* data);
-    bool CompatibleParameter(uString* a, uString* b);
     void CreateTriggers(::g::Fuse::Elements::Element* c, NavigationControl__ControlPageData* pd) { (((NavigationControl_type*)__type)->fp_CreateTriggers)(this, c, pd); }
     void DisableBlockInput();
     void EnableBlockInput();
@@ -174,12 +174,12 @@ struct NavigationControl : ::g::Fuse::Controls::Panel
     void Goto(::g::Fuse::Visual* node, int32_t mode);
     void add_HistoryChanged(uDelegate* value);
     void remove_HistoryChanged(uDelegate* value);
-    bool IsEmptyParameter(uString* a);
     bool IsRouterOutlet();
     void IsRouterOutlet(bool value);
     void add_Navigated(uDelegate* value);
     void remove_Navigated(uDelegate* value);
     ::g::Fuse::Navigation::VisualNavigation* Navigation();
+    void OnActivePageChanged(uObject* sender, ::g::Fuse::Visual* active);
     void OnChildRouterPagesUpdated();
     void OnPageHistoryChanged();
     void OnPageHistoryUnrooted();
@@ -192,6 +192,7 @@ struct NavigationControl : ::g::Fuse::Controls::Panel
     void add_PageProgressChanged(uDelegate* value);
     void remove_PageProgressChanged(uDelegate* value);
     int32_t PageTransition(::g::Fuse::Visual* elm);
+    void RootActivePage();
     int32_t RouterOutletType();
     void SetNavigation(::g::Fuse::Navigation::VisualNavigation* nav);
     void add_StateChanged(uDelegate* value);
@@ -199,6 +200,7 @@ struct NavigationControl : ::g::Fuse::Controls::Panel
     void Toggle(::g::Fuse::Visual* node);
     int32_t Transition();
     void Transition(int32_t value);
+    void UnrootActivePage();
     void UpdateBlockInput();
     void UpdateChild(::g::Fuse::Elements::Element* c);
     void UpdateInteraction() { (((NavigationControl_type*)__type)->fp_UpdateInteraction)(this); }

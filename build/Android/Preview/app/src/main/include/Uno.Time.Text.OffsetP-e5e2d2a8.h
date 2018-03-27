@@ -1,4 +1,4 @@
-// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/UnoCore/1.7.1/Source/Uno/Time/Text/PatternPart.uno.
+// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/UnoCore/1.8.0/Source/Uno/Time/Text/PatternPart.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -13,7 +13,7 @@ namespace Uno{
 namespace Time{
 namespace Text{
 
-// internal sealed class OffsetPatternPart<T> :240
+// internal sealed class OffsetPatternPart<T> :227
 // {
 ::g::Uno::Time::Text::PatternPart_type* OffsetPatternPart_typeof();
 void OffsetPatternPart__ctor_1_fn(OffsetPatternPart* __this, uDelegate* setter, uDelegate* getter);

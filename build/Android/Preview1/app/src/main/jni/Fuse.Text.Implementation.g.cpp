@@ -61,7 +61,7 @@ namespace Fuse{
 namespace Text{
 namespace Implementation{
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Text\1.7.4\Implementation\BitArray.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Text\1.8.1\Implementation\BitArray.uno
 // -----------------------------------------------------------------------------------------------
 
 // internal sealed class BitArray :3
@@ -169,7 +169,7 @@ BitArray* BitArray::New1(int32_t length)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Text\1.7.4\Implementation\Util.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Text\1.8.1\Implementation\Util.uno
 // -------------------------------------------------------------------------------------------
 
 // internal static extern class CString :19
@@ -219,7 +219,7 @@ uString* CString::ToString(void* cstr)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Text\1.7.4\Implementation\FreeType.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Text\1.8.1\Implementation\FreeType.uno
 // -----------------------------------------------------------------------------------------------
 
 // internal static extern class FreeType :45
@@ -802,7 +802,7 @@ void* FreeType::Library()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Text\1.7.4\Implementation\FreeTypeFontFace.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Text\1.8.1\Implementation\FreeTypeFontFace.uno
 // -------------------------------------------------------------------------------------------------------
 
 // internal sealed extern class FreeTypeFont :129
@@ -1110,7 +1110,7 @@ FreeTypeFont* FreeTypeFont::New1(void* ftFace, void* ftSize, int32_t pixelSize, 
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Text\1.7.4\Implementation\FreeTypeFontFace.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Text\1.8.1\Implementation\FreeTypeFontFace.uno
 // -------------------------------------------------------------------------------------------------------
 
 // internal sealed extern class FreeTypeFontFace :11
@@ -1464,7 +1464,7 @@ FreeTypeFontFace* FreeTypeFontFace::New2(uString* fileName, int32_t index, uDele
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Text\1.7.4\Implementation\FreeType.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Text\1.8.1\Implementation\FreeType.uno
 // -----------------------------------------------------------------------------------------------
 
 // internal static extern class FT_Error :11
@@ -1530,7 +1530,7 @@ uString* FT_Error::ErrorString(int32_t err)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Text\1.7.4\Implementation\Harfbuzz.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Text\1.8.1\Implementation\Harfbuzz.uno
 // -----------------------------------------------------------------------------------------------
 
 // internal static extern class Harfbuzz :22
@@ -1753,7 +1753,7 @@ void Harfbuzz::get_shape_data(void* font, void* buffer, uArray* output)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Text\1.7.4\Implementation\HarfbuzzFont.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Text\1.8.1\Implementation\HarfbuzzFont.uno
 // ---------------------------------------------------------------------------------------------------
 
 // internal abstract extern class HarfbuzzFont :6
@@ -1891,7 +1891,7 @@ void HarfbuzzFont::ctor_1(void* hbFont)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Text\1.7.4\Implementation\JavaLineBreaks.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Text\1.8.1\Implementation\JavaLineBreaks.uno
 // -----------------------------------------------------------------------------------------------------
 
 // internal static extern class JavaLineBreaks :7
@@ -1936,7 +1936,7 @@ void JavaLineBreaks::CopyLineBreaks(uString* text, ::g::Java::Object* outByteBuf
     {
         INIT_JNI;
         jclass __cls = JniHelper::GetNativeExternClass();
-        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "CopyLineBreaks318", "(Ljava/lang/String;Ljava/lang/Object;)V");
+        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "CopyLineBreaks310", "(Ljava/lang/String;Ljava/lang/Object;)V");
         uString* _utext=text;
         jstring _text = JniHelper::UnoToJavaString(_utext);
         ::g::Java::Object* _uoutByteBufferHandle=outByteBufferHandle;
@@ -1967,7 +1967,7 @@ void JavaLineBreaks::CopyLineBreaks(uString* text, ::g::Java::Object* outByteBuf
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Text\1.7.4\Implementation\Util.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Text\1.8.1\Implementation\Util.uno
 // -------------------------------------------------------------------------------------------
 
 // internal static extern class Memory :9

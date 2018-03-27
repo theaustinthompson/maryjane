@@ -1,4 +1,4 @@
-// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/Fuse.Reactive.Bindings/1.7.4/Instantiator.uno.
+// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/Fuse.Reactive.Bindings/1.8.1/Instantiator.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -14,7 +14,7 @@ namespace g{
 namespace Fuse{
 namespace Reactive{
 
-// internal sealed class WindowItem :58
+// internal sealed class WindowItem :73
 // {
 ::g::Fuse::Reactive::ValueObserver_type* WindowItem_typeof();
 void WindowItem__ctor_2_fn(WindowItem* __this);

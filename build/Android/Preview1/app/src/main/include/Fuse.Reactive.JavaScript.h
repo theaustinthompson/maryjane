@@ -1,4 +1,4 @@
-// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/Fuse.Scripting.JavaScript/1.7.4/JavaScript.Dependencies.uno.
+// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/Fuse.Scripting.JavaScript/1.8.1/JavaScript.Dependencies.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -37,6 +37,7 @@ struct JavaScript_type : ::g::Fuse::Node_type
     ::g::Fuse::Reactive::ValueForwarder__IValueListener interface7;
     ::g::Fuse::Node__ISiblingDataProvider interface8;
     ::g::Fuse::Reactive::IContext interface9;
+    void(*fp_OnBeforeSubscribeToDependenciesAndDispatchEvaluate)(::g::Fuse::Reactive::JavaScript*);
 };
 
 JavaScript_type* JavaScript_typeof();
@@ -66,6 +67,7 @@ void JavaScript__set_LineNumber_fn(JavaScript* __this, int32_t* value);
 void JavaScript__get_Names_fn(JavaScript* __this, int32_t* __retval);
 void JavaScript__set_Names_fn(JavaScript* __this, int32_t* value);
 void JavaScript__New2_fn(::g::Uno::UX::NameTable* nameTable, JavaScript** __retval);
+void JavaScript__OnBeforeSubscribeToDependenciesAndDispatchEvaluate_fn(JavaScript* __this);
 void JavaScript__OnRooted_fn(JavaScript* __this);
 void JavaScript__OnUnrooted_fn(JavaScript* __this);
 void JavaScript__get_ScriptModule_fn(JavaScript* __this, ::g::Fuse::Scripting::JavaScript::RootableScriptModule** __retval);
@@ -105,12 +107,14 @@ struct JavaScript : ::g::Fuse::Behavior
     void LineNumber(int32_t value);
     int32_t Names();
     void Names(int32_t value);
+    void OnBeforeSubscribeToDependenciesAndDispatchEvaluate() { (((JavaScript_type*)__type)->fp_OnBeforeSubscribeToDependenciesAndDispatchEvaluate)(this); }
     ::g::Fuse::Scripting::JavaScript::RootableScriptModule* ScriptModule();
     void SetDataContext(uObject* newDc);
     void SetSiblingData(uObject* data);
     void SubscribeToDependenciesAndDispatchEvaluate();
     static void EnsureVMStarted();
     static JavaScript* New2(::g::Uno::UX::NameTable* nameTable);
+    static void OnBeforeSubscribeToDependenciesAndDispatchEvaluate(JavaScript* __this) { JavaScript__OnBeforeSubscribeToDependenciesAndDispatchEvaluate_fn(__this); }
 };
 // }
 

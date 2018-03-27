@@ -63,7 +63,7 @@ namespace g{
 namespace Uno{
 namespace Graphics{
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\Graphics\Enums.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\Graphics\Enums.uno
 // -----------------------------------------------------------------------------------------------
 
 // public enum BlendEquation :78
@@ -82,7 +82,7 @@ uEnumType* BlendEquation_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\Graphics\Enums.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\Graphics\Enums.uno
 // -----------------------------------------------------------------------------------------------
 
 // public enum BlendOperand :64
@@ -106,7 +106,7 @@ uEnumType* BlendOperand_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\Graphics\Enums.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\Graphics\Enums.uno
 // -----------------------------------------------------------------------------------------------
 
 // public enum BufferUsage :5
@@ -123,7 +123,7 @@ uEnumType* BufferUsage_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\Graphics\Enums.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\Graphics\Enums.uno
 // -----------------------------------------------------------------------------------------------
 
 // public enum CompareFunc :87
@@ -145,7 +145,7 @@ uEnumType* CompareFunc_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\Graphics\Enums.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\Graphics\Enums.uno
 // -----------------------------------------------------------------------------------------------
 
 // public enum CubeFace :54
@@ -165,7 +165,7 @@ uEnumType* CubeFace_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\Graphics\DeviceBuffer.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\Graphics\DeviceBuffer.uno
 // ------------------------------------------------------------------------------------------------------
 
 // public abstract class DeviceBuffer :7
@@ -467,7 +467,7 @@ void DeviceBuffer::Usage(int32_t value)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\Graphics\Enums.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\Graphics\Enums.uno
 // -----------------------------------------------------------------------------------------------
 
 // public enum Format :123
@@ -488,7 +488,7 @@ uEnumType* Format_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\Graphics\FormatHelpers.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\Graphics\FormatHelpers.uno
 // -------------------------------------------------------------------------------------------------------
 
 // public static class FormatHelpers :5
@@ -544,7 +544,7 @@ int32_t FormatHelpers::GetStrideInBytes(int32_t format)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\Graphics\Framebuffer.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\Graphics\Framebuffer.uno
 // -----------------------------------------------------------------------------------------------------
 
 // public sealed class Framebuffer :11
@@ -712,7 +712,7 @@ Framebuffer* Framebuffer::New1(::g::Uno::Int2 size, int32_t format, int32_t flag
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\Graphics\Framebuffer.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\Graphics\Framebuffer.uno
 // -----------------------------------------------------------------------------------------------------
 
 // public enum FramebufferFlags :4
@@ -729,7 +729,7 @@ uEnumType* FramebufferFlags_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\Graphics\IndexBuffer.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\Graphics\IndexBuffer.uno
 // -----------------------------------------------------------------------------------------------------
 
 // public sealed class IndexBuffer :6
@@ -846,7 +846,7 @@ IndexBuffer* IndexBuffer::New4(int32_t usage)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\Graphics\Enums.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\Graphics\Enums.uno
 // -----------------------------------------------------------------------------------------------
 
 // public enum IndexType :21
@@ -864,7 +864,7 @@ uEnumType* IndexType_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\Graphics\Enums.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\Graphics\Enums.uno
 // -----------------------------------------------------------------------------------------------
 
 // public enum PolygonFace :109
@@ -882,7 +882,7 @@ uEnumType* PolygonFace_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\Graphics\Enums.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\Graphics\Enums.uno
 // -----------------------------------------------------------------------------------------------
 
 // public enum PolygonWinding :117
@@ -898,7 +898,7 @@ uEnumType* PolygonWinding_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\Graphics\Enums.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\Graphics\Enums.uno
 // -----------------------------------------------------------------------------------------------
 
 // public enum PrimitiveType :12
@@ -917,7 +917,7 @@ uEnumType* PrimitiveType_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\Graphics\RenderTarget.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\Graphics\RenderTarget.uno
 // ------------------------------------------------------------------------------------------------------
 
 // public sealed class RenderTarget :8
@@ -1208,7 +1208,7 @@ RenderTarget* RenderTarget::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\Graphics\SamplerState.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\Graphics\SamplerState.uno
 // ------------------------------------------------------------------------------------------------------
 
 // public struct SamplerState :21
@@ -1352,7 +1352,7 @@ SamplerState SamplerState__TrilinearClamp()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\Graphics\Texture2D.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\Graphics\Texture2D.uno
 // ---------------------------------------------------------------------------------------------------
 
 // public intrinsic sealed class Texture2D :10
@@ -1361,7 +1361,7 @@ static void Texture2D_build(uType* type)
 {
     ::STRINGS[4] = uString::Const("OpenGL ES ");
     ::STRINGS[5] = uString::Const("**** Invalid version string: ");
-    ::STRINGS[6] = uString::Const("C:/Users/borde_000/AppData/Local/Fusetools/Packages/UnoCore/1.7.1/Source/Uno/Graphics/Texture2D.uno");
+    ::STRINGS[6] = uString::Const("C:/Users/borde_000/AppData/Local/Fusetools/Packages/UnoCore/1.8.0/Source/Uno/Graphics/Texture2D.uno");
     ::STRINGS[7] = uString::Const("Texture2D");
     ::STRINGS[8] = uString::Const("Texture does not support mipmap");
     ::STRINGS[9] = uString::Const("Texture is immutable and cannot be updated");
@@ -1417,7 +1417,7 @@ Texture2D_type* Texture2D_typeof()
     return type;
 }
 
-// public Texture2D(int2 size, Uno.Graphics.Format format, bool mipmap) :134
+// public Texture2D(int2 size, Uno.Graphics.Format format, bool mipmap) :132
 void Texture2D__ctor__fn(Texture2D* __this, ::g::Uno::Int2* size, int32_t* format, bool* mipmap)
 {
     __this->ctor_(*size, *format, *mipmap);
@@ -1441,7 +1441,7 @@ void Texture2D__CheckGLES3Support_fn(bool* __retval)
     *__retval = Texture2D::CheckGLES3Support();
 }
 
-// public void Dispose() :156
+// public void Dispose() :152
 void Texture2D__Dispose_fn(Texture2D* __this)
 {
     __this->Dispose();
@@ -1459,7 +1459,7 @@ void Texture2D__set_Format_fn(Texture2D* __this, int32_t* value)
     __this->Format(*value);
 }
 
-// public void GenerateMipmap() :352
+// public void GenerateMipmap() :348
 void Texture2D__GenerateMipmap_fn(Texture2D* __this)
 {
     __this->GenerateMipmap();
@@ -1483,25 +1483,25 @@ void Texture2D__get_HaveNonPow2Support_fn(bool* __retval)
     *__retval = Texture2D::HaveNonPow2Support();
 }
 
-// public generated bool get_IsDisposed() :152
+// public generated bool get_IsDisposed() :148
 void Texture2D__get_IsDisposed_fn(Texture2D* __this, bool* __retval)
 {
     *__retval = __this->IsDisposed();
 }
 
-// private generated void set_IsDisposed(bool value) :153
+// private generated void set_IsDisposed(bool value) :149
 void Texture2D__set_IsDisposed_fn(Texture2D* __this, bool* value)
 {
     __this->IsDisposed(*value);
 }
 
-// public bool get_IsMipmap() :343
+// public bool get_IsMipmap() :339
 void Texture2D__get_IsMipmap_fn(Texture2D* __this, bool* __retval)
 {
     *__retval = __this->IsMipmap();
 }
 
-// public bool get_IsPow2() :338
+// public bool get_IsPow2() :334
 void Texture2D__get_IsPow2_fn(Texture2D* __this, bool* __retval)
 {
     *__retval = __this->IsPow2();
@@ -1525,7 +1525,7 @@ void Texture2D__set_MipCount_fn(Texture2D* __this, int32_t* value)
     __this->MipCount(*value);
 }
 
-// public Texture2D New(int2 size, Uno.Graphics.Format format, bool mipmap) :134
+// public Texture2D New(int2 size, Uno.Graphics.Format format, bool mipmap) :132
 void Texture2D__New1_fn(::g::Uno::Int2* size, int32_t* format, bool* mipmap, Texture2D** __retval)
 {
     *__retval = Texture2D::New1(*size, *format, *mipmap);
@@ -1549,19 +1549,19 @@ void Texture2D__set_Size_fn(Texture2D* __this, ::g::Uno::Int2* value)
     __this->Size(*value);
 }
 
-// public bool get_SupportsMipmap() :349
+// public bool get_SupportsMipmap() :345
 void Texture2D__get_SupportsMipmap_fn(Texture2D* __this, bool* __retval)
 {
     *__retval = __this->SupportsMipmap();
 }
 
-// public void Update(byte[] mip0) :200
+// public void Update(byte[] mip0) :196
 void Texture2D__Update_fn(Texture2D* __this, uArray* mip0)
 {
     __this->Update(mip0);
 }
 
-// public void Update(Uno.Buffer mip0) :224
+// public void Update(Uno.Buffer mip0) :220
 void Texture2D__Update3_fn(Texture2D* __this, ::g::Uno::Buffer* mip0)
 {
     __this->Update3(mip0);
@@ -1571,7 +1571,7 @@ int32_t Texture2D::_maxSize_;
 bool Texture2D::_haveNonPow2SupportValid_;
 bool Texture2D::_haveNonPow2Support_;
 
-// public Texture2D(int2 size, Uno.Graphics.Format format, bool mipmap) [instance] :134
+// public Texture2D(int2 size, Uno.Graphics.Format format, bool mipmap) [instance] :132
 void Texture2D::ctor_(::g::Uno::Int2 size, int32_t format, bool mipmap)
 {
     uStackFrame __("texture2D", ".ctor(int2,Uno.Graphics.Format,bool)");
@@ -1591,7 +1591,7 @@ void Texture2D::ctor_1(uint32_t handle, ::g::Uno::Int2 size, int32_t mipCount, i
     Format(format);
 }
 
-// public void Dispose() [instance] :156
+// public void Dispose() [instance] :152
 void Texture2D::Dispose()
 {
     uStackFrame __("texture2D", "Dispose()");
@@ -1616,7 +1616,7 @@ void Texture2D::Format(int32_t value)
     _Format = value;
 }
 
-// public void GenerateMipmap() [instance] :352
+// public void GenerateMipmap() [instance] :348
 void Texture2D::GenerateMipmap()
 {
     uStackFrame __("texture2D", "GenerateMipmap()");
@@ -1643,25 +1643,25 @@ void Texture2D::GLTextureHandle(uint32_t value)
     _GLTextureHandle = value;
 }
 
-// public generated bool get_IsDisposed() [instance] :152
+// public generated bool get_IsDisposed() [instance] :148
 bool Texture2D::IsDisposed()
 {
     return _IsDisposed;
 }
 
-// private generated void set_IsDisposed(bool value) [instance] :153
+// private generated void set_IsDisposed(bool value) [instance] :149
 void Texture2D::IsDisposed(bool value)
 {
     _IsDisposed = value;
 }
 
-// public bool get_IsMipmap() [instance] :343
+// public bool get_IsMipmap() [instance] :339
 bool Texture2D::IsMipmap()
 {
     return (MipCount() > 1) && IsPow2();
 }
 
-// public bool get_IsPow2() [instance] :338
+// public bool get_IsPow2() [instance] :334
 bool Texture2D::IsPow2()
 {
     return ::g::Uno::Math::IsPow2(Size().X) && ::g::Uno::Math::IsPow2(Size().Y);
@@ -1691,13 +1691,13 @@ void Texture2D::Size(::g::Uno::Int2 value)
     _Size = value;
 }
 
-// public bool get_SupportsMipmap() [instance] :349
+// public bool get_SupportsMipmap() [instance] :345
 bool Texture2D::SupportsMipmap()
 {
     return IsMipmap();
 }
 
-// public void Update(byte[] mip0) [instance] :200
+// public void Update(byte[] mip0) [instance] :196
 void Texture2D::Update(uArray* mip0)
 {
     uStackFrame __("texture2D", "Update(byte[])");
@@ -1717,7 +1717,7 @@ void Texture2D::Update(uArray* mip0)
     }
 }
 
-// public void Update(Uno.Buffer mip0) [instance] :224
+// public void Update(Uno.Buffer mip0) [instance] :220
 void Texture2D::Update3(::g::Uno::Buffer* mip0)
 {
     uStackFrame __("texture2D", "Update(Uno.Buffer)");
@@ -1785,7 +1785,7 @@ bool Texture2D::CheckGLES3Support()
     return false;
 }
 
-// public Texture2D New(int2 size, Uno.Graphics.Format format, bool mipmap) [static] :134
+// public Texture2D New(int2 size, Uno.Graphics.Format format, bool mipmap) [static] :132
 Texture2D* Texture2D::New1(::g::Uno::Int2 size, int32_t format, bool mipmap)
 {
     Texture2D* obj5 = (Texture2D*)uNew(Texture2D_typeof());
@@ -1825,7 +1825,7 @@ int32_t Texture2D::MaxSize()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\Graphics\SamplerState.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\Graphics\SamplerState.uno
 // ------------------------------------------------------------------------------------------------------
 
 // public enum TextureAddressMode :15
@@ -1841,7 +1841,7 @@ uEnumType* TextureAddressMode_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\Graphics\TextureCube.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\Graphics\TextureCube.uno
 // -----------------------------------------------------------------------------------------------------
 
 // public intrinsic sealed class TextureCube :9
@@ -1970,7 +1970,7 @@ void TextureCube::Size(int32_t value)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\Graphics\SamplerState.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\Graphics\SamplerState.uno
 // ------------------------------------------------------------------------------------------------------
 
 // public enum TextureFilter :4
@@ -1990,7 +1990,7 @@ uEnumType* TextureFilter_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\Graphics\TextureHelpers.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\Graphics\TextureHelpers.uno
 // --------------------------------------------------------------------------------------------------------
 
 // public static class TextureHelpers :5
@@ -2088,7 +2088,7 @@ int32_t TextureHelpers::GetMipCount1(::g::Uno::Int2 size)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\Graphics\VertexAttributeInfo.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\Graphics\VertexAttributeInfo.uno
 // -------------------------------------------------------------------------------------------------------------
 
 // public struct VertexAttributeInfo :3
@@ -2123,7 +2123,7 @@ uStructType* VertexAttributeInfo_typeof()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\Graphics\Enums.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\Graphics\Enums.uno
 // -----------------------------------------------------------------------------------------------
 
 // public enum VertexAttributeType :29
@@ -2158,7 +2158,7 @@ uEnumType* VertexAttributeType_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\Graphics\VertexBuffer.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\Graphics\VertexBuffer.uno
 // ------------------------------------------------------------------------------------------------------
 
 // public sealed class VertexBuffer :6
@@ -2246,7 +2246,7 @@ VertexBuffer* VertexBuffer::New4(int32_t usage)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\Graphics\VideoTexture.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\Graphics\VideoTexture.uno
 // ------------------------------------------------------------------------------------------------------
 
 // public intrinsic sealed class VideoTexture :9

@@ -7,6 +7,7 @@
 #include <_root.FuseControlsNav-4d426250.h>
 #include <_root.FuseControlsNav-a8c01cdb.h>
 #include <_root.FuseControlsNav-bfeb1093.h>
+#include <_root.FuseControlsPan-43d43d7e.h>
 #include <_root.FuseControlsPri-3832896e.h>
 #include <_root.FuseControlsPri-38e137c8.h>
 #include <_root.FuseControlsPri-3bbae333.h>
@@ -265,7 +266,7 @@ DashedSolidColor* DashedSolidColor::New3(::g::Uno::Float4 color)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.7.4\.uno\package
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.8.1\.uno\package
 // ----------------------------------------------------------------------------------
 
 // public static generated class FuseCommon_bundle :0
@@ -351,7 +352,7 @@ uSStrong< ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram*>
 uSStrong< ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram*> FuseCommon_bundle::Blitter8f469d0c_;
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls\1.7.4\.uno\package
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls\1.8.1\.uno\package
 // ------------------------------------------------------------------------------------
 
 // public static generated class FuseControls_bundle :0
@@ -542,7 +543,7 @@ uSStrong< ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram*>
 uSStrong< ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram*> FuseControls_bundle::SolidRectangled1bbfcb0_;
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Navigation\1.7.4\.uno\ux13\Fuse.Controls.Navigation.unoproj.g.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Navigation\1.8.1\.uno\ux14\Fuse.Controls.Navigation.unoproj.g.uno
 // -----------------------------------------------------------------------------------------------------------------------------------
 
 // internal sealed class FuseControlsNavigation_FuseControlsPanel_IsFrozen_Property :19
@@ -622,7 +623,7 @@ FuseControlsNavigation_FuseControlsPanel_IsFrozen_Property* FuseControlsNavigati
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Navigation\1.7.4\.uno\ux13\Fuse.Controls.Navigation.unoproj.g.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Navigation\1.8.1\.uno\ux14\Fuse.Controls.Navigation.unoproj.g.uno
 // -----------------------------------------------------------------------------------------------------------------------------------
 
 // internal sealed class FuseControlsNavigation_FuseControlsShape_Color_Property :1
@@ -709,7 +710,7 @@ FuseControlsNavigation_FuseControlsShape_Color_Property* FuseControlsNavigation_
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Navigation\1.7.4\.uno\ux13\Fuse.Controls.Navigation.unoproj.g.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Navigation\1.8.1\.uno\ux14\Fuse.Controls.Navigation.unoproj.g.uno
 // -----------------------------------------------------------------------------------------------------------------------------------
 
 // internal sealed class FuseControlsNavigation_FuseElementsElement_HitTestMode_Property :10
@@ -796,7 +797,87 @@ FuseControlsNavigation_FuseElementsElement_HitTestMode_Property* FuseControlsNav
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Primitives\1.7.4\.uno\ux13\Fuse.Controls.Primitives.unoproj.g.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Panels\1.8.1\.uno\ux14\Fuse.Controls.Panels.unoproj.g.uno
+// ---------------------------------------------------------------------------------------------------------------------------
+
+// internal sealed class FuseControlsPanels_FuseElementsElement_Padding_Property :1
+// {
+static void FuseControlsPanels_FuseElementsElement_Padding_Property_build(uType* type)
+{
+    ::TYPES[3] = ::g::Fuse::Elements::Element_typeof();
+    type->SetBase(::g::Uno::UX::Property1_typeof()->MakeType(::g::Uno::Float4_typeof(), NULL));
+    type->SetFields(1,
+        ::TYPES[3/*Fuse.Elements.Element*/], offsetof(FuseControlsPanels_FuseElementsElement_Padding_Property, _obj), uFieldFlagsWeak);
+}
+
+::g::Uno::UX::Property1_type* FuseControlsPanels_FuseElementsElement_Padding_Property_typeof()
+{
+    static uSStrong< ::g::Uno::UX::Property1_type*> type;
+    if (type != NULL) return type;
+
+    uTypeOptions options;
+    options.BaseDefinition = ::g::Uno::UX::Property1_typeof();
+    options.FieldCount = 2;
+    options.ObjectSize = sizeof(FuseControlsPanels_FuseElementsElement_Padding_Property);
+    options.TypeSize = sizeof(::g::Uno::UX::Property1_type);
+    type = (::g::Uno::UX::Property1_type*)uClassType::New("FuseControlsPanels_FuseElementsElement_Padding_Property", options);
+    type->fp_build_ = FuseControlsPanels_FuseElementsElement_Padding_Property_build;
+    type->fp_Get1 = (void(*)(::g::Uno::UX::Property1*, ::g::Uno::UX::PropertyObject*, uTRef))FuseControlsPanels_FuseElementsElement_Padding_Property__Get1_fn;
+    type->fp_get_Object = (void(*)(::g::Uno::UX::Property*, ::g::Uno::UX::PropertyObject**))FuseControlsPanels_FuseElementsElement_Padding_Property__get_Object_fn;
+    type->fp_Set1 = (void(*)(::g::Uno::UX::Property1*, ::g::Uno::UX::PropertyObject*, void*, uObject*))FuseControlsPanels_FuseElementsElement_Padding_Property__Set1_fn;
+    return type;
+}
+
+// public FuseControlsPanels_FuseElementsElement_Padding_Property(Fuse.Elements.Element obj, Uno.UX.Selector name) :4
+void FuseControlsPanels_FuseElementsElement_Padding_Property__ctor_3_fn(FuseControlsPanels_FuseElementsElement_Padding_Property* __this, ::g::Fuse::Elements::Element* obj, ::g::Uno::UX::Selector* name)
+{
+    __this->ctor_3(obj, *name);
+}
+
+// public override sealed float4 Get(Uno.UX.PropertyObject obj) :6
+void FuseControlsPanels_FuseElementsElement_Padding_Property__Get1_fn(FuseControlsPanels_FuseElementsElement_Padding_Property* __this, ::g::Uno::UX::PropertyObject* obj, ::g::Uno::Float4* __retval)
+{
+    uStackFrame __("FuseControlsPanels_FuseElementsElement_Padding_Property", "Get(Uno.UX.PropertyObject)");
+    return *__retval = uPtr(uCast< ::g::Fuse::Elements::Element*>(obj, ::TYPES[3/*Fuse.Elements.Element*/]))->Padding(), void();
+}
+
+// public FuseControlsPanels_FuseElementsElement_Padding_Property New(Fuse.Elements.Element obj, Uno.UX.Selector name) :4
+void FuseControlsPanels_FuseElementsElement_Padding_Property__New1_fn(::g::Fuse::Elements::Element* obj, ::g::Uno::UX::Selector* name, FuseControlsPanels_FuseElementsElement_Padding_Property** __retval)
+{
+    *__retval = FuseControlsPanels_FuseElementsElement_Padding_Property::New1(obj, *name);
+}
+
+// public override sealed Uno.UX.PropertyObject get_Object() :5
+void FuseControlsPanels_FuseElementsElement_Padding_Property__get_Object_fn(FuseControlsPanels_FuseElementsElement_Padding_Property* __this, ::g::Uno::UX::PropertyObject** __retval)
+{
+    return *__retval = __this->_obj, void();
+}
+
+// public override sealed void Set(Uno.UX.PropertyObject obj, float4 v, Uno.UX.IPropertyListener origin) :7
+void FuseControlsPanels_FuseElementsElement_Padding_Property__Set1_fn(FuseControlsPanels_FuseElementsElement_Padding_Property* __this, ::g::Uno::UX::PropertyObject* obj, ::g::Uno::Float4* v, uObject* origin)
+{
+    uStackFrame __("FuseControlsPanels_FuseElementsElement_Padding_Property", "Set(Uno.UX.PropertyObject,float4,Uno.UX.IPropertyListener)");
+    ::g::Uno::Float4 v_ = *v;
+    uPtr(uCast< ::g::Fuse::Elements::Element*>(obj, ::TYPES[3/*Fuse.Elements.Element*/]))->Padding(v_);
+}
+
+// public FuseControlsPanels_FuseElementsElement_Padding_Property(Fuse.Elements.Element obj, Uno.UX.Selector name) [instance] :4
+void FuseControlsPanels_FuseElementsElement_Padding_Property::ctor_3(::g::Fuse::Elements::Element* obj, ::g::Uno::UX::Selector name)
+{
+    ctor_2(name);
+    _obj = obj;
+}
+
+// public FuseControlsPanels_FuseElementsElement_Padding_Property New(Fuse.Elements.Element obj, Uno.UX.Selector name) [static] :4
+FuseControlsPanels_FuseElementsElement_Padding_Property* FuseControlsPanels_FuseElementsElement_Padding_Property::New1(::g::Fuse::Elements::Element* obj, ::g::Uno::UX::Selector name)
+{
+    FuseControlsPanels_FuseElementsElement_Padding_Property* obj1 = (FuseControlsPanels_FuseElementsElement_Padding_Property*)uNew(FuseControlsPanels_FuseElementsElement_Padding_Property_typeof());
+    obj1->ctor_3(obj, name);
+    return obj1;
+}
+// }
+
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Primitives\1.8.1\.uno\ux14\Fuse.Controls.Primitives.unoproj.g.uno
 // -----------------------------------------------------------------------------------------------------------------------------------
 
 // internal sealed class FuseControlsPrimitives_accessor_Fuse_Controls_ButtonBase_Text :1
@@ -903,7 +984,7 @@ FuseControlsPrimitives_accessor_Fuse_Controls_ButtonBase_Text* FuseControlsPrimi
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Primitives\1.7.4\.uno\ux13\Fuse.Controls.Primitives.unoproj.g.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Primitives\1.8.1\.uno\ux14\Fuse.Controls.Primitives.unoproj.g.uno
 // -----------------------------------------------------------------------------------------------------------------------------------
 
 // internal sealed class FuseControlsPrimitives_accessor_Fuse_Controls_ToggleControl_Value :11
@@ -1009,7 +1090,7 @@ FuseControlsPrimitives_accessor_Fuse_Controls_ToggleControl_Value* FuseControlsP
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Primitives\1.7.4\.uno\ux13\Fuse.Controls.Primitives.unoproj.g.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Primitives\1.8.1\.uno\ux14\Fuse.Controls.Primitives.unoproj.g.uno
 // -----------------------------------------------------------------------------------------------------------------------------------
 
 // internal sealed class FuseControlsPrimitives_FuseControlsShape_Fill_Property :47
@@ -1088,7 +1169,7 @@ FuseControlsPrimitives_FuseControlsShape_Fill_Property* FuseControlsPrimitives_F
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Primitives\1.7.4\.uno\ux13\Fuse.Controls.Primitives.unoproj.g.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Primitives\1.8.1\.uno\ux14\Fuse.Controls.Primitives.unoproj.g.uno
 // -----------------------------------------------------------------------------------------------------------------------------------
 
 // internal sealed class FuseControlsPrimitives_FuseControlsTextControl_TextColor_Property :30
@@ -1168,7 +1249,7 @@ FuseControlsPrimitives_FuseControlsTextControl_TextColor_Property* FuseControlsP
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Primitives\1.7.4\.uno\ux13\Fuse.Controls.Primitives.unoproj.g.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Primitives\1.8.1\.uno\ux14\Fuse.Controls.Primitives.unoproj.g.uno
 // -----------------------------------------------------------------------------------------------------------------------------------
 
 // internal sealed class FuseControlsPrimitives_FuseControlsTextControl_Value_Property :21
@@ -1254,7 +1335,7 @@ FuseControlsPrimitives_FuseControlsTextControl_Value_Property* FuseControlsPrimi
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Primitives\1.7.4\.uno\ux13\Fuse.Controls.Primitives.unoproj.g.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Primitives\1.8.1\.uno\ux14\Fuse.Controls.Primitives.unoproj.g.uno
 // -----------------------------------------------------------------------------------------------------------------------------------
 
 // internal sealed class FuseControlsPrimitives_FuseDrawingSolidColor_Color_Property :97
@@ -1341,7 +1422,7 @@ FuseControlsPrimitives_FuseDrawingSolidColor_Color_Property* FuseControlsPrimiti
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Primitives\1.7.4\.uno\ux13\Fuse.Controls.Primitives.unoproj.g.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Primitives\1.8.1\.uno\ux14\Fuse.Controls.Primitives.unoproj.g.uno
 // -----------------------------------------------------------------------------------------------------------------------------------
 
 // internal sealed class FuseControlsPrimitives_FuseDrawingStroke_Brush_Property :55
@@ -1420,7 +1501,7 @@ FuseControlsPrimitives_FuseDrawingStroke_Brush_Property* FuseControlsPrimitives_
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Primitives\1.7.4\.uno\ux13\Fuse.Controls.Primitives.unoproj.g.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Primitives\1.8.1\.uno\ux14\Fuse.Controls.Primitives.unoproj.g.uno
 // -----------------------------------------------------------------------------------------------------------------------------------
 
 // internal sealed class FuseControlsPrimitives_FuseDrawingStroke_Color_Property :79
@@ -1507,7 +1588,7 @@ FuseControlsPrimitives_FuseDrawingStroke_Color_Property* FuseControlsPrimitives_
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Primitives\1.7.4\.uno\ux13\Fuse.Controls.Primitives.unoproj.g.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Primitives\1.8.1\.uno\ux14\Fuse.Controls.Primitives.unoproj.g.uno
 // -----------------------------------------------------------------------------------------------------------------------------------
 
 // internal sealed class FuseControlsPrimitives_FuseEffectsDropShadow_Distance_Property :63
@@ -1587,7 +1668,7 @@ FuseControlsPrimitives_FuseEffectsDropShadow_Distance_Property* FuseControlsPrim
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Primitives\1.7.4\.uno\ux13\Fuse.Controls.Primitives.unoproj.g.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Primitives\1.8.1\.uno\ux14\Fuse.Controls.Primitives.unoproj.g.uno
 // -----------------------------------------------------------------------------------------------------------------------------------
 
 // internal sealed class FuseControlsPrimitives_FuseEffectsDropShadow_Size_Property :71
@@ -1667,7 +1748,7 @@ FuseControlsPrimitives_FuseEffectsDropShadow_Size_Property* FuseControlsPrimitiv
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Primitives\1.7.4\.uno\ux13\Fuse.Controls.Primitives.unoproj.g.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Primitives\1.8.1\.uno\ux14\Fuse.Controls.Primitives.unoproj.g.uno
 // -----------------------------------------------------------------------------------------------------------------------------------
 
 // internal sealed class FuseControlsPrimitives_FuseElementsElement_Opacity_Property :38
@@ -1754,7 +1835,7 @@ FuseControlsPrimitives_FuseElementsElement_Opacity_Property* FuseControlsPrimiti
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Primitives\1.7.4\.uno\ux13\Fuse.Controls.Primitives.unoproj.g.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Primitives\1.8.1\.uno\ux14\Fuse.Controls.Primitives.unoproj.g.uno
 // -----------------------------------------------------------------------------------------------------------------------------------
 
 // internal sealed class FuseControlsPrimitives_FuseGesturesSwipeGesture_IsActive_Property :88
@@ -1841,7 +1922,7 @@ FuseControlsPrimitives_FuseGesturesSwipeGesture_IsActive_Property* FuseControlsP
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.ScrollView\1.7.4\.uno\ux13\Fuse.Controls.ScrollView.unoproj.g.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.ScrollView\1.8.1\.uno\ux14\Fuse.Controls.ScrollView.unoproj.g.uno
 // -----------------------------------------------------------------------------------------------------------------------------------
 
 // internal sealed class FuseControlsScrollView_accessor_Fuse_Controls_ScrollViewBase_KeepFocusInView :1
@@ -1940,7 +2021,7 @@ FuseControlsScrollView_accessor_Fuse_Controls_ScrollViewBase_KeepFocusInView* Fu
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.ScrollView\1.7.4\.uno\ux13\Fuse.Controls.ScrollView.unoproj.g.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.ScrollView\1.8.1\.uno\ux14\Fuse.Controls.ScrollView.unoproj.g.uno
 // -----------------------------------------------------------------------------------------------------------------------------------
 
 // internal sealed class FuseControlsScrollView_FuseTriggersWhileBool_Value_Property :10
@@ -2020,7 +2101,7 @@ FuseControlsScrollView_FuseTriggersWhileBool_Value_Property* FuseControlsScrollV
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Video\1.7.4\.uno\package
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Video\1.8.1\.uno\package
 // ------------------------------------------------------------------------------------------
 
 // public static generated class FuseControlsVideo_bundle :0
@@ -2135,7 +2216,7 @@ uSStrong< ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram*>
 uSStrong< ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram*> FuseControlsVideo_bundle::VideoDrawElement5c829975_;
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing\1.7.4\.uno\package
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing\1.8.1\.uno\package
 // -----------------------------------------------------------------------------------
 
 // public static generated class FuseDrawing_bundle :0
@@ -2218,7 +2299,7 @@ uClassType* FuseDrawing_bundle_typeof()
 uSStrong< ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram*> FuseDrawing_bundle::LinearGradientDrawable479fd075_;
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing.Primitives\1.7.4\.uno\package
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing.Primitives\1.8.1\.uno\package
 // ----------------------------------------------------------------------------------------------
 
 // public static generated class FuseDrawingPrimitives_bundle :0
@@ -3918,7 +3999,7 @@ uSStrong< ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram*>
 uSStrong< ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram*> FuseDrawingPrimitives_bundle::Rectanglef633e2b5_;
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Effects\1.7.4\.uno\package
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Effects\1.8.1\.uno\package
 // -----------------------------------------------------------------------------------
 
 // public static generated class FuseEffects_bundle :0
@@ -4264,7 +4345,7 @@ uSStrong< ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram*>
 uSStrong< ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram*> FuseEffects_bundle::Maskb04eaf92_;
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Elements\1.7.4\.uno\package
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Elements\1.8.1\.uno\package
 // ------------------------------------------------------------------------------------
 
 // public static generated class FuseElements_bundle :0
@@ -4397,7 +4478,7 @@ uSStrong< ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram*>
 uSStrong< ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram*> FuseElements_bundle::Scale9Rectangle720ad3ad_;
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Models\1.7.4\.uno\package
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Models\1.8.1\.uno\package
 // ----------------------------------------------------------------------------------
 
 // public static generated class FuseModels_bundle :0
@@ -4406,7 +4487,7 @@ uSStrong< ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram*>
 static void FuseModels_bundle__cctor__fn(uType* __type)
 {
     ::g::Uno::IO::Bundle_typeof()->Init();
-    FuseModels_bundle::zone148e81cc_ = uPtr(::g::Uno::IO::Bundle::Get(::STRINGS[158/*"Fuse.Models"*/]))->GetFile(::STRINGS[159/*"zone-8fb8d8...*/]);
+    FuseModels_bundle::zonec3815532_ = uPtr(::g::Uno::IO::Bundle::Get(::STRINGS[158/*"Fuse.Models"*/]))->GetFile(::STRINGS[159/*"zone-8fb8d8...*/]);
 }
 
 static void FuseModels_bundle_build(uType* type)
@@ -4414,9 +4495,9 @@ static void FuseModels_bundle_build(uType* type)
     ::STRINGS[158] = uString::Const("Fuse.Models");
     ::STRINGS[159] = uString::Const("zone-8fb8d898.js");
     type->SetFields(0,
-        ::g::Uno::IO::BundleFile_typeof(), (uintptr_t)&FuseModels_bundle::zone148e81cc_, uFieldFlagsStatic);
+        ::g::Uno::IO::BundleFile_typeof(), (uintptr_t)&FuseModels_bundle::zonec3815532_, uFieldFlagsStatic);
     type->Reflection.SetFields(1,
-        new uField("zone148e81cc", 0));
+        new uField("zonec3815532", 0));
 }
 
 uClassType* FuseModels_bundle_typeof()
@@ -4433,10 +4514,10 @@ uClassType* FuseModels_bundle_typeof()
     return type;
 }
 
-uSStrong< ::g::Uno::IO::BundleFile*> FuseModels_bundle::zone148e81cc_;
+uSStrong< ::g::Uno::IO::BundleFile*> FuseModels_bundle::zonec3815532_;
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\.uno\package
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\.uno\package
 // ---------------------------------------------------------------------------------
 
 // public static generated class FuseNodes_bundle :0
@@ -4496,7 +4577,7 @@ uClassType* FuseNodes_bundle_typeof()
 uSStrong< ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram*> FuseNodes_bundle::DrawRectVisualizer5cbb2c45_;
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Preview.Core\0.1.0\.uno\ux13\Fuse.Preview.Core.unoproj.g.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Preview.Core\0.1.0\.uno\ux14\Fuse.Preview.Core.unoproj.g.uno
 // ---------------------------------------------------------------------------------------------------------------------
 
 // internal sealed class FusePreviewCore_accessor_Outracks_Simulator_Client_Dialogs_LoadingScreen_Header :1
@@ -4603,7 +4684,7 @@ FusePreviewCore_accessor_Outracks_Simulator_Client_Dialogs_LoadingScreen_Header*
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Preview.Core\0.1.0\.uno\ux13\Fuse.Preview.Core.unoproj.g.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Preview.Core\0.1.0\.uno\ux14\Fuse.Preview.Core.unoproj.g.uno
 // ---------------------------------------------------------------------------------------------------------------------
 
 // internal sealed class FusePreviewCore_accessor_Outracks_Simulator_Client_Dialogs_LoadingScreen_Message :11
@@ -4710,7 +4791,7 @@ FusePreviewCore_accessor_Outracks_Simulator_Client_Dialogs_LoadingScreen_Message
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Preview.Core\0.1.0\.uno\ux13\Fuse.Preview.Core.unoproj.g.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Preview.Core\0.1.0\.uno\ux14\Fuse.Preview.Core.unoproj.g.uno
 // ---------------------------------------------------------------------------------------------------------------------
 
 // internal sealed class FusePreviewCore_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Body :31
@@ -4817,7 +4898,7 @@ FusePreviewCore_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Body* Fus
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Preview.Core\0.1.0\.uno\ux13\Fuse.Preview.Core.unoproj.g.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Preview.Core\0.1.0\.uno\ux14\Fuse.Preview.Core.unoproj.g.uno
 // ---------------------------------------------------------------------------------------------------------------------
 
 // internal sealed class FusePreviewCore_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Details :41
@@ -4924,7 +5005,7 @@ FusePreviewCore_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Details* 
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Preview.Core\0.1.0\.uno\ux13\Fuse.Preview.Core.unoproj.g.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Preview.Core\0.1.0\.uno\ux14\Fuse.Preview.Core.unoproj.g.uno
 // ---------------------------------------------------------------------------------------------------------------------
 
 // internal sealed class FusePreviewCore_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Header :21
@@ -5070,7 +5151,7 @@ uClassType* FusePreviewCore_bundle_typeof()
 uSStrong< ::g::Uno::IO::BundleFile*> FusePreviewCore_bundle::fight86c8dd97_;
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Preview.Core\0.1.0\.uno\ux13\Fuse.Preview.Core.unoproj.g.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Preview.Core\0.1.0\.uno\ux14\Fuse.Preview.Core.unoproj.g.uno
 // ---------------------------------------------------------------------------------------------------------------------
 
 // internal sealed class FusePreviewCore_FuseControlsTextControl_Value_Property :60
@@ -5156,7 +5237,7 @@ FusePreviewCore_FuseControlsTextControl_Value_Property* FusePreviewCore_FuseCont
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Preview.Core\0.1.0\.uno\ux13\Fuse.Preview.Core.unoproj.g.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Preview.Core\0.1.0\.uno\ux14\Fuse.Preview.Core.unoproj.g.uno
 // ---------------------------------------------------------------------------------------------------------------------
 
 // internal sealed class FusePreviewCore_FuseElementsElement_Opacity_Property :51
@@ -5243,7 +5324,7 @@ FusePreviewCore_FuseElementsElement_Opacity_Property* FusePreviewCore_FuseElemen
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Preview.Core\0.1.0\.uno\ux13\Fuse.Preview.Core.unoproj.g.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Preview.Core\0.1.0\.uno\ux14\Fuse.Preview.Core.unoproj.g.uno
 // ---------------------------------------------------------------------------------------------------------------------
 
 // internal sealed class FusePreviewCore_FuseTriggersWhileString_Value_Property :69
@@ -5323,7 +5404,7 @@ FusePreviewCore_FuseTriggersWhileString_Value_Property* FusePreviewCore_FuseTrig
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Scripting.JavaScript\1.7.4\.uno\package
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Scripting.JavaScript\1.8.1\.uno\package
 // ------------------------------------------------------------------------------------------------
 
 // public static generated class FuseScriptingJavaScript_bundle :0
@@ -5332,11 +5413,11 @@ FusePreviewCore_FuseTriggersWhileString_Value_Property* FusePreviewCore_FuseTrig
 static void FuseScriptingJavaScript_bundle__cctor__fn(uType* __type)
 {
     ::g::Uno::IO::Bundle_typeof()->Init();
-    FuseScriptingJavaScript_bundle::Diagnosticsea84a361_ = uPtr(::g::Uno::IO::Bundle::Get(::STRINGS[168/*"Fuse.Script...*/]))->GetFile(::STRINGS[169/*"diagnostics...*/]);
-    FuseScriptingJavaScript_bundle::es6promisemin508b13d6_ = uPtr(::g::Uno::IO::Bundle::Get(::STRINGS[168/*"Fuse.Script...*/]))->GetFile(::STRINGS[170/*"es6-promise...*/]);
-    FuseScriptingJavaScript_bundle::Observablecd24f8fc_ = uPtr(::g::Uno::IO::Bundle::Get(::STRINGS[168/*"Fuse.Script...*/]))->GetFile(::STRINGS[171/*"observable-...*/]);
-    FuseScriptingJavaScript_bundle::setTimeout6878203e_ = uPtr(::g::Uno::IO::Bundle::Get(::STRINGS[168/*"Fuse.Script...*/]))->GetFile(::STRINGS[172/*"settimeout-...*/]);
-    FuseScriptingJavaScript_bundle::TreeObservable750be9fc_ = uPtr(::g::Uno::IO::Bundle::Get(::STRINGS[168/*"Fuse.Script...*/]))->GetFile(::STRINGS[173/*"treeobserva...*/]);
+    FuseScriptingJavaScript_bundle::Diagnosticsc4c4898b_ = uPtr(::g::Uno::IO::Bundle::Get(::STRINGS[168/*"Fuse.Script...*/]))->GetFile(::STRINGS[169/*"diagnostics...*/]);
+    FuseScriptingJavaScript_bundle::es6promisemin7457eb6c_ = uPtr(::g::Uno::IO::Bundle::Get(::STRINGS[168/*"Fuse.Script...*/]))->GetFile(::STRINGS[170/*"es6-promise...*/]);
+    FuseScriptingJavaScript_bundle::Observable5f9ac822_ = uPtr(::g::Uno::IO::Bundle::Get(::STRINGS[168/*"Fuse.Script...*/]))->GetFile(::STRINGS[171/*"observable-...*/]);
+    FuseScriptingJavaScript_bundle::setTimeoutff7a8124_ = uPtr(::g::Uno::IO::Bundle::Get(::STRINGS[168/*"Fuse.Script...*/]))->GetFile(::STRINGS[172/*"settimeout-...*/]);
+    FuseScriptingJavaScript_bundle::TreeObservable7be76da6_ = uPtr(::g::Uno::IO::Bundle::Get(::STRINGS[168/*"Fuse.Script...*/]))->GetFile(::STRINGS[173/*"treeobserva...*/]);
 }
 
 static void FuseScriptingJavaScript_bundle_build(uType* type)
@@ -5348,17 +5429,17 @@ static void FuseScriptingJavaScript_bundle_build(uType* type)
     ::STRINGS[172] = uString::Const("settimeout-2838aff1.js");
     ::STRINGS[173] = uString::Const("treeobservable-cf8dbe0b.js");
     type->SetFields(0,
-        ::g::Uno::IO::BundleFile_typeof(), (uintptr_t)&FuseScriptingJavaScript_bundle::Diagnosticsea84a361_, uFieldFlagsStatic,
-        ::g::Uno::IO::BundleFile_typeof(), (uintptr_t)&FuseScriptingJavaScript_bundle::es6promisemin508b13d6_, uFieldFlagsStatic,
-        ::g::Uno::IO::BundleFile_typeof(), (uintptr_t)&FuseScriptingJavaScript_bundle::Observablecd24f8fc_, uFieldFlagsStatic,
-        ::g::Uno::IO::BundleFile_typeof(), (uintptr_t)&FuseScriptingJavaScript_bundle::setTimeout6878203e_, uFieldFlagsStatic,
-        ::g::Uno::IO::BundleFile_typeof(), (uintptr_t)&FuseScriptingJavaScript_bundle::TreeObservable750be9fc_, uFieldFlagsStatic);
+        ::g::Uno::IO::BundleFile_typeof(), (uintptr_t)&FuseScriptingJavaScript_bundle::Diagnosticsc4c4898b_, uFieldFlagsStatic,
+        ::g::Uno::IO::BundleFile_typeof(), (uintptr_t)&FuseScriptingJavaScript_bundle::es6promisemin7457eb6c_, uFieldFlagsStatic,
+        ::g::Uno::IO::BundleFile_typeof(), (uintptr_t)&FuseScriptingJavaScript_bundle::Observable5f9ac822_, uFieldFlagsStatic,
+        ::g::Uno::IO::BundleFile_typeof(), (uintptr_t)&FuseScriptingJavaScript_bundle::setTimeoutff7a8124_, uFieldFlagsStatic,
+        ::g::Uno::IO::BundleFile_typeof(), (uintptr_t)&FuseScriptingJavaScript_bundle::TreeObservable7be76da6_, uFieldFlagsStatic);
     type->Reflection.SetFields(5,
-        new uField("Diagnosticsea84a361", 0),
-        new uField("es6promisemin508b13d6", 1),
-        new uField("Observablecd24f8fc", 2),
-        new uField("setTimeout6878203e", 3),
-        new uField("TreeObservable750be9fc", 4));
+        new uField("Diagnosticsc4c4898b", 0),
+        new uField("es6promisemin7457eb6c", 1),
+        new uField("Observable5f9ac822", 2),
+        new uField("setTimeoutff7a8124", 3),
+        new uField("TreeObservable7be76da6", 4));
 }
 
 uClassType* FuseScriptingJavaScript_bundle_typeof()
@@ -5375,14 +5456,14 @@ uClassType* FuseScriptingJavaScript_bundle_typeof()
     return type;
 }
 
-uSStrong< ::g::Uno::IO::BundleFile*> FuseScriptingJavaScript_bundle::Diagnosticsea84a361_;
-uSStrong< ::g::Uno::IO::BundleFile*> FuseScriptingJavaScript_bundle::es6promisemin508b13d6_;
-uSStrong< ::g::Uno::IO::BundleFile*> FuseScriptingJavaScript_bundle::Observablecd24f8fc_;
-uSStrong< ::g::Uno::IO::BundleFile*> FuseScriptingJavaScript_bundle::setTimeout6878203e_;
-uSStrong< ::g::Uno::IO::BundleFile*> FuseScriptingJavaScript_bundle::TreeObservable750be9fc_;
+uSStrong< ::g::Uno::IO::BundleFile*> FuseScriptingJavaScript_bundle::Diagnosticsc4c4898b_;
+uSStrong< ::g::Uno::IO::BundleFile*> FuseScriptingJavaScript_bundle::es6promisemin7457eb6c_;
+uSStrong< ::g::Uno::IO::BundleFile*> FuseScriptingJavaScript_bundle::Observable5f9ac822_;
+uSStrong< ::g::Uno::IO::BundleFile*> FuseScriptingJavaScript_bundle::setTimeoutff7a8124_;
+uSStrong< ::g::Uno::IO::BundleFile*> FuseScriptingJavaScript_bundle::TreeObservable7be76da6_;
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Text\1.7.4\.uno\package
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Text\1.8.1\.uno\package
 // --------------------------------------------------------------------------------
 
 // public static generated class FuseText_bundle :0
@@ -5451,7 +5532,7 @@ uClassType* FuseText_bundle_typeof()
 uSStrong< ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram*> FuseText_bundle::Renderer0b7f7722_;
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\.uno\package
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\.uno\package
 // ------------------------------------------------------------------------------
 
 // public static generated class UnoCore_bundle :0

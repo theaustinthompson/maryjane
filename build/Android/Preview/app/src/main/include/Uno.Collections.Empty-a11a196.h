@@ -1,4 +1,4 @@
-// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/Uno.Collections/1.0.1/extensions/$.uno.
+// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/Uno.Collections/1.8.0/Extensions/EmptyEnumerable.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -10,7 +10,7 @@ namespace g{
 namespace Uno{
 namespace Collections{
 
-// public sealed class EmptyEnumerable<T> :5
+// public sealed class EmptyEnumerable<T> :3
 // {
 struct EmptyEnumerable_type : uType
 {

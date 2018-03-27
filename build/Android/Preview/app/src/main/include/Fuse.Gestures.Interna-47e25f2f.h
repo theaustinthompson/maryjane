@@ -1,4 +1,4 @@
-// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/Fuse.Gestures/1.7.4/Internal/Swiper.uno.
+// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/Fuse.Gestures/1.8.1/Internal/Swiper.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once

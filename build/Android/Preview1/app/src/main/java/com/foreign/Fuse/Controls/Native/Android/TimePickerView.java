@@ -23,12 +23,12 @@ public class TimePickerView
         android.util.Log.d("maryjane", (message==null ? "null" : message.toString()));
     }
 
-    public static Object Create223()
+    public static Object Create215()
     {
         return new android.widget.TimePicker(com.apps.maryjane.maryjane.GetRootActivity());
     }
     
-    public static long GetTimeInMsSince1970InUtc224(final UnoObject _this, final Object timePickerHandle)
+    public static long GetTimeInMsSince1970InUtc216(final UnoObject _this, final Object timePickerHandle)
     {
         android.widget.TimePicker timePicker = (android.widget.TimePicker)timePickerHandle;
         
@@ -58,14 +58,14 @@ public class TimePickerView
         return cal.getTimeInMillis();
     }
     
-    public static void SetIs24HourView225(final UnoObject _this, final Object timePickerHandle,final boolean value)
+    public static void SetIs24HourView217(final UnoObject _this, final Object timePickerHandle,final boolean value)
     {
         android.widget.TimePicker timePicker = (android.widget.TimePicker)timePickerHandle;
         
         timePicker.setIs24HourView(value);
     }
     
-    public static void SetTime226(final UnoObject _this, final Object timePickerHandle,final long msSince1970InUtc)
+    public static void SetTime218(final UnoObject _this, final Object timePickerHandle,final long msSince1970InUtc)
     {
         java.util.Calendar cal = java.util.Calendar.getInstance(java.util.TimeZone.getTimeZone("UTC"), java.util.Locale.getDefault());
         cal.setTimeInMillis(msSince1970InUtc);

@@ -141,7 +141,7 @@ namespace g{
 namespace Fuse{
 namespace Drawing{
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing.Surface\1.7.4\Android\Surface.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing.Surface\1.8.1\Android\Surface.uno
 // --------------------------------------------------------------------------------------------------
 
 // internal sealed extern class AndroidCanvasPath :14
@@ -196,7 +196,7 @@ AndroidCanvasPath* AndroidCanvasPath::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing.Surface\1.7.4\Android\Surface.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing.Surface\1.8.1\Android\Surface.uno
 // --------------------------------------------------------------------------------------------------
 
 // internal abstract extern class AndroidSurface :49
@@ -204,7 +204,7 @@ AndroidCanvasPath* AndroidCanvasPath::New1()
 static void AndroidSurface_build(uType* type)
 {
     ::STRINGS[0] = uString::Const("Duplicate dispose of SurfacePath");
-    ::STRINGS[1] = uString::Const("C:\\Users\\borde_000\\AppData\\Local\\Fusetools\\Packages\\Fuse.Drawing.Surface\\1.7.4\\Android\\Surface.uno");
+    ::STRINGS[1] = uString::Const("C:\\Users\\borde_000\\AppData\\Local\\Fusetools\\Packages\\Fuse.Drawing.Surface\\1.8.1\\Android\\Surface.uno");
     ::STRINGS[2] = uString::Const("DisposePath");
     ::STRINGS[3] = uString::Const("Unprepared LinearGradient");
     ::STRINGS[4] = uString::Const("DrawPath");
@@ -272,26 +272,26 @@ void AndroidSurface__ctor_1_fn(AndroidSurface* __this)
     __this->ctor_1();
 }
 
-// private float2 AddSegments(Java.Object path, Uno.Collections.IList<Fuse.Drawing.LineSegment> segments, float2 prevPoint) :405
+// private float2 AddSegments(Java.Object path, Uno.Collections.IList<Fuse.Drawing.LineSegment> segments, float2 prevPoint) :411
 void AndroidSurface__AddSegments_fn(AndroidSurface* __this, ::g::Java::Object* path, uObject* segments, ::g::Uno::Float2* prevPoint, ::g::Uno::Float2* __retval)
 {
     *__retval = __this->AddSegments(path, segments, *prevPoint);
 }
 
-// public override void Begin(Fuse.DrawContext dc, framebuffer fb, float pixelsPerPoint) :345
+// public override void Begin(Fuse.DrawContext dc, framebuffer fb, float pixelsPerPoint) :351
 void AndroidSurface__Begin_fn(AndroidSurface* __this, ::g::Fuse::DrawContext* dc, ::g::Uno::Graphics::Framebuffer* fb, float* pixelsPerPoint)
 {
     float pixelsPerPoint_ = *pixelsPerPoint;
     __this->_pixelsPerPoint = pixelsPerPoint_;
 }
 
-// private static void ConcatTransform(Java.Object cp, Java.Object m) :532
+// private static void ConcatTransform(Java.Object cp, Java.Object m) :538
 void AndroidSurface__ConcatTransform_fn(::g::Java::Object* cp, ::g::Java::Object* m)
 {
     AndroidSurface::ConcatTransform(cp, m);
 }
 
-// private static Java.Object CreateFillPaint() :581
+// private static Java.Object CreateFillPaint() :587
 void AndroidSurface__CreateFillPaint_fn(::g::Java::Object** __retval)
 {
     *__retval = AndroidSurface::CreateFillPaint();
@@ -359,7 +359,7 @@ void AndroidSurface__Dispose_fn(AndroidSurface* __this)
     uPtr(__this->_imageBrushes)->Clear();
 }
 
-// public override sealed void DisposePath(Fuse.Drawing.SurfacePath path) :477
+// public override sealed void DisposePath(Fuse.Drawing.SurfacePath path) :483
 void AndroidSurface__DisposePath_fn(AndroidSurface* __this, ::g::Fuse::Drawing::SurfacePath* path)
 {
     uStackFrame __("Fuse.Drawing.AndroidSurface", "DisposePath(Fuse.Drawing.SurfacePath)");
@@ -367,7 +367,7 @@ void AndroidSurface__DisposePath_fn(AndroidSurface* __this, ::g::Fuse::Drawing::
 
     if (uPtr(cgPath)->Path == NULL)
     {
-        ::g::Fuse::Diagnostics::InternalError(::STRINGS[0/*"Duplicate d...*/], path, ::STRINGS[1/*"C:\\Users\\...*/], 483, ::STRINGS[2/*"DisposePath"*/]);
+        ::g::Fuse::Diagnostics::InternalError(::STRINGS[0/*"Duplicate d...*/], path, ::STRINGS[1/*"C:\\Users\\...*/], 489, ::STRINGS[2/*"DisposePath"*/]);
         return;
     }
 
@@ -413,37 +413,37 @@ void AndroidSurface__NewContext_fn(::g::Java::Object** __retval)
     *__retval = AndroidSurface::NewContext();
 }
 
-// private static void PathClose(Java.Object pathAsObject) :518
+// private static void PathClose(Java.Object pathAsObject) :524
 void AndroidSurface__PathClose_fn(::g::Java::Object* pathAsObject)
 {
     AndroidSurface::PathClose(pathAsObject);
 }
 
-// private static Java.Object PathCreateMutable() :491
+// private static Java.Object PathCreateMutable() :497
 void AndroidSurface__PathCreateMutable_fn(::g::Java::Object** __retval)
 {
     *__retval = AndroidSurface::PathCreateMutable();
 }
 
-// private static void PathCurveTo(Java.Object pathAsObject, float x, float y, float ax, float ay, float bx, float by) :504
+// private static void PathCurveTo(Java.Object pathAsObject, float x, float y, float ax, float ay, float bx, float by) :510
 void AndroidSurface__PathCurveTo_fn(::g::Java::Object* pathAsObject, float* x, float* y, float* ax, float* ay, float* bx, float* by)
 {
     AndroidSurface::PathCurveTo(pathAsObject, *x, *y, *ax, *ay, *bx, *by);
 }
 
-// private static void PathLineTo(Java.Object pathAsObject, float x, float y) :511
+// private static void PathLineTo(Java.Object pathAsObject, float x, float y) :517
 void AndroidSurface__PathLineTo_fn(::g::Java::Object* pathAsObject, float* x, float* y)
 {
     AndroidSurface::PathLineTo(pathAsObject, *x, *y);
 }
 
-// private static void PathMoveTo(Java.Object pathAsObject, float x, float y) :497
+// private static void PathMoveTo(Java.Object pathAsObject, float x, float y) :503
 void AndroidSurface__PathMoveTo_fn(::g::Java::Object* pathAsObject, float* x, float* y)
 {
     AndroidSurface::PathMoveTo(pathAsObject, *x, *y);
 }
 
-// private float2 PixelFromPoint(float2 point) :399
+// private float2 PixelFromPoint(float2 point) :405
 void AndroidSurface__PixelFromPoint_fn(AndroidSurface* __this, ::g::Uno::Float2* point, ::g::Uno::Float2* __retval)
 {
     *__retval = __this->PixelFromPoint(*point);
@@ -457,7 +457,7 @@ void AndroidSurface__PopTransform_fn(AndroidSurface* __this)
     AndroidSurface::RestoreContextState(__this->SurfaceContext);
 }
 
-// public override sealed void Prepare(Fuse.Drawing.Brush brush) :353
+// public override sealed void Prepare(Fuse.Drawing.Brush brush) :359
 void AndroidSurface__Prepare_fn(AndroidSurface* __this, ::g::Fuse::Drawing::Brush* brush)
 {
     uStackFrame __("Fuse.Drawing.AndroidSurface", "Prepare(Fuse.Drawing.Brush)");
@@ -483,7 +483,7 @@ void AndroidSurface__Prepare_fn(AndroidSurface* __this, ::g::Fuse::Drawing::Brus
         return;
     }
 
-    ::g::Fuse::Diagnostics::UserError(::STRINGS[6/*"Unsupported...*/], brush, ::STRINGS[1/*"C:\\Users\\...*/], 377, ::STRINGS[7/*"Prepare"*/], NULL);
+    ::g::Fuse::Diagnostics::UserError(::STRINGS[6/*"Unsupported...*/], brush, ::STRINGS[1/*"C:\\Users\\...*/], 383, ::STRINGS[7/*"Prepare"*/], NULL);
 }
 
 // private void PrepareImageFill(Fuse.Drawing.ImageFill fill) :106
@@ -492,7 +492,7 @@ void AndroidSurface__PrepareImageFill_fn(AndroidSurface* __this, ::g::Fuse::Draw
     __this->PrepareImageFill(fill);
 }
 
-// private void PrepareLinearGradient(Fuse.Drawing.LinearGradient lg) :456
+// private void PrepareLinearGradient(Fuse.Drawing.LinearGradient lg) :462
 void AndroidSurface__PrepareLinearGradient_fn(AndroidSurface* __this, ::g::Fuse::Drawing::LinearGradient* lg)
 {
     __this->PrepareLinearGradient(lg);
@@ -508,19 +508,19 @@ void AndroidSurface__PushTransform_fn(AndroidSurface* __this, ::g::Uno::Float4x4
     AndroidSurface::ConcatTransform(__this->SurfaceContext, __this->ToMatrix1(t_, __this->_pixelsPerPoint));
 }
 
-// private static void recycleBitmap(Java.Object bit) :549
+// private static void recycleBitmap(Java.Object bit) :555
 void AndroidSurface__recycleBitmap_fn(::g::Java::Object* bit)
 {
     AndroidSurface::recycleBitmap(bit);
 }
 
-// private static void RestoreContextState(Java.Object cp) :542
+// private static void RestoreContextState(Java.Object cp) :548
 void AndroidSurface__RestoreContextState_fn(::g::Java::Object* cp)
 {
     AndroidSurface::RestoreContextState(cp);
 }
 
-// private static int SaveContextState(Java.Object cp) :525
+// private static int SaveContextState(Java.Object cp) :531
 void AndroidSurface__SaveContextState_fn(::g::Java::Object* cp, int32_t* __retval)
 {
     *__retval = AndroidSurface::SaveContextState(cp);
@@ -536,19 +536,19 @@ void AndroidSurface__StrokePath_fn(AndroidSurface* __this, ::g::Fuse::Drawing::S
     __this->DrawPath(uPtr(cgPath)->Path, stroke->Brush(), 0, strokedPaint);
 }
 
-// private Java.Object ToMatrix(float[] matrix) :573
+// private Java.Object ToMatrix(float[] matrix) :579
 void AndroidSurface__ToMatrix_fn(AndroidSurface* __this, uArray* matrix, ::g::Java::Object** __retval)
 {
     *__retval = __this->ToMatrix(matrix);
 }
 
-// private Java.Object ToMatrix(float4x4 transform, float pixelsPerPoint) :561
+// private Java.Object ToMatrix(float4x4 transform, float pixelsPerPoint) :567
 void AndroidSurface__ToMatrix1_fn(AndroidSurface* __this, ::g::Uno::Float4x4* transform, float* pixelsPerPoint, ::g::Java::Object** __retval)
 {
     *__retval = __this->ToMatrix1(*transform, *pixelsPerPoint);
 }
 
-// public override sealed void Unprepare(Fuse.Drawing.Brush brush) :382
+// public override sealed void Unprepare(Fuse.Drawing.Brush brush) :388
 void AndroidSurface__Unprepare_fn(AndroidSurface* __this, ::g::Fuse::Drawing::Brush* brush)
 {
     uStackFrame __("Fuse.Drawing.AndroidSurface", "Unprepare(Fuse.Drawing.Brush)");
@@ -588,7 +588,7 @@ void AndroidSurface::ctor_1()
     SurfaceContext = AndroidSurface::NewContext();
 }
 
-// private float2 AddSegments(Java.Object path, Uno.Collections.IList<Fuse.Drawing.LineSegment> segments, float2 prevPoint) [instance] :405
+// private float2 AddSegments(Java.Object path, Uno.Collections.IList<Fuse.Drawing.LineSegment> segments, float2 prevPoint) [instance] :411
 ::g::Uno::Float2 AndroidSurface::AddSegments(::g::Java::Object* path, uObject* segments, ::g::Uno::Float2 prevPoint)
 {
     uStackFrame __("Fuse.Drawing.AndroidSurface", "AddSegments(Java.Object,Uno.Collections.IList<Fuse.Drawing.LineSegment>,float2)");
@@ -696,7 +696,7 @@ void AndroidSurface::DrawPath(::g::Java::Object* path, ::g::Fuse::Drawing::Brush
     ::g::Fuse::Diagnostics::UserError(::STRINGS[6/*"Unsupported...*/], fill, ::STRINGS[1/*"C:\\Users\\...*/], 198, ::STRINGS[4/*"DrawPath"*/], NULL);
 }
 
-// private float2 PixelFromPoint(float2 point) [instance] :399
+// private float2 PixelFromPoint(float2 point) [instance] :405
 ::g::Uno::Float2 AndroidSurface::PixelFromPoint(::g::Uno::Float2 point)
 {
     return ::g::Uno::Float2__op_Multiply1(point, _pixelsPerPoint);
@@ -722,7 +722,7 @@ void AndroidSurface::PrepareImageFill(::g::Fuse::Drawing::ImageFill* fill)
     ::g::Uno::Collections::Dictionary__set_Item_fn(uPtr(_imageBrushes), fill, PrepareImageFillImpl(fill));
 }
 
-// private void PrepareLinearGradient(Fuse.Drawing.LinearGradient lg) [instance] :456
+// private void PrepareLinearGradient(Fuse.Drawing.LinearGradient lg) [instance] :462
 void AndroidSurface::PrepareLinearGradient(::g::Fuse::Drawing::LinearGradient* lg)
 {
     uStackFrame __("Fuse.Drawing.AndroidSurface", "PrepareLinearGradient(Fuse.Drawing.LinearGradient)");
@@ -740,13 +740,13 @@ void AndroidSurface::PrepareLinearGradient(::g::Fuse::Drawing::LinearGradient* l
     ::g::Uno::Collections::Dictionary__set_Item_fn(uPtr(_gradientBrushes), lg, AndroidSurface::CreateLinearGradient(colors, offsets));
 }
 
-// private Java.Object ToMatrix(float[] matrix) [instance] :573
+// private Java.Object ToMatrix(float[] matrix) [instance] :579
 ::g::Java::Object* AndroidSurface::ToMatrix(uArray* matrix)
 {
     {
         INIT_JNI;
         jclass __cls = JniHelper::GetNativeExternClass();
-        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "ToMatrix305", "(Lcom/uno/UnoObject;Lcom/uno/FloatArray;)Ljava/lang/Object;");
+        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "ToMatrix297", "(Lcom/uno/UnoObject;Lcom/uno/FloatArray;)Ljava/lang/Object;");
         uObject* _uthis=this;
         jobject _this_ = ::g::Uno::Compiler::ExportTargetInterop::Foreign::Android::JavaUnoObject::Box6(_uthis);
         uArray* _umatrix=matrix;
@@ -761,7 +761,7 @@ void AndroidSurface::PrepareLinearGradient(::g::Fuse::Drawing::LinearGradient* l
     
 }
 
-// private Java.Object ToMatrix(float4x4 transform, float pixelsPerPoint) [instance] :561
+// private Java.Object ToMatrix(float4x4 transform, float pixelsPerPoint) [instance] :567
 ::g::Java::Object* AndroidSurface::ToMatrix1(::g::Uno::Float4x4 transform, float pixelsPerPoint)
 {
     uArray* matrix = uArray::Init<double>(::TYPES[11/*float[]*/], 9, transform.M11, transform.M21, transform.M41 * pixelsPerPoint, transform.M12, transform.M22, transform.M42 * pixelsPerPoint, transform.M14, transform.M24, transform.M44);
@@ -777,13 +777,13 @@ void AndroidSurface::VerifyCreated()
         U_THROW(::g::Uno::Exception::New2(::STRINGS[10/*"Object disp...*/]));
 }
 
-// private static void ConcatTransform(Java.Object cp, Java.Object m) [static] :532
+// private static void ConcatTransform(Java.Object cp, Java.Object m) [static] :538
 void AndroidSurface::ConcatTransform(::g::Java::Object* cp, ::g::Java::Object* m)
 {
     {
         INIT_JNI;
         jclass __cls = JniHelper::GetNativeExternClass();
-        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "ConcatTransform289", "(Ljava/lang/Object;Ljava/lang/Object;)V");
+        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "ConcatTransform281", "(Ljava/lang/Object;Ljava/lang/Object;)V");
         ::g::Java::Object* _ucp=cp;
         jobject _cp = (_ucp==NULL ? NULL : U_JNIVAR->NewLocalRef(::g::Android::Base::Wrappers::IJWrapper::_GetJavaObject(uInterface((uObject*)_ucp, ::g::Android::Base::Wrappers::IJWrapper_typeof()))));
         ::g::Java::Object* _um=m;
@@ -798,13 +798,13 @@ void AndroidSurface::ConcatTransform(::g::Java::Object* cp, ::g::Java::Object* m
     
 }
 
-// private static Java.Object CreateFillPaint() [static] :581
+// private static Java.Object CreateFillPaint() [static] :587
 ::g::Java::Object* AndroidSurface::CreateFillPaint()
 {
     {
         INIT_JNI;
         jclass __cls = JniHelper::GetNativeExternClass();
-        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "CreateFillPaint290", "()Ljava/lang/Object;");
+        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "CreateFillPaint282", "()Ljava/lang/Object;");
         jobject __jresult = U_JNIVAR->CallStaticObjectMethod(__cls,__mtd);
         ::g::Java::Object* __result = (::g::Java::Object*)::g::Android::Base::Wrappers::JavaObjectHelper::JObjectToJWrapper(__jresult, false);
         ::g::Android::Base::JNI::CheckException();
@@ -819,7 +819,7 @@ void AndroidSurface::ConcatTransform(::g::Java::Object* cp, ::g::Java::Object* m
     {
         INIT_JNI;
         jclass __cls = JniHelper::GetNativeExternClass();
-        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "CreateLinearGradient291", "(Lcom/uno/IntArray;Lcom/uno/FloatArray;)Ljava/lang/Object;");
+        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "CreateLinearGradient283", "(Lcom/uno/IntArray;Lcom/uno/FloatArray;)Ljava/lang/Object;");
         uArray* _ucolors=colors;
         jobject _colors = ::g::Uno::Compiler::ExportTargetInterop::Foreign::Android::JavaUnoObject::Box4(_ucolors);
         uArray* _ustops=stops;
@@ -840,7 +840,7 @@ void AndroidSurface::ConcatTransform(::g::Java::Object* cp, ::g::Java::Object* m
     {
         INIT_JNI;
         jclass __cls = JniHelper::GetNativeExternClass();
-        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "CreateStrokedPaint292", "(FIIF)Ljava/lang/Object;");
+        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "CreateStrokedPaint284", "(FIIF)Ljava/lang/Object;");
         float _uwidth=width;
         jfloat _width = (jfloat)_uwidth;
         int32_t _ufjoin=fjoin;
@@ -867,7 +867,7 @@ void AndroidSurface::FillPathImage(::g::Java::Object* cp, ::g::Java::Object* pat
     {
         INIT_JNI;
         jclass __cls = JniHelper::GetNativeExternClass();
-        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "FillPathImage293", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;FFFFFFZLjava/lang/Object;)V");
+        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "FillPathImage285", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;FFFFFFZLjava/lang/Object;)V");
         ::g::Java::Object* _ucp=cp;
         jobject _cp = (_ucp==NULL ? NULL : U_JNIVAR->NewLocalRef(::g::Android::Base::Wrappers::IJWrapper::_GetJavaObject(uInterface((uObject*)_ucp, ::g::Android::Base::Wrappers::IJWrapper_typeof()))));
         ::g::Java::Object* _upathAsObject=pathAsObject;
@@ -915,7 +915,7 @@ void AndroidSurface::FillPathLinearGradient(::g::Java::Object* cp, ::g::Java::Ob
     {
         INIT_JNI;
         jclass __cls = JniHelper::GetNativeExternClass();
-        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "FillPathLinearGradient294", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;FFFFZLjava/lang/Object;)V");
+        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "FillPathLinearGradient286", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;FFFFZLjava/lang/Object;)V");
         ::g::Java::Object* _ucp=cp;
         jobject _cp = (_ucp==NULL ? NULL : U_JNIVAR->NewLocalRef(::g::Android::Base::Wrappers::IJWrapper::_GetJavaObject(uInterface((uObject*)_ucp, ::g::Android::Base::Wrappers::IJWrapper_typeof()))));
         ::g::Java::Object* _upath=path;
@@ -957,7 +957,7 @@ void AndroidSurface::FillPathSolidColor(::g::Java::Object* cp, ::g::Java::Object
     {
         INIT_JNI;
         jclass __cls = JniHelper::GetNativeExternClass();
-        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "FillPathSolidColor295", "(Ljava/lang/Object;Ljava/lang/Object;IZLjava/lang/Object;)V");
+        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "FillPathSolidColor287", "(Ljava/lang/Object;Ljava/lang/Object;IZLjava/lang/Object;)V");
         ::g::Java::Object* _ucp=cp;
         jobject _cp = (_ucp==NULL ? NULL : U_JNIVAR->NewLocalRef(::g::Android::Base::Wrappers::IJWrapper::_GetJavaObject(uInterface((uObject*)_ucp, ::g::Android::Base::Wrappers::IJWrapper_typeof()))));
         ::g::Java::Object* _upathAsObject=pathAsObject;
@@ -987,7 +987,7 @@ void AndroidSurface::FillPathSolidColor(::g::Java::Object* cp, ::g::Java::Object
     {
         INIT_JNI;
         jclass __cls = JniHelper::GetNativeExternClass();
-        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "NewContext296", "()Ljava/lang/Object;");
+        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "NewContext288", "()Ljava/lang/Object;");
         jobject __jresult = U_JNIVAR->CallStaticObjectMethod(__cls,__mtd);
         ::g::Java::Object* __result = (::g::Java::Object*)::g::Android::Base::Wrappers::JavaObjectHelper::JObjectToJWrapper(__jresult, false);
         ::g::Android::Base::JNI::CheckException();
@@ -996,13 +996,13 @@ void AndroidSurface::FillPathSolidColor(::g::Java::Object* cp, ::g::Java::Object
     
 }
 
-// private static void PathClose(Java.Object pathAsObject) [static] :518
+// private static void PathClose(Java.Object pathAsObject) [static] :524
 void AndroidSurface::PathClose(::g::Java::Object* pathAsObject)
 {
     {
         INIT_JNI;
         jclass __cls = JniHelper::GetNativeExternClass();
-        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "PathClose297", "(Ljava/lang/Object;)V");
+        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "PathClose289", "(Ljava/lang/Object;)V");
         ::g::Java::Object* _upathAsObject=pathAsObject;
         jobject _pathAsObject = (_upathAsObject==NULL ? NULL : U_JNIVAR->NewLocalRef(::g::Android::Base::Wrappers::IJWrapper::_GetJavaObject(uInterface((uObject*)_upathAsObject, ::g::Android::Base::Wrappers::IJWrapper_typeof()))));
         U_JNIVAR->CallStaticVoidMethod(__cls,__mtd,_pathAsObject);
@@ -1014,13 +1014,13 @@ void AndroidSurface::PathClose(::g::Java::Object* pathAsObject)
     
 }
 
-// private static Java.Object PathCreateMutable() [static] :491
+// private static Java.Object PathCreateMutable() [static] :497
 ::g::Java::Object* AndroidSurface::PathCreateMutable()
 {
     {
         INIT_JNI;
         jclass __cls = JniHelper::GetNativeExternClass();
-        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "PathCreateMutable298", "()Ljava/lang/Object;");
+        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "PathCreateMutable290", "()Ljava/lang/Object;");
         jobject __jresult = U_JNIVAR->CallStaticObjectMethod(__cls,__mtd);
         ::g::Java::Object* __result = (::g::Java::Object*)::g::Android::Base::Wrappers::JavaObjectHelper::JObjectToJWrapper(__jresult, false);
         ::g::Android::Base::JNI::CheckException();
@@ -1029,13 +1029,13 @@ void AndroidSurface::PathClose(::g::Java::Object* pathAsObject)
     
 }
 
-// private static void PathCurveTo(Java.Object pathAsObject, float x, float y, float ax, float ay, float bx, float by) [static] :504
+// private static void PathCurveTo(Java.Object pathAsObject, float x, float y, float ax, float ay, float bx, float by) [static] :510
 void AndroidSurface::PathCurveTo(::g::Java::Object* pathAsObject, float x, float y, float ax, float ay, float bx, float by)
 {
     {
         INIT_JNI;
         jclass __cls = JniHelper::GetNativeExternClass();
-        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "PathCurveTo299", "(Ljava/lang/Object;FFFFFF)V");
+        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "PathCurveTo291", "(Ljava/lang/Object;FFFFFF)V");
         ::g::Java::Object* _upathAsObject=pathAsObject;
         jobject _pathAsObject = (_upathAsObject==NULL ? NULL : U_JNIVAR->NewLocalRef(::g::Android::Base::Wrappers::IJWrapper::_GetJavaObject(uInterface((uObject*)_upathAsObject, ::g::Android::Base::Wrappers::IJWrapper_typeof()))));
         float _ux=x;
@@ -1065,13 +1065,13 @@ void AndroidSurface::PathCurveTo(::g::Java::Object* pathAsObject, float x, float
     
 }
 
-// private static void PathLineTo(Java.Object pathAsObject, float x, float y) [static] :511
+// private static void PathLineTo(Java.Object pathAsObject, float x, float y) [static] :517
 void AndroidSurface::PathLineTo(::g::Java::Object* pathAsObject, float x, float y)
 {
     {
         INIT_JNI;
         jclass __cls = JniHelper::GetNativeExternClass();
-        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "PathLineTo300", "(Ljava/lang/Object;FF)V");
+        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "PathLineTo292", "(Ljava/lang/Object;FF)V");
         ::g::Java::Object* _upathAsObject=pathAsObject;
         jobject _pathAsObject = (_upathAsObject==NULL ? NULL : U_JNIVAR->NewLocalRef(::g::Android::Base::Wrappers::IJWrapper::_GetJavaObject(uInterface((uObject*)_upathAsObject, ::g::Android::Base::Wrappers::IJWrapper_typeof()))));
         float _ux=x;
@@ -1089,13 +1089,13 @@ void AndroidSurface::PathLineTo(::g::Java::Object* pathAsObject, float x, float 
     
 }
 
-// private static void PathMoveTo(Java.Object pathAsObject, float x, float y) [static] :497
+// private static void PathMoveTo(Java.Object pathAsObject, float x, float y) [static] :503
 void AndroidSurface::PathMoveTo(::g::Java::Object* pathAsObject, float x, float y)
 {
     {
         INIT_JNI;
         jclass __cls = JniHelper::GetNativeExternClass();
-        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "PathMoveTo301", "(Ljava/lang/Object;FF)V");
+        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "PathMoveTo293", "(Ljava/lang/Object;FF)V");
         ::g::Java::Object* _upathAsObject=pathAsObject;
         jobject _pathAsObject = (_upathAsObject==NULL ? NULL : U_JNIVAR->NewLocalRef(::g::Android::Base::Wrappers::IJWrapper::_GetJavaObject(uInterface((uObject*)_upathAsObject, ::g::Android::Base::Wrappers::IJWrapper_typeof()))));
         float _ux=x;
@@ -1113,13 +1113,13 @@ void AndroidSurface::PathMoveTo(::g::Java::Object* pathAsObject, float x, float 
     
 }
 
-// private static void recycleBitmap(Java.Object bit) [static] :549
+// private static void recycleBitmap(Java.Object bit) [static] :555
 void AndroidSurface::recycleBitmap(::g::Java::Object* bit)
 {
     {
         INIT_JNI;
         jclass __cls = JniHelper::GetNativeExternClass();
-        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "recycleBitmap302", "(Ljava/lang/Object;)V");
+        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "recycleBitmap294", "(Ljava/lang/Object;)V");
         ::g::Java::Object* _ubit=bit;
         jobject _bit = (_ubit==NULL ? NULL : U_JNIVAR->NewLocalRef(::g::Android::Base::Wrappers::IJWrapper::_GetJavaObject(uInterface((uObject*)_ubit, ::g::Android::Base::Wrappers::IJWrapper_typeof()))));
         U_JNIVAR->CallStaticVoidMethod(__cls,__mtd,_bit);
@@ -1131,13 +1131,13 @@ void AndroidSurface::recycleBitmap(::g::Java::Object* bit)
     
 }
 
-// private static void RestoreContextState(Java.Object cp) [static] :542
+// private static void RestoreContextState(Java.Object cp) [static] :548
 void AndroidSurface::RestoreContextState(::g::Java::Object* cp)
 {
     {
         INIT_JNI;
         jclass __cls = JniHelper::GetNativeExternClass();
-        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "RestoreContextState303", "(Ljava/lang/Object;)V");
+        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "RestoreContextState295", "(Ljava/lang/Object;)V");
         ::g::Java::Object* _ucp=cp;
         jobject _cp = (_ucp==NULL ? NULL : U_JNIVAR->NewLocalRef(::g::Android::Base::Wrappers::IJWrapper::_GetJavaObject(uInterface((uObject*)_ucp, ::g::Android::Base::Wrappers::IJWrapper_typeof()))));
         U_JNIVAR->CallStaticVoidMethod(__cls,__mtd,_cp);
@@ -1149,13 +1149,13 @@ void AndroidSurface::RestoreContextState(::g::Java::Object* cp)
     
 }
 
-// private static int SaveContextState(Java.Object cp) [static] :525
+// private static int SaveContextState(Java.Object cp) [static] :531
 int32_t AndroidSurface::SaveContextState(::g::Java::Object* cp)
 {
     {
         INIT_JNI;
         jclass __cls = JniHelper::GetNativeExternClass();
-        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "SaveContextState304", "(Ljava/lang/Object;)I");
+        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "SaveContextState296", "(Ljava/lang/Object;)I");
         ::g::Java::Object* _ucp=cp;
         jobject _cp = (_ucp==NULL ? NULL : U_JNIVAR->NewLocalRef(::g::Android::Base::Wrappers::IJWrapper::_GetJavaObject(uInterface((uObject*)_ucp, ::g::Android::Base::Wrappers::IJWrapper_typeof()))));
         jint __jresult = U_JNIVAR->CallStaticIntMethod(__cls,__mtd,_cp);
@@ -1168,7 +1168,7 @@ int32_t AndroidSurface::SaveContextState(::g::Java::Object* cp)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing\1.7.4\Enums.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing\1.8.1\Enums.uno
 // --------------------------------------------------------------------------------
 
 // public enum Antialiasing :23
@@ -1184,7 +1184,7 @@ uEnumType* Antialiasing_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing\1.7.4\Brush.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing\1.8.1\Brush.uno
 // --------------------------------------------------------------------------------
 
 // public abstract class Brush :32
@@ -1192,7 +1192,7 @@ uEnumType* Antialiasing_typeof()
 static void Brush_build(uType* type)
 {
     ::STRINGS[11] = uString::Const("Brush is not pinned, preparation invalid");
-    ::STRINGS[12] = uString::Const("C:\\Users\\borde_000\\AppData\\Local\\Fusetools\\Packages\\Fuse.Drawing\\1.7.4\\Brush.uno");
+    ::STRINGS[12] = uString::Const("C:\\Users\\borde_000\\AppData\\Local\\Fusetools\\Packages\\Fuse.Drawing\\1.8.1\\Brush.uno");
     ::STRINGS[7] = uString::Const("Prepare");
     type->SetFields(2,
         ::g::Uno::Int_typeof(), offsetof(Brush, _pinCount), 0);
@@ -1318,7 +1318,7 @@ void Brush::Unpin()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing\1.7.4\Brush.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing\1.8.1\Brush.uno
 // --------------------------------------------------------------------------------
 
 // public sealed class BrushConverter :9
@@ -1423,7 +1423,7 @@ BrushConverter* BrushConverter::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing\1.7.4\Colors.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing\1.8.1\Colors.uno
 // ---------------------------------------------------------------------------------
 
 // public static class Brushes :26
@@ -1524,7 +1524,7 @@ uSStrong< ::g::Fuse::Drawing::StaticSolidColor*> Brushes::Teal_;
 uSStrong< ::g::Fuse::Drawing::StaticSolidColor*> Brushes::Aqua_;
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing\1.7.4\Colors.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing\1.8.1\Colors.uno
 // ---------------------------------------------------------------------------------
 
 // public static class Colors :5
@@ -1625,7 +1625,7 @@ uClassType* Colors_typeof()
 ::g::Uno::Float4 Colors::Aqua_;
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing.Surface\1.7.4\DrawObjectWatcher.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing.Surface\1.8.1\DrawObjectWatcher.uno
 // ----------------------------------------------------------------------------------------------------
 
 // internal sealed class DrawObjectWatcher :21
@@ -1842,7 +1842,7 @@ void DrawObjectWatcher::Sync()
 
     if (!_rooted)
     {
-        ::g::Fuse::Diagnostics::InternalError(uString::Const("Sync while not rooted"), this, uString::Const("C:\\Users\\borde_000\\AppData\\Local\\Fusetools\\Packages\\Fuse.Drawing.Surface\\1.7.4\\DrawObjectWatcher.uno"), 39, uString::Const("Sync"));
+        ::g::Fuse::Diagnostics::InternalError(uString::Const("Sync while not rooted"), this, uString::Const("C:\\Users\\borde_000\\AppData\\Local\\Fusetools\\Packages\\Fuse.Drawing.Surface\\1.8.1\\DrawObjectWatcher.uno"), 39, uString::Const("Sync"));
         return;
     }
 
@@ -1881,7 +1881,7 @@ DrawObjectWatcher* DrawObjectWatcher::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Elements\1.7.4\Drawing\ImageFill.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Elements\1.8.1\Drawing\ImageFill.uno
 // ---------------------------------------------------------------------------------------------
 
 // public struct ImageFill.DrawParams :108
@@ -1928,7 +1928,7 @@ uStructType* ImageFill__DrawParams_typeof()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing\1.7.4\Brush.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing\1.8.1\Brush.uno
 // --------------------------------------------------------------------------------
 
 // public abstract class DynamicBrush :81
@@ -2019,7 +2019,7 @@ void DynamicBrush::Opacity(float value)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing\1.7.4\Enums.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing\1.8.1\Enums.uno
 // --------------------------------------------------------------------------------
 
 // public enum FillRule :18
@@ -2035,7 +2035,7 @@ uEnumType* FillRule_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing\1.7.4\Brushes\LinearGradient.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing\1.8.1\Brushes\LinearGradient.uno
 // -------------------------------------------------------------------------------------------------
 
 // public sealed class GradientStop :11
@@ -2202,7 +2202,7 @@ GradientStop* GradientStop::New3(::g::Uno::Float4 color, float offset)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing.Surface\1.7.4\Android\GraphicsSurface.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing.Surface\1.8.1\Android\GraphicsSurface.uno
 // ----------------------------------------------------------------------------------------------------------
 
 // internal sealed extern class GraphicsSurface :41
@@ -2344,7 +2344,7 @@ void GraphicsSurface::BeginImpl(::g::Java::Object* _context, int32_t width, int3
     {
         INIT_JNI;
         jclass __cls = JniHelper::GetNativeExternClass();
-        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "BeginImpl306", "(Ljava/lang/Object;III)V");
+        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "BeginImpl298", "(Ljava/lang/Object;III)V");
         ::g::Java::Object* __u_context=_context;
         jobject ___context = (__u_context==NULL ? NULL : U_JNIVAR->NewLocalRef(::g::Android::Base::Wrappers::IJWrapper::_GetJavaObject(uInterface((uObject*)__u_context, ::g::Android::Base::Wrappers::IJWrapper_typeof()))));
         int32_t __uwidth=width;
@@ -2371,7 +2371,7 @@ void GraphicsSurface::EndImpl(::g::Java::Object* context)
     {
         INIT_JNI;
         jclass __cls = JniHelper::GetNativeExternClass();
-        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "EndImpl307", "(Ljava/lang/Object;)V");
+        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "EndImpl299", "(Ljava/lang/Object;)V");
         ::g::Java::Object* _ucontext=context;
         jobject _context = (_ucontext==NULL ? NULL : U_JNIVAR->NewLocalRef(::g::Android::Base::Wrappers::IJWrapper::_GetJavaObject(uInterface((uObject*)_ucontext, ::g::Android::Base::Wrappers::IJWrapper_typeof()))));
         U_JNIVAR->CallStaticVoidMethod(__cls,__mtd,_context);
@@ -2389,7 +2389,7 @@ void GraphicsSurface::LoadBitmap(::g::Java::Object* context, int32_t width, int3
     {
         INIT_JNI;
         jclass __cls = JniHelper::GetNativeExternClass();
-        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "LoadBitmap308", "(Ljava/lang/Object;II)V");
+        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "LoadBitmap300", "(Ljava/lang/Object;II)V");
         ::g::Java::Object* _ucontext=context;
         jobject _context = (_ucontext==NULL ? NULL : U_JNIVAR->NewLocalRef(::g::Android::Base::Wrappers::IJWrapper::_GetJavaObject(uInterface((uObject*)_ucontext, ::g::Android::Base::Wrappers::IJWrapper_typeof()))));
         int32_t _uwidth=width;
@@ -2413,7 +2413,7 @@ void GraphicsSurface::LoadBitmap(::g::Java::Object* context, int32_t width, int3
     {
         INIT_JNI;
         jclass __cls = JniHelper::GetNativeExternClass();
-        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "LoadImage309", "(III)Ljava/lang/Object;");
+        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "LoadImage301", "(III)Ljava/lang/Object;");
         int32_t _uglTextureId=glTextureId;
         jint _glTextureId = (jint)_uglTextureId;
         int32_t _uwidth=width;
@@ -2440,7 +2440,7 @@ GraphicsSurface* GraphicsSurface::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing.Surface\1.7.4\DrawObjectWatcher.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing.Surface\1.8.1\DrawObjectWatcher.uno
 // ----------------------------------------------------------------------------------------------------
 
 // internal abstract interface IDrawObjectWatcherFeedback :10
@@ -2455,7 +2455,7 @@ uInterfaceType* IDrawObjectWatcherFeedback_typeof()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Elements\1.7.4\Drawing\ImageFill.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Elements\1.8.1\Drawing\ImageFill.uno
 // ---------------------------------------------------------------------------------------------
 
 // public sealed class ImageFill :26
@@ -3086,7 +3086,7 @@ ImageFill* ImageFill::New2()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing.Surface\1.7.4\SurfaceManager.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing.Surface\1.8.1\SurfaceManager.uno
 // -------------------------------------------------------------------------------------------------
 
 // internal abstract interface INativeSurfaceOwner :6
@@ -3101,7 +3101,7 @@ uInterfaceType* INativeSurfaceOwner_typeof()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing\1.7.4\Brushes\SolidColor.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing\1.8.1\Brushes\SolidColor.uno
 // ---------------------------------------------------------------------------------------------
 
 // public abstract interface ISolidColor :8
@@ -3118,7 +3118,7 @@ uInterfaceType* ISolidColor_typeof()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing.Surface\1.7.4\Surface.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing.Surface\1.8.1\Surface.uno
 // ------------------------------------------------------------------------------------------
 
 // public abstract interface ISurfaceDrawable :158
@@ -3137,7 +3137,7 @@ uInterfaceType* ISurfaceDrawable_typeof()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing.Surface\1.7.4\SurfaceManager.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing.Surface\1.8.1\SurfaceManager.uno
 // -------------------------------------------------------------------------------------------------
 
 // internal abstract interface ISurfaceProvider :95
@@ -3152,7 +3152,7 @@ uInterfaceType* ISurfaceProvider_typeof()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing.Surface\1.7.4\DrawObjectWatcher.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing.Surface\1.8.1\DrawObjectWatcher.uno
 // ----------------------------------------------------------------------------------------------------
 
 // private sealed class DrawObjectWatcher.Item :23
@@ -3208,7 +3208,7 @@ DrawObjectWatcher__Item* DrawObjectWatcher__Item::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing\1.7.4\Brushes\LinearGradient.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing\1.8.1\Brushes\LinearGradient.uno
 // -------------------------------------------------------------------------------------------------
 
 // public sealed class LinearGradient :104
@@ -3244,7 +3244,7 @@ static void LinearGradient_build(uType* type)
     ::TYPES[16] = ::g::Uno::Collections::ICollection_typeof()->MakeType(::g::Fuse::Drawing::GradientStop_typeof(), NULL);
     ::TYPES[17] = ::g::Uno::Collections::IList_typeof()->MakeType(::g::Fuse::Drawing::GradientStop_typeof(), NULL);
     ::TYPES[18] = uObject_typeof()->Array();
-    ::TYPES[19] = ::g::Uno::Collections::EnumerableExtensions_typeof()->MakeMethod(9/*ToArray<Fuse.Drawing.GradientStop>*/, ::g::Fuse::Drawing::GradientStop_typeof(), NULL);
+    ::TYPES[19] = ::g::Uno::Collections::EnumerableExtensions_typeof()->MakeMethod(8/*ToArray<Fuse.Drawing.GradientStop>*/, ::g::Fuse::Drawing::GradientStop_typeof(), NULL);
     type->SetDependencies(
         ::g::Fuse::Drawing::LinearGradientDrawable_typeof());
     type->SetInterfaces(
@@ -3709,7 +3709,7 @@ void LinearGradient::ValidateStopsSorted(uObject* stops)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing\1.7.4\Brushes\LinearGradient.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing\1.8.1\Brushes\LinearGradient.uno
 // -------------------------------------------------------------------------------------------------
 
 // internal sealed class LinearGradientDrawable :340
@@ -3882,7 +3882,7 @@ LinearGradientDrawable* LinearGradientDrawable::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing\1.7.4\Brushes\LinearGradient.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing\1.8.1\Brushes\LinearGradient.uno
 // -------------------------------------------------------------------------------------------------
 
 // public enum LinearGradientInterpolation :57
@@ -3898,7 +3898,7 @@ uEnumType* LinearGradientInterpolation_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing\1.7.4\Enums.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing\1.8.1\Enums.uno
 // --------------------------------------------------------------------------------
 
 // public enum LineCap :4
@@ -3915,7 +3915,7 @@ uEnumType* LineCap_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing\1.7.4\Enums.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing\1.8.1\Enums.uno
 // --------------------------------------------------------------------------------
 
 // public enum LineJoin :11
@@ -3932,7 +3932,7 @@ uEnumType* LineJoin_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing.Surface\1.7.4\LineMetrics.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing.Surface\1.8.1\LineMetrics.uno
 // ----------------------------------------------------------------------------------------------
 
 // public static class LineMetrics :8
@@ -3969,7 +3969,7 @@ void LineMetrics__GetBounds_fn(uObject* segments, ::g::Uno::Rect* __retval)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing.Surface\1.7.4\LineMetrics.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing.Surface\1.8.1\LineMetrics.uno
 // ----------------------------------------------------------------------------------------------
 
 // internal sealed class LineMetricsImpl :16
@@ -4193,7 +4193,7 @@ LineMetricsImpl* LineMetricsImpl::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing.Surface\1.7.4\LineParser.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing.Surface\1.8.1\LineParser.uno
 // ---------------------------------------------------------------------------------------------
 
 // public sealed class LineParser :6
@@ -4201,7 +4201,7 @@ LineMetricsImpl* LineMetricsImpl::New1()
 static void LineParser_build(uType* type)
 {
     ::STRINGS[23] = uString::Const("Unsupported SVG Path data");
-    ::STRINGS[24] = uString::Const("C:\\Users\\borde_000\\AppData\\Local\\Fusetools\\Packages\\Fuse.Drawing.Surface\\1.7.4\\LineParser.uno");
+    ::STRINGS[24] = uString::Const("C:\\Users\\borde_000\\AppData\\Local\\Fusetools\\Packages\\Fuse.Drawing.Surface\\1.8.1\\LineParser.uno");
     ::STRINGS[25] = uString::Const("ParseSVGPath");
     ::TYPES[22] = ::g::Uno::Exception_typeof();
     type->Reflection.SetFunctions(2,
@@ -4277,7 +4277,7 @@ void LineParser::ParseSVGPath(uString* data, uObject* segments)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing.Surface\1.7.4\LineSegment.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing.Surface\1.8.1\LineSegment.uno
 // ----------------------------------------------------------------------------------------------
 
 // public struct LineSegment :37
@@ -4513,7 +4513,7 @@ uArray* LineSegment::deCasteljau(uArray* pts, float t)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing.Surface\1.7.4\LineSegment.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing.Surface\1.8.1\LineSegment.uno
 // ----------------------------------------------------------------------------------------------
 
 // public enum LineSegmentFlags :27
@@ -4530,7 +4530,7 @@ uEnumType* LineSegmentFlags_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing.Surface\1.7.4\LineSegments.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing.Surface\1.8.1\LineSegments.uno
 // -----------------------------------------------------------------------------------------------
 
 // public sealed class LineSegments :9
@@ -4951,7 +4951,7 @@ LineSegments* LineSegments::New2(uObject* segments)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing.Surface\1.7.4\LineSegment.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing.Surface\1.8.1\LineSegment.uno
 // ----------------------------------------------------------------------------------------------
 
 // public enum LineSegmentType :9
@@ -4970,7 +4970,7 @@ uEnumType* LineSegmentType_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing.Surface\1.7.4\LineSplitter.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing.Surface\1.8.1\LineSplitter.uno
 // -----------------------------------------------------------------------------------------------
 
 // internal sealed class LineSplitter :8
@@ -5299,7 +5299,7 @@ LineSplitter* LineSplitter::New1(uObject* segments)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing.Surface\1.7.4\LineSplitter.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing.Surface\1.8.1\LineSplitter.uno
 // -----------------------------------------------------------------------------------------------
 
 // private struct LineSplitter.LSInfo :12
@@ -5329,7 +5329,7 @@ uStructType* LineSplitter__LSInfo_typeof()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing.Surface\1.7.4\Android\NativeSurface.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing.Surface\1.8.1\Android\NativeSurface.uno
 // --------------------------------------------------------------------------------------------------------
 
 // internal sealed extern class NativeSurface :41
@@ -5444,7 +5444,7 @@ void NativeSurface::Begin1(::g::Java::Object* canvas, float pixelsPerPoint)
     {
         INIT_JNI;
         jclass __cls = JniHelper::GetNativeExternClass();
-        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "DummyBitmap310", "()Ljava/lang/Object;");
+        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "DummyBitmap302", "()Ljava/lang/Object;");
         jobject __jresult = U_JNIVAR->CallStaticObjectMethod(__cls,__mtd);
         ::g::Java::Object* __result = (::g::Java::Object*)::g::Android::Base::Wrappers::JavaObjectHelper::JObjectToJWrapper(__jresult, false);
         ::g::Android::Base::JNI::CheckException();
@@ -5467,7 +5467,7 @@ void NativeSurface::SetCanvas(::g::Java::Object* context, ::g::Java::Object* can
     {
         INIT_JNI;
         jclass __cls = JniHelper::GetNativeExternClass();
-        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "SetCanvas311", "(Ljava/lang/Object;Ljava/lang/Object;)V");
+        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "SetCanvas303", "(Ljava/lang/Object;Ljava/lang/Object;)V");
         ::g::Java::Object* _ucontext=context;
         jobject _context = (_ucontext==NULL ? NULL : U_JNIVAR->NewLocalRef(::g::Android::Base::Wrappers::IJWrapper::_GetJavaObject(uInterface((uObject*)_ucontext, ::g::Android::Base::Wrappers::IJWrapper_typeof()))));
         ::g::Java::Object* _ucanvas=canvas;
@@ -5483,7 +5483,7 @@ void NativeSurface::SetCanvas(::g::Java::Object* context, ::g::Java::Object* can
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Elements\1.7.4\Drawing\ImageFill.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Elements\1.8.1\Drawing\ImageFill.uno
 // ---------------------------------------------------------------------------------------------
 
 // internal sealed class RepeatBaker :309
@@ -5591,7 +5591,7 @@ RepeatBaker* RepeatBaker::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing\1.7.4\Enums.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing\1.8.1\Enums.uno
 // --------------------------------------------------------------------------------
 
 // public enum ResampleMode :28
@@ -5608,7 +5608,7 @@ uEnumType* ResampleMode_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing.Surface\1.7.4\LineSplitter.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing.Surface\1.8.1\LineSplitter.uno
 // -----------------------------------------------------------------------------------------------
 
 // private struct LineSplitter.SegmentAt :197
@@ -5637,7 +5637,7 @@ uStructType* LineSplitter__SegmentAt_typeof()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing\1.7.4\Brushes\SolidColor.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing\1.8.1\Brushes\SolidColor.uno
 // ---------------------------------------------------------------------------------------------
 
 // public sealed class SolidColor :13
@@ -5808,7 +5808,7 @@ SolidColor* SolidColor::New3(::g::Uno::Float4 color)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing\1.7.4\Brush.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing\1.8.1\Brush.uno
 // --------------------------------------------------------------------------------
 
 // public abstract class StaticBrush :79
@@ -5846,7 +5846,7 @@ void StaticBrush::ctor_2()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing\1.7.4\Brushes\SolidColor.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing\1.8.1\Brushes\SolidColor.uno
 // ---------------------------------------------------------------------------------------------
 
 // public sealed class StaticSolidColor :67
@@ -5927,7 +5927,7 @@ StaticSolidColor* StaticSolidColor::New2(::g::Uno::Float4 color)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing\1.7.4\Stroke.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing\1.8.1\Stroke.uno
 // ---------------------------------------------------------------------------------
 
 // public sealed class Stroke :21
@@ -6601,7 +6601,7 @@ Stroke* Stroke::New3(::g::Fuse::Drawing::Brush* brush, float width, int32_t line
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing\1.7.4\Stroke.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing\1.8.1\Stroke.uno
 // ---------------------------------------------------------------------------------
 
 // public enum StrokeAdjustment :6
@@ -6619,7 +6619,7 @@ uEnumType* StrokeAdjustment_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing\1.7.4\Stroke.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing\1.8.1\Stroke.uno
 // ---------------------------------------------------------------------------------
 
 // public enum StrokeAlignment :14
@@ -6636,7 +6636,7 @@ uEnumType* StrokeAlignment_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing.Surface\1.7.4\Surface.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing.Surface\1.8.1\Surface.uno
 // ------------------------------------------------------------------------------------------
 
 // public abstract class Surface :28
@@ -6644,7 +6644,7 @@ uEnumType* StrokeAlignment_typeof()
 static void Surface_build(uType* type)
 {
     ::STRINGS[36] = uString::Const("GLDraw called with mismatched elements");
-    ::STRINGS[37] = uString::Const("C:\\Users\\borde_000\\AppData\\Local\\Fusetools\\Packages\\Fuse.Drawing.Surface\\1.7.4\\Surface.uno");
+    ::STRINGS[37] = uString::Const("C:\\Users\\borde_000\\AppData\\Local\\Fusetools\\Packages\\Fuse.Drawing.Surface\\1.8.1\\Surface.uno");
     ::STRINGS[38] = uString::Const("Draw");
     ::TYPES[25] = ::g::Fuse::ICommonViewport_typeof();
     ::TYPES[26] = ::g::Fuse::Drawing::ISurfaceDrawable_typeof();
@@ -6782,7 +6782,7 @@ void Surface::SetElementSize(::g::Uno::Float2 size)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing.Surface\1.7.4\SurfaceManager.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing.Surface\1.8.1\SurfaceManager.uno
 // -------------------------------------------------------------------------------------------------
 
 // public static class SurfaceManager :11
@@ -6945,7 +6945,7 @@ void SurfaceManager::Release(uObject* owner, ::g::Fuse::Drawing::Surface* c)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing.Surface\1.7.4\Surface.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing.Surface\1.8.1\Surface.uno
 // ------------------------------------------------------------------------------------------
 
 // public abstract class SurfacePath :14
@@ -6979,7 +6979,7 @@ void SurfacePath::ctor_()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing.Surface\1.7.4\SurfaceUtil.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing.Surface\1.8.1\SurfaceUtil.uno
 // ----------------------------------------------------------------------------------------------
 
 // public static class SurfaceUtil :12
@@ -7241,7 +7241,7 @@ float SurfaceUtil::svgAngle(double ux, double uy, double vx, double vy)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing.Surface\1.7.4\LineParser.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing.Surface\1.8.1\LineParser.uno
 // ---------------------------------------------------------------------------------------------
 
 // internal sealed class SVGPathParser :24
@@ -7615,7 +7615,7 @@ SVGPathParser* SVGPathParser::New1(uString* data, uObject* segments)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing.Surface\1.7.4\LineParser.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing.Surface\1.8.1\LineParser.uno
 // ---------------------------------------------------------------------------------------------
 
 // internal sealed class Token :287
@@ -7671,7 +7671,7 @@ Token* Token::New1(int32_t first, bool hasAction)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing\1.7.4\WindingRules.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing\1.8.1\WindingRules.uno
 // ---------------------------------------------------------------------------------------
 
 // public static class WindingRules :3
@@ -7759,7 +7759,7 @@ bool WindingRules::Positive(int32_t n)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing\1.7.4\Enums.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing\1.8.1\Enums.uno
 // --------------------------------------------------------------------------------
 
 // public enum WrapMode :35

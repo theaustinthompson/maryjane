@@ -27,7 +27,7 @@ namespace Scripting{
 namespace JavaScript{
 namespace Test{
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Scripting.JavaScript\1.7.4\JSTest.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Scripting.JavaScript\1.8.1\JSTest.uno
 // ----------------------------------------------------------------------------------------------
 
 // public sealed class JSTest :16

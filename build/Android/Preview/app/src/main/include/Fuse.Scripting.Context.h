@@ -1,4 +1,4 @@
-// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/Fuse.Scripting/1.7.4/Context.uno.
+// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/Fuse.Scripting/1.8.1/Context.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -9,7 +9,6 @@ namespace g{namespace Fuse{namespace Scripting{struct Context;}}}
 namespace g{namespace Fuse{namespace Scripting{struct Function;}}}
 namespace g{namespace Fuse{namespace Scripting{struct ModuleResult;}}}
 namespace g{namespace Fuse{namespace Scripting{struct Object;}}}
-namespace g{namespace Uno{namespace Threading{struct ConcurrentDictionary;}}}
 
 namespace g{
 namespace Fuse{
@@ -47,7 +46,7 @@ void Context__TryGetGlobalModuleResult_fn(Context* __this, uString* id, ::g::Fus
 
 struct Context : uObject
 {
-    uStrong< ::g::Uno::Threading::ConcurrentDictionary*> _moduleResults;
+    uStrong<uObject*> _moduleResults;
     uStrong< ::g::Fuse::Scripting::Function*> _identity;
     uStrong< ::g::Fuse::Scripting::Function*> _parseJson;
     uStrong< ::g::Fuse::Scripting::Function*> _newObject;

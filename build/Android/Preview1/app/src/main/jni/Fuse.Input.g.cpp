@@ -130,7 +130,7 @@ namespace g{
 namespace Fuse{
 namespace Input{
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Input\Gesture.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Input\Gesture.uno
 // --------------------------------------------------------------------------------------
 
 // private sealed class Gestures.ActiveGesture :387
@@ -188,7 +188,7 @@ Gestures__ActiveGesture* Gestures__ActiveGesture::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Input\Pointer.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Input\Pointer.uno
 // --------------------------------------------------------------------------------------
 
 // internal sealed class Capture :49
@@ -357,7 +357,7 @@ Capture* Capture::New1(::g::Fuse::Visual* n, uObject* identity)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Input\Pointer.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Input\Pointer.uno
 // --------------------------------------------------------------------------------------
 
 // private sealed class Pointer.CaptureLockImpl :225
@@ -365,7 +365,7 @@ Capture* Capture::New1(::g::Fuse::Visual* n, uObject* identity)
 static void Pointer__CaptureLockImpl_build(uType* type)
 {
     ::STRINGS[1] = uString::Const("Inconsistent Count");
-    ::STRINGS[2] = uString::Const("C:\\Users\\borde_000\\AppData\\Local\\Fusetools\\Packages\\Fuse.Nodes\\1.7.4\\Input\\Pointer.uno");
+    ::STRINGS[2] = uString::Const("C:\\Users\\borde_000\\AppData\\Local\\Fusetools\\Packages\\Fuse.Nodes\\1.8.1\\Input\\Pointer.uno");
     ::STRINGS[3] = uString::Const("Dispose");
     type->SetDependencies(
         ::g::Fuse::Input::Pointer_typeof());
@@ -465,7 +465,7 @@ Pointer__CaptureLockImpl* Pointer__CaptureLockImpl::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Input\Pointer.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Input\Pointer.uno
 // --------------------------------------------------------------------------------------
 
 // public enum CaptureType :10
@@ -484,7 +484,7 @@ uEnumType* CaptureType_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Input\Pointer.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Input\Pointer.uno
 // --------------------------------------------------------------------------------------
 
 // public static class CaptureTypeHelper :35
@@ -533,7 +533,7 @@ bool CaptureTypeHelper::GainedCapture(int32_t prev, int32_t next)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Input\PointerEvents.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Input\PointerEvents.uno
 // --------------------------------------------------------------------------------------------
 
 // public abstract class CustomPointerEventArgs :4
@@ -576,7 +576,7 @@ void CustomPointerEventArgs::ctor_3(::g::Fuse::Input::PointerEventArgs* args, ::
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Input\Pointer.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Input\Pointer.uno
 // --------------------------------------------------------------------------------------
 
 // private sealed class Pointer.DefaultPointerEventResponder :722
@@ -739,7 +739,7 @@ Pointer__DefaultPointerEventResponder* Pointer__DefaultPointerEventResponder::Ne
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Input\Focus.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Input\Focus.uno
 // ------------------------------------------------------------------------------------
 
 // public partial static class Focus :24
@@ -1282,7 +1282,7 @@ void Focus::SetIsFocusable(::g::Fuse::Visual* n, bool focusable)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Input\Focus.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Input\Focus.uno
 // ------------------------------------------------------------------------------------
 
 // public delegate Fuse.Visual FocusDelegator() :16
@@ -1296,7 +1296,7 @@ uDelegateType* FocusDelegator_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Input\FocusEvents.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Input\FocusEvents.uno
 // ------------------------------------------------------------------------------------------
 
 // internal sealed class FocusGained :14
@@ -1358,7 +1358,7 @@ FocusGained* FocusGained::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Input\FocusEvents.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Input\FocusEvents.uno
 // ------------------------------------------------------------------------------------------
 
 // public sealed class FocusGainedArgs :7
@@ -1417,7 +1417,7 @@ FocusGainedArgs* FocusGainedArgs::New3(::g::Fuse::Visual* visual)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Input\FocusEvents.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Input\FocusEvents.uno
 // ------------------------------------------------------------------------------------------
 
 // public delegate void FocusGainedHandler(object sender, Fuse.Input.FocusGainedArgs args) :12
@@ -1433,7 +1433,7 @@ uDelegateType* FocusGainedHandler_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Input\FocusEvents.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Input\FocusEvents.uno
 // ------------------------------------------------------------------------------------------
 
 // internal sealed class FocusLost :32
@@ -1495,7 +1495,7 @@ FocusLost* FocusLost::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Input\FocusEvents.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Input\FocusEvents.uno
 // ------------------------------------------------------------------------------------------
 
 // public sealed class FocusLostArgs :25
@@ -1554,7 +1554,7 @@ FocusLostArgs* FocusLostArgs::New3(::g::Fuse::Visual* visual)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Input\FocusEvents.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Input\FocusEvents.uno
 // ------------------------------------------------------------------------------------------
 
 // public delegate void FocusLostHandler(object sender, Fuse.Input.FocusLostArgs args) :30
@@ -1570,7 +1570,7 @@ uDelegateType* FocusLostHandler_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Input\Focus.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Input\Focus.uno
 // ------------------------------------------------------------------------------------
 
 // public enum FocusNavigationDirection :8
@@ -1588,7 +1588,7 @@ uEnumType* FocusNavigationDirection_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Input\Focus.Prediction.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Input\Focus.Prediction.uno
 // -----------------------------------------------------------------------------------------------
 
 // internal static class FocusPrediction :24
@@ -1771,7 +1771,7 @@ void FocusPrediction__PreviousSibling1_fn(::g::Fuse::Visual* parent, ::g::Fuse::
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Input\Focus.Prediction.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Input\Focus.Prediction.uno
 // -----------------------------------------------------------------------------------------------
 
 // internal static class FocusPredictStrategy :7
@@ -1816,7 +1816,7 @@ void FocusPredictStrategy__Predict_fn(::g::Fuse::Visual* n, int32_t* direction, 
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Input\Gesture.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Input\Gesture.uno
 // --------------------------------------------------------------------------------------
 
 // public sealed class Gesture :139
@@ -1826,7 +1826,7 @@ static void Gesture_build(uType* type)
     ::STRINGS[8] = uString::Const("handler");
     ::STRINGS[9] = uString::Const("target");
     ::STRINGS[10] = uString::Const("Missing LostCapture on ");
-    ::STRINGS[11] = uString::Const("C:\\Users\\borde_000\\AppData\\Local\\Fusetools\\Packages\\Fuse.Nodes\\1.7.4\\Input\\Gesture.uno");
+    ::STRINGS[11] = uString::Const("C:\\Users\\borde_000\\AppData\\Local\\Fusetools\\Packages\\Fuse.Nodes\\1.8.1\\Input\\Gesture.uno");
     ::STRINGS[12] = uString::Const("OnPointerMoved");
     ::TYPES[0] = ::g::Uno::Collections::List_typeof()->MakeType(::g::Uno::Int_typeof(), NULL);
     ::TYPES[10] = ::g::Fuse::Input::IGesture_typeof();
@@ -2178,7 +2178,7 @@ float Gesture::HardCaptureSignificanceThreshold()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Input\Gesture.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Input\Gesture.uno
 // --------------------------------------------------------------------------------------
 
 // public enum GesturePriority :15
@@ -2197,7 +2197,7 @@ uEnumType* GesturePriority_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Input\Gesture.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Input\Gesture.uno
 // --------------------------------------------------------------------------------------
 
 // public struct GesturePriorityConfig :28
@@ -2260,7 +2260,7 @@ GesturePriorityConfig GesturePriorityConfig__New1(int32_t priority, float signif
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Input\Gesture.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Input\Gesture.uno
 // --------------------------------------------------------------------------------------
 
 // public enum GestureRequest :120
@@ -2277,7 +2277,7 @@ uEnumType* GestureRequest_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Input\Gesture.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Input\Gesture.uno
 // --------------------------------------------------------------------------------------
 
 // public static class Gestures :344
@@ -2573,7 +2573,7 @@ void Gestures::UpdateSignificance()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Input\Gesture.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Input\Gesture.uno
 // --------------------------------------------------------------------------------------
 
 // public enum GestureType :103
@@ -2592,7 +2592,7 @@ uEnumType* GestureType_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Input\HitTestHelpers.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Input\HitTestHelpers.uno
 // ---------------------------------------------------------------------------------------------
 
 // public static class HitTestHelpers :29
@@ -2630,7 +2630,7 @@ void HitTestHelpers__HitTestNearest_fn(::g::Fuse::Visual* root, ::g::Uno::Float2
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Input\Gesture.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Input\Gesture.uno
 // --------------------------------------------------------------------------------------
 
 // public abstract interface IGesture :50
@@ -2652,7 +2652,7 @@ uInterfaceType* IGesture_typeof()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Input\Focus.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Input\Focus.uno
 // ------------------------------------------------------------------------------------
 
 // public abstract interface INotifyFocus :18
@@ -2670,7 +2670,7 @@ uInterfaceType* INotifyFocus_typeof()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Input\Pointer.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Input\Pointer.uno
 // --------------------------------------------------------------------------------------
 
 // public abstract interface IPointerEventResponder :104
@@ -2690,7 +2690,7 @@ uInterfaceType* IPointerEventResponder_typeof()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Input\FocusEvents.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Input\FocusEvents.uno
 // ------------------------------------------------------------------------------------------
 
 // public sealed class IsFocusableChangedArgs :41
@@ -2749,7 +2749,7 @@ IsFocusableChangedArgs* IsFocusableChangedArgs::New3(::g::Fuse::Visual* visual)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Input\FocusEvents.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Input\FocusEvents.uno
 // ------------------------------------------------------------------------------------------
 
 // internal sealed class IsFocusableChangedEvent :48
@@ -2811,7 +2811,7 @@ IsFocusableChangedEvent* IsFocusableChangedEvent::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Input\FocusEvents.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Input\FocusEvents.uno
 // ------------------------------------------------------------------------------------------
 
 // public delegate void IsFocusableChangedHandler(object sender, Fuse.Input.IsFocusableChangedArgs args) :46
@@ -2827,7 +2827,7 @@ uDelegateType* IsFocusableChangedHandler_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Input\Keyboard.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Input\Keyboard.uno
 // ---------------------------------------------------------------------------------------
 
 // public static class Keyboard :88
@@ -3054,7 +3054,7 @@ void Keyboard::RemoveHandlers(::g::Fuse::Visual* visual, uDelegate* pressed, uDe
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Input\Keyboard.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Input\Keyboard.uno
 // ---------------------------------------------------------------------------------------
 
 // public abstract class KeyEventArgs :8
@@ -3229,7 +3229,7 @@ void KeyEventArgs::Key(int32_t value)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Input\Keyboard.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Input\Keyboard.uno
 // ---------------------------------------------------------------------------------------
 
 // internal sealed class KeyPressed :59
@@ -3291,7 +3291,7 @@ KeyPressed* KeyPressed::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Input\Keyboard.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Input\Keyboard.uno
 // ---------------------------------------------------------------------------------------
 
 // public sealed class KeyPressedArgs :46
@@ -3354,7 +3354,7 @@ KeyPressedArgs* KeyPressedArgs::New3(int32_t key, bool isMetaKeyPressed, bool is
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Input\Keyboard.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Input\Keyboard.uno
 // ---------------------------------------------------------------------------------------
 
 // public delegate void KeyPressedHandler(object sender, Fuse.Input.KeyPressedArgs args) :57
@@ -3370,7 +3370,7 @@ uDelegateType* KeyPressedHandler_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Input\Keyboard.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Input\Keyboard.uno
 // ---------------------------------------------------------------------------------------
 
 // internal sealed class KeyReleased :80
@@ -3432,7 +3432,7 @@ KeyReleased* KeyReleased::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Input\Keyboard.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Input\Keyboard.uno
 // ---------------------------------------------------------------------------------------
 
 // public sealed class KeyReleasedArgs :67
@@ -3495,7 +3495,7 @@ KeyReleasedArgs* KeyReleasedArgs::New3(int32_t key, bool isMetaKeyPressed, bool 
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Input\Keyboard.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Input\Keyboard.uno
 // ---------------------------------------------------------------------------------------
 
 // public delegate void KeyReleasedHandler(object sender, Fuse.Input.KeyReleasedArgs args) :78
@@ -3511,7 +3511,7 @@ uDelegateType* KeyReleasedHandler_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Input\Pointer.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Input\Pointer.uno
 // --------------------------------------------------------------------------------------
 
 // private sealed class Pointer.PELHolder :676
@@ -3564,7 +3564,7 @@ Pointer__PELHolder* Pointer__PELHolder::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Input\Pointer.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Input\Pointer.uno
 // --------------------------------------------------------------------------------------
 
 // private enum Pointer.PELStatus :670
@@ -3581,7 +3581,7 @@ uEnumType* Pointer__PELStatus_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Input\Pointer.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Input\Pointer.uno
 // --------------------------------------------------------------------------------------
 
 // public partial static class Pointer :125
@@ -4656,7 +4656,7 @@ void Pointer::EventResponder(uObject* value)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Input\PointerEvents.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Input\PointerEvents.uno
 // --------------------------------------------------------------------------------------------
 
 // internal sealed class PointerEntered :83
@@ -4718,7 +4718,7 @@ PointerEntered* PointerEntered::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Input\PointerEvents.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Input\PointerEvents.uno
 // --------------------------------------------------------------------------------------------
 
 // public sealed class PointerEnteredArgs :75
@@ -4776,7 +4776,7 @@ PointerEnteredArgs* PointerEnteredArgs::New3(::g::Fuse::Input::PointerEventData*
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Input\PointerEvents.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Input\PointerEvents.uno
 // --------------------------------------------------------------------------------------------
 
 // public delegate void PointerEnteredHandler(object sender, Fuse.Input.PointerEnteredArgs args) :81
@@ -4792,7 +4792,7 @@ uDelegateType* PointerEnteredHandler_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Input\PointerEventArgs.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Input\PointerEventArgs.uno
 // -----------------------------------------------------------------------------------------------
 
 // public abstract class PointerEventArgs :17
@@ -4800,7 +4800,7 @@ uDelegateType* PointerEnteredHandler_typeof()
 static void PointerEventArgs_build(uType* type)
 {
     ::STRINGS[13] = uString::Const("The capture system no longer supports distinct captures for Soft and Hard capture, instead treating the same identity/behaviour as a single capture. Old code will only work if it captured just one pointer, and followed the pattern of soft then hard capture on it (or just a hard capture)");
-    ::STRINGS[14] = uString::Const("C:\\Users\\borde_000\\AppData\\Local\\Fusetools\\Packages\\Fuse.Nodes\\1.7.4\\Input\\PointerEventArgs.uno");
+    ::STRINGS[14] = uString::Const("C:\\Users\\borde_000\\AppData\\Local\\Fusetools\\Packages\\Fuse.Nodes\\1.8.1\\Input\\PointerEventArgs.uno");
     ::STRINGS[15] = uString::Const("DeprecatedReleaseCapture");
     ::STRINGS[16] = uString::Const("x");
     ::STRINGS[17] = uString::Const("y");
@@ -5104,7 +5104,7 @@ int32_t PointerEventArgs::WheelDeltaMode()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Input\PointerEventArgs.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Input\PointerEventArgs.uno
 // -----------------------------------------------------------------------------------------------
 
 // public sealed class PointerEventData :6
@@ -5172,7 +5172,7 @@ PointerEventData* PointerEventData::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Input\PointerEvents.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Input\PointerEvents.uno
 // --------------------------------------------------------------------------------------------
 
 // internal sealed class PointerLeft :103
@@ -5234,7 +5234,7 @@ PointerLeft* PointerLeft::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Input\PointerEvents.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Input\PointerEvents.uno
 // --------------------------------------------------------------------------------------------
 
 // public sealed class PointerLeftArgs :94
@@ -5293,7 +5293,7 @@ PointerLeftArgs* PointerLeftArgs::New3(::g::Fuse::Input::PointerEventData* data,
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Input\PointerEvents.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Input\PointerEvents.uno
 // --------------------------------------------------------------------------------------------
 
 // public delegate void PointerLeftHandler(object sender, Fuse.Input.PointerLeftArgs args) :101
@@ -5309,7 +5309,7 @@ uDelegateType* PointerLeftHandler_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Input\PointerEvents.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Input\PointerEvents.uno
 // --------------------------------------------------------------------------------------------
 
 // internal sealed class PointerMoved :44
@@ -5371,7 +5371,7 @@ PointerMoved* PointerMoved::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Input\PointerEvents.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Input\PointerEvents.uno
 // --------------------------------------------------------------------------------------------
 
 // public sealed class PointerMovedArgs :35
@@ -5430,7 +5430,7 @@ PointerMovedArgs* PointerMovedArgs::New3(::g::Fuse::Input::PointerEventData* dat
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Input\PointerEvents.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Input\PointerEvents.uno
 // --------------------------------------------------------------------------------------------
 
 // public delegate void PointerMovedHandler(object sender, Fuse.Input.PointerMovedArgs args) :42
@@ -5446,7 +5446,7 @@ uDelegateType* PointerMovedHandler_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Input\PointerEvents.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Input\PointerEvents.uno
 // --------------------------------------------------------------------------------------------
 
 // internal sealed class PointerPressed :24
@@ -5508,7 +5508,7 @@ PointerPressed* PointerPressed::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Input\PointerEvents.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Input\PointerEvents.uno
 // --------------------------------------------------------------------------------------------
 
 // public sealed class PointerPressedArgs :15
@@ -5567,7 +5567,7 @@ PointerPressedArgs* PointerPressedArgs::New3(::g::Fuse::Input::PointerEventData*
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Input\PointerEvents.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Input\PointerEvents.uno
 // --------------------------------------------------------------------------------------------
 
 // public delegate void PointerPressedHandler(object sender, Fuse.Input.PointerPressedArgs args) :22
@@ -5583,7 +5583,7 @@ uDelegateType* PointerPressedHandler_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Input\Pointer.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Input\Pointer.uno
 // --------------------------------------------------------------------------------------
 
 // private sealed class Pointer.PointerRecord :193
@@ -5639,7 +5639,7 @@ Pointer__PointerRecord* Pointer__PointerRecord::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Input\PointerEvents.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Input\PointerEvents.uno
 // --------------------------------------------------------------------------------------------
 
 // internal sealed class PointerReleased :64
@@ -5701,7 +5701,7 @@ PointerReleased* PointerReleased::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Input\PointerEvents.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Input\PointerEvents.uno
 // --------------------------------------------------------------------------------------------
 
 // public sealed class PointerReleasedArgs :55
@@ -5760,7 +5760,7 @@ PointerReleasedArgs* PointerReleasedArgs::New3(::g::Fuse::Input::PointerEventDat
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Input\PointerEvents.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Input\PointerEvents.uno
 // --------------------------------------------------------------------------------------------
 
 // public delegate void PointerReleasedHandler(object sender, Fuse.Input.PointerReleasedArgs args) :62
@@ -5776,7 +5776,7 @@ uDelegateType* PointerReleasedHandler_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Input\PointerEvents.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Input\PointerEvents.uno
 // --------------------------------------------------------------------------------------------
 
 // internal sealed class PointerWheelMoved :123
@@ -5838,7 +5838,7 @@ PointerWheelMoved* PointerWheelMoved::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Input\PointerEvents.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Input\PointerEvents.uno
 // --------------------------------------------------------------------------------------------
 
 // public sealed class PointerWheelMovedArgs :114
@@ -5897,7 +5897,7 @@ PointerWheelMovedArgs* PointerWheelMovedArgs::New3(::g::Fuse::Input::PointerEven
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Input\PointerEvents.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Input\PointerEvents.uno
 // --------------------------------------------------------------------------------------------
 
 // public delegate void PointerWheelMovedHandler(object sender, Fuse.Input.PointerWheelMovedArgs args) :121
@@ -5913,7 +5913,7 @@ uDelegateType* PointerWheelMovedHandler_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Input\Focus.Prediction.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Input\Focus.Prediction.uno
 // -----------------------------------------------------------------------------------------------
 
 // private sealed class FocusPrediction.PredictFilter :26
@@ -5981,7 +5981,7 @@ FocusPrediction__PredictFilter* FocusPrediction__PredictFilter::New1(::g::Fuse::
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Input\HitTestHelpers.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Input\HitTestHelpers.uno
 // ---------------------------------------------------------------------------------------------
 
 // internal sealed class SelectionQuery :6
@@ -6067,7 +6067,7 @@ SelectionQuery* SelectionQuery::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Input\TextService.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Input\TextService.uno
 // ------------------------------------------------------------------------------------------
 
 // internal sealed class TextEntered :44
@@ -6129,7 +6129,7 @@ TextEntered* TextEntered::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Input\TextService.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Input\TextService.uno
 // ------------------------------------------------------------------------------------------
 
 // public sealed class TextEnteredArgs :27
@@ -6225,7 +6225,7 @@ TextEnteredArgs* TextEnteredArgs::New3(uString* text, ::g::Fuse::Visual* visual)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Input\TextService.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Input\TextService.uno
 // ------------------------------------------------------------------------------------------
 
 // public delegate void TextEnteredHandler(object sender, Fuse.Input.TextEnteredArgs args) :42
@@ -6241,7 +6241,7 @@ uDelegateType* TextEnteredHandler_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Input\TextService.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Input\TextService.uno
 // ------------------------------------------------------------------------------------------
 
 // public static class TextService :5

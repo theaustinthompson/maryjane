@@ -1,4 +1,4 @@
-// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/Fuse.Models/1.7.4/ZoneJS.uno.
+// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/Fuse.Models/1.8.1/ZoneJS.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once

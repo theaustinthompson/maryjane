@@ -23,17 +23,17 @@ public class DatePickerView
         android.util.Log.d("maryjane", (message==null ? "null" : message.toString()));
     }
 
-    public static Object Create118()
+    public static Object Create119()
     {
         return new android.widget.DatePicker(com.apps.maryjane.maryjane.GetRootActivity());
     }
     
-    public static int GetApiLevel119()
+    public static int GetApiLevel120()
     {
         return android.os.Build.VERSION.SDK_INT;
     }
     
-    public static long GetDateInMsSince1970InUtc120(final UnoObject _this, final Object datePickerHandle)
+    public static long GetDateInMsSince1970InUtc121(final UnoObject _this, final Object datePickerHandle)
     {
         android.widget.DatePicker datePicker = (android.widget.DatePicker)datePickerHandle;
         
@@ -53,7 +53,7 @@ public class DatePickerView
         return cal.getTimeInMillis();
     }
     
-    public static void Init121(final UnoObject _this, final Object datePickerHandle)
+    public static void Init122(final UnoObject _this, final Object datePickerHandle)
     {
         android.widget.DatePicker datePicker = (android.widget.DatePicker)datePickerHandle;
         
@@ -69,7 +69,7 @@ public class DatePickerView
         datePicker.init(y, m, d, null);
     }
     
-    public static void SetDate122(final UnoObject _this, final Object datePickerHandle,final long msSince1970InUtc)
+    public static void SetDate123(final UnoObject _this, final Object datePickerHandle,final long msSince1970InUtc)
     {
         java.util.Calendar cal = java.util.Calendar.getInstance(java.util.TimeZone.getTimeZone("UTC"), java.util.Locale.getDefault());
         cal.setTimeInMillis(msSince1970InUtc);
@@ -82,7 +82,7 @@ public class DatePickerView
         datePicker.updateDate(y, m, d);
     }
     
-    public static void SetMaxValue123(final UnoObject _this, final Object datePickerHandle,final long msSince1970InUtc)
+    public static void SetMaxValue124(final UnoObject _this, final Object datePickerHandle,final long msSince1970InUtc)
     {
         android.widget.DatePicker datePicker = (android.widget.DatePicker)datePickerHandle;
         
@@ -97,7 +97,7 @@ public class DatePickerView
         datePicker.setMaxDate(javaTicksInDefaultTimezone);
     }
     
-    public static void SetMinValue124(final UnoObject _this, final Object datePickerHandle,final long msSince1970InUtc)
+    public static void SetMinValue125(final UnoObject _this, final Object datePickerHandle,final long msSince1970InUtc)
     {
         android.widget.DatePicker datePicker = (android.widget.DatePicker)datePickerHandle;
         

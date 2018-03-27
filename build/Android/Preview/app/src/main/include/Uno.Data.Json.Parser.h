@@ -1,4 +1,4 @@
-// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/Uno.Data.Json/1.0.1/source/$.uno.
+// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/Uno.Data.Json/1.8.0/Source/Parser.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -19,7 +19,7 @@ namespace Uno{
 namespace Data{
 namespace Json{
 
-// internal sealed class Parser :359
+// internal sealed class Parser :8
 // {
 uType* Parser_typeof();
 void Parser__ctor__fn(Parser* __this, ::g::Uno::IO::TextReader* json);

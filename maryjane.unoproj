@@ -1,11 +1,11 @@
 {
-  "RootNamespace":"",
+  "RootNamespace": "",
   "Packages": [
     "Fuse",
     "FuseJS"
   ],
   "Includes": [
-    "*"
+    "*",
+    "Auth.js:Bundle"
   ]
 }
-

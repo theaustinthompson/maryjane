@@ -1,4 +1,4 @@
-// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/UnoCore/1.7.1/Source/Uno/String.uno.
+// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/UnoCore/1.8.0/Source/Uno/String.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -33,6 +33,8 @@ void String__InSet_fn(uString* __this, char16_t* c, uArray* charSet, bool* __ret
 void String__IsNullOrEmpty_fn(uString* s, bool* __retval);
 void String__Join_fn(uString* separator, uArray* value, uString** __retval);
 void String__LastIndexOf_fn(uString* __this, char16_t* c, int32_t* __retval);
+void String__LastIndexOfAny_fn(uString* __this, uArray* anyOf, int32_t* __retval);
+void String__LastIndexOfAnyUnchecked_fn(uString* __this, uArray* anyOf, int32_t* startIndex, int32_t* count, int32_t* __retval);
 void String__LastIndexOfUnchecked_fn(uString* __this, char16_t* c, int32_t* startIndex, int32_t* count, int32_t* __retval);
 void String__MatchesAt_fn(uString* __this, uString* str, int32_t* pos, bool* __retval);
 void String__op_Addition_fn(uObject* a, uString* b, uString** __retval);
@@ -40,6 +42,7 @@ void String__op_Addition1_fn(uString* a, uObject* b, uString** __retval);
 void String__op_Addition2_fn(uString* a, uString* b, uString** __retval);
 void String__op_Equality_fn(uString* left, uString* right, bool* __retval);
 void String__op_Inequality_fn(uString* left, uString* right, bool* __retval);
+void String__PadLeft1_fn(uString* __this, int32_t* totalLength, char16_t* paddingSymbol, uString** __retval);
 void String__Replace_fn(uString* __this, char16_t* oldChar, char16_t* newChar, uString** __retval);
 void String__Replace1_fn(uString* __this, uString* oldValue, uString* newValue, uString** __retval);
 void String__Split_fn(uString* __this, uArray* splitChars, uArray** __retval);
@@ -74,8 +77,11 @@ struct String
     static uString* Insert(uString* __this, int32_t pos, uString* str);
     static bool InSet(uString* __this, char16_t c, uArray* charSet);
     static int32_t LastIndexOf(uString* __this, char16_t c);
+    static int32_t LastIndexOfAny(uString* __this, uArray* anyOf);
+    static int32_t LastIndexOfAnyUnchecked(uString* __this, uArray* anyOf, int32_t startIndex, int32_t count);
     static int32_t LastIndexOfUnchecked(uString* __this, char16_t c, int32_t startIndex, int32_t count);
     static bool MatchesAt(uString* __this, uString* str, int32_t pos);
+    static uString* PadLeft1(uString* __this, int32_t totalLength, char16_t paddingSymbol);
     static uString* Replace(uString* __this, char16_t oldChar, char16_t newChar);
     static uString* Replace1(uString* __this, uString* oldValue, uString* newValue);
     static uArray* Split(uString* __this, uArray* splitChars);

@@ -23,22 +23,22 @@ public class AndroidPaths
         android.util.Log.d("maryjane", (message==null ? "null" : message.toString()));
     }
 
-    public static String GetCacheDirectory371()
+    public static String GetCacheDirectory363()
     {
         return com.fuse.Activity.getRootActivity().getCacheDir().getAbsolutePath();
     }
     
-    public static String GetExternalCacheDirectory372()
+    public static String GetExternalCacheDirectory364()
     {
         return com.fuse.Activity.getRootActivity().getExternalCacheDir().getAbsolutePath();
     }
     
-    public static String GetExternalFilesDirectory373()
+    public static String GetExternalFilesDirectory365()
     {
         return com.fuse.Activity.getRootActivity().getExternalFilesDir(null).getAbsolutePath();
     }
     
-    public static String GetFilesDirectory374()
+    public static String GetFilesDirectory366()
     {
         return com.fuse.Activity.getRootActivity().getFilesDir().getAbsolutePath();
     }

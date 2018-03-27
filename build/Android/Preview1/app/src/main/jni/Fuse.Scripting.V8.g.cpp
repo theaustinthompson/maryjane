@@ -93,7 +93,7 @@ namespace Fuse{
 namespace Scripting{
 namespace V8{
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Scripting.JavaScript\1.7.4\V8\Array.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Scripting.JavaScript\1.8.1\V8\Array.uno
 // ------------------------------------------------------------------------------------------------
 
 // internal sealed extern class Array :7
@@ -356,7 +356,7 @@ Array* Array::New1(::g::Fuse::Scripting::V8::Context* context, ::JSArray* array)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Scripting.JavaScript\1.7.4\V8\Handle.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Scripting.JavaScript\1.8.1\V8\Handle.uno
 // -------------------------------------------------------------------------------------------------
 
 // internal sealed extern class ArrayHandle :14
@@ -432,7 +432,7 @@ ArrayHandle* ArrayHandle::New1(uArray* array)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Scripting.JavaScript\1.7.4\V8\V8SimpleExtensions.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Scripting.JavaScript\1.8.1\V8\V8SimpleExtensions.uno
 // -------------------------------------------------------------------------------------------------------------
 
 // internal extern struct AutoReleasePool :281
@@ -629,7 +629,7 @@ AutoReleasePool AutoReleasePool__New1(::JSContext* context)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Scripting.JavaScript\1.7.4\V8\Context.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Scripting.JavaScript\1.8.1\V8\Context.uno
 // --------------------------------------------------------------------------------------------------
 
 // private sealed class Marshaller.CallbackWrapper :225
@@ -755,7 +755,7 @@ Marshaller__CallbackWrapper* Marshaller__CallbackWrapper::New1(::g::Fuse::Script
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Scripting.JavaScript\1.7.4\V8\Debugger.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Scripting.JavaScript\1.8.1\V8\Debugger.uno
 // ---------------------------------------------------------------------------------------------------
 
 // private sealed class Debugger.Connected :237
@@ -763,7 +763,7 @@ Marshaller__CallbackWrapper* Marshaller__CallbackWrapper::New1(::g::Fuse::Script
 static void Debugger__Connected_build(uType* type)
 {
     ::STRINGS[0] = uString::Const("DEBUG_V8: Connection to a debugger agent established.");
-    ::STRINGS[1] = uString::Const("C:/Users/borde_000/AppData/Local/Fusetools/Packages/Fuse.Scripting.JavaScript/1.7.4/V8/Debugger.uno");
+    ::STRINGS[1] = uString::Const("C:/Users/borde_000/AppData/Local/Fusetools/Packages/Fuse.Scripting.JavaScript/1.8.1/V8/Debugger.uno");
     ::STRINGS[2] = uString::Const("Debugger could not read enough");
     ::TYPES[3] = ::g::Uno::Exception_typeof();
     ::TYPES[5] = ::g::Fuse::Scripting::V8::Context_typeof();
@@ -975,7 +975,7 @@ Debugger__Connected* Debugger__Connected::New1(::g::Fuse::Scripting::V8::Debugge
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Scripting.JavaScript\1.7.4\V8\Debugger.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Scripting.JavaScript\1.8.1\V8\Debugger.uno
 // ---------------------------------------------------------------------------------------------------
 
 // private sealed class Debugger.ConnectedMessageHandler :211
@@ -1059,7 +1059,7 @@ Debugger__ConnectedMessageHandler* Debugger__ConnectedMessageHandler::New1(::g::
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Scripting.JavaScript\1.7.4\V8\Debugger.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Scripting.JavaScript\1.8.1\V8\Debugger.uno
 // ---------------------------------------------------------------------------------------------------
 
 // private sealed class Debugger.Connecting :132
@@ -1192,7 +1192,7 @@ Debugger__Connecting* Debugger__Connecting::New1(::g::Fuse::Scripting::V8::Debug
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Scripting.JavaScript\1.7.4\V8\Context.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Scripting.JavaScript\1.8.1\V8\Context.uno
 // --------------------------------------------------------------------------------------------------
 
 // public sealed extern class Context :12
@@ -1449,7 +1449,7 @@ Context* Context::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Scripting.JavaScript\1.7.4\V8\Debugger.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Scripting.JavaScript\1.8.1\V8\Debugger.uno
 // ---------------------------------------------------------------------------------------------------
 
 // internal sealed extern class Debugger :14
@@ -1708,7 +1708,7 @@ uObject* Debugger::ToConnected(Debugger* parent, ::g::Uno::Net::Sockets::Socket*
     writer->Write9(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(uString::Const("Type: connect\r\n"
         "V8-Version: "), ::g::Fuse::Scripting::V8::Simple::Context::GetV8Version()), uString::Const("\r\n"
         "Protocol-Version: 1\r\n"
-        "Embedding-Host: ")), uString::Const("Fuse.Scripting.JavaScript")), uString::Const(" ")), uString::Const("1.7.4")), uString::Const("\r\n"
+        "Embedding-Host: ")), uString::Const("Fuse.Scripting.JavaScript")), uString::Const(" ")), uString::Const("1.8.1")), uString::Const("\r\n"
         "Content-Length: 0\r\n"
         "\r\n"
         "")));
@@ -1747,7 +1747,7 @@ uObject* Debugger::ToConnected(Debugger* parent, ::g::Uno::Net::Sockets::Socket*
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Scripting.JavaScript\1.7.4\V8\Context.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Scripting.JavaScript\1.8.1\V8\Context.uno
 // --------------------------------------------------------------------------------------------------
 
 // internal struct Context.EnterVM :53
@@ -1826,7 +1826,7 @@ Context__EnterVM Context__EnterVM__New1(::g::Fuse::Scripting::V8::Context* conte
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Scripting.JavaScript\1.7.4\V8\V8SimpleExtensions.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Scripting.JavaScript\1.8.1\V8\V8SimpleExtensions.uno
 // -------------------------------------------------------------------------------------------------------------
 
 // internal static extern class Error :336
@@ -1905,7 +1905,7 @@ void Error::Check1(int32_t err)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Scripting.JavaScript\1.7.4\V8\Function.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Scripting.JavaScript\1.8.1\V8\Function.uno
 // ---------------------------------------------------------------------------------------------------
 
 // internal sealed extern class Function :7
@@ -2157,7 +2157,7 @@ Function* Function::New1(::g::Fuse::Scripting::V8::Context* context, ::JSFunctio
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Scripting.JavaScript\1.7.4\V8\Handle.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Scripting.JavaScript\1.8.1\V8\Handle.uno
 // -------------------------------------------------------------------------------------------------
 
 // internal static extern class Handle :7
@@ -2215,7 +2215,7 @@ uObject* Handle::Target(void* handle)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Scripting.JavaScript\1.7.4\V8\Context.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Scripting.JavaScript\1.8.1\V8\Context.uno
 // --------------------------------------------------------------------------------------------------
 
 // internal static extern class Marshaller :148
@@ -2447,7 +2447,7 @@ uArray* Marshaller::WrapArray(::g::Fuse::Scripting::V8::Context* context, uArray
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Scripting.JavaScript\1.7.4\V8\Object.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Scripting.JavaScript\1.8.1\V8\Object.uno
 // -------------------------------------------------------------------------------------------------
 
 // internal sealed extern class Object :8
@@ -2911,7 +2911,7 @@ Object* Object::New1(::g::Fuse::Scripting::V8::Context* context, ::JSObject* obj
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Scripting.JavaScript\1.7.4\V8\Debugger.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Scripting.JavaScript\1.8.1\V8\Debugger.uno
 // ---------------------------------------------------------------------------------------------------
 
 // private abstract interface Debugger.State :78
@@ -2926,7 +2926,7 @@ uInterfaceType* Debugger__State_typeof()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Scripting.JavaScript\1.7.4\V8\V8SimpleExtensions.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Scripting.JavaScript\1.8.1\V8\V8SimpleExtensions.uno
 // -------------------------------------------------------------------------------------------------------------
 
 // internal static extern class V8SimpleExtensions :13
@@ -3773,7 +3773,7 @@ void* V8SimpleExtensions::TryGetArrayBufferData(::JSObject* obj, ::JSContext* co
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Scripting.JavaScript\1.7.4\V8\V8SimpleExtensions.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Scripting.JavaScript\1.8.1\V8\V8SimpleExtensions.uno
 // -------------------------------------------------------------------------------------------------------------
 
 // public delegate Fuse.Scripting.V8.Simple.JSValue V8SimpleExtensions.WrappedCallback(Fuse.Scripting.V8.Simple.JSValue[] args, Fuse.Scripting.V8.Simple.JSValue& error) :199

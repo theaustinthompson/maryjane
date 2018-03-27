@@ -57,7 +57,7 @@ namespace Simulator{
 namespace Client{
 namespace Dialogs{
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Preview.Core\0.1.0\.uno\ux13\Outracks.Simulator.Client.Dialogs.LoadingScreen.g.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Preview.Core\0.1.0\.uno\ux14\Outracks.Simulator.Client.Dialogs.LoadingScreen.g.uno
 // -------------------------------------------------------------------------------------------------------------------------------------------
 
 // public partial sealed class LoadingScreen :4
@@ -97,7 +97,7 @@ static void LoadingScreen_build(uType* type)
         ::g::Fuse::IActualPlacement_typeof(), offsetof(::g::Fuse::Controls::Panel_type, interface15),
         ::g::Fuse::Animations::IResize_typeof(), offsetof(::g::Fuse::Controls::Panel_type, interface16),
         ::g::Fuse::Drawing::ISurfaceDrawable_typeof(), offsetof(::g::Fuse::Controls::Panel_type, interface17));
-    type->SetFields(117,
+    type->SetFields(118,
         ::g::Uno::String_typeof(), offsetof(LoadingScreen, _field_Header), 0,
         ::g::Uno::String_typeof(), offsetof(LoadingScreen, _field_Message), 0,
         ::g::Uno::UX::Property1_typeof()->MakeType(::g::Uno::String_typeof(), NULL), offsetof(LoadingScreen, temp_Value_inst), 0,
@@ -120,7 +120,7 @@ static void LoadingScreen_build(uType* type)
 
     uTypeOptions options;
     options.BaseDefinition = ::g::Fuse::Controls::Panel_typeof();
-    options.FieldCount = 122;
+    options.FieldCount = 123;
     options.InterfaceCount = 18;
     options.DependencyCount = 2;
     options.ObjectSize = sizeof(LoadingScreen);
@@ -323,7 +323,7 @@ LoadingScreen* LoadingScreen::New4()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Preview.Core\0.1.0\.uno\ux13\Outracks.Simulator.Client.Dialogs.ModalDialog.g.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Preview.Core\0.1.0\.uno\ux14\Outracks.Simulator.Client.Dialogs.ModalDialog.g.uno
 // -----------------------------------------------------------------------------------------------------------------------------------------
 
 // public partial sealed class ModalDialog :4
@@ -371,7 +371,7 @@ static void ModalDialog_build(uType* type)
         ::g::Fuse::IActualPlacement_typeof(), offsetof(::g::Fuse::Controls::Panel_type, interface15),
         ::g::Fuse::Animations::IResize_typeof(), offsetof(::g::Fuse::Controls::Panel_type, interface16),
         ::g::Fuse::Drawing::ISurfaceDrawable_typeof(), offsetof(::g::Fuse::Controls::Panel_type, interface17));
-    type->SetFields(117,
+    type->SetFields(118,
         ::g::Uno::String_typeof(), offsetof(ModalDialog, _field_Header), 0,
         ::g::Uno::String_typeof(), offsetof(ModalDialog, _field_Body), 0,
         ::g::Uno::String_typeof(), offsetof(ModalDialog, _field_Details), 0,
@@ -402,7 +402,7 @@ static void ModalDialog_build(uType* type)
 
     uTypeOptions options;
     options.BaseDefinition = ::g::Fuse::Controls::Panel_typeof();
-    options.FieldCount = 127;
+    options.FieldCount = 128;
     options.InterfaceCount = 18;
     options.DependencyCount = 4;
     options.ObjectSize = sizeof(ModalDialog);

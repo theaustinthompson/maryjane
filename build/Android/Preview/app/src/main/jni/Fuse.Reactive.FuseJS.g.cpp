@@ -87,7 +87,7 @@ namespace Fuse{
 namespace Reactive{
 namespace FuseJS{
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Scripting.JavaScript\1.7.4\FuseJS\Http.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Scripting.JavaScript\1.8.1\FuseJS\Http.uno
 // ---------------------------------------------------------------------------------------------------
 
 // private sealed class Http.HttpJSDispatcher.ActionClosure :39
@@ -152,7 +152,7 @@ Http__HttpJSDispatcher__ActionClosure* Http__HttpJSDispatcher__ActionClosure::Ne
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Scripting.JavaScript\1.7.4\FuseJS\Builtins.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Scripting.JavaScript\1.8.1\FuseJS\Builtins.uno
 // -------------------------------------------------------------------------------------------------------
 
 // internal sealed class Builtins :7
@@ -242,19 +242,19 @@ void Builtins::ctor_(::g::Fuse::Scripting::Context* context)
     else
         Builtins::_timer_ = ::g::Fuse::Reactive::FuseJS::TimerModule::New2();
 
-    ::g::Fuse::Scripting::Function* setTimout = uCast< ::g::Fuse::Scripting::Function*>(uPtr(context)->Evaluate(::STRINGS[1/*"fuse-builti...*/], uPtr(::g::FuseScriptingJavaScript_bundle::setTimeout6878203e())->ReadAllText()), ::TYPES[2/*Fuse.Scripting.Function*/]);
+    ::g::Fuse::Scripting::Function* setTimout = uCast< ::g::Fuse::Scripting::Function*>(uPtr(context)->Evaluate(::STRINGS[1/*"fuse-builti...*/], uPtr(::g::FuseScriptingJavaScript_bundle::setTimeoutff7a8124())->ReadAllText()), ::TYPES[2/*Fuse.Scripting.Function*/]);
 
     if ((setTimout != NULL) && (Builtins::_timer_ != NULL))
         uPtr(setTimout)->Call(context, uArray::Init<uObject*>(::TYPES[3/*object[]*/], 2, (uObject*)uPtr(Builtins::_timer_)->EvaluateExports(context, ::STRINGS[0/*"FuseJS/Timer"*/]), (::g::Fuse::Scripting::Object*)uPtr(context)->GlobalObject()));
     else
         U_THROW(::g::Uno::Exception::New2(::STRINGS[2/*"Could not l...*/]));
 
-    context->Evaluate(::STRINGS[3/*"fuse-builti...*/], uPtr(::g::FuseScriptingJavaScript_bundle::es6promisemin508b13d6())->ReadAllText());
+    context->Evaluate(::STRINGS[3/*"fuse-builti...*/], uPtr(::g::FuseScriptingJavaScript_bundle::es6promisemin7457eb6c())->ReadAllText());
     context->Evaluate(::STRINGS[3/*"fuse-builti...*/], ::STRINGS[4/*"ES6Promise....*/]);
     ::g::Fuse::Reactive::FuseJS::DiagnosticsImplModule::New2();
-    ::g::Fuse::Scripting::FileModule::New2(::g::Uno::UX::FileSource::op_Implicit(::g::FuseScriptingJavaScript_bundle::Diagnosticsea84a361()))->EvaluateExports(context, ::STRINGS[5/*"FuseJS/Diag...*/]);
-    Observable = uCast< ::g::Fuse::Scripting::Function*>(::g::Fuse::Scripting::FileModule::New2(::g::Uno::UX::FileSource::op_Implicit(::g::FuseScriptingJavaScript_bundle::Observablecd24f8fc()))->EvaluateExports(context, ::STRINGS[6/*"FuseJS/Obse...*/]), ::TYPES[2/*Fuse.Scripting.Function*/]);
-    TreeObservable = uCast< ::g::Fuse::Scripting::Function*>(::g::Fuse::Scripting::FileModule::New2(::g::Uno::UX::FileSource::op_Implicit(::g::FuseScriptingJavaScript_bundle::TreeObservable750be9fc()))->EvaluateExports(context, ::STRINGS[7/*"FuseJS/Tree...*/]), ::TYPES[2/*Fuse.Scripting.Function*/]);
+    ::g::Fuse::Scripting::FileModule::New2(::g::Uno::UX::FileSource::op_Implicit(::g::FuseScriptingJavaScript_bundle::Diagnosticsc4c4898b()))->EvaluateExports(context, ::STRINGS[5/*"FuseJS/Diag...*/]);
+    Observable = uCast< ::g::Fuse::Scripting::Function*>(::g::Fuse::Scripting::FileModule::New2(::g::Uno::UX::FileSource::op_Implicit(::g::FuseScriptingJavaScript_bundle::Observable5f9ac822()))->EvaluateExports(context, ::STRINGS[6/*"FuseJS/Obse...*/]), ::TYPES[2/*Fuse.Scripting.Function*/]);
+    TreeObservable = uCast< ::g::Fuse::Scripting::Function*>(::g::Fuse::Scripting::FileModule::New2(::g::Uno::UX::FileSource::op_Implicit(::g::FuseScriptingJavaScript_bundle::TreeObservable7be76da6()))->EvaluateExports(context, ::STRINGS[7/*"FuseJS/Tree...*/]), ::TYPES[2/*Fuse.Scripting.Function*/]);
     EventEmitter = ::g::Fuse::Scripting::EventEmitterModule::GetConstructor(context);
     Date = uCast< ::g::Fuse::Scripting::Function*>(context->Evaluate(::STRINGS[8/*"fuse-builtins"*/], ::STRINGS[9/*"Date"*/]), ::TYPES[2/*Fuse.Scripting.Function*/]);
     DateCtor = uCast< ::g::Fuse::Scripting::Function*>(context->Evaluate(::STRINGS[8/*"fuse-builtins"*/], ::STRINGS[10/*"(function(t...*/]), ::TYPES[2/*Fuse.Scripting.Function*/]);
@@ -290,7 +290,7 @@ Builtins* Builtins::New1(::g::Fuse::Scripting::Context* context)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Scripting.JavaScript\1.7.4\FuseJS\Timer.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Scripting.JavaScript\1.8.1\FuseJS\Timer.uno
 // ----------------------------------------------------------------------------------------------------
 
 // private sealed class TimerModule.CallbackClosure :148
@@ -369,7 +369,7 @@ TimerModule__CallbackClosure* TimerModule__CallbackClosure::New1(::g::Fuse::Scri
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Scripting.JavaScript\1.7.4\FuseJS\DiagnosticsImpl.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Scripting.JavaScript\1.8.1\FuseJS\DiagnosticsImpl.uno
 // --------------------------------------------------------------------------------------------------------------
 
 // public sealed class DiagnosticsImplModule :12
@@ -379,7 +379,7 @@ static void DiagnosticsImplModule_build(uType* type)
     ::STRINGS[14] = uString::Const("FuseJS/DiagnosticsImpl");
     ::STRINGS[15] = uString::Const("report");
     ::STRINGS[16] = uString::Const("Report requires 2 arguments");
-    ::STRINGS[17] = uString::Const("C:\\Users\\borde_000\\AppData\\Local\\Fusetools\\Packages\\Fuse.Scripting.JavaScript\\1.7.4\\FuseJS\\DiagnosticsImpl.uno");
+    ::STRINGS[17] = uString::Const("C:\\Users\\borde_000\\AppData\\Local\\Fusetools\\Packages\\Fuse.Scripting.JavaScript\\1.8.1\\FuseJS\\DiagnosticsImpl.uno");
     ::STRINGS[18] = uString::Const("Report");
     ::TYPES[5] = ::g::Fuse::Scripting::NativeCallback_typeof();
     ::TYPES[6] = ::g::Fuse::Marshal_typeof()->MakeMethod(0/*ToType<Fuse.DiagnosticType>*/, ::g::Fuse::DiagnosticType_typeof(), NULL);
@@ -476,7 +476,7 @@ DiagnosticsImplModule* DiagnosticsImplModule::New2()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Scripting.JavaScript\1.7.4\FuseJS\Http.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Scripting.JavaScript\1.8.1\FuseJS\Http.uno
 // ---------------------------------------------------------------------------------------------------
 
 // private sealed class Http.FuseJSHttpClient :60
@@ -577,7 +577,7 @@ Http__FuseJSHttpClient* Http__FuseJSHttpClient::New1(::g::Fuse::Scripting::Conte
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Scripting.JavaScript\1.7.4\FuseJS\Http.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Scripting.JavaScript\1.8.1\FuseJS\Http.uno
 // ---------------------------------------------------------------------------------------------------
 
 // private sealed class Http.FuseJSHttpRequest :86
@@ -1187,7 +1187,7 @@ Http__FuseJSHttpRequest* Http__FuseJSHttpRequest::New1(::g::Fuse::Scripting::Con
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Scripting.JavaScript\1.7.4\FuseJS\Http.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Scripting.JavaScript\1.8.1\FuseJS\Http.uno
 // ---------------------------------------------------------------------------------------------------
 
 // public sealed class Http :12
@@ -1281,7 +1281,7 @@ Http* Http::New2()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Scripting.JavaScript\1.7.4\FuseJS\Http.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Scripting.JavaScript\1.8.1\FuseJS\Http.uno
 // ---------------------------------------------------------------------------------------------------
 
 // internal sealed class HttpHeaders :389
@@ -1292,7 +1292,7 @@ static void HttpHeaders_build(uType* type)
     ::STRINGS[44] = uString::Const("");
     ::TYPES[28] = ::g::Uno::Collections::Dictionary_typeof()->MakeType(::g::Uno::String_typeof(), ::g::Uno::Collections::IList_typeof()->MakeType(::g::Uno::String_typeof(), NULL), NULL);
     ::TYPES[29] = ::g::Uno::IDisposable_typeof();
-    ::TYPES[30] = ::g::Uno::Collections::EnumerableExtensions_typeof()->MakeMethod(9/*ToArray<string>*/, ::g::Uno::String_typeof(), NULL);
+    ::TYPES[30] = ::g::Uno::Collections::EnumerableExtensions_typeof()->MakeMethod(8/*ToArray<string>*/, ::g::Uno::String_typeof(), NULL);
     ::TYPES[31] = ::g::Uno::Char_typeof()->Array();
     ::TYPES[32] = ::g::Uno::Collections::List_typeof()->MakeType(::g::Uno::String_typeof(), NULL);
     ::TYPES[33] = ::g::Uno::Collections::List__Enumerator_typeof()->MakeType(::g::Uno::String_typeof(), NULL);
@@ -1459,7 +1459,7 @@ HttpHeaders* HttpHeaders::New1(uString* headers)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Scripting.JavaScript\1.7.4\FuseJS\Http.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Scripting.JavaScript\1.8.1\FuseJS\Http.uno
 // ---------------------------------------------------------------------------------------------------
 
 // private sealed class Http.HttpJSDispatcher :31
@@ -1528,7 +1528,7 @@ Http__HttpJSDispatcher* Http__HttpJSDispatcher::New1(uObject* worker)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Scripting.JavaScript\1.7.4\FuseJS\Timer.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Scripting.JavaScript\1.8.1\FuseJS\Timer.uno
 // ----------------------------------------------------------------------------------------------------
 
 // private sealed class TimerManager.Timer :251
@@ -1690,7 +1690,7 @@ TimerManager__Timer* TimerManager__Timer::New1(double ms, uDelegate* callback, b
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Scripting.JavaScript\1.7.4\FuseJS\Timer.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Scripting.JavaScript\1.8.1\FuseJS\Timer.uno
 // ----------------------------------------------------------------------------------------------------
 
 // internal sealed class TimerManager :174
@@ -1883,7 +1883,7 @@ TimerManager* TimerManager::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Scripting.JavaScript\1.7.4\FuseJS\Timer.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Scripting.JavaScript\1.8.1\FuseJS\Timer.uno
 // ----------------------------------------------------------------------------------------------------
 
 // public sealed class TimerModule :26
@@ -2027,7 +2027,7 @@ uObject* TimerModule::Delete(::g::Fuse::Scripting::Context* context, uArray* arg
         if (uIs(__t.Exception, ::g::Fuse::MarshalException_typeof()))
         {
             ::g::Fuse::MarshalException* me = (::g::Fuse::MarshalException*)__t.Exception;
-            ::g::Fuse::Diagnostics::UserWarning(uString::Const("Timer.delete(): The parameter is not a valid timer handle"), this, uString::Const("C:\\Users\\borde_000\\AppData\\Local\\Fusetools\\Packages\\Fuse.Scripting.JavaScript\\1.7.4\\FuseJS\\Timer.uno"), 133, uString::Const("Delete"));
+            ::g::Fuse::Diagnostics::UserWarning(uString::Const("Timer.delete(): The parameter is not a valid timer handle"), this, uString::Const("C:\\Users\\borde_000\\AppData\\Local\\Fusetools\\Packages\\Fuse.Scripting.JavaScript\\1.8.1\\FuseJS\\Timer.uno"), 133, uString::Const("Delete"));
         }
         else         throw __t;
     }

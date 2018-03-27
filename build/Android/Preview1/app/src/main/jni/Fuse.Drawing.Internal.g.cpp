@@ -33,7 +33,7 @@ namespace Fuse{
 namespace Drawing{
 namespace Internal{
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing\1.7.4\Internal\BufferCollections.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing\1.8.1\Internal\BufferCollections.uno
 // -----------------------------------------------------------------------------------------------------
 
 // public sealed class MultiBuffer.Field :193
@@ -93,7 +93,7 @@ MultiBuffer__Field* MultiBuffer__Field::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing\1.7.4\Internal\BufferCollections.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing\1.8.1\Internal\BufferCollections.uno
 // -----------------------------------------------------------------------------------------------------
 
 // public sealed class Float2Buffer :149
@@ -190,7 +190,7 @@ Float2Buffer* Float2Buffer::New3()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing\1.7.4\Internal\BufferCollections.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing\1.8.1\Internal\BufferCollections.uno
 // -----------------------------------------------------------------------------------------------------
 
 // public sealed class Float3Buffer :113
@@ -287,7 +287,7 @@ Float3Buffer* Float3Buffer::New3()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing\1.7.4\Internal\BufferCollections.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing\1.8.1\Internal\BufferCollections.uno
 // -----------------------------------------------------------------------------------------------------
 
 // public sealed class FloatBuffer :131
@@ -384,7 +384,7 @@ FloatBuffer* FloatBuffer::New3()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing\1.7.4\Internal\BufferCollections.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing\1.8.1\Internal\BufferCollections.uno
 // -----------------------------------------------------------------------------------------------------
 
 // public sealed class MultiBuffer :192
@@ -764,7 +764,7 @@ MultiBuffer* MultiBuffer::New3()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing\1.7.4\Internal\BufferCollections.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing\1.8.1\Internal\BufferCollections.uno
 // -----------------------------------------------------------------------------------------------------
 
 // public sealed class MultiBuffer.Setter :313
@@ -823,7 +823,7 @@ MultiBuffer__Setter* MultiBuffer__Setter::New1(::g::Fuse::Drawing::Internal::Mul
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing\1.7.4\Internal\BufferCollections.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing\1.8.1\Internal\BufferCollections.uno
 // -----------------------------------------------------------------------------------------------------
 
 // public class TypedBuffer :20
@@ -950,6 +950,7 @@ void TypedBuffer__UpdateDevice_fn(TypedBuffer* __this)
 // protected TypedBuffer() [instance] :39
 void TypedBuffer::ctor_()
 {
+    uStackFrame __("Fuse.Drawing.Internal.TypedBuffer", ".ctor()");
     typeSize = 0;
     capacity = 0;
     size = 0;
@@ -1015,6 +1016,7 @@ int32_t TypedBuffer::Count()
 // protected void Init(int initSize) [instance] :34
 void TypedBuffer::Init(int32_t initSize)
 {
+    uStackFrame __("Fuse.Drawing.Internal.TypedBuffer", "Init(int)");
     capacity = initSize;
     back = ::g::Uno::Buffer::New4(typeSize * initSize);
 }
@@ -1062,7 +1064,7 @@ TypedBuffer* TypedBuffer::New2(int32_t typeSize1, int32_t initSize)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing\1.7.4\Internal\BufferCollections.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Drawing\1.8.1\Internal\BufferCollections.uno
 // -----------------------------------------------------------------------------------------------------
 
 // public sealed class UShortBuffer :167

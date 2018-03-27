@@ -1,4 +1,4 @@
-// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/Fuse.Navigation/1.7.4/NavigationPageProxy.uno.
+// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/Fuse.Navigation/1.8.1/NavigationPageProxy.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once

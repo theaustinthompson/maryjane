@@ -1,4 +1,4 @@
-// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/Fuse.Controls.Panels/1.7.4/Backgrounds/BottomFrameBackground.uno.
+// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/Fuse.Controls.Panels/1.8.1/Backgrounds/BottomFrameBackground.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -25,7 +25,7 @@ namespace g{
 namespace Fuse{
 namespace Controls{
 
-// public sealed class BottomBarBackground :31
+// public sealed class BottomBarBackground :35
 // {
 ::g::Fuse::Controls::Control_type* BottomBarBackground_typeof();
 void BottomBarBackground__ctor_6_fn(BottomBarBackground* __this);

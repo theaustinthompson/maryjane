@@ -23,7 +23,7 @@ public class ImageLoader
         android.util.Log.d("maryjane", (message==null ? "null" : message.toString()));
     }
 
-    public static Object LoadFile235(final String filePath)
+    public static Object LoadFile227(final String filePath)
     {
         android.graphics.Bitmap bitmap = null;
         try
@@ -38,7 +38,7 @@ public class ImageLoader
         return null;
     }
     
-    public static Object LoadUri236(final String uri)
+    public static Object LoadUri228(final String uri)
     {
         android.graphics.Bitmap bitmap = null;
         try
@@ -57,7 +57,7 @@ public class ImageLoader
         return null;
     }
     
-    public static void Release237(final Object bitmap)
+    public static void Release229(final Object bitmap)
     {
         ((android.graphics.Bitmap)bitmap).recycle();
     }
@@ -65,7 +65,7 @@ public class ImageLoader
     
     public static class ImageHandlePromise
     {
-        public static Object Download1234(final String url)
+        public static Object Download1226(final String url)
         {
             try
             {

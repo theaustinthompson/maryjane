@@ -1,4 +1,4 @@
-// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/Fuse.Elements/1.7.4/AspectBoxSizing.uno.
+// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/Fuse.Elements/1.8.1/AspectBoxSizing.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -160,6 +160,7 @@ void Element__set_MinHeight_fn(Element* __this, ::g::Uno::UX::Size* value);
 void Element__get_MinWidth_fn(Element* __this, ::g::Uno::UX::Size* __retval);
 void Element__set_MinWidth_fn(Element* __this, ::g::Uno::UX::Size* value);
 void Element__get_NeedsClipping_fn(Element* __this, bool* __retval);
+void Element__NotifyRenderBoundsChanged_fn(Element* __this);
 void Element__NotifyRooted_fn(Element* __this);
 void Element__NotifyTreeRedererOpacityChanged_fn(Element* __this);
 void Element__NotifyTreeRendererHitTestModeChanged_fn(Element* __this);
@@ -207,6 +208,8 @@ void Element__set_Padding_fn(Element* __this, ::g::Uno::Float4* value);
 void Element__PerformPlacement_fn(Element* __this, ::g::Uno::Float2* position, ::g::Uno::Float2* size, bool* temp);
 void Element__add_Placed_fn(Element* __this, uDelegate* value);
 void Element__remove_Placed_fn(Element* __this, uDelegate* value);
+void Element__get_Position_fn(Element* __this, ::g::Uno::UX::Size2* __retval);
+void Element__set_Position_fn(Element* __this, ::g::Uno::UX::Size2* value);
 void Element__PrependImplicitTransform_fn(Element* __this, ::g::Fuse::FastMatrix* m);
 void Element__PrependInverseTransformOrigin_fn(Element* __this, ::g::Fuse::FastMatrix* m);
 void Element__PrependTransformOrigin_fn(Element* __this, ::g::Fuse::FastMatrix* m);
@@ -223,6 +226,8 @@ void Element__SetNewTransform_fn(Element* __this);
 void Element__SetOpacity_fn(Element* __this, float* value, uObject* origin);
 void Element__SetVisibility_fn(Element* __this, int32_t* value, uObject* origin);
 void Element__ShouldBatch_fn(Element* __this, bool* __retval);
+void Element__get_Size_fn(Element* __this, ::g::Uno::UX::Size2* __retval);
+void Element__set_Size_fn(Element* __this, ::g::Uno::UX::Size2* value);
 void Element__get_TransformOrigin_fn(Element* __this, uObject** __retval);
 void Element__set_TransformOrigin_fn(Element* __this, uObject* value);
 void Element__get_TreeRenderer_fn(Element* __this, uObject** __retval);
@@ -287,6 +292,7 @@ struct Element : ::g::Fuse::Visual
     static uSStrong<uObject*>& DefaultTransformOrigin() { return Element_typeof()->Init(), DefaultTransformOrigin_; }
     static ::g::Uno::UX::Selector ExplicitTransformOriginName_;
     static ::g::Uno::UX::Selector& ExplicitTransformOriginName() { return Element_typeof()->Init(), ExplicitTransformOriginName_; }
+    bool _hasNotifiedRenderBoundsChanged;
     uStrong< ::g::Uno::Collections::List*> _rootedListeners;
     uStrong< ::g::Uno::Collections::List*> _unrootedListeners;
     uStrong< ::g::Fuse::Elements::ElementBatchEntry*> _ElementBatchEntry;
@@ -368,6 +374,7 @@ struct Element : ::g::Fuse::Visual
     ::g::Uno::UX::Size MinWidth();
     void MinWidth(::g::Uno::UX::Size value);
     bool NeedsClipping();
+    void NotifyRenderBoundsChanged();
     void NotifyRooted();
     void NotifyTreeRedererOpacityChanged();
     void NotifyTreeRendererHitTestModeChanged();
@@ -399,6 +406,8 @@ struct Element : ::g::Fuse::Visual
     void PerformPlacement(::g::Uno::Float2 position, ::g::Uno::Float2 size, bool temp);
     void add_Placed(uDelegate* value);
     void remove_Placed(uDelegate* value);
+    ::g::Uno::UX::Size2 Position();
+    void Position(::g::Uno::UX::Size2 value);
     void add_Preplacement(uDelegate* value);
     void remove_Preplacement(uDelegate* value);
     void RemoveChildElementFromBatching(Element* elm);
@@ -412,6 +421,8 @@ struct Element : ::g::Fuse::Visual
     void SetOpacity(float value, uObject* origin);
     void SetVisibility(int32_t value, uObject* origin);
     bool ShouldBatch();
+    ::g::Uno::UX::Size2 Size();
+    void Size(::g::Uno::UX::Size2 value);
     uObject* TransformOrigin();
     void TransformOrigin(uObject* value);
     uObject* TreeRenderer() { uObject* __retval; return (((Element_type*)__type)->fp_get_TreeRenderer)(this, &__retval), __retval; }

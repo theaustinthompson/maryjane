@@ -1,4 +1,4 @@
-// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/Uno.Data.Json/1.0.1/source/$.uno.
+// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/Uno.Data.Json/1.8.0/Source/JsonValue.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -11,7 +11,7 @@ namespace Uno{
 namespace Data{
 namespace Json{
 
-// internal sealed class Array :256
+// internal sealed class Array :90
 // {
 uType* Array_typeof();
 void Array__ctor_1_fn(Array* __this);

@@ -48,12 +48,12 @@ public class NativeSurface
         android.util.Log.d("maryjane", (message==null ? "null" : message.toString()));
     }
 
-    public static Object DummyBitmap310()
+    public static Object DummyBitmap302()
     {
         return Bitmap.createBitmap(10,10,Bitmap.Config.ARGB_8888);
     }
     
-    public static void SetCanvas311(final Object context,final Object canvas)
+    public static void SetCanvas303(final Object context,final Object canvas)
     {
         GraphicsSurfaceContext impl = (GraphicsSurfaceContext) context;
         impl.canvas = (Canvas)canvas;

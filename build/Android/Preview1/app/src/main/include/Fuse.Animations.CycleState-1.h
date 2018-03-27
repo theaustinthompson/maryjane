@@ -1,4 +1,4 @@
-// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/Fuse.Animations/1.7.4/Cycle.uno.
+// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/Fuse.Animations/1.8.1/Cycle.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -12,7 +12,7 @@ namespace g{
 namespace Fuse{
 namespace Animations{
 
-// internal sealed class CycleState<T> :222
+// internal sealed class CycleState<T> :241
 // {
 ::g::Fuse::Animations::OpenAnimatorState_type* CycleState_typeof();
 void CycleState__ctor_2_fn(CycleState* __this, ::g::Fuse::Animations::Cycle* animator, ::g::Fuse::Animations::CreateStateParams* p);

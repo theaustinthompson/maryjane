@@ -1,4 +1,4 @@
-// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/UnoCore/1.7.1/Source/Uno/Time/Text/LocalDatePattern.uno.
+// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/UnoCore/1.8.0/Source/Uno/Time/Text/LocalDatePattern.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -38,7 +38,7 @@ struct LocalDatePattern : uObject
     uStrong< ::g::Uno::Time::Text::FixedFormatPattern*> _generalPattern;
 
     void ctor_();
-    uString* Format(::g::Uno::Time::LocalDate* value);
+    uString* Format(::g::Uno::Time::LocalDate value);
     int32_t GetDay(LocalDatePattern__LocalDateBucket* value);
     int32_t GetMonth(LocalDatePattern__LocalDateBucket* value);
     int32_t GetSign(LocalDatePattern__LocalDateBucket* value);

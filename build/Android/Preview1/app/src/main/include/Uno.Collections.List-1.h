@@ -1,4 +1,4 @@
-// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/UnoCore/1.7.1/Source/Uno/Collections/List.uno.
+// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/UnoCore/1.8.0/Source/Uno/Collections/List.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -27,7 +27,7 @@ void List__ctor__fn(List* __this);
 void List__ctor_1_fn(List* __this, int32_t* capacity);
 void List__Add_fn(List* __this, void* item);
 void List__AddRange_fn(List* __this, uObject* items);
-void List__BoundsCheck_fn(List* __this, int32_t* index);
+void List__BoundsCheck_fn(List* __this, int32_t* index, uString* name);
 void List__Clear_fn(List* __this);
 void List__Contains_fn(List* __this, void* item, bool* __retval);
 void List__get_Count_fn(List* __this, int32_t* __retval);
@@ -56,7 +56,7 @@ struct List : uObject
     template<class T>
     void Add(T item) { List__Add_fn(this, uConstrain(__type->T(0), item)); }
     void AddRange(uObject* items);
-    void BoundsCheck(int32_t index);
+    void BoundsCheck(int32_t index, uString* name);
     void Clear();
     template<class T>
     bool Contains(T item) { bool __retval; return List__Contains_fn(this, uConstrain(__type->T(0), item), &__retval), __retval; }

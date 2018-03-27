@@ -30,7 +30,7 @@ namespace Uno{
 namespace Compiler{
 namespace ExportTargetInterop{
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\Compiler\ExportTargetInterop\DontCopyStructAttribute.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\Compiler\ExportTargetInterop\DontCopyStructAttribute.uno
 // -------------------------------------------------------------------------------------------------------------------------------------
 
 // public sealed class DontCopyStructAttribute :4
@@ -83,7 +83,7 @@ DontCopyStructAttribute* DontCopyStructAttribute::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\Compiler\ExportTargetInterop\DontExportAttribute.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\Compiler\ExportTargetInterop\DontExportAttribute.uno
 // ---------------------------------------------------------------------------------------------------------------------------------
 
 // public sealed class DontExportAttribute :4
@@ -136,7 +136,7 @@ DontExportAttribute* DontExportAttribute::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\Compiler\ExportTargetInterop\DotNetTypeAttribute.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\Compiler\ExportTargetInterop\DotNetTypeAttribute.uno
 // ---------------------------------------------------------------------------------------------------------------------------------
 
 // public sealed class DotNetOverrideAttribute :13
@@ -189,7 +189,7 @@ DotNetOverrideAttribute* DotNetOverrideAttribute::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\Compiler\ExportTargetInterop\Foreign\ForeignDataView.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\Compiler\ExportTargetInterop\Foreign\ForeignDataView.uno
 // -------------------------------------------------------------------------------------------------------------------------------------
 
 // public static extern class ForeignDataView :69
@@ -283,7 +283,7 @@ void ForeignDataView__CreateInnerJava_fn(::g::Java::Object* directBuffer, uObjec
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\Compiler\ExportTargetInterop\OptionalAttribute.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\Compiler\ExportTargetInterop\OptionalAttribute.uno
 // -------------------------------------------------------------------------------------------------------------------------------
 
 // public sealed class OptionalAttribute :4
@@ -336,7 +336,7 @@ OptionalAttribute* OptionalAttribute::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\Compiler\ExportTargetInterop\StaticAttribute.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\Compiler\ExportTargetInterop\StaticAttribute.uno
 // -----------------------------------------------------------------------------------------------------------------------------
 
 // public sealed class StaticAttribute :4
@@ -389,7 +389,7 @@ StaticAttribute* StaticAttribute::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\Compiler\ExportTargetInterop\TargetSpecificImplementationAttribute.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\Compiler\ExportTargetInterop\TargetSpecificImplementationAttribute.uno
 // ---------------------------------------------------------------------------------------------------------------------------------------------------
 
 // public sealed class TargetSpecificImplementationAttribute :5
@@ -442,7 +442,7 @@ TargetSpecificImplementationAttribute* TargetSpecificImplementationAttribute::Ne
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\Compiler\ExportTargetInterop\TargetSpecificTypeAttribute.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\Compiler\ExportTargetInterop\TargetSpecificTypeAttribute.uno
 // -----------------------------------------------------------------------------------------------------------------------------------------
 
 // public sealed class TargetSpecificTypeAttribute :5

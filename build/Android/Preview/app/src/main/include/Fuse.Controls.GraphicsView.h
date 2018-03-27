@@ -1,4 +1,4 @@
-// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/Fuse.Controls.Panels/1.7.4/GraphicsView.ux.uno.
+// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/Fuse.Controls.Panels/1.8.1/GraphicsView.ux.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -44,7 +44,7 @@ namespace g{
 namespace Fuse{
 namespace Controls{
 
-// public partial class GraphicsView :106
+// public partial class GraphicsView :107
 // {
 struct GraphicsView_type : ::g::Fuse::Controls::Control_type
 {
@@ -75,6 +75,7 @@ void GraphicsView__FuseElementsITreeRendererIsVisibleChanged_fn(GraphicsView* __
 void GraphicsView__FuseElementsITreeRendererMeasure_fn(GraphicsView* __this, ::g::Fuse::Elements::Element* e, ::g::Fuse::LayoutParams* lp, ::g::Uno::Float2* size, bool* __retval);
 void GraphicsView__FuseElementsITreeRendererOpacityChanged_fn(GraphicsView* __this, ::g::Fuse::Elements::Element* e, float* opacity);
 void GraphicsView__FuseElementsITreeRendererPlaced_fn(GraphicsView* __this, ::g::Fuse::Elements::Element* e);
+void GraphicsView__FuseElementsITreeRendererRenderBoundsChanged_fn(GraphicsView* __this, ::g::Fuse::Elements::Element* e);
 void GraphicsView__FuseElementsITreeRendererRooted_fn(GraphicsView* __this, ::g::Fuse::Elements::Element* e);
 void GraphicsView__FuseElementsITreeRendererRootingStarted_fn(GraphicsView* __this, ::g::Fuse::Elements::Element* e);
 void GraphicsView__FuseElementsITreeRendererTransformChanged_fn(GraphicsView* __this, ::g::Fuse::Elements::Element* e);
@@ -95,7 +96,7 @@ void GraphicsView__PointToWorldRay_fn(GraphicsView* __this, ::g::Uno::Float2* pi
 void GraphicsView__get_ProjectionTransform_fn(GraphicsView* __this, ::g::Uno::Float4x4* __retval);
 void GraphicsView__get_ProjectionTransformInverse_fn(GraphicsView* __this, ::g::Uno::Float4x4* __retval);
 void GraphicsView__ScheduleFrame_fn(GraphicsView* __this);
-void GraphicsView__get_Size_fn(GraphicsView* __this, ::g::Uno::Float2* __retval);
+void GraphicsView__get_Size1_fn(GraphicsView* __this, ::g::Uno::Float2* __retval);
 void GraphicsView__get_TreeRenderer_fn(GraphicsView* __this, uObject** __retval);
 void GraphicsView__get_ViewOrigin_fn(GraphicsView* __this, ::g::Uno::Float3* __retval);
 void GraphicsView__get_ViewProjectionTransform_fn(GraphicsView* __this, ::g::Uno::Float4x4* __retval);
@@ -133,7 +134,7 @@ struct GraphicsView : ::g::Fuse::Controls::LayoutControl
     ::g::Uno::Float4x4 ProjectionTransform();
     ::g::Uno::Float4x4 ProjectionTransformInverse();
     void ScheduleFrame();
-    ::g::Uno::Float2 Size();
+    ::g::Uno::Float2 Size1();
     ::g::Uno::Float3 ViewOrigin();
     ::g::Uno::Float4x4 ViewProjectionTransform();
     ::g::Uno::Float4x4 ViewProjectionTransformInverse();

@@ -1,4 +1,4 @@
-// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/Fuse.Controls.Native/1.7.4/NativeRenderer.uno.
+// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/Fuse.Controls.Native/1.8.1/NativeRenderer.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once

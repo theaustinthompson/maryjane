@@ -1,4 +1,4 @@
-// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/UnoCore/1.7.1/Source/Uno/IO/Path.uno.
+// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/UnoCore/1.8.0/Source/Uno/IO/Path.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -16,6 +16,7 @@ void Path__Combine_fn(uString* path1, uString* path2, uString** __retval);
 void Path__CombineInternal_fn(uString* a, uString* b, uString** __retval);
 void Path__GetDirectoryName_fn(uString* path, uString** __retval);
 void Path__GetDirectorySeparatorChar_fn(char16_t* __retval);
+void Path__GetDirectorySeparatorChars_fn(uArray** __retval);
 void Path__GetFullPath_fn(uString* filename, uString** __retval);
 void Path__GetPathSeparator_fn(char16_t* __retval);
 void Path__GetVolumeSeparatorChar_fn(char16_t* __retval);
@@ -33,11 +34,14 @@ struct Path : uObject
     static char16_t& PathSeparator() { return Path_typeof()->Init(), PathSeparator_; }
     static char16_t VolumeSeparatorChar_;
     static char16_t& VolumeSeparatorChar() { return Path_typeof()->Init(), VolumeSeparatorChar_; }
+    static uSStrong<uArray*> DirectorySeparatorChars_;
+    static uSStrong<uArray*>& DirectorySeparatorChars() { return Path_typeof()->Init(), DirectorySeparatorChars_; }
 
     static uString* Combine(uString* path1, uString* path2);
     static uString* CombineInternal(uString* a, uString* b);
     static uString* GetDirectoryName(uString* path);
     static char16_t GetDirectorySeparatorChar();
+    static uArray* GetDirectorySeparatorChars();
     static uString* GetFullPath(uString* filename);
     static char16_t GetPathSeparator();
     static char16_t GetVolumeSeparatorChar();

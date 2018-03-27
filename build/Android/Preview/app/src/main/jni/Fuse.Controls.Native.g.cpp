@@ -102,7 +102,7 @@ namespace Fuse{
 namespace Controls{
 namespace Native{
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Native\1.7.4\Interfaces.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Native\1.8.1\Interfaces.uno
 // ---------------------------------------------------------------------------------------------
 
 // public abstract interface ICircleView :109
@@ -122,7 +122,7 @@ uInterfaceType* ICircleView_typeof()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Native\1.7.4\Interfaces.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Native\1.8.1\Interfaces.uno
 // ---------------------------------------------------------------------------------------------
 
 // public abstract interface IGraphicsView :13
@@ -140,7 +140,7 @@ uInterfaceType* IGraphicsView_typeof()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Native\1.7.4\Interfaces.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Native\1.8.1\Interfaces.uno
 // ---------------------------------------------------------------------------------------------
 
 // public abstract interface IImageView :92
@@ -159,7 +159,7 @@ uInterfaceType* IImageView_typeof()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Native\1.7.4\Interfaces.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Native\1.8.1\Interfaces.uno
 // ---------------------------------------------------------------------------------------------
 
 // public abstract interface ILabelView :19
@@ -176,7 +176,7 @@ uInterfaceType* ILabelView_typeof()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Native\1.7.4\Interfaces.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Native\1.8.1\Interfaces.uno
 // ---------------------------------------------------------------------------------------------
 
 // public abstract interface ILeafView :11
@@ -191,7 +191,7 @@ uInterfaceType* ILeafView_typeof()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Native\1.7.4\ImageLoader.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Native\1.8.1\ImageLoader.uno
 // ----------------------------------------------------------------------------------------------
 
 // internal sealed extern class ImageHandle :15
@@ -320,7 +320,7 @@ ImageHandle* ImageHandle::New1(uString* name, uObject* handle)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Native\1.7.4\ImageLoader.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Native\1.8.1\ImageLoader.uno
 // ----------------------------------------------------------------------------------------------
 
 // private sealed extern class ImageLoader.ImageHandlePromise :186
@@ -473,7 +473,7 @@ void ImageLoader__ImageHandlePromise::OnDone(::g::Java::Object* obj)
     {
         INIT_JNI;
         jclass __cls = JniHelper::GetNativeExternClass();
-        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "Download1234", "(Ljava/lang/String;)Ljava/lang/Object;");
+        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "Download1226", "(Ljava/lang/String;)Ljava/lang/Object;");
         uString* _uurl=url;
         jstring _url = JniHelper::UnoToJavaString(_uurl);
         jobject __jresult = U_JNIVAR->CallStaticObjectMethod(__cls,__mtd,_url);
@@ -494,7 +494,7 @@ ImageLoader__ImageHandlePromise* ImageLoader__ImageHandlePromise::New5(uString* 
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Native\1.7.4\ImageLoader.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Native\1.8.1\ImageLoader.uno
 // ----------------------------------------------------------------------------------------------
 
 // internal static extern class ImageLoader :63
@@ -660,7 +660,7 @@ uSStrong< ::g::Uno::Collections::Dictionary*> ImageLoader::_pendingeImages_;
     {
         INIT_JNI;
         jclass __cls = JniHelper::GetNativeExternClass();
-        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "LoadFile235", "(Ljava/lang/String;)Ljava/lang/Object;");
+        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "LoadFile227", "(Ljava/lang/String;)Ljava/lang/Object;");
         uString* _ufilePath=filePath;
         jstring _filePath = JniHelper::UnoToJavaString(_ufilePath);
         jobject __jresult = U_JNIVAR->CallStaticObjectMethod(__cls,__mtd,_filePath);
@@ -679,7 +679,7 @@ uSStrong< ::g::Uno::Collections::Dictionary*> ImageLoader::_pendingeImages_;
     {
         INIT_JNI;
         jclass __cls = JniHelper::GetNativeExternClass();
-        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "LoadUri236", "(Ljava/lang/String;)Ljava/lang/Object;");
+        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "LoadUri228", "(Ljava/lang/String;)Ljava/lang/Object;");
         uString* _uuri=uri;
         jstring _uri = JniHelper::UnoToJavaString(_uuri);
         jobject __jresult = U_JNIVAR->CallStaticObjectMethod(__cls,__mtd,_uri);
@@ -698,7 +698,7 @@ void ImageLoader::Release(::g::Java::Object* bitmap)
     {
         INIT_JNI;
         jclass __cls = JniHelper::GetNativeExternClass();
-        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "Release237", "(Ljava/lang/Object;)V");
+        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "Release229", "(Ljava/lang/Object;)V");
         ::g::Java::Object* _ubitmap=bitmap;
         jobject _bitmap = (_ubitmap==NULL ? NULL : U_JNIVAR->NewLocalRef(::g::Android::Base::Wrappers::IJWrapper::_GetJavaObject(uInterface((uObject*)_ubitmap, ::g::Android::Base::Wrappers::IJWrapper_typeof()))));
         U_JNIVAR->CallStaticVoidMethod(__cls,__mtd,_bitmap);
@@ -726,7 +726,7 @@ void ImageLoader::ReleaseHandle(::g::Fuse::Controls::Native::ImageHandle* handle
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Native\1.7.4\Interfaces.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Native\1.8.1\Interfaces.uno
 // ---------------------------------------------------------------------------------------------
 
 // public abstract interface INativeViewRenderer :130
@@ -744,7 +744,7 @@ uInterfaceType* INativeViewRenderer_typeof()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\ViewHandle.Android.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\ViewHandle.Android.uno
 // -------------------------------------------------------------------------------------------
 
 // public enum ViewHandle.Invalidation :14
@@ -760,7 +760,7 @@ uEnumType* ViewHandle__Invalidation_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Native\1.7.4\Interfaces.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Native\1.8.1\Interfaces.uno
 // ---------------------------------------------------------------------------------------------
 
 // public abstract interface IOffscreenRenderer :153
@@ -778,7 +778,7 @@ uInterfaceType* IOffscreenRenderer_typeof()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Native\1.7.4\Interfaces.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Native\1.8.1\Interfaces.uno
 // ---------------------------------------------------------------------------------------------
 
 // public abstract interface IOffscreenRendererHost :148
@@ -795,7 +795,7 @@ uInterfaceType* IOffscreenRendererHost_typeof()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Native\1.7.4\Interfaces.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Native\1.8.1\Interfaces.uno
 // ---------------------------------------------------------------------------------------------
 
 // public abstract interface IRangeView :55
@@ -812,7 +812,7 @@ uInterfaceType* IRangeView_typeof()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Native\1.7.4\Interfaces.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Native\1.8.1\Interfaces.uno
 // ---------------------------------------------------------------------------------------------
 
 // public abstract interface IRangeViewHost :60
@@ -830,7 +830,7 @@ uInterfaceType* IRangeViewHost_typeof()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Native\1.7.4\Interfaces.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Native\1.8.1\Interfaces.uno
 // ---------------------------------------------------------------------------------------------
 
 // public abstract interface IRectangleView :104
@@ -847,7 +847,7 @@ uInterfaceType* IRectangleView_typeof()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Native\1.7.4\Interfaces.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Native\1.8.1\Interfaces.uno
 // ---------------------------------------------------------------------------------------------
 
 // public abstract interface IScrollView :117
@@ -865,7 +865,7 @@ uInterfaceType* IScrollView_typeof()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Native\1.7.4\Interfaces.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Native\1.8.1\Interfaces.uno
 // ---------------------------------------------------------------------------------------------
 
 // public abstract interface IScrollViewHost :123
@@ -884,7 +884,7 @@ uInterfaceType* IScrollViewHost_typeof()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Native\1.7.4\Interfaces.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Native\1.8.1\Interfaces.uno
 // ---------------------------------------------------------------------------------------------
 
 // public abstract interface IShapeView :99
@@ -901,7 +901,7 @@ uInterfaceType* IShapeView_typeof()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Native\1.7.4\Interfaces.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Native\1.8.1\Interfaces.uno
 // ---------------------------------------------------------------------------------------------
 
 // public abstract interface ITextEdit :66
@@ -930,7 +930,7 @@ uInterfaceType* ITextEdit_typeof()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Native\1.7.4\Interfaces.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Native\1.8.1\Interfaces.uno
 // ---------------------------------------------------------------------------------------------
 
 // public abstract interface ITextEditHost :37
@@ -950,7 +950,7 @@ uInterfaceType* ITextEditHost_typeof()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Native\1.7.4\Interfaces.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Native\1.8.1\Interfaces.uno
 // ---------------------------------------------------------------------------------------------
 
 // public abstract interface ITextView :24
@@ -975,7 +975,7 @@ uInterfaceType* ITextView_typeof()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Native\1.7.4\Interfaces.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Native\1.8.1\Interfaces.uno
 // ---------------------------------------------------------------------------------------------
 
 // public abstract interface IToggleView :45
@@ -992,7 +992,7 @@ uInterfaceType* IToggleView_typeof()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Native\1.7.4\Interfaces.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Native\1.8.1\Interfaces.uno
 // ---------------------------------------------------------------------------------------------
 
 // public abstract interface IToggleViewHost :50
@@ -1009,7 +1009,7 @@ uInterfaceType* IToggleViewHost_typeof()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Native\1.7.4\Interfaces.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Native\1.8.1\Interfaces.uno
 // ---------------------------------------------------------------------------------------------
 
 // public abstract interface IView :9
@@ -1024,7 +1024,7 @@ uInterfaceType* IView_typeof()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Native\1.7.4\Interfaces.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Native\1.8.1\Interfaces.uno
 // ---------------------------------------------------------------------------------------------
 
 // public abstract interface IViewGroup :83
@@ -1045,7 +1045,7 @@ uInterfaceType* IViewGroup_typeof()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Native\1.7.4\NativeRenderer.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Native\1.8.1\NativeRenderer.uno
 // -------------------------------------------------------------------------------------------------
 
 // public abstract extern interface IViewHandleRenderer :10
@@ -1063,7 +1063,7 @@ uInterfaceType* IViewHandleRenderer_typeof()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Native\1.7.4\Interfaces.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Native\1.8.1\Interfaces.uno
 // ---------------------------------------------------------------------------------------------
 
 // public abstract interface IViewHost :136
@@ -1081,7 +1081,7 @@ uInterfaceType* IViewHost_typeof()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Native\1.7.4\NativeRootViewport.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Native\1.8.1\NativeRootViewport.uno
 // -----------------------------------------------------------------------------------------------------
 
 // internal sealed extern class NativeRootViewport :6
@@ -1227,7 +1227,7 @@ NativeRootViewport* NativeRootViewport::New5(::g::Fuse::Controls::Native::ViewHa
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Native\1.7.4\NativeRenderer.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Native\1.8.1\NativeRenderer.uno
 // -------------------------------------------------------------------------------------------------
 
 // public sealed extern class NativeViewRenderer :17
@@ -1397,7 +1397,7 @@ void NativeViewRenderer::ReleaseResources()
     {
         INIT_JNI;
         jclass __cls = JniHelper::GetNativeExternClass();
-        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "AllocPixelBuffer238", "(II)Ljava/lang/Object;");
+        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "AllocPixelBuffer230", "(II)Ljava/lang/Object;");
         int32_t _uw=w;
         jint _w = (jint)_uw;
         int32_t _uh=h;
@@ -1418,7 +1418,7 @@ void NativeViewRenderer::FreePixelBuffer(::g::Java::Object* bitmap)
     {
         INIT_JNI;
         jclass __cls = JniHelper::GetNativeExternClass();
-        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "FreePixelBuffer239", "(Ljava/lang/Object;)V");
+        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "FreePixelBuffer231", "(Ljava/lang/Object;)V");
         ::g::Java::Object* _ubitmap=bitmap;
         jobject _bitmap = (_ubitmap==NULL ? NULL : U_JNIVAR->NewLocalRef(::g::Android::Base::Wrappers::IJWrapper::_GetJavaObject(uInterface((uObject*)_ubitmap, ::g::Android::Base::Wrappers::IJWrapper_typeof()))));
         U_JNIVAR->CallStaticVoidMethod(__cls,__mtd,_bitmap);
@@ -1444,7 +1444,7 @@ void NativeViewRenderer::Upload(::g::Java::Object* viewHandle, ::g::Java::Object
     {
         INIT_JNI;
         jclass __cls = JniHelper::GetNativeExternClass();
-        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "Upload240", "(Ljava/lang/Object;Ljava/lang/Object;ZII)V");
+        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "Upload232", "(Ljava/lang/Object;Ljava/lang/Object;ZII)V");
         ::g::Java::Object* _uviewHandle=viewHandle;
         jobject _viewHandle = (_uviewHandle==NULL ? NULL : U_JNIVAR->NewLocalRef(::g::Android::Base::Wrappers::IJWrapper::_GetJavaObject(uInterface((uObject*)_uviewHandle, ::g::Android::Base::Wrappers::IJWrapper_typeof()))));
         ::g::Java::Object* _upixelBuffer=pixelBuffer;
@@ -1469,7 +1469,7 @@ void NativeViewRenderer::Upload(::g::Java::Object* viewHandle, ::g::Java::Object
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Native\1.7.4\Interfaces.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Native\1.8.1\Interfaces.uno
 // ---------------------------------------------------------------------------------------------
 
 // public enum OffscreenRendering :142
@@ -1485,7 +1485,7 @@ uEnumType* OffscreenRendering_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Native\1.7.4\ImageLoader.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Native\1.8.1\ImageLoader.uno
 // ----------------------------------------------------------------------------------------------
 
 // private sealed extern class ImageLoader.PendingPromise :163
@@ -1570,7 +1570,7 @@ ImageLoader__PendingPromise* ImageLoader__PendingPromise::New5(::g::Uno::Threadi
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Native\1.7.4\Interfaces.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Native\1.8.1\Interfaces.uno
 // ---------------------------------------------------------------------------------------------
 
 // internal static extern class ViewExtensions :160
@@ -1611,7 +1611,7 @@ void ViewExtensions__GetNativeHandle_fn(uObject* view, ::g::Java::Object** __ret
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\ViewHandle.Android.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\ViewHandle.Android.uno
 // -------------------------------------------------------------------------------------------
 
 // internal static extern class ViewFactory :292
@@ -1656,7 +1656,7 @@ void ViewFactory__InstantiateViewGroupImpl_fn(::g::Java::Object** __retval)
     {
         INIT_JNI;
         jclass __cls = JniHelper::GetNativeExternClass();
-        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "InstantiateViewGroupImpl241", "()Ljava/lang/Object;");
+        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "InstantiateViewGroupImpl233", "()Ljava/lang/Object;");
         jobject __jresult = U_JNIVAR->CallStaticObjectMethod(__cls,__mtd);
         ::g::Java::Object* __result = (::g::Java::Object*)::g::Android::Base::Wrappers::JavaObjectHelper::JObjectToJWrapper(__jresult, false);
         ::g::Android::Base::JNI::CheckException();
@@ -1666,7 +1666,7 @@ void ViewFactory__InstantiateViewGroupImpl_fn(::g::Java::Object** __retval)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\ViewHandle.Android.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\ViewHandle.Android.uno
 // -------------------------------------------------------------------------------------------
 
 // public extern class ViewHandle :12
@@ -2007,7 +2007,7 @@ void ViewHandle::BringToFront()
     {
         INIT_JNI;
         jclass __cls = JniHelper::GetNativeExternClass();
-        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "BringToFront242", "(Lcom/uno/UnoObject;)V");
+        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "BringToFront234", "(Lcom/uno/UnoObject;)V");
         uObject* _uthis=this;
         jobject _this_ = ::g::Uno::Compiler::ExportTargetInterop::Foreign::Android::JavaUnoObject::Box6(_uthis);
         U_JNIVAR->CallStaticVoidMethod(__cls,__mtd,_this_);
@@ -2025,7 +2025,7 @@ uString* ViewHandle::Format()
     {
         INIT_JNI;
         jclass __cls = JniHelper::GetNativeExternClass();
-        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "Format245", "(Lcom/uno/UnoObject;)Ljava/lang/String;");
+        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "Format237", "(Lcom/uno/UnoObject;)Ljava/lang/String;");
         uObject* _uthis=this;
         jobject _this_ = ::g::Uno::Compiler::ExportTargetInterop::Foreign::Android::JavaUnoObject::Box6(_uthis);
         jobject __jresult = U_JNIVAR->CallStaticObjectMethod(__cls,__mtd,_this_);
@@ -2044,7 +2044,7 @@ int32_t ViewHandle::IndexOfChild(ViewHandle* childHandle)
     {
         INIT_JNI;
         jclass __cls = JniHelper::GetNativeExternClass();
-        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "IndexOfChild248", "(Lcom/uno/UnoObject;Lcom/uno/UnoObject;)I");
+        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "IndexOfChild240", "(Lcom/uno/UnoObject;Lcom/uno/UnoObject;)I");
         uObject* _uthis=this;
         jobject _this_ = ::g::Uno::Compiler::ExportTargetInterop::Foreign::Android::JavaUnoObject::Box6(_uthis);
         ViewHandle* _uchildHandle=childHandle;
@@ -2065,7 +2065,7 @@ void ViewHandle::InsertChild(ViewHandle* childHandle)
     {
         INIT_JNI;
         jclass __cls = JniHelper::GetNativeExternClass();
-        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "InsertChild249", "(Lcom/uno/UnoObject;Lcom/uno/UnoObject;)V");
+        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "InsertChild241", "(Lcom/uno/UnoObject;Lcom/uno/UnoObject;)V");
         uObject* _uthis=this;
         jobject _this_ = ::g::Uno::Compiler::ExportTargetInterop::Foreign::Android::JavaUnoObject::Box6(_uthis);
         ViewHandle* _uchildHandle=childHandle;
@@ -2086,7 +2086,7 @@ void ViewHandle::InsertChild1(ViewHandle* childHandle, int32_t index)
     {
         INIT_JNI;
         jclass __cls = JniHelper::GetNativeExternClass();
-        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "InsertChild1250", "(Lcom/uno/UnoObject;Lcom/uno/UnoObject;I)V");
+        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "InsertChild1242", "(Lcom/uno/UnoObject;Lcom/uno/UnoObject;I)V");
         uObject* _uthis=this;
         jobject _this_ = ::g::Uno::Compiler::ExportTargetInterop::Foreign::Android::JavaUnoObject::Box6(_uthis);
         ViewHandle* _uchildHandle=childHandle;
@@ -2117,7 +2117,7 @@ void ViewHandle::InvalidateImpl()
     {
         INIT_JNI;
         jclass __cls = JniHelper::GetNativeExternClass();
-        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "InvalidateImpl251", "(Lcom/uno/UnoObject;)V");
+        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "InvalidateImpl243", "(Lcom/uno/UnoObject;)V");
         uObject* _uthis=this;
         jobject _this_ = ::g::Uno::Compiler::ExportTargetInterop::Foreign::Android::JavaUnoObject::Box6(_uthis);
         U_JNIVAR->CallStaticVoidMethod(__cls,__mtd,_this_);
@@ -2135,7 +2135,7 @@ bool ViewHandle::IsViewGroup()
     {
         INIT_JNI;
         jclass __cls = JniHelper::GetNativeExternClass();
-        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "IsViewGroup252", "(Lcom/uno/UnoObject;)Z");
+        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "IsViewGroup244", "(Lcom/uno/UnoObject;)Z");
         uObject* _uthis=this;
         jobject _this_ = ::g::Uno::Compiler::ExportTargetInterop::Foreign::Android::JavaUnoObject::Box6(_uthis);
         jboolean __jresult = U_JNIVAR->CallStaticBooleanMethod(__cls,__mtd,_this_);
@@ -2153,7 +2153,7 @@ void ViewHandle::RemoveChild(ViewHandle* childHandle)
     {
         INIT_JNI;
         jclass __cls = JniHelper::GetNativeExternClass();
-        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "RemoveChild254", "(Lcom/uno/UnoObject;Lcom/uno/UnoObject;)V");
+        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "RemoveChild246", "(Lcom/uno/UnoObject;Lcom/uno/UnoObject;)V");
         uObject* _uthis=this;
         jobject _this_ = ::g::Uno::Compiler::ExportTargetInterop::Foreign::Android::JavaUnoObject::Box6(_uthis);
         ViewHandle* _uchildHandle=childHandle;
@@ -2174,7 +2174,7 @@ void ViewHandle::ResetLayoutParams()
     {
         INIT_JNI;
         jclass __cls = JniHelper::GetNativeExternClass();
-        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "ResetLayoutParams255", "(Lcom/uno/UnoObject;)V");
+        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "ResetLayoutParams247", "(Lcom/uno/UnoObject;)V");
         uObject* _uthis=this;
         jobject _this_ = ::g::Uno::Compiler::ExportTargetInterop::Foreign::Android::JavaUnoObject::Box6(_uthis);
         U_JNIVAR->CallStaticVoidMethod(__cls,__mtd,_this_);
@@ -2203,7 +2203,7 @@ void ViewHandle::SetBackgroundColor(int32_t color)
     {
         INIT_JNI;
         jclass __cls = JniHelper::GetNativeExternClass();
-        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "SetBackgroundColor256", "(Lcom/uno/UnoObject;I)V");
+        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "SetBackgroundColor248", "(Lcom/uno/UnoObject;I)V");
         uObject* _uthis=this;
         jobject _this_ = ::g::Uno::Compiler::ExportTargetInterop::Foreign::Android::JavaUnoObject::Box6(_uthis);
         int32_t _ucolor=color;
@@ -2224,7 +2224,7 @@ void ViewHandle::SetClipToBounds(bool clipToBounds)
     {
         INIT_JNI;
         jclass __cls = JniHelper::GetNativeExternClass();
-        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "SetClipToBounds257", "(Lcom/uno/UnoObject;Z)V");
+        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "SetClipToBounds249", "(Lcom/uno/UnoObject;Z)V");
         uObject* _uthis=this;
         jobject _this_ = ::g::Uno::Compiler::ExportTargetInterop::Foreign::Android::JavaUnoObject::Box6(_uthis);
         bool _uclipToBounds=clipToBounds;
@@ -2245,7 +2245,7 @@ void ViewHandle::SetEnabled(bool value)
     {
         INIT_JNI;
         jclass __cls = JniHelper::GetNativeExternClass();
-        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "SetEnabled258", "(Lcom/uno/UnoObject;Z)V");
+        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "SetEnabled250", "(Lcom/uno/UnoObject;Z)V");
         uObject* _uthis=this;
         jobject _this_ = ::g::Uno::Compiler::ExportTargetInterop::Foreign::Android::JavaUnoObject::Box6(_uthis);
         bool _uvalue=value;
@@ -2266,7 +2266,7 @@ void ViewHandle::SetHitTestEnabled(bool enabled)
     {
         INIT_JNI;
         jclass __cls = JniHelper::GetNativeExternClass();
-        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "SetHitTestEnabled259", "(Lcom/uno/UnoObject;Z)V");
+        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "SetHitTestEnabled251", "(Lcom/uno/UnoObject;Z)V");
         uObject* _uthis=this;
         jobject _this_ = ::g::Uno::Compiler::ExportTargetInterop::Foreign::Android::JavaUnoObject::Box6(_uthis);
         bool _uenabled=enabled;
@@ -2287,7 +2287,7 @@ void ViewHandle::SetIsVisible(bool isVisible)
     {
         INIT_JNI;
         jclass __cls = JniHelper::GetNativeExternClass();
-        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "SetIsVisible260", "(Lcom/uno/UnoObject;Z)V");
+        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "SetIsVisible252", "(Lcom/uno/UnoObject;Z)V");
         uObject* _uthis=this;
         jobject _this_ = ::g::Uno::Compiler::ExportTargetInterop::Foreign::Android::JavaUnoObject::Box6(_uthis);
         bool _uisVisible=isVisible;
@@ -2308,7 +2308,7 @@ void ViewHandle::SetOpacity(float value)
     {
         INIT_JNI;
         jclass __cls = JniHelper::GetNativeExternClass();
-        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "SetOpacity261", "(Lcom/uno/UnoObject;F)V");
+        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "SetOpacity253", "(Lcom/uno/UnoObject;F)V");
         uObject* _uthis=this;
         jobject _this_ = ::g::Uno::Compiler::ExportTargetInterop::Foreign::Android::JavaUnoObject::Box6(_uthis);
         float _uvalue=value;
@@ -2347,7 +2347,7 @@ void ViewHandle::UpdateTransform(float scaleX, float scaleY, float rotation, flo
     {
         INIT_JNI;
         jclass __cls = JniHelper::GetNativeExternClass();
-        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "UpdateTransform262", "(Lcom/uno/UnoObject;FFFFF)V");
+        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "UpdateTransform254", "(Lcom/uno/UnoObject;FFFFF)V");
         uObject* _uthis=this;
         jobject _this_ = ::g::Uno::Compiler::ExportTargetInterop::Foreign::Android::JavaUnoObject::Box6(_uthis);
         float _uscaleX=scaleX;
@@ -2408,7 +2408,7 @@ void ViewHandle::UpdateViewRectImpl(int32_t x, int32_t y, int32_t w, int32_t h)
     {
         INIT_JNI;
         jclass __cls = JniHelper::GetNativeExternClass();
-        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "UpdateViewRectImpl263", "(Lcom/uno/UnoObject;IIII)V");
+        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "UpdateViewRectImpl255", "(Lcom/uno/UnoObject;IIII)V");
         uObject* _uthis=this;
         jobject _this_ = ::g::Uno::Compiler::ExportTargetInterop::Foreign::Android::JavaUnoObject::Box6(_uthis);
         int32_t _ux=x;
@@ -2438,7 +2438,7 @@ void ViewHandle::CopyState(ViewHandle* sourceHandle, ViewHandle* destHandle)
     {
         INIT_JNI;
         jclass __cls = JniHelper::GetNativeExternClass();
-        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "CopyState244", "(Lcom/uno/UnoObject;Lcom/uno/UnoObject;)V");
+        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "CopyState236", "(Lcom/uno/UnoObject;Lcom/uno/UnoObject;)V");
         ViewHandle* _usourceHandle=sourceHandle;
         jobject _sourceHandle = ::g::Uno::Compiler::ExportTargetInterop::Foreign::Android::JavaUnoObject::Box6(_usourceHandle);
         ViewHandle* _udestHandle=destHandle;
@@ -2459,7 +2459,7 @@ int32_t ViewHandle::GetMeasuredHeight(::g::Java::Object* handle)
     {
         INIT_JNI;
         jclass __cls = JniHelper::GetNativeExternClass();
-        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "GetMeasuredHeight246", "(Ljava/lang/Object;)I");
+        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "GetMeasuredHeight238", "(Ljava/lang/Object;)I");
         ::g::Java::Object* _uhandle=handle;
         jobject _handle = (_uhandle==NULL ? NULL : U_JNIVAR->NewLocalRef(::g::Android::Base::Wrappers::IJWrapper::_GetJavaObject(uInterface((uObject*)_uhandle, ::g::Android::Base::Wrappers::IJWrapper_typeof()))));
         jint __jresult = U_JNIVAR->CallStaticIntMethod(__cls,__mtd,_handle);
@@ -2477,7 +2477,7 @@ int32_t ViewHandle::GetMeasuredWidth(::g::Java::Object* handle)
     {
         INIT_JNI;
         jclass __cls = JniHelper::GetNativeExternClass();
-        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "GetMeasuredWidth247", "(Ljava/lang/Object;)I");
+        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "GetMeasuredWidth239", "(Ljava/lang/Object;)I");
         ::g::Java::Object* _uhandle=handle;
         jobject _handle = (_uhandle==NULL ? NULL : U_JNIVAR->NewLocalRef(::g::Android::Base::Wrappers::IJWrapper::_GetJavaObject(uInterface((uObject*)_uhandle, ::g::Android::Base::Wrappers::IJWrapper_typeof()))));
         jint __jresult = U_JNIVAR->CallStaticIntMethod(__cls,__mtd,_handle);
@@ -2495,7 +2495,7 @@ void ViewHandle::Measure1(::g::Java::Object* handle, int32_t w, int32_t h, bool 
     {
         INIT_JNI;
         jclass __cls = JniHelper::GetNativeExternClass();
-        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "Measure1253", "(Ljava/lang/Object;IIZZ)V");
+        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "Measure1245", "(Ljava/lang/Object;IIZZ)V");
         ::g::Java::Object* _uhandle=handle;
         jobject _handle = (_uhandle==NULL ? NULL : U_JNIVAR->NewLocalRef(::g::Android::Base::Wrappers::IJWrapper::_GetJavaObject(uInterface((uObject*)_uhandle, ::g::Android::Base::Wrappers::IJWrapper_typeof()))));
         int32_t _uw=w;

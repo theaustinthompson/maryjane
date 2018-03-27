@@ -1,4 +1,4 @@
-// This file was generated based on C:/Users/borde_000/Desktop/Apps/maryjane/maryjane/build/Android/Preview/cache/ux13/maryjane.unoproj.g.uno.
+// This file was generated based on C:/Users/borde_000/Desktop/Apps/maryjane/maryjane/build/Android/Preview/cache/ux14/maryjane.unoproj.g.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #include <_root.maryjane_FuseCo-6d25f8b4.h>
@@ -11,7 +11,7 @@ static uType* TYPES[1];
 
 namespace g{
 
-// internal sealed class maryjane_FuseControlsTextControl_Value_Property :11
+// internal sealed class maryjane_FuseControlsTextControl_Value_Property :43
 // {
 static void maryjane_FuseControlsTextControl_Value_Property_build(uType* type)
 {
@@ -40,52 +40,52 @@ static void maryjane_FuseControlsTextControl_Value_Property_build(uType* type)
     return type;
 }
 
-// public maryjane_FuseControlsTextControl_Value_Property(Fuse.Controls.TextControl obj, Uno.UX.Selector name) :14
+// public maryjane_FuseControlsTextControl_Value_Property(Fuse.Controls.TextControl obj, Uno.UX.Selector name) :46
 void maryjane_FuseControlsTextControl_Value_Property__ctor_3_fn(maryjane_FuseControlsTextControl_Value_Property* __this, ::g::Fuse::Controls::TextControl* obj, ::g::Uno::UX::Selector* name)
 {
     __this->ctor_3(obj, *name);
 }
 
-// public override sealed string Get(Uno.UX.PropertyObject obj) :16
+// public override sealed string Get(Uno.UX.PropertyObject obj) :48
 void maryjane_FuseControlsTextControl_Value_Property__Get1_fn(maryjane_FuseControlsTextControl_Value_Property* __this, ::g::Uno::UX::PropertyObject* obj, uString** __retval)
 {
     uStackFrame __("maryjane_FuseControlsTextControl_Value_Property", "Get(Uno.UX.PropertyObject)");
     return *__retval = uPtr(uCast< ::g::Fuse::Controls::TextControl*>(obj, ::TYPES[0/*Fuse.Controls.TextControl*/]))->Value(), void();
 }
 
-// public maryjane_FuseControlsTextControl_Value_Property New(Fuse.Controls.TextControl obj, Uno.UX.Selector name) :14
+// public maryjane_FuseControlsTextControl_Value_Property New(Fuse.Controls.TextControl obj, Uno.UX.Selector name) :46
 void maryjane_FuseControlsTextControl_Value_Property__New1_fn(::g::Fuse::Controls::TextControl* obj, ::g::Uno::UX::Selector* name, maryjane_FuseControlsTextControl_Value_Property** __retval)
 {
     *__retval = maryjane_FuseControlsTextControl_Value_Property::New1(obj, *name);
 }
 
-// public override sealed Uno.UX.PropertyObject get_Object() :15
+// public override sealed Uno.UX.PropertyObject get_Object() :47
 void maryjane_FuseControlsTextControl_Value_Property__get_Object_fn(maryjane_FuseControlsTextControl_Value_Property* __this, ::g::Uno::UX::PropertyObject** __retval)
 {
     return *__retval = __this->_obj, void();
 }
 
-// public override sealed void Set(Uno.UX.PropertyObject obj, string v, Uno.UX.IPropertyListener origin) :17
+// public override sealed void Set(Uno.UX.PropertyObject obj, string v, Uno.UX.IPropertyListener origin) :49
 void maryjane_FuseControlsTextControl_Value_Property__Set1_fn(maryjane_FuseControlsTextControl_Value_Property* __this, ::g::Uno::UX::PropertyObject* obj, uString* v, uObject* origin)
 {
     uStackFrame __("maryjane_FuseControlsTextControl_Value_Property", "Set(Uno.UX.PropertyObject,string,Uno.UX.IPropertyListener)");
     uPtr(uCast< ::g::Fuse::Controls::TextControl*>(obj, ::TYPES[0/*Fuse.Controls.TextControl*/]))->SetValue(v, origin);
 }
 
-// public override sealed bool get_SupportsOriginSetter() :18
+// public override sealed bool get_SupportsOriginSetter() :50
 void maryjane_FuseControlsTextControl_Value_Property__get_SupportsOriginSetter_fn(maryjane_FuseControlsTextControl_Value_Property* __this, bool* __retval)
 {
     return *__retval = true, void();
 }
 
-// public maryjane_FuseControlsTextControl_Value_Property(Fuse.Controls.TextControl obj, Uno.UX.Selector name) [instance] :14
+// public maryjane_FuseControlsTextControl_Value_Property(Fuse.Controls.TextControl obj, Uno.UX.Selector name) [instance] :46
 void maryjane_FuseControlsTextControl_Value_Property::ctor_3(::g::Fuse::Controls::TextControl* obj, ::g::Uno::UX::Selector name)
 {
     ctor_2(name);
     _obj = obj;
 }
 
-// public maryjane_FuseControlsTextControl_Value_Property New(Fuse.Controls.TextControl obj, Uno.UX.Selector name) [static] :14
+// public maryjane_FuseControlsTextControl_Value_Property New(Fuse.Controls.TextControl obj, Uno.UX.Selector name) [static] :46
 maryjane_FuseControlsTextControl_Value_Property* maryjane_FuseControlsTextControl_Value_Property::New1(::g::Fuse::Controls::TextControl* obj, ::g::Uno::UX::Selector name)
 {
     maryjane_FuseControlsTextControl_Value_Property* obj1 = (maryjane_FuseControlsTextControl_Value_Property*)uNew(maryjane_FuseControlsTextControl_Value_Property_typeof());

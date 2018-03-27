@@ -46,7 +46,7 @@ namespace g{
 namespace Fuse{
 namespace Designer{
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Designer\1.7.4\Attributes.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Designer\1.8.1\Attributes.uno
 // --------------------------------------------------------------------------------------
 
 // public sealed class AdvancedAttribute :57
@@ -99,7 +99,7 @@ AdvancedAttribute* AdvancedAttribute::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Designer\1.7.4\Attributes.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Designer\1.8.1\Attributes.uno
 // --------------------------------------------------------------------------------------
 
 // public sealed class ChildExtensionAttribute :12
@@ -152,7 +152,7 @@ ChildExtensionAttribute* ChildExtensionAttribute::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Designer\1.7.4\Attributes.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Designer\1.8.1\Attributes.uno
 // --------------------------------------------------------------------------------------
 
 // public sealed class ColorAttribute :111
@@ -205,7 +205,7 @@ ColorAttribute* ColorAttribute::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Designer\1.7.4\Attributes.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Designer\1.8.1\Attributes.uno
 // --------------------------------------------------------------------------------------
 
 // public sealed class ComponentOfAttribute :93
@@ -263,7 +263,7 @@ ComponentOfAttribute* ComponentOfAttribute::New1(uString* entityClass)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Designer\1.7.4\Attributes.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Designer\1.8.1\Attributes.uno
 // --------------------------------------------------------------------------------------
 
 // public sealed class DefaultComponentAttribute :99
@@ -321,7 +321,7 @@ DefaultComponentAttribute* DefaultComponentAttribute::New1(uString* componentCla
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Designer\1.7.4\Attributes.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Designer\1.8.1\Attributes.uno
 // --------------------------------------------------------------------------------------
 
 // public sealed class DefaultInstanceAttribute :14
@@ -382,7 +382,7 @@ DefaultInstanceAttribute* DefaultInstanceAttribute::New1(uString* targetProperty
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Designer\1.7.4\Attributes.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Designer\1.8.1\Attributes.uno
 // --------------------------------------------------------------------------------------
 
 // public sealed class DesignerNameAttribute :87
@@ -440,7 +440,7 @@ DesignerNameAttribute* DesignerNameAttribute::New1(uString* name)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Designer\1.7.4\Attributes.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Designer\1.8.1\Attributes.uno
 // --------------------------------------------------------------------------------------
 
 // public sealed class DragDropPriorityAttribute :85
@@ -493,7 +493,7 @@ DragDropPriorityAttribute* DragDropPriorityAttribute::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Designer\1.7.4\Attributes.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Designer\1.8.1\Attributes.uno
 // --------------------------------------------------------------------------------------
 
 // public sealed class ExtensionAttribute :11
@@ -546,7 +546,7 @@ ExtensionAttribute* ExtensionAttribute::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Designer\1.7.4\Attributes.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Designer\1.8.1\Attributes.uno
 // --------------------------------------------------------------------------------------
 
 // public sealed class GroupAttribute :44
@@ -607,7 +607,7 @@ GroupAttribute* GroupAttribute::New1(uString* name, int32_t priority)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Designer\1.7.4\Attributes.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Designer\1.8.1\Attributes.uno
 // --------------------------------------------------------------------------------------
 
 // public sealed class HideAttribute :6
@@ -660,7 +660,7 @@ HideAttribute* HideAttribute::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Designer\1.7.4\Attributes.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Designer\1.8.1\Attributes.uno
 // --------------------------------------------------------------------------------------
 
 // public sealed class HidesAttribute :51
@@ -718,7 +718,7 @@ HidesAttribute* HidesAttribute::New1(uString* targetProperty)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Designer\1.7.4\Attributes.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Designer\1.8.1\Attributes.uno
 // --------------------------------------------------------------------------------------
 
 // public sealed class IconAttribute :26
@@ -776,7 +776,7 @@ IconAttribute* IconAttribute::New1(uString* path)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Designer\1.7.4\Attributes.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Designer\1.8.1\Attributes.uno
 // --------------------------------------------------------------------------------------
 
 // public sealed class InlineAttribute :9
@@ -829,7 +829,7 @@ InlineAttribute* InlineAttribute::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Designer\1.7.4\Attributes.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Designer\1.8.1\Attributes.uno
 // --------------------------------------------------------------------------------------
 
 // public sealed class IntervalAttribute :123
@@ -887,7 +887,7 @@ IntervalAttribute* IntervalAttribute::New1(float interval)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Designer\1.7.4\Attributes.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Designer\1.8.1\Attributes.uno
 // --------------------------------------------------------------------------------------
 
 // public sealed class OptionalHideAttribute :7
@@ -940,7 +940,7 @@ OptionalHideAttribute* OptionalHideAttribute::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Designer\1.7.4\Attributes.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Designer\1.8.1\Attributes.uno
 // --------------------------------------------------------------------------------------
 
 // public sealed class PriorityAttribute :35
@@ -998,7 +998,7 @@ PriorityAttribute* PriorityAttribute::New1(int32_t Priority1)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Designer\1.7.4\Attributes.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Designer\1.8.1\Attributes.uno
 // --------------------------------------------------------------------------------------
 
 // public sealed class RangeAttribute :114
@@ -1093,7 +1093,7 @@ RangeAttribute* RangeAttribute::New2(float min, float max, float exponent)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Designer\1.7.4\Attributes.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Designer\1.8.1\Attributes.uno
 // --------------------------------------------------------------------------------------
 
 // public sealed class RecursionSafeAttribute :129
@@ -1146,7 +1146,7 @@ RecursionSafeAttribute* RecursionSafeAttribute::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Designer\1.7.4\Attributes.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Designer\1.8.1\Attributes.uno
 // --------------------------------------------------------------------------------------
 
 // public sealed class RequiredComponentAttribute :105
@@ -1204,7 +1204,7 @@ RequiredComponentAttribute* RequiredComponentAttribute::New1(uString* componentC
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Designer\1.7.4\Attributes.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Designer\1.8.1\Attributes.uno
 // --------------------------------------------------------------------------------------
 
 // public sealed class SpawnableAttribute :59
@@ -1257,7 +1257,7 @@ SpawnableAttribute* SpawnableAttribute::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Designer\1.7.4\Attributes.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Designer\1.8.1\Attributes.uno
 // --------------------------------------------------------------------------------------
 
 // public sealed class SpawnsAttribute :61
@@ -1318,7 +1318,7 @@ SpawnsAttribute* SpawnsAttribute::New1(uString* sourceType, uString* targetPrope
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Designer\1.7.4\Attributes.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Designer\1.8.1\Attributes.uno
 // --------------------------------------------------------------------------------------
 
 // public sealed class ThicknessAttribute :112
@@ -1371,7 +1371,7 @@ ThicknessAttribute* ThicknessAttribute::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Designer\1.7.4\Attributes.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Designer\1.8.1\Attributes.uno
 // --------------------------------------------------------------------------------------
 
 // public sealed class TransitionAttribute :72
@@ -1435,7 +1435,7 @@ TransitionAttribute* TransitionAttribute::New1(uString* incomingType, uString* t
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Designer\1.7.4\UnoHostInterface.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Designer\1.8.1\UnoHostInterface.uno
 // --------------------------------------------------------------------------------------------
 
 // public static extern class UnoHostInterface :6

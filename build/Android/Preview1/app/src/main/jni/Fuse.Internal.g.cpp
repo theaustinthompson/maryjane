@@ -120,7 +120,7 @@ namespace g{
 namespace Fuse{
 namespace Internal{
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.7.4\Internal\AndroidSystemFont.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.8.1\Internal\AndroidSystemFont.uno
 // ----------------------------------------------------------------------------------------------------
 
 // private struct AndroidSystemFont.Alias :45
@@ -175,7 +175,7 @@ AndroidSystemFont__Alias AndroidSystemFont__Alias__New1(uString* to, int32_t wei
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.7.4\Internal\AndroidSystemFont.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.8.1\Internal\AndroidSystemFont.uno
 // ----------------------------------------------------------------------------------------------------
 
 // internal static extern class AndroidSystemFont :11
@@ -323,7 +323,7 @@ void AndroidSystemFont::AddFonts()
     {
         INIT_JNI;
         jclass __cls = JniHelper::GetNativeExternClass();
-        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "AddFonts106", "()V");
+        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "AddFonts108", "()V");
         U_JNIVAR->CallStaticVoidMethod(__cls,__mtd);
         
         ::g::Android::Base::JNI::CheckException();
@@ -490,7 +490,7 @@ int32_t AndroidSystemFont::ToWeight(int32_t w)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.7.4\Internal\Blender.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.8.1\Internal\Blender.uno
 // ------------------------------------------------------------------------------------------
 
 // internal abstract class Blender<T> :62
@@ -556,7 +556,7 @@ void Blender::ctor_()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.7.4\Internal\Blender.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.8.1\Internal\Blender.uno
 // ------------------------------------------------------------------------------------------
 
 // internal sealed class BlenderMap :9
@@ -710,7 +710,7 @@ BlenderMap* BlenderMap::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.7.4\Internal\Cache.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.8.1\Internal\Cache.uno
 // ----------------------------------------------------------------------------------------
 
 // public sealed class Cache<TKey, TValue> :14
@@ -975,7 +975,7 @@ Cache* Cache::New1(uType* __type, uDelegate* factory, int32_t maxUnused)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.7.4\Internal\Cache.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.8.1\Internal\Cache.uno
 // ----------------------------------------------------------------------------------------
 
 // public struct CacheItem<TKey, TValue> :104
@@ -1125,7 +1125,7 @@ bool CacheItem__op_Inequality(uType* __type, CacheItem x, CacheItem y)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.7.4\Internal\Cache.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.8.1\Internal\Cache.uno
 // ----------------------------------------------------------------------------------------
 
 // internal sealed class CacheRef<TKey, TValue> :152
@@ -1276,7 +1276,7 @@ void CacheRef::Retain()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.7.4\Internal\Curves.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.8.1\Internal\Curves.uno
 // -----------------------------------------------------------------------------------------
 
 // internal static class Curves :5
@@ -1367,7 +1367,7 @@ void Curves::KochanekBartelTangent(::g::Uno::Float4 pa, ::g::Uno::Float4 pb, ::g
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.7.4\Internal\Blender.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.8.1\Internal\Blender.uno
 // ------------------------------------------------------------------------------------------
 
 // internal sealed class DoubleBlender :147
@@ -1503,7 +1503,7 @@ DoubleBlender* DoubleBlender::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\DrawManager.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\DrawManager.uno
 // ------------------------------------------------------------------------------------
 
 // internal static class DrawManager :5
@@ -1588,7 +1588,7 @@ void DrawManager::remove_Prepared(uDelegate* value)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.7.4\Internal\MiniList.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.8.1\Internal\MiniList.uno
 // -------------------------------------------------------------------------------------------
 
 // public struct MiniList<T>.Enumerator :189
@@ -1806,7 +1806,7 @@ MiniList__Enumerator MiniList__Enumerator__New1(uType* __type, ::g::Fuse::Intern
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.7.4\Internal\ObjectList.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.8.1\Internal\ObjectList.uno
 // ---------------------------------------------------------------------------------------------
 
 // public struct ObjectList<T>.Enumerator :386
@@ -2033,7 +2033,7 @@ ObjectList__Enumerator ObjectList__Enumerator__New1(uType* __type, ::g::Fuse::In
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.7.4\Internal\ObjectList.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.8.1\Internal\ObjectList.uno
 // ---------------------------------------------------------------------------------------------
 
 // public sealed class ObjectList<T>.EnumeratorClass :351
@@ -2170,7 +2170,7 @@ ObjectList__EnumeratorClass* ObjectList__EnumeratorClass::New1(uType* __type, ::
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.7.4\Internal\ObjectList.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.8.1\Internal\ObjectList.uno
 // ---------------------------------------------------------------------------------------------
 
 // public enum ObjectList<T>.Equality :61
@@ -2186,7 +2186,7 @@ uEnumType* ObjectList__Equality_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.7.4\Internal\AndroidSystemFont.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.8.1\Internal\AndroidSystemFont.uno
 // ----------------------------------------------------------------------------------------------------
 
 // private struct AndroidSystemFont.Family :13
@@ -2246,7 +2246,7 @@ AndroidSystemFont__Family AndroidSystemFont__Family__New1(uString* name, uString
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.7.4\Internal\Blender.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.8.1\Internal\Blender.uno
 // ------------------------------------------------------------------------------------------
 
 // internal sealed class Float2Blender :165
@@ -2366,7 +2366,7 @@ Float2Blender* Float2Blender::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.7.4\Internal\Blender.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.8.1\Internal\Blender.uno
 // ------------------------------------------------------------------------------------------
 
 // internal sealed class Float3Blender :181
@@ -2486,7 +2486,7 @@ Float3Blender* Float3Blender::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.7.4\Internal\Blender.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.8.1\Internal\Blender.uno
 // ------------------------------------------------------------------------------------------
 
 // internal sealed class Float4Blender :197
@@ -2606,7 +2606,7 @@ Float4Blender* Float4Blender::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.7.4\Internal\Blender.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.8.1\Internal\Blender.uno
 // ------------------------------------------------------------------------------------------
 
 // internal sealed class FloatBlender :129
@@ -2742,7 +2742,7 @@ FloatBlender* FloatBlender::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.7.4\Internal\AndroidSystemFont.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.8.1\Internal\AndroidSystemFont.uno
 // ----------------------------------------------------------------------------------------------------
 
 // private struct AndroidSystemFont.FontDescriptor :29
@@ -2801,7 +2801,7 @@ AndroidSystemFont__FontDescriptor AndroidSystemFont__FontDescriptor__New1(uStrin
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.7.4\Internal\SystemFont.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.8.1\Internal\SystemFont.uno
 // ---------------------------------------------------------------------------------------------
 
 // internal sealed class FontFaceDescriptor :8
@@ -2810,7 +2810,7 @@ static void FontFaceDescriptor_build(uType* type)
 {
     ::TYPES[13] = ::g::Uno::Runtime::Implementation::Internal::ArrayEnumerable_typeof()->MakeType(::g::Uno::String_typeof(), NULL);
     ::TYPES[14] = ::g::Uno::String_typeof()->Array();
-    ::TYPES[15] = ::g::Uno::Collections::EnumerableExtensions_typeof()->MakeMethod(8/*SequenceEqual<string>*/, ::g::Uno::String_typeof(), NULL);
+    ::TYPES[15] = ::g::Uno::Collections::EnumerableExtensions_typeof()->MakeMethod(7/*SequenceEqual<string>*/, ::g::Uno::String_typeof(), NULL);
     ::TYPES[16] = ::g::Uno::Int_typeof();
     ::TYPES[17] = ::g::Uno::Collections::IEnumerable_typeof()->MakeType(::g::Uno::String_typeof(), NULL);
     ::TYPES[18] = ::g::Uno::Collections::IEnumerator_typeof();
@@ -2960,7 +2960,7 @@ FontFaceDescriptor* FontFaceDescriptor::New2(::g::Uno::UX::FileSource* fileSourc
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.7.4\Internal\FrustumMatrix.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.8.1\Internal\FrustumMatrix.uno
 // ------------------------------------------------------------------------------------------------
 
 // internal static class FrustumMatrix :5
@@ -3139,7 +3139,7 @@ bool FrustumMatrix::TryPerspectiveProjectionInverse(::g::Uno::Float2 viewSize, f
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Internal\FuseConfig.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Internal\FuseConfig.uno
 // --------------------------------------------------------------------------------------------
 
 // internal static class FuseConfig :11
@@ -3161,7 +3161,7 @@ uClassType* FuseConfig_typeof()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Elements\1.7.4\Internal\ImageContainer.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Elements\1.8.1\Internal\ImageContainer.uno
 // ---------------------------------------------------------------------------------------------------
 
 // internal abstract interface IImageContainerOwner :11
@@ -3176,7 +3176,7 @@ uInterfaceType* IImageContainerOwner_typeof()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Elements\1.7.4\Internal\ImageContainer.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Elements\1.8.1\Internal\ImageContainer.uno
 // ---------------------------------------------------------------------------------------------------
 
 // internal sealed class ImageContainer :18
@@ -3184,7 +3184,7 @@ uInterfaceType* IImageContainerOwner_typeof()
 static void ImageContainer_build(uType* type)
 {
     ::STRINGS[2] = uString::Const("Switching listen state on null Image");
-    ::STRINGS[3] = uString::Const("C:\\Users\\borde_000\\AppData\\Local\\Fusetools\\Packages\\Fuse.Elements\\1.7.4\\Internal\\ImageContainer.uno");
+    ::STRINGS[3] = uString::Const("C:\\Users\\borde_000\\AppData\\Local\\Fusetools\\Packages\\Fuse.Elements\\1.8.1\\Internal\\ImageContainer.uno");
     ::STRINGS[4] = uString::Const("UpdateSourceListen");
     ::STRINGS[5] = uString::Const("ResampleMode.Mipmap has been deprecated. Use ResampleMode.Linear instead.");
     ::STRINGS[6] = uString::Const("set_ResampleMode");
@@ -4080,7 +4080,7 @@ ImageContainer* ImageContainer::New1(uObject* owner)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.7.4\Internal\MiniList.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.8.1\Internal\MiniList.uno
 // -------------------------------------------------------------------------------------------
 
 // internal struct MiniList<T> :25
@@ -4440,7 +4440,7 @@ void MiniList::RemoveAt(uType* __type, int32_t index)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.7.4\Internal\MiniList.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.8.1\Internal\MiniList.uno
 // -------------------------------------------------------------------------------------------
 
 // internal enum MiniListMode :9
@@ -4457,7 +4457,7 @@ uEnumType* MiniListMode_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.7.4\Internal\ObjectList.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.8.1\Internal\ObjectList.uno
 // ---------------------------------------------------------------------------------------------
 
 // private struct ObjectList<T>.Node :15
@@ -4506,7 +4506,7 @@ void ObjectList__Node::Clear(uType* __type)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.7.4\Internal\ObjectList.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.8.1\Internal\ObjectList.uno
 // ---------------------------------------------------------------------------------------------
 
 // internal sealed class ObjectList<T> :13
@@ -5098,7 +5098,7 @@ ObjectList* ObjectList::New1(uType* __type, int32_t equality)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.7.4\Internal\Curves.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.8.1\Internal\Curves.uno
 // -----------------------------------------------------------------------------------------
 
 // public delegate float4 Curves.PointInterpolater(float4 p0, float4 p1, float4 m0, float4 m1, float t) :29
@@ -5117,7 +5117,7 @@ uDelegateType* Curves__PointInterpolater_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.7.4\Internal\RawPointer.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.8.1\Internal\RawPointer.uno
 // ---------------------------------------------------------------------------------------------
 
 // internal struct RawPointer<T> :13
@@ -5166,7 +5166,7 @@ void* RawPointer::op_Implicit(uType* __type, uObject* obj)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.7.4\Internal\RectPacker.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.8.1\Internal\RectPacker.uno
 // ---------------------------------------------------------------------------------------------
 
 // internal sealed class RectPacker :26
@@ -5407,7 +5407,7 @@ RectPacker* RectPacker::New1(::g::Uno::Int2 size)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.7.4\Internal\Blender.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.8.1\Internal\Blender.uno
 // ------------------------------------------------------------------------------------------
 
 // internal abstract class ScalarBlender<T> :123
@@ -5445,7 +5445,7 @@ void ScalarBlender::ctor_1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.7.4\Internal\Blender.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.8.1\Internal\Blender.uno
 // ------------------------------------------------------------------------------------------
 
 // internal sealed class Size2Blender :104
@@ -5568,7 +5568,7 @@ Size2Blender* Size2Blender::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.7.4\Internal\Blender.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.8.1\Internal\Blender.uno
 // ------------------------------------------------------------------------------------------
 
 // internal sealed class SizeBlender :88
@@ -5688,7 +5688,7 @@ SizeBlender* SizeBlender::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Elements\1.7.4\Internal\SizingContainer.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Elements\1.8.1\Internal\SizingContainer.uno
 // ----------------------------------------------------------------------------------------------------
 
 // internal sealed class SizingContainer :7
@@ -5726,7 +5726,7 @@ void SizingContainer__ctor__fn(SizingContainer* __this)
     __this->ctor_();
 }
 
-// public float4 CalcClip(float2 availableSize, float2& origin, float2& contentActualSize) :232
+// public float4 CalcClip(float2 availableSize, float2& origin, float2& contentActualSize) :240
 void SizingContainer__CalcClip_fn(SizingContainer* __this, ::g::Uno::Float2* availableSize, ::g::Uno::Float2* origin, ::g::Uno::Float2* contentActualSize, ::g::Uno::Float4* __retval)
 {
     *__retval = __this->CalcClip(*availableSize, origin, contentActualSize);
@@ -5738,7 +5738,7 @@ void SizingContainer__CalcContentSize_fn(SizingContainer* __this, ::g::Uno::Floa
     *__retval = __this->CalcContentSize(*size, *pixelSize);
 }
 
-// public float2 CalcOrigin(float2 availableSize, float2 contentActualSize) :190
+// public float2 CalcOrigin(float2 availableSize, float2 contentActualSize) :198
 void SizingContainer__CalcOrigin_fn(SizingContainer* __this, ::g::Uno::Float2* availableSize, ::g::Uno::Float2* contentActualSize, ::g::Uno::Float2* __retval)
 {
     *__retval = __this->CalcOrigin(*availableSize, *contentActualSize);
@@ -5756,7 +5756,7 @@ void SizingContainer__CalcScale1_fn(SizingContainer* __this, ::g::Uno::Float2* a
     *__retval = __this->CalcScale1(*availableSize, *desiredSize, *autoWidth, *autoHeight);
 }
 
-// public float2 ExpandFillSize(float2 size, Fuse.LayoutParams lp) :277
+// public float2 ExpandFillSize(float2 size, Fuse.LayoutParams lp) :285
 void SizingContainer__ExpandFillSize_fn(SizingContainer* __this, ::g::Uno::Float2* size, ::g::Fuse::LayoutParams* lp, ::g::Uno::Float2* __retval)
 {
     *__retval = __this->ExpandFillSize(*size, *lp);
@@ -5819,7 +5819,7 @@ void SizingContainer::ctor_()
     absoluteZoom = 1.0f;
 }
 
-// public float4 CalcClip(float2 availableSize, float2& origin, float2& contentActualSize) [instance] :232
+// public float4 CalcClip(float2 availableSize, float2& origin, float2& contentActualSize) [instance] :240
 ::g::Uno::Float4 SizingContainer::CalcClip(::g::Uno::Float2 availableSize, ::g::Uno::Float2* origin, ::g::Uno::Float2* contentActualSize)
 {
     ::g::Uno::Float4 ind1;
@@ -5898,7 +5898,7 @@ void SizingContainer::ctor_()
     return SnapSize(size);
 }
 
-// public float2 CalcOrigin(float2 availableSize, float2 contentActualSize) [instance] :190
+// public float2 CalcOrigin(float2 availableSize, float2 contentActualSize) [instance] :198
 ::g::Uno::Float2 SizingContainer::CalcOrigin(::g::Uno::Float2 availableSize, ::g::Uno::Float2 contentActualSize)
 {
     uStackFrame __("Fuse.Internal.SizingContainer", "CalcOrigin(float2,float2)");
@@ -5974,7 +5974,9 @@ void SizingContainer::ctor_()
     }
     else
     {
-        ::g::Uno::Float2 s = ::g::Uno::Float2__New2((desiredSize.X < 1e-05f) ? 0.0f : d.X / desiredSize.X, (desiredSize.Y < 1e-05f) ? 0.0f : d.Y / desiredSize.Y);
+        bool zeroX = desiredSize.X < 1e-05f;
+        bool zeroY = desiredSize.Y < 1e-05f;
+        ::g::Uno::Float2 s = ::g::Uno::Float2__New2(zeroX ? 0.0f : d.X / desiredSize.X, zeroY ? 0.0f : d.Y / desiredSize.Y);
 
         switch (stretchMode)
         {
@@ -5993,7 +5995,7 @@ void SizingContainer::ctor_()
             }
             case 5:
             {
-                float sm = autoWidth ? s.Y : autoHeight ? s.X : ::g::Uno::Math::Min1(s.X, s.Y);
+                float sm = autoWidth ? s.Y : autoHeight ? s.X : zeroX ? s.Y : zeroY ? s.X : ::g::Uno::Math::Min1(s.X, s.Y);
                 scale = ::g::Uno::Float2__New1(sm);
                 break;
             }
@@ -6030,7 +6032,7 @@ void SizingContainer::ctor_()
     return scale;
 }
 
-// public float2 ExpandFillSize(float2 size, Fuse.LayoutParams lp) [instance] :277
+// public float2 ExpandFillSize(float2 size, Fuse.LayoutParams lp) [instance] :285
 ::g::Uno::Float2 SizingContainer::ExpandFillSize(::g::Uno::Float2 size, ::g::Fuse::LayoutParams lp)
 {
     bool autoWidth = !lp.HasX();
@@ -6145,7 +6147,7 @@ SizingContainer* SizingContainer::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.7.4\Internal\RectPacker.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.8.1\Internal\RectPacker.uno
 // ---------------------------------------------------------------------------------------------
 
 // internal struct SkylineNode :6
@@ -6200,7 +6202,7 @@ SkylineNode SkylineNode__New1(::g::Uno::Int2 position, int32_t width)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.7.4\Internal\Statistics.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.8.1\Internal\Statistics.uno
 // ---------------------------------------------------------------------------------------------
 
 // public static class Statistics :5
@@ -6250,7 +6252,7 @@ double Statistics::ExponentialMovingAverage(double current, double sample, doubl
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.7.4\Internal\SystemFont.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.8.1\Internal\SystemFont.uno
 // ---------------------------------------------------------------------------------------------
 
 // internal static class SystemFont :57
@@ -6324,7 +6326,7 @@ void SystemFont__GetFallback_fn(::g::Uno::UX::FileSource* file, ::g::Uno::Collec
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.7.4\Internal\VectorUtil.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.8.1\Internal\VectorUtil.uno
 // ---------------------------------------------------------------------------------------------
 
 // internal static class VectorUtil :5

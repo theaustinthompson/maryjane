@@ -9,7 +9,7 @@ namespace Compiler{
 namespace ExportTargetInterop{
 namespace Android{
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\Compiler\ExportTargetInterop\Foreign\Android\ForeignFixedNameAttribute.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\Compiler\ExportTargetInterop\Foreign\Android\ForeignFixedNameAttribute.uno
 // -------------------------------------------------------------------------------------------------------------------------------------------------------
 
 // public sealed class ForeignFixedNameAttribute :4

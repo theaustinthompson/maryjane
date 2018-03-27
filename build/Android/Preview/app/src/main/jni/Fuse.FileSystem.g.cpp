@@ -66,7 +66,7 @@ namespace g{
 namespace Fuse{
 namespace FileSystem{
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.FileSystem\1.7.4\AndroidPaths.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.FileSystem\1.8.1\AndroidPaths.uno
 // ------------------------------------------------------------------------------------------
 
 // internal sealed extern class AndroidPaths :9
@@ -147,7 +147,7 @@ uString* AndroidPaths::GetCacheDirectory()
     {
         INIT_JNI;
         jclass __cls = JniHelper::GetNativeExternClass();
-        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "GetCacheDirectory371", "()Ljava/lang/String;");
+        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "GetCacheDirectory363", "()Ljava/lang/String;");
         jobject __jresult = U_JNIVAR->CallStaticObjectMethod(__cls,__mtd);
         uString* __result = JniHelper::JavaToUnoString((jstring)__jresult);
         if (__jresult!=NULL && U_JNIVAR->GetObjectRefType(__jresult) == JNILocalRefType) U_JNIVAR->DeleteLocalRef(__jresult);
@@ -163,7 +163,7 @@ uString* AndroidPaths::GetExternalCacheDirectory()
     {
         INIT_JNI;
         jclass __cls = JniHelper::GetNativeExternClass();
-        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "GetExternalCacheDirectory372", "()Ljava/lang/String;");
+        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "GetExternalCacheDirectory364", "()Ljava/lang/String;");
         jobject __jresult = U_JNIVAR->CallStaticObjectMethod(__cls,__mtd);
         uString* __result = JniHelper::JavaToUnoString((jstring)__jresult);
         if (__jresult!=NULL && U_JNIVAR->GetObjectRefType(__jresult) == JNILocalRefType) U_JNIVAR->DeleteLocalRef(__jresult);
@@ -179,7 +179,7 @@ uString* AndroidPaths::GetExternalFilesDirectory()
     {
         INIT_JNI;
         jclass __cls = JniHelper::GetNativeExternClass();
-        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "GetExternalFilesDirectory373", "()Ljava/lang/String;");
+        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "GetExternalFilesDirectory365", "()Ljava/lang/String;");
         jobject __jresult = U_JNIVAR->CallStaticObjectMethod(__cls,__mtd);
         uString* __result = JniHelper::JavaToUnoString((jstring)__jresult);
         if (__jresult!=NULL && U_JNIVAR->GetObjectRefType(__jresult) == JNILocalRefType) U_JNIVAR->DeleteLocalRef(__jresult);
@@ -195,7 +195,7 @@ uString* AndroidPaths::GetFilesDirectory()
     {
         INIT_JNI;
         jclass __cls = JniHelper::GetNativeExternClass();
-        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "GetFilesDirectory374", "()Ljava/lang/String;");
+        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "GetFilesDirectory366", "()Ljava/lang/String;");
         jobject __jresult = U_JNIVAR->CallStaticObjectMethod(__cls,__mtd);
         uString* __result = JniHelper::JavaToUnoString((jstring)__jresult);
         if (__jresult!=NULL && U_JNIVAR->GetObjectRefType(__jresult) == JNILocalRefType) U_JNIVAR->DeleteLocalRef(__jresult);
@@ -226,7 +226,7 @@ AndroidPaths* AndroidPaths::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.FileSystem\1.7.4\FileSystemOperations.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.FileSystem\1.8.1\FileSystemOperations.uno
 // --------------------------------------------------------------------------------------------------
 
 // private sealed class FileSystemOperations.Closure<T1, TResult> :262
@@ -277,7 +277,7 @@ void FileSystemOperations__Closure__New1_fn(uType* __type, uDelegate* del, void*
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.FileSystem\1.7.4\FileSystemOperations.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.FileSystem\1.8.1\FileSystemOperations.uno
 // --------------------------------------------------------------------------------------------------
 
 // private sealed class FileSystemOperations.Closure<T1, T2, TResult> :280
@@ -330,7 +330,7 @@ void FileSystemOperations__Closure1__New1_fn(uType* __type, uDelegate* del, void
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.FileSystem\1.7.4\FileSystemModule.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.FileSystem\1.8.1\FileSystemModule.uno
 // ----------------------------------------------------------------------------------------------
 
 // public sealed class FileSystemModule :43
@@ -408,7 +408,7 @@ static void FileSystemModule_build(uType* type)
     ::TYPES[23] = type->MakeMethod(0/*GetArg<string>*/, ::g::Uno::String_typeof(), NULL);
     ::TYPES[24] = ::g::Uno::Bool_typeof();
     ::TYPES[25] = ::g::Uno::String_typeof();
-    ::TYPES[26] = ::g::Uno::Collections::EnumerableExtensions_typeof()->MakeMethod(9/*ToArray<object>*/, uObject_typeof(), NULL);
+    ::TYPES[26] = ::g::Uno::Collections::EnumerableExtensions_typeof()->MakeMethod(8/*ToArray<object>*/, uObject_typeof(), NULL);
     ::TYPES[27] = ::g::Uno::Collections::EnumerableExtensions_typeof();
     ::TYPES[28] = ::g::Uno::Runtime::Implementation::Internal::ArrayEnumerable_typeof();
     ::TYPES[29] = uObject_typeof()->Array();
@@ -1139,7 +1139,7 @@ uObject* FileSystemModule::ToScriptingDate(::g::Fuse::Scripting::Context* contex
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.FileSystem\1.7.4\FileSystemOperations.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.FileSystem\1.8.1\FileSystemOperations.uno
 // --------------------------------------------------------------------------------------------------
 
 // internal sealed class FileSystemOperations :8
@@ -1575,7 +1575,7 @@ bool FileSystemOperations::ExistsSync(uString* path)
 uArray* FileSystemOperations::ListDirectoriesSync(uString* path)
 {
     uStackFrame __("Fuse.FileSystem.FileSystemOperations", "ListDirectoriesSync(string)");
-    return (uArray*)::g::Uno::Collections::EnumerableExtensions::ToArray(::TYPES[27/*Uno.Collections.EnumerableExtensions*/]->MakeMethod(9/*ToArray<string>*/, ::TYPES[25/*string*/], NULL), (uObject*)::g::Uno::Collections::EnumerableExtensions::Select(::TYPES[27/*Uno.Collections.EnumerableExtensions*/]->MakeMethod(7/*Select<string, string>*/, ::TYPES[25/*string*/], ::TYPES[25/*string*/], NULL), ::g::Uno::IO::Directory::EnumerateDirectories(path), uDelegate::New(::g::Uno::Func1_typeof()->MakeType(::TYPES[25/*string*/], ::TYPES[25/*string*/], NULL), (void*)::g::Fuse::FileSystem::PathTools__NormalizePath_fn)));
+    return (uArray*)::g::Uno::Collections::EnumerableExtensions::ToArray(::TYPES[27/*Uno.Collections.EnumerableExtensions*/]->MakeMethod(8/*ToArray<string>*/, ::TYPES[25/*string*/], NULL), (uObject*)::g::Uno::Collections::EnumerableExtensions::Select(::TYPES[27/*Uno.Collections.EnumerableExtensions*/]->MakeMethod(6/*Select<string, string>*/, ::TYPES[25/*string*/], ::TYPES[25/*string*/], NULL), ::g::Uno::IO::Directory::EnumerateDirectories(path), uDelegate::New(::g::Uno::Func1_typeof()->MakeType(::TYPES[25/*string*/], ::TYPES[25/*string*/], NULL), (void*)::g::Fuse::FileSystem::PathTools__NormalizePath_fn)));
 }
 
 // public Uno.Threading.Future<string[]> ListEntries(string path) [instance] :115
@@ -1589,7 +1589,7 @@ uArray* FileSystemOperations::ListDirectoriesSync(uString* path)
 uArray* FileSystemOperations::ListEntriesSync(uString* path)
 {
     uStackFrame __("Fuse.FileSystem.FileSystemOperations", "ListEntriesSync(string)");
-    return (uArray*)::g::Uno::Collections::EnumerableExtensions::ToArray(::TYPES[27/*Uno.Collections.EnumerableExtensions*/]->MakeMethod(9/*ToArray<string>*/, ::TYPES[25/*string*/], NULL), (uObject*)::g::Uno::Collections::EnumerableExtensions::Select(::TYPES[27/*Uno.Collections.EnumerableExtensions*/]->MakeMethod(7/*Select<string, string>*/, ::TYPES[25/*string*/], ::TYPES[25/*string*/], NULL), ::g::Uno::IO::Directory::EnumerateFileSystemEntries(path), uDelegate::New(::g::Uno::Func1_typeof()->MakeType(::TYPES[25/*string*/], ::TYPES[25/*string*/], NULL), (void*)::g::Fuse::FileSystem::PathTools__NormalizePath_fn)));
+    return (uArray*)::g::Uno::Collections::EnumerableExtensions::ToArray(::TYPES[27/*Uno.Collections.EnumerableExtensions*/]->MakeMethod(8/*ToArray<string>*/, ::TYPES[25/*string*/], NULL), (uObject*)::g::Uno::Collections::EnumerableExtensions::Select(::TYPES[27/*Uno.Collections.EnumerableExtensions*/]->MakeMethod(6/*Select<string, string>*/, ::TYPES[25/*string*/], ::TYPES[25/*string*/], NULL), ::g::Uno::IO::Directory::EnumerateFileSystemEntries(path), uDelegate::New(::g::Uno::Func1_typeof()->MakeType(::TYPES[25/*string*/], ::TYPES[25/*string*/], NULL), (void*)::g::Fuse::FileSystem::PathTools__NormalizePath_fn)));
 }
 
 // public Uno.Threading.Future<string[]> ListFiles(string path) [instance] :127
@@ -1603,7 +1603,7 @@ uArray* FileSystemOperations::ListEntriesSync(uString* path)
 uArray* FileSystemOperations::ListFilesSync(uString* path)
 {
     uStackFrame __("Fuse.FileSystem.FileSystemOperations", "ListFilesSync(string)");
-    return (uArray*)::g::Uno::Collections::EnumerableExtensions::ToArray(::TYPES[27/*Uno.Collections.EnumerableExtensions*/]->MakeMethod(9/*ToArray<string>*/, ::TYPES[25/*string*/], NULL), (uObject*)::g::Uno::Collections::EnumerableExtensions::Select(::TYPES[27/*Uno.Collections.EnumerableExtensions*/]->MakeMethod(7/*Select<string, string>*/, ::TYPES[25/*string*/], ::TYPES[25/*string*/], NULL), ::g::Uno::IO::Directory::EnumerateFiles(path), uDelegate::New(::g::Uno::Func1_typeof()->MakeType(::TYPES[25/*string*/], ::TYPES[25/*string*/], NULL), (void*)::g::Fuse::FileSystem::PathTools__NormalizePath_fn)));
+    return (uArray*)::g::Uno::Collections::EnumerableExtensions::ToArray(::TYPES[27/*Uno.Collections.EnumerableExtensions*/]->MakeMethod(8/*ToArray<string>*/, ::TYPES[25/*string*/], NULL), (uObject*)::g::Uno::Collections::EnumerableExtensions::Select(::TYPES[27/*Uno.Collections.EnumerableExtensions*/]->MakeMethod(6/*Select<string, string>*/, ::TYPES[25/*string*/], ::TYPES[25/*string*/], NULL), ::g::Uno::IO::Directory::EnumerateFiles(path), uDelegate::New(::g::Uno::Func1_typeof()->MakeType(::TYPES[25/*string*/], ::TYPES[25/*string*/], NULL), (void*)::g::Fuse::FileSystem::PathTools__NormalizePath_fn)));
 }
 
 // public Uno.Threading.Future<Fuse.FileSystem.Nothing> Move(string source, string destination) [instance] :139
@@ -1712,7 +1712,7 @@ FileSystemOperations* FileSystemOperations::New2(uObject* dispatcher)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.FileSystem\1.7.4\Nothing.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.FileSystem\1.8.1\Nothing.uno
 // -------------------------------------------------------------------------------------
 
 // internal sealed class Nothing :4
@@ -1761,7 +1761,7 @@ Nothing* Nothing::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.FileSystem\1.7.4\PathTools.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.FileSystem\1.8.1\PathTools.uno
 // ---------------------------------------------------------------------------------------
 
 // internal static class PathTools :6
@@ -1803,7 +1803,7 @@ uString* PathTools::NormalizePath(uString* path)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.FileSystem\1.7.4\UnifiedPaths.Android.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.FileSystem\1.8.1\UnifiedPaths.Android.uno
 // --------------------------------------------------------------------------------------------------
 
 // internal static extern class UnifiedPaths :7
@@ -1842,7 +1842,7 @@ uString* UnifiedPaths::GetCacheDirectory()
     {
         INIT_JNI;
         jclass __cls = JniHelper::GetNativeExternClass();
-        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "GetCacheDirectory375", "()Ljava/lang/String;");
+        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "GetCacheDirectory367", "()Ljava/lang/String;");
         jobject __jresult = U_JNIVAR->CallStaticObjectMethod(__cls,__mtd);
         uString* __result = JniHelper::JavaToUnoString((jstring)__jresult);
         if (__jresult!=NULL && U_JNIVAR->GetObjectRefType(__jresult) == JNILocalRefType) U_JNIVAR->DeleteLocalRef(__jresult);
@@ -1858,7 +1858,7 @@ uString* UnifiedPaths::GetDataDirectory()
     {
         INIT_JNI;
         jclass __cls = JniHelper::GetNativeExternClass();
-        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "GetDataDirectory376", "()Ljava/lang/String;");
+        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "GetDataDirectory368", "()Ljava/lang/String;");
         jobject __jresult = U_JNIVAR->CallStaticObjectMethod(__cls,__mtd);
         uString* __result = JniHelper::JavaToUnoString((jstring)__jresult);
         if (__jresult!=NULL && U_JNIVAR->GetObjectRefType(__jresult) == JNILocalRefType) U_JNIVAR->DeleteLocalRef(__jresult);

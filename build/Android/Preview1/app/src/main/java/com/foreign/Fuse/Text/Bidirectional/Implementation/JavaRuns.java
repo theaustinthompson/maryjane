@@ -26,32 +26,32 @@ public class JavaRuns
         android.util.Log.d("maryjane", (message==null ? "null" : message.toString()));
     }
 
-    public static Object Create312(final String text)
+    public static Object Create304(final String text)
     {
         return new Bidi(text, Bidi.DIRECTION_DEFAULT_LEFT_TO_RIGHT);
     }
     
-    public static int GetBaseLevel313(final Object handle)
+    public static int GetBaseLevel305(final Object handle)
     {
         return ((Bidi)handle).getBaseLevel();
     }
     
-    public static int GetRunCount314(final Object handle)
+    public static int GetRunCount306(final Object handle)
     {
         return ((Bidi)handle).getRunCount();
     }
     
-    public static int GetRunLevel315(final Object handle,final int run)
+    public static int GetRunLevel307(final Object handle,final int run)
     {
         return ((Bidi)handle).getRunLevel(run);
     }
     
-    public static int GetRunLimit316(final Object handle,final int run)
+    public static int GetRunLimit308(final Object handle,final int run)
     {
         return ((Bidi)handle).getRunLimit(run);
     }
     
-    public static int GetRunStart317(final Object handle,final int run)
+    public static int GetRunStart309(final Object handle,final int run)
     {
         return ((Bidi)handle).getRunStart(run);
     }

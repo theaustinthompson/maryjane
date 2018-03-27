@@ -23,25 +23,25 @@ public class Slider
         android.util.Log.d("maryjane", (message==null ? "null" : message.toString()));
     }
 
-    public static void AddChangedCallback177(final UnoObject _this, final Object handle)
+    public static void AddChangedCallback169(final UnoObject _this, final Object handle)
     {
         ((android.widget.SeekBar)handle).setOnSeekBarChangeListener(new android.widget.SeekBar.OnSeekBarChangeListener() {
         	public void onProgressChanged(android.widget.SeekBar seekBar, int progress, boolean fromUser) {
-        		ExternedBlockHost.callUno_Fuse_Controls_Native_Android_Slider_OnSeekBarChanged178((UnoObject)_this,(double)progress / 1000.0,(boolean)fromUser);
+        		ExternedBlockHost.callUno_Fuse_Controls_Native_Android_Slider_OnSeekBarChanged170((UnoObject)_this,(double)progress / 1000.0,(boolean)fromUser);
         	}
         	public void onStartTrackingTouch(android.widget.SeekBar seekBar) { }
         	public void onStopTrackingTouch(android.widget.SeekBar seekBar) { }
         });
     }
     
-    public static Object Create179()
+    public static Object Create171()
     {
         android.widget.SeekBar seekBar = new android.widget.SeekBar(com.fuse.Activity.getRootActivity());
         seekBar.setMax(1000);
         return seekBar;
     }
     
-    public static void SetProgress180(final Object handle,final double progress)
+    public static void SetProgress172(final Object handle,final double progress)
     {
         ((android.widget.SeekBar)handle).setProgress( (int)(progress * 1000.0) );
     }

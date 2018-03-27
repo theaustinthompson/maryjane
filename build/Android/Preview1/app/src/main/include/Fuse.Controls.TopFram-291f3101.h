@@ -1,4 +1,4 @@
-// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/Fuse.Controls.Panels/1.7.4/Backgrounds/TopFrameBackground.uno.
+// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/Fuse.Controls.Panels/1.8.1/Backgrounds/TopFrameBackground.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -20,28 +20,31 @@
 #include <Uno.Collections.IList-1.h>
 #include <Uno.UX.IPropertyListener.h>
 namespace g{namespace Fuse{namespace Controls{struct TopFrameBackground;}}}
-namespace g{namespace Fuse{namespace Platform{struct SystemUIWillResizeEventArgs;}}}
+namespace g{namespace Fuse{namespace Reactive{struct WindowCaps;}}}
 namespace g{namespace Fuse{struct LayoutParams;}}
+namespace g{namespace Uno{namespace UX{struct PropertyObject;}}}
+namespace g{namespace Uno{namespace UX{struct Selector;}}}
 namespace g{namespace Uno{struct Float2;}}
 
 namespace g{
 namespace Fuse{
 namespace Controls{
 
-// public class TopFrameBackground :28
+// public class TopFrameBackground :31
 // {
 ::g::Fuse::Controls::Control_type* TopFrameBackground_typeof();
 void TopFrameBackground__ctor_5_fn(TopFrameBackground* __this);
 void TopFrameBackground__GetContentSize_fn(TopFrameBackground* __this, ::g::Fuse::LayoutParams* lp, ::g::Uno::Float2* __retval);
 void TopFrameBackground__New2_fn(TopFrameBackground** __retval);
-void TopFrameBackground__OnFrameResized_fn(TopFrameBackground* __this, uObject* sender, ::g::Fuse::Platform::SystemUIWillResizeEventArgs* args);
+void TopFrameBackground__OnPropertyChanged2_fn(TopFrameBackground* __this, ::g::Uno::UX::PropertyObject* sender, ::g::Uno::UX::Selector* name);
 void TopFrameBackground__OnRooted_fn(TopFrameBackground* __this);
 void TopFrameBackground__OnUnrooted_fn(TopFrameBackground* __this);
 
 struct TopFrameBackground : ::g::Fuse::Controls::Control
 {
+    uStrong< ::g::Fuse::Reactive::WindowCaps*> _caps;
+
     void ctor_5();
-    void OnFrameResized(uObject* sender, ::g::Fuse::Platform::SystemUIWillResizeEventArgs* args);
     static TopFrameBackground* New2();
 };
 // }

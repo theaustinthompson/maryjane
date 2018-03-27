@@ -23,7 +23,7 @@ public class SoftKeyboard
         android.util.Log.d("maryjane", (message==null ? "null" : message.toString()));
     }
 
-    public static void HideKeyboard181(final Object hideKeyboardContext,final Object hideKeyboardWindowToken)
+    public static void HideKeyboard173(final Object hideKeyboardContext,final Object hideKeyboardWindowToken)
     {
         android.content.Context ctx = (android.content.Context)hideKeyboardContext;
         android.os.IBinder binder = (android.os.IBinder)hideKeyboardWindowToken;
@@ -31,7 +31,7 @@ public class SoftKeyboard
         imm.hideSoftInputFromWindow(binder, 0);
     }
     
-    public static void ShowKeyboard182(final Object viewHandle)
+    public static void ShowKeyboard174(final Object viewHandle)
     {
         android.view.View view = (android.view.View)viewHandle;
         android.view.inputmethod.InputMethodManager imm = (android.view.inputmethod.InputMethodManager)view.getContext().getSystemService(android.content.Context.INPUT_METHOD_SERVICE);

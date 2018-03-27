@@ -1,4 +1,4 @@
-// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/Fuse.Controls.Primitives/1.7.4/Shapes/Rectangle.Surface.uno.
+// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/Fuse.Controls.Primitives/1.8.1/Shapes/Rectangle.Surface.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -43,16 +43,13 @@ void Rectangle__ctor_7_fn(Rectangle* __this);
 void Rectangle__get_ConstrainedCornerRadius_fn(Rectangle* __this, ::g::Uno::Float4* __retval);
 void Rectangle__get_CornerRadius_fn(Rectangle* __this, ::g::Uno::Float4* __retval);
 void Rectangle__set_CornerRadius_fn(Rectangle* __this, ::g::Uno::Float4* value);
-void Rectangle__CreateNativeView_fn(Rectangle* __this, uObject** __retval);
 void Rectangle__CreateSurfacePath_fn(Rectangle* __this, ::g::Fuse::Drawing::Surface* surface, ::g::Fuse::Drawing::SurfacePath** __retval);
 void Rectangle__DrawFill_fn(Rectangle* __this, ::g::Fuse::DrawContext* dc, ::g::Fuse::Drawing::Brush* fill);
 void Rectangle__DrawStroke_fn(Rectangle* __this, ::g::Fuse::DrawContext* dc, ::g::Fuse::Drawing::Stroke* stroke);
 void Rectangle__GetConstrainedCornerRadius_fn(Rectangle* __this, ::g::Uno::Float2* sz, ::g::Uno::Float4* __retval);
-void Rectangle__get_NativeRect_fn(Rectangle* __this, uObject** __retval);
 void Rectangle__get_NeedSurface_fn(Rectangle* __this, bool* __retval);
 void Rectangle__New3_fn(Rectangle** __retval);
 void Rectangle__OnHitTestLocalVisual_fn(Rectangle* __this, ::g::Fuse::HitTestContext* htc);
-void Rectangle__PushPropertiesToNativeView_fn(Rectangle* __this);
 void Rectangle__SetCornerRadius_fn(Rectangle* __this, ::g::Uno::Float4* value, uObject* origin);
 
 struct Rectangle : ::g::Fuse::Controls::Shape
@@ -66,7 +63,6 @@ struct Rectangle : ::g::Fuse::Controls::Shape
     ::g::Uno::Float4 CornerRadius();
     void CornerRadius(::g::Uno::Float4 value);
     ::g::Uno::Float4 GetConstrainedCornerRadius(::g::Uno::Float2 sz);
-    uObject* NativeRect();
     void SetCornerRadius(::g::Uno::Float4 value, uObject* origin);
     static Rectangle* New3();
 };

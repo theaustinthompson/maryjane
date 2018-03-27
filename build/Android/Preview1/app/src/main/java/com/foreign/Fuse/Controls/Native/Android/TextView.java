@@ -23,27 +23,27 @@ public class TextView
         android.util.Log.d("maryjane", (message==null ? "null" : message.toString()));
     }
 
-    public static Object Create214()
+    public static Object Create206()
     {
         return new android.widget.TextView(com.fuse.Activity.getRootActivity());
     }
     
-    public static void SetFont215(final Object handle,final Object fontHandle)
+    public static void SetFont207(final Object handle,final Object fontHandle)
     {
         ((android.widget.TextView)handle).setTypeface(((android.graphics.Typeface)fontHandle));
     }
     
-    public static void SetFontSize216(final Object handle,final float size)
+    public static void SetFontSize208(final Object handle,final float size)
     {
         ((android.widget.TextView)handle).setTextSize(android.util.TypedValue.COMPLEX_UNIT_DIP, size);
     }
     
-    public static void SetLineSpacing217(final Object handle,final float spacing)
+    public static void SetLineSpacing209(final Object handle,final float spacing)
     {
         ((android.widget.TextView)handle).setLineSpacing(spacing, 1.0f);
     }
     
-    public static void SetMaxLength218(final Object handle,final int maxLength)
+    public static void SetMaxLength210(final Object handle,final int maxLength)
     {
         android.widget.TextView t = (android.widget.TextView)handle;
         android.text.InputFilter[] filters = new android.text.InputFilter[1];
@@ -51,7 +51,7 @@ public class TextView
         t.setFilters(filters);
     }
     
-    public static void SetText219(final Object handle,final String text)
+    public static void SetText211(final Object handle,final String text)
     {
         ((android.widget.TextView)handle).setText(text);
         if (handle instanceof android.widget.EditText) {
@@ -59,7 +59,7 @@ public class TextView
         }
     }
     
-    public static void SetTextAlignment220(final Object handle,final int alignment)
+    public static void SetTextAlignment212(final Object handle,final int alignment)
     {
         if (android.os.Build.VERSION.SDK_INT >= 17)
         	((android.widget.TextView)handle).setTextAlignment(android.view.View.TEXT_ALIGNMENT_GRAVITY);
@@ -67,12 +67,12 @@ public class TextView
         ((android.widget.TextView)handle).setGravity(alignment);
     }
     
-    public static void SetTextColor221(final Object handle,final int color)
+    public static void SetTextColor213(final Object handle,final int color)
     {
         ((android.widget.TextView)handle).setTextColor(color);
     }
     
-    public static void SetTextWrapping222(final Object handle,final boolean wrap)
+    public static void SetTextWrapping214(final Object handle,final boolean wrap)
     {
         ((android.widget.TextView)handle).setHorizontallyScrolling( (wrap) ? false : true );
     }

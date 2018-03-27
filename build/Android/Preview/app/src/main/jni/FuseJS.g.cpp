@@ -73,7 +73,7 @@ static uType* TYPES[21];
 namespace g{
 namespace FuseJS{
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\FuseJS\1.7.4\Base64.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\FuseJS\1.8.1\Base64.uno
 // ---------------------------------------------------------------------------
 
 // public sealed class Base64 :25
@@ -336,7 +336,7 @@ Base64* Base64::New2()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\FuseJS\1.7.4\Bundle.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\FuseJS\1.8.1\Bundle.uno
 // ---------------------------------------------------------------------------
 
 // public sealed class Bundle :22
@@ -681,7 +681,7 @@ bool Bundle::TryGetBundleFile(uString* sourcePath, ::g::Uno::IO::BundleFile** bu
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\FuseJS\1.7.4\Environment.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\FuseJS\1.8.1\Environment.uno
 // --------------------------------------------------------------------------------
 
 // public sealed class Environment :51
@@ -795,7 +795,7 @@ Environment* Environment::New2()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\FuseJS\1.7.4\Bundle.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\FuseJS\1.8.1\Bundle.uno
 // ---------------------------------------------------------------------------
 
 // private sealed class Bundle.ExtractClosure :225
@@ -878,7 +878,7 @@ Bundle__ExtractClosure* Bundle__ExtractClosure::New1(uString* searchPath, uStrin
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\FuseJS\1.7.4\FileReader.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\FuseJS\1.8.1\FileReader.uno
 // -------------------------------------------------------------------------------
 
 // private sealed class FileReaderImpl.FileReadCommand :14
@@ -964,7 +964,7 @@ FileReaderImpl__FileReadCommand* FileReaderImpl__FileReadCommand::New1(uString* 
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\FuseJS\1.7.4\FileReader.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\FuseJS\1.8.1\FileReader.uno
 // -------------------------------------------------------------------------------
 
 // public sealed class FileReaderImpl :12
@@ -1067,7 +1067,7 @@ FileReaderImpl* FileReaderImpl::New2()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\FuseJS\1.7.4\Globals.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\FuseJS\1.8.1\Globals.uno
 // ----------------------------------------------------------------------------
 
 // public sealed class Globals :8
@@ -1194,7 +1194,7 @@ uString* Globals::readAsText(uArray* args)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\FuseJS\1.7.4\Latin1Helpers.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\FuseJS\1.8.1\Latin1Helpers.uno
 // ----------------------------------------------------------------------------------
 
 // internal static class Latin1Helpers :7
@@ -1265,7 +1265,7 @@ uString* Latin1Helpers::EncodeLatin1(uString* str)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\FuseJS\1.7.4\Lifecycle.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\FuseJS\1.8.1\Lifecycle.uno
 // ------------------------------------------------------------------------------
 
 // public sealed class Lifecycle :97
@@ -1515,7 +1515,7 @@ Lifecycle* Lifecycle::New3()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\FuseJS\1.7.4\UserEvents.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\FuseJS\1.8.1\UserEvents.uno
 // -------------------------------------------------------------------------------
 
 // internal sealed class RaiseEvent :8
@@ -1523,7 +1523,7 @@ Lifecycle* Lifecycle::New3()
 static void RaiseEvent_build(uType* type)
 {
     ::STRINGS[50] = uString::Const("Cannot find message with name: ");
-    ::STRINGS[51] = uString::Const("C:\\Users\\borde_000\\AppData\\Local\\Fusetools\\Packages\\FuseJS\\1.7.4\\UserEvents.uno");
+    ::STRINGS[51] = uString::Const("C:\\Users\\borde_000\\AppData\\Local\\Fusetools\\Packages\\FuseJS\\1.8.1\\UserEvents.uno");
     ::STRINGS[52] = uString::Const("Raise");
     type->SetDependencies(
         ::g::Fuse::UserEventDispatch_typeof());
@@ -1596,7 +1596,7 @@ RaiseEvent* RaiseEvent::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\FuseJS\1.7.4\Bundle.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\FuseJS\1.8.1\Bundle.uno
 // ---------------------------------------------------------------------------
 
 // private sealed class Bundle.ReadBufferClosure :266
@@ -1667,7 +1667,7 @@ Bundle__ReadBufferClosure* Bundle__ReadBufferClosure::New1(uString* filename)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\FuseJS\1.7.4\Bundle.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\FuseJS\1.8.1\Bundle.uno
 // ---------------------------------------------------------------------------
 
 // private sealed class Bundle.ReadClosure :251
@@ -1732,7 +1732,7 @@ Bundle__ReadClosure* Bundle__ReadClosure::New1(uString* filename)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\FuseJS\1.7.4\UserEvents.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\FuseJS\1.8.1\UserEvents.uno
 // -------------------------------------------------------------------------------
 
 // public sealed class UserEvents :30
@@ -1742,7 +1742,7 @@ static void UserEvents_build(uType* type)
     ::STRINGS[53] = uString::Const("FuseJS/UserEvents");
     ::STRINGS[54] = uString::Const("raise");
     ::STRINGS[55] = uString::Const("The FuseJS/UserEvents `Raise` function is deprecated. Use the `object.raise` on a named event instead.");
-    ::STRINGS[51] = uString::Const("C:\\Users\\borde_000\\AppData\\Local\\Fusetools\\Packages\\FuseJS\\1.7.4\\UserEvents.uno");
+    ::STRINGS[51] = uString::Const("C:\\Users\\borde_000\\AppData\\Local\\Fusetools\\Packages\\FuseJS\\1.8.1\\UserEvents.uno");
     ::STRINGS[52] = uString::Const("Raise");
     ::TYPES[0] = ::g::Fuse::Scripting::NativeCallback_typeof();
     ::TYPES[1] = ::g::Uno::String_typeof();

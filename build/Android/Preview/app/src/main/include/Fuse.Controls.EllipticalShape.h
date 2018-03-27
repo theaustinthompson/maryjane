@@ -1,4 +1,4 @@
-// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/Fuse.Controls.Primitives/1.7.4/Shapes/EllipticalShape.Surface.uno.
+// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/Fuse.Controls.Primitives/1.8.1/Shapes/EllipticalShape.Surface.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -37,7 +37,6 @@ namespace Controls{
 void EllipticalShape__ctor_7_fn(EllipticalShape* __this);
 void EllipticalShape__CreateEllipticalPath_fn(EllipticalShape* __this, ::g::Fuse::Drawing::Surface* surface, ::g::Uno::Float2* center, ::g::Uno::Float2* radius, bool* drawArc, ::g::Fuse::Drawing::SurfacePath** __retval);
 void EllipticalShape__get_EffectiveEndAngle_fn(EllipticalShape* __this, float* __retval);
-void EllipticalShape__get_EffectiveEndAngleDegrees_fn(EllipticalShape* __this, float* __retval);
 void EllipticalShape__get_EndAngle_fn(EllipticalShape* __this, float* __retval);
 void EllipticalShape__set_EndAngle_fn(EllipticalShape* __this, float* value);
 void EllipticalShape__get_EndAngleDegrees_fn(EllipticalShape* __this, float* __retval);
@@ -69,7 +68,6 @@ struct EllipticalShape : ::g::Fuse::Controls::Shape
     void ctor_7();
     ::g::Fuse::Drawing::SurfacePath* CreateEllipticalPath(::g::Fuse::Drawing::Surface* surface, ::g::Uno::Float2 center, ::g::Uno::Float2 radius, bool drawArc);
     float EffectiveEndAngle();
-    float EffectiveEndAngleDegrees();
     float EndAngle();
     void EndAngle(float value);
     float EndAngleDegrees();

@@ -28,7 +28,7 @@ namespace Android{
 namespace Base{
 namespace Types{
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Targets\Android\Uno\Base\Types.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Targets\Android\Uno\Base\Types.uno
 // ----------------------------------------------------------------------------------------------------
 
 // public static extern class Arrays :129
@@ -70,7 +70,7 @@ uArray* Arrays::JavaToUnoByteArray1(jobject arr_, int64_t len_)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Targets\Android\Uno\Base\Types.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Targets\Android\Uno\Base\Types.uno
 // ----------------------------------------------------------------------------------------------------
 
 // public static extern class Bridge :10
@@ -220,7 +220,7 @@ void Bridge::SetWrapperType(::g::Android::Base::Wrappers::JWrapper* wrapper_, jo
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Targets\Android\Uno\Base\Types.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Targets\Android\Uno\Base\Types.uno
 // ----------------------------------------------------------------------------------------------------
 
 // public static extern class ByteBuffer :66
@@ -270,7 +270,7 @@ bool ByteBuffer::ValidDirectByteBuffer(jobject directByteBuffer_)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Targets\Android\Uno\Base\Types.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Targets\Android\Uno\Base\Types.uno
 // ----------------------------------------------------------------------------------------------------
 
 // public static extern class String :96

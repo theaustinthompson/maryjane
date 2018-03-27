@@ -1,4 +1,4 @@
-// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/Fuse.Controls.Navigation/1.7.4/.uno/ux13/Fuse.Controls.NavigationInternal.NavRemoveHorizontal.g.uno.
+// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/Fuse.Controls.Navigation/1.8.1/.uno/ux14/Fuse.Controls.NavigationInternal.NavRemoveHorizontal.g.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once

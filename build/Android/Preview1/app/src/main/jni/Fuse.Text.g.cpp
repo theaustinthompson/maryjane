@@ -101,7 +101,7 @@ namespace g{
 namespace Fuse{
 namespace Text{
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Text\1.7.4\Renderer.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Text\1.8.1\Renderer.uno
 // --------------------------------------------------------------------------------
 
 // internal struct Batch :66
@@ -183,7 +183,7 @@ Batch Batch__New1(int32_t textureIndex, ::g::Uno::Graphics::VertexBuffer* vbo, i
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Text\1.7.4\Substring.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Text\1.8.1\Substring.uno
 // ---------------------------------------------------------------------------------
 
 // private sealed class Substring.CharEnumerator :118
@@ -296,7 +296,7 @@ Substring__CharEnumerator* Substring__CharEnumerator::New1(::g::Fuse::Text::Subs
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Text\1.7.4\Implementation\SinglyLinkedList.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Text\1.8.1\Implementation\SinglyLinkedList.uno
 // -------------------------------------------------------------------------------------------------------
 
 // private sealed class SinglyLinkedList<T>.Enumerator :33
@@ -419,7 +419,7 @@ SinglyLinkedList__Enumerator* SinglyLinkedList__Enumerator::New1(uType* __type, 
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Text\1.7.4\Fallback.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Text\1.8.1\Fallback.uno
 // --------------------------------------------------------------------------------
 
 // public sealed class FallingBackFont :39
@@ -427,7 +427,7 @@ SinglyLinkedList__Enumerator* SinglyLinkedList__Enumerator::New1(uType* __type, 
 static void FallingBackFont_build(uType* type)
 {
     ::STRINGS[0] = uString::Const("fonts.Length > 0");
-    ::STRINGS[1] = uString::Const("C:/Users/borde_000/AppData/Local/Fusetools/Packages/Fuse.Text/1.7.4/Fallback.uno");
+    ::STRINGS[1] = uString::Const("C:/Users/borde_000/AppData/Local/Fusetools/Packages/Fuse.Text/1.8.1/Fallback.uno");
     ::STRINGS[2] = uString::Const("fontIndex == 0");
     ::TYPES[1] = uObject_typeof()->Array();
     ::TYPES[2] = ::g::Fuse::Internal::CacheItem_typeof()->MakeType(::g::Uno::Int_typeof(), ::g::Fuse::Text::Font_typeof(), NULL);
@@ -660,7 +660,7 @@ FallingBackFont* FallingBackFont::New1(uArray* fonts)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Text\1.7.4\Fallback.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Text\1.8.1\Fallback.uno
 // --------------------------------------------------------------------------------
 
 // public sealed class FallingBackFontFace :7
@@ -668,7 +668,7 @@ FallingBackFont* FallingBackFont::New1(uArray* fonts)
 static void FallingBackFontFace_build(uType* type)
 {
     ::STRINGS[3] = uString::Const("fontFaces.Length > 0");
-    ::STRINGS[1] = uString::Const("C:/Users/borde_000/AppData/Local/Fusetools/Packages/Fuse.Text/1.7.4/Fallback.uno");
+    ::STRINGS[1] = uString::Const("C:/Users/borde_000/AppData/Local/Fusetools/Packages/Fuse.Text/1.8.1/Fallback.uno");
     ::TYPES[1] = uObject_typeof()->Array();
     ::TYPES[4] = ::g::Fuse::Internal::CacheItem_typeof()->MakeType(::g::Fuse::Internal::FontFaceDescriptor_typeof(), ::g::Fuse::Text::FontFace_typeof(), NULL);
     ::TYPES[5] = ::g::Fuse::Internal::CacheItem_typeof()->MakeType(::g::Uno::Int_typeof(), ::g::Fuse::Text::Font_typeof(), NULL)->Array();
@@ -770,7 +770,7 @@ FallingBackFontFace* FallingBackFontFace::New1(uArray* fontFaces)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Text\1.7.4\FontFace.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Text\1.8.1\FontFace.uno
 // --------------------------------------------------------------------------------
 
 // public abstract class Font :114
@@ -786,7 +786,7 @@ static void Font_build(uType* type)
     ::STRINGS[4] = uString::Const("...");
     ::STRINGS[5] = uString::Const("Error loading glyph: ");
     ::STRINGS[6] = uString::Const(" ");
-    ::STRINGS[7] = uString::Const("C:\\Users\\borde_000\\AppData\\Local\\Fusetools\\Packages\\Fuse.Text\\1.7.4\\FontFace.uno");
+    ::STRINGS[7] = uString::Const("C:\\Users\\borde_000\\AppData\\Local\\Fusetools\\Packages\\Fuse.Text\\1.8.1\\FontFace.uno");
     ::STRINGS[8] = uString::Const("GetCachedGlyphTexture");
     ::TYPES[6] = ::g::Fuse::Text::GlyphTexture_typeof()->Array();
     ::TYPES[7] = ::g::Uno::Exception_typeof();
@@ -989,7 +989,7 @@ uArray* Font::ShapedTruncation()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Text\1.7.4\FontFace.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Text\1.8.1\FontFace.uno
 // --------------------------------------------------------------------------------
 
 // public abstract class FontFace :52
@@ -1113,7 +1113,7 @@ FontFace* FontFace::Load2(uString* fileName, int32_t index, uDelegate* stylePred
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Text\1.7.4\FontFace.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Text\1.8.1\FontFace.uno
 // --------------------------------------------------------------------------------
 
 // public struct Glyph :10
@@ -1171,7 +1171,7 @@ Glyph Glyph__New1(int32_t fontIndex, uint32_t index)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Text\1.7.4\GlyphAtlas.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Text\1.8.1\GlyphAtlas.uno
 // ----------------------------------------------------------------------------------
 
 // public sealed class GlyphAtlas :8
@@ -1179,7 +1179,7 @@ Glyph Glyph__New1(int32_t fontIndex, uint32_t index)
 static void GlyphAtlas_build(uType* type)
 {
     ::STRINGS[9] = uString::Const("(format == Uno.Graphics.Format.L8) || (format == Uno.Graphics.Format.RGBA8888)");
-    ::STRINGS[10] = uString::Const("C:/Users/borde_000/AppData/Local/Fusetools/Packages/Fuse.Text/1.7.4/GlyphAtlas.uno");
+    ::STRINGS[10] = uString::Const("C:/Users/borde_000/AppData/Local/Fusetools/Packages/Fuse.Text/1.8.1/GlyphAtlas.uno");
     ::TYPES[12] = ::g::Uno::Collections::List_typeof()->MakeType(::g::Uno::Graphics::Texture2D_typeof(), NULL);
     ::TYPES[1] = uObject_typeof()->Array();
     ::TYPES[13] = ::g::Uno::Collections::List__Enumerator_typeof()->MakeType(::g::Uno::Graphics::Texture2D_typeof(), NULL);
@@ -1323,7 +1323,7 @@ GlyphAtlas* GlyphAtlas::New1(::g::Uno::Int2 size)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Text\1.7.4\Renderer.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Text\1.8.1\Renderer.uno
 // --------------------------------------------------------------------------------
 
 // public struct GlyphTexture :9
@@ -1424,7 +1424,7 @@ GlyphTexture GlyphTexture__New1(::g::Fuse::Text::SubTexture subTexture, ::g::Uno
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Text\1.7.4\LazyFontFace.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Text\1.8.1\LazyFontFace.uno
 // ------------------------------------------------------------------------------------
 
 // public sealed class LazyFont :52
@@ -1635,7 +1635,7 @@ LazyFont* LazyFont::New1(::g::Fuse::Text::LazyFontFace* fontFace, int32_t pixelS
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Text\1.7.4\LazyFontFace.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Text\1.8.1\LazyFontFace.uno
 // ------------------------------------------------------------------------------------
 
 // public sealed class LazyFontFace :6
@@ -1786,7 +1786,7 @@ LazyFontFace* LazyFontFace::New1(::g::Fuse::Internal::FontFaceDescriptor* descri
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Text\1.7.4\LineBreaks.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Text\1.8.1\LineBreaks.uno
 // ----------------------------------------------------------------------------------
 
 // internal static class LineBreaks :5
@@ -1821,7 +1821,7 @@ void LineBreaks__Get_fn(::g::Fuse::Text::Substring* text, ::g::Fuse::Text::Imple
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Text\1.7.4\Substring.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Text\1.8.1\Substring.uno
 // ---------------------------------------------------------------------------------
 
 // private sealed class Substring.LineEnumerable :162
@@ -1890,7 +1890,7 @@ Substring__LineEnumerable* Substring__LineEnumerable::New1(::g::Fuse::Text::Subs
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Text\1.7.4\Substring.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Text\1.8.1\Substring.uno
 // ---------------------------------------------------------------------------------
 
 // private sealed class Substring.LineEnumerator :177
@@ -2045,7 +2045,7 @@ Substring__LineEnumerator* Substring__LineEnumerator::New1(::g::Fuse::Text::Subs
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Text\1.7.4\Measure.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Text\1.8.1\Measure.uno
 // -------------------------------------------------------------------------------
 
 // public static class Measure :7
@@ -2164,7 +2164,7 @@ void Measure__Lines_fn(::g::Fuse::Text::Font* font, float* lineSpacing, ::g::Uno
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Text\1.7.4\ShapedRun.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Text\1.8.1\ShapedRun.uno
 // ---------------------------------------------------------------------------------
 
 // private sealed class ShapedRun.PGEnumerator :123
@@ -2277,7 +2277,7 @@ ShapedRun__PGEnumerator* ShapedRun__PGEnumerator::New1(::g::Fuse::Text::ShapedRu
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Text\1.7.4\FontFace.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Text\1.8.1\FontFace.uno
 // --------------------------------------------------------------------------------
 
 // public struct PositionedGlyph :22
@@ -2390,7 +2390,7 @@ PositionedGlyph PositionedGlyph__New1(::g::Fuse::Text::Glyph glyph, ::g::Uno::Fl
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Text\1.7.4\Renderer.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Text\1.8.1\Renderer.uno
 // --------------------------------------------------------------------------------
 
 // internal sealed class PositionedRun :27
@@ -2472,7 +2472,7 @@ PositionedRun* PositionedRun::Translate(PositionedRun* positionedRun, ::g::Uno::
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Text\1.7.4\Renderer.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Text\1.8.1\Renderer.uno
 // --------------------------------------------------------------------------------
 
 // internal struct Quad :50
@@ -2532,7 +2532,7 @@ Quad Quad__New1(::g::Uno::Float2 position, ::g::Uno::Recti texCoords, float scal
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Text\1.7.4\FontFace.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Text\1.8.1\FontFace.uno
 // --------------------------------------------------------------------------------
 
 // public struct RenderedGlyph :38
@@ -2593,7 +2593,7 @@ RenderedGlyph RenderedGlyph__New1(::g::Uno::Content::Images::Bitmap* bitmap, ::g
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Text\1.7.4\Renderer.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Text\1.8.1\Renderer.uno
 // --------------------------------------------------------------------------------
 
 // public sealed class Renderer :86
@@ -3169,7 +3169,7 @@ void Renderer::RecreateGlyphAtlas(int32_t version)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Text\1.7.4\Shape.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Text\1.8.1\Shape.uno
 // -----------------------------------------------------------------------------
 
 // public static class Shape :7
@@ -3365,7 +3365,7 @@ void Shape__ShapeLines_fn(::g::Fuse::Text::Font* font, ::g::Uno::Collections::Li
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Text\1.7.4\ShapedRun.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Text\1.8.1\ShapedRun.uno
 // ---------------------------------------------------------------------------------
 
 // public sealed class ShapedRun :7
@@ -3622,7 +3622,7 @@ ShapedRun* ShapedRun::New2(::g::Fuse::Text::Bidirectional::Run run, uArray* pare
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Text\1.7.4\Renderer.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Text\1.8.1\Renderer.uno
 // --------------------------------------------------------------------------------
 
 // internal static class Renderer.SharedIndexBuffer :268
@@ -3709,7 +3709,7 @@ void Renderer__SharedIndexBuffer::Retain()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Text\1.7.4\Implementation\SinglyLinkedList.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Text\1.8.1\Implementation\SinglyLinkedList.uno
 // -------------------------------------------------------------------------------------------------------
 
 // internal sealed class SinglyLinkedList<T> :5
@@ -3842,7 +3842,7 @@ SinglyLinkedList* SinglyLinkedList::FromEnumerable(uType* __type, uObject* xs)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Text\1.7.4\Substring.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Text\1.8.1\Substring.uno
 // ---------------------------------------------------------------------------------
 
 // public sealed class Substring :8
@@ -4072,7 +4072,7 @@ bool Substring::Equals2(Substring* s)
     if ((::g::Uno::Object::ReferenceEquals(_parent, uPtr(s)->_parent) && (_start == uPtr(s)->_start)) && (Length == uPtr(s)->Length))
         return true;
 
-    return (Length == uPtr(s)->Length) && ::g::Uno::Collections::EnumerableExtensions::SequenceEqual(::g::Uno::Collections::EnumerableExtensions_typeof()->MakeMethod(8/*SequenceEqual<char>*/, ::g::Uno::Char_typeof(), NULL), (uObject*)this, (uObject*)s);
+    return (Length == uPtr(s)->Length) && ::g::Uno::Collections::EnumerableExtensions::SequenceEqual(::g::Uno::Collections::EnumerableExtensions_typeof()->MakeMethod(7/*SequenceEqual<char>*/, ::g::Uno::Char_typeof(), NULL), (uObject*)this, (uObject*)s);
 }
 
 // public Uno.Collections.IEnumerator<char> GetEnumerator() [instance] :113
@@ -4180,7 +4180,7 @@ Substring* Substring::New3(uString* parent, int32_t start, int32_t length)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Text\1.7.4\Substring.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Text\1.8.1\Substring.uno
 // ---------------------------------------------------------------------------------
 
 // internal static class SubstringExtensions :253
@@ -4190,11 +4190,11 @@ static void SubstringExtensions_build(uType* type)
     ::STRINGS[12] = uString::Const("i");
     ::STRINGS[13] = uString::Const("s");
     ::STRINGS[14] = uString::Const("!Fuse.Text.SubstringExtensions.IsTrailingSurrogate(s[start])");
-    ::STRINGS[15] = uString::Const("C:/Users/borde_000/AppData/Local/Fusetools/Packages/Fuse.Text/1.7.4/Substring.uno");
+    ::STRINGS[15] = uString::Const("C:/Users/borde_000/AppData/Local/Fusetools/Packages/Fuse.Text/1.8.1/Substring.uno");
     ::STRINGS[16] = uString::Const("end < s.Length");
     ::STRINGS[17] = uString::Const("");
     ::TYPES[1] = uObject_typeof()->Array();
-    ::TYPES[22] = ::g::Uno::Collections::EnumerableExtensions_typeof()->MakeMethod(7/*Select<Fuse.Text.Substring, Fuse.Text.Substring>*/, ::g::Fuse::Text::Substring_typeof(), ::g::Fuse::Text::Substring_typeof(), NULL);
+    ::TYPES[22] = ::g::Uno::Collections::EnumerableExtensions_typeof()->MakeMethod(6/*Select<Fuse.Text.Substring, Fuse.Text.Substring>*/, ::g::Fuse::Text::Substring_typeof(), ::g::Fuse::Text::Substring_typeof(), NULL);
     ::TYPES[23] = ::g::Uno::Func1_typeof()->MakeType(::g::Fuse::Text::Substring_typeof(), ::g::Fuse::Text::Substring_typeof(), NULL);
     type->SetDependencies(
         ::g::Uno::Diagnostics::Debug_typeof());
@@ -4484,7 +4484,7 @@ uObject* SubstringExtensions::TrimmedLines(::g::Fuse::Text::Substring* str)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Text\1.7.4\TextureAtlas.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Text\1.8.1\TextureAtlas.uno
 // ------------------------------------------------------------------------------------
 
 // public struct SubTexture :9
@@ -4544,7 +4544,7 @@ SubTexture SubTexture__New1(int32_t textureIndex, ::g::Uno::Recti rect)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Text\1.7.4\FontFace.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Text\1.8.1\FontFace.uno
 // --------------------------------------------------------------------------------
 
 // public enum TextDirection :108
@@ -4560,7 +4560,7 @@ uEnumType* TextDirection_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Text\1.7.4\TextureAtlas.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Text\1.8.1\TextureAtlas.uno
 // ------------------------------------------------------------------------------------
 
 // public sealed class TextureAtlas :22
@@ -4568,7 +4568,7 @@ uEnumType* TextDirection_typeof()
 static void TextureAtlas_build(uType* type)
 {
     ::STRINGS[18] = uString::Const("bitmap.Format == this._format");
-    ::STRINGS[19] = uString::Const("C:/Users/borde_000/AppData/Local/Fusetools/Packages/Fuse.Text/1.7.4/TextureAtlas.uno");
+    ::STRINGS[19] = uString::Const("C:/Users/borde_000/AppData/Local/Fusetools/Packages/Fuse.Text/1.8.1/TextureAtlas.uno");
     ::STRINGS[20] = uString::Const("Bitmap too large for the texture atlas size");
     ::STRINGS[21] = uString::Const("(&new Uno.Recti(new int2(0), dst.Size)).Contains(new Uno.Recti(dstPos, src.Size))");
     ::STRINGS[22] = uString::Const("src.Format == dst.Format");
@@ -4736,7 +4736,7 @@ TextureAtlas* TextureAtlas::New1(::g::Uno::Int2 minimumTextureSize, int32_t form
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Text\1.7.4\Truncate.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Text\1.8.1\Truncate.uno
 // --------------------------------------------------------------------------------
 
 // public static class Truncate :7
@@ -4917,7 +4917,7 @@ void Truncate__TruncatedLine_fn(::g::Fuse::Text::Font* font, ::g::Uno::Collectio
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Text\1.7.4\Wrap.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Text\1.8.1\Wrap.uno
 // ----------------------------------------------------------------------------
 
 // public static class Wrap :8

@@ -23,7 +23,7 @@ public class ViewFactory
         android.util.Log.d("maryjane", (message==null ? "null" : message.toString()));
     }
 
-    public static Object InstantiateViewGroupImpl241()
+    public static Object InstantiateViewGroupImpl233()
     {
         android.widget.FrameLayout frameLayout = new com.fuse.android.views.ViewGroup(com.apps.maryjane.maryjane.GetRootActivity());
         frameLayout.setFocusable(true);

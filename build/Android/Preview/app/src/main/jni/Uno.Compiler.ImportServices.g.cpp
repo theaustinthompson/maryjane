@@ -8,7 +8,7 @@ namespace Uno{
 namespace Compiler{
 namespace ImportServices{
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\Compiler\ImportServices\FilenameAttribute.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\Compiler\ImportServices\FilenameAttribute.uno
 // --------------------------------------------------------------------------------------------------------------------------
 
 // public sealed class FilenameAttribute :5

@@ -34,7 +34,7 @@ namespace Scripting{
 namespace V8{
 namespace Simple{
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Scripting.JavaScript\1.7.4\V8\V8Simple.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Scripting.JavaScript\1.8.1\V8\V8Simple.uno
 // ---------------------------------------------------------------------------------------------------
 
 // internal static extern class Context :123
@@ -136,7 +136,7 @@ void Context::Retain(::JSContext* context)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Scripting.JavaScript\1.7.4\V8\V8Simple.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Scripting.JavaScript\1.8.1\V8\V8Simple.uno
 // ---------------------------------------------------------------------------------------------------
 
 // internal static extern class Debug :151
@@ -182,7 +182,7 @@ void Debug::SendCommand(::JSContext* context, uString* command, int32_t length)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Scripting.JavaScript\1.7.4\V8\V8Simple.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Scripting.JavaScript\1.8.1\V8\V8Simple.uno
 // ---------------------------------------------------------------------------------------------------
 
 // internal extern struct JSArray :83
@@ -206,7 +206,7 @@ uStructType* JSArray_typeof()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Scripting.JavaScript\1.7.4\V8\V8Simple.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Scripting.JavaScript\1.8.1\V8\V8Simple.uno
 // ---------------------------------------------------------------------------------------------------
 
 // internal extern delegate Fuse.Scripting.V8.Simple.JSValue JSCallback(Fuse.Scripting.V8.Simple.JSContext context, Uno.IntPtr data, Fuse.Scripting.V8.Simple.JSValue[] args, int numArgs, Fuse.Scripting.V8.Simple.JSValue& error) :37
@@ -225,7 +225,7 @@ uDelegateType* JSCallback_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Scripting.JavaScript\1.7.4\V8\V8Simple.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Scripting.JavaScript\1.8.1\V8\V8Simple.uno
 // ---------------------------------------------------------------------------------------------------
 
 // internal extern delegate void JSCallbackFinalizer(Uno.IntPtr data) :43
@@ -240,7 +240,7 @@ uDelegateType* JSCallbackFinalizer_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Scripting.JavaScript\1.7.4\V8\V8Simple.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Scripting.JavaScript\1.8.1\V8\V8Simple.uno
 // ---------------------------------------------------------------------------------------------------
 
 // internal extern struct JSContext :51
@@ -264,7 +264,7 @@ uStructType* JSContext_typeof()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Scripting.JavaScript\1.7.4\V8\V8Simple.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Scripting.JavaScript\1.8.1\V8\V8Simple.uno
 // ---------------------------------------------------------------------------------------------------
 
 // internal extern delegate void JSDebugMessageHandler(Uno.IntPtr data, Fuse.Scripting.V8.Simple.JSString message) :46
@@ -280,7 +280,7 @@ uDelegateType* JSDebugMessageHandler_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Scripting.JavaScript\1.7.4\V8\V8Simple.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Scripting.JavaScript\1.8.1\V8\V8Simple.uno
 // ---------------------------------------------------------------------------------------------------
 
 // internal extern struct JSExternal :99
@@ -304,7 +304,7 @@ uStructType* JSExternal_typeof()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Scripting.JavaScript\1.7.4\V8\V8Simple.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Scripting.JavaScript\1.8.1\V8\V8Simple.uno
 // ---------------------------------------------------------------------------------------------------
 
 // internal extern delegate void JSExternalFinalizer(Uno.IntPtr external) :40
@@ -319,7 +319,7 @@ uDelegateType* JSExternalFinalizer_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Scripting.JavaScript\1.7.4\V8\V8Simple.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Scripting.JavaScript\1.8.1\V8\V8Simple.uno
 // ---------------------------------------------------------------------------------------------------
 
 // internal extern struct JSFunction :91
@@ -343,7 +343,7 @@ uStructType* JSFunction_typeof()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Scripting.JavaScript\1.7.4\V8\V8Simple.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Scripting.JavaScript\1.8.1\V8\V8Simple.uno
 // ---------------------------------------------------------------------------------------------------
 
 // internal extern struct JSObject :75
@@ -367,7 +367,7 @@ uStructType* JSObject_typeof()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Scripting.JavaScript\1.7.4\V8\V8Simple.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Scripting.JavaScript\1.8.1\V8\V8Simple.uno
 // ---------------------------------------------------------------------------------------------------
 
 // internal extern enum JSRuntimeError :28
@@ -385,7 +385,7 @@ uEnumType* JSRuntimeError_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Scripting.JavaScript\1.7.4\V8\V8Simple.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Scripting.JavaScript\1.8.1\V8\V8Simple.uno
 // ---------------------------------------------------------------------------------------------------
 
 // internal extern struct JSScriptException :108
@@ -450,7 +450,7 @@ bool JSScriptException::op_Inequality(::JSScriptException* e1, ::JSScriptExcepti
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Scripting.JavaScript\1.7.4\V8\V8Simple.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Scripting.JavaScript\1.8.1\V8\V8Simple.uno
 // ---------------------------------------------------------------------------------------------------
 
 // internal extern struct JSString :67
@@ -474,7 +474,7 @@ uStructType* JSString_typeof()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Scripting.JavaScript\1.7.4\V8\V8Simple.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Scripting.JavaScript\1.8.1\V8\V8Simple.uno
 // ---------------------------------------------------------------------------------------------------
 
 // internal extern enum JSType :14
@@ -497,7 +497,7 @@ uEnumType* JSType_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Scripting.JavaScript\1.7.4\V8\V8Simple.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Scripting.JavaScript\1.8.1\V8\V8Simple.uno
 // ---------------------------------------------------------------------------------------------------
 
 // internal extern struct JSValue :59
@@ -521,7 +521,7 @@ uStructType* JSValue_typeof()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Scripting.JavaScript\1.7.4\V8\V8Simple.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Scripting.JavaScript\1.8.1\V8\V8Simple.uno
 // ---------------------------------------------------------------------------------------------------
 
 // internal static extern class ScriptException :232
@@ -639,7 +639,7 @@ void ScriptException::Retain(::JSContext* context, ::JSScriptException* e)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Scripting.JavaScript\1.7.4\V8\V8Simple.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Scripting.JavaScript\1.8.1\V8\V8Simple.uno
 // ---------------------------------------------------------------------------------------------------
 
 // internal static extern class Value :163

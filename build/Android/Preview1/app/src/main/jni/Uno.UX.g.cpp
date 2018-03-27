@@ -77,7 +77,7 @@ namespace g{
 namespace Uno{
 namespace UX{
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\UX\BundleFileSource.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\UX\BundleFileSource.uno
 // ----------------------------------------------------------------------------------------------------
 
 // public sealed class BundleFileSource :6
@@ -196,7 +196,7 @@ BundleFileSource* BundleFileSource::New1(::g::Uno::IO::BundleFile* bundleFile)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Triggers\1.7.4\Actions\Set.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Triggers\1.8.1\Actions\Set.uno
 // ---------------------------------------------------------------------------------------
 
 // public delegate T Expression<T>() :6
@@ -210,7 +210,7 @@ uDelegateType* Expression_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\UX\FileSource.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\UX\FileSource.uno
 // ----------------------------------------------------------------------------------------------
 
 // public abstract class FileSource :6
@@ -340,7 +340,7 @@ FileSource* FileSource::op_Implicit(::g::Uno::IO::BundleFile* bundleFile)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\UX\PropertyObject.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\UX\PropertyObject.uno
 // --------------------------------------------------------------------------------------------------
 
 // public abstract interface IPropertyListener :6
@@ -357,7 +357,7 @@ uInterfaceType* IPropertyListener_typeof()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\UX\NameTable.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\UX\NameTable.uno
 // ---------------------------------------------------------------------------------------------
 
 // public sealed class NameTable :5
@@ -508,7 +508,7 @@ NameTable* NameTable::New1(NameTable* parentTable, uArray* entries)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\UX\Property.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\UX\Property.uno
 // --------------------------------------------------------------------------------------------
 
 // public abstract class Property :24
@@ -637,7 +637,7 @@ void Property::SetAsObject1(uObject* value, uObject* origin)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\UX\Property.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\UX\Property.uno
 // --------------------------------------------------------------------------------------------
 
 // public abstract class Property<T> :66
@@ -741,7 +741,7 @@ void Property1::ctor_2(::g::Uno::UX::Selector name)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\UX\Property.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\UX\Property.uno
 // --------------------------------------------------------------------------------------------
 
 // public abstract class PropertyAccessor :15
@@ -807,7 +807,7 @@ void PropertyAccessor::ctor_()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\UX\PropertyObject.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\UX\PropertyObject.uno
 // --------------------------------------------------------------------------------------------------
 
 // public class PropertyObject :11
@@ -1005,7 +1005,7 @@ PropertyObject* PropertyObject::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\UX\Resource.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\UX\Resource.uno
 // --------------------------------------------------------------------------------------------
 
 // public sealed class Resource :68
@@ -1507,7 +1507,7 @@ bool Resource::TryFindGlobal(uString* key, uDelegate* acceptor, uObject** res)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\UX\Selector.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\UX\Selector.uno
 // --------------------------------------------------------------------------------------------
 
 // public struct Selector :38
@@ -1681,7 +1681,7 @@ bool Selector__op_Inequality(Selector a, Selector b)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\UX\Selector.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\UX\Selector.uno
 // --------------------------------------------------------------------------------------------
 
 // internal static class SelectorRegistry :7
@@ -1815,7 +1815,7 @@ uString* SelectorRegistry::GetValue(int32_t handle)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\UX\PropertyObject.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\UX\PropertyObject.uno
 // --------------------------------------------------------------------------------------------------
 
 // public static extern class SimulatedProperties :85
@@ -1866,7 +1866,7 @@ void SimulatedProperties::Set(::g::Uno::UX::PropertyObject* obj, uString* name, 
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\UX\Size.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\UX\Size.uno
 // ----------------------------------------------------------------------------------------
 
 // public struct Size :29
@@ -2191,7 +2191,7 @@ Size Size__Auto()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\UX\Size.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\UX\Size.uno
 // ----------------------------------------------------------------------------------------
 
 // public struct Size2 :178
@@ -2418,7 +2418,7 @@ Size2 Size2__Auto()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\UX\FileSource.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\UX\FileSource.uno
 // ----------------------------------------------------------------------------------------------
 
 // internal static class StreamExtensions :45
@@ -2512,7 +2512,7 @@ uArray* StreamExtensions::ToArray(::g::Uno::IO::MemoryStream* memoryStream)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\UX\Template.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\UX\Template.uno
 // --------------------------------------------------------------------------------------------
 
 // public abstract class Template :12
@@ -2580,7 +2580,7 @@ uString* Template::Key()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\UX\Size.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\UX\Size.uno
 // ----------------------------------------------------------------------------------------
 
 // public enum Unit :6
@@ -2599,7 +2599,7 @@ uEnumType* Unit_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\UX\NameTable.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\UX\NameTable.uno
 // ---------------------------------------------------------------------------------------------
 
 // public sealed class UXAutoClassNameAttribute :53
@@ -2652,7 +2652,7 @@ UXAutoClassNameAttribute* UXAutoClassNameAttribute::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\UX\NameTable.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\UX\NameTable.uno
 // ---------------------------------------------------------------------------------------------
 
 // public sealed class UXAutoNameTableAttribute :51
@@ -2705,7 +2705,7 @@ UXAutoNameTableAttribute* UXAutoNameTableAttribute::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\UX\Attributes\UXComponentsAttribute.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\UX\Attributes\UXComponentsAttribute.uno
 // --------------------------------------------------------------------------------------------------------------------
 
 // public sealed class UXComponentsAttribute :7
@@ -2758,7 +2758,7 @@ UXComponentsAttribute* UXComponentsAttribute::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\UX\Attributes\UXConstructorAttribute.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\UX\Attributes\UXConstructorAttribute.uno
 // ---------------------------------------------------------------------------------------------------------------------
 
 // public sealed class UXConstructorAttribute :7
@@ -2811,7 +2811,7 @@ UXConstructorAttribute* UXConstructorAttribute::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\UX\Attributes\UXContentAttribute.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\UX\Attributes\UXContentAttribute.uno
 // -----------------------------------------------------------------------------------------------------------------
 
 // public sealed class UXContentAttribute :6
@@ -2864,7 +2864,7 @@ UXContentAttribute* UXContentAttribute::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\UX\Attributes\UXContentAttribute.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\UX\Attributes\UXContentAttribute.uno
 // -----------------------------------------------------------------------------------------------------------------
 
 // public sealed class UXDataScopeAttribute :14
@@ -2917,7 +2917,7 @@ UXDataScopeAttribute* UXDataScopeAttribute::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\UX\Expressions.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\UX\Expressions.uno
 // -----------------------------------------------------------------------------------------------
 
 // public sealed class UXExpressionAttribute :4
@@ -2970,7 +2970,7 @@ UXExpressionAttribute* UXExpressionAttribute::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\UX\Attributes\UXNameAttribute.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\UX\Attributes\UXNameAttribute.uno
 // --------------------------------------------------------------------------------------------------------------
 
 // public sealed class UXFileNameAttribute :9
@@ -3023,7 +3023,7 @@ UXFileNameAttribute* UXFileNameAttribute::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\UX\Attributes\UXFreestanding.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\UX\Attributes\UXFreestanding.uno
 // -------------------------------------------------------------------------------------------------------------
 
 // public sealed class UXFreestandingAttribute :6
@@ -3076,7 +3076,7 @@ UXFreestandingAttribute* UXFreestandingAttribute::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\UX\Attributes\UXGlobalResourceAttribute.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\UX\Attributes\UXGlobalResourceAttribute.uno
 // ------------------------------------------------------------------------------------------------------------------------
 
 // public sealed class UXGlobalModuleAttribute :17
@@ -3129,7 +3129,7 @@ UXGlobalModuleAttribute* UXGlobalModuleAttribute::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\UX\Attributes\UXGlobalResourceAttribute.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\UX\Attributes\UXGlobalResourceAttribute.uno
 // ------------------------------------------------------------------------------------------------------------------------
 
 // public sealed class UXGlobalResourceAttribute :5
@@ -3215,7 +3215,7 @@ UXGlobalResourceAttribute* UXGlobalResourceAttribute::New2(uString* alias)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\UX\Attributes\UXLineNumberAttribute.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\UX\Attributes\UXLineNumberAttribute.uno
 // --------------------------------------------------------------------------------------------------------------------
 
 // public sealed class UXLineNumberAttribute :3
@@ -3268,7 +3268,7 @@ UXLineNumberAttribute* UXLineNumberAttribute::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\UX\Attributes\UXNameAttribute.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\UX\Attributes\UXNameAttribute.uno
 // --------------------------------------------------------------------------------------------------------------
 
 // public sealed class UXNameAttribute :4
@@ -3321,7 +3321,7 @@ UXNameAttribute* UXNameAttribute::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\UX\Attributes\UXContentAttribute.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\UX\Attributes\UXContentAttribute.uno
 // -----------------------------------------------------------------------------------------------------------------
 
 // public sealed class UXNameScopeAttribute :22
@@ -3374,7 +3374,7 @@ UXNameScopeAttribute* UXNameScopeAttribute::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\UX\Attributes\UXPrimaryAttribute.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\UX\Attributes\UXPrimaryAttribute.uno
 // -----------------------------------------------------------------------------------------------------------------
 
 // public sealed class UXPrimaryAttribute :7
@@ -3427,7 +3427,7 @@ UXPrimaryAttribute* UXPrimaryAttribute::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\UX\Attributes\UXSourceFileNameAttribute.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\UX\Attributes\UXSourceFileNameAttribute.uno
 // ------------------------------------------------------------------------------------------------------------------------
 
 // public sealed class UXSourceFileNameAttribute :3
@@ -3480,7 +3480,7 @@ UXSourceFileNameAttribute* UXSourceFileNameAttribute::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\UX\Attributes\UXValueBindingArgumentAttribute.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\UX\Attributes\UXValueBindingArgumentAttribute.uno
 // ------------------------------------------------------------------------------------------------------------------------------
 
 // public sealed class UXValueBindingArgumentAttribute :5
@@ -3533,7 +3533,7 @@ UXValueBindingArgumentAttribute* UXValueBindingArgumentAttribute::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\UX\Attributes\UXValueBindingTargetAttribute.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\UX\Attributes\UXValueBindingTargetAttribute.uno
 // ----------------------------------------------------------------------------------------------------------------------------
 
 // public sealed class UXValueBindingTargetAttribute :5
@@ -3586,7 +3586,7 @@ UXValueBindingTargetAttribute* UXValueBindingTargetAttribute::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\UX\Attributes\UXContentAttribute.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\UX\Attributes\UXContentAttribute.uno
 // -----------------------------------------------------------------------------------------------------------------
 
 // public sealed class UXVerbatimAttribute :8
@@ -3639,7 +3639,7 @@ UXVerbatimAttribute* UXVerbatimAttribute::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\UX\Property.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\UX\Property.uno
 // --------------------------------------------------------------------------------------------
 
 // public class ValueChangedArgs<T> :3
@@ -3697,7 +3697,7 @@ void ValueChangedArgs__set_Value_fn(ValueChangedArgs* __this, void* value)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\UX\Property.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\UX\Property.uno
 // --------------------------------------------------------------------------------------------
 
 // public delegate void ValueChangedHandler<T>(object sender, Uno.UX.ValueChangedArgs<T> args) :13

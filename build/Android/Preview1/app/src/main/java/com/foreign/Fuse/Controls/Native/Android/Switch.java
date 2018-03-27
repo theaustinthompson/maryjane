@@ -23,21 +23,21 @@ public class Switch
         android.util.Log.d("maryjane", (message==null ? "null" : message.toString()));
     }
 
-    public static void AddCallback190(final UnoObject _this, final Object handle)
+    public static void AddCallback182(final UnoObject _this, final Object handle)
     {
         ((android.widget.Switch)handle).setOnCheckedChangeListener(new android.widget.CompoundButton.OnCheckedChangeListener() {
         	public void onCheckedChanged(android.widget.CompoundButton buttonView, boolean isChecked) {
-        		ExternedBlockHost.callUno_Fuse_Controls_Native_Android_Switch_OnToggleChanged191((UnoObject)_this,(boolean)isChecked);
+        		ExternedBlockHost.callUno_Fuse_Controls_Native_Android_Switch_OnToggleChanged183((UnoObject)_this,(boolean)isChecked);
         	}
         });
     }
     
-    public static Object Create192()
+    public static Object Create184()
     {
         return new android.widget.Switch(com.fuse.Activity.getRootActivity());
     }
     
-    public static void SetValue193(final Object handle,final boolean value)
+    public static void SetValue185(final Object handle,final boolean value)
     {
         ((android.widget.Switch)handle).setChecked(value);
     }

@@ -25,7 +25,7 @@ namespace Controls{
 namespace Native{
 namespace iOS{
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Native\1.7.4\iOS\Button.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Native\1.8.1\iOS\Button.uno
 // ---------------------------------------------------------------------------------------------
 
 // public sealed extern class Button :6
@@ -76,7 +76,7 @@ Button* Button::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.DatePicker\1.7.4\iOS\DatePicker.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.DatePicker\1.8.1\iOS\DatePicker.uno
 // -----------------------------------------------------------------------------------------------------
 
 // internal sealed extern class DatePickerView :12
@@ -124,7 +124,7 @@ DatePickerView* DatePickerView::New1(::g::Fuse::Controls::DatePicker* host)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Native\1.7.4\iOS\GraphicsView.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Native\1.8.1\iOS\GraphicsView.uno
 // ---------------------------------------------------------------------------------------------------
 
 // public sealed extern class GraphicsView :7
@@ -174,7 +174,7 @@ GraphicsView* GraphicsView::New1(::g::Fuse::Visual* host)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Native\1.7.4\iOS\ScrollView.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Native\1.8.1\iOS\ScrollView.uno
 // -------------------------------------------------------------------------------------------------
 
 // public sealed extern class ScrollView :7
@@ -224,7 +224,7 @@ ScrollView* ScrollView::New1(uObject* host)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Native\1.7.4\iOS\Slider.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Native\1.8.1\iOS\Slider.uno
 // ---------------------------------------------------------------------------------------------
 
 // public sealed extern class Slider :8
@@ -290,7 +290,7 @@ Slider* Slider::New1(uObject* host, ::g::Fuse::Visual* visual)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Native\1.7.4\iOS\Switch.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Native\1.8.1\iOS\Switch.uno
 // ---------------------------------------------------------------------------------------------
 
 // public sealed extern class Switch :7
@@ -368,7 +368,7 @@ Switch* Switch::New1(uObject* host)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Native\1.7.4\iOS\TextView.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Native\1.8.1\iOS\TextView.uno
 // -----------------------------------------------------------------------------------------------
 
 // public sealed extern class TextView :6
@@ -419,7 +419,7 @@ TextView* TextView::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.TimePicker\1.7.4\iOS\TimePicker.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.TimePicker\1.8.1\iOS\TimePicker.uno
 // -----------------------------------------------------------------------------------------------------
 
 // internal sealed extern class TimePickerView :12
@@ -467,7 +467,7 @@ TimePickerView* TimePickerView::New1(::g::Fuse::Controls::TimePicker* host)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Native\1.7.4\iOS\PointerCaptureAdapter.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Native\1.8.1\iOS\PointerCaptureAdapter.uno
 // ------------------------------------------------------------------------------------------------------------
 
 // internal enum TouchPhase :71

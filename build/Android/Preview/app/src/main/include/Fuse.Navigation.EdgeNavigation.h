@@ -1,4 +1,4 @@
-// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/Fuse.Navigation/1.7.4/EdgeNavigation.uno.
+// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/Fuse.Navigation/1.8.1/EdgeNavigation.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -35,6 +35,7 @@ void EdgeNavigation__get_Active_fn(EdgeNavigation* __this, ::g::Fuse::Visual** _
 void EdgeNavigation__set_Active_fn(EdgeNavigation* __this, ::g::Fuse::Visual* value);
 void EdgeNavigation__get_CanGoBack_fn(EdgeNavigation* __this, bool* __retval);
 void EdgeNavigation__CheckChildren_fn(EdgeNavigation* __this);
+void EdgeNavigation__CheckProgress_fn(EdgeNavigation* __this);
 void EdgeNavigation__ClearChildren_fn(EdgeNavigation* __this);
 void EdgeNavigation__GetEdge_fn(::g::Fuse::Visual* elm, int32_t* __retval);
 void EdgeNavigation__GetPageState_fn(EdgeNavigation* __this, ::g::Fuse::Visual* page, ::g::Fuse::Navigation::NavigationPageState* __retval);
@@ -64,6 +65,7 @@ struct EdgeNavigation : ::g::Fuse::Navigation::VisualNavigation
 
     void ctor_4();
     void CheckChildren();
+    void CheckProgress();
     void ClearChildren();
     bool IsAnyPanelActive();
     bool IsDismissPoint(::g::Uno::Float2 windowPoint);

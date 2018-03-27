@@ -45,7 +45,7 @@ namespace Fuse{
 namespace Controls{
 namespace NavigationInternal{
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Navigation\1.7.4\.uno\ux13\Fuse.Controls.NavigationInternal.BlockInputWhileNavigating.g.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Navigation\1.8.1\.uno\ux14\Fuse.Controls.NavigationInternal.BlockInputWhileNavigating.g.uno
 // -------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 // public partial sealed class BlockInputWhileNavigating :4
@@ -161,7 +161,7 @@ BlockInputWhileNavigating* BlockInputWhileNavigating::New3(::g::Fuse::Controls::
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Navigation\1.7.4\NavigationInternal\EnterHorizontal.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Navigation\1.8.1\NavigationInternal\EnterHorizontal.uno
 // -------------------------------------------------------------------------------------------------------------------------
 
 // public partial sealed class EnterHorizontal :9
@@ -272,7 +272,7 @@ EnterHorizontal* EnterHorizontal::New3()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Navigation\1.7.4\NavigationInternal\EnterVertical.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Navigation\1.8.1\NavigationInternal\EnterVertical.uno
 // -----------------------------------------------------------------------------------------------------------------------
 
 // public partial sealed class EnterVertical :9
@@ -383,7 +383,7 @@ EnterVertical* EnterVertical::New3()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Navigation\1.7.4\NavigationInternal\ExitHorizontal.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Navigation\1.8.1\NavigationInternal\ExitHorizontal.uno
 // ------------------------------------------------------------------------------------------------------------------------
 
 // public partial sealed class ExitHorizontal :8
@@ -494,7 +494,7 @@ ExitHorizontal* ExitHorizontal::New3()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Navigation\1.7.4\NavigationInternal\ExitVertical.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Navigation\1.8.1\NavigationInternal\ExitVertical.uno
 // ----------------------------------------------------------------------------------------------------------------------
 
 // public partial sealed class ExitVertical :9
@@ -605,7 +605,7 @@ ExitVertical* ExitVertical::New3()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Navigation\1.7.4\.uno\ux13\Fuse.Controls.NavigationInternal.NavEnterHorizontal.g.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Navigation\1.8.1\.uno\ux14\Fuse.Controls.NavigationInternal.NavEnterHorizontal.g.uno
 // ------------------------------------------------------------------------------------------------------------------------------------------------------
 
 // public partial sealed class NavEnterHorizontal :4
@@ -724,7 +724,7 @@ NavEnterHorizontal* NavEnterHorizontal::New3()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Navigation\1.7.4\.uno\ux13\Fuse.Controls.NavigationInternal.NavExitHorizontal.g.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Navigation\1.8.1\.uno\ux14\Fuse.Controls.NavigationInternal.NavExitHorizontal.g.uno
 // -----------------------------------------------------------------------------------------------------------------------------------------------------
 
 // public partial sealed class NavExitHorizontal :4
@@ -843,7 +843,7 @@ NavExitHorizontal* NavExitHorizontal::New3()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Navigation\1.7.4\.uno\ux13\Fuse.Controls.NavigationInternal.NavRemoveHorizontal.g.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Navigation\1.8.1\.uno\ux14\Fuse.Controls.NavigationInternal.NavRemoveHorizontal.g.uno
 // -------------------------------------------------------------------------------------------------------------------------------------------------------
 
 // public partial sealed class NavRemoveHorizontal :4
@@ -953,7 +953,7 @@ NavRemoveHorizontal* NavRemoveHorizontal::New3()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Navigation\1.7.4\.uno\ux13\Fuse.Controls.NavigationInternal.PageWhileNavigatingFreeze.g.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Navigation\1.8.1\.uno\ux14\Fuse.Controls.NavigationInternal.PageWhileNavigatingFreeze.g.uno
 // -------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 // public partial sealed class PageWhileNavigatingFreeze :4

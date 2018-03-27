@@ -1,4 +1,4 @@
-// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/UnoCore/1.7.1/Backends/CPlusPlus/Uno/_mainMobile.cpp.
+// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/UnoCore/1.8.0/Backends/CPlusPlus/Uno/_mainMobile.cpp.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #include <Uno/ObjectModel.h>
@@ -9,6 +9,7 @@ namespace g{uClassType* FuseControls_bundle_typeof();}
 namespace g{namespace Uno{namespace UX{struct Property1_type;}} ::g::Uno::UX::Property1_type* FuseControlsNavigation_FuseControlsPanel_IsFrozen_Property_typeof();}
 namespace g{namespace Uno{namespace UX{struct Property1_type;}} ::g::Uno::UX::Property1_type* FuseControlsNavigation_FuseControlsShape_Color_Property_typeof();}
 namespace g{namespace Uno{namespace UX{struct Property1_type;}} ::g::Uno::UX::Property1_type* FuseControlsNavigation_FuseElementsElement_HitTestMode_Property_typeof();}
+namespace g{namespace Uno{namespace UX{struct Property1_type;}} ::g::Uno::UX::Property1_type* FuseControlsPanels_FuseElementsElement_Padding_Property_typeof();}
 namespace g{namespace Uno{namespace UX{struct PropertyAccessor_type;}} ::g::Uno::UX::PropertyAccessor_type* FuseControlsPrimitives_accessor_Fuse_Controls_ButtonBase_Text_typeof();}
 namespace g{namespace Uno{namespace UX{struct PropertyAccessor_type;}} ::g::Uno::UX::PropertyAccessor_type* FuseControlsPrimitives_accessor_Fuse_Controls_ToggleControl_Value_typeof();}
 namespace g{namespace Uno{namespace UX{struct Property1_type;}} ::g::Uno::UX::Property1_type* FuseControlsPrimitives_FuseControlsShape_Fill_Property_typeof();}
@@ -43,12 +44,13 @@ namespace g{uClassType* FuseScriptingJavaScript_bundle_typeof();}
 namespace g{uClassType* FuseText_bundle_typeof();}
 namespace g{uClassType* UnoCore_bundle_typeof();}
 namespace g{namespace Fuse{struct AppBase_type;} ::g::Fuse::AppBase_type* MainView_typeof();}
-namespace g{namespace Uno{namespace UX{struct PropertyAccessor_type;}} ::g::Uno::UX::PropertyAccessor_type* maryjane_accessor_Tab_Text_typeof();}
-namespace g{namespace Uno{namespace UX{struct Property1_type;}} ::g::Uno::UX::Property1_type* maryjane_FuseControlsNavigationControl_Active_Property_typeof();}
+namespace g{uClassType* maryjane_bundle_typeof();}
 namespace g{namespace Uno{namespace UX{struct Property1_type;}} ::g::Uno::UX::Property1_type* maryjane_FuseControlsTextControl_Value_Property_typeof();}
-namespace g{namespace Uno{namespace UX{struct Property1_type;}} ::g::Uno::UX::Property1_type* maryjane_FuseElementsElement_ElementLayoutMaster_Property_typeof();}
-namespace g{namespace Fuse{namespace Controls{struct Panel_type;}} ::g::Fuse::Controls::Panel_type* Tab_typeof();}
-namespace g{namespace Fuse{namespace Controls{struct TextControl_type;}} ::g::Fuse::Controls::TextControl_type* WelcomeText_typeof();}
+namespace g{namespace Uno{namespace UX{struct Property1_type;}} ::g::Uno::UX::Property1_type* maryjane_FuseControlsWebView_Url_Property_typeof();}
+namespace g{namespace Uno{namespace UX{struct Property1_type;}} ::g::Uno::UX::Property1_type* maryjane_FuseDrawingImageFill_Url_Property_typeof();}
+namespace g{namespace Uno{namespace UX{struct Property1_type;}} ::g::Uno::UX::Property1_type* maryjane_FuseElementsElement_Opacity_Property_typeof();}
+namespace g{namespace Uno{namespace UX{struct Property1_type;}} ::g::Uno::UX::Property1_type* maryjane_FuseTriggersActionsDebugAction_Message_Property_typeof();}
+namespace g{namespace Uno{namespace UX{struct Property1_type;}} ::g::Uno::UX::Property1_type* maryjane_FuseTriggersWhileBool_Value_Property_typeof();}
 namespace g{namespace OpenGL{uClassType* GL_typeof();}}
 namespace g{namespace OpenGL{uEnumType* GLBlendEquation_typeof();}}
 namespace g{namespace OpenGL{uEnumType* GLBlendingFactor_typeof();}}
@@ -193,6 +195,7 @@ namespace g{namespace Uno{uType* String_typeof();}}
 namespace g{namespace Uno{uClassType* Tuple_typeof();}}
 namespace g{namespace Uno{struct Tuple2_type; Tuple2_type* Tuple2_typeof();}}
 namespace g{namespace Uno{uType* Type_typeof();}}
+namespace g{namespace Uno{struct Exception_type; ::g::Uno::Exception_type* TypeInitializationException_typeof();}}
 namespace g{namespace Uno{uStructType* UInt_typeof();}}
 namespace g{namespace Uno{uStructType* ULong_typeof();}}
 namespace g{namespace Uno{uStructType* UShort_typeof();}}
@@ -232,7 +235,6 @@ namespace g{namespace Uno{namespace Collections{struct List_type; List_type* Lis
 namespace g{namespace Uno{namespace Collections{struct ObservableList_type; ObservableList_type* ObservableList_typeof();}}}
 namespace g{namespace Uno{namespace Collections{struct OfTypeEnumerable_type; OfTypeEnumerable_type* OfTypeEnumerable_typeof();}}}
 namespace g{namespace Uno{namespace Collections{struct OfTypeEnumerator_type; OfTypeEnumerator_type* OfTypeEnumerator_typeof();}}}
-namespace g{namespace Uno{namespace Collections{uType* OrderByCompare_typeof();}}}
 namespace g{namespace Uno{namespace Collections{uType* PriorityQueue_typeof();}}}
 namespace g{namespace Uno{namespace Collections{uStructType* PriorityQueueItem_typeof();}}}
 namespace g{namespace Uno{namespace Collections{uEnumType* PriorityQueueType_typeof();}}}
@@ -458,11 +460,11 @@ namespace g{namespace Uno{namespace Time{uStructType* Duration_typeof();}}}
 namespace g{namespace Uno{namespace Time{struct DateTimeZone_type; ::g::Uno::Time::DateTimeZone_type* FixedDateTimeZone_typeof();}}}
 namespace g{namespace Uno{namespace Time{uClassType* HashCodeHelper_typeof();}}}
 namespace g{namespace Uno{namespace Time{uStructType* Instant_typeof();}}}
-namespace g{namespace Uno{namespace Time{uType* LocalDate_typeof();}}}
-namespace g{namespace Uno{namespace Time{uType* LocalDateTime_typeof();}}}
+namespace g{namespace Uno{namespace Time{uStructType* LocalDate_typeof();}}}
+namespace g{namespace Uno{namespace Time{uStructType* LocalDateTime_typeof();}}}
 namespace g{namespace Uno{namespace Time{uStructType* LocalTime_typeof();}}}
 namespace g{namespace Uno{namespace Time{uStructType* Offset_typeof();}}}
-namespace g{namespace Uno{namespace Time{uType* OffsetDateTime_typeof();}}}
+namespace g{namespace Uno{namespace Time{uStructType* OffsetDateTime_typeof();}}}
 namespace g{namespace Uno{namespace Time{uClassType* Preconditions_typeof();}}}
 namespace g{namespace Uno{namespace Time{uType* ZonedDateTime_typeof();}}}
 namespace g{namespace Uno{namespace Time{namespace Calendars{uType* Era_typeof();}}}}
@@ -557,12 +559,8 @@ namespace g{namespace Uno{namespace Net{namespace Sockets{uStructType* Socket__S
 namespace g{namespace Uno{namespace Net{namespace Sockets{uType* SocketHelpers_typeof();}}}}
 namespace g{namespace Uno{namespace Net{namespace Sockets{uEnumType* SocketShutdown_typeof();}}}}
 namespace g{namespace Uno{namespace Net{namespace Sockets{uEnumType* SocketType_typeof();}}}}
-namespace g{namespace Uno{namespace Net{namespace Http{uType* AbsolutePathParser_typeof();}}}}
 namespace g{namespace Uno{namespace Net{namespace Http{uType* HttpMessageHandlerRequest__DispatchClosure_typeof();}}}}
 namespace g{namespace Uno{namespace Net{namespace Http{uType* HttpMessageHandlerRequest__DispatchClosure1_typeof();}}}}
-namespace g{namespace Uno{namespace Net{namespace Http{uType* HashParser_typeof();}}}}
-namespace g{namespace Uno{namespace Net{namespace Http{uType* HostInfo_typeof();}}}}
-namespace g{namespace Uno{namespace Net{namespace Http{uType* HostInfoParser_typeof();}}}}
 namespace g{namespace Uno{namespace Net{namespace Http{struct HttpDefaultDispatcher_type; HttpDefaultDispatcher_type* HttpDefaultDispatcher_typeof();}}}}
 namespace g{namespace Uno{namespace Net{namespace Http{uClassType* HttpMessageCache_typeof();}}}}
 namespace g{namespace Uno{namespace Net{namespace Http{struct HttpMessageHandler_type; HttpMessageHandler_type* HttpMessageHandler_typeof();}}}}
@@ -573,14 +571,7 @@ namespace g{namespace Uno{namespace Net{namespace Http{uClassType* HttpStatusRea
 namespace g{namespace Uno{struct Exception_type; namespace Net{namespace Http{::g::Uno::Exception_type* InvalidResponseTypeException_typeof();}}}}
 namespace g{namespace Uno{struct Exception_type; namespace Net{namespace Http{::g::Uno::Exception_type* InvalidStateException_typeof();}}}}
 namespace g{namespace Uno{namespace Net{namespace Http{uType* HttpMessageHandlerRequest__ProgressClosure_typeof();}}}}
-namespace g{namespace Uno{namespace Net{namespace Http{uType* QueryParser_typeof();}}}}
-namespace g{namespace Uno{namespace Net{namespace Http{uType* SchemeParser_typeof();}}}}
-namespace g{namespace Uno{namespace Net{namespace Http{uStructType* SchemeParserResult_typeof();}}}}
 namespace g{namespace Uno{namespace Net{namespace Http{uClassType* HttpMessageHandler__StaticData_typeof();}}}}
-namespace g{namespace Uno{struct Exception_type; namespace Net{namespace Http{::g::Uno::Exception_type* UriFormatException_typeof();}}}}
-namespace g{namespace Uno{namespace Net{namespace Http{uType* UriScheme_typeof();}}}}
-namespace g{namespace Uno{namespace Net{namespace Http{uEnumType* UriSchemeType_typeof();}}}}
-namespace g{namespace Uno{namespace Net{namespace Http{uType* UserInfoParser_typeof();}}}}
 namespace g{namespace Uno{namespace Net{namespace Http{namespace Implementation{struct AndroidHttpRequest_type; AndroidHttpRequest_type* AndroidHttpRequest_typeof();}}}}}
 namespace g{namespace Uno{namespace Net{namespace Http{namespace Implementation{uInterfaceType* IHttpRequest_typeof();}}}}}
 namespace g{namespace Uno{namespace Testing{uClassType* Assert_typeof();}}}
@@ -811,9 +802,7 @@ namespace g{namespace Fuse{namespace Platform{uClassType* Lifecycle_typeof();}}}
 namespace g{namespace Fuse{namespace Platform{uEnumType* StatusBarAnimation_typeof();}}}
 namespace g{namespace Fuse{namespace Platform{uEnumType* StatusBarStyle_typeof();}}}
 namespace g{namespace Fuse{namespace Platform{uClassType* SystemUI_typeof();}}}
-namespace g{namespace Fuse{namespace Platform{uEnumType* SystemUIID_typeof();}}}
 namespace g{namespace Fuse{namespace Platform{uEnumType* SystemUIResizeReason_typeof();}}}
-namespace g{namespace Fuse{namespace Platform{uType* SystemUIWillResizeEventArgs_typeof();}}}
 namespace g{namespace Fuse{namespace Platform{uEnumType* SysUIState_typeof();}}}
 namespace g{namespace Fuse{namespace Common{uType* Blitter_typeof();}}}
 namespace g{namespace Fuse{namespace Animations{uEnumType* AnimationVariant_typeof();}}}
@@ -852,6 +841,7 @@ namespace g{namespace Fuse{namespace Animations{struct Easing_type; ::g::Fuse::A
 namespace g{namespace Fuse{namespace Animations{struct Easing_type; ::g::Fuse::Animations::Easing_type* Easing__CubicInOutImpl_typeof();}}}
 namespace g{namespace Fuse{namespace Animations{struct Easing_type; ::g::Fuse::Animations::Easing_type* Easing__CubicOutImpl_typeof();}}}
 namespace g{namespace Fuse{namespace Animations{struct Animator_type; ::g::Fuse::Animations::Animator_type* Cycle_typeof();}}}
+namespace g{namespace Fuse{namespace Animations{uEnumType* CycleRestore_typeof();}}}
 namespace g{namespace Fuse{namespace Animations{struct OpenAnimatorState_type; ::g::Fuse::Animations::OpenAnimatorState_type* CycleState_typeof();}}}
 namespace g{namespace Fuse{namespace Animations{uEnumType* CycleWaveform_typeof();}}}
 namespace g{namespace Fuse{namespace Animations{uType* DestinationBehavior_typeof();}}}
@@ -1200,7 +1190,7 @@ namespace g{namespace Fuse{namespace Scripting{namespace V8{namespace Simple{uCl
 namespace g{namespace Fuse{namespace Scripting{namespace V8{namespace Simple{uClassType* Value_typeof();}}}}}
 namespace g{namespace Fuse{namespace Nodes{uStructType* DrawRect_typeof();}}}
 namespace g{namespace Fuse{namespace Nodes{uType* DrawRectVisualizer_typeof();}}}
-namespace g{namespace Fuse{namespace Controls{uType* PageControl__AddedPage_typeof();}}}
+namespace g{namespace Fuse{namespace Controls{uType* CommonNavigationPages__AddedPage_typeof();}}}
 namespace g{namespace Uno{namespace UX{struct Template_type;}} namespace Fuse{namespace Controls{::g::Uno::UX::Template_type* MobileTextEdit__AndroidTemplate_typeof();}}}
 namespace g{namespace Fuse{namespace Controls{struct Shape_type; ::g::Fuse::Controls::Shape_type* Arc_typeof();}}}
 namespace g{namespace Fuse{namespace Controls{uEnumType* AutoCapitalizationHint_typeof();}}}
@@ -1213,10 +1203,11 @@ namespace g{namespace Fuse{namespace Controls{struct Panel_type; ::g::Fuse::Cont
 namespace g{namespace Fuse{namespace Controls{struct Panel_type; ::g::Fuse::Controls::Panel_type* ButtonBase_typeof();}}}
 namespace g{namespace Fuse{namespace Controls{struct Shape_type; ::g::Fuse::Controls::Shape_type* Circle_typeof();}}}
 namespace g{namespace Fuse{namespace Controls{struct Panel_type; ::g::Fuse::Controls::Panel_type* ClientPanel_typeof();}}}
+namespace g{namespace Fuse{namespace Controls{uClassType* CommonNavigation_typeof();}}}
+namespace g{namespace Fuse{namespace Controls{uType* CommonNavigationPages_typeof();}}}
 namespace g{namespace Fuse{namespace Controls{struct Panel_type; ::g::Fuse::Controls::Panel_type* Container_typeof();}}}
 namespace g{namespace Fuse{namespace Controls{struct ContentControl_type; ContentControl_type* ContentControl_typeof();}}}
 namespace g{namespace Fuse{namespace Controls{struct Control_type; Control_type* Control_typeof();}}}
-namespace g{namespace Fuse{namespace Controls{uType* EdgeNavigator__ControlPageData_typeof();}}}
 namespace g{namespace Fuse{namespace Controls{uType* NavigationControl__ControlPageData_typeof();}}}
 namespace g{namespace Fuse{namespace Controls{struct SegmentedShape_type; ::g::Fuse::Controls::SegmentedShape_type* Curve_typeof();}}}
 namespace g{namespace Fuse{namespace Controls{uEnumType* CurveClose_typeof();}}}
@@ -1232,7 +1223,7 @@ namespace g{namespace Fuse{namespace Controls{struct SingleViewHost__Disable_typ
 namespace g{namespace Fuse{namespace Controls{struct NativeViewHost__Disable_type; NativeViewHost__Disable_type* NativeViewHost__Disable_typeof();}}}
 namespace g{namespace Fuse{namespace Controls{uEnumType* ScrollViewBase__DistanceFromViewTarget_typeof();}}}
 namespace g{namespace Fuse{namespace Controls{struct Panel_type; ::g::Fuse::Controls::Panel_type* DockPanel_typeof();}}}
-namespace g{namespace Fuse{namespace Controls{struct Panel_type; ::g::Fuse::Controls::Panel_type* EdgeNavigator_typeof();}}}
+namespace g{namespace Fuse{namespace Controls{struct EdgeNavigator_type; EdgeNavigator_type* EdgeNavigator_typeof();}}}
 namespace g{namespace Uno{namespace UX{struct Property1_type;}} namespace Fuse{namespace Controls{::g::Uno::UX::Property1_type* Element_Opacity_Property_typeof();}}}
 namespace g{namespace Fuse{namespace Controls{struct Shape_type; ::g::Fuse::Controls::Shape_type* Ellipse_typeof();}}}
 namespace g{namespace Fuse{namespace Controls{struct Shape_type; ::g::Fuse::Controls::Shape_type* EllipticalShape_typeof();}}}
@@ -1290,7 +1281,7 @@ namespace g{namespace Fuse{namespace Controls{struct Panel_type; ::g::Fuse::Cont
 namespace g{namespace Fuse{namespace Controls{struct Panel_type; ::g::Fuse::Controls::Panel_type* PageIndicatorDot_typeof();}}}
 namespace g{namespace Uno{namespace UX{struct Template_type;}} namespace Fuse{namespace Controls{::g::Uno::UX::Template_type* PageIndicatorDotTemplate_typeof();}}}
 namespace g{namespace Fuse{namespace Controls{uEnumType* PagePrepareBusy_typeof();}}}
-namespace g{namespace Fuse{namespace Reactive{struct ObserverMap_type;}} namespace Fuse{namespace Controls{::g::Fuse::Reactive::ObserverMap_type* PageControl__PagesMap_typeof();}}}
+namespace g{namespace Fuse{namespace Reactive{struct ObserverMap_type;}} namespace Fuse{namespace Controls{::g::Fuse::Reactive::ObserverMap_type* CommonNavigationPages__PagesMap_typeof();}}}
 namespace g{namespace Fuse{namespace Controls{struct Navigator_type; ::g::Fuse::Controls::Navigator_type* PageView_typeof();}}}
 namespace g{namespace Fuse{namespace Controls{struct Panel_type; Panel_type* Panel_typeof();}}}
 namespace g{namespace Fuse{namespace Controls{struct SegmentedShape_type; ::g::Fuse::Controls::SegmentedShape_type* Path_typeof();}}}
@@ -1315,6 +1306,8 @@ namespace g{namespace Fuse{namespace Controls{uType* Shape__ResourceWatcher_type
 namespace g{namespace Fuse{namespace Controls{uEnumType* ReuseType_typeof();}}}
 namespace g{namespace Fuse{namespace Controls{struct Control_type; ::g::Fuse::Controls::Control_type* RightFrameBackground_typeof();}}}
 namespace g{namespace Uno{namespace UX{struct Property1_type;}} namespace Fuse{namespace Controls{::g::Uno::UX::Property1_type* Router_PrepareProgress_Property_typeof();}}}
+namespace g{namespace Fuse{namespace Controls{struct Panel_type; ::g::Fuse::Controls::Panel_type* SafeEdgePanel_typeof();}}}
+namespace g{namespace Fuse{namespace Controls{uEnumType* SafeEdgePanelEdges_typeof();}}}
 namespace g{namespace Fuse{namespace Controls{uEnumType* ScrollDirections_typeof();}}}
 namespace g{namespace Fuse{namespace Controls{struct ScrollPositionChangedArgs_type; ScrollPositionChangedArgs_type* ScrollPositionChangedArgs_typeof();}}}
 namespace g{namespace Fuse{namespace Controls{uDelegateType* ScrollPositionChangedHandler_typeof();}}}
@@ -1334,27 +1327,27 @@ namespace g{namespace Fuse{namespace Controls{struct Panel_type; ::g::Fuse::Cont
 namespace g{namespace Fuse{namespace Controls{struct Shape_type; ::g::Fuse::Controls::Shape_type* Star_typeof();}}}
 namespace g{namespace Fuse{namespace Controls{struct Control_type; ::g::Fuse::Controls::Control_type* StatusBarBackground_typeof();}}}
 namespace g{namespace Fuse{namespace Controls{struct ToggleControl_type; ::g::Fuse::Controls::ToggleControl_type* Switch_typeof();}}}
-namespace g{namespace Uno{namespace UX{struct Template_type;}} namespace Fuse{namespace Controls{::g::Uno::UX::Template_type* Slider__Template_typeof();}}}
-namespace g{namespace Uno{namespace UX{struct Template_type;}} namespace Fuse{namespace Controls{::g::Uno::UX::Template_type* TimePicker__Template_typeof();}}}
-namespace g{namespace Uno{namespace UX{struct Template_type;}} namespace Fuse{namespace Controls{::g::Uno::UX::Template_type* TextControl__Template_typeof();}}}
 namespace g{namespace Uno{namespace UX{struct Template_type;}} namespace Fuse{namespace Controls{::g::Uno::UX::Template_type* Switch__Template_typeof();}}}
+namespace g{namespace Uno{namespace UX{struct Template_type;}} namespace Fuse{namespace Controls{::g::Uno::UX::Template_type* Slider__Template_typeof();}}}
 namespace g{namespace Uno{namespace UX{struct Template_type;}} namespace Fuse{namespace Controls{::g::Uno::UX::Template_type* Button__Template_typeof();}}}
 namespace g{namespace Uno{namespace UX{struct Template_type;}} namespace Fuse{namespace Controls{::g::Uno::UX::Template_type* GraphicsView__Template_typeof();}}}
+namespace g{namespace Uno{namespace UX{struct Template_type;}} namespace Fuse{namespace Controls{::g::Uno::UX::Template_type* TimePicker__Template_typeof();}}}
 namespace g{namespace Uno{namespace UX{struct Template_type;}} namespace Fuse{namespace Controls{::g::Uno::UX::Template_type* DatePicker__Template_typeof();}}}
 namespace g{namespace Uno{namespace UX{struct Template_type;}} namespace Fuse{namespace Controls{::g::Uno::UX::Template_type* ScrollView__Template_typeof();}}}
-namespace g{namespace Uno{namespace UX{struct Template_type;}} namespace Fuse{namespace Controls{::g::Uno::UX::Template_type* TimePicker__Template1_typeof();}}}
+namespace g{namespace Uno{namespace UX{struct Template_type;}} namespace Fuse{namespace Controls{::g::Uno::UX::Template_type* TextControl__Template_typeof();}}}
+namespace g{namespace Uno{namespace UX{struct Template_type;}} namespace Fuse{namespace Controls{::g::Uno::UX::Template_type* Switch__Template1_typeof();}}}
 namespace g{namespace Uno{namespace UX{struct Template_type;}} namespace Fuse{namespace Controls{::g::Uno::UX::Template_type* TextControl__Template1_typeof();}}}
+namespace g{namespace Uno{namespace UX{struct Template_type;}} namespace Fuse{namespace Controls{::g::Uno::UX::Template_type* TimePicker__Template1_typeof();}}}
+namespace g{namespace Uno{namespace UX{struct Template_type;}} namespace Fuse{namespace Controls{::g::Uno::UX::Template_type* Button__Template1_typeof();}}}
+namespace g{namespace Uno{namespace UX{struct Template_type;}} namespace Fuse{namespace Controls{::g::Uno::UX::Template_type* Slider__Template1_typeof();}}}
 namespace g{namespace Uno{namespace UX{struct Template_type;}} namespace Fuse{namespace Controls{::g::Uno::UX::Template_type* DatePicker__Template1_typeof();}}}
 namespace g{namespace Uno{namespace UX{struct Template_type;}} namespace Fuse{namespace Controls{::g::Uno::UX::Template_type* GraphicsView__Template1_typeof();}}}
-namespace g{namespace Uno{namespace UX{struct Template_type;}} namespace Fuse{namespace Controls{::g::Uno::UX::Template_type* Switch__Template1_typeof();}}}
-namespace g{namespace Uno{namespace UX{struct Template_type;}} namespace Fuse{namespace Controls{::g::Uno::UX::Template_type* Button__Template1_typeof();}}}
 namespace g{namespace Uno{namespace UX{struct Template_type;}} namespace Fuse{namespace Controls{::g::Uno::UX::Template_type* ScrollView__Template1_typeof();}}}
-namespace g{namespace Uno{namespace UX{struct Template_type;}} namespace Fuse{namespace Controls{::g::Uno::UX::Template_type* Slider__Template1_typeof();}}}
+namespace g{namespace Uno{namespace UX{struct Template_type;}} namespace Fuse{namespace Controls{::g::Uno::UX::Template_type* Slider__Template2_typeof();}}}
+namespace g{namespace Uno{namespace UX{struct Template_type;}} namespace Fuse{namespace Controls{::g::Uno::UX::Template_type* Switch__Template2_typeof();}}}
+namespace g{namespace Uno{namespace UX{struct Template_type;}} namespace Fuse{namespace Controls{::g::Uno::UX::Template_type* TimePicker__Template2_typeof();}}}
 namespace g{namespace Uno{namespace UX{struct Template_type;}} namespace Fuse{namespace Controls{::g::Uno::UX::Template_type* Button__Template2_typeof();}}}
 namespace g{namespace Uno{namespace UX{struct Template_type;}} namespace Fuse{namespace Controls{::g::Uno::UX::Template_type* DatePicker__Template2_typeof();}}}
-namespace g{namespace Uno{namespace UX{struct Template_type;}} namespace Fuse{namespace Controls{::g::Uno::UX::Template_type* Slider__Template2_typeof();}}}
-namespace g{namespace Uno{namespace UX{struct Template_type;}} namespace Fuse{namespace Controls{::g::Uno::UX::Template_type* TimePicker__Template2_typeof();}}}
-namespace g{namespace Uno{namespace UX{struct Template_type;}} namespace Fuse{namespace Controls{::g::Uno::UX::Template_type* Switch__Template2_typeof();}}}
 namespace g{namespace Fuse{namespace Controls{struct TextControl_type; ::g::Fuse::Controls::TextControl_type* Text_typeof();}}}
 namespace g{namespace Fuse{namespace Controls{uEnumType* TextAlignment_typeof();}}}
 namespace g{namespace Fuse{namespace Controls{struct TextControl_type; ::g::Fuse::Controls::TextControl_type* TextBlock_typeof();}}}
@@ -1424,10 +1417,8 @@ namespace g{namespace Fuse{namespace Controls{namespace Native{uClassType* ViewF
 namespace g{namespace Fuse{namespace Controls{namespace Native{struct ViewHandle_type; ViewHandle_type* ViewHandle_typeof();}}}}
 namespace g{namespace Fuse{namespace Controls{namespace Native{namespace Android{struct Button_type; Button_type* Button_typeof();}}}}}
 namespace g{namespace Fuse{namespace Controls{namespace Native{namespace Android{struct CanvasViewGroup_type; CanvasViewGroup_type* CanvasViewGroup_typeof();}}}}}
-namespace g{namespace Fuse{namespace Controls{namespace Native{namespace Android{struct Circle_type; Circle_type* Circle_typeof();}}}}}
 namespace g{namespace Fuse{namespace Controls{namespace Native{namespace Android{struct DatePickerView_type; DatePickerView_type* DatePickerView_typeof();}}}}}
 namespace g{namespace Fuse{namespace Controls{namespace Native{namespace Android{uClassType* DateTimeConverterHelpers_typeof();}}}}}
-namespace g{namespace Fuse{namespace Controls{namespace Native{namespace Android{struct Shape_type; ::g::Fuse::Controls::Native::Android::Shape_type* Ellipse_typeof();}}}}}
 namespace g{namespace Fuse{namespace Controls{namespace Native{namespace Android{struct FocusChangedListener_type; FocusChangedListener_type* FocusChangedListener_typeof();}}}}}
 namespace g{namespace Fuse{namespace Controls{namespace Native{namespace Android{uType* FocusManager_typeof();}}}}}
 namespace g{namespace Fuse{namespace Controls{namespace Native{namespace Android{struct GraphicsViewBase_type; GraphicsViewBase_type* GraphicsViewBase_typeof();}}}}}
@@ -1437,9 +1428,7 @@ namespace g{namespace Fuse{namespace Controls{namespace Native{namespace Android
 namespace g{namespace Fuse{namespace Controls{namespace Native{namespace Android{uType* JavaMap_typeof();}}}}}
 namespace g{namespace Fuse{namespace Controls{namespace Native{namespace Android{struct LeafView_type; LeafView_type* LeafView_typeof();}}}}}
 namespace g{namespace Fuse{namespace Controls{namespace Native{namespace Android{uType* MotionEvent_typeof();}}}}}
-namespace g{namespace Fuse{namespace Controls{namespace Native{namespace Android{struct Rectangle_type; Rectangle_type* Rectangle_typeof();}}}}}
 namespace g{namespace Fuse{namespace Controls{namespace Native{namespace Android{struct ScrollView_type; ScrollView_type* ScrollView_typeof();}}}}}
-namespace g{namespace Fuse{namespace Controls{namespace Native{namespace Android{struct Shape_type; Shape_type* Shape_typeof();}}}}}
 namespace g{namespace Fuse{namespace Controls{namespace Native{namespace Android{struct Slider_type; Slider_type* Slider_typeof();}}}}}
 namespace g{namespace Fuse{namespace Controls{namespace Native{namespace Android{uClassType* SoftKeyboard_typeof();}}}}}
 namespace g{namespace Fuse{namespace Controls{namespace Native{namespace Android{struct GraphicsViewBase_type; ::g::Fuse::Controls::Native::Android::GraphicsViewBase_type* SurfaceView_typeof();}}}}}
@@ -1605,6 +1594,7 @@ namespace g{namespace Fuse{namespace Reactive{struct UnaryOperator_type; ::g::Fu
 namespace g{namespace Fuse{namespace Reactive{struct BinaryOperator_type; ::g::Fuse::Reactive::BinaryOperator_type* BinaryFloatOperator_typeof();}}}
 namespace g{namespace Fuse{namespace Reactive{struct BinaryOperator_type; BinaryOperator_type* BinaryOperator_typeof();}}}
 namespace g{namespace Fuse{namespace Reactive{uEnumType* BindingMode_typeof();}}}
+namespace g{namespace Fuse{namespace Reactive{struct CapsObject_type; CapsObject_type* CapsObject_typeof();}}}
 namespace g{namespace Fuse{namespace Reactive{uType* Case_typeof();}}}
 namespace g{namespace Fuse{namespace Reactive{struct UnaryOperator_type; ::g::Fuse::Reactive::UnaryOperator_type* Ceil_typeof();}}}
 namespace g{namespace Fuse{namespace Reactive{struct TernaryOperator_type; ::g::Fuse::Reactive::TernaryOperator_type* Clamp_typeof();}}}
@@ -1627,6 +1617,7 @@ namespace g{namespace Fuse{namespace Reactive{struct ExpressionListener_type; ::
 namespace g{namespace Fuse{namespace Reactive{uClassType* DebugLog_typeof();}}}
 namespace g{namespace Fuse{namespace Reactive{struct UnaryOperator_type; ::g::Fuse::Reactive::UnaryOperator_type* DegreesToRadians_typeof();}}}
 namespace g{namespace Fuse{namespace Reactive{struct JavaScript__Dependency_type; JavaScript__Dependency_type* JavaScript__Dependency_typeof();}}}
+namespace g{namespace Fuse{namespace Reactive{struct CapsObject_type; ::g::Fuse::Reactive::CapsObject_type* DeviceCaps_typeof();}}}
 namespace g{namespace Fuse{namespace Reactive{struct BinaryOperator_type; ::g::Fuse::Reactive::BinaryOperator_type* Divide_typeof();}}}
 namespace g{namespace Fuse{namespace Reactive{struct Instantiator_type; ::g::Fuse::Reactive::Instantiator_type* Each_typeof();}}}
 namespace g{namespace Fuse{namespace Reactive{struct BinaryOperator_type; ::g::Fuse::Reactive::BinaryOperator_type* Equal_typeof();}}}
@@ -1641,8 +1632,8 @@ namespace g{namespace Fuse{namespace Reactive{struct ExpressionListener_type; Ex
 namespace g{namespace Fuse{namespace Reactive{struct ExpressionSubscriber_type; ExpressionSubscriber_type* ExpressionSubscriber_typeof();}}}
 namespace g{namespace Fuse{namespace Reactive{uEnumType* ComputeExpression__Flags_typeof();}}}
 namespace g{namespace Fuse{namespace Reactive{uEnumType* ExpressionSubscriber__Flags_typeof();}}}
-namespace g{namespace Fuse{namespace Reactive{uDelegateType* BinaryFloatOperator__FloatOp_typeof();}}}
 namespace g{namespace Fuse{namespace Reactive{uDelegateType* UnaryFloatOperator__FloatOp_typeof();}}}
+namespace g{namespace Fuse{namespace Reactive{uDelegateType* BinaryFloatOperator__FloatOp_typeof();}}}
 namespace g{namespace Fuse{namespace Reactive{struct UnaryOperator_type; ::g::Fuse::Reactive::UnaryOperator_type* Floor_typeof();}}}
 namespace g{namespace Fuse{namespace Reactive{struct UnaryOperator_type; ::g::Fuse::Reactive::UnaryOperator_type* Fract_typeof();}}}
 namespace g{namespace Fuse{namespace Reactive{struct BinaryOperator_type; ::g::Fuse::Reactive::BinaryOperator_type* GreaterOrEqual_typeof();}}}
@@ -1652,12 +1643,13 @@ namespace g{namespace Fuse{namespace Reactive{uInterfaceType* WindowListItem__ID
 namespace g{namespace Fuse{namespace Reactive{uInterfaceType* IEventHandler_typeof();}}}
 namespace g{namespace Fuse{namespace Reactive{uInterfaceType* IEventRecord_typeof();}}}
 namespace g{namespace Fuse{namespace Reactive{uInterfaceType* IExpression_typeof();}}}
-namespace g{namespace Fuse{namespace Reactive{uInterfaceType* IListener_typeof();}}}
 namespace g{namespace Fuse{namespace Reactive{uInterfaceType* ItemsWindowList__IListener_typeof();}}}
+namespace g{namespace Fuse{namespace Reactive{uInterfaceType* IListener_typeof();}}}
 namespace g{namespace Fuse{namespace Reactive{struct Expression_type; ::g::Fuse::Reactive::Expression_type* IndexFunction_typeof();}}}
 namespace g{namespace Fuse{namespace Reactive{struct BinaryOperator_type; ::g::Fuse::Reactive::BinaryOperator_type* InfixOperator_typeof();}}}
 namespace g{namespace Fuse{namespace Reactive{struct InnerListener_type; InnerListener_type* InnerListener_typeof();}}}
 namespace g{namespace Fuse{namespace Reactive{struct Instantiator_type; ::g::Fuse::Reactive::Instantiator_type* Instance_typeof();}}}
+namespace g{namespace Fuse{namespace Reactive{uEnumType* InstanceDefaults_typeof();}}}
 namespace g{namespace Fuse{namespace Reactive{uEnumType* InstanceDefer_typeof();}}}
 namespace g{namespace Fuse{namespace Reactive{uEnumType* InstanceIdentity_typeof();}}}
 namespace g{namespace Fuse{namespace Reactive{uEnumType* InstanceReuse_typeof();}}}
@@ -1670,9 +1662,15 @@ namespace g{namespace Fuse{namespace Reactive{uInterfaceType* IObservableObject_
 namespace g{namespace Fuse{namespace Reactive{uInterfaceType* IObserver_typeof();}}}
 namespace g{namespace Fuse{namespace Reactive{uInterfaceType* IPropertyObserver_typeof();}}}
 namespace g{namespace Fuse{namespace Reactive{uInterfaceType* IPropertySubscription_typeof();}}}
+namespace g{namespace Fuse{namespace Reactive{struct PlatformFunction_type; ::g::Fuse::Reactive::PlatformFunction_type* IsAndroidFunction_typeof();}}}
 namespace g{namespace Fuse{namespace Reactive{struct ComputeExpression_type; ::g::Fuse::Reactive::ComputeExpression_type* IsDefined_typeof();}}}
+namespace g{namespace Fuse{namespace Reactive{struct PlatformFunction_type; ::g::Fuse::Reactive::PlatformFunction_type* IsDesktopFunction_typeof();}}}
+namespace g{namespace Fuse{namespace Reactive{struct PlatformFunction_type; ::g::Fuse::Reactive::PlatformFunction_type* IsIOSFunction_typeof();}}}
+namespace g{namespace Fuse{namespace Reactive{struct PlatformFunction_type; ::g::Fuse::Reactive::PlatformFunction_type* IsMobileFunction_typeof();}}}
 namespace g{namespace Fuse{namespace Reactive{struct UnaryOperator_type; ::g::Fuse::Reactive::UnaryOperator_type* IsNull_typeof();}}}
+namespace g{namespace Fuse{namespace Reactive{struct PlatformFunction_type; ::g::Fuse::Reactive::PlatformFunction_type* IsOSXFunction_typeof();}}}
 namespace g{namespace Fuse{namespace Reactive{uInterfaceType* ISubscription_typeof();}}}
+namespace g{namespace Fuse{namespace Reactive{struct PlatformFunction_type; ::g::Fuse::Reactive::PlatformFunction_type* IsWindowsFunction_typeof();}}}
 namespace g{namespace Fuse{namespace Reactive{struct ItemsWindowList_type; ItemsWindowList_type* ItemsWindowList_typeof();}}}
 namespace g{namespace Fuse{namespace Reactive{uInterfaceType* ValueForwarder__IValueListener_typeof();}}}
 namespace g{namespace Fuse{namespace Reactive{uInterfaceType* IWriteable_typeof();}}}
@@ -1719,9 +1717,11 @@ namespace g{namespace Fuse{namespace Reactive{struct ObserverMap_type; ObserverM
 namespace g{namespace Fuse{namespace Reactive{struct UnaryOperator_type; ::g::Fuse::Reactive::UnaryOperator_type* Odd_typeof();}}}
 namespace g{namespace Fuse{namespace Reactive{struct Expression_type; ::g::Fuse::Reactive::Expression_type* OffsetIndexFunction_typeof();}}}
 namespace g{namespace Fuse{namespace Reactive{struct Expression_type; ::g::Fuse::Reactive::Expression_type* Parameter_typeof();}}}
+namespace g{namespace Fuse{namespace Reactive{struct PlatformFunction_type; PlatformFunction_type* PlatformFunction_typeof();}}}
 namespace g{namespace Fuse{namespace Reactive{struct BinaryOperator_type; ::g::Fuse::Reactive::BinaryOperator_type* Pow_typeof();}}}
 namespace g{namespace Fuse{namespace Reactive{struct Expression_type; ::g::Fuse::Reactive::Expression_type* Property_typeof();}}}
 namespace g{namespace Fuse{namespace Reactive{struct DataBinding_type; ::g::Fuse::Reactive::DataBinding_type* PropertyBinding_typeof();}}}
+namespace g{namespace Fuse{namespace Reactive{struct CapsObject__PropertySubscription_type; CapsObject__PropertySubscription_type* CapsObject__PropertySubscription_typeof();}}}
 namespace g{namespace Fuse{namespace Reactive{struct ComputeExpression_type; ::g::Fuse::Reactive::ComputeExpression_type* QuaternaryOperator_typeof();}}}
 namespace g{namespace Fuse{namespace Reactive{struct UnaryOperator_type; ::g::Fuse::Reactive::UnaryOperator_type* RadiansToDegrees_typeof();}}}
 namespace g{namespace Fuse{namespace Reactive{uEnumType* WhileCount__Range_typeof();}}}
@@ -1736,14 +1736,16 @@ namespace g{namespace Fuse{namespace Reactive{struct SimpleVarArgFunction_type; 
 namespace g{namespace Fuse{namespace Reactive{struct UnaryOperator_type; ::g::Fuse::Reactive::UnaryOperator_type* Sin_typeof();}}}
 namespace g{namespace Fuse{namespace Reactive{struct Expression_type; ::g::Fuse::Reactive::Expression_type* Snapshot_typeof();}}}
 namespace g{namespace Fuse{namespace Reactive{struct UnaryOperator_type; ::g::Fuse::Reactive::UnaryOperator_type* Sqrt_typeof();}}}
+namespace g{namespace Fuse{namespace Reactive{struct WindowFunction__Subscription_type; WindowFunction__Subscription_type* WindowFunction__Subscription_typeof();}}}
+namespace g{namespace Fuse{namespace Reactive{struct VarArgFunction__Subscription_type; VarArgFunction__Subscription_type* VarArgFunction__Subscription_typeof();}}}
+namespace g{namespace Fuse{namespace Reactive{struct InnerListener_type; ::g::Fuse::Reactive::InnerListener_type* Parameter__Subscription_typeof();}}}
+namespace g{namespace Fuse{namespace Reactive{struct PlatformFunction__Subscription_type; PlatformFunction__Subscription_type* PlatformFunction__Subscription_typeof();}}}
+namespace g{namespace Fuse{namespace Reactive{struct DataFunction__Subscription_type; DataFunction__Subscription_type* DataFunction__Subscription_typeof();}}}
 namespace g{namespace Fuse{namespace Reactive{struct Property__Subscription_type; Property__Subscription_type* Property__Subscription_typeof();}}}
 namespace g{namespace Fuse{namespace Reactive{struct LetObservable__Subscription_type; LetObservable__Subscription_type* LetObservable__Subscription_typeof();}}}
-namespace g{namespace Fuse{namespace Reactive{struct VarArgFunction__Subscription_type; VarArgFunction__Subscription_type* VarArgFunction__Subscription_typeof();}}}
-namespace g{namespace Fuse{namespace Reactive{struct DataFunction__Subscription_type; DataFunction__Subscription_type* DataFunction__Subscription_typeof();}}}
-namespace g{namespace Fuse{namespace Reactive{struct InnerListener_type; ::g::Fuse::Reactive::InnerListener_type* Parameter__Subscription_typeof();}}}
-namespace g{namespace Fuse{namespace Reactive{struct ExpressionListener_type; ::g::Fuse::Reactive::ExpressionListener_type* ComputeExpression__Subscription_typeof();}}}
 namespace g{namespace Fuse{namespace Reactive{struct Member__Subscription_type; Member__Subscription_type* Member__Subscription_typeof();}}}
 namespace g{namespace Fuse{namespace Reactive{struct Snapshot__Subscription_type; Snapshot__Subscription_type* Snapshot__Subscription_typeof();}}}
+namespace g{namespace Fuse{namespace Reactive{struct ExpressionListener_type; ::g::Fuse::Reactive::ExpressionListener_type* ComputeExpression__Subscription_typeof();}}}
 namespace g{namespace Fuse{namespace Reactive{struct BinaryOperator_type; ::g::Fuse::Reactive::BinaryOperator_type* Subtract_typeof();}}}
 namespace g{namespace Fuse{namespace Reactive{struct UnaryOperator_type; ::g::Fuse::Reactive::UnaryOperator_type* Tan_typeof();}}}
 namespace g{namespace Fuse{namespace Reactive{uStructType* TemplateMatch_typeof();}}}
@@ -1766,6 +1768,8 @@ namespace g{namespace Fuse{namespace Reactive{struct UnaryOperator_type; ::g::Fu
 namespace g{namespace Fuse{namespace Reactive{struct WhileCount_type; WhileCount_type* WhileCount_typeof();}}}
 namespace g{namespace Fuse{namespace Reactive{struct WhileCount_type; ::g::Fuse::Reactive::WhileCount_type* WhileEmpty_typeof();}}}
 namespace g{namespace Fuse{namespace Reactive{struct WhileCount_type; ::g::Fuse::Reactive::WhileCount_type* WhileNotEmpty_typeof();}}}
+namespace g{namespace Fuse{namespace Reactive{struct CapsObject_type; ::g::Fuse::Reactive::CapsObject_type* WindowCaps_typeof();}}}
+namespace g{namespace Fuse{namespace Reactive{struct Expression_type; ::g::Fuse::Reactive::Expression_type* WindowFunction_typeof();}}}
 namespace g{namespace Fuse{namespace Reactive{struct ValueObserver_type; ::g::Fuse::Reactive::ValueObserver_type* WindowItem_typeof();}}}
 namespace g{namespace Fuse{namespace Reactive{struct WindowList_type; WindowList_type* WindowList_typeof();}}}
 namespace g{namespace Fuse{namespace Reactive{struct ValueObserver_type; ::g::Fuse::Reactive::ValueObserver_type* WindowListItem_typeof();}}}
@@ -2000,7 +2004,7 @@ namespace g{namespace Fuse{namespace Triggers{struct WhileValue_type; ::g::Fuse:
 namespace g{namespace Fuse{namespace Triggers{struct Trigger_type; ::g::Fuse::Triggers::Trigger_type* WhileFocused_typeof();}}}
 namespace g{namespace Fuse{namespace Triggers{struct Trigger_type; ::g::Fuse::Triggers::Trigger_type* WhileFocusWithin_typeof();}}}
 namespace g{namespace Fuse{namespace Triggers{struct Trigger_type; ::g::Fuse::Triggers::Trigger_type* WhileInteracting_typeof();}}}
-namespace g{namespace Fuse{namespace Triggers{struct Trigger_type; ::g::Fuse::Triggers::Trigger_type* WhileKeyboardVisible_typeof();}}}
+namespace g{namespace Fuse{namespace Triggers{struct WhileKeyboardVisible_type; WhileKeyboardVisible_type* WhileKeyboardVisible_typeof();}}}
 namespace g{namespace Fuse{namespace Triggers{struct WhileBusy_type; ::g::Fuse::Triggers::WhileBusy_type* WhileLoading_typeof();}}}
 namespace g{namespace Fuse{namespace Triggers{struct Trigger_type; ::g::Fuse::Triggers::Trigger_type* WhileNotFocused_typeof();}}}
 namespace g{namespace Fuse{namespace Triggers{struct Trigger_type; ::g::Fuse::Triggers::Trigger_type* WhilePageLoading_typeof();}}}
@@ -2453,7 +2457,9 @@ namespace g{namespace Fuse{namespace Triggers{struct Trigger_type;}} namespace F
 namespace g{namespace Fuse{namespace Physics{uType* World_typeof();}}}
 namespace g{namespace Fuse{namespace Selection{struct SelectionEvent_type; ::g::Fuse::Selection::SelectionEvent_type* Deselected_typeof();}}}
 namespace g{namespace Fuse{namespace Selection{uEnumType* Selection__How_typeof();}}}
+namespace g{namespace Fuse{namespace Reactive{struct Expression_type;}} namespace Fuse{namespace Selection{::g::Fuse::Reactive::Expression_type* IsSelectedFunction_typeof();}}}
 namespace g{namespace Fuse{namespace Selection{struct Selection__ListWrapper_type; Selection__ListWrapper_type* Selection__ListWrapper_typeof();}}}
+namespace g{namespace Fuse{namespace Selection{struct IsSelectedFunction__OuterSubscription_type; IsSelectedFunction__OuterSubscription_type* IsSelectedFunction__OuterSubscription_typeof();}}}
 namespace g{namespace Fuse{struct Node_type; namespace Selection{::g::Fuse::Node_type* Selectable_typeof();}}}
 namespace g{namespace Fuse{namespace Selection{struct SelectionEvent_type; ::g::Fuse::Selection::SelectionEvent_type* Selected_typeof();}}}
 namespace g{namespace Fuse{namespace Selection{struct Selection_type; Selection_type* Selection_typeof();}}}
@@ -2701,6 +2707,7 @@ void uInitRtti()
         (uType*(*)())&::g::FuseControlsNavigation_FuseControlsPanel_IsFrozen_Property_typeof,
         (uType*(*)())&::g::FuseControlsNavigation_FuseControlsShape_Color_Property_typeof,
         (uType*(*)())&::g::FuseControlsNavigation_FuseElementsElement_HitTestMode_Property_typeof,
+        (uType*(*)())&::g::FuseControlsPanels_FuseElementsElement_Padding_Property_typeof,
         (uType*(*)())&::g::FuseControlsPrimitives_accessor_Fuse_Controls_ButtonBase_Text_typeof,
         (uType*(*)())&::g::FuseControlsPrimitives_accessor_Fuse_Controls_ToggleControl_Value_typeof,
         (uType*(*)())&::g::FuseControlsPrimitives_FuseControlsShape_Fill_Property_typeof,
@@ -2735,12 +2742,13 @@ void uInitRtti()
         (uType*(*)())&::g::FuseText_bundle_typeof,
         (uType*(*)())&::g::UnoCore_bundle_typeof,
         (uType*(*)())&::g::MainView_typeof,
-        (uType*(*)())&::g::maryjane_accessor_Tab_Text_typeof,
-        (uType*(*)())&::g::maryjane_FuseControlsNavigationControl_Active_Property_typeof,
+        (uType*(*)())&::g::maryjane_bundle_typeof,
         (uType*(*)())&::g::maryjane_FuseControlsTextControl_Value_Property_typeof,
-        (uType*(*)())&::g::maryjane_FuseElementsElement_ElementLayoutMaster_Property_typeof,
-        (uType*(*)())&::g::Tab_typeof,
-        (uType*(*)())&::g::WelcomeText_typeof,
+        (uType*(*)())&::g::maryjane_FuseControlsWebView_Url_Property_typeof,
+        (uType*(*)())&::g::maryjane_FuseDrawingImageFill_Url_Property_typeof,
+        (uType*(*)())&::g::maryjane_FuseElementsElement_Opacity_Property_typeof,
+        (uType*(*)())&::g::maryjane_FuseTriggersActionsDebugAction_Message_Property_typeof,
+        (uType*(*)())&::g::maryjane_FuseTriggersWhileBool_Value_Property_typeof,
         (uType*(*)())&::g::OpenGL::GL_typeof,
         (uType*(*)())&::g::OpenGL::GLBlendEquation_typeof,
         (uType*(*)())&::g::OpenGL::GLBlendingFactor_typeof,
@@ -2885,6 +2893,7 @@ void uInitRtti()
         (uType*(*)())&::g::Uno::Tuple_typeof,
         (uType*(*)())&::g::Uno::Tuple2_typeof,
         (uType*(*)())&::g::Uno::Type_typeof,
+        (uType*(*)())&::g::Uno::TypeInitializationException_typeof,
         (uType*(*)())&::g::Uno::UInt_typeof,
         (uType*(*)())&::g::Uno::ULong_typeof,
         (uType*(*)())&::g::Uno::UShort_typeof,
@@ -2924,7 +2933,6 @@ void uInitRtti()
         (uType*(*)())&::g::Uno::Collections::ObservableList_typeof,
         (uType*(*)())&::g::Uno::Collections::OfTypeEnumerable_typeof,
         (uType*(*)())&::g::Uno::Collections::OfTypeEnumerator_typeof,
-        (uType*(*)())&::g::Uno::Collections::OrderByCompare_typeof,
         (uType*(*)())&::g::Uno::Collections::PriorityQueue_typeof,
         (uType*(*)())&::g::Uno::Collections::PriorityQueueItem_typeof,
         (uType*(*)())&::g::Uno::Collections::PriorityQueueType_typeof,
@@ -3249,12 +3257,8 @@ void uInitRtti()
         (uType*(*)())&::g::Uno::Net::Sockets::SocketHelpers_typeof,
         (uType*(*)())&::g::Uno::Net::Sockets::SocketShutdown_typeof,
         (uType*(*)())&::g::Uno::Net::Sockets::SocketType_typeof,
-        (uType*(*)())&::g::Uno::Net::Http::AbsolutePathParser_typeof,
         (uType*(*)())&::g::Uno::Net::Http::HttpMessageHandlerRequest__DispatchClosure_typeof,
         (uType*(*)())&::g::Uno::Net::Http::HttpMessageHandlerRequest__DispatchClosure1_typeof,
-        (uType*(*)())&::g::Uno::Net::Http::HashParser_typeof,
-        (uType*(*)())&::g::Uno::Net::Http::HostInfo_typeof,
-        (uType*(*)())&::g::Uno::Net::Http::HostInfoParser_typeof,
         (uType*(*)())&::g::Uno::Net::Http::HttpDefaultDispatcher_typeof,
         (uType*(*)())&::g::Uno::Net::Http::HttpMessageCache_typeof,
         (uType*(*)())&::g::Uno::Net::Http::HttpMessageHandler_typeof,
@@ -3265,14 +3269,7 @@ void uInitRtti()
         (uType*(*)())&::g::Uno::Net::Http::InvalidResponseTypeException_typeof,
         (uType*(*)())&::g::Uno::Net::Http::InvalidStateException_typeof,
         (uType*(*)())&::g::Uno::Net::Http::HttpMessageHandlerRequest__ProgressClosure_typeof,
-        (uType*(*)())&::g::Uno::Net::Http::QueryParser_typeof,
-        (uType*(*)())&::g::Uno::Net::Http::SchemeParser_typeof,
-        (uType*(*)())&::g::Uno::Net::Http::SchemeParserResult_typeof,
         (uType*(*)())&::g::Uno::Net::Http::HttpMessageHandler__StaticData_typeof,
-        (uType*(*)())&::g::Uno::Net::Http::UriFormatException_typeof,
-        (uType*(*)())&::g::Uno::Net::Http::UriScheme_typeof,
-        (uType*(*)())&::g::Uno::Net::Http::UriSchemeType_typeof,
-        (uType*(*)())&::g::Uno::Net::Http::UserInfoParser_typeof,
         (uType*(*)())&::g::Uno::Net::Http::Implementation::AndroidHttpRequest_typeof,
         (uType*(*)())&::g::Uno::Net::Http::Implementation::IHttpRequest_typeof,
         (uType*(*)())&::g::Uno::Testing::Assert_typeof,
@@ -3503,9 +3500,7 @@ void uInitRtti()
         (uType*(*)())&::g::Fuse::Platform::StatusBarAnimation_typeof,
         (uType*(*)())&::g::Fuse::Platform::StatusBarStyle_typeof,
         (uType*(*)())&::g::Fuse::Platform::SystemUI_typeof,
-        (uType*(*)())&::g::Fuse::Platform::SystemUIID_typeof,
         (uType*(*)())&::g::Fuse::Platform::SystemUIResizeReason_typeof,
-        (uType*(*)())&::g::Fuse::Platform::SystemUIWillResizeEventArgs_typeof,
         (uType*(*)())&::g::Fuse::Platform::SysUIState_typeof,
         (uType*(*)())&::g::Fuse::Common::Blitter_typeof,
         (uType*(*)())&::g::Fuse::Animations::AnimationVariant_typeof,
@@ -3544,6 +3539,7 @@ void uInitRtti()
         (uType*(*)())&::g::Fuse::Animations::Easing__CubicInOutImpl_typeof,
         (uType*(*)())&::g::Fuse::Animations::Easing__CubicOutImpl_typeof,
         (uType*(*)())&::g::Fuse::Animations::Cycle_typeof,
+        (uType*(*)())&::g::Fuse::Animations::CycleRestore_typeof,
         (uType*(*)())&::g::Fuse::Animations::CycleState_typeof,
         (uType*(*)())&::g::Fuse::Animations::CycleWaveform_typeof,
         (uType*(*)())&::g::Fuse::Animations::DestinationBehavior_typeof,
@@ -3892,7 +3888,7 @@ void uInitRtti()
         (uType*(*)())&::g::Fuse::Scripting::V8::Simple::Value_typeof,
         (uType*(*)())&::g::Fuse::Nodes::DrawRect_typeof,
         (uType*(*)())&::g::Fuse::Nodes::DrawRectVisualizer_typeof,
-        (uType*(*)())&::g::Fuse::Controls::PageControl__AddedPage_typeof,
+        (uType*(*)())&::g::Fuse::Controls::CommonNavigationPages__AddedPage_typeof,
         (uType*(*)())&::g::Fuse::Controls::MobileTextEdit__AndroidTemplate_typeof,
         (uType*(*)())&::g::Fuse::Controls::Arc_typeof,
         (uType*(*)())&::g::Fuse::Controls::AutoCapitalizationHint_typeof,
@@ -3905,10 +3901,11 @@ void uInitRtti()
         (uType*(*)())&::g::Fuse::Controls::ButtonBase_typeof,
         (uType*(*)())&::g::Fuse::Controls::Circle_typeof,
         (uType*(*)())&::g::Fuse::Controls::ClientPanel_typeof,
+        (uType*(*)())&::g::Fuse::Controls::CommonNavigation_typeof,
+        (uType*(*)())&::g::Fuse::Controls::CommonNavigationPages_typeof,
         (uType*(*)())&::g::Fuse::Controls::Container_typeof,
         (uType*(*)())&::g::Fuse::Controls::ContentControl_typeof,
         (uType*(*)())&::g::Fuse::Controls::Control_typeof,
-        (uType*(*)())&::g::Fuse::Controls::EdgeNavigator__ControlPageData_typeof,
         (uType*(*)())&::g::Fuse::Controls::NavigationControl__ControlPageData_typeof,
         (uType*(*)())&::g::Fuse::Controls::Curve_typeof,
         (uType*(*)())&::g::Fuse::Controls::CurveClose_typeof,
@@ -3982,7 +3979,7 @@ void uInitRtti()
         (uType*(*)())&::g::Fuse::Controls::PageIndicatorDot_typeof,
         (uType*(*)())&::g::Fuse::Controls::PageIndicatorDotTemplate_typeof,
         (uType*(*)())&::g::Fuse::Controls::PagePrepareBusy_typeof,
-        (uType*(*)())&::g::Fuse::Controls::PageControl__PagesMap_typeof,
+        (uType*(*)())&::g::Fuse::Controls::CommonNavigationPages__PagesMap_typeof,
         (uType*(*)())&::g::Fuse::Controls::PageView_typeof,
         (uType*(*)())&::g::Fuse::Controls::Panel_typeof,
         (uType*(*)())&::g::Fuse::Controls::Path_typeof,
@@ -4007,6 +4004,8 @@ void uInitRtti()
         (uType*(*)())&::g::Fuse::Controls::ReuseType_typeof,
         (uType*(*)())&::g::Fuse::Controls::RightFrameBackground_typeof,
         (uType*(*)())&::g::Fuse::Controls::Router_PrepareProgress_Property_typeof,
+        (uType*(*)())&::g::Fuse::Controls::SafeEdgePanel_typeof,
+        (uType*(*)())&::g::Fuse::Controls::SafeEdgePanelEdges_typeof,
         (uType*(*)())&::g::Fuse::Controls::ScrollDirections_typeof,
         (uType*(*)())&::g::Fuse::Controls::ScrollPositionChangedArgs_typeof,
         (uType*(*)())&::g::Fuse::Controls::ScrollPositionChangedHandler_typeof,
@@ -4026,27 +4025,27 @@ void uInitRtti()
         (uType*(*)())&::g::Fuse::Controls::Star_typeof,
         (uType*(*)())&::g::Fuse::Controls::StatusBarBackground_typeof,
         (uType*(*)())&::g::Fuse::Controls::Switch_typeof,
-        (uType*(*)())&::g::Fuse::Controls::Slider__Template_typeof,
-        (uType*(*)())&::g::Fuse::Controls::TimePicker__Template_typeof,
-        (uType*(*)())&::g::Fuse::Controls::TextControl__Template_typeof,
         (uType*(*)())&::g::Fuse::Controls::Switch__Template_typeof,
+        (uType*(*)())&::g::Fuse::Controls::Slider__Template_typeof,
         (uType*(*)())&::g::Fuse::Controls::Button__Template_typeof,
         (uType*(*)())&::g::Fuse::Controls::GraphicsView__Template_typeof,
+        (uType*(*)())&::g::Fuse::Controls::TimePicker__Template_typeof,
         (uType*(*)())&::g::Fuse::Controls::DatePicker__Template_typeof,
         (uType*(*)())&::g::Fuse::Controls::ScrollView__Template_typeof,
-        (uType*(*)())&::g::Fuse::Controls::TimePicker__Template1_typeof,
+        (uType*(*)())&::g::Fuse::Controls::TextControl__Template_typeof,
+        (uType*(*)())&::g::Fuse::Controls::Switch__Template1_typeof,
         (uType*(*)())&::g::Fuse::Controls::TextControl__Template1_typeof,
+        (uType*(*)())&::g::Fuse::Controls::TimePicker__Template1_typeof,
+        (uType*(*)())&::g::Fuse::Controls::Button__Template1_typeof,
+        (uType*(*)())&::g::Fuse::Controls::Slider__Template1_typeof,
         (uType*(*)())&::g::Fuse::Controls::DatePicker__Template1_typeof,
         (uType*(*)())&::g::Fuse::Controls::GraphicsView__Template1_typeof,
-        (uType*(*)())&::g::Fuse::Controls::Switch__Template1_typeof,
-        (uType*(*)())&::g::Fuse::Controls::Button__Template1_typeof,
         (uType*(*)())&::g::Fuse::Controls::ScrollView__Template1_typeof,
-        (uType*(*)())&::g::Fuse::Controls::Slider__Template1_typeof,
+        (uType*(*)())&::g::Fuse::Controls::Slider__Template2_typeof,
+        (uType*(*)())&::g::Fuse::Controls::Switch__Template2_typeof,
+        (uType*(*)())&::g::Fuse::Controls::TimePicker__Template2_typeof,
         (uType*(*)())&::g::Fuse::Controls::Button__Template2_typeof,
         (uType*(*)())&::g::Fuse::Controls::DatePicker__Template2_typeof,
-        (uType*(*)())&::g::Fuse::Controls::Slider__Template2_typeof,
-        (uType*(*)())&::g::Fuse::Controls::TimePicker__Template2_typeof,
-        (uType*(*)())&::g::Fuse::Controls::Switch__Template2_typeof,
         (uType*(*)())&::g::Fuse::Controls::Text_typeof,
         (uType*(*)())&::g::Fuse::Controls::TextAlignment_typeof,
         (uType*(*)())&::g::Fuse::Controls::TextBlock_typeof,
@@ -4116,10 +4115,8 @@ void uInitRtti()
         (uType*(*)())&::g::Fuse::Controls::Native::ViewHandle_typeof,
         (uType*(*)())&::g::Fuse::Controls::Native::Android::Button_typeof,
         (uType*(*)())&::g::Fuse::Controls::Native::Android::CanvasViewGroup_typeof,
-        (uType*(*)())&::g::Fuse::Controls::Native::Android::Circle_typeof,
         (uType*(*)())&::g::Fuse::Controls::Native::Android::DatePickerView_typeof,
         (uType*(*)())&::g::Fuse::Controls::Native::Android::DateTimeConverterHelpers_typeof,
-        (uType*(*)())&::g::Fuse::Controls::Native::Android::Ellipse_typeof,
         (uType*(*)())&::g::Fuse::Controls::Native::Android::FocusChangedListener_typeof,
         (uType*(*)())&::g::Fuse::Controls::Native::Android::FocusManager_typeof,
         (uType*(*)())&::g::Fuse::Controls::Native::Android::GraphicsViewBase_typeof,
@@ -4129,9 +4126,7 @@ void uInitRtti()
         (uType*(*)())&::g::Fuse::Controls::Native::Android::JavaMap_typeof,
         (uType*(*)())&::g::Fuse::Controls::Native::Android::LeafView_typeof,
         (uType*(*)())&::g::Fuse::Controls::Native::Android::MotionEvent_typeof,
-        (uType*(*)())&::g::Fuse::Controls::Native::Android::Rectangle_typeof,
         (uType*(*)())&::g::Fuse::Controls::Native::Android::ScrollView_typeof,
-        (uType*(*)())&::g::Fuse::Controls::Native::Android::Shape_typeof,
         (uType*(*)())&::g::Fuse::Controls::Native::Android::Slider_typeof,
         (uType*(*)())&::g::Fuse::Controls::Native::Android::SoftKeyboard_typeof,
         (uType*(*)())&::g::Fuse::Controls::Native::Android::SurfaceView_typeof,
@@ -4297,6 +4292,7 @@ void uInitRtti()
         (uType*(*)())&::g::Fuse::Reactive::BinaryFloatOperator_typeof,
         (uType*(*)())&::g::Fuse::Reactive::BinaryOperator_typeof,
         (uType*(*)())&::g::Fuse::Reactive::BindingMode_typeof,
+        (uType*(*)())&::g::Fuse::Reactive::CapsObject_typeof,
         (uType*(*)())&::g::Fuse::Reactive::Case_typeof,
         (uType*(*)())&::g::Fuse::Reactive::Ceil_typeof,
         (uType*(*)())&::g::Fuse::Reactive::Clamp_typeof,
@@ -4319,6 +4315,7 @@ void uInitRtti()
         (uType*(*)())&::g::Fuse::Reactive::DebugLog_typeof,
         (uType*(*)())&::g::Fuse::Reactive::DegreesToRadians_typeof,
         (uType*(*)())&::g::Fuse::Reactive::JavaScript__Dependency_typeof,
+        (uType*(*)())&::g::Fuse::Reactive::DeviceCaps_typeof,
         (uType*(*)())&::g::Fuse::Reactive::Divide_typeof,
         (uType*(*)())&::g::Fuse::Reactive::Each_typeof,
         (uType*(*)())&::g::Fuse::Reactive::Equal_typeof,
@@ -4333,8 +4330,8 @@ void uInitRtti()
         (uType*(*)())&::g::Fuse::Reactive::ExpressionSubscriber_typeof,
         (uType*(*)())&::g::Fuse::Reactive::ComputeExpression__Flags_typeof,
         (uType*(*)())&::g::Fuse::Reactive::ExpressionSubscriber__Flags_typeof,
-        (uType*(*)())&::g::Fuse::Reactive::BinaryFloatOperator__FloatOp_typeof,
         (uType*(*)())&::g::Fuse::Reactive::UnaryFloatOperator__FloatOp_typeof,
+        (uType*(*)())&::g::Fuse::Reactive::BinaryFloatOperator__FloatOp_typeof,
         (uType*(*)())&::g::Fuse::Reactive::Floor_typeof,
         (uType*(*)())&::g::Fuse::Reactive::Fract_typeof,
         (uType*(*)())&::g::Fuse::Reactive::GreaterOrEqual_typeof,
@@ -4344,12 +4341,13 @@ void uInitRtti()
         (uType*(*)())&::g::Fuse::Reactive::IEventHandler_typeof,
         (uType*(*)())&::g::Fuse::Reactive::IEventRecord_typeof,
         (uType*(*)())&::g::Fuse::Reactive::IExpression_typeof,
-        (uType*(*)())&::g::Fuse::Reactive::IListener_typeof,
         (uType*(*)())&::g::Fuse::Reactive::ItemsWindowList__IListener_typeof,
+        (uType*(*)())&::g::Fuse::Reactive::IListener_typeof,
         (uType*(*)())&::g::Fuse::Reactive::IndexFunction_typeof,
         (uType*(*)())&::g::Fuse::Reactive::InfixOperator_typeof,
         (uType*(*)())&::g::Fuse::Reactive::InnerListener_typeof,
         (uType*(*)())&::g::Fuse::Reactive::Instance_typeof,
+        (uType*(*)())&::g::Fuse::Reactive::InstanceDefaults_typeof,
         (uType*(*)())&::g::Fuse::Reactive::InstanceDefer_typeof,
         (uType*(*)())&::g::Fuse::Reactive::InstanceIdentity_typeof,
         (uType*(*)())&::g::Fuse::Reactive::InstanceReuse_typeof,
@@ -4362,9 +4360,15 @@ void uInitRtti()
         (uType*(*)())&::g::Fuse::Reactive::IObserver_typeof,
         (uType*(*)())&::g::Fuse::Reactive::IPropertyObserver_typeof,
         (uType*(*)())&::g::Fuse::Reactive::IPropertySubscription_typeof,
+        (uType*(*)())&::g::Fuse::Reactive::IsAndroidFunction_typeof,
         (uType*(*)())&::g::Fuse::Reactive::IsDefined_typeof,
+        (uType*(*)())&::g::Fuse::Reactive::IsDesktopFunction_typeof,
+        (uType*(*)())&::g::Fuse::Reactive::IsIOSFunction_typeof,
+        (uType*(*)())&::g::Fuse::Reactive::IsMobileFunction_typeof,
         (uType*(*)())&::g::Fuse::Reactive::IsNull_typeof,
+        (uType*(*)())&::g::Fuse::Reactive::IsOSXFunction_typeof,
         (uType*(*)())&::g::Fuse::Reactive::ISubscription_typeof,
+        (uType*(*)())&::g::Fuse::Reactive::IsWindowsFunction_typeof,
         (uType*(*)())&::g::Fuse::Reactive::ItemsWindowList_typeof,
         (uType*(*)())&::g::Fuse::Reactive::ValueForwarder__IValueListener_typeof,
         (uType*(*)())&::g::Fuse::Reactive::IWriteable_typeof,
@@ -4411,9 +4415,11 @@ void uInitRtti()
         (uType*(*)())&::g::Fuse::Reactive::Odd_typeof,
         (uType*(*)())&::g::Fuse::Reactive::OffsetIndexFunction_typeof,
         (uType*(*)())&::g::Fuse::Reactive::Parameter_typeof,
+        (uType*(*)())&::g::Fuse::Reactive::PlatformFunction_typeof,
         (uType*(*)())&::g::Fuse::Reactive::Pow_typeof,
         (uType*(*)())&::g::Fuse::Reactive::Property_typeof,
         (uType*(*)())&::g::Fuse::Reactive::PropertyBinding_typeof,
+        (uType*(*)())&::g::Fuse::Reactive::CapsObject__PropertySubscription_typeof,
         (uType*(*)())&::g::Fuse::Reactive::QuaternaryOperator_typeof,
         (uType*(*)())&::g::Fuse::Reactive::RadiansToDegrees_typeof,
         (uType*(*)())&::g::Fuse::Reactive::WhileCount__Range_typeof,
@@ -4428,14 +4434,16 @@ void uInitRtti()
         (uType*(*)())&::g::Fuse::Reactive::Sin_typeof,
         (uType*(*)())&::g::Fuse::Reactive::Snapshot_typeof,
         (uType*(*)())&::g::Fuse::Reactive::Sqrt_typeof,
+        (uType*(*)())&::g::Fuse::Reactive::WindowFunction__Subscription_typeof,
+        (uType*(*)())&::g::Fuse::Reactive::VarArgFunction__Subscription_typeof,
+        (uType*(*)())&::g::Fuse::Reactive::Parameter__Subscription_typeof,
+        (uType*(*)())&::g::Fuse::Reactive::PlatformFunction__Subscription_typeof,
+        (uType*(*)())&::g::Fuse::Reactive::DataFunction__Subscription_typeof,
         (uType*(*)())&::g::Fuse::Reactive::Property__Subscription_typeof,
         (uType*(*)())&::g::Fuse::Reactive::LetObservable__Subscription_typeof,
-        (uType*(*)())&::g::Fuse::Reactive::VarArgFunction__Subscription_typeof,
-        (uType*(*)())&::g::Fuse::Reactive::DataFunction__Subscription_typeof,
-        (uType*(*)())&::g::Fuse::Reactive::Parameter__Subscription_typeof,
-        (uType*(*)())&::g::Fuse::Reactive::ComputeExpression__Subscription_typeof,
         (uType*(*)())&::g::Fuse::Reactive::Member__Subscription_typeof,
         (uType*(*)())&::g::Fuse::Reactive::Snapshot__Subscription_typeof,
+        (uType*(*)())&::g::Fuse::Reactive::ComputeExpression__Subscription_typeof,
         (uType*(*)())&::g::Fuse::Reactive::Subtract_typeof,
         (uType*(*)())&::g::Fuse::Reactive::Tan_typeof,
         (uType*(*)())&::g::Fuse::Reactive::TemplateMatch_typeof,
@@ -4458,6 +4466,8 @@ void uInitRtti()
         (uType*(*)())&::g::Fuse::Reactive::WhileCount_typeof,
         (uType*(*)())&::g::Fuse::Reactive::WhileEmpty_typeof,
         (uType*(*)())&::g::Fuse::Reactive::WhileNotEmpty_typeof,
+        (uType*(*)())&::g::Fuse::Reactive::WindowCaps_typeof,
+        (uType*(*)())&::g::Fuse::Reactive::WindowFunction_typeof,
         (uType*(*)())&::g::Fuse::Reactive::WindowItem_typeof,
         (uType*(*)())&::g::Fuse::Reactive::WindowList_typeof,
         (uType*(*)())&::g::Fuse::Reactive::WindowListItem_typeof,
@@ -5145,7 +5155,9 @@ void uInitRtti()
         (uType*(*)())&::g::Fuse::Physics::World_typeof,
         (uType*(*)())&::g::Fuse::Selection::Deselected_typeof,
         (uType*(*)())&::g::Fuse::Selection::Selection__How_typeof,
+        (uType*(*)())&::g::Fuse::Selection::IsSelectedFunction_typeof,
         (uType*(*)())&::g::Fuse::Selection::Selection__ListWrapper_typeof,
+        (uType*(*)())&::g::Fuse::Selection::IsSelectedFunction__OuterSubscription_typeof,
         (uType*(*)())&::g::Fuse::Selection::Selectable_typeof,
         (uType*(*)())&::g::Fuse::Selection::Selected_typeof,
         (uType*(*)())&::g::Fuse::Selection::Selection_typeof,

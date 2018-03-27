@@ -54,7 +54,7 @@ namespace Fuse{
 namespace Controls{
 namespace FallbackTextRenderer{
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Primitives\1.7.4\TextControls\FallbackTextRenderer\DefaultTextRenderer.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Primitives\1.8.1\TextControls\FallbackTextRenderer\DefaultTextRenderer.uno
 // --------------------------------------------------------------------------------------------------------------------------------------------
 
 // internal sealed class DefaultTextRenderer :9
@@ -340,7 +340,7 @@ DefaultTextRenderer* DefaultTextRenderer::New1(::g::Uno::Content::Fonts::FontFac
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Primitives\1.7.4\TextControls\FallbackTextRenderer\DefaultTextRenderer.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Primitives\1.8.1\TextControls\FallbackTextRenderer\DefaultTextRenderer.uno
 // --------------------------------------------------------------------------------------------------------------------------------------------
 
 // private sealed class DefaultTextRenderer.FontKey :11
@@ -417,7 +417,7 @@ DefaultTextRenderer__FontKey* DefaultTextRenderer__FontKey::New1(::g::Uno::Conte
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Primitives\1.7.4\TextControls\FallbackTextRenderer\DefaultTextRenderer.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Primitives\1.8.1\TextControls\FallbackTextRenderer\DefaultTextRenderer.uno
 // --------------------------------------------------------------------------------------------------------------------------------------------
 
 // internal sealed class ProperTextTransform :182
@@ -505,7 +505,7 @@ ProperTextTransform* ProperTextTransform::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Primitives\1.7.4\TextControls\FallbackTextRenderer\RectExtensions.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Primitives\1.8.1\TextControls\FallbackTextRenderer\RectExtensions.uno
 // ---------------------------------------------------------------------------------------------------------------------------------------
 
 // internal static class RectExtensions :5
@@ -579,7 +579,7 @@ void RectExtensions__MoveRectToContainRect_fn(::g::Uno::Rect* a, ::g::Uno::Rect*
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Primitives\1.7.4\TextControls\FallbackTextRenderer\TextRenderer.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Primitives\1.8.1\TextControls\FallbackTextRenderer\TextRenderer.uno
 // -------------------------------------------------------------------------------------------------------------------------------------
 
 // internal sealed class TextRenderer :10
@@ -930,7 +930,7 @@ TextRenderer* TextRenderer::New1(::g::Fuse::Controls::TextControl* text)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Primitives\1.7.4\TextControls\FallbackTextRenderer\WordWrapInfo.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Primitives\1.8.1\TextControls\FallbackTextRenderer\WordWrapInfo.uno
 // -------------------------------------------------------------------------------------------------------------------------------------
 
 // internal sealed class WordWrapInfo :5
@@ -1024,7 +1024,7 @@ WordWrapInfo* WordWrapInfo::New1(::g::Fuse::Controls::FallbackTextRenderer::Defa
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Primitives\1.7.4\TextControls\FallbackTextRenderer\WordWrapper.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Primitives\1.8.1\TextControls\FallbackTextRenderer\WordWrapper.uno
 // ------------------------------------------------------------------------------------------------------------------------------------
 
 // internal static class WordWrapper :28
@@ -1168,7 +1168,7 @@ uArray* WordWrapper::WrapLine(::g::Fuse::Controls::FallbackTextRenderer::WordWra
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Primitives\1.7.4\TextControls\FallbackTextRenderer\WordWrapper.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Primitives\1.8.1\TextControls\FallbackTextRenderer\WordWrapper.uno
 // ------------------------------------------------------------------------------------------------------------------------------------
 
 // internal sealed class WordWrapperWord :6
@@ -1244,7 +1244,7 @@ WordWrapperWord* WordWrapperWord::New1(uString* contents, uString* whitespace, i
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Primitives\1.7.4\TextControls\FallbackTextRenderer\WrappedLine.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Primitives\1.8.1\TextControls\FallbackTextRenderer\WrappedLine.uno
 // ------------------------------------------------------------------------------------------------------------------------------------
 
 // internal sealed class WrappedLine :6

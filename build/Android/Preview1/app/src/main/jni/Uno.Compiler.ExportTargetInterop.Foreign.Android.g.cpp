@@ -82,7 +82,7 @@ jboolean JNICALL callUno_Fuse_Controls_Native_Android_InputDispatch_OnTouch144(J
     JCATCH
     return __jresult;
 }
-jboolean JNICALL callUno_Fuse_Controls_Native_Android_TextInput_OnEditorAction196(JNIEnv *env,jclass clazz,jobject jthis,jint actionCode)
+jboolean JNICALL callUno_Fuse_Controls_Native_Android_TextInput_OnEditorAction188(JNIEnv *env,jclass clazz,jobject jthis,jint actionCode)
 {
     uAutoReleasePool pool;
     INIT_JNI;
@@ -95,7 +95,7 @@ jboolean JNICALL callUno_Fuse_Controls_Native_Android_TextInput_OnEditorAction19
     JCATCH
     return __jresult;
 }
-jboolean JNICALL callUno_Fuse_Platform_SystemUI_firstSizingGet103(JNIEnv *env,jclass clazz)
+jboolean JNICALL callUno_Fuse_Platform_SystemUI_firstSizingGet105(JNIEnv *env,jclass clazz)
 {
     uAutoReleasePool pool;
     INIT_JNI;
@@ -106,7 +106,7 @@ jboolean JNICALL callUno_Fuse_Platform_SystemUI_firstSizingGet103(JNIEnv *env,jc
     JCATCH
     return __jresult;
 }
-jboolean JNICALL callUno_Fuse_Platform_SystemUI_hasCachedStatusBarSizeGet86(JNIEnv *env,jclass clazz)
+jboolean JNICALL callUno_Fuse_Platform_SystemUI_hasCachedStatusBarSizeGet88(JNIEnv *env,jclass clazz)
 {
     uAutoReleasePool pool;
     INIT_JNI;
@@ -301,7 +301,7 @@ jint JNICALL callUno_Fuse_Platform_SystemUI__systemUIStateGet79(JNIEnv *env,jcla
     JCATCH
     return __jresult;
 }
-jint JNICALL callUno_Fuse_Platform_SystemUI_cachedOpenSizeGet87(JNIEnv *env,jclass clazz)
+jint JNICALL callUno_Fuse_Platform_SystemUI_cachedOpenSizeGet89(JNIEnv *env,jclass clazz)
 {
     uAutoReleasePool pool;
     INIT_JNI;
@@ -323,7 +323,7 @@ jint JNICALL callUno_Fuse_Platform_SystemUI_GetRealDisplayHeight75(JNIEnv *env,j
     JCATCH
     return __jresult;
 }
-jint JNICALL callUno_Fuse_Platform_SystemUI_GetRealDisplayWidth94(JNIEnv *env,jclass clazz)
+jint JNICALL callUno_Fuse_Platform_SystemUI_GetRealDisplayWidth96(JNIEnv *env,jclass clazz)
 {
     uAutoReleasePool pool;
     INIT_JNI;
@@ -334,7 +334,7 @@ jint JNICALL callUno_Fuse_Platform_SystemUI_GetRealDisplayWidth94(JNIEnv *env,jc
     JCATCH
     return __jresult;
 }
-jint JNICALL callUno_Fuse_Platform_SystemUI_lastKeyboardHeightGet102(JNIEnv *env,jclass clazz)
+jint JNICALL callUno_Fuse_Platform_SystemUI_lastKeyboardHeightGet104(JNIEnv *env,jclass clazz)
 {
     uAutoReleasePool pool;
     INIT_JNI;
@@ -638,7 +638,7 @@ jlong JNICALL callUno_Uno_Compiler_ExportTargetInterop_Foreign_Android_JavaToUno
     JCATCH
     return __jresult;
 }
-jobject JNICALL callUno_Fuse_Controls_Native_ViewHandle_NativeHandleGet243(JNIEnv *env,jclass clazz,jobject jthis)
+jobject JNICALL callUno_Fuse_Controls_Native_ViewHandle_NativeHandleGet235(JNIEnv *env,jclass clazz,jobject jthis)
 {
     uAutoReleasePool pool;
     INIT_JNI;
@@ -694,7 +694,7 @@ jobject JNICALL callUno_Fuse_Platform_SystemUI_SuperLayoutGet70(JNIEnv *env,jcla
     JCATCH
     return __jresult;
 }
-jobject JNICALL callUno_Neovisionaries_WebSocketClient__webSocketGet380(JNIEnv *env,jclass clazz,jobject jthis)
+jobject JNICALL callUno_Neovisionaries_WebSocketClient__webSocketGet372(JNIEnv *env,jclass clazz,jobject jthis)
 {
     uAutoReleasePool pool;
     INIT_JNI;
@@ -904,7 +904,7 @@ jobject JNICALL callUno_Uno_Guid__ctor60(JNIEnv *env,jclass clazz,jobject bytes)
     JCATCH
     return __jresult;
 }
-jobject JNICALL callUno_Uno_IO_BundleFile_BundlePathGet323(JNIEnv *env,jclass clazz,jobject jthis)
+jobject JNICALL callUno_Uno_IO_BundleFile_BundlePathGet315(JNIEnv *env,jclass clazz,jobject jthis)
 {
     uAutoReleasePool pool;
     INIT_JNI;
@@ -992,7 +992,7 @@ void JNICALL callUno_Action_String(JNIEnv *env,jclass clazz,jobject theDelegate,
         uno_theDelegate->InvokeVoid(uCast<uString*>(uno_arg, ::g::Uno::String_typeof()));
     JCATCH
 }
-void JNICALL callUno_Fuse_Android_AppRoot_OnTouchEvent__341(JNIEnv *env,jclass clazz,jobject motionEvent,jlong motionEventPtr)
+void JNICALL callUno_Fuse_Android_AppRoot_OnTouchEvent__333(JNIEnv *env,jclass clazz,jobject motionEvent,jlong motionEventPtr)
 {
     uAutoReleasePool pool;
     INIT_JNI;
@@ -1001,7 +1001,7 @@ void JNICALL callUno_Fuse_Android_AppRoot_OnTouchEvent__341(JNIEnv *env,jclass c
         ::g::Fuse::Android::AppRoot::OnTouchEvent__(uCast<::g::Java::Object*>(uno_motionEvent, ::g::Java::Object_typeof()));
     JCATCH
 }
-void JNICALL callUno_Fuse_Android_StatusBarConfig_UpdateStatusBar363(JNIEnv *env,jclass clazz)
+void JNICALL callUno_Fuse_Android_StatusBarConfig_UpdateStatusBar355(JNIEnv *env,jclass clazz)
 {
     uAutoReleasePool pool;
     INIT_JNI;
@@ -1019,7 +1019,7 @@ void JNICALL callUno_Fuse_Controls_Native_Android_FocusChangedListener_OnFocusCh
         uno_jthis->OnFocusChange(uno_hasFocus);
     JCATCH
 }
-void JNICALL callUno_Fuse_Controls_Native_Android_ScrollView_OnScrollChanged166(JNIEnv *env,jclass clazz,jobject jthis,jint x,jint y,jint oldx,jint oldy)
+void JNICALL callUno_Fuse_Controls_Native_Android_ScrollView_OnScrollChanged165(JNIEnv *env,jclass clazz,jobject jthis,jint x,jint y,jint oldx,jint oldy)
 {
     uAutoReleasePool pool;
     INIT_JNI;
@@ -1032,7 +1032,7 @@ void JNICALL callUno_Fuse_Controls_Native_Android_ScrollView_OnScrollChanged166(
         uno_jthis->OnScrollChanged(uno_x, uno_y, uno_oldx, uno_oldy);
     JCATCH
 }
-void JNICALL callUno_Fuse_Controls_Native_Android_Slider_OnSeekBarChanged178(JNIEnv *env,jclass clazz,jobject jthis,jdouble rel,jboolean fromUser)
+void JNICALL callUno_Fuse_Controls_Native_Android_Slider_OnSeekBarChanged170(JNIEnv *env,jclass clazz,jobject jthis,jdouble rel,jboolean fromUser)
 {
     uAutoReleasePool pool;
     INIT_JNI;
@@ -1043,7 +1043,7 @@ void JNICALL callUno_Fuse_Controls_Native_Android_Slider_OnSeekBarChanged178(JNI
         uno_jthis->OnSeekBarChanged(uno_rel, uno_fromUser);
     JCATCH
 }
-void JNICALL callUno_Fuse_Controls_Native_Android_SurfaceView_OnSurfaceChanged185(JNIEnv *env,jclass clazz,jobject jthis,jobject holder,jint f,jint w,jint h,jlong holderPtr)
+void JNICALL callUno_Fuse_Controls_Native_Android_SurfaceView_OnSurfaceChanged177(JNIEnv *env,jclass clazz,jobject jthis,jobject holder,jint f,jint w,jint h,jlong holderPtr)
 {
     uAutoReleasePool pool;
     INIT_JNI;
@@ -1056,7 +1056,7 @@ void JNICALL callUno_Fuse_Controls_Native_Android_SurfaceView_OnSurfaceChanged18
         uno_jthis->OnSurfaceChanged(uCast<::g::Java::Object*>(uno_holder, ::g::Java::Object_typeof()), uno_f, uno_w, uno_h);
     JCATCH
 }
-void JNICALL callUno_Fuse_Controls_Native_Android_SurfaceView_OnSurfaceCreated186(JNIEnv *env,jclass clazz,jobject jthis,jobject holder,jlong holderPtr)
+void JNICALL callUno_Fuse_Controls_Native_Android_SurfaceView_OnSurfaceCreated178(JNIEnv *env,jclass clazz,jobject jthis,jobject holder,jlong holderPtr)
 {
     uAutoReleasePool pool;
     INIT_JNI;
@@ -1066,7 +1066,7 @@ void JNICALL callUno_Fuse_Controls_Native_Android_SurfaceView_OnSurfaceCreated18
         uno_jthis->OnSurfaceCreated(uCast<::g::Java::Object*>(uno_holder, ::g::Java::Object_typeof()));
     JCATCH
 }
-void JNICALL callUno_Fuse_Controls_Native_Android_SurfaceView_OnSurfaceDestroyed187(JNIEnv *env,jclass clazz,jobject jthis,jobject holder,jlong holderPtr)
+void JNICALL callUno_Fuse_Controls_Native_Android_SurfaceView_OnSurfaceDestroyed179(JNIEnv *env,jclass clazz,jobject jthis,jobject holder,jlong holderPtr)
 {
     uAutoReleasePool pool;
     INIT_JNI;
@@ -1076,7 +1076,7 @@ void JNICALL callUno_Fuse_Controls_Native_Android_SurfaceView_OnSurfaceDestroyed
         uno_jthis->OnSurfaceDestroyed(uCast<::g::Java::Object*>(uno_holder, ::g::Java::Object_typeof()));
     JCATCH
 }
-void JNICALL callUno_Fuse_Controls_Native_Android_SurfaceView_OnSurfaceRedrawNeeded184(JNIEnv *env,jclass clazz,jobject jthis,jobject holder,jlong holderPtr)
+void JNICALL callUno_Fuse_Controls_Native_Android_SurfaceView_OnSurfaceRedrawNeeded176(JNIEnv *env,jclass clazz,jobject jthis,jobject holder,jlong holderPtr)
 {
     uAutoReleasePool pool;
     INIT_JNI;
@@ -1086,7 +1086,7 @@ void JNICALL callUno_Fuse_Controls_Native_Android_SurfaceView_OnSurfaceRedrawNee
         uno_jthis->OnSurfaceRedrawNeeded(uCast<::g::Java::Object*>(uno_holder, ::g::Java::Object_typeof()));
     JCATCH
 }
-void JNICALL callUno_Fuse_Controls_Native_Android_Switch_OnToggleChanged191(JNIEnv *env,jclass clazz,jobject jthis,jboolean value)
+void JNICALL callUno_Fuse_Controls_Native_Android_Switch_OnToggleChanged183(JNIEnv *env,jclass clazz,jobject jthis,jboolean value)
 {
     uAutoReleasePool pool;
     INIT_JNI;
@@ -1096,7 +1096,7 @@ void JNICALL callUno_Fuse_Controls_Native_Android_Switch_OnToggleChanged191(JNIE
         uno_jthis->OnToggleChanged(uno_value);
     JCATCH
 }
-void JNICALL callUno_Fuse_Controls_Native_Android_TextInput_OnTextChanged198(JNIEnv *env,jclass clazz,jobject jthis,jobject value)
+void JNICALL callUno_Fuse_Controls_Native_Android_TextInput_OnTextChanged190(JNIEnv *env,jclass clazz,jobject jthis,jobject value)
 {
     uAutoReleasePool pool;
     INIT_JNI;
@@ -1106,7 +1106,7 @@ void JNICALL callUno_Fuse_Controls_Native_Android_TextInput_OnTextChanged198(JNI
         uno_jthis->OnTextChanged(uCast<uString*>(uno_value, ::g::Uno::String_typeof()));
     JCATCH
 }
-void JNICALL callUno_Fuse_Controls_Native_Android_TextureView_OnSurfaceTextureAvailable212(JNIEnv *env,jclass clazz,jobject jthis,jobject surface,jlong surfacePtr)
+void JNICALL callUno_Fuse_Controls_Native_Android_TextureView_OnSurfaceTextureAvailable204(JNIEnv *env,jclass clazz,jobject jthis,jobject surface,jlong surfacePtr)
 {
     uAutoReleasePool pool;
     INIT_JNI;
@@ -1116,7 +1116,7 @@ void JNICALL callUno_Fuse_Controls_Native_Android_TextureView_OnSurfaceTextureAv
         uno_jthis->OnSurfaceTextureAvailable(uCast<::g::Java::Object*>(uno_surface, ::g::Java::Object_typeof()));
     JCATCH
 }
-void JNICALL callUno_Fuse_Controls_Native_Android_TextureView_OnSurfaceTextureDestroyed213(JNIEnv *env,jclass clazz,jobject jthis)
+void JNICALL callUno_Fuse_Controls_Native_Android_TextureView_OnSurfaceTextureDestroyed205(JNIEnv *env,jclass clazz,jobject jthis)
 {
     uAutoReleasePool pool;
     INIT_JNI;
@@ -1125,7 +1125,7 @@ void JNICALL callUno_Fuse_Controls_Native_Android_TextureView_OnSurfaceTextureDe
         uno_jthis->OnSurfaceTextureDestroyed();
     JCATCH
 }
-void JNICALL callUno_Fuse_Controls_VideoImpl_Android_MediaPlayer_OnBuffer268(JNIEnv *env,jclass clazz,jobject jthis,jint percent)
+void JNICALL callUno_Fuse_Controls_VideoImpl_Android_MediaPlayer_OnBuffer260(JNIEnv *env,jclass clazz,jobject jthis,jint percent)
 {
     uAutoReleasePool pool;
     INIT_JNI;
@@ -1135,7 +1135,7 @@ void JNICALL callUno_Fuse_Controls_VideoImpl_Android_MediaPlayer_OnBuffer268(JNI
         uno_jthis->OnBuffer(uno_percent);
     JCATCH
 }
-void JNICALL callUno_Fuse_Controls_VideoImpl_Android_MediaPlayer_OnCompletion266(JNIEnv *env,jclass clazz,jobject jthis)
+void JNICALL callUno_Fuse_Controls_VideoImpl_Android_MediaPlayer_OnCompletion258(JNIEnv *env,jclass clazz,jobject jthis)
 {
     uAutoReleasePool pool;
     INIT_JNI;
@@ -1144,7 +1144,7 @@ void JNICALL callUno_Fuse_Controls_VideoImpl_Android_MediaPlayer_OnCompletion266
         uno_jthis->OnCompletion();
     JCATCH
 }
-void JNICALL callUno_Fuse_Controls_VideoImpl_Android_MediaPlayer_OnError267(JNIEnv *env,jclass clazz,jobject jthis,jint what,jint extra)
+void JNICALL callUno_Fuse_Controls_VideoImpl_Android_MediaPlayer_OnError259(JNIEnv *env,jclass clazz,jobject jthis,jint what,jint extra)
 {
     uAutoReleasePool pool;
     INIT_JNI;
@@ -1155,7 +1155,7 @@ void JNICALL callUno_Fuse_Controls_VideoImpl_Android_MediaPlayer_OnError267(JNIE
         uno_jthis->OnError(uno_what, uno_extra);
     JCATCH
 }
-void JNICALL callUno_Fuse_Controls_VideoImpl_Android_MediaPlayer_OnErrorOccurred280(JNIEnv *env,jclass clazz,jobject jthis,jobject msg)
+void JNICALL callUno_Fuse_Controls_VideoImpl_Android_MediaPlayer_OnErrorOccurred272(JNIEnv *env,jclass clazz,jobject jthis,jobject msg)
 {
     uAutoReleasePool pool;
     INIT_JNI;
@@ -1165,7 +1165,7 @@ void JNICALL callUno_Fuse_Controls_VideoImpl_Android_MediaPlayer_OnErrorOccurred
         uno_jthis->OnErrorOccurred(uCast<uString*>(uno_msg, ::g::Uno::String_typeof()));
     JCATCH
 }
-void JNICALL callUno_Fuse_Controls_VideoImpl_Android_MediaPlayer_OnFrameAvailable271(JNIEnv *env,jclass clazz,jobject jthis)
+void JNICALL callUno_Fuse_Controls_VideoImpl_Android_MediaPlayer_OnFrameAvailable263(JNIEnv *env,jclass clazz,jobject jthis)
 {
     uAutoReleasePool pool;
     INIT_JNI;
@@ -1174,7 +1174,7 @@ void JNICALL callUno_Fuse_Controls_VideoImpl_Android_MediaPlayer_OnFrameAvailabl
         uno_jthis->OnFrameAvailable();
     JCATCH
 }
-void JNICALL callUno_Fuse_Controls_VideoImpl_Android_MediaPlayer_OnPrepared265(JNIEnv *env,jclass clazz,jobject jthis)
+void JNICALL callUno_Fuse_Controls_VideoImpl_Android_MediaPlayer_OnPrepared257(JNIEnv *env,jclass clazz,jobject jthis)
 {
     uAutoReleasePool pool;
     INIT_JNI;
@@ -1183,7 +1183,7 @@ void JNICALL callUno_Fuse_Controls_VideoImpl_Android_MediaPlayer_OnPrepared265(J
         uno_jthis->OnPrepared();
     JCATCH
 }
-void JNICALL callUno_Fuse_Internal_AndroidSystemFont_AddAlias109(JNIEnv *env,jclass clazz,jobject name,jobject to,jint weight)
+void JNICALL callUno_Fuse_Internal_AndroidSystemFont_AddAlias111(JNIEnv *env,jclass clazz,jobject name,jobject to,jint weight)
 {
     uAutoReleasePool pool;
     INIT_JNI;
@@ -1194,7 +1194,7 @@ void JNICALL callUno_Fuse_Internal_AndroidSystemFont_AddAlias109(JNIEnv *env,jcl
         ::g::Fuse::Internal::AndroidSystemFont::AddAlias(uCast<uString*>(uno_name, ::g::Uno::String_typeof()), uCast<uString*>(uno_to, ::g::Uno::String_typeof()), uno_weight);
     JCATCH
 }
-void JNICALL callUno_Fuse_Internal_AndroidSystemFont_AddFamily107(JNIEnv *env,jclass clazz,jobject name,jobject language,jobject variant)
+void JNICALL callUno_Fuse_Internal_AndroidSystemFont_AddFamily109(JNIEnv *env,jclass clazz,jobject name,jobject language,jobject variant)
 {
     uAutoReleasePool pool;
     INIT_JNI;
@@ -1205,7 +1205,7 @@ void JNICALL callUno_Fuse_Internal_AndroidSystemFont_AddFamily107(JNIEnv *env,jc
         ::g::Fuse::Internal::AndroidSystemFont::AddFamily(uCast<uString*>(uno_name, ::g::Uno::String_typeof()), uCast<uString*>(uno_language, ::g::Uno::String_typeof()), uCast<uString*>(uno_variant, ::g::Uno::String_typeof()));
     JCATCH
 }
-void JNICALL callUno_Fuse_Internal_AndroidSystemFont_AddFont108(JNIEnv *env,jclass clazz,jobject path,jint index,jint weight,jboolean isItalic)
+void JNICALL callUno_Fuse_Internal_AndroidSystemFont_AddFont110(JNIEnv *env,jclass clazz,jobject path,jint index,jint weight,jboolean isItalic)
 {
     uAutoReleasePool pool;
     INIT_JNI;
@@ -1217,7 +1217,7 @@ void JNICALL callUno_Fuse_Internal_AndroidSystemFont_AddFont108(JNIEnv *env,jcla
         ::g::Fuse::Internal::AndroidSystemFont::AddFont(uCast<uString*>(uno_path, ::g::Uno::String_typeof()), uno_index, uno_weight, uno_isItalic);
     JCATCH
 }
-void JNICALL callUno_Fuse_Internal_AndroidSystemFont_ThrowUno110(JNIEnv *env,jclass clazz,jobject message)
+void JNICALL callUno_Fuse_Internal_AndroidSystemFont_ThrowUno112(JNIEnv *env,jclass clazz,jobject message)
 {
     uAutoReleasePool pool;
     INIT_JNI;
@@ -1244,7 +1244,7 @@ void JNICALL callUno_Fuse_Platform_SystemUI__systemUIStateSet79(JNIEnv *env,jcla
         ::g::Fuse::Platform::SystemUI::_systemUIState() = uno_setVal;
     JCATCH
 }
-void JNICALL callUno_Fuse_Platform_SystemUI_cachedOpenSizeSet87(JNIEnv *env,jclass clazz,jint setVal)
+void JNICALL callUno_Fuse_Platform_SystemUI_cachedOpenSizeSet89(JNIEnv *env,jclass clazz,jint setVal)
 {
     uAutoReleasePool pool;
     INIT_JNI;
@@ -1261,7 +1261,7 @@ void JNICALL callUno_Fuse_Platform_SystemUI_CompensateRootLayoutForSystemUI76(JN
         ::g::Fuse::Platform::SystemUI::CompensateRootLayoutForSystemUI();
     JCATCH
 }
-void JNICALL callUno_Fuse_Platform_SystemUI_cppOnConfigChanged95(JNIEnv *env,jclass clazz)
+void JNICALL callUno_Fuse_Platform_SystemUI_cppOnConfigChanged97(JNIEnv *env,jclass clazz)
 {
     uAutoReleasePool pool;
     INIT_JNI;
@@ -1278,7 +1278,7 @@ void JNICALL callUno_Fuse_Platform_SystemUI_cppOnTopFrameChanged82(JNIEnv *env,j
         ::g::Fuse::Platform::SystemUI::cppOnTopFrameChanged(uno_height);
     JCATCH
 }
-void JNICALL callUno_Fuse_Platform_SystemUI_firstSizingSet103(JNIEnv *env,jclass clazz,jboolean setVal)
+void JNICALL callUno_Fuse_Platform_SystemUI_firstSizingSet105(JNIEnv *env,jclass clazz,jboolean setVal)
 {
     uAutoReleasePool pool;
     INIT_JNI;
@@ -1287,7 +1287,7 @@ void JNICALL callUno_Fuse_Platform_SystemUI_firstSizingSet103(JNIEnv *env,jclass
         ::g::Fuse::Platform::SystemUI::firstSizing() = uno_setVal;
     JCATCH
 }
-void JNICALL callUno_Fuse_Platform_SystemUI_hasCachedStatusBarSizeSet86(JNIEnv *env,jclass clazz,jboolean setVal)
+void JNICALL callUno_Fuse_Platform_SystemUI_hasCachedStatusBarSizeSet88(JNIEnv *env,jclass clazz,jboolean setVal)
 {
     uAutoReleasePool pool;
     INIT_JNI;
@@ -1305,7 +1305,7 @@ void JNICALL callUno_Fuse_Platform_SystemUI_layoutAttachedToSet65(JNIEnv *env,jc
         ::g::Fuse::Platform::SystemUI::layoutAttachedTo() = uCast<::g::Java::Object*>(uno_setVal, ::g::Java::Object_typeof());
     JCATCH
 }
-void JNICALL callUno_Fuse_Platform_SystemUI_OnConfigChanged93(JNIEnv *env,jclass clazz)
+void JNICALL callUno_Fuse_Platform_SystemUI_OnConfigChanged95(JNIEnv *env,jclass clazz)
 {
     uAutoReleasePool pool;
     INIT_JNI;
@@ -1313,7 +1313,7 @@ void JNICALL callUno_Fuse_Platform_SystemUI_OnConfigChanged93(JNIEnv *env,jclass
         ::g::Fuse::Platform::SystemUI::OnConfigChanged();
     JCATCH
 }
-void JNICALL callUno_Fuse_Platform_SystemUI_OnDestroy92(JNIEnv *env,jclass clazz)
+void JNICALL callUno_Fuse_Platform_SystemUI_OnDestroy94(JNIEnv *env,jclass clazz)
 {
     uAutoReleasePool pool;
     INIT_JNI;
@@ -1321,7 +1321,7 @@ void JNICALL callUno_Fuse_Platform_SystemUI_OnDestroy92(JNIEnv *env,jclass clazz
         ::g::Fuse::Platform::SystemUI::OnDestroy();
     JCATCH
 }
-void JNICALL callUno_Fuse_Platform_SystemUI_onHideKeyboard104(JNIEnv *env,jclass clazz,jint keyboardHeight,jboolean force)
+void JNICALL callUno_Fuse_Platform_SystemUI_onHideKeyboard106(JNIEnv *env,jclass clazz,jint keyboardHeight,jboolean force)
 {
     uAutoReleasePool pool;
     INIT_JNI;
@@ -1331,7 +1331,7 @@ void JNICALL callUno_Fuse_Platform_SystemUI_onHideKeyboard104(JNIEnv *env,jclass
         ::g::Fuse::Platform::SystemUI::onHideKeyboard(uno_keyboardHeight, uno_force);
     JCATCH
 }
-void JNICALL callUno_Fuse_Platform_SystemUI_onShowKeyboard105(JNIEnv *env,jclass clazz,jint keyboardHeight,jboolean force)
+void JNICALL callUno_Fuse_Platform_SystemUI_onShowKeyboard107(JNIEnv *env,jclass clazz,jint keyboardHeight,jboolean force)
 {
     uAutoReleasePool pool;
     INIT_JNI;
@@ -1359,7 +1359,7 @@ void JNICALL callUno_Fuse_Platform_SystemUI_realWidthSet68(JNIEnv *env,jclass cl
         ::g::Fuse::Platform::SystemUI::realWidth() = uno_setVal;
     JCATCH
 }
-void JNICALL callUno_Fuse_Platform_SystemUI_ResendFrameSizes96(JNIEnv *env,jclass clazz)
+void JNICALL callUno_Fuse_Platform_SystemUI_ResendFrameSizes98(JNIEnv *env,jclass clazz)
 {
     uAutoReleasePool pool;
     INIT_JNI;
@@ -1385,7 +1385,7 @@ void JNICALL callUno_Fuse_Platform_SystemUI_SuperLayoutSet70(JNIEnv *env,jclass 
         ::g::Fuse::Platform::SystemUI::SuperLayout() = uCast<::g::Java::Object*>(uno_setVal, ::g::Java::Object_typeof());
     JCATCH
 }
-void JNICALL callUno_Fuse_Platform_SystemUI_UpdateStatusBar99(JNIEnv *env,jclass clazz)
+void JNICALL callUno_Fuse_Platform_SystemUI_UpdateStatusBar101(JNIEnv *env,jclass clazz)
 {
     uAutoReleasePool pool;
     INIT_JNI;
@@ -1393,7 +1393,7 @@ void JNICALL callUno_Fuse_Platform_SystemUI_UpdateStatusBar99(JNIEnv *env,jclass
         ::g::Fuse::Platform::SystemUI::UpdateStatusBar();
     JCATCH
 }
-void JNICALL callUno_Neovisionaries_WebSocketClient__webSocketSet380(JNIEnv *env,jclass clazz,jobject jthis,jobject setVal,jlong setValPtr)
+void JNICALL callUno_Neovisionaries_WebSocketClient__webSocketSet372(JNIEnv *env,jclass clazz,jobject jthis,jobject setVal,jlong setValPtr)
 {
     uAutoReleasePool pool;
     INIT_JNI;
@@ -1443,7 +1443,7 @@ namespace ExportTargetInterop{
 namespace Foreign{
 namespace Android{
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\Compiler\ExportTargetInterop\Foreign\Android\ExternBlockHost.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\Compiler\ExportTargetInterop\Foreign\Android\ExternBlockHost.uno
 // ---------------------------------------------------------------------------------------------------------------------------------------------
 
 // internal static extern class ExternBlockHost :10
@@ -1547,57 +1547,57 @@ void ExternBlockHost::RegisterFunctions()
     {(char* const)"callUno_Fuse_Platform_SystemUI__systemUIStateSet79", (char* const)"(I)V", (void *)&callUno_Fuse_Platform_SystemUI__systemUIStateSet79},
     {(char* const)"callUno_Fuse_Platform_SystemUI_cppOnTopFrameChanged82", (char* const)"(I)V", (void *)&callUno_Fuse_Platform_SystemUI_cppOnTopFrameChanged82},
     {(char* const)"callUno_Fuse_Platform_SystemUI__systemUIStateGet79", (char* const)"()I", (void *)&callUno_Fuse_Platform_SystemUI__systemUIStateGet79},
-    {(char* const)"callUno_Fuse_Platform_SystemUI_hasCachedStatusBarSizeGet86", (char* const)"()Z", (void *)&callUno_Fuse_Platform_SystemUI_hasCachedStatusBarSizeGet86},
-    {(char* const)"callUno_Fuse_Platform_SystemUI_cachedOpenSizeGet87", (char* const)"()I", (void *)&callUno_Fuse_Platform_SystemUI_cachedOpenSizeGet87},
-    {(char* const)"callUno_Fuse_Platform_SystemUI_hasCachedStatusBarSizeSet86", (char* const)"(Z)V", (void *)&callUno_Fuse_Platform_SystemUI_hasCachedStatusBarSizeSet86},
-    {(char* const)"callUno_Fuse_Platform_SystemUI_cachedOpenSizeSet87", (char* const)"(I)V", (void *)&callUno_Fuse_Platform_SystemUI_cachedOpenSizeSet87},
-    {(char* const)"callUno_Fuse_Platform_SystemUI_OnDestroy92", (char* const)"()V", (void *)&callUno_Fuse_Platform_SystemUI_OnDestroy92},
-    {(char* const)"callUno_Fuse_Platform_SystemUI_OnConfigChanged93", (char* const)"()V", (void *)&callUno_Fuse_Platform_SystemUI_OnConfigChanged93},
-    {(char* const)"callUno_Fuse_Platform_SystemUI_GetRealDisplayWidth94", (char* const)"()I", (void *)&callUno_Fuse_Platform_SystemUI_GetRealDisplayWidth94},
-    {(char* const)"callUno_Fuse_Platform_SystemUI_cppOnConfigChanged95", (char* const)"()V", (void *)&callUno_Fuse_Platform_SystemUI_cppOnConfigChanged95},
-    {(char* const)"callUno_Fuse_Platform_SystemUI_ResendFrameSizes96", (char* const)"()V", (void *)&callUno_Fuse_Platform_SystemUI_ResendFrameSizes96},
+    {(char* const)"callUno_Fuse_Platform_SystemUI_hasCachedStatusBarSizeGet88", (char* const)"()Z", (void *)&callUno_Fuse_Platform_SystemUI_hasCachedStatusBarSizeGet88},
+    {(char* const)"callUno_Fuse_Platform_SystemUI_cachedOpenSizeGet89", (char* const)"()I", (void *)&callUno_Fuse_Platform_SystemUI_cachedOpenSizeGet89},
+    {(char* const)"callUno_Fuse_Platform_SystemUI_hasCachedStatusBarSizeSet88", (char* const)"(Z)V", (void *)&callUno_Fuse_Platform_SystemUI_hasCachedStatusBarSizeSet88},
+    {(char* const)"callUno_Fuse_Platform_SystemUI_cachedOpenSizeSet89", (char* const)"(I)V", (void *)&callUno_Fuse_Platform_SystemUI_cachedOpenSizeSet89},
+    {(char* const)"callUno_Fuse_Platform_SystemUI_OnDestroy94", (char* const)"()V", (void *)&callUno_Fuse_Platform_SystemUI_OnDestroy94},
+    {(char* const)"callUno_Fuse_Platform_SystemUI_OnConfigChanged95", (char* const)"()V", (void *)&callUno_Fuse_Platform_SystemUI_OnConfigChanged95},
+    {(char* const)"callUno_Fuse_Platform_SystemUI_GetRealDisplayWidth96", (char* const)"()I", (void *)&callUno_Fuse_Platform_SystemUI_GetRealDisplayWidth96},
+    {(char* const)"callUno_Fuse_Platform_SystemUI_cppOnConfigChanged97", (char* const)"()V", (void *)&callUno_Fuse_Platform_SystemUI_cppOnConfigChanged97},
+    {(char* const)"callUno_Fuse_Platform_SystemUI_ResendFrameSizes98", (char* const)"()V", (void *)&callUno_Fuse_Platform_SystemUI_ResendFrameSizes98},
     {(char* const)"callUno_Fuse_Platform_SystemUI__keyboardListenerSet66", (char* const)"(Ljava/lang/Object;J)V", (void *)&callUno_Fuse_Platform_SystemUI__keyboardListenerSet66},
-    {(char* const)"callUno_Fuse_Platform_SystemUI_UpdateStatusBar99", (char* const)"()V", (void *)&callUno_Fuse_Platform_SystemUI_UpdateStatusBar99},
-    {(char* const)"callUno_Fuse_Platform_SystemUI_lastKeyboardHeightGet102", (char* const)"()I", (void *)&callUno_Fuse_Platform_SystemUI_lastKeyboardHeightGet102},
-    {(char* const)"callUno_Fuse_Platform_SystemUI_firstSizingGet103", (char* const)"()Z", (void *)&callUno_Fuse_Platform_SystemUI_firstSizingGet103},
-    {(char* const)"callUno_Fuse_Platform_SystemUI_onHideKeyboard104", (char* const)"(IZ)V", (void *)&callUno_Fuse_Platform_SystemUI_onHideKeyboard104},
-    {(char* const)"callUno_Fuse_Platform_SystemUI_onShowKeyboard105", (char* const)"(IZ)V", (void *)&callUno_Fuse_Platform_SystemUI_onShowKeyboard105},
-    {(char* const)"callUno_Fuse_Platform_SystemUI_firstSizingSet103", (char* const)"(Z)V", (void *)&callUno_Fuse_Platform_SystemUI_firstSizingSet103},
-    {(char* const)"callUno_Fuse_Internal_AndroidSystemFont_AddFamily107", (char* const)"(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V", (void *)&callUno_Fuse_Internal_AndroidSystemFont_AddFamily107},
-    {(char* const)"callUno_Fuse_Internal_AndroidSystemFont_AddFont108", (char* const)"(Ljava/lang/String;IIZ)V", (void *)&callUno_Fuse_Internal_AndroidSystemFont_AddFont108},
-    {(char* const)"callUno_Fuse_Internal_AndroidSystemFont_AddAlias109", (char* const)"(Ljava/lang/String;Ljava/lang/String;I)V", (void *)&callUno_Fuse_Internal_AndroidSystemFont_AddAlias109},
-    {(char* const)"callUno_Fuse_Internal_AndroidSystemFont_ThrowUno110", (char* const)"(Ljava/lang/String;)V", (void *)&callUno_Fuse_Internal_AndroidSystemFont_ThrowUno110},
+    {(char* const)"callUno_Fuse_Platform_SystemUI_UpdateStatusBar101", (char* const)"()V", (void *)&callUno_Fuse_Platform_SystemUI_UpdateStatusBar101},
+    {(char* const)"callUno_Fuse_Platform_SystemUI_lastKeyboardHeightGet104", (char* const)"()I", (void *)&callUno_Fuse_Platform_SystemUI_lastKeyboardHeightGet104},
+    {(char* const)"callUno_Fuse_Platform_SystemUI_firstSizingGet105", (char* const)"()Z", (void *)&callUno_Fuse_Platform_SystemUI_firstSizingGet105},
+    {(char* const)"callUno_Fuse_Platform_SystemUI_onHideKeyboard106", (char* const)"(IZ)V", (void *)&callUno_Fuse_Platform_SystemUI_onHideKeyboard106},
+    {(char* const)"callUno_Fuse_Platform_SystemUI_onShowKeyboard107", (char* const)"(IZ)V", (void *)&callUno_Fuse_Platform_SystemUI_onShowKeyboard107},
+    {(char* const)"callUno_Fuse_Platform_SystemUI_firstSizingSet105", (char* const)"(Z)V", (void *)&callUno_Fuse_Platform_SystemUI_firstSizingSet105},
+    {(char* const)"callUno_Fuse_Internal_AndroidSystemFont_AddFamily109", (char* const)"(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V", (void *)&callUno_Fuse_Internal_AndroidSystemFont_AddFamily109},
+    {(char* const)"callUno_Fuse_Internal_AndroidSystemFont_AddFont110", (char* const)"(Ljava/lang/String;IIZ)V", (void *)&callUno_Fuse_Internal_AndroidSystemFont_AddFont110},
+    {(char* const)"callUno_Fuse_Internal_AndroidSystemFont_AddAlias111", (char* const)"(Ljava/lang/String;Ljava/lang/String;I)V", (void *)&callUno_Fuse_Internal_AndroidSystemFont_AddAlias111},
+    {(char* const)"callUno_Fuse_Internal_AndroidSystemFont_ThrowUno112", (char* const)"(Ljava/lang/String;)V", (void *)&callUno_Fuse_Internal_AndroidSystemFont_ThrowUno112},
     {(char* const)"callUno_Action_Object", (char* const)"(Lcom/foreign/Uno/Action_Object;Ljava/lang/Object;J)V", (void *)&callUno_Action_Object},
     {(char* const)"callUno_Fuse_Controls_Native_Android_FocusChangedListener_OnFocusChange128", (char* const)"(Lcom/uno/UnoObject;Z)V", (void *)&callUno_Fuse_Controls_Native_Android_FocusChangedListener_OnFocusChange128},
     {(char* const)"callUno_Action_String", (char* const)"(Lcom/foreign/Uno/Action_String;Ljava/lang/String;)V", (void *)&callUno_Action_String},
     {(char* const)"callUno_Fuse_Controls_Native_Android_InputDispatch_OnTouch144", (char* const)"(Ljava/lang/Object;Ljava/lang/Object;JJ)Z", (void *)&callUno_Fuse_Controls_Native_Android_InputDispatch_OnTouch144},
-    {(char* const)"callUno_Fuse_Controls_Native_Android_ScrollView_OnScrollChanged166", (char* const)"(Lcom/uno/UnoObject;IIII)V", (void *)&callUno_Fuse_Controls_Native_Android_ScrollView_OnScrollChanged166},
-    {(char* const)"callUno_Fuse_Controls_Native_Android_Slider_OnSeekBarChanged178", (char* const)"(Lcom/uno/UnoObject;DZ)V", (void *)&callUno_Fuse_Controls_Native_Android_Slider_OnSeekBarChanged178},
-    {(char* const)"callUno_Fuse_Controls_Native_Android_SurfaceView_OnSurfaceRedrawNeeded184", (char* const)"(Lcom/uno/UnoObject;Ljava/lang/Object;J)V", (void *)&callUno_Fuse_Controls_Native_Android_SurfaceView_OnSurfaceRedrawNeeded184},
-    {(char* const)"callUno_Fuse_Controls_Native_Android_SurfaceView_OnSurfaceChanged185", (char* const)"(Lcom/uno/UnoObject;Ljava/lang/Object;IIIJ)V", (void *)&callUno_Fuse_Controls_Native_Android_SurfaceView_OnSurfaceChanged185},
-    {(char* const)"callUno_Fuse_Controls_Native_Android_SurfaceView_OnSurfaceCreated186", (char* const)"(Lcom/uno/UnoObject;Ljava/lang/Object;J)V", (void *)&callUno_Fuse_Controls_Native_Android_SurfaceView_OnSurfaceCreated186},
-    {(char* const)"callUno_Fuse_Controls_Native_Android_SurfaceView_OnSurfaceDestroyed187", (char* const)"(Lcom/uno/UnoObject;Ljava/lang/Object;J)V", (void *)&callUno_Fuse_Controls_Native_Android_SurfaceView_OnSurfaceDestroyed187},
-    {(char* const)"callUno_Fuse_Controls_Native_Android_Switch_OnToggleChanged191", (char* const)"(Lcom/uno/UnoObject;Z)V", (void *)&callUno_Fuse_Controls_Native_Android_Switch_OnToggleChanged191},
-    {(char* const)"callUno_Fuse_Controls_Native_Android_TextInput_OnEditorAction196", (char* const)"(Lcom/uno/UnoObject;I)Z", (void *)&callUno_Fuse_Controls_Native_Android_TextInput_OnEditorAction196},
-    {(char* const)"callUno_Fuse_Controls_Native_Android_TextInput_OnTextChanged198", (char* const)"(Lcom/uno/UnoObject;Ljava/lang/String;)V", (void *)&callUno_Fuse_Controls_Native_Android_TextInput_OnTextChanged198},
-    {(char* const)"callUno_Fuse_Controls_Native_Android_TextureView_OnSurfaceTextureAvailable212", (char* const)"(Lcom/uno/UnoObject;Ljava/lang/Object;J)V", (void *)&callUno_Fuse_Controls_Native_Android_TextureView_OnSurfaceTextureAvailable212},
-    {(char* const)"callUno_Fuse_Controls_Native_Android_TextureView_OnSurfaceTextureDestroyed213", (char* const)"(Lcom/uno/UnoObject;)V", (void *)&callUno_Fuse_Controls_Native_Android_TextureView_OnSurfaceTextureDestroyed213},
-    {(char* const)"callUno_Fuse_Controls_Native_ViewHandle_NativeHandleGet243", (char* const)"(Lcom/uno/UnoObject;)Ljava/lang/Object;", (void *)&callUno_Fuse_Controls_Native_ViewHandle_NativeHandleGet243},
-    {(char* const)"callUno_Fuse_Controls_VideoImpl_Android_MediaPlayer_OnPrepared265", (char* const)"(Lcom/uno/UnoObject;)V", (void *)&callUno_Fuse_Controls_VideoImpl_Android_MediaPlayer_OnPrepared265},
-    {(char* const)"callUno_Fuse_Controls_VideoImpl_Android_MediaPlayer_OnCompletion266", (char* const)"(Lcom/uno/UnoObject;)V", (void *)&callUno_Fuse_Controls_VideoImpl_Android_MediaPlayer_OnCompletion266},
-    {(char* const)"callUno_Fuse_Controls_VideoImpl_Android_MediaPlayer_OnError267", (char* const)"(Lcom/uno/UnoObject;II)V", (void *)&callUno_Fuse_Controls_VideoImpl_Android_MediaPlayer_OnError267},
-    {(char* const)"callUno_Fuse_Controls_VideoImpl_Android_MediaPlayer_OnBuffer268", (char* const)"(Lcom/uno/UnoObject;I)V", (void *)&callUno_Fuse_Controls_VideoImpl_Android_MediaPlayer_OnBuffer268},
-    {(char* const)"callUno_Fuse_Controls_VideoImpl_Android_MediaPlayer_OnFrameAvailable271", (char* const)"(Lcom/uno/UnoObject;)V", (void *)&callUno_Fuse_Controls_VideoImpl_Android_MediaPlayer_OnFrameAvailable271},
-    {(char* const)"callUno_Fuse_Controls_VideoImpl_Android_MediaPlayer_OnErrorOccurred280", (char* const)"(Lcom/uno/UnoObject;Ljava/lang/String;)V", (void *)&callUno_Fuse_Controls_VideoImpl_Android_MediaPlayer_OnErrorOccurred280},
-    {(char* const)"callUno_Uno_IO_BundleFile_BundlePathGet323", (char* const)"(Lcom/uno/UnoObject;)Ljava/lang/String;", (void *)&callUno_Uno_IO_BundleFile_BundlePathGet323},
+    {(char* const)"callUno_Fuse_Controls_Native_Android_ScrollView_OnScrollChanged165", (char* const)"(Lcom/uno/UnoObject;IIII)V", (void *)&callUno_Fuse_Controls_Native_Android_ScrollView_OnScrollChanged165},
+    {(char* const)"callUno_Fuse_Controls_Native_Android_Slider_OnSeekBarChanged170", (char* const)"(Lcom/uno/UnoObject;DZ)V", (void *)&callUno_Fuse_Controls_Native_Android_Slider_OnSeekBarChanged170},
+    {(char* const)"callUno_Fuse_Controls_Native_Android_SurfaceView_OnSurfaceRedrawNeeded176", (char* const)"(Lcom/uno/UnoObject;Ljava/lang/Object;J)V", (void *)&callUno_Fuse_Controls_Native_Android_SurfaceView_OnSurfaceRedrawNeeded176},
+    {(char* const)"callUno_Fuse_Controls_Native_Android_SurfaceView_OnSurfaceChanged177", (char* const)"(Lcom/uno/UnoObject;Ljava/lang/Object;IIIJ)V", (void *)&callUno_Fuse_Controls_Native_Android_SurfaceView_OnSurfaceChanged177},
+    {(char* const)"callUno_Fuse_Controls_Native_Android_SurfaceView_OnSurfaceCreated178", (char* const)"(Lcom/uno/UnoObject;Ljava/lang/Object;J)V", (void *)&callUno_Fuse_Controls_Native_Android_SurfaceView_OnSurfaceCreated178},
+    {(char* const)"callUno_Fuse_Controls_Native_Android_SurfaceView_OnSurfaceDestroyed179", (char* const)"(Lcom/uno/UnoObject;Ljava/lang/Object;J)V", (void *)&callUno_Fuse_Controls_Native_Android_SurfaceView_OnSurfaceDestroyed179},
+    {(char* const)"callUno_Fuse_Controls_Native_Android_Switch_OnToggleChanged183", (char* const)"(Lcom/uno/UnoObject;Z)V", (void *)&callUno_Fuse_Controls_Native_Android_Switch_OnToggleChanged183},
+    {(char* const)"callUno_Fuse_Controls_Native_Android_TextInput_OnEditorAction188", (char* const)"(Lcom/uno/UnoObject;I)Z", (void *)&callUno_Fuse_Controls_Native_Android_TextInput_OnEditorAction188},
+    {(char* const)"callUno_Fuse_Controls_Native_Android_TextInput_OnTextChanged190", (char* const)"(Lcom/uno/UnoObject;Ljava/lang/String;)V", (void *)&callUno_Fuse_Controls_Native_Android_TextInput_OnTextChanged190},
+    {(char* const)"callUno_Fuse_Controls_Native_Android_TextureView_OnSurfaceTextureAvailable204", (char* const)"(Lcom/uno/UnoObject;Ljava/lang/Object;J)V", (void *)&callUno_Fuse_Controls_Native_Android_TextureView_OnSurfaceTextureAvailable204},
+    {(char* const)"callUno_Fuse_Controls_Native_Android_TextureView_OnSurfaceTextureDestroyed205", (char* const)"(Lcom/uno/UnoObject;)V", (void *)&callUno_Fuse_Controls_Native_Android_TextureView_OnSurfaceTextureDestroyed205},
+    {(char* const)"callUno_Fuse_Controls_Native_ViewHandle_NativeHandleGet235", (char* const)"(Lcom/uno/UnoObject;)Ljava/lang/Object;", (void *)&callUno_Fuse_Controls_Native_ViewHandle_NativeHandleGet235},
+    {(char* const)"callUno_Fuse_Controls_VideoImpl_Android_MediaPlayer_OnPrepared257", (char* const)"(Lcom/uno/UnoObject;)V", (void *)&callUno_Fuse_Controls_VideoImpl_Android_MediaPlayer_OnPrepared257},
+    {(char* const)"callUno_Fuse_Controls_VideoImpl_Android_MediaPlayer_OnCompletion258", (char* const)"(Lcom/uno/UnoObject;)V", (void *)&callUno_Fuse_Controls_VideoImpl_Android_MediaPlayer_OnCompletion258},
+    {(char* const)"callUno_Fuse_Controls_VideoImpl_Android_MediaPlayer_OnError259", (char* const)"(Lcom/uno/UnoObject;II)V", (void *)&callUno_Fuse_Controls_VideoImpl_Android_MediaPlayer_OnError259},
+    {(char* const)"callUno_Fuse_Controls_VideoImpl_Android_MediaPlayer_OnBuffer260", (char* const)"(Lcom/uno/UnoObject;I)V", (void *)&callUno_Fuse_Controls_VideoImpl_Android_MediaPlayer_OnBuffer260},
+    {(char* const)"callUno_Fuse_Controls_VideoImpl_Android_MediaPlayer_OnFrameAvailable263", (char* const)"(Lcom/uno/UnoObject;)V", (void *)&callUno_Fuse_Controls_VideoImpl_Android_MediaPlayer_OnFrameAvailable263},
+    {(char* const)"callUno_Fuse_Controls_VideoImpl_Android_MediaPlayer_OnErrorOccurred272", (char* const)"(Lcom/uno/UnoObject;Ljava/lang/String;)V", (void *)&callUno_Fuse_Controls_VideoImpl_Android_MediaPlayer_OnErrorOccurred272},
+    {(char* const)"callUno_Uno_IO_BundleFile_BundlePathGet315", (char* const)"(Lcom/uno/UnoObject;)Ljava/lang/String;", (void *)&callUno_Uno_IO_BundleFile_BundlePathGet315},
     {(char* const)"callUno_Action_int", (char* const)"(Lcom/foreign/Uno/Action_int;I)V", (void *)&callUno_Action_int},
     {(char* const)"callUno_Action", (char* const)"(Lcom/foreign/Uno/Action;)V", (void *)&callUno_Action},
     {(char* const)"callUno_Func", (char* const)"(Lcom/foreign/Uno/Func;)Z", (void *)&callUno_Func},
-    {(char* const)"callUno_Fuse_Android_AppRoot_OnTouchEvent__341", (char* const)"(Ljava/lang/Object;J)V", (void *)&callUno_Fuse_Android_AppRoot_OnTouchEvent__341},
-    {(char* const)"callUno_Fuse_Android_StatusBarConfig_UpdateStatusBar363", (char* const)"()V", (void *)&callUno_Fuse_Android_StatusBarConfig_UpdateStatusBar363},
-    {(char* const)"callUno_Neovisionaries_WebSocketClient__webSocketGet380", (char* const)"(Lcom/uno/UnoObject;)Ljava/lang/Object;", (void *)&callUno_Neovisionaries_WebSocketClient__webSocketGet380},
+    {(char* const)"callUno_Fuse_Android_AppRoot_OnTouchEvent__333", (char* const)"(Ljava/lang/Object;J)V", (void *)&callUno_Fuse_Android_AppRoot_OnTouchEvent__333},
+    {(char* const)"callUno_Fuse_Android_StatusBarConfig_UpdateStatusBar355", (char* const)"()V", (void *)&callUno_Fuse_Android_StatusBarConfig_UpdateStatusBar355},
+    {(char* const)"callUno_Neovisionaries_WebSocketClient__webSocketGet372", (char* const)"(Lcom/uno/UnoObject;)Ljava/lang/Object;", (void *)&callUno_Neovisionaries_WebSocketClient__webSocketGet372},
     {(char* const)"callUno_Action_ByteArray", (char* const)"(Lcom/foreign/Uno/Action_ByteArray;Lcom/uno/ByteArray;)V", (void *)&callUno_Action_ByteArray},
-    {(char* const)"callUno_Neovisionaries_WebSocketClient__webSocketSet380", (char* const)"(Lcom/uno/UnoObject;Ljava/lang/Object;J)V", (void *)&callUno_Neovisionaries_WebSocketClient__webSocketSet380},
+    {(char* const)"callUno_Neovisionaries_WebSocketClient__webSocketSet372", (char* const)"(Lcom/uno/UnoObject;Ljava/lang/Object;J)V", (void *)&callUno_Neovisionaries_WebSocketClient__webSocketSet372},
     };
     int funcCount = 123;
     if ((int)jni->RegisterNatives(JniHelper::GetNativeExternClass(), native_activity_funcs, funcCount)<0) {
@@ -1607,7 +1607,7 @@ void ExternBlockHost::RegisterFunctions()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\Compiler\ExportTargetInterop\Foreign\Android\UnoArrayEntrypoints.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\Compiler\ExportTargetInterop\Foreign\Android\UnoArrayEntrypoints.uno
 // -------------------------------------------------------------------------------------------------------------------------------------------------
 
 // public static extern class JavaToUnoArrayEntrypoints :10
@@ -3029,7 +3029,7 @@ int64_t JavaToUnoArrayEntrypoints::ShortArrayToUnoArrayPtr(::g::Java::Object* ja
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\Compiler\ExportTargetInterop\Foreign\Android\JavaUnoObject.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\Compiler\ExportTargetInterop\Foreign\Android\JavaUnoObject.uno
 // -------------------------------------------------------------------------------------------------------------------------------------------
 
 // public static extern class JavaUnoObject :12

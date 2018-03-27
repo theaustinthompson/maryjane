@@ -1,4 +1,4 @@
-// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/UnoCore/1.7.1/Source/Uno/Time/Text/LocalDateTimePattern.uno.
+// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/UnoCore/1.8.0/Source/Uno/Time/Text/LocalDateTimePattern.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -44,7 +44,7 @@ struct LocalDateTimePattern : uObject
     uStrong< ::g::Uno::Time::Text::FixedFormatPattern*> _generalPattern;
 
     void ctor_();
-    uString* Format(::g::Uno::Time::LocalDateTime* value);
+    uString* Format(::g::Uno::Time::LocalDateTime value);
     int32_t GetDay(LocalDateTimePattern__LocalDateTimeBucket* value);
     int32_t GetHour(LocalDateTimePattern__LocalDateTimeBucket* value);
     int32_t GetMinute(LocalDateTimePattern__LocalDateTimeBucket* value);

@@ -26,6 +26,7 @@
 #include <Fuse.Animations.Creat-d717a85f.h>
 #include <Fuse.Animations.Cubic-aa541862.h>
 #include <Fuse.Animations.Cycle-1.h>
+#include <Fuse.Animations.CycleRestore.h>
 #include <Fuse.Animations.CycleState-1.h>
 #include <Fuse.Animations.CycleWaveform.h>
 #include <Fuse.Animations.Desti-3d0d380e.h>
@@ -192,14 +193,14 @@
 #include <Uno.UX.Selector.h>
 #include <Uno.UX.Size.h>
 #include <Uno.UX.Size2.h>
-static uString* STRINGS[28];
+static uString* STRINGS[30];
 static uType* TYPES[91];
 
 namespace g{
 namespace Fuse{
 namespace Animations{
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.7.4\TriggerAnimation.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.8.1\TriggerAnimation.uno
 // ----------------------------------------------------------------------------------------------
 
 // public enum AnimationVariant :8
@@ -215,7 +216,7 @@ uEnumType* AnimationVariant_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.7.4\Animator.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.8.1\Animator.uno
 // --------------------------------------------------------------------------------------
 
 // public abstract class Animator :68
@@ -329,7 +330,7 @@ void Animator::MixOp(int32_t value)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.7.4\Animator.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.8.1\Animator.uno
 // --------------------------------------------------------------------------------------
 
 // internal abstract class AnimatorState :122
@@ -385,7 +386,7 @@ void AnimatorState::ctor_(::g::Fuse::Animations::CreateStateParams* p, ::g::Fuse
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.7.4\Animator.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.8.1\Animator.uno
 // --------------------------------------------------------------------------------------
 
 // internal enum AnimatorVariant :6
@@ -402,7 +403,7 @@ uEnumType* AnimatorVariant_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.7.4\Attract.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.8.1\Attract.uno
 // -------------------------------------------------------------------------------------
 
 // public sealed class Attract :41
@@ -474,7 +475,7 @@ Attract* Attract::New1(::g::Fuse::Reactive::Expression* value, ::g::Fuse::Animat
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.7.4\Attractor.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.8.1\Attractor.uno
 // ---------------------------------------------------------------------------------------
 
 // public sealed class Attractor<T> :26
@@ -483,7 +484,7 @@ static void Attractor_build(uType* type)
 {
     ::STRINGS[0] = uString::Const("target");
     ::STRINGS[1] = uString::Const("Motion should not be changed post-rooting");
-    ::STRINGS[2] = uString::Const("C:\\Users\\borde_000\\AppData\\Local\\Fusetools\\Packages\\Fuse.Animations\\1.7.4\\Attractor.uno");
+    ::STRINGS[2] = uString::Const("C:\\Users\\borde_000\\AppData\\Local\\Fusetools\\Packages\\Fuse.Animations\\1.8.1\\Attractor.uno");
     ::STRINGS[3] = uString::Const("set_Motion");
     ::TYPES[0] = ::g::Fuse::Motion::DestinationMotion_typeof();
     ::TYPES[1] = ::g::Fuse::Motion::Simulation::Simulation_typeof();
@@ -1042,7 +1043,7 @@ Attractor* Attractor::New3(uType* __type, ::g::Uno::UX::Property1* target)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.7.4\Attract.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.8.1\Attract.uno
 // -------------------------------------------------------------------------------------
 
 // public sealed class AttractorConfig :19
@@ -1097,7 +1098,7 @@ AttractorConfig* AttractorConfig::New2()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.7.4\AverageMixer.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.8.1\AverageMixer.uno
 // ------------------------------------------------------------------------------------------
 
 // internal sealed class AverageMasterProperty<T> :17
@@ -1217,7 +1218,7 @@ AverageMasterProperty* AverageMasterProperty::New1(uType* __type, ::g::Uno::UX::
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.7.4\AverageMixer.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.8.1\AverageMixer.uno
 // ------------------------------------------------------------------------------------------
 
 // internal sealed class AverageMasterTransform :57
@@ -1303,7 +1304,7 @@ AverageMasterTransform* AverageMasterTransform::New1(::g::Fuse::Visual* node, ::
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.7.4\AverageMixer.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.8.1\AverageMixer.uno
 // ------------------------------------------------------------------------------------------
 
 // internal sealed class AverageMixer :7
@@ -1384,7 +1385,7 @@ AverageMixer* AverageMixer::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.7.4\Easing.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.8.1\Easing.uno
 // --------------------------------------------------------------------------------
 
 // internal sealed class Easing.BackInImpl :320
@@ -1444,7 +1445,7 @@ Easing__BackInImpl* Easing__BackInImpl::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.7.4\Easing.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.8.1\Easing.uno
 // --------------------------------------------------------------------------------
 
 // internal sealed class Easing.BackInOutImpl :339
@@ -1510,7 +1511,7 @@ Easing__BackInOutImpl* Easing__BackInOutImpl::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.7.4\Easing.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.8.1\Easing.uno
 // --------------------------------------------------------------------------------
 
 // internal sealed class Easing.BackOutImpl :329
@@ -1571,7 +1572,7 @@ Easing__BackOutImpl* Easing__BackOutImpl::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.7.4\Easing.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.8.1\Easing.uno
 // --------------------------------------------------------------------------------
 
 // internal sealed class Easing.BounceInImpl :354
@@ -1634,7 +1635,7 @@ Easing__BounceInImpl* Easing__BounceInImpl::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.7.4\Easing.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.8.1\Easing.uno
 // --------------------------------------------------------------------------------
 
 // internal sealed class Easing.BounceInOutImpl :388
@@ -1701,7 +1702,7 @@ Easing__BounceInOutImpl* Easing__BounceInOutImpl::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.7.4\Easing.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.8.1\Easing.uno
 // --------------------------------------------------------------------------------
 
 // internal sealed class Easing.BounceOutImpl :362
@@ -1777,7 +1778,7 @@ Easing__BounceOutImpl* Easing__BounceOutImpl::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.7.4\Change.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.8.1\Change.uno
 // ------------------------------------------------------------------------------------
 
 // public sealed class Change<T> :35
@@ -2178,7 +2179,7 @@ Change* Change::New2(uType* __type, ::g::Uno::UX::Property1* target)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.7.4\Easing.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.8.1\Easing.uno
 // --------------------------------------------------------------------------------
 
 // internal sealed class Easing.CircularInImpl :246
@@ -2237,7 +2238,7 @@ Easing__CircularInImpl* Easing__CircularInImpl::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.7.4\Easing.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.8.1\Easing.uno
 // --------------------------------------------------------------------------------
 
 // internal sealed class Easing.CircularInOutImpl :263
@@ -2302,7 +2303,7 @@ Easing__CircularInOutImpl* Easing__CircularInOutImpl::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.7.4\Easing.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.8.1\Easing.uno
 // --------------------------------------------------------------------------------
 
 // internal sealed class Easing.CircularOutImpl :254
@@ -2362,7 +2363,7 @@ Easing__CircularOutImpl* Easing__CircularOutImpl::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.7.4\Change.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.8.1\Change.uno
 // ------------------------------------------------------------------------------------
 
 // internal sealed class ContinuousTrackChangeState<T> :210
@@ -2370,7 +2371,7 @@ Easing__CircularOutImpl* Easing__CircularOutImpl::New1()
 static void ContinuousTrackChangeState_build(uType* type)
 {
     ::STRINGS[5] = uString::Const("Invalid Seek");
-    ::STRINGS[6] = uString::Const("C:/Users/borde_000/AppData/Local/Fusetools/Packages/Fuse.Animations/1.7.4/Change.uno");
+    ::STRINGS[6] = uString::Const("C:/Users/borde_000/AppData/Local/Fusetools/Packages/Fuse.Animations/1.8.1/Change.uno");
     ::TYPES[12] = ::g::Fuse::Animations::IMixer_typeof();
     ::TYPES[13] = ::g::Fuse::Animations::IMixerHandle_typeof();
     type->SetDependencies(
@@ -2471,7 +2472,7 @@ ContinuousTrackChangeState* ContinuousTrackChangeState::New1(uType* __type, ::g:
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.7.4\TrackAnimator.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.8.1\TrackAnimator.uno
 // -------------------------------------------------------------------------------------------
 
 // internal abstract interface ContinuousTrackProvider :16
@@ -2486,7 +2487,7 @@ uInterfaceType* ContinuousTrackProvider_typeof()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.7.4\Change.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.8.1\Change.uno
 // ------------------------------------------------------------------------------------
 
 // internal abstract class Converter<T> :242
@@ -2521,7 +2522,7 @@ void Converter::ctor_()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.7.4\Change.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.8.1\Change.uno
 // ------------------------------------------------------------------------------------
 
 // internal sealed class ConverterDouble :291
@@ -2601,7 +2602,7 @@ ConverterDouble* ConverterDouble::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.7.4\Change.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.8.1\Change.uno
 // ------------------------------------------------------------------------------------
 
 // internal sealed class ConverterFloat :248
@@ -2681,7 +2682,7 @@ ConverterFloat* ConverterFloat::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.7.4\Change.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.8.1\Change.uno
 // ------------------------------------------------------------------------------------
 
 // internal sealed class ConverterFloat2 :270
@@ -2761,7 +2762,7 @@ ConverterFloat2* ConverterFloat2::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.7.4\Change.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.8.1\Change.uno
 // ------------------------------------------------------------------------------------
 
 // internal sealed class ConverterFloat3 :277
@@ -2841,7 +2842,7 @@ ConverterFloat3* ConverterFloat3::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.7.4\Change.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.8.1\Change.uno
 // ------------------------------------------------------------------------------------
 
 // internal sealed class ConverterFloat4 :284
@@ -2921,7 +2922,7 @@ ConverterFloat4* ConverterFloat4::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.7.4\Change.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.8.1\Change.uno
 // ------------------------------------------------------------------------------------
 
 // internal sealed class ConverterSize :255
@@ -3001,7 +3002,7 @@ ConverterSize* ConverterSize::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.7.4\Change.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.8.1\Change.uno
 // ------------------------------------------------------------------------------------
 
 // internal sealed class ConverterSize2 :262
@@ -3081,7 +3082,7 @@ ConverterSize2* ConverterSize2::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.7.4\Animator.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.8.1\Animator.uno
 // --------------------------------------------------------------------------------------
 
 // internal sealed class CreateStateParams :101
@@ -3135,7 +3136,7 @@ CreateStateParams* CreateStateParams::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.7.4\Easing.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.8.1\Easing.uno
 // --------------------------------------------------------------------------------
 
 // public sealed class CubicBezierEasing :449
@@ -3358,7 +3359,7 @@ CubicBezierEasing* CubicBezierEasing::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.7.4\Easing.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.8.1\Easing.uno
 // --------------------------------------------------------------------------------
 
 // internal sealed class Easing.CubicInImpl :99
@@ -3417,7 +3418,7 @@ Easing__CubicInImpl* Easing__CubicInImpl::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.7.4\Easing.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.8.1\Easing.uno
 // --------------------------------------------------------------------------------
 
 // internal sealed class Easing.CubicInOutImpl :116
@@ -3482,7 +3483,7 @@ Easing__CubicInOutImpl* Easing__CubicInOutImpl::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.7.4\Easing.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.8.1\Easing.uno
 // --------------------------------------------------------------------------------
 
 // internal sealed class Easing.CubicOutImpl :107
@@ -3542,10 +3543,10 @@ Easing__CubicOutImpl* Easing__CubicOutImpl::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.7.4\Cycle.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.8.1\Cycle.uno
 // -----------------------------------------------------------------------------------
 
-// public sealed class Cycle<T> :51
+// public sealed class Cycle<T> :60
 // {
 static void Cycle_build(uType* type)
 {
@@ -3560,6 +3561,7 @@ static void Cycle_build(uType* type)
         ::g::Uno::Bool_typeof(), offsetof(Cycle, _hasBackFrequency), 0,
         ::g::Uno::Double_typeof(), offsetof(Cycle, _backFrequency), 0,
         ::g::Fuse::Animations::CycleWaveform_typeof(), offsetof(Cycle, _waveform), 0,
+        ::g::Fuse::Animations::CycleRestore_typeof(), offsetof(Cycle, _restore), 0,
         ::g::Uno::Float_typeof(), offsetof(Cycle, _progressOffset), 0,
         ::g::Uno::Bool_typeof(), offsetof(Cycle, _hasProgressOffset), 0,
         ::g::Fuse::Animations::Easing_typeof(), offsetof(Cycle, _easing), 0,
@@ -3568,7 +3570,7 @@ static void Cycle_build(uType* type)
         ::g::Uno::Float_typeof(), offsetof(Cycle, _Low), 0,
         type->T(0), (uintptr_t)0, uFieldFlagsConstrained,
         ::g::Uno::UX::Property1_typeof()->MakeType(type->T(0), NULL), offsetof(Cycle, _Target), 0);
-    type->Reflection.SetFunctions(20,
+    type->Reflection.SetFunctions(22,
         new uFunction("get_Base", NULL, (void*)Cycle__get_Base_fn, 0, false, type->T(0), 0),
         new uFunction("set_Base", NULL, (void*)Cycle__set_Base_fn, 0, false, uVoid_typeof(), 1, type->T(0)),
         new uFunction("get_Easing", NULL, (void*)Cycle__get_Easing_fn, 0, false, ::g::Fuse::Animations::Easing_typeof(), 0),
@@ -3586,6 +3588,8 @@ static void Cycle_build(uType* type)
         new uFunction("set_Offset", NULL, (void*)Cycle__set_Offset_fn, 0, false, uVoid_typeof(), 1, type->T(0)),
         new uFunction("get_ProgressOffset", NULL, (void*)Cycle__get_ProgressOffset_fn, 0, false, ::g::Uno::Float_typeof(), 0),
         new uFunction("set_ProgressOffset", NULL, (void*)Cycle__set_ProgressOffset_fn, 0, false, uVoid_typeof(), 1, ::g::Uno::Float_typeof()),
+        new uFunction("get_Restore", NULL, (void*)Cycle__get_Restore_fn, 0, false, ::g::Fuse::Animations::CycleRestore_typeof(), 0),
+        new uFunction("set_Restore", NULL, (void*)Cycle__set_Restore_fn, 0, false, uVoid_typeof(), 1, ::g::Fuse::Animations::CycleRestore_typeof()),
         new uFunction("get_Target", NULL, (void*)Cycle__get_Target_fn, 0, false, ::g::Uno::UX::Property1_typeof()->MakeType(type->T(0), NULL), 0),
         new uFunction("get_Waveform", NULL, (void*)Cycle__get_Waveform_fn, 0, false, ::g::Fuse::Animations::CycleWaveform_typeof(), 0),
         new uFunction("set_Waveform", NULL, (void*)Cycle__set_Waveform_fn, 0, false, uVoid_typeof(), 1, ::g::Fuse::Animations::CycleWaveform_typeof()));
@@ -3598,7 +3602,7 @@ static void Cycle_build(uType* type)
 
     uTypeOptions options;
     options.BaseDefinition = ::g::Fuse::Animations::OpenAnimator_typeof();
-    options.FieldCount = 19;
+    options.FieldCount = 20;
     options.GenericCount = 1;
     options.PrecalcCount = 2;
     options.ObjectSize = sizeof(Cycle);
@@ -3609,25 +3613,25 @@ static void Cycle_build(uType* type)
     return type;
 }
 
-// public Cycle(Uno.UX.Property<T> Target) :79
+// public Cycle(Uno.UX.Property<T> Target) :88
 void Cycle__ctor_3_fn(Cycle* __this, ::g::Uno::UX::Property1* Target1)
 {
     __this->ctor_3(Target1);
 }
 
-// public generated T get_Base() :67
+// public generated T get_Base() :76
 void Cycle__get_Base_fn(Cycle* __this, uTRef __retval)
 {
     return __retval.Store(__this->_Base()), void();
 }
 
-// public generated void set_Base(T value) :67
+// public generated void set_Base(T value) :76
 void Cycle__set_Base_fn(Cycle* __this, void* value)
 {
     __this->_Base() = value;
 }
 
-// internal override sealed Fuse.Animations.AnimatorState CreateState(Fuse.Animations.CreateStateParams p) :118
+// internal override sealed Fuse.Animations.AnimatorState CreateState(Fuse.Animations.CreateStateParams p) :137
 void Cycle__CreateState_fn(Cycle* __this, ::g::Fuse::Animations::CreateStateParams* p, ::g::Fuse::Animations::AnimatorState** __retval)
 {
     uType* __types[] = {
@@ -3636,145 +3640,157 @@ void Cycle__CreateState_fn(Cycle* __this, ::g::Fuse::Animations::CreateStatePara
     return *__retval = (::g::Fuse::Animations::CycleState*)::g::Fuse::Animations::CycleState::New1(__types[0], __this, p), void();
 }
 
-// public Fuse.Animations.Easing get_Easing() :186
+// public Fuse.Animations.Easing get_Easing() :205
 void Cycle__get_Easing_fn(Cycle* __this, ::g::Fuse::Animations::Easing** __retval)
 {
     *__retval = __this->Easing();
 }
 
-// public void set_Easing(Fuse.Animations.Easing value) :187
+// public void set_Easing(Fuse.Animations.Easing value) :206
 void Cycle__set_Easing_fn(Cycle* __this, ::g::Fuse::Animations::Easing* value)
 {
     __this->Easing(value);
 }
 
-// public double get_Frequency() :93
+// public double get_Frequency() :102
 void Cycle__get_Frequency_fn(Cycle* __this, double* __retval)
 {
     *__retval = __this->Frequency();
 }
 
-// public void set_Frequency(double value) :94
+// public void set_Frequency(double value) :103
 void Cycle__set_Frequency_fn(Cycle* __this, double* value)
 {
     __this->Frequency(*value);
 }
 
-// public double get_FrequencyBack() :102
+// public double get_FrequencyBack() :111
 void Cycle__get_FrequencyBack_fn(Cycle* __this, double* __retval)
 {
     *__retval = __this->FrequencyBack();
 }
 
-// public void set_FrequencyBack(double value) :103
+// public void set_FrequencyBack(double value) :112
 void Cycle__set_FrequencyBack_fn(Cycle* __this, double* value)
 {
     __this->FrequencyBack(*value);
 }
 
-// public generated float get_High() :58
+// public generated float get_High() :67
 void Cycle__get_High_fn(Cycle* __this, float* __retval)
 {
     *__retval = __this->High();
 }
 
-// public generated void set_High(float value) :58
+// public generated void set_High(float value) :67
 void Cycle__set_High_fn(Cycle* __this, float* value)
 {
     __this->High(*value);
 }
 
-// private bool get_IsOneCrossing() :130
+// private bool get_IsOneCrossing() :149
 void Cycle__get_IsOneCrossing_fn(Cycle* __this, bool* __retval)
 {
     *__retval = __this->IsOneCrossing();
 }
 
-// private bool get_IsZeroCrossing() :125
+// private bool get_IsZeroCrossing() :144
 void Cycle__get_IsZeroCrossing_fn(Cycle* __this, bool* __retval)
 {
     *__retval = __this->IsZeroCrossing();
 }
 
-// public generated float get_Low() :56
+// public generated float get_Low() :65
 void Cycle__get_Low_fn(Cycle* __this, float* __retval)
 {
     *__retval = __this->Low();
 }
 
-// public generated void set_Low(float value) :56
+// public generated void set_Low(float value) :65
 void Cycle__set_Low_fn(Cycle* __this, float* value)
 {
     __this->Low(*value);
 }
 
-// public Cycle New(Uno.UX.Property<T> Target) :79
+// public Cycle New(Uno.UX.Property<T> Target) :88
 void Cycle__New2_fn(uType* __type, ::g::Uno::UX::Property1* Target1, Cycle** __retval)
 {
     *__retval = Cycle::New2(__type, Target1);
 }
 
-// public generated T get_Offset() :76
+// public generated T get_Offset() :85
 void Cycle__get_Offset_fn(Cycle* __this, uTRef __retval)
 {
     return __retval.Store(__this->_Offset()), void();
 }
 
-// public generated void set_Offset(T value) :76
+// public generated void set_Offset(T value) :85
 void Cycle__set_Offset_fn(Cycle* __this, void* value)
 {
     __this->_Offset() = value;
 }
 
-// public float get_ProgressOffset() :169
+// public float get_ProgressOffset() :188
 void Cycle__get_ProgressOffset_fn(Cycle* __this, float* __retval)
 {
     *__retval = __this->ProgressOffset();
 }
 
-// public void set_ProgressOffset(float value) :170
+// public void set_ProgressOffset(float value) :189
 void Cycle__set_ProgressOffset_fn(Cycle* __this, float* value)
 {
     __this->ProgressOffset(*value);
 }
 
-// private double get_RestProgress() :138
+// public Fuse.Animations.CycleRestore get_Restore() :133
+void Cycle__get_Restore_fn(Cycle* __this, int32_t* __retval)
+{
+    *__retval = __this->Restore();
+}
+
+// public void set_Restore(Fuse.Animations.CycleRestore value) :134
+void Cycle__set_Restore_fn(Cycle* __this, int32_t* value)
+{
+    __this->Restore(*value);
+}
+
+// private double get_RestProgress() :157
 void Cycle__get_RestProgress_fn(Cycle* __this, double* __retval)
 {
     *__retval = __this->RestProgress();
 }
 
-// public generated Uno.UX.Property<T> get_Target() :54
+// public generated Uno.UX.Property<T> get_Target() :63
 void Cycle__get_Target_fn(Cycle* __this, ::g::Uno::UX::Property1** __retval)
 {
     *__retval = __this->Target();
 }
 
-// private generated void set_Target(Uno.UX.Property<T> value) :54
+// private generated void set_Target(Uno.UX.Property<T> value) :63
 void Cycle__set_Target_fn(Cycle* __this, ::g::Uno::UX::Property1* value)
 {
     __this->Target(value);
 }
 
-// public Fuse.Animations.CycleWaveform get_Waveform() :114
+// public Fuse.Animations.CycleWaveform get_Waveform() :123
 void Cycle__get_Waveform_fn(Cycle* __this, int32_t* __retval)
 {
     *__retval = __this->Waveform();
 }
 
-// public void set_Waveform(Fuse.Animations.CycleWaveform value) :115
+// public void set_Waveform(Fuse.Animations.CycleWaveform value) :124
 void Cycle__set_Waveform_fn(Cycle* __this, int32_t* value)
 {
     __this->Waveform(*value);
 }
 
-// internal double WaveformFunc(double i, double offset) :193
+// internal double WaveformFunc(double i, double offset) :212
 void Cycle__WaveformFunc_fn(Cycle* __this, double* i, double* offset, double* __retval)
 {
     *__retval = __this->WaveformFunc(*i, *offset);
 }
 
-// public Cycle(Uno.UX.Property<T> Target) [instance] :79
+// public Cycle(Uno.UX.Property<T> Target) [instance] :88
 void Cycle::ctor_3(::g::Uno::UX::Property1* Target1)
 {
     uType* __types[] = {
@@ -3796,93 +3812,105 @@ void Cycle::ctor_3(::g::Uno::UX::Property1* Target1)
     Cycle__set_Offset_fn(this, (blender->get_Zero_ex(&ret3), ret3));
 }
 
-// public Fuse.Animations.Easing get_Easing() [instance] :186
+// public Fuse.Animations.Easing get_Easing() [instance] :205
 ::g::Fuse::Animations::Easing* Cycle::Easing()
 {
     return _easing;
 }
 
-// public void set_Easing(Fuse.Animations.Easing value) [instance] :187
+// public void set_Easing(Fuse.Animations.Easing value) [instance] :206
 void Cycle::Easing(::g::Fuse::Animations::Easing* value)
 {
     _easing = value;
 }
 
-// public double get_Frequency() [instance] :93
+// public double get_Frequency() [instance] :102
 double Cycle::Frequency()
 {
     return _frequency;
 }
 
-// public void set_Frequency(double value) [instance] :94
+// public void set_Frequency(double value) [instance] :103
 void Cycle::Frequency(double value)
 {
     _frequency = value;
 }
 
-// public double get_FrequencyBack() [instance] :102
+// public double get_FrequencyBack() [instance] :111
 double Cycle::FrequencyBack()
 {
     return _hasBackFrequency ? _backFrequency : Frequency();
 }
 
-// public void set_FrequencyBack(double value) [instance] :103
+// public void set_FrequencyBack(double value) [instance] :112
 void Cycle::FrequencyBack(double value)
 {
     _backFrequency = value;
     _hasBackFrequency = true;
 }
 
-// public generated float get_High() [instance] :58
+// public generated float get_High() [instance] :67
 float Cycle::High()
 {
     return _High;
 }
 
-// public generated void set_High(float value) [instance] :58
+// public generated void set_High(float value) [instance] :67
 void Cycle::High(float value)
 {
     _High = value;
 }
 
-// private bool get_IsOneCrossing() [instance] :130
+// private bool get_IsOneCrossing() [instance] :149
 bool Cycle::IsOneCrossing()
 {
     return (Low() <= 1.0f) && (High() >= 1.0f);
 }
 
-// private bool get_IsZeroCrossing() [instance] :125
+// private bool get_IsZeroCrossing() [instance] :144
 bool Cycle::IsZeroCrossing()
 {
     return (Low() <= 0.0f) && (High() >= 0.0f);
 }
 
-// public generated float get_Low() [instance] :56
+// public generated float get_Low() [instance] :65
 float Cycle::Low()
 {
     return _Low;
 }
 
-// public generated void set_Low(float value) [instance] :56
+// public generated void set_Low(float value) [instance] :65
 void Cycle::Low(float value)
 {
     _Low = value;
 }
 
-// public float get_ProgressOffset() [instance] :169
+// public float get_ProgressOffset() [instance] :188
 float Cycle::ProgressOffset()
 {
     return (_hasProgressOffset || (_easing != NULL)) ? _progressOffset : (float)RestProgress();
 }
 
-// public void set_ProgressOffset(float value) [instance] :170
+// public void set_ProgressOffset(float value) [instance] :189
 void Cycle::ProgressOffset(float value)
 {
     _hasProgressOffset = true;
     _progressOffset = value;
 }
 
-// private double get_RestProgress() [instance] :138
+// public Fuse.Animations.CycleRestore get_Restore() [instance] :133
+int32_t Cycle::Restore()
+{
+    return _restore;
+}
+
+// public void set_Restore(Fuse.Animations.CycleRestore value) [instance] :134
+void Cycle::Restore(int32_t value)
+{
+    _restore = value;
+}
+
+// private double get_RestProgress() [instance] :157
 double Cycle::RestProgress()
 {
     double v = 0.0;
@@ -3907,31 +3935,31 @@ double Cycle::RestProgress()
     return v;
 }
 
-// public generated Uno.UX.Property<T> get_Target() [instance] :54
+// public generated Uno.UX.Property<T> get_Target() [instance] :63
 ::g::Uno::UX::Property1* Cycle::Target()
 {
     return _Target;
 }
 
-// private generated void set_Target(Uno.UX.Property<T> value) [instance] :54
+// private generated void set_Target(Uno.UX.Property<T> value) [instance] :63
 void Cycle::Target(::g::Uno::UX::Property1* value)
 {
     _Target = value;
 }
 
-// public Fuse.Animations.CycleWaveform get_Waveform() [instance] :114
+// public Fuse.Animations.CycleWaveform get_Waveform() [instance] :123
 int32_t Cycle::Waveform()
 {
     return _waveform;
 }
 
-// public void set_Waveform(Fuse.Animations.CycleWaveform value) [instance] :115
+// public void set_Waveform(Fuse.Animations.CycleWaveform value) [instance] :124
 void Cycle::Waveform(int32_t value)
 {
     _waveform = value;
 }
 
-// internal double WaveformFunc(double i, double offset) [instance] :193
+// internal double WaveformFunc(double i, double offset) [instance] :212
 double Cycle::WaveformFunc(double i, double offset)
 {
     switch (Waveform())
@@ -3962,7 +3990,7 @@ double Cycle::WaveformFunc(double i, double offset)
     return i;
 }
 
-// public Cycle New(Uno.UX.Property<T> Target) [static] :79
+// public Cycle New(Uno.UX.Property<T> Target) [static] :88
 Cycle* Cycle::New2(uType* __type, ::g::Uno::UX::Property1* Target1)
 {
     Cycle* obj1 = (Cycle*)uNew(__type);
@@ -3971,20 +3999,35 @@ Cycle* Cycle::New2(uType* __type, ::g::Uno::UX::Property1* Target1)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.7.4\Cycle.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.8.1\Cycle.uno
 // -----------------------------------------------------------------------------------
 
-// internal sealed class CycleState<T> :222
+// public enum CycleRestore :20
+uEnumType* CycleRestore_typeof()
+{
+    static uSStrong<uEnumType*> type;
+    if (type != NULL) return type;
+
+    type = uEnumType::New("Fuse.Animations.CycleRestore", ::g::Uno::Int_typeof(), 2);
+    type->SetLiterals(
+        "Backward", 0LL,
+        "Forward", 1LL);
+    return type;
+}
+
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.8.1\Cycle.uno
+// -----------------------------------------------------------------------------------
+
+// internal sealed class CycleState<T> :241
 // {
 static void CycleState_build(uType* type)
 {
-    ::STRINGS[8] = uString::Const("Invalid seek");
-    ::STRINGS[9] = uString::Const("C:/Users/borde_000/AppData/Local/Fusetools/Packages/Fuse.Animations/1.7.4/Cycle.uno");
+    ::STRINGS[8] = uString::Const("invalid seek");
+    ::STRINGS[9] = uString::Const("C:\\Users\\borde_000\\AppData\\Local\\Fusetools\\Packages\\Fuse.Animations\\1.8.1\\Cycle.uno");
+    ::STRINGS[10] = uString::Const("Seek");
     ::TYPES[12] = ::g::Fuse::Animations::IMixer_typeof();
     ::TYPES[5] = ::g::Fuse::Internal::BlenderMap_typeof();
     ::TYPES[13] = ::g::Fuse::Animations::IMixerHandle_typeof();
-    type->SetDependencies(
-        ::g::Uno::Diagnostics::Debug_typeof());
     type->SetPrecalc(
         ::g::Fuse::Internal::BlenderMap_typeof()->MakeMethod(0/*Get<T>*/, type->T(0), NULL),
         ::g::Fuse::Animations::IMixerHandle_typeof()->MakeType(type->T(0), NULL),
@@ -4005,7 +4048,6 @@ static void CycleState_build(uType* type)
     options.BaseDefinition = ::g::Fuse::Animations::OpenAnimatorState_typeof();
     options.FieldCount = 9;
     options.GenericCount = 1;
-    options.DependencyCount = 1;
     options.PrecalcCount = 3;
     options.ObjectSize = sizeof(CycleState);
     options.TypeSize = sizeof(::g::Fuse::Animations::OpenAnimatorState_type);
@@ -4016,13 +4058,13 @@ static void CycleState_build(uType* type)
     return type;
 }
 
-// public CycleState(Fuse.Animations.Cycle<T> animator, Fuse.Animations.CreateStateParams p) :228
+// public CycleState(Fuse.Animations.Cycle<T> animator, Fuse.Animations.CreateStateParams p) :247
 void CycleState__ctor_2_fn(CycleState* __this, ::g::Fuse::Animations::Cycle* animator, ::g::Fuse::Animations::CreateStateParams* p)
 {
     __this->ctor_2(animator, p);
 }
 
-// public override sealed void Disable() :236
+// public override sealed void Disable() :255
 void CycleState__Disable_fn(CycleState* __this)
 {
     uType* __types[] = {
@@ -4038,13 +4080,13 @@ void CycleState__Disable_fn(CycleState* __this)
     __this->progress = 0.0;
 }
 
-// public CycleState New(Fuse.Animations.Cycle<T> animator, Fuse.Animations.CreateStateParams p) :228
+// public CycleState New(Fuse.Animations.Cycle<T> animator, Fuse.Animations.CreateStateParams p) :247
 void CycleState__New1_fn(uType* __type, ::g::Fuse::Animations::Cycle* animator, ::g::Fuse::Animations::CreateStateParams* p, CycleState** __retval)
 {
     *__retval = CycleState::New1(__type, animator, p);
 }
 
-// protected override sealed bool Seek(bool on, float interval, float strength, Fuse.Animations.SeekDirection dir) :254
+// protected override sealed bool Seek(bool on, float interval, float strength, Fuse.Animations.SeekDirection dir) :273
 void CycleState__Seek_fn(CycleState* __this, bool* on, float* interval, float* strength, int32_t* dir, bool* __retval)
 {
     uType* __types[] = {
@@ -4057,18 +4099,24 @@ void CycleState__Seek_fn(CycleState* __this, bool* on, float* interval, float* s
     uT ret5(__this->__type->T(0), U_ALLOCA(__this->__type->T(0)->ValueSize));
     uT value(__this->__type->T(0), U_ALLOCA(__this->__type->T(0)->ValueSize));
     float interval_ = *interval;
+    int32_t dir_ = *dir;
     bool on_ = *on;
     float strength_ = *strength;
 
     if (__this->mixHandle == NULL)
     {
-        ::g::Uno::Diagnostics::Debug::Log3(::STRINGS[8/*"Invalid seek"*/], 0, ::STRINGS[9/*"C:/Users/bo...*/], 258);
+        ::g::Fuse::Diagnostics::InternalError(::STRINGS[8/*"invalid seek"*/], __this, ::STRINGS[9/*"C:\\Users\\...*/], 277, ::STRINGS[10/*"Seek"*/]);
         return *__retval = true, void();
     }
 
     bool done = false;
     double oldProgress = __this->progress;
-    __this->progress = (__this->progress + ((double)interval_ * ((interval_ < 0.0f) ? uPtr(__this->Animator1)->FrequencyBack() : uPtr(__this->Animator1)->Frequency())));
+    double freq = (interval_ < 0.0f) ? uPtr(__this->Animator1)->FrequencyBack() : uPtr(__this->Animator1)->Frequency();
+
+    if ((dir_ == 1) && (uPtr(__this->Animator1)->Restore() == 1))
+        interval_ = ::g::Uno::Math::Abs1(interval_);
+
+    __this->progress = (__this->progress + ((double)interval_ * freq));
 
     if (on_)
         __this->progress = ::g::Uno::Math::Mod(__this->progress, 1.0);
@@ -4088,7 +4136,7 @@ void CycleState__Seek_fn(CycleState* __this, bool* on, float* interval, float* s
     return *__retval = done, void();
 }
 
-// public CycleState(Fuse.Animations.Cycle<T> animator, Fuse.Animations.CreateStateParams p) [instance] :228
+// public CycleState(Fuse.Animations.Cycle<T> animator, Fuse.Animations.CreateStateParams p) [instance] :247
 void CycleState::ctor_2(::g::Fuse::Animations::Cycle* animator, ::g::Fuse::Animations::CreateStateParams* p)
 {
     uType* __types[] = {
@@ -4102,7 +4150,7 @@ void CycleState::ctor_2(::g::Fuse::Animations::Cycle* animator, ::g::Fuse::Anima
     blender = ((::g::Fuse::Internal::Blender*)::g::Fuse::Internal::BlenderMap::Get(__types[1]));
 }
 
-// public CycleState New(Fuse.Animations.Cycle<T> animator, Fuse.Animations.CreateStateParams p) [static] :228
+// public CycleState New(Fuse.Animations.Cycle<T> animator, Fuse.Animations.CreateStateParams p) [static] :247
 CycleState* CycleState::New1(uType* __type, ::g::Fuse::Animations::Cycle* animator, ::g::Fuse::Animations::CreateStateParams* p)
 {
     CycleState* obj1 = (CycleState*)uNew(__type);
@@ -4111,7 +4159,7 @@ CycleState* CycleState::New1(uType* __type, ::g::Fuse::Animations::Cycle* animat
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.7.4\Cycle.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.8.1\Cycle.uno
 // -----------------------------------------------------------------------------------
 
 // public enum CycleWaveform :7
@@ -4129,7 +4177,7 @@ uEnumType* CycleWaveform_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Motion\1.7.4\DestinationBehavior.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Motion\1.8.1\DestinationBehavior.uno
 // ---------------------------------------------------------------------------------------------
 
 // internal sealed class DestinationBehavior<T> :13
@@ -4296,7 +4344,7 @@ DestinationBehavior* DestinationBehavior::New1(uType* __type)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.7.4\DiscreteKeyframeTrack.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.8.1\DiscreteKeyframeTrack.uno
 // ---------------------------------------------------------------------------------------------------
 
 // internal sealed class DiscreteKeyframeTrack :7
@@ -4483,7 +4531,7 @@ DiscreteKeyframeTrack* DiscreteKeyframeTrack::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.7.4\DiscreteMixer.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.8.1\DiscreteMixer.uno
 // -------------------------------------------------------------------------------------------
 
 // internal sealed class DiscreteMasterProperty<T> :18
@@ -4569,7 +4617,7 @@ DiscreteMasterProperty* DiscreteMasterProperty::New1(uType* __type, ::g::Uno::UX
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.7.4\DiscreteMixer.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.8.1\DiscreteMixer.uno
 // -------------------------------------------------------------------------------------------
 
 // internal sealed class DiscreteMasterTransform :41
@@ -4651,7 +4699,7 @@ DiscreteMasterTransform* DiscreteMasterTransform::New1(::g::Fuse::Visual* node, 
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.7.4\DiscreteMixer.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.8.1\DiscreteMixer.uno
 // -------------------------------------------------------------------------------------------
 
 // internal sealed class DiscreteMixer :8
@@ -4732,7 +4780,7 @@ DiscreteMixer* DiscreteMixer::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.7.4\DiscreteSingleTrack.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.8.1\DiscreteSingleTrack.uno
 // -------------------------------------------------------------------------------------------------
 
 // internal sealed class DiscreteSingleTrack :5
@@ -4848,7 +4896,7 @@ DiscreteSingleTrack* DiscreteSingleTrack::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.7.4\Change.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.8.1\Change.uno
 // ------------------------------------------------------------------------------------
 
 // internal sealed class DiscreteTrackChangeState<T> :177
@@ -4856,7 +4904,7 @@ DiscreteSingleTrack* DiscreteSingleTrack::New1()
 static void DiscreteTrackChangeState_build(uType* type)
 {
     ::STRINGS[5] = uString::Const("Invalid Seek");
-    ::STRINGS[6] = uString::Const("C:/Users/borde_000/AppData/Local/Fusetools/Packages/Fuse.Animations/1.7.4/Change.uno");
+    ::STRINGS[6] = uString::Const("C:/Users/borde_000/AppData/Local/Fusetools/Packages/Fuse.Animations/1.8.1/Change.uno");
     ::TYPES[12] = ::g::Fuse::Animations::IMixer_typeof();
     ::TYPES[13] = ::g::Fuse::Animations::IMixerHandle_typeof();
     type->SetDependencies(
@@ -4956,7 +5004,7 @@ DiscreteTrackChangeState* DiscreteTrackChangeState::New1(uType* __type, ::g::Fus
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.7.4\TrackAnimator.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.8.1\TrackAnimator.uno
 // -------------------------------------------------------------------------------------------
 
 // internal abstract interface DiscreteTrackProvider :24
@@ -4971,7 +5019,7 @@ uInterfaceType* DiscreteTrackProvider_typeof()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.7.4\Easing.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.8.1\Easing.uno
 // --------------------------------------------------------------------------------
 
 // public abstract class Easing :13
@@ -5141,7 +5189,7 @@ void Easing::ctor_()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.7.4\Easing.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.8.1\Easing.uno
 // --------------------------------------------------------------------------------
 
 // public delegate float EasingFunction(float f) :495
@@ -5156,7 +5204,7 @@ uDelegateType* EasingFunction_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.7.4\Easing.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.8.1\Easing.uno
 // --------------------------------------------------------------------------------
 
 // public static class EasingFunctions :503
@@ -5818,7 +5866,7 @@ float EasingFunctions::SinusoidalOut(float k)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.7.4\EasingTrack.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.8.1\EasingTrack.uno
 // -----------------------------------------------------------------------------------------
 
 // internal sealed class EasingTrack :5
@@ -5936,7 +5984,7 @@ EasingTrack* EasingTrack::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.7.4\Easing.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.8.1\Easing.uno
 // --------------------------------------------------------------------------------
 
 // internal sealed class Easing.ElasticInImpl :275
@@ -6003,7 +6051,7 @@ Easing__ElasticInImpl* Easing__ElasticInImpl::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.7.4\Easing.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.8.1\Easing.uno
 // --------------------------------------------------------------------------------
 
 // internal sealed class Easing.ElasticInOutImpl :303
@@ -6074,7 +6122,7 @@ Easing__ElasticInOutImpl* Easing__ElasticInOutImpl::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.7.4\Easing.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.8.1\Easing.uno
 // --------------------------------------------------------------------------------
 
 // internal sealed class Easing.ElasticOutImpl :289
@@ -6140,7 +6188,7 @@ Easing__ElasticOutImpl* Easing__ElasticOutImpl::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.7.4\Easing.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.8.1\Easing.uno
 // --------------------------------------------------------------------------------
 
 // internal sealed class Easing.ExponentialInImpl :212
@@ -6199,7 +6247,7 @@ Easing__ExponentialInImpl* Easing__ExponentialInImpl::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.7.4\Easing.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.8.1\Easing.uno
 // --------------------------------------------------------------------------------
 
 // internal sealed class Easing.ExponentialInOutImpl :228
@@ -6270,7 +6318,7 @@ Easing__ExponentialInOutImpl* Easing__ExponentialInOutImpl::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.7.4\Easing.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.8.1\Easing.uno
 // --------------------------------------------------------------------------------
 
 // internal sealed class Easing.ExponentialOutImpl :220
@@ -6329,7 +6377,7 @@ Easing__ExponentialOutImpl* Easing__ExponentialOutImpl::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.7.4\Mixer.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.8.1\Mixer.uno
 // -----------------------------------------------------------------------------------
 
 // internal sealed class FastMatrixTransform :292
@@ -6447,7 +6495,7 @@ FastMatrixTransform* FastMatrixTransform::New2()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.7.4\Mixer.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.8.1\Mixer.uno
 // -----------------------------------------------------------------------------------
 
 // protected struct MasterBase<T>.GFWResult :178
@@ -6476,7 +6524,7 @@ uStructType* MasterBase__GFWResult_typeof()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.7.4\TriggerAnimation.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.8.1\TriggerAnimation.uno
 // ----------------------------------------------------------------------------------------------
 
 // internal abstract interface IBasePlayerFeedback :219
@@ -6491,7 +6539,7 @@ uInterfaceType* IBasePlayerFeedback_typeof()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.7.4\Mixer.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.8.1\Mixer.uno
 // -----------------------------------------------------------------------------------
 
 // public abstract interface IMixer :22
@@ -6510,7 +6558,7 @@ uInterfaceType* IMixer_typeof()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.7.4\Mixer.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.8.1\Mixer.uno
 // -----------------------------------------------------------------------------------
 
 // public abstract interface IMixerHandle<T> :28
@@ -6529,7 +6577,7 @@ uInterfaceType* IMixerHandle_typeof()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.7.4\Mixer.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.8.1\Mixer.uno
 // -----------------------------------------------------------------------------------
 
 // internal abstract interface IMixerMaster :43
@@ -6544,7 +6592,7 @@ uInterfaceType* IMixerMaster_typeof()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.7.4\TriggerAnimation.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.8.1\TriggerAnimation.uno
 // ----------------------------------------------------------------------------------------------
 
 // internal abstract interface IPlayerFeedback :225
@@ -6559,7 +6607,7 @@ uInterfaceType* IPlayerFeedback_typeof()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.7.4\Resize.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.8.1\Resize.uno
 // ------------------------------------------------------------------------------------
 
 // public abstract interface IResize :5
@@ -6576,7 +6624,7 @@ uInterfaceType* IResize_typeof()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.7.4\Resize.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.8.1\Resize.uno
 // ------------------------------------------------------------------------------------
 
 // public abstract interface IResizeMode :10
@@ -6593,7 +6641,7 @@ uInterfaceType* IResizeMode_typeof()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.7.4\TrackAnimator.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.8.1\TrackAnimator.uno
 // -------------------------------------------------------------------------------------------
 
 // public abstract interface ITrackProvider :7
@@ -6608,7 +6656,7 @@ uInterfaceType* ITrackProvider_typeof()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.7.4\TriggerAnimation.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.8.1\TriggerAnimation.uno
 // ----------------------------------------------------------------------------------------------
 
 // internal abstract interface IUnwrappedPlayerFeedback :230
@@ -6623,16 +6671,16 @@ uInterfaceType* IUnwrappedPlayerFeedback_typeof()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.7.4\Keyframe.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.8.1\Keyframe.uno
 // --------------------------------------------------------------------------------------
 
-// public sealed class Keyframe :37
+// public sealed class Keyframe :41
 // {
 static void Keyframe_build(uType* type)
 {
     ::TYPES[51] = ::g::Uno::Collections::ICollection_typeof()->MakeType(type, NULL);
     ::TYPES[52] = ::g::Uno::Collections::IList_typeof()->MakeType(type, NULL);
-    type->SetFields(0,
+    type->SetFields(2,
         ::g::Uno::Float4_typeof(), offsetof(Keyframe, _value), 0,
         uObject_typeof(), offsetof(Keyframe, _objectValue), 0,
         ::g::Uno::Double_typeof(), offsetof(Keyframe, _timeDelta), 0,
@@ -6643,7 +6691,7 @@ static void Keyframe_build(uType* type)
         ::g::Uno::Float4_typeof(), offsetof(Keyframe, _tangentOut), 0,
         ::g::Uno::Bool_typeof(), offsetof(Keyframe, _hasTangentIn), 0,
         ::g::Uno::Bool_typeof(), offsetof(Keyframe, _hasTangentOut), 0);
-    type->Reflection.SetFunctions(31,
+    type->Reflection.SetFunctions(33,
         new uFunction("get_DegreesX", NULL, (void*)Keyframe__get_DegreesX_fn, 0, false, ::g::Uno::Float_typeof(), 0),
         new uFunction("set_DegreesX", NULL, (void*)Keyframe__set_DegreesX_fn, 0, false, uVoid_typeof(), 1, ::g::Uno::Float_typeof()),
         new uFunction("get_DegreesXY", NULL, (void*)Keyframe__get_DegreesXY_fn, 0, false, ::g::Uno::Float2_typeof(), 0),
@@ -6652,9 +6700,11 @@ static void Keyframe_build(uType* type)
         new uFunction("set_DegreesY", NULL, (void*)Keyframe__set_DegreesY_fn, 0, false, uVoid_typeof(), 1, ::g::Uno::Float_typeof()),
         new uFunction("get_DegreesZ", NULL, (void*)Keyframe__get_DegreesZ_fn, 0, false, ::g::Uno::Float_typeof(), 0),
         new uFunction("set_DegreesZ", NULL, (void*)Keyframe__set_DegreesZ_fn, 0, false, uVoid_typeof(), 1, ::g::Uno::Float_typeof()),
-        new uFunction(".ctor", NULL, (void*)Keyframe__New1_fn, 0, true, type, 0),
+        new uFunction(".ctor", NULL, (void*)Keyframe__New2_fn, 0, true, type, 0),
         new uFunction("get_ObjectValue", NULL, (void*)Keyframe__get_ObjectValue_fn, 0, false, uObject_typeof(), 0),
         new uFunction("set_ObjectValue", NULL, (void*)Keyframe__set_ObjectValue_fn, 0, false, uVoid_typeof(), 1, uObject_typeof()),
+        new uFunction("get_Tangent", NULL, (void*)Keyframe__get_Tangent_fn, 0, false, ::g::Uno::Float4_typeof(), 0),
+        new uFunction("set_Tangent", NULL, (void*)Keyframe__set_Tangent_fn, 0, false, uVoid_typeof(), 1, ::g::Uno::Float4_typeof()),
         new uFunction("get_TangentIn", NULL, (void*)Keyframe__get_TangentIn_fn, 0, false, ::g::Uno::Float4_typeof(), 0),
         new uFunction("set_TangentIn", NULL, (void*)Keyframe__set_TangentIn_fn, 0, false, uVoid_typeof(), 1, ::g::Uno::Float4_typeof()),
         new uFunction("get_TangentOut", NULL, (void*)Keyframe__get_TangentOut_fn, 0, false, ::g::Uno::Float4_typeof(), 0),
@@ -6683,355 +6733,382 @@ uType* Keyframe_typeof()
     if (type != NULL) return type;
 
     uTypeOptions options;
-    options.FieldCount = 10;
+    options.BaseDefinition = ::g::Uno::UX::PropertyObject_typeof();
+    options.FieldCount = 12;
     options.ObjectSize = sizeof(Keyframe);
     options.TypeSize = sizeof(uType);
     type = uClassType::New("Fuse.Animations.Keyframe", options);
     type->fp_build_ = Keyframe_build;
-    type->fp_ctor_ = (void*)Keyframe__New1_fn;
+    type->fp_ctor_ = (void*)Keyframe__New2_fn;
     return type;
 }
 
-// public generated Keyframe() :37
-void Keyframe__ctor__fn(Keyframe* __this)
+// public generated Keyframe() :41
+void Keyframe__ctor_1_fn(Keyframe* __this)
 {
-    __this->ctor_();
+    __this->ctor_1();
 }
 
-// internal static double CompleteFrames(Uno.Collections.IList<Fuse.Animations.Keyframe> frames, float tension, float bias, float continuity) :168
+// internal static double CompleteFrames(Uno.Collections.IList<Fuse.Animations.Keyframe> frames, float tension, float bias, float continuity) :183
 void Keyframe__CompleteFrames_fn(uObject* frames, float* tension, float* bias, float* continuity, double* __retval)
 {
     *__retval = Keyframe::CompleteFrames(frames, *tension, *bias, *continuity);
 }
 
-// public float get_DegreesX() :85
+// public float get_DegreesX() :89
 void Keyframe__get_DegreesX_fn(Keyframe* __this, float* __retval)
 {
     *__retval = __this->DegreesX();
 }
 
-// public void set_DegreesX(float value) :86
+// public void set_DegreesX(float value) :90
 void Keyframe__set_DegreesX_fn(Keyframe* __this, float* value)
 {
     __this->DegreesX(*value);
 }
 
-// public float2 get_DegreesXY() :103
+// public float2 get_DegreesXY() :107
 void Keyframe__get_DegreesXY_fn(Keyframe* __this, ::g::Uno::Float2* __retval)
 {
     *__retval = __this->DegreesXY();
 }
 
-// public void set_DegreesXY(float2 value) :104
+// public void set_DegreesXY(float2 value) :108
 void Keyframe__set_DegreesXY_fn(Keyframe* __this, ::g::Uno::Float2* value)
 {
     __this->DegreesXY(*value);
 }
 
-// public float get_DegreesY() :91
+// public float get_DegreesY() :95
 void Keyframe__get_DegreesY_fn(Keyframe* __this, float* __retval)
 {
     *__retval = __this->DegreesY();
 }
 
-// public void set_DegreesY(float value) :92
+// public void set_DegreesY(float value) :96
 void Keyframe__set_DegreesY_fn(Keyframe* __this, float* value)
 {
     __this->DegreesY(*value);
 }
 
-// public float get_DegreesZ() :97
+// public float get_DegreesZ() :101
 void Keyframe__get_DegreesZ_fn(Keyframe* __this, float* __retval)
 {
     *__retval = __this->DegreesZ();
 }
 
-// public void set_DegreesZ(float value) :98
+// public void set_DegreesZ(float value) :102
 void Keyframe__set_DegreesZ_fn(Keyframe* __this, float* value)
 {
     __this->DegreesZ(*value);
 }
 
-// public generated Keyframe New() :37
-void Keyframe__New1_fn(Keyframe** __retval)
+// public generated Keyframe New() :41
+void Keyframe__New2_fn(Keyframe** __retval)
 {
-    *__retval = Keyframe::New1();
+    *__retval = Keyframe::New2();
 }
 
-// public object get_ObjectValue() :49
+// public object get_ObjectValue() :53
 void Keyframe__get_ObjectValue_fn(Keyframe* __this, uObject** __retval)
 {
     *__retval = __this->ObjectValue();
 }
 
-// public void set_ObjectValue(object value) :50
+// public void set_ObjectValue(object value) :54
 void Keyframe__set_ObjectValue_fn(Keyframe* __this, uObject* value)
 {
     __this->ObjectValue(value);
 }
 
-// public float4 get_TangentIn() :136
+// public float4 get_Tangent() :175
+void Keyframe__get_Tangent_fn(Keyframe* __this, ::g::Uno::Float4* __retval)
+{
+    *__retval = __this->Tangent();
+}
+
+// public void set_Tangent(float4 value) :176
+void Keyframe__set_Tangent_fn(Keyframe* __this, ::g::Uno::Float4* value)
+{
+    __this->Tangent(*value);
+}
+
+// public float4 get_TangentIn() :149
 void Keyframe__get_TangentIn_fn(Keyframe* __this, ::g::Uno::Float4* __retval)
 {
     *__retval = __this->TangentIn();
 }
 
-// public void set_TangentIn(float4 value) :137
+// public void set_TangentIn(float4 value) :150
 void Keyframe__set_TangentIn_fn(Keyframe* __this, ::g::Uno::Float4* value)
 {
     __this->TangentIn(*value);
 }
 
-// public float4 get_TangentOut() :146
+// public float4 get_TangentOut() :162
 void Keyframe__get_TangentOut_fn(Keyframe* __this, ::g::Uno::Float4* __retval)
 {
     *__retval = __this->TangentOut();
 }
 
-// public void set_TangentOut(float4 value) :147
+// public void set_TangentOut(float4 value) :163
 void Keyframe__set_TangentOut_fn(Keyframe* __this, ::g::Uno::Float4* value)
 {
     __this->TangentOut(*value);
 }
 
-// public double get_Time() :124
+// public double get_Time() :134
 void Keyframe__get_Time_fn(Keyframe* __this, double* __retval)
 {
     *__retval = __this->Time();
 }
 
-// public void set_Time(double value) :125
+// public void set_Time(double value) :135
 void Keyframe__set_Time_fn(Keyframe* __this, double* value)
 {
     __this->Time(*value);
 }
 
-// public double get_TimeDelta() :112
+// public double get_TimeDelta() :119
 void Keyframe__get_TimeDelta_fn(Keyframe* __this, double* __retval)
 {
     *__retval = __this->TimeDelta();
 }
 
-// public void set_TimeDelta(double value) :113
+// public void set_TimeDelta(double value) :120
 void Keyframe__set_TimeDelta_fn(Keyframe* __this, double* value)
 {
     __this->TimeDelta(*value);
 }
 
-// public float4 get_Value() :42
+// public float4 get_Value() :46
 void Keyframe__get_Value_fn(Keyframe* __this, ::g::Uno::Float4* __retval)
 {
     *__retval = __this->Value();
 }
 
-// public void set_Value(float4 value) :43
+// public void set_Value(float4 value) :47
 void Keyframe__set_Value_fn(Keyframe* __this, ::g::Uno::Float4* value)
 {
     __this->Value(*value);
 }
 
-// public float get_X() :55
+// public float get_X() :59
 void Keyframe__get_X_fn(Keyframe* __this, float* __retval)
 {
     *__retval = __this->X();
 }
 
-// public void set_X(float value) :56
+// public void set_X(float value) :60
 void Keyframe__set_X_fn(Keyframe* __this, float* value)
 {
     __this->X(*value);
 }
 
-// public float2 get_XY() :73
+// public float2 get_XY() :77
 void Keyframe__get_XY_fn(Keyframe* __this, ::g::Uno::Float2* __retval)
 {
     *__retval = __this->XY();
 }
 
-// public void set_XY(float2 value) :74
+// public void set_XY(float2 value) :78
 void Keyframe__set_XY_fn(Keyframe* __this, ::g::Uno::Float2* value)
 {
     __this->XY(*value);
 }
 
-// public float3 get_XYZ() :79
+// public float3 get_XYZ() :83
 void Keyframe__get_XYZ_fn(Keyframe* __this, ::g::Uno::Float3* __retval)
 {
     *__retval = __this->XYZ();
 }
 
-// public void set_XYZ(float3 value) :80
+// public void set_XYZ(float3 value) :84
 void Keyframe__set_XYZ_fn(Keyframe* __this, ::g::Uno::Float3* value)
 {
     __this->XYZ(*value);
 }
 
-// public float get_Y() :61
+// public float get_Y() :65
 void Keyframe__get_Y_fn(Keyframe* __this, float* __retval)
 {
     *__retval = __this->Y();
 }
 
-// public void set_Y(float value) :62
+// public void set_Y(float value) :66
 void Keyframe__set_Y_fn(Keyframe* __this, float* value)
 {
     __this->Y(*value);
 }
 
-// public float get_Z() :67
+// public float get_Z() :71
 void Keyframe__get_Z_fn(Keyframe* __this, float* __retval)
 {
     *__retval = __this->Z();
 }
 
-// public void set_Z(float value) :68
+// public void set_Z(float value) :72
 void Keyframe__set_Z_fn(Keyframe* __this, float* value)
 {
     __this->Z(*value);
 }
 
-// public generated Keyframe() [instance] :37
-void Keyframe::ctor_()
+// public generated Keyframe() [instance] :41
+void Keyframe::ctor_1()
 {
+    ctor_();
 }
 
-// public float get_DegreesX() [instance] :85
+// public float get_DegreesX() [instance] :89
 float Keyframe::DegreesX()
 {
     return ::g::Uno::Math::RadiansToDegrees1(_value.X);
 }
 
-// public void set_DegreesX(float value) [instance] :86
+// public void set_DegreesX(float value) [instance] :90
 void Keyframe::DegreesX(float value)
 {
     _value.X = ::g::Uno::Math::DegreesToRadians1(value);
 }
 
-// public float2 get_DegreesXY() [instance] :103
+// public float2 get_DegreesXY() [instance] :107
 ::g::Uno::Float2 Keyframe::DegreesXY()
 {
     return ::g::Uno::Float2__New2(::g::Uno::Math::RadiansToDegrees1(_value.X), ::g::Uno::Math::RadiansToDegrees1(_value.Y));
 }
 
-// public void set_DegreesXY(float2 value) [instance] :104
+// public void set_DegreesXY(float2 value) [instance] :108
 void Keyframe::DegreesXY(::g::Uno::Float2 value)
 {
     _value = ::g::Uno::Float4__New2(::g::Uno::Math::DegreesToRadians1(value.X), ::g::Uno::Math::DegreesToRadians1(value.Y), _value.Z, _value.W);
 }
 
-// public float get_DegreesY() [instance] :91
+// public float get_DegreesY() [instance] :95
 float Keyframe::DegreesY()
 {
     return ::g::Uno::Math::RadiansToDegrees1(_value.Y);
 }
 
-// public void set_DegreesY(float value) [instance] :92
+// public void set_DegreesY(float value) [instance] :96
 void Keyframe::DegreesY(float value)
 {
     _value.Y = ::g::Uno::Math::DegreesToRadians1(value);
 }
 
-// public float get_DegreesZ() [instance] :97
+// public float get_DegreesZ() [instance] :101
 float Keyframe::DegreesZ()
 {
     return ::g::Uno::Math::RadiansToDegrees1(_value.Z);
 }
 
-// public void set_DegreesZ(float value) [instance] :98
+// public void set_DegreesZ(float value) [instance] :102
 void Keyframe::DegreesZ(float value)
 {
     _value.Z = ::g::Uno::Math::DegreesToRadians1(value);
 }
 
-// public object get_ObjectValue() [instance] :49
+// public object get_ObjectValue() [instance] :53
 uObject* Keyframe::ObjectValue()
 {
     return _objectValue;
 }
 
-// public void set_ObjectValue(object value) [instance] :50
+// public void set_ObjectValue(object value) [instance] :54
 void Keyframe::ObjectValue(uObject* value)
 {
     _objectValue = value;
 }
 
-// public float4 get_TangentIn() [instance] :136
+// public float4 get_Tangent() [instance] :175
+::g::Uno::Float4 Keyframe::Tangent()
+{
+    return _tangentOut;
+}
+
+// public void set_Tangent(float4 value) [instance] :176
+void Keyframe::Tangent(::g::Uno::Float4 value)
+{
+    TangentIn(value);
+    TangentOut(value);
+}
+
+// public float4 get_TangentIn() [instance] :149
 ::g::Uno::Float4 Keyframe::TangentIn()
 {
     return _tangentIn;
 }
 
-// public void set_TangentIn(float4 value) [instance] :137
+// public void set_TangentIn(float4 value) [instance] :150
 void Keyframe::TangentIn(::g::Uno::Float4 value)
 {
     _tangentIn = value;
     _hasTangentIn = true;
 }
 
-// public float4 get_TangentOut() [instance] :146
+// public float4 get_TangentOut() [instance] :162
 ::g::Uno::Float4 Keyframe::TangentOut()
 {
     return _tangentOut;
 }
 
-// public void set_TangentOut(float4 value) [instance] :147
+// public void set_TangentOut(float4 value) [instance] :163
 void Keyframe::TangentOut(::g::Uno::Float4 value)
 {
     _tangentOut = value;
     _hasTangentOut = true;
 }
 
-// public double get_Time() [instance] :124
+// public double get_Time() [instance] :134
 double Keyframe::Time()
 {
     return _time;
 }
 
-// public void set_Time(double value) [instance] :125
+// public void set_Time(double value) [instance] :135
 void Keyframe::Time(double value)
 {
     _time = value;
     _hasTime = true;
 }
 
-// public double get_TimeDelta() [instance] :112
+// public double get_TimeDelta() [instance] :119
 double Keyframe::TimeDelta()
 {
     return _timeDelta;
 }
 
-// public void set_TimeDelta(double value) [instance] :113
+// public void set_TimeDelta(double value) [instance] :120
 void Keyframe::TimeDelta(double value)
 {
     _timeDelta = value;
     _hasTimeDelta = true;
 }
 
-// public float4 get_Value() [instance] :42
+// public float4 get_Value() [instance] :46
 ::g::Uno::Float4 Keyframe::Value()
 {
     return _value;
 }
 
-// public void set_Value(float4 value) [instance] :43
+// public void set_Value(float4 value) [instance] :47
 void Keyframe::Value(::g::Uno::Float4 value)
 {
     _value = value;
 }
 
-// public float get_X() [instance] :55
+// public float get_X() [instance] :59
 float Keyframe::X()
 {
     return _value.X;
 }
 
-// public void set_X(float value) [instance] :56
+// public void set_X(float value) [instance] :60
 void Keyframe::X(float value)
 {
     _value.X = value;
 }
 
-// public float2 get_XY() [instance] :73
+// public float2 get_XY() [instance] :77
 ::g::Uno::Float2 Keyframe::XY()
 {
     ::g::Uno::Float4 ind1;
@@ -7039,13 +7116,13 @@ void Keyframe::X(float value)
     return ::g::Uno::Float2__New2(ind1.X, ind1.Y);
 }
 
-// public void set_XY(float2 value) [instance] :74
+// public void set_XY(float2 value) [instance] :78
 void Keyframe::XY(::g::Uno::Float2 value)
 {
     _value = ::g::Uno::Float4__New6(value, _value.Z, _value.W);
 }
 
-// public float3 get_XYZ() [instance] :79
+// public float3 get_XYZ() [instance] :83
 ::g::Uno::Float3 Keyframe::XYZ()
 {
     ::g::Uno::Float4 ind2;
@@ -7053,37 +7130,37 @@ void Keyframe::XY(::g::Uno::Float2 value)
     return ::g::Uno::Float3__New2(ind2.X, ind2.Y, ind2.Z);
 }
 
-// public void set_XYZ(float3 value) [instance] :80
+// public void set_XYZ(float3 value) [instance] :84
 void Keyframe::XYZ(::g::Uno::Float3 value)
 {
     _value = ::g::Uno::Float4__New8(value, _value.W);
 }
 
-// public float get_Y() [instance] :61
+// public float get_Y() [instance] :65
 float Keyframe::Y()
 {
     return _value.Y;
 }
 
-// public void set_Y(float value) [instance] :62
+// public void set_Y(float value) [instance] :66
 void Keyframe::Y(float value)
 {
     _value.Y = value;
 }
 
-// public float get_Z() [instance] :67
+// public float get_Z() [instance] :71
 float Keyframe::Z()
 {
     return _value.Z;
 }
 
-// public void set_Z(float value) [instance] :68
+// public void set_Z(float value) [instance] :72
 void Keyframe::Z(float value)
 {
     _value.Z = value;
 }
 
-// internal static double CompleteFrames(Uno.Collections.IList<Fuse.Animations.Keyframe> frames, float tension, float bias, float continuity) [static] :168
+// internal static double CompleteFrames(Uno.Collections.IList<Fuse.Animations.Keyframe> frames, float tension, float bias, float continuity) [static] :183
 double Keyframe::CompleteFrames(uObject* frames, float tension, float bias, float continuity)
 {
     uStackFrame __("Fuse.Animations.Keyframe", "CompleteFrames(Uno.Collections.IList<Fuse.Animations.Keyframe>,float,float,float)");
@@ -7129,16 +7206,16 @@ double Keyframe::CompleteFrames(uObject* frames, float tension, float bias, floa
     return time;
 }
 
-// public generated Keyframe New() [static] :37
-Keyframe* Keyframe::New1()
+// public generated Keyframe New() [static] :41
+Keyframe* Keyframe::New2()
 {
     Keyframe* obj3 = (Keyframe*)uNew(Keyframe_typeof());
-    obj3->ctor_();
+    obj3->ctor_1();
     return obj3;
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.7.4\SplineTrack.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.8.1\SplineTrack.uno
 // -----------------------------------------------------------------------------------------
 
 // public enum KeyframeInterpolation :13
@@ -7156,7 +7233,7 @@ uEnumType* KeyframeInterpolation_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.7.4\TrackAnimator.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.8.1\TrackAnimator.uno
 // -------------------------------------------------------------------------------------------
 
 // internal abstract interface KeyframeTrack :32
@@ -7171,7 +7248,7 @@ uInterfaceType* KeyframeTrack_typeof()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.7.4\Easing.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.8.1\Easing.uno
 // --------------------------------------------------------------------------------
 
 // internal sealed class Easing.LinearImpl :60
@@ -7230,7 +7307,7 @@ Easing__LinearImpl* Easing__LinearImpl::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.7.4\Mixer.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.8.1\Mixer.uno
 // -----------------------------------------------------------------------------------
 
 // internal abstract class MasterBase<T> :95
@@ -7394,7 +7471,7 @@ void MasterBase::Register(::g::Fuse::Animations::MixerHandle* handle)
 
     if (_inactive)
     {
-        ::g::Fuse::Diagnostics::InternalError(uString::Const("Attempt to register in inactive Master"), this, ::STRINGS[13/*"C:\\Users\\...*/], 118, uString::Const("Register"));
+        ::g::Fuse::Diagnostics::InternalError(uString::Const("Attempt to register in inactive Master"), this, ::STRINGS[14/*"C:\\Users\\...*/], 118, uString::Const("Register"));
         return;
     }
 
@@ -7428,18 +7505,18 @@ void MasterBase::Unregister(::g::Fuse::Animations::MixerHandle* handle)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.7.4\Mixer.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.8.1\Mixer.uno
 // -----------------------------------------------------------------------------------
 
 // internal abstract class MasterProperty<T> :211
 // {
 static void MasterProperty_build(uType* type)
 {
-    ::STRINGS[10] = uString::Const("The property ");
-    ::STRINGS[11] = uString::Const(" of ");
-    ::STRINGS[12] = uString::Const(" cannot be reliably animated because it does not provide an origin-setter. Animating this property may lead to visual glitches or inconsistencies.");
-    ::STRINGS[13] = uString::Const("C:\\Users\\borde_000\\AppData\\Local\\Fusetools\\Packages\\Fuse.Animations\\1.7.4\\Mixer.uno");
-    ::STRINGS[14] = uString::Const("GiveOriginSetterWarning");
+    ::STRINGS[11] = uString::Const("The property ");
+    ::STRINGS[12] = uString::Const(" of ");
+    ::STRINGS[13] = uString::Const(" cannot be reliably animated because it does not provide an origin-setter. Animating this property may lead to visual glitches or inconsistencies.");
+    ::STRINGS[14] = uString::Const("C:\\Users\\borde_000\\AppData\\Local\\Fusetools\\Packages\\Fuse.Animations\\1.8.1\\Mixer.uno");
+    ::STRINGS[15] = uString::Const("GiveOriginSetterWarning");
     type->SetBase(::g::Fuse::Animations::MasterBase_typeof()->MakeType(type->T(0), NULL));
     type->SetInterfaces(
         ::g::Fuse::Animations::IMixerMaster_typeof(), offsetof(MasterProperty_type, interface0),
@@ -7584,12 +7661,12 @@ void MasterProperty::GiveOriginSetterWarning()
     if (!_warningGiven)
     {
         _warningGiven = true;
-        ::g::Fuse::Diagnostics::UserWarning(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition1(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::STRINGS[10/*"The property "*/], ::g::Uno::UX::Selector__op_Implicit1(uPtr(Property)->Name())), ::STRINGS[11/*" of "*/]), uPtr(Property)->Object()), ::STRINGS[12/*" cannot be ...*/]), this, ::STRINGS[13/*"C:\\Users\\...*/], 275, ::STRINGS[14/*"GiveOriginS...*/]);
+        ::g::Fuse::Diagnostics::UserWarning(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition1(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::STRINGS[11/*"The property "*/], ::g::Uno::UX::Selector__op_Implicit1(uPtr(Property)->Name())), ::STRINGS[12/*" of "*/]), uPtr(Property)->Object()), ::STRINGS[13/*" cannot be ...*/]), this, ::STRINGS[14/*"C:\\Users\\...*/], 275, ::STRINGS[15/*"GiveOriginS...*/]);
     }
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.7.4\Mixer.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.8.1\Mixer.uno
 // -----------------------------------------------------------------------------------
 
 // internal abstract interface MasterPropertyGet :207
@@ -7604,7 +7681,7 @@ uInterfaceType* MasterPropertyGet_typeof()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.7.4\Mixer.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.8.1\Mixer.uno
 // -----------------------------------------------------------------------------------
 
 // internal abstract class MasterTransform :329
@@ -7686,7 +7763,7 @@ void MasterTransform::ctor_1(::g::Fuse::Visual* node, ::g::Fuse::Animations::Mix
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.7.4\Mixer.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.8.1\Mixer.uno
 // -----------------------------------------------------------------------------------
 
 // internal sealed class Mixer :35
@@ -7776,7 +7853,7 @@ uObject* Mixer::DefaultDiscrete()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.7.4\Mixer.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.8.1\Mixer.uno
 // -----------------------------------------------------------------------------------
 
 // internal abstract class MixerBase :45
@@ -7911,16 +7988,16 @@ void MixerBase::Unused(uObject* mb)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.7.4\Mixer.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.8.1\Mixer.uno
 // -----------------------------------------------------------------------------------
 
 // internal sealed class MixerHandle<T> :360
 // {
 static void MixerHandle_build(uType* type)
 {
-    ::STRINGS[15] = uString::Const("invalid MixerHandle.Set post-Unregister");
-    ::STRINGS[16] = uString::Const("C:/Users/borde_000/AppData/Local/Fusetools/Packages/Fuse.Animations/1.7.4/Mixer.uno");
-    ::STRINGS[17] = uString::Const("Invalid MixerHandle.RestValue post-Unregister");
+    ::STRINGS[16] = uString::Const("invalid MixerHandle.Set post-Unregister");
+    ::STRINGS[17] = uString::Const("C:/Users/borde_000/AppData/Local/Fusetools/Packages/Fuse.Animations/1.8.1/Mixer.uno");
+    ::STRINGS[18] = uString::Const("Invalid MixerHandle.RestValue post-Unregister");
     type->SetDependencies(
         ::g::Uno::Diagnostics::Debug_typeof());
     type->SetInterfaces(
@@ -8003,7 +8080,7 @@ void MixerHandle__get_RestValue_fn(MixerHandle* __this, uTRef __retval)
     uT ret2(__this->__type->T(0), U_ALLOCA(__this->__type->T(0)->ValueSize));
 
     if (__this->Master == NULL)
-        U_THROW(::g::Uno::Exception::New2(::STRINGS[17/*"Invalid Mix...*/]));
+        U_THROW(::g::Uno::Exception::New2(::STRINGS[18/*"Invalid Mix...*/]));
 
     return __retval.Store((uPtr(__this->Master)->get_RestValue_ex(&ret2), ret2)), void();
 }
@@ -8016,7 +8093,7 @@ void MixerHandle__Set_fn(MixerHandle* __this, void* value, float* strength)
 
     if (__this->Master == NULL)
     {
-        ::g::Uno::Diagnostics::Debug::Log3(::STRINGS[15/*"invalid Mix...*/], 0, ::STRINGS[16/*"C:/Users/bo...*/], 392);
+        ::g::Uno::Diagnostics::Debug::Log3(::STRINGS[16/*"invalid Mix...*/], 0, ::STRINGS[17/*"C:/Users/bo...*/], 392);
         return;
     }
 
@@ -8090,7 +8167,7 @@ MixerHandle* MixerHandle::New1(uType* __type, ::g::Fuse::Animations::MasterBase*
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.7.4\Mixer.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.8.1\Mixer.uno
 // -----------------------------------------------------------------------------------
 
 // public enum MixOp :12
@@ -8107,7 +8184,7 @@ uEnumType* MixOp_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.7.4\TransformAnimator.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.8.1\TransformAnimator.uno
 // -----------------------------------------------------------------------------------------------
 
 // public sealed class Move :214
@@ -8207,7 +8284,7 @@ Move* Move::New2()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.7.4\Nothing.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.8.1\Nothing.uno
 // -------------------------------------------------------------------------------------
 
 // public sealed class Nothing :10
@@ -8270,7 +8347,7 @@ Nothing* Nothing::New2()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.7.4\Nothing.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.8.1\Nothing.uno
 // -------------------------------------------------------------------------------------
 
 // internal sealed class NothingAnimatorState :18
@@ -8323,7 +8400,7 @@ NothingAnimatorState* NothingAnimatorState::New1(::g::Fuse::Animations::Nothing*
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.7.4\OpenAnimator.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.8.1\OpenAnimator.uno
 // ------------------------------------------------------------------------------------------
 
 // public abstract class OpenAnimator :14
@@ -8444,7 +8521,7 @@ void OpenAnimator::ResetDuration()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.7.4\OpenAnimator.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.8.1\OpenAnimator.uno
 // ------------------------------------------------------------------------------------------
 
 // internal abstract class OpenAnimatorState :57
@@ -8530,7 +8607,7 @@ void OpenAnimatorState::ctor_1(::g::Fuse::Animations::OpenAnimator* animator, ::
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.7.4\Player.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.8.1\Player.uno
 // ------------------------------------------------------------------------------------
 
 // internal sealed class Player :174
@@ -9112,7 +9189,7 @@ Player* Player::New1(::g::Fuse::Visual* elm, ::g::Fuse::Animations::TriggerAnima
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.7.4\TriggerAnimation.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.8.1\TriggerAnimation.uno
 // ----------------------------------------------------------------------------------------------
 
 // internal enum PlayerFeedbackFlags :212
@@ -9129,7 +9206,7 @@ uEnumType* PlayerFeedbackFlags_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.7.4\Player.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.8.1\Player.uno
 // ------------------------------------------------------------------------------------
 
 // internal sealed class PlayerPart :14
@@ -9389,7 +9466,7 @@ PlayerPart* PlayerPart::New1(double currentProgress)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.7.4\TriggerAnimation.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.8.1\TriggerAnimation.uno
 // ----------------------------------------------------------------------------------------------
 
 // public enum PlayMode :14
@@ -9405,7 +9482,7 @@ uEnumType* PlayMode_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.7.4\Easing.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.8.1\Easing.uno
 // --------------------------------------------------------------------------------
 
 // internal sealed class Easing.QuadraticInImpl :68
@@ -9464,7 +9541,7 @@ Easing__QuadraticInImpl* Easing__QuadraticInImpl::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.7.4\Easing.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.8.1\Easing.uno
 // --------------------------------------------------------------------------------
 
 // internal sealed class Easing.QuadraticInOutImpl :84
@@ -9529,7 +9606,7 @@ Easing__QuadraticInOutImpl* Easing__QuadraticInOutImpl::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.7.4\Easing.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.8.1\Easing.uno
 // --------------------------------------------------------------------------------
 
 // internal sealed class Easing.QuadraticOutImpl :76
@@ -9588,7 +9665,7 @@ Easing__QuadraticOutImpl* Easing__QuadraticOutImpl::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.7.4\Easing.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.8.1\Easing.uno
 // --------------------------------------------------------------------------------
 
 // internal sealed class Easing.QuarticInImpl :129
@@ -9647,7 +9724,7 @@ Easing__QuarticInImpl* Easing__QuarticInImpl::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.7.4\Easing.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.8.1\Easing.uno
 // --------------------------------------------------------------------------------
 
 // internal sealed class Easing.QuarticInOutImpl :146
@@ -9712,7 +9789,7 @@ Easing__QuarticInOutImpl* Easing__QuarticInOutImpl::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.7.4\Easing.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.8.1\Easing.uno
 // --------------------------------------------------------------------------------
 
 // internal sealed class Easing.QuarticOutImpl :137
@@ -9772,7 +9849,7 @@ Easing__QuarticOutImpl* Easing__QuarticOutImpl::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.7.4\Easing.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.8.1\Easing.uno
 // --------------------------------------------------------------------------------
 
 // internal sealed class Easing.QuinticInImpl :158
@@ -9831,7 +9908,7 @@ Easing__QuinticInImpl* Easing__QuinticInImpl::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.7.4\Easing.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.8.1\Easing.uno
 // --------------------------------------------------------------------------------
 
 // internal sealed class Easing.QuinticInOutImpl :175
@@ -9896,7 +9973,7 @@ Easing__QuinticInOutImpl* Easing__QuinticInOutImpl::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.7.4\Easing.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.8.1\Easing.uno
 // --------------------------------------------------------------------------------
 
 // internal sealed class Easing.QuinticOutImpl :166
@@ -9956,7 +10033,7 @@ Easing__QuinticOutImpl* Easing__QuinticOutImpl::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.7.4\RangeAdapter.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.8.1\RangeAdapter.uno
 // ------------------------------------------------------------------------------------------
 
 // public sealed class RangeAdapter<T> :36
@@ -10232,7 +10309,7 @@ RangeAdapter* RangeAdapter::New2(uType* __type, ::g::Uno::UX::Property1* source)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.7.4\RangeAdapter.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.8.1\RangeAdapter.uno
 // ------------------------------------------------------------------------------------------
 
 // internal static class RangeAdapterHelpers :6
@@ -10240,12 +10317,12 @@ RangeAdapter* RangeAdapter::New2(uType* __type, ::g::Uno::UX::Property1* source)
 // static generated RangeAdapterHelpers() :6
 static void RangeAdapterHelpers__cctor__fn(uType* __type)
 {
-    RangeAdapterHelpers::_valueName_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[18/*"Value"*/]);
+    RangeAdapterHelpers::_valueName_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[19/*"Value"*/]);
 }
 
 static void RangeAdapterHelpers_build(uType* type)
 {
-    ::STRINGS[18] = uString::Const("Value");
+    ::STRINGS[19] = uString::Const("Value");
     type->SetFields(0,
         ::g::Uno::UX::Selector_typeof(), (uintptr_t)&RangeAdapterHelpers::_valueName_, uFieldFlagsStatic);
 }
@@ -10267,7 +10344,7 @@ uClassType* RangeAdapterHelpers_typeof()
 ::g::Uno::UX::Selector RangeAdapterHelpers::_valueName_;
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.7.4\Resize.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.8.1\Resize.uno
 // ------------------------------------------------------------------------------------
 
 // public sealed class Resize :32
@@ -10492,17 +10569,17 @@ Resize* Resize::New2()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.7.4\Resize.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.8.1\Resize.uno
 // ------------------------------------------------------------------------------------
 
 // internal sealed class ResizeAnimatorState :84
 // {
 static void ResizeAnimatorState_build(uType* type)
 {
-    ::STRINGS[19] = uString::Const("Resize started without a Target node");
-    ::STRINGS[20] = uString::Const("C:\\Users\\borde_000\\AppData\\Local\\Fusetools\\Packages\\Fuse.Animations\\1.7.4\\Resize.uno");
-    ::STRINGS[21] = uString::Const(".ctor");
-    ::STRINGS[22] = uString::Const("Resize started without as RelativeTo");
+    ::STRINGS[20] = uString::Const("Resize started without a Target node");
+    ::STRINGS[21] = uString::Const("C:\\Users\\borde_000\\AppData\\Local\\Fusetools\\Packages\\Fuse.Animations\\1.8.1\\Resize.uno");
+    ::STRINGS[22] = uString::Const(".ctor");
+    ::STRINGS[23] = uString::Const("Resize started without as RelativeTo");
     ::TYPES[63] = ::g::Fuse::Animations::IResize_typeof();
     ::TYPES[64] = ::g::Fuse::IActualPlacement_typeof();
     ::TYPES[65] = ::g::Fuse::PlacedHandler_typeof();
@@ -10601,7 +10678,7 @@ void ResizeAnimatorState::ctor_2(::g::Fuse::Animations::Resize* r, ::g::Fuse::An
 
     if (_target == NULL)
     {
-        ::g::Fuse::Diagnostics::InternalError(::STRINGS[19/*"Resize star...*/], r, ::STRINGS[20/*"C:\\Users\\...*/], 98, ::STRINGS[21/*".ctor"*/]);
+        ::g::Fuse::Diagnostics::InternalError(::STRINGS[20/*"Resize star...*/], r, ::STRINGS[21/*"C:\\Users\\...*/], 98, ::STRINGS[22/*".ctor"*/]);
         _valid = false;
         return;
     }
@@ -10610,7 +10687,7 @@ void ResizeAnimatorState::ctor_2(::g::Fuse::Animations::Resize* r, ::g::Fuse::An
 
     if (_relativeTo == NULL)
     {
-        ::g::Fuse::Diagnostics::InternalError(::STRINGS[22/*"Resize star...*/], r, ::STRINGS[20/*"C:\\Users\\...*/], 106, ::STRINGS[21/*".ctor"*/]);
+        ::g::Fuse::Diagnostics::InternalError(::STRINGS[23/*"Resize star...*/], r, ::STRINGS[21/*"C:\\Users\\...*/], 106, ::STRINGS[22/*".ctor"*/]);
         _valid = false;
         return;
     }
@@ -10661,7 +10738,7 @@ ResizeAnimatorState* ResizeAnimatorState::New1(::g::Fuse::Animations::Resize* r,
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.7.4\TransformAnimator.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.8.1\TransformAnimator.uno
 // -----------------------------------------------------------------------------------------------
 
 // public sealed class Rotate :269
@@ -10831,7 +10908,7 @@ Rotate* Rotate::New2()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.7.4\TransformAnimator.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.8.1\TransformAnimator.uno
 // -----------------------------------------------------------------------------------------------
 
 // public sealed class Scale :331
@@ -10958,7 +11035,7 @@ Scale* Scale::New2()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.7.4\Animator.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.8.1\Animator.uno
 // --------------------------------------------------------------------------------------
 
 // internal enum SeekDirection :108
@@ -10974,7 +11051,7 @@ uEnumType* SeekDirection_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.7.4\TriggerAnimation.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.8.1\TriggerAnimation.uno
 // ----------------------------------------------------------------------------------------------
 
 // public enum TriggerAnimationState.SeekFlags :482
@@ -10990,7 +11067,7 @@ uEnumType* TriggerAnimationState__SeekFlags_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.7.4\Animator.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.8.1\Animator.uno
 // --------------------------------------------------------------------------------------
 
 // internal enum SeekResult :115
@@ -11007,7 +11084,7 @@ uEnumType* SeekResult_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.7.4\Easing.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.8.1\Easing.uno
 // --------------------------------------------------------------------------------
 
 // internal sealed class Easing.SinusoidalInImpl :188
@@ -11066,7 +11143,7 @@ Easing__SinusoidalInImpl* Easing__SinusoidalInImpl::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.7.4\Easing.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.8.1\Easing.uno
 // --------------------------------------------------------------------------------
 
 // internal sealed class Easing.SinusoidalInOutImpl :204
@@ -11125,7 +11202,7 @@ Easing__SinusoidalInOutImpl* Easing__SinusoidalInOutImpl::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.7.4\Easing.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.8.1\Easing.uno
 // --------------------------------------------------------------------------------
 
 // internal sealed class Easing.SinusoidalOutImpl :196
@@ -11184,7 +11261,7 @@ Easing__SinusoidalOutImpl* Easing__SinusoidalOutImpl::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.7.4\TransformAnimator.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.8.1\TransformAnimator.uno
 // -----------------------------------------------------------------------------------------------
 
 // public sealed class Skew :376
@@ -11356,7 +11433,7 @@ Skew* Skew::New2()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.7.4\Spin.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.8.1\Spin.uno
 // ----------------------------------------------------------------------------------
 
 // public sealed class Spin :18
@@ -11474,15 +11551,15 @@ Spin* Spin::New2()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.7.4\Spin.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.8.1\Spin.uno
 // ----------------------------------------------------------------------------------
 
 // internal sealed class SpinState :47
 // {
 static void SpinState_build(uType* type)
 {
-    ::STRINGS[8] = uString::Const("Invalid seek");
-    ::STRINGS[23] = uString::Const("C:/Users/borde_000/AppData/Local/Fusetools/Packages/Fuse.Animations/1.7.4/Spin.uno");
+    ::STRINGS[24] = uString::Const("Invalid seek");
+    ::STRINGS[25] = uString::Const("C:/Users/borde_000/AppData/Local/Fusetools/Packages/Fuse.Animations/1.8.1/Spin.uno");
     ::TYPES[12] = ::g::Fuse::Animations::IMixer_typeof();
     ::TYPES[67] = ::g::Fuse::Animations::IMixerHandle_typeof()->MakeType(::g::Fuse::Transform_typeof(), NULL);
     type->SetDependencies(
@@ -11547,7 +11624,7 @@ void SpinState__Seek_fn(SpinState* __this, bool* on, float* interval, float* str
 
     if ((__this->mixHandle == NULL) || (__this->transform == NULL))
     {
-        ::g::Uno::Diagnostics::Debug::Log3(::STRINGS[8/*"Invalid seek"*/], 0, ::STRINGS[23/*"C:/Users/bo...*/], 76);
+        ::g::Uno::Diagnostics::Debug::Log3(::STRINGS[24/*"Invalid seek"*/], 0, ::STRINGS[25/*"C:/Users/bo...*/], 76);
         return *__retval = true, void();
     }
 
@@ -11588,7 +11665,7 @@ SpinState* SpinState::New1(::g::Fuse::Animations::Spin* animator, ::g::Fuse::Ani
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.7.4\SplineTrack.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.8.1\SplineTrack.uno
 // -----------------------------------------------------------------------------------------
 
 // internal sealed class SplineTrack :26
@@ -11895,16 +11972,16 @@ SplineTrack* SplineTrack::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.7.4\Attract.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.8.1\Attract.uno
 // -------------------------------------------------------------------------------------
 
 // private sealed class Attract.Subscription :61
 // {
 static void Attract__Subscription_build(uType* type)
 {
-    ::STRINGS[24] = uString::Const("Unexpected size for attract: ");
-    ::STRINGS[25] = uString::Const("C:\\Users\\borde_000\\AppData\\Local\\Fusetools\\Packages\\Fuse.Animations\\1.7.4\\Attract.uno");
-    ::STRINGS[26] = uString::Const("NeedSim");
+    ::STRINGS[26] = uString::Const("Unexpected size for attract: ");
+    ::STRINGS[27] = uString::Const("C:\\Users\\borde_000\\AppData\\Local\\Fusetools\\Packages\\Fuse.Animations\\1.8.1\\Attract.uno");
+    ::STRINGS[28] = uString::Const("NeedSim");
     ::TYPES[69] = ::g::Fuse::Animations::DestinationBehavior_typeof()->MakeType(::g::Uno::Float4_typeof(), NULL);
     ::TYPES[70] = ::g::Uno::IDisposable_typeof();
     ::TYPES[71] = ::g::Fuse::Animations::DestinationBehavior_typeof()->MakeType(::g::Uno::Float_typeof(), NULL);
@@ -12158,7 +12235,7 @@ void Attract__Subscription::NeedSim(int32_t size)
 
     if ((size < 0) || (size > 4))
     {
-        ::g::Fuse::Diagnostics::InternalError(::g::Uno::String::op_Addition1(::STRINGS[24/*"Unexpected ...*/], uBox<int32_t>(::g::Uno::Int_typeof(), size)), this, ::STRINGS[25/*"C:\\Users\\...*/], 150, ::STRINGS[26/*"NeedSim"*/]);
+        ::g::Fuse::Diagnostics::InternalError(::g::Uno::String::op_Addition1(::STRINGS[26/*"Unexpected ...*/], uBox<int32_t>(::g::Uno::Int_typeof(), size)), this, ::STRINGS[27/*"C:\\Users\\...*/], 150, ::STRINGS[28/*"NeedSim"*/]);
         return;
     }
 
@@ -12221,7 +12298,7 @@ Attract__Subscription* Attract__Subscription::New1(::g::Fuse::Animations::Attrac
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.7.4\TrackAnimator.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.8.1\TrackAnimator.uno
 // -------------------------------------------------------------------------------------------
 
 // public abstract class TrackAnimator :48
@@ -12622,7 +12699,7 @@ void TrackAnimator::Weight(double value)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.7.4\TrackAnimator.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.8.1\TrackAnimator.uno
 // -------------------------------------------------------------------------------------------
 
 // internal abstract class TrackAnimatorState :266
@@ -12788,7 +12865,7 @@ bool TrackAnimatorState::IsBackward()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.7.4\TrackAnimator.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.8.1\TrackAnimator.uno
 // -------------------------------------------------------------------------------------------
 
 // internal abstract interface TrackProvider :10
@@ -12803,7 +12880,7 @@ uInterfaceType* TrackProvider_typeof()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.7.4\TransformAnimator.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.8.1\TransformAnimator.uno
 // -----------------------------------------------------------------------------------------------
 
 // public abstract class TransformAnimator<TransformType> :25
@@ -13046,15 +13123,15 @@ void TransformAnimator::Z(float value)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.7.4\TransformAnimator.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.8.1\TransformAnimator.uno
 // -----------------------------------------------------------------------------------------------
 
 // internal sealed class TransformAnimatorState<TransformType> :132
 // {
 static void TransformAnimatorState_build(uType* type)
 {
-    ::STRINGS[8] = uString::Const("Invalid seek");
-    ::STRINGS[27] = uString::Const("C:/Users/borde_000/AppData/Local/Fusetools/Packages/Fuse.Animations/1.7.4/TransformAnimator.uno");
+    ::STRINGS[24] = uString::Const("Invalid seek");
+    ::STRINGS[29] = uString::Const("C:/Users/borde_000/AppData/Local/Fusetools/Packages/Fuse.Animations/1.8.1/TransformAnimator.uno");
     ::TYPES[12] = ::g::Fuse::Animations::IMixer_typeof();
     ::TYPES[87] = ::g::Uno::Action1_typeof()->MakeType(::g::Fuse::Transform_typeof(), NULL);
     ::TYPES[88] = ::g::Fuse::Transform_typeof();
@@ -13133,7 +13210,7 @@ void TransformAnimatorState__SeekValue_fn(TransformAnimatorState* __this, ::g::U
 
     if ((__this->mixHandle == NULL) || (__this->transform == NULL))
     {
-        ::g::Uno::Diagnostics::Debug::Log3(::STRINGS[8/*"Invalid seek"*/], 0, ::STRINGS[27/*"C:/Users/bo...*/], 171);
+        ::g::Uno::Diagnostics::Debug::Log3(::STRINGS[24/*"Invalid seek"*/], 0, ::STRINGS[29/*"C:/Users/bo...*/], 171);
         return;
     }
 
@@ -13175,7 +13252,7 @@ TransformAnimatorState* TransformAnimatorState::New1(uType* __type, ::g::Fuse::A
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.7.4\TransformAnimator.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.8.1\TransformAnimator.uno
 // -----------------------------------------------------------------------------------------------
 
 // internal enum TransformPriority :5
@@ -13193,7 +13270,7 @@ uEnumType* TransformPriority_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.7.4\TriggerAnimation.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.8.1\TriggerAnimation.uno
 // ----------------------------------------------------------------------------------------------
 
 // public sealed class TriggerAnimation :25
@@ -13660,7 +13737,7 @@ TriggerAnimation* TriggerAnimation::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.7.4\TriggerAnimation.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Animations\1.8.1\TriggerAnimation.uno
 // ----------------------------------------------------------------------------------------------
 
 // internal sealed class TriggerAnimationState :241
@@ -14131,7 +14208,7 @@ TriggerAnimationState* TriggerAnimationState::New1(::g::Fuse::Animations::Trigge
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Motion\1.7.4\DestinationBehavior.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Motion\1.8.1\DestinationBehavior.uno
 // ---------------------------------------------------------------------------------------------
 
 // public delegate void DestinationBehavior<T>.ValueHandler(T value) :17

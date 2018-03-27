@@ -1,4 +1,4 @@
-// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/Fuse.Controls.Panels/1.7.4/Backgrounds/TopFrameBackground.uno.
+// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/Fuse.Controls.Panels/1.8.1/Backgrounds/TopFrameBackground.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -25,7 +25,7 @@ namespace g{
 namespace Fuse{
 namespace Controls{
 
-// public sealed class StatusBarBackground :26
+// public sealed class StatusBarBackground :29
 // {
 ::g::Fuse::Controls::Control_type* StatusBarBackground_typeof();
 void StatusBarBackground__ctor_6_fn(StatusBarBackground* __this);

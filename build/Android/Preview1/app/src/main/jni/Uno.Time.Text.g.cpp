@@ -45,7 +45,7 @@ namespace Uno{
 namespace Time{
 namespace Text{
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\Time\Text\FixedFormatPattern.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\Time\Text\FixedFormatPattern.uno
 // -------------------------------------------------------------------------------------------------------------
 
 // internal sealed class FixedFormatPattern<T> :5
@@ -149,7 +149,7 @@ FixedFormatPattern* FixedFormatPattern::New1(uType* __type, uArray* parts)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\Time\Text\PatternPart.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\Time\Text\PatternPart.uno
 // ------------------------------------------------------------------------------------------------------
 
 // internal abstract interface IPatternPart<T> :3
@@ -164,7 +164,7 @@ uInterfaceType* IPatternPart_typeof()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\Time\Text\LocalDatePattern.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\Time\Text\LocalDatePattern.uno
 // -----------------------------------------------------------------------------------------------------------
 
 // private sealed class LocalDatePattern.LocalDateBucket :102
@@ -219,7 +219,7 @@ LocalDatePattern__LocalDateBucket* LocalDatePattern__LocalDateBucket::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\Time\Text\LocalDatePattern.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\Time\Text\LocalDatePattern.uno
 // -----------------------------------------------------------------------------------------------------------
 
 // public sealed class LocalDatePattern :3
@@ -259,7 +259,7 @@ void LocalDatePattern__ctor__fn(LocalDatePattern* __this)
 // public string Format(Uno.Time.LocalDate value) :50
 void LocalDatePattern__Format_fn(LocalDatePattern* __this, ::g::Uno::Time::LocalDate* value, uString** __retval)
 {
-    *__retval = __this->Format(value);
+    *__retval = __this->Format(*value);
 }
 
 // public static Uno.Time.Text.LocalDatePattern get_GeneralIsoPattern() :9
@@ -338,16 +338,16 @@ void LocalDatePattern::ctor_()
 }
 
 // public string Format(Uno.Time.LocalDate value) [instance] :50
-uString* LocalDatePattern::Format(::g::Uno::Time::LocalDate* value)
+uString* LocalDatePattern::Format(::g::Uno::Time::LocalDate value)
 {
     uStackFrame __("Uno.Time.Text.LocalDatePattern", "Format(Uno.Time.LocalDate)");
     LocalDatePattern__LocalDateBucket* collection1;
     uString* ret3;
     collection1 = LocalDatePattern__LocalDateBucket::New1();
-    uPtr(collection1)->Sign = ((uPtr(value)->Year() < 0) ? -1 : 1);
-    uPtr(collection1)->Year = uPtr(value)->Year();
-    uPtr(collection1)->Month = uPtr(value)->Month();
-    uPtr(collection1)->Day = uPtr(value)->Day();
+    uPtr(collection1)->Sign = ((value.Year() < 0) ? -1 : 1);
+    uPtr(collection1)->Year = value.Year();
+    uPtr(collection1)->Month = value.Month();
+    uPtr(collection1)->Day = value.Day();
     LocalDatePattern__LocalDateBucket* bucket = collection1;
     return (::g::Uno::Time::Text::FixedFormatPattern__Format_fn(uPtr(_generalPattern), bucket, &ret3), ret3);
 }
@@ -391,8 +391,8 @@ int32_t LocalDatePattern::GetYear(LocalDatePattern__LocalDateBucket* value)
         {
             LocalDatePattern__LocalDateBucket* bucket = LocalDatePattern__LocalDateBucket::New1();
             ::g::Uno::Time::Text::FixedFormatPattern__Parse_fn(uPtr(_generalPattern), text, bucket);
-            ::g::Uno::Time::LocalDate* ld = ::g::Uno::Time::LocalDate::New1(bucket->Sign * bucket->Year, bucket->Month, bucket->Day);
-            return (::g::Uno::Time::Text::ParseResult__ForValue_fn(::g::Uno::Time::Text::ParseResult_typeof()->MakeType(::g::Uno::Time::LocalDate_typeof(), NULL), ld, &ret4), ret4);
+            ::g::Uno::Time::LocalDate ld = ::g::Uno::Time::LocalDate__New1(bucket->Sign * bucket->Year, bucket->Month, bucket->Day);
+            return (::g::Uno::Time::Text::ParseResult__ForValue_fn(::g::Uno::Time::Text::ParseResult_typeof()->MakeType(::g::Uno::Time::LocalDate_typeof(), NULL), uCRef(ld), &ret4), ret4);
         }
     }
 
@@ -451,7 +451,7 @@ LocalDatePattern* LocalDatePattern::GeneralIsoPattern()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\Time\Text\LocalDateTimePattern.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\Time\Text\LocalDateTimePattern.uno
 // ---------------------------------------------------------------------------------------------------------------
 
 // private sealed class LocalDateTimePattern.LocalDateTimeBucket :142
@@ -509,7 +509,7 @@ LocalDateTimePattern__LocalDateTimeBucket* LocalDateTimePattern__LocalDateTimeBu
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\Time\Text\LocalDateTimePattern.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\Time\Text\LocalDateTimePattern.uno
 // ---------------------------------------------------------------------------------------------------------------
 
 // public sealed class LocalDateTimePattern :3
@@ -549,7 +549,7 @@ void LocalDateTimePattern__ctor__fn(LocalDateTimePattern* __this)
 // public string Format(Uno.Time.LocalDateTime value) :57
 void LocalDateTimePattern__Format_fn(LocalDateTimePattern* __this, ::g::Uno::Time::LocalDateTime* value, uString** __retval)
 {
-    *__retval = __this->Format(value);
+    *__retval = __this->Format(*value);
 }
 
 // public static Uno.Time.Text.LocalDateTimePattern get_GeneralIsoPattern() :9
@@ -664,19 +664,19 @@ void LocalDateTimePattern::ctor_()
 }
 
 // public string Format(Uno.Time.LocalDateTime value) [instance] :57
-uString* LocalDateTimePattern::Format(::g::Uno::Time::LocalDateTime* value)
+uString* LocalDateTimePattern::Format(::g::Uno::Time::LocalDateTime value)
 {
     uStackFrame __("Uno.Time.Text.LocalDateTimePattern", "Format(Uno.Time.LocalDateTime)");
     LocalDateTimePattern__LocalDateTimeBucket* collection1;
     uString* ret3;
     collection1 = LocalDateTimePattern__LocalDateTimeBucket::New1();
-    uPtr(collection1)->Sign = ((uPtr(value)->Year() < 0) ? -1 : 1);
-    uPtr(collection1)->Year = uPtr(value)->Year();
-    uPtr(collection1)->Month = uPtr(value)->Month();
-    uPtr(collection1)->Day = uPtr(value)->Day();
-    uPtr(collection1)->Hour = uPtr(value)->Hour();
-    uPtr(collection1)->Minute = uPtr(value)->Minute();
-    uPtr(collection1)->Second = uPtr(value)->Second();
+    uPtr(collection1)->Sign = ((value.Year() < 0) ? -1 : 1);
+    uPtr(collection1)->Year = value.Year();
+    uPtr(collection1)->Month = value.Month();
+    uPtr(collection1)->Day = value.Day();
+    uPtr(collection1)->Hour = value.Hour();
+    uPtr(collection1)->Minute = value.Minute();
+    uPtr(collection1)->Second = value.Second();
     LocalDateTimePattern__LocalDateTimeBucket* bucket = collection1;
     return (::g::Uno::Time::Text::FixedFormatPattern__Format_fn(uPtr(_generalPattern), bucket, &ret3), ret3);
 }
@@ -741,8 +741,8 @@ int32_t LocalDateTimePattern::GetYear(LocalDateTimePattern__LocalDateTimeBucket*
         {
             LocalDateTimePattern__LocalDateTimeBucket* bucket = LocalDateTimePattern__LocalDateTimeBucket::New1();
             ::g::Uno::Time::Text::FixedFormatPattern__Parse_fn(uPtr(_generalPattern), text, bucket);
-            ::g::Uno::Time::LocalDateTime* ldt = ::g::Uno::Time::LocalDateTime::New2(bucket->Sign * bucket->Year, bucket->Month, bucket->Day, bucket->Hour, bucket->Minute, bucket->Second);
-            return (::g::Uno::Time::Text::ParseResult__ForValue_fn(::g::Uno::Time::Text::ParseResult_typeof()->MakeType(::g::Uno::Time::LocalDateTime_typeof(), NULL), ldt, &ret4), ret4);
+            ::g::Uno::Time::LocalDateTime ldt = ::g::Uno::Time::LocalDateTime__New2(bucket->Sign * bucket->Year, bucket->Month, bucket->Day, bucket->Hour, bucket->Minute, bucket->Second);
+            return (::g::Uno::Time::Text::ParseResult__ForValue_fn(::g::Uno::Time::Text::ParseResult_typeof()->MakeType(::g::Uno::Time::LocalDateTime_typeof(), NULL), uCRef(ldt), &ret4), ret4);
         }
     }
 
@@ -822,7 +822,7 @@ LocalDateTimePattern* LocalDateTimePattern::GeneralIsoPattern()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\Time\Text\LocalTimePattern.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\Time\Text\LocalTimePattern.uno
 // -----------------------------------------------------------------------------------------------------------
 
 // private sealed class LocalTimePattern.LocalTimeBucket :103
@@ -877,7 +877,7 @@ LocalTimePattern__LocalTimeBucket* LocalTimePattern__LocalTimeBucket::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\Time\Text\LocalTimePattern.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\Time\Text\LocalTimePattern.uno
 // -----------------------------------------------------------------------------------------------------------
 
 // public sealed class LocalTimePattern :3
@@ -1109,7 +1109,7 @@ LocalTimePattern* LocalTimePattern::GeneralIsoPattern()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\Time\Text\PatternPart.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\Time\Text\PatternPart.uno
 // ------------------------------------------------------------------------------------------------------
 
 // internal sealed class NumberPart<T> :45
@@ -1229,7 +1229,7 @@ NumberPart* NumberPart::New1(uType* __type, int32_t size, bool obligatory, uDele
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\Time\Text\OffsetPattern.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\Time\Text\OffsetPattern.uno
 // --------------------------------------------------------------------------------------------------------
 
 // private sealed class OffsetPattern.OffsetBucket :106
@@ -1284,7 +1284,7 @@ OffsetPattern__OffsetBucket* OffsetPattern__OffsetBucket::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\Time\Text\OffsetDateTimePattern.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\Time\Text\OffsetDateTimePattern.uno
 // ----------------------------------------------------------------------------------------------------------------
 
 // private sealed class OffsetDateTimePattern.OffsetDateTimeBucket :169
@@ -1344,7 +1344,7 @@ OffsetDateTimePattern__OffsetDateTimeBucket* OffsetDateTimePattern__OffsetDateTi
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\Time\Text\OffsetDateTimePattern.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\Time\Text\OffsetDateTimePattern.uno
 // ----------------------------------------------------------------------------------------------------------------
 
 // public sealed class OffsetDateTimePattern :3
@@ -1384,7 +1384,7 @@ void OffsetDateTimePattern__ctor__fn(OffsetDateTimePattern* __this)
 // public string Format(Uno.Time.OffsetDateTime value) :62
 void OffsetDateTimePattern__Format_fn(OffsetDateTimePattern* __this, ::g::Uno::Time::OffsetDateTime* value, uString** __retval)
 {
-    *__retval = __this->Format(value);
+    *__retval = __this->Format(*value);
 }
 
 // public static Uno.Time.Text.OffsetDateTimePattern get_GeneralIsoPattern() :9
@@ -1523,21 +1523,21 @@ void OffsetDateTimePattern::ctor_()
 }
 
 // public string Format(Uno.Time.OffsetDateTime value) [instance] :62
-uString* OffsetDateTimePattern::Format(::g::Uno::Time::OffsetDateTime* value)
+uString* OffsetDateTimePattern::Format(::g::Uno::Time::OffsetDateTime value)
 {
     uStackFrame __("Uno.Time.Text.OffsetDateTimePattern", "Format(Uno.Time.OffsetDateTime)");
     OffsetDateTimePattern__OffsetDateTimeBucket* collection1;
     uString* ret3;
     collection1 = OffsetDateTimePattern__OffsetDateTimeBucket::New1();
-    uPtr(collection1)->Sign = ((uPtr(value)->Year() < 0) ? -1 : 1);
-    uPtr(collection1)->Year = uPtr(value)->Year();
-    uPtr(collection1)->Month = uPtr(value)->Month();
-    uPtr(collection1)->Day = uPtr(value)->Day();
-    uPtr(collection1)->Hour = uPtr(value)->Hour();
-    uPtr(collection1)->Minute = uPtr(value)->Minute();
-    uPtr(collection1)->Second = uPtr(value)->Second();
-    uPtr(collection1)->Millisecond = uPtr(value)->Millisecond();
-    uPtr(collection1)->Offset = uPtr(value)->Offset();
+    uPtr(collection1)->Sign = ((value.Year() < 0) ? -1 : 1);
+    uPtr(collection1)->Year = value.Year();
+    uPtr(collection1)->Month = value.Month();
+    uPtr(collection1)->Day = value.Day();
+    uPtr(collection1)->Hour = value.Hour();
+    uPtr(collection1)->Minute = value.Minute();
+    uPtr(collection1)->Second = value.Second();
+    uPtr(collection1)->Millisecond = value.Millisecond();
+    uPtr(collection1)->Offset = value.Offset();
     OffsetDateTimePattern__OffsetDateTimeBucket* bucket = collection1;
     return (::g::Uno::Time::Text::FixedFormatPattern__Format_fn(uPtr(_generalPattern), bucket, &ret3), ret3);
 }
@@ -1616,9 +1616,9 @@ int32_t OffsetDateTimePattern::GetYear(OffsetDateTimePattern__OffsetDateTimeBuck
         {
             OffsetDateTimePattern__OffsetDateTimeBucket* bucket = OffsetDateTimePattern__OffsetDateTimeBucket::New1();
             ::g::Uno::Time::Text::FixedFormatPattern__Parse_fn(uPtr(_generalPattern), text, bucket);
-            ::g::Uno::Time::LocalDateTime* ldt = ::g::Uno::Time::LocalDateTime::New3(bucket->Sign * bucket->Year, bucket->Month, bucket->Day, bucket->Hour, bucket->Minute, bucket->Second, bucket->Millisecond);
-            ::g::Uno::Time::OffsetDateTime* result = ::g::Uno::Time::OffsetDateTime::New1(ldt, bucket->Offset);
-            return (::g::Uno::Time::Text::ParseResult__ForValue_fn(::g::Uno::Time::Text::ParseResult_typeof()->MakeType(::g::Uno::Time::OffsetDateTime_typeof(), NULL), result, &ret4), ret4);
+            ::g::Uno::Time::LocalDateTime ldt = ::g::Uno::Time::LocalDateTime__New3(bucket->Sign * bucket->Year, bucket->Month, bucket->Day, bucket->Hour, bucket->Minute, bucket->Second, bucket->Millisecond);
+            ::g::Uno::Time::OffsetDateTime result = ::g::Uno::Time::OffsetDateTime__New1(ldt, bucket->Offset);
+            return (::g::Uno::Time::Text::ParseResult__ForValue_fn(::g::Uno::Time::Text::ParseResult_typeof()->MakeType(::g::Uno::Time::OffsetDateTime_typeof(), NULL), uCRef(result), &ret4), ret4);
         }
     }
 
@@ -1712,7 +1712,7 @@ OffsetDateTimePattern* OffsetDateTimePattern::GeneralIsoPattern()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\Time\Text\OffsetPattern.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\Time\Text\OffsetPattern.uno
 // --------------------------------------------------------------------------------------------------------
 
 // public sealed class OffsetPattern :3
@@ -1951,10 +1951,10 @@ OffsetPattern* OffsetPattern::GeneralIsoPattern()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\Time\Text\PatternPart.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\Time\Text\PatternPart.uno
 // ------------------------------------------------------------------------------------------------------
 
-// internal sealed class OffsetPatternPart<T> :240
+// internal sealed class OffsetPatternPart<T> :227
 // {
 static void OffsetPatternPart_build(uType* type)
 {
@@ -1986,19 +1986,19 @@ static void OffsetPatternPart_build(uType* type)
     return type;
 }
 
-// public OffsetPatternPart(Uno.Action<T, Uno.Time.Offset> setter, Uno.Func<T, Uno.Time.Offset> getter) :242
+// public OffsetPatternPart(Uno.Action<T, Uno.Time.Offset> setter, Uno.Func<T, Uno.Time.Offset> getter) :229
 void OffsetPatternPart__ctor_1_fn(OffsetPatternPart* __this, uDelegate* setter, uDelegate* getter)
 {
     __this->ctor_1(setter, getter);
 }
 
-// public OffsetPatternPart New(Uno.Action<T, Uno.Time.Offset> setter, Uno.Func<T, Uno.Time.Offset> getter) :242
+// public OffsetPatternPart New(Uno.Action<T, Uno.Time.Offset> setter, Uno.Func<T, Uno.Time.Offset> getter) :229
 void OffsetPatternPart__New1_fn(uType* __type, uDelegate* setter, uDelegate* getter, OffsetPatternPart** __retval)
 {
     *__retval = OffsetPatternPart::New1(__type, setter, getter);
 }
 
-// public override sealed int Read(string line, int position, T value) :248
+// public override sealed int Read(string line, int position, T value) :235
 void OffsetPatternPart__Read_fn(OffsetPatternPart* __this, uString* line, int32_t* position, void* value, int32_t* __retval)
 {
     uStackFrame __("Uno.Time.Text.OffsetPatternPart`1", "Read(string,int,T)");
@@ -2009,7 +2009,7 @@ void OffsetPatternPart__Read_fn(OffsetPatternPart* __this, uString* line, int32_
     return *__retval = line->Length() - position_, void();
 }
 
-// public override sealed string Write(T value) :255
+// public override sealed string Write(T value) :242
 void OffsetPatternPart__Write_fn(OffsetPatternPart* __this, void* value, uString** __retval)
 {
     uStackFrame __("Uno.Time.Text.OffsetPatternPart`1", "Write(T)");
@@ -2017,7 +2017,7 @@ void OffsetPatternPart__Write_fn(OffsetPatternPart* __this, void* value, uString
     return *__retval = uPtr(::g::Uno::Time::Text::OffsetPattern::GeneralIsoPattern())->Format((::g::Uno::Time::Text::PatternPart__Get_fn(__this, value, &ret3), ret3)), void();
 }
 
-// public OffsetPatternPart(Uno.Action<T, Uno.Time.Offset> setter, Uno.Func<T, Uno.Time.Offset> getter) [instance] :242
+// public OffsetPatternPart(Uno.Action<T, Uno.Time.Offset> setter, Uno.Func<T, Uno.Time.Offset> getter) [instance] :229
 void OffsetPatternPart::ctor_1(uDelegate* setter, uDelegate* getter)
 {
     ctor_();
@@ -2025,7 +2025,7 @@ void OffsetPatternPart::ctor_1(uDelegate* setter, uDelegate* getter)
     Getter(getter);
 }
 
-// public OffsetPatternPart New(Uno.Action<T, Uno.Time.Offset> setter, Uno.Func<T, Uno.Time.Offset> getter) [static] :242
+// public OffsetPatternPart New(Uno.Action<T, Uno.Time.Offset> setter, Uno.Func<T, Uno.Time.Offset> getter) [static] :229
 OffsetPatternPart* OffsetPatternPart::New1(uType* __type, uDelegate* setter, uDelegate* getter)
 {
     OffsetPatternPart* obj1 = (OffsetPatternPart*)uNew(__type);
@@ -2034,7 +2034,7 @@ OffsetPatternPart* OffsetPatternPart::New1(uType* __type, uDelegate* setter, uDe
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\Time\Text\ParseResult.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\Time\Text\ParseResult.uno
 // ------------------------------------------------------------------------------------------------------
 
 // public sealed class ParseResult<T> :3
@@ -2134,7 +2134,7 @@ ParseResult* ParseResult::New2(uType* __type, ::g::Uno::Exception* exception)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\Time\Text\PatternPart.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\Time\Text\PatternPart.uno
 // ------------------------------------------------------------------------------------------------------
 
 // internal abstract class PatternPart<TBucket, T> :12
@@ -2331,7 +2331,7 @@ void PatternPart::SkipNextPartsCountIfThisNotSpecified(int32_t value)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\Time\Text\PatternPart.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\Time\Text\PatternPart.uno
 // ------------------------------------------------------------------------------------------------------
 
 // internal sealed class RangeNumberPart<T> :85
@@ -2367,19 +2367,19 @@ static void RangeNumberPart_build(uType* type)
     return type;
 }
 
-// public RangeNumberPart(int size, int maxSize, Uno.Action<T, int> setter, Uno.Func<T, int> getter) :98
+// public RangeNumberPart(int size, int maxSize, Uno.Action<T, int> setter, Uno.Func<T, int> getter) :94
 void RangeNumberPart__ctor_1_fn(RangeNumberPart* __this, int32_t* size, int32_t* maxSize, uDelegate* setter, uDelegate* getter)
 {
     __this->ctor_1(*size, *maxSize, setter, getter);
 }
 
-// public RangeNumberPart New(int size, int maxSize, Uno.Action<T, int> setter, Uno.Func<T, int> getter) :98
+// public RangeNumberPart New(int size, int maxSize, Uno.Action<T, int> setter, Uno.Func<T, int> getter) :94
 void RangeNumberPart__New1_fn(uType* __type, int32_t* size, int32_t* maxSize, uDelegate* setter, uDelegate* getter, RangeNumberPart** __retval)
 {
     *__retval = RangeNumberPart::New1(__type, *size, *maxSize, setter, getter);
 }
 
-// public override sealed int Read(string line, int position, T value) :106
+// public override sealed int Read(string line, int position, T value) :102
 void RangeNumberPart__Read_fn(RangeNumberPart* __this, uString* line, int32_t* position, void* value, int32_t* __retval)
 {
     uStackFrame __("Uno.Time.Text.RangeNumberPart`1", "Read(string,int,T)");
@@ -2409,13 +2409,13 @@ void RangeNumberPart__Read_fn(RangeNumberPart* __this, uString* line, int32_t* p
     return *__retval = numberCount, void();
 }
 
-// public override sealed string Write(T value) :137
+// public override sealed string Write(T value) :133
 void RangeNumberPart__Write_fn(RangeNumberPart* __this, void* value, uString** __retval)
 {
     return *__retval = ::g::Uno::String::Empty(), void();
 }
 
-// public RangeNumberPart(int size, int maxSize, Uno.Action<T, int> setter, Uno.Func<T, int> getter) [instance] :98
+// public RangeNumberPart(int size, int maxSize, Uno.Action<T, int> setter, Uno.Func<T, int> getter) [instance] :94
 void RangeNumberPart::ctor_1(int32_t size, int32_t maxSize, uDelegate* setter, uDelegate* getter)
 {
     ctor_();
@@ -2425,7 +2425,7 @@ void RangeNumberPart::ctor_1(int32_t size, int32_t maxSize, uDelegate* setter, u
     ExpectedSize(size);
 }
 
-// public RangeNumberPart New(int size, int maxSize, Uno.Action<T, int> setter, Uno.Func<T, int> getter) [static] :98
+// public RangeNumberPart New(int size, int maxSize, Uno.Action<T, int> setter, Uno.Func<T, int> getter) [static] :94
 RangeNumberPart* RangeNumberPart::New1(uType* __type, int32_t size, int32_t maxSize, uDelegate* setter, uDelegate* getter)
 {
     RangeNumberPart* obj2 = (RangeNumberPart*)uNew(__type);
@@ -2434,10 +2434,10 @@ RangeNumberPart* RangeNumberPart::New1(uType* __type, int32_t size, int32_t maxS
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\Time\Text\PatternPart.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\Time\Text\PatternPart.uno
 // ------------------------------------------------------------------------------------------------------
 
-// internal sealed class SeparatorPart<T> :192
+// internal sealed class SeparatorPart<T> :184
 // {
 static void SeparatorPart_build(uType* type)
 {
@@ -2474,31 +2474,31 @@ static void SeparatorPart_build(uType* type)
     return type;
 }
 
-// public SeparatorPart(bool obligatory, bool show, char separator, [int skipNextPartsCountIfThisNotSpecified]) :207
+// public SeparatorPart(bool obligatory, bool show, char separator, [int skipNextPartsCountIfThisNotSpecified]) :194
 void SeparatorPart__ctor_1_fn(SeparatorPart* __this, bool* obligatory, bool* show, char16_t* separator, int32_t* skipNextPartsCountIfThisNotSpecified)
 {
     __this->ctor_1(*obligatory, *show, *separator, *skipNextPartsCountIfThisNotSpecified);
 }
 
-// public SeparatorPart(bool obligatory, char separator, [int skipNextPartsCountIfThisNotSpecified]) :198
+// public SeparatorPart(bool obligatory, char separator, [int skipNextPartsCountIfThisNotSpecified]) :189
 void SeparatorPart__ctor_2_fn(SeparatorPart* __this, bool* obligatory, char16_t* separator, int32_t* skipNextPartsCountIfThisNotSpecified)
 {
     __this->ctor_2(*obligatory, *separator, *skipNextPartsCountIfThisNotSpecified);
 }
 
-// public SeparatorPart New(bool obligatory, bool show, char separator, [int skipNextPartsCountIfThisNotSpecified]) :207
+// public SeparatorPart New(bool obligatory, bool show, char separator, [int skipNextPartsCountIfThisNotSpecified]) :194
 void SeparatorPart__New1_fn(uType* __type, bool* obligatory, bool* show, char16_t* separator, int32_t* skipNextPartsCountIfThisNotSpecified, SeparatorPart** __retval)
 {
     *__retval = SeparatorPart::New1(__type, *obligatory, *show, *separator, *skipNextPartsCountIfThisNotSpecified);
 }
 
-// public SeparatorPart New(bool obligatory, char separator, [int skipNextPartsCountIfThisNotSpecified]) :198
+// public SeparatorPart New(bool obligatory, char separator, [int skipNextPartsCountIfThisNotSpecified]) :189
 void SeparatorPart__New2_fn(uType* __type, bool* obligatory, char16_t* separator, int32_t* skipNextPartsCountIfThisNotSpecified, SeparatorPart** __retval)
 {
     *__retval = SeparatorPart::New2(__type, *obligatory, *separator, *skipNextPartsCountIfThisNotSpecified);
 }
 
-// public override sealed int Read(string line, int position, T value) :216
+// public override sealed int Read(string line, int position, T value) :203
 void SeparatorPart__Read_fn(SeparatorPart* __this, uString* line, int32_t* position, void* value, int32_t* __retval)
 {
     uStackFrame __("Uno.Time.Text.SeparatorPart`1", "Read(string,int,T)");
@@ -2524,14 +2524,14 @@ void SeparatorPart__Read_fn(SeparatorPart* __this, uString* line, int32_t* posit
     return *__retval = 0, void();
 }
 
-// public override sealed string Write(T value) :234
+// public override sealed string Write(T value) :221
 void SeparatorPart__Write_fn(SeparatorPart* __this, void* value, uString** __retval)
 {
     uStackFrame __("Uno.Time.Text.SeparatorPart`1", "Write(T)");
     return *__retval = (__this->Obligatory() || __this->_show) ? (uString*)::g::Uno::Char::ToString(__this->_separator, ::TYPES[2/*char*/]) : (uString*)::g::Uno::String::Empty(), void();
 }
 
-// public SeparatorPart(bool obligatory, bool show, char separator, [int skipNextPartsCountIfThisNotSpecified]) [instance] :207
+// public SeparatorPart(bool obligatory, bool show, char separator, [int skipNextPartsCountIfThisNotSpecified]) [instance] :194
 void SeparatorPart::ctor_1(bool obligatory, bool show, char16_t separator, int32_t skipNextPartsCountIfThisNotSpecified)
 {
     ctor_();
@@ -2542,18 +2542,13 @@ void SeparatorPart::ctor_1(bool obligatory, bool show, char16_t separator, int32
     _show = show;
 }
 
-// public SeparatorPart(bool obligatory, char separator, [int skipNextPartsCountIfThisNotSpecified]) [instance] :198
+// public SeparatorPart(bool obligatory, char separator, [int skipNextPartsCountIfThisNotSpecified]) [instance] :189
 void SeparatorPart::ctor_2(bool obligatory, char16_t separator, int32_t skipNextPartsCountIfThisNotSpecified)
 {
-    ctor_();
-    ExpectedSize(1);
-    Obligatory(obligatory);
-    SkipNextPartsCountIfThisNotSpecified(skipNextPartsCountIfThisNotSpecified);
-    _separator = separator;
-    _show = false;
+    ctor_1(obligatory, false, separator, skipNextPartsCountIfThisNotSpecified);
 }
 
-// public SeparatorPart New(bool obligatory, bool show, char separator, [int skipNextPartsCountIfThisNotSpecified]) [static] :207
+// public SeparatorPart New(bool obligatory, bool show, char separator, [int skipNextPartsCountIfThisNotSpecified]) [static] :194
 SeparatorPart* SeparatorPart::New1(uType* __type, bool obligatory, bool show, char16_t separator, int32_t skipNextPartsCountIfThisNotSpecified)
 {
     SeparatorPart* obj2 = (SeparatorPart*)uNew(__type);
@@ -2561,7 +2556,7 @@ SeparatorPart* SeparatorPart::New1(uType* __type, bool obligatory, bool show, ch
     return obj2;
 }
 
-// public SeparatorPart New(bool obligatory, char separator, [int skipNextPartsCountIfThisNotSpecified]) [static] :198
+// public SeparatorPart New(bool obligatory, char separator, [int skipNextPartsCountIfThisNotSpecified]) [static] :189
 SeparatorPart* SeparatorPart::New2(uType* __type, bool obligatory, char16_t separator, int32_t skipNextPartsCountIfThisNotSpecified)
 {
     SeparatorPart* obj1 = (SeparatorPart*)uNew(__type);
@@ -2570,10 +2565,10 @@ SeparatorPart* SeparatorPart::New2(uType* __type, bool obligatory, char16_t sepa
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\Time\Text\PatternPart.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\Time\Text\PatternPart.uno
 // ------------------------------------------------------------------------------------------------------
 
-// internal sealed class SignPart<T> :143
+// internal sealed class SignPart<T> :139
 // {
 static void SignPart_build(uType* type)
 {
@@ -2608,31 +2603,31 @@ static void SignPart_build(uType* type)
     return type;
 }
 
-// public SignPart(bool obligatory, Uno.Action<T, int> setter, Uno.Func<T, int> getter) :154
+// public SignPart(bool obligatory, Uno.Action<T, int> setter, Uno.Func<T, int> getter) :146
 void SignPart__ctor_1_fn(SignPart* __this, bool* obligatory, uDelegate* setter, uDelegate* getter)
 {
     __this->ctor_1(*obligatory, setter, getter);
 }
 
-// public SignPart(Uno.Action<T, int> setter, Uno.Func<T, int> getter) :146
+// public SignPart(Uno.Action<T, int> setter, Uno.Func<T, int> getter) :141
 void SignPart__ctor_2_fn(SignPart* __this, uDelegate* setter, uDelegate* getter)
 {
     __this->ctor_2(setter, getter);
 }
 
-// public SignPart New(bool obligatory, Uno.Action<T, int> setter, Uno.Func<T, int> getter) :154
+// public SignPart New(bool obligatory, Uno.Action<T, int> setter, Uno.Func<T, int> getter) :146
 void SignPart__New1_fn(uType* __type, bool* obligatory, uDelegate* setter, uDelegate* getter, SignPart** __retval)
 {
     *__retval = SignPart::New1(__type, *obligatory, setter, getter);
 }
 
-// public SignPart New(Uno.Action<T, int> setter, Uno.Func<T, int> getter) :146
+// public SignPart New(Uno.Action<T, int> setter, Uno.Func<T, int> getter) :141
 void SignPart__New2_fn(uType* __type, uDelegate* setter, uDelegate* getter, SignPart** __retval)
 {
     *__retval = SignPart::New2(__type, setter, getter);
 }
 
-// public override sealed int Read(string line, int position, T value) :162
+// public override sealed int Read(string line, int position, T value) :154
 void SignPart__Read_fn(SignPart* __this, uString* line, int32_t* position, void* value, int32_t* __retval)
 {
     uStackFrame __("Uno.Time.Text.SignPart`1", "Read(string,int,T)");
@@ -2665,7 +2660,7 @@ void SignPart__Read_fn(SignPart* __this, uString* line, int32_t* position, void*
     return *__retval = 0, void();
 }
 
-// public override sealed string Write(T value) :184
+// public override sealed string Write(T value) :176
 void SignPart__Write_fn(SignPart* __this, void* value, uString** __retval)
 {
     uStackFrame __("Uno.Time.Text.SignPart`1", "Write(T)");
@@ -2677,7 +2672,7 @@ void SignPart__Write_fn(SignPart* __this, void* value, uString** __retval)
     return *__retval = ::STRINGS[8/*"-"*/], void();
 }
 
-// public SignPart(bool obligatory, Uno.Action<T, int> setter, Uno.Func<T, int> getter) [instance] :154
+// public SignPart(bool obligatory, Uno.Action<T, int> setter, Uno.Func<T, int> getter) [instance] :146
 void SignPart::ctor_1(bool obligatory, uDelegate* setter, uDelegate* getter)
 {
     ctor_();
@@ -2687,17 +2682,13 @@ void SignPart::ctor_1(bool obligatory, uDelegate* setter, uDelegate* getter)
     Obligatory(obligatory);
 }
 
-// public SignPart(Uno.Action<T, int> setter, Uno.Func<T, int> getter) [instance] :146
+// public SignPart(Uno.Action<T, int> setter, Uno.Func<T, int> getter) [instance] :141
 void SignPart::ctor_2(uDelegate* setter, uDelegate* getter)
 {
-    ctor_();
-    Setter(setter);
-    Getter(getter);
-    ExpectedSize(1);
-    Obligatory(false);
+    ctor_1(false, setter, getter);
 }
 
-// public SignPart New(bool obligatory, Uno.Action<T, int> setter, Uno.Func<T, int> getter) [static] :154
+// public SignPart New(bool obligatory, Uno.Action<T, int> setter, Uno.Func<T, int> getter) [static] :146
 SignPart* SignPart::New1(uType* __type, bool obligatory, uDelegate* setter, uDelegate* getter)
 {
     SignPart* obj2 = (SignPart*)uNew(__type);
@@ -2705,7 +2696,7 @@ SignPart* SignPart::New1(uType* __type, bool obligatory, uDelegate* setter, uDel
     return obj2;
 }
 
-// public SignPart New(Uno.Action<T, int> setter, Uno.Func<T, int> getter) [static] :146
+// public SignPart New(Uno.Action<T, int> setter, Uno.Func<T, int> getter) [static] :141
 SignPart* SignPart::New2(uType* __type, uDelegate* setter, uDelegate* getter)
 {
     SignPart* obj1 = (SignPart*)uNew(__type);

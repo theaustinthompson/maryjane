@@ -1,4 +1,4 @@
-// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/Fuse.Triggers/1.7.4/KeyboardVisible.uno.
+// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/Fuse.Controls.Panels/1.8.1/WhileKeyboardVisible.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -13,7 +13,7 @@ namespace g{
 namespace Fuse{
 namespace Triggers{
 
-// private sealed class WhileKeyboardVisible.RelativeToKeyboardMode :88
+// private sealed class WhileKeyboardVisible.RelativeToKeyboardMode :63
 // {
 struct WhileKeyboardVisible__RelativeToKeyboardMode_type : uType
 {
@@ -30,6 +30,8 @@ void WhileKeyboardVisible__RelativeToKeyboardMode__Unsubscribe_fn(WhileKeyboardV
 
 struct WhileKeyboardVisible__RelativeToKeyboardMode : uObject
 {
+    bool _notice;
+
     void ctor_();
     ::g::Uno::Float3 GetAbsVector(::g::Fuse::Translation* t);
     uObject* Subscribe(uObject* transform);

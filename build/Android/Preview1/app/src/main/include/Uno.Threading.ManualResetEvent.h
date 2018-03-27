@@ -1,4 +1,4 @@
-// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/Uno.Threading/1.7.1/ManualResetEvent.uno.
+// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/Uno.Threading/1.8.0/ManualResetEvent.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once

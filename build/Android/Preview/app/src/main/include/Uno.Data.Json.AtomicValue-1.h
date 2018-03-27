@@ -1,4 +1,4 @@
-// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/Uno.Data.Json/1.0.1/source/$.uno.
+// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/Uno.Data.Json/1.8.0/Source/JsonValue.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -10,7 +10,7 @@ namespace Uno{
 namespace Data{
 namespace Json{
 
-// internal abstract class AtomicValue<T> :185
+// internal abstract class AtomicValue<T> :17
 // {
 uType* AtomicValue_typeof();
 void AtomicValue__ctor_1_fn(AtomicValue* __this, void* val);

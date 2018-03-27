@@ -81,14 +81,14 @@
 #include <Uno.UInt.h>
 #include <Uno.ULong.h>
 #include <Uno/Support.h>
-static uString* STRINGS[18];
+static uString* STRINGS[17];
 static uType* TYPES[20];
 
 namespace g{
 namespace Uno{
 namespace IO{
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\IO\BinaryReader.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\IO\BinaryReader.uno
 // ------------------------------------------------------------------------------------------------
 
 // public sealed class BinaryReader :7
@@ -386,7 +386,7 @@ BinaryReader* BinaryReader::New1(::g::Uno::IO::Stream* stream)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\IO\BinaryWriter.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\IO\BinaryWriter.uno
 // ------------------------------------------------------------------------------------------------
 
 // public sealed class BinaryWriter :6
@@ -615,7 +615,7 @@ BinaryWriter* BinaryWriter::New1(::g::Uno::IO::Stream* stream)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\IO\Bundle.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\IO\Bundle.uno
 // ------------------------------------------------------------------------------------------
 
 // public sealed class Bundle :231
@@ -909,7 +909,7 @@ uObject* Bundle::AllFiles()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\IO\Bundle.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\IO\Bundle.uno
 // ------------------------------------------------------------------------------------------
 
 // public sealed class BundleFile :28
@@ -1226,7 +1226,7 @@ BundleFile* BundleFile::New1(::g::Uno::IO::Bundle* bundle, uString* sourcePath, 
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\IO\CppXliStream.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\IO\CppXliStream.uno
 // ------------------------------------------------------------------------------------------------
 
 // internal sealed extern class CppXliStream :18
@@ -1454,7 +1454,7 @@ CppXliStream* CppXliStream::New1(uBase::Stream* handle)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\IO\CppXliStream.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\IO\CppXliStream.uno
 // ------------------------------------------------------------------------------------------------
 
 // internal extern struct CppXliStreamHandle :10
@@ -1478,7 +1478,7 @@ uStructType* CppXliStreamHandle_typeof()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\IO\Directory.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\IO\Directory.uno
 // ---------------------------------------------------------------------------------------------
 
 // public static class Directory :12
@@ -1666,7 +1666,7 @@ void Directory::Move(uString* oldName, uString* newName)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\IO\DirectoryInfo.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\IO\DirectoryInfo.uno
 // -------------------------------------------------------------------------------------------------
 
 // public sealed class DirectoryInfo :5
@@ -1735,7 +1735,7 @@ DirectoryInfo* DirectoryInfo::New1(uString* originalPath)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\IO\IOException.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\IO\IOException.uno
 // -----------------------------------------------------------------------------------------------
 
 // public sealed class EndOfStreamException :15
@@ -1791,7 +1791,7 @@ EndOfStreamException* EndOfStreamException::New5()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\IO\File.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\IO\File.uno
 // ----------------------------------------------------------------------------------------
 
 // public static class File :27
@@ -2202,7 +2202,7 @@ void File::WriteAllText(uString* filename, uString* text)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\IO\FileAttributes.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\IO\FileAttributes.uno
 // --------------------------------------------------------------------------------------------------
 
 // public enum FileAttributes :3
@@ -2219,7 +2219,7 @@ uEnumType* FileAttributes_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\IO\FileInfo.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\IO\FileInfo.uno
 // --------------------------------------------------------------------------------------------
 
 // public sealed class FileInfo :5
@@ -2302,7 +2302,7 @@ FileInfo* FileInfo::New1(uString* originalPath)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\IO\FileMode.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\IO\FileMode.uno
 // --------------------------------------------------------------------------------------------
 
 // public enum FileMode :6
@@ -2322,7 +2322,7 @@ uEnumType* FileMode_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\IO\FileStatus.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\IO\FileStatus.uno
 // ----------------------------------------------------------------------------------------------
 
 // internal sealed class FileStatus :6
@@ -2489,7 +2489,7 @@ FileStatus* FileStatus::New2(int64_t length, int32_t attributes, ::g::Uno::Time:
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\IO\FileStatusHelpers.Unix.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\IO\FileStatusHelpers.Unix.uno
 // ----------------------------------------------------------------------------------------------------------
 
 // internal static extern class FileStatusHelpers :10
@@ -2572,7 +2572,7 @@ void FileStatusHelpers__UnixTimeToZoned_fn(int64_t* sec, ::g::Uno::Time::ZonedDa
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\IO\FileSystemEnumerable.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\IO\FileSystemEnumerable.uno
 // --------------------------------------------------------------------------------------------------------
 
 // internal sealed class FileSystemEnumerable :7
@@ -2664,7 +2664,7 @@ FileSystemEnumerable* FileSystemEnumerable::New1(uString* dirName, int32_t mode)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\IO\FileSystemEnumerator.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\IO\FileSystemEnumerator.uno
 // --------------------------------------------------------------------------------------------------------
 
 // internal sealed class FileSystemEnumerator :14
@@ -2826,7 +2826,7 @@ FileSystemEnumerator* FileSystemEnumerator::New1(::CppXliFileSystemEnumerator* h
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\IO\FileSystemImpl.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\IO\FileSystemImpl.uno
 // --------------------------------------------------------------------------------------------------
 
 // internal struct FileSystemEnumeratorHandle :11
@@ -2850,7 +2850,7 @@ uStructType* FileSystemEnumeratorHandle_typeof()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\IO\FileSystemEnumerator.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\IO\FileSystemEnumerator.uno
 // --------------------------------------------------------------------------------------------------------
 
 // internal enum FileSystemEnumeratorMode :7
@@ -2867,7 +2867,7 @@ uEnumType* FileSystemEnumeratorMode_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\IO\FileSystemInfo.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\IO\FileSystemInfo.uno
 // --------------------------------------------------------------------------------------------------
 
 // public abstract class FileSystemInfo :7
@@ -3025,7 +3025,7 @@ void FileSystemInfo::Refresh()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\IO\IOException.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\IO\IOException.uno
 // -----------------------------------------------------------------------------------------------
 
 // public class IOException :6
@@ -3079,7 +3079,7 @@ IOException* IOException::New4(uString* message)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\IO\MemoryStream.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\IO\MemoryStream.uno
 // ------------------------------------------------------------------------------------------------
 
 // public sealed class MemoryStream :7
@@ -3421,7 +3421,7 @@ MemoryStream* MemoryStream::New3(uArray* buffer, bool writable)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\IO\Path.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\IO\Path.uno
 // ----------------------------------------------------------------------------------------
 
 // public static class Path :7
@@ -3433,18 +3433,20 @@ static void Path__cctor__fn(uType* __type)
     Path::AltDirectorySeparatorChar_ = '/';
     Path::PathSeparator_ = Path::GetPathSeparator();
     Path::VolumeSeparatorChar_ = Path::GetVolumeSeparatorChar();
+    Path::DirectorySeparatorChars_ = Path::GetDirectorySeparatorChars();
 }
 
 static void Path_build(uType* type)
 {
     ::STRINGS[9] = uString::Const("path1");
     ::STRINGS[10] = uString::Const("path2");
-    ::STRINGS[11] = uString::Const("");
+    ::TYPES[5] = ::g::Uno::Char_typeof()->Array();
     type->SetFields(0,
         ::g::Uno::Char_typeof(), (uintptr_t)&Path::DirectorySeparatorChar_, uFieldFlagsStatic,
         ::g::Uno::Char_typeof(), (uintptr_t)&Path::AltDirectorySeparatorChar_, uFieldFlagsStatic,
         ::g::Uno::Char_typeof(), (uintptr_t)&Path::PathSeparator_, uFieldFlagsStatic,
-        ::g::Uno::Char_typeof(), (uintptr_t)&Path::VolumeSeparatorChar_, uFieldFlagsStatic);
+        ::g::Uno::Char_typeof(), (uintptr_t)&Path::VolumeSeparatorChar_, uFieldFlagsStatic,
+        ::TYPES[5/*char[]*/], (uintptr_t)&Path::DirectorySeparatorChars_, uFieldFlagsStatic);
     type->Reflection.SetFields(4,
         new uField("AltDirectorySeparatorChar", 1),
         new uField("DirectorySeparatorChar", 0),
@@ -3463,7 +3465,7 @@ uClassType* Path_typeof()
     if (type != NULL) return type;
 
     uTypeOptions options;
-    options.FieldCount = 4;
+    options.FieldCount = 5;
     options.TypeSize = sizeof(uClassType);
     type = uClassType::New("Uno.IO.Path", options);
     type->fp_build_ = Path_build;
@@ -3471,61 +3473,67 @@ uClassType* Path_typeof()
     return type;
 }
 
-// public static string Combine(string path1, string path2) :36
+// public static string Combine(string path1, string path2) :38
 void Path__Combine_fn(uString* path1, uString* path2, uString** __retval)
 {
     *__retval = Path::Combine(path1, path2);
 }
 
-// private static string CombineInternal(string a, string b) :19
+// private static string CombineInternal(string a, string b) :21
 void Path__CombineInternal_fn(uString* a, uString* b, uString** __retval)
 {
     *__retval = Path::CombineInternal(a, b);
 }
 
-// public static string GetDirectoryName(string path) :115
+// public static string GetDirectoryName(string path) :117
 void Path__GetDirectoryName_fn(uString* path, uString** __retval)
 {
     *__retval = Path::GetDirectoryName(path);
 }
 
-// private static char GetDirectorySeparatorChar() :230
+// private static char GetDirectorySeparatorChar() :227
 void Path__GetDirectorySeparatorChar_fn(char16_t* __retval)
 {
     *__retval = Path::GetDirectorySeparatorChar();
 }
 
-// public static string GetFullPath(string filename) :191
+// private static char[] GetDirectorySeparatorChars() :234
+void Path__GetDirectorySeparatorChars_fn(uArray** __retval)
+{
+    *__retval = Path::GetDirectorySeparatorChars();
+}
+
+// public static string GetFullPath(string filename) :188
 void Path__GetFullPath_fn(uString* filename, uString** __retval)
 {
     *__retval = Path::GetFullPath(filename);
 }
 
-// private static char GetPathSeparator() :237
+// private static char GetPathSeparator() :241
 void Path__GetPathSeparator_fn(char16_t* __retval)
 {
     *__retval = Path::GetPathSeparator();
 }
 
-// private static char GetVolumeSeparatorChar() :244
+// private static char GetVolumeSeparatorChar() :248
 void Path__GetVolumeSeparatorChar_fn(char16_t* __retval)
 {
     *__retval = Path::GetVolumeSeparatorChar();
 }
 
-// private static bool IsDirectorySeparator(char ch) :14
+// private static bool IsDirectorySeparator(char ch) :16
 void Path__IsDirectorySeparator_fn(char16_t* ch, bool* __retval)
 {
     *__retval = Path::IsDirectorySeparator(*ch);
 }
 
-// public static bool IsPathRooted(string path) :216
+// public static bool IsPathRooted(string path) :213
 void Path__IsPathRooted_fn(uString* path, bool* __retval)
 {
     *__retval = Path::IsPathRooted(path);
 }
 
-// private static string NormalizePathSeparators(string path) :91
+// private static string NormalizePathSeparators(string path) :93
 void Path__NormalizePathSeparators_fn(uString* path, uString** __retval)
 {
     *__retval = Path::NormalizePathSeparators(path);
@@ -3535,8 +3543,9 @@ char16_t Path::DirectorySeparatorChar_;
 char16_t Path::AltDirectorySeparatorChar_;
 char16_t Path::PathSeparator_;
 char16_t Path::VolumeSeparatorChar_;
+uSStrong<uArray*> Path::DirectorySeparatorChars_;
 
-// public static string Combine(string path1, string path2) [static] :36
+// public static string Combine(string path1, string path2) [static] :38
 uString* Path::Combine(uString* path1, uString* path2)
 {
     uStackFrame __("Uno.IO.Path", "Combine(string,string)");
@@ -3551,7 +3560,7 @@ uString* Path::Combine(uString* path1, uString* path2)
     return Path::CombineInternal(path1, path2);
 }
 
-// private static string CombineInternal(string a, string b) [static] :19
+// private static string CombineInternal(string a, string b) [static] :21
 uString* Path::CombineInternal(uString* a, uString* b)
 {
     uStackFrame __("Uno.IO.Path", "CombineInternal(string,string)");
@@ -3572,7 +3581,7 @@ uString* Path::CombineInternal(uString* a, uString* b)
     return ::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition1(a, uBox<char16_t>(::TYPES[2/*char*/], Path::DirectorySeparatorChar_)), b);
 }
 
-// public static string GetDirectoryName(string path) [static] :115
+// public static string GetDirectoryName(string path) [static] :117
 uString* Path::GetDirectoryName(uString* path)
 {
     uStackFrame __("Uno.IO.Path", "GetDirectoryName(string)");
@@ -3582,32 +3591,37 @@ uString* Path::GetDirectoryName(uString* path)
         return NULL;
 
     path = Path::NormalizePathSeparators(path);
+    int32_t lastDirectorySeparator = ::g::Uno::String::LastIndexOfAny(uPtr(path), Path::DirectorySeparatorChars_);
 
-    for (int32_t i = uPtr(path)->Length() - 1; i >= 0; i--)
-        if (Path::IsDirectorySeparator(uPtr(path)->Item(i)))
-        {
-            if (i == 0)
-            {
-                if (uPtr(path)->Length() == 1)
-                    return NULL;
+    if (lastDirectorySeparator < 0)
+        return ::g::Uno::String::Empty();
 
-                i = 1;
-            }
+    if (lastDirectorySeparator == 0)
+    {
+        if (uPtr(path)->Length() == 1)
+            return NULL;
 
-            return ::g::Uno::String::Substring1(uPtr(path), 0, i);
-        }
+        lastDirectorySeparator = 1;
+    }
 
-    return ::STRINGS[11/*""*/];
+    return ::g::Uno::String::Substring1(path, 0, lastDirectorySeparator);
 }
 
-// private static char GetDirectorySeparatorChar() [static] :230
+// private static char GetDirectorySeparatorChar() [static] :227
 char16_t Path::GetDirectorySeparatorChar()
 {
     Path_typeof()->Init();
     return '/';
 }
 
-// public static string GetFullPath(string filename) [static] :191
+// private static char[] GetDirectorySeparatorChars() [static] :234
+uArray* Path::GetDirectorySeparatorChars()
+{
+    Path_typeof()->Init();
+    return uArray::Init<int32_t>(::TYPES[5/*char[]*/], 1, '/');
+}
+
+// public static string GetFullPath(string filename) [static] :188
 uString* Path::GetFullPath(uString* filename)
 {
     uStackFrame __("Uno.IO.Path", "GetFullPath(string)");
@@ -3615,28 +3629,28 @@ uString* Path::GetFullPath(uString* filename)
     return Path::IsPathRooted(filename) ? filename : (uString*)Path::Combine(::g::Uno::IO::Directory::GetCurrentDirectory(), filename);
 }
 
-// private static char GetPathSeparator() [static] :237
+// private static char GetPathSeparator() [static] :241
 char16_t Path::GetPathSeparator()
 {
     Path_typeof()->Init();
     return ':';
 }
 
-// private static char GetVolumeSeparatorChar() [static] :244
+// private static char GetVolumeSeparatorChar() [static] :248
 char16_t Path::GetVolumeSeparatorChar()
 {
     Path_typeof()->Init();
     return '/';
 }
 
-// private static bool IsDirectorySeparator(char ch) [static] :14
+// private static bool IsDirectorySeparator(char ch) [static] :16
 bool Path::IsDirectorySeparator(char16_t ch)
 {
     Path_typeof()->Init();
     return (ch == Path::DirectorySeparatorChar_) || (ch == Path::AltDirectorySeparatorChar_);
 }
 
-// public static bool IsPathRooted(string path) [static] :216
+// public static bool IsPathRooted(string path) [static] :213
 bool Path::IsPathRooted(uString* path)
 {
     uStackFrame __("Uno.IO.Path", "IsPathRooted(string)");
@@ -3651,7 +3665,7 @@ bool Path::IsPathRooted(uString* path)
     return false;
 }
 
-// private static string NormalizePathSeparators(string path) [static] :91
+// private static string NormalizePathSeparators(string path) [static] :93
 uString* Path::NormalizePathSeparators(uString* path)
 {
     uStackFrame __("Uno.IO.Path", "NormalizePathSeparators(string)");
@@ -3680,7 +3694,7 @@ uString* Path::NormalizePathSeparators(uString* path)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\IO\SeekOrigin.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\IO\SeekOrigin.uno
 // ----------------------------------------------------------------------------------------------
 
 // public enum SeekOrigin :6
@@ -3697,7 +3711,7 @@ uEnumType* SeekOrigin_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\IO\Stream.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\IO\Stream.uno
 // ------------------------------------------------------------------------------------------
 
 // public abstract class Stream :7
@@ -3847,18 +3861,18 @@ void Stream::WriteTimeout(int32_t value)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\IO\StreamReader.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\IO\StreamReader.uno
 // ------------------------------------------------------------------------------------------------
 
 // public sealed class StreamReader :7
 // {
 static void StreamReader_build(uType* type)
 {
-    ::STRINGS[12] = uString::Const("StreamReader");
+    ::STRINGS[11] = uString::Const("StreamReader");
     ::STRINGS[8] = uString::Const("buffer");
-    ::STRINGS[13] = uString::Const("index");
-    ::STRINGS[14] = uString::Const("count");
-    ::STRINGS[15] = uString::Const("range");
+    ::STRINGS[12] = uString::Const("index");
+    ::STRINGS[13] = uString::Const("count");
+    ::STRINGS[14] = uString::Const("range");
     ::TYPES[0] = ::g::Uno::Byte_typeof()->Array();
     ::TYPES[5] = ::g::Uno::Char_typeof()->Array();
     type->SetInterfaces(
@@ -3930,7 +3944,7 @@ void StreamReader__Peek_fn(StreamReader* __this, int32_t* __retval)
     uStackFrame __("Uno.IO.StreamReader", "Peek()");
 
     if (__this->_stream == NULL)
-        U_THROW(::g::Uno::ObjectDisposedException::New4(::STRINGS[12/*"StreamReader"*/]));
+        U_THROW(::g::Uno::ObjectDisposedException::New4(::STRINGS[11/*"StreamReader"*/]));
 
     if (__this->_charPos == __this->_charLen)
     {
@@ -3949,7 +3963,7 @@ void StreamReader__Read_fn(StreamReader* __this, int32_t* __retval)
     uStackFrame __("Uno.IO.StreamReader", "Read()");
 
     if (__this->_stream == NULL)
-        U_THROW(::g::Uno::ObjectDisposedException::New4(::STRINGS[12/*"StreamReader"*/]));
+        U_THROW(::g::Uno::ObjectDisposedException::New4(::STRINGS[11/*"StreamReader"*/]));
 
     if (__this->_charPos == __this->_charLen)
     {
@@ -3973,16 +3987,16 @@ void StreamReader__Read1_fn(StreamReader* __this, uArray* buffer, int32_t* index
         U_THROW(::g::Uno::ArgumentNullException::New6(::STRINGS[8/*"buffer"*/]));
 
     if (index_ < 0)
-        U_THROW(::g::Uno::ArgumentOutOfRangeException::New6(::STRINGS[13/*"index"*/]));
+        U_THROW(::g::Uno::ArgumentOutOfRangeException::New6(::STRINGS[12/*"index"*/]));
 
     if (count_ < 0)
-        U_THROW(::g::Uno::ArgumentOutOfRangeException::New6(::STRINGS[14/*"count"*/]));
+        U_THROW(::g::Uno::ArgumentOutOfRangeException::New6(::STRINGS[13/*"count"*/]));
 
     if ((index_ + count_) > uPtr(buffer)->Length())
-        U_THROW(::g::Uno::ArgumentException::New4(::STRINGS[15/*"range"*/]));
+        U_THROW(::g::Uno::ArgumentException::New4(::STRINGS[14/*"range"*/]));
 
     if (__this->_stream == NULL)
-        U_THROW(::g::Uno::ObjectDisposedException::New4(::STRINGS[12/*"StreamReader"*/]));
+        U_THROW(::g::Uno::ObjectDisposedException::New4(::STRINGS[11/*"StreamReader"*/]));
 
     if (__this->_charLen == 0)
         __this->ReadBuffer();
@@ -4086,7 +4100,7 @@ StreamReader* StreamReader::New1(::g::Uno::IO::Stream* stream)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\IO\StreamWriter.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\IO\StreamWriter.uno
 // ------------------------------------------------------------------------------------------------
 
 // public sealed class StreamWriter :8
@@ -4094,9 +4108,9 @@ StreamReader* StreamReader::New1(::g::Uno::IO::Stream* stream)
 static void StreamWriter_build(uType* type)
 {
     ::STRINGS[8] = uString::Const("buffer");
-    ::STRINGS[13] = uString::Const("index");
-    ::STRINGS[14] = uString::Const("count");
-    ::STRINGS[15] = uString::Const("range");
+    ::STRINGS[12] = uString::Const("index");
+    ::STRINGS[13] = uString::Const("count");
+    ::STRINGS[14] = uString::Const("range");
     ::TYPES[0] = ::g::Uno::Byte_typeof()->Array();
     ::TYPES[2] = ::g::Uno::Char_typeof();
     type->SetInterfaces(
@@ -4203,13 +4217,13 @@ void StreamWriter__Write3_fn(StreamWriter* __this, uArray* buffer, int32_t* inde
         U_THROW(::g::Uno::ArgumentNullException::New6(::STRINGS[8/*"buffer"*/]));
 
     if (index_ < 0)
-        U_THROW(::g::Uno::ArgumentOutOfRangeException::New6(::STRINGS[13/*"index"*/]));
+        U_THROW(::g::Uno::ArgumentOutOfRangeException::New6(::STRINGS[12/*"index"*/]));
 
     if (count_ < 0)
-        U_THROW(::g::Uno::ArgumentOutOfRangeException::New6(::STRINGS[14/*"count"*/]));
+        U_THROW(::g::Uno::ArgumentOutOfRangeException::New6(::STRINGS[13/*"count"*/]));
 
     if ((index_ + count_) > uPtr(buffer)->Length())
-        U_THROW(::g::Uno::ArgumentException::New4(::STRINGS[15/*"range"*/]));
+        U_THROW(::g::Uno::ArgumentException::New4(::STRINGS[14/*"range"*/]));
 
     uArray* array = ::g::Uno::Text::Utf8::GetBytes(uString::CharArray(buffer));
     __this->Write13(array, index_, count_);
@@ -4262,18 +4276,18 @@ StreamWriter* StreamWriter::New1(::g::Uno::IO::Stream* stream)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\IO\StringReader.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\IO\StringReader.uno
 // ------------------------------------------------------------------------------------------------
 
 // public sealed class StringReader :6
 // {
 static void StringReader_build(uType* type)
 {
-    ::STRINGS[16] = uString::Const("StringReader");
+    ::STRINGS[15] = uString::Const("StringReader");
     ::STRINGS[8] = uString::Const("buffer");
-    ::STRINGS[13] = uString::Const("index");
-    ::STRINGS[14] = uString::Const("count");
-    ::STRINGS[15] = uString::Const("range");
+    ::STRINGS[12] = uString::Const("index");
+    ::STRINGS[13] = uString::Const("count");
+    ::STRINGS[14] = uString::Const("range");
     type->SetInterfaces(
         ::g::Uno::IDisposable_typeof(), offsetof(::g::Uno::IO::TextReader_type, interface0));
     type->SetFields(0,
@@ -4328,7 +4342,7 @@ void StringReader__Peek_fn(StringReader* __this, int32_t* __retval)
     uStackFrame __("Uno.IO.StringReader", "Peek()");
 
     if (::g::Uno::String::op_Equality(__this->_string, NULL))
-        U_THROW(::g::Uno::ObjectDisposedException::New4(::STRINGS[16/*"StringReader"*/]));
+        U_THROW(::g::Uno::ObjectDisposedException::New4(::STRINGS[15/*"StringReader"*/]));
 
     if (__this->_index == __this->_length)
         return *__retval = -1, void();
@@ -4342,7 +4356,7 @@ void StringReader__Read_fn(StringReader* __this, int32_t* __retval)
     uStackFrame __("Uno.IO.StringReader", "Read()");
 
     if (::g::Uno::String::op_Equality(__this->_string, NULL))
-        U_THROW(::g::Uno::ObjectDisposedException::New4(::STRINGS[16/*"StringReader"*/]));
+        U_THROW(::g::Uno::ObjectDisposedException::New4(::STRINGS[15/*"StringReader"*/]));
 
     if (__this->_index == __this->_length)
         return *__retval = -1, void();
@@ -4361,16 +4375,16 @@ void StringReader__Read1_fn(StringReader* __this, uArray* buffer, int32_t* index
         U_THROW(::g::Uno::ArgumentNullException::New6(::STRINGS[8/*"buffer"*/]));
 
     if (index_ < 0)
-        U_THROW(::g::Uno::ArgumentOutOfRangeException::New6(::STRINGS[13/*"index"*/]));
+        U_THROW(::g::Uno::ArgumentOutOfRangeException::New6(::STRINGS[12/*"index"*/]));
 
     if (count_ < 0)
-        U_THROW(::g::Uno::ArgumentOutOfRangeException::New6(::STRINGS[14/*"count"*/]));
+        U_THROW(::g::Uno::ArgumentOutOfRangeException::New6(::STRINGS[13/*"count"*/]));
 
     if ((index_ + count_) > uPtr(buffer)->Length())
-        U_THROW(::g::Uno::ArgumentException::New4(::STRINGS[15/*"range"*/]));
+        U_THROW(::g::Uno::ArgumentException::New4(::STRINGS[14/*"range"*/]));
 
     if (::g::Uno::String::op_Equality(__this->_string, NULL))
-        U_THROW(::g::Uno::ObjectDisposedException::New4(::STRINGS[16/*"StringReader"*/]));
+        U_THROW(::g::Uno::ObjectDisposedException::New4(::STRINGS[15/*"StringReader"*/]));
 
     int32_t readCount = __this->_length - __this->_index;
 
@@ -4407,18 +4421,18 @@ StringReader* StringReader::New1(uString* text)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\IO\StringWriter.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\IO\StringWriter.uno
 // ------------------------------------------------------------------------------------------------
 
 // public sealed class StringWriter :7
 // {
 static void StringWriter_build(uType* type)
 {
-    ::STRINGS[17] = uString::Const("StringWriter");
+    ::STRINGS[16] = uString::Const("StringWriter");
     ::STRINGS[8] = uString::Const("buffer");
-    ::STRINGS[13] = uString::Const("index");
-    ::STRINGS[14] = uString::Const("count");
-    ::STRINGS[15] = uString::Const("range");
+    ::STRINGS[12] = uString::Const("index");
+    ::STRINGS[13] = uString::Const("count");
+    ::STRINGS[14] = uString::Const("range");
     ::TYPES[5] = ::g::Uno::Char_typeof()->Array();
     ::TYPES[11] = ::g::Uno::Array_typeof()->MakeMethod(0/*Copy<char>*/, ::g::Uno::Char_typeof(), NULL);
     type->SetInterfaces(
@@ -4506,7 +4520,7 @@ void StringWriter__Write1_fn(StringWriter* __this, char16_t* value)
     char16_t value_ = *value;
 
     if (!__this->_open)
-        U_THROW(::g::Uno::ObjectDisposedException::New4(::STRINGS[17/*"StringWriter"*/]));
+        U_THROW(::g::Uno::ObjectDisposedException::New4(::STRINGS[16/*"StringWriter"*/]));
 
     uPtr(__this->_buffer)->Item<char16_t>(__this->_index++) = value_;
 
@@ -4525,16 +4539,16 @@ void StringWriter__Write3_fn(StringWriter* __this, uArray* buffer, int32_t* inde
         U_THROW(::g::Uno::ArgumentNullException::New6(::STRINGS[8/*"buffer"*/]));
 
     if (index_ < 0)
-        U_THROW(::g::Uno::ArgumentOutOfRangeException::New6(::STRINGS[13/*"index"*/]));
+        U_THROW(::g::Uno::ArgumentOutOfRangeException::New6(::STRINGS[12/*"index"*/]));
 
     if (count_ < 0)
-        U_THROW(::g::Uno::ArgumentOutOfRangeException::New6(::STRINGS[14/*"count"*/]));
+        U_THROW(::g::Uno::ArgumentOutOfRangeException::New6(::STRINGS[13/*"count"*/]));
 
     if ((index_ + count_) > uPtr(buffer)->Length())
-        U_THROW(::g::Uno::ArgumentException::New4(::STRINGS[15/*"range"*/]));
+        U_THROW(::g::Uno::ArgumentException::New4(::STRINGS[14/*"range"*/]));
 
     if (!__this->_open)
-        U_THROW(::g::Uno::ObjectDisposedException::New4(::STRINGS[17/*"StringWriter"*/]));
+        U_THROW(::g::Uno::ObjectDisposedException::New4(::STRINGS[16/*"StringWriter"*/]));
 
     if ((__this->_index + count_) >= 256)
         __this->WriteBuffer();
@@ -4587,7 +4601,7 @@ StringWriter* StringWriter::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\IO\TextReader.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\IO\TextReader.uno
 // ----------------------------------------------------------------------------------------------
 
 // public abstract class TextReader :8
@@ -4595,9 +4609,9 @@ StringWriter* StringWriter::New1()
 static void TextReader_build(uType* type)
 {
     ::STRINGS[8] = uString::Const("buffer");
-    ::STRINGS[13] = uString::Const("index");
-    ::STRINGS[14] = uString::Const("count");
-    ::STRINGS[15] = uString::Const("range");
+    ::STRINGS[12] = uString::Const("index");
+    ::STRINGS[13] = uString::Const("count");
+    ::STRINGS[14] = uString::Const("range");
     ::TYPES[12] = ::g::Uno::Collections::List_typeof()->MakeType(::g::Uno::Char_typeof(), NULL);
     type->SetInterfaces(
         ::g::Uno::IDisposable_typeof(), offsetof(TextReader_type, interface0));
@@ -4668,13 +4682,13 @@ void TextReader__Read1_fn(TextReader* __this, uArray* buffer, int32_t* index, in
         U_THROW(::g::Uno::ArgumentNullException::New6(::STRINGS[8/*"buffer"*/]));
 
     if (index_ < 0)
-        U_THROW(::g::Uno::ArgumentOutOfRangeException::New6(::STRINGS[13/*"index"*/]));
+        U_THROW(::g::Uno::ArgumentOutOfRangeException::New6(::STRINGS[12/*"index"*/]));
 
     if (count_ < 0)
-        U_THROW(::g::Uno::ArgumentOutOfRangeException::New6(::STRINGS[14/*"count"*/]));
+        U_THROW(::g::Uno::ArgumentOutOfRangeException::New6(::STRINGS[13/*"count"*/]));
 
     if ((index_ + count_) > uPtr(buffer)->Length())
-        U_THROW(::g::Uno::ArgumentException::New4(::STRINGS[15/*"range"*/]));
+        U_THROW(::g::Uno::ArgumentException::New4(::STRINGS[14/*"range"*/]));
 
     int32_t i = 0;
 
@@ -4737,7 +4751,7 @@ uString* TextReader::ReadLine()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\IO\TextWriter.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\IO\TextWriter.uno
 // ----------------------------------------------------------------------------------------------
 
 // public abstract class TextWriter :7
@@ -5252,7 +5266,7 @@ void TextWriter::WriteLine13(uint64_t value)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\IO\File.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\IO\File.uno
 // ----------------------------------------------------------------------------------------
 
 // public enum UserDirectory :8

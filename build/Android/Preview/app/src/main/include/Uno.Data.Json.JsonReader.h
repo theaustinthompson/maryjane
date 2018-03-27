@@ -1,4 +1,4 @@
-// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/Uno.Data.Json/1.0.1/source/$.uno.
+// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/Uno.Data.Json/1.8.0/Source/JsonReader.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -11,7 +11,7 @@ namespace Uno{
 namespace Data{
 namespace Json{
 
-// public sealed class JsonReader :37
+// public sealed class JsonReader :8
 // {
 uType* JsonReader_typeof();
 void JsonReader__ctor__fn(JsonReader* __this, ::g::Uno::Data::Json::Value* value);

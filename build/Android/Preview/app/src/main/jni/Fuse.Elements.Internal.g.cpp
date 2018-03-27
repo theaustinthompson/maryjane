@@ -34,7 +34,7 @@ namespace Fuse{
 namespace Elements{
 namespace Internal{
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Elements\1.7.4\Drawing\Scale9Rectangle.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Elements\1.8.1\Drawing\Scale9Rectangle.uno
 // ---------------------------------------------------------------------------------------------------
 
 // internal sealed class Scale9Rectangle :7

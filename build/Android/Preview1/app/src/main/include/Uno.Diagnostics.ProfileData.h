@@ -1,4 +1,4 @@
-// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/UnoCore/1.7.1/Source/Uno/Diagnostics/ProfileData.uno.
+// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/UnoCore/1.8.0/Source/Uno/Diagnostics/ProfileData.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -12,7 +12,7 @@ namespace g{
 namespace Uno{
 namespace Diagnostics{
 
-// public sealed class ProfileData :5
+// public sealed class ProfileData :6
 // {
 uType* ProfileData_typeof();
 void ProfileData__ctor__fn(ProfileData* __this);

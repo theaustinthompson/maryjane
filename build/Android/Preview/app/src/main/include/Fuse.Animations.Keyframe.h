@@ -1,9 +1,9 @@
-// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/Fuse.Animations/1.7.4/Keyframe.uno.
+// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/Fuse.Animations/1.8.1/Keyframe.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
 #include <Uno.Float4.h>
-#include <Uno.Object.h>
+#include <Uno.UX.PropertyObject.h>
 namespace g{namespace Fuse{namespace Animations{struct Keyframe;}}}
 namespace g{namespace Uno{struct Float2;}}
 namespace g{namespace Uno{struct Float3;}}
@@ -12,10 +12,10 @@ namespace g{
 namespace Fuse{
 namespace Animations{
 
-// public sealed class Keyframe :37
+// public sealed class Keyframe :41
 // {
 uType* Keyframe_typeof();
-void Keyframe__ctor__fn(Keyframe* __this);
+void Keyframe__ctor_1_fn(Keyframe* __this);
 void Keyframe__CompleteFrames_fn(uObject* frames, float* tension, float* bias, float* continuity, double* __retval);
 void Keyframe__get_DegreesX_fn(Keyframe* __this, float* __retval);
 void Keyframe__set_DegreesX_fn(Keyframe* __this, float* value);
@@ -25,9 +25,11 @@ void Keyframe__get_DegreesY_fn(Keyframe* __this, float* __retval);
 void Keyframe__set_DegreesY_fn(Keyframe* __this, float* value);
 void Keyframe__get_DegreesZ_fn(Keyframe* __this, float* __retval);
 void Keyframe__set_DegreesZ_fn(Keyframe* __this, float* value);
-void Keyframe__New1_fn(Keyframe** __retval);
+void Keyframe__New2_fn(Keyframe** __retval);
 void Keyframe__get_ObjectValue_fn(Keyframe* __this, uObject** __retval);
 void Keyframe__set_ObjectValue_fn(Keyframe* __this, uObject* value);
+void Keyframe__get_Tangent_fn(Keyframe* __this, ::g::Uno::Float4* __retval);
+void Keyframe__set_Tangent_fn(Keyframe* __this, ::g::Uno::Float4* value);
 void Keyframe__get_TangentIn_fn(Keyframe* __this, ::g::Uno::Float4* __retval);
 void Keyframe__set_TangentIn_fn(Keyframe* __this, ::g::Uno::Float4* value);
 void Keyframe__get_TangentOut_fn(Keyframe* __this, ::g::Uno::Float4* __retval);
@@ -49,7 +51,7 @@ void Keyframe__set_Y_fn(Keyframe* __this, float* value);
 void Keyframe__get_Z_fn(Keyframe* __this, float* __retval);
 void Keyframe__set_Z_fn(Keyframe* __this, float* value);
 
-struct Keyframe : uObject
+struct Keyframe : ::g::Uno::UX::PropertyObject
 {
     ::g::Uno::Float4 _value;
     uStrong<uObject*> _objectValue;
@@ -62,7 +64,7 @@ struct Keyframe : uObject
     bool _hasTangentIn;
     bool _hasTangentOut;
 
-    void ctor_();
+    void ctor_1();
     float DegreesX();
     void DegreesX(float value);
     ::g::Uno::Float2 DegreesXY();
@@ -73,6 +75,8 @@ struct Keyframe : uObject
     void DegreesZ(float value);
     uObject* ObjectValue();
     void ObjectValue(uObject* value);
+    ::g::Uno::Float4 Tangent();
+    void Tangent(::g::Uno::Float4 value);
     ::g::Uno::Float4 TangentIn();
     void TangentIn(::g::Uno::Float4 value);
     ::g::Uno::Float4 TangentOut();
@@ -94,7 +98,7 @@ struct Keyframe : uObject
     float Z();
     void Z(float value);
     static double CompleteFrames(uObject* frames, float tension, float bias, float continuity);
-    static Keyframe* New1();
+    static Keyframe* New2();
 };
 // }
 

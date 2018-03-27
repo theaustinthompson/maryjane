@@ -1,4 +1,4 @@
-// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/Fuse.Animations/1.7.4/Cycle.uno.
+// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/Fuse.Animations/1.8.1/Cycle.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -13,7 +13,7 @@ namespace g{
 namespace Fuse{
 namespace Animations{
 
-// public sealed class Cycle<T> :51
+// public sealed class Cycle<T> :60
 // {
 ::g::Fuse::Animations::Animator_type* Cycle_typeof();
 void Cycle__ctor_3_fn(Cycle* __this, ::g::Uno::UX::Property1* Target1);
@@ -37,6 +37,8 @@ void Cycle__get_Offset_fn(Cycle* __this, uTRef __retval);
 void Cycle__set_Offset_fn(Cycle* __this, void* value);
 void Cycle__get_ProgressOffset_fn(Cycle* __this, float* __retval);
 void Cycle__set_ProgressOffset_fn(Cycle* __this, float* value);
+void Cycle__get_Restore_fn(Cycle* __this, int32_t* __retval);
+void Cycle__set_Restore_fn(Cycle* __this, int32_t* value);
 void Cycle__get_RestProgress_fn(Cycle* __this, double* __retval);
 void Cycle__get_Target_fn(Cycle* __this, ::g::Uno::UX::Property1** __retval);
 void Cycle__set_Target_fn(Cycle* __this, ::g::Uno::UX::Property1* value);
@@ -50,13 +52,14 @@ struct Cycle : ::g::Fuse::Animations::OpenAnimator
     bool _hasBackFrequency;
     double _backFrequency;
     int32_t _waveform;
+    int32_t _restore;
     float _progressOffset;
     bool _hasProgressOffset;
     uStrong< ::g::Fuse::Animations::Easing*> _easing;
-    uTField _Base() { return __type->Field(this, 14); }
+    uTField _Base() { return __type->Field(this, 15); }
     float _High;
     float _Low;
-    uTField _Offset() { return __type->Field(this, 17); }
+    uTField _Offset() { return __type->Field(this, 18); }
     uStrong< ::g::Uno::UX::Property1*> _Target;
 
     void ctor_3(::g::Uno::UX::Property1* Target1);
@@ -82,6 +85,8 @@ struct Cycle : ::g::Fuse::Animations::OpenAnimator
     void Offset(T value) { Cycle__set_Offset_fn(this, uConstrain(__type->T(0), value)); }
     float ProgressOffset();
     void ProgressOffset(float value);
+    int32_t Restore();
+    void Restore(int32_t value);
     double RestProgress();
     ::g::Uno::UX::Property1* Target();
     void Target(::g::Uno::UX::Property1* value);

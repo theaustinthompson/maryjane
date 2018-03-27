@@ -1,4 +1,4 @@
-// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/Fuse.Gestures/1.7.4/Swipe.uno.
+// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/Fuse.Gestures/1.8.1/Swipe.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -11,7 +11,7 @@ namespace g{
 namespace Fuse{
 namespace Gestures{
 
-// public sealed class SetSwipeActive :377
+// public sealed class SetSwipeActive :403
 // {
 ::g::Fuse::Triggers::Actions::TriggerAction_type* SetSwipeActive_typeof();
 void SetSwipeActive__ctor_2_fn(SetSwipeActive* __this);

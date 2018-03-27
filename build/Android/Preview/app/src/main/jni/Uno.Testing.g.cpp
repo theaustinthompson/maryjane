@@ -17,7 +17,7 @@ namespace g{
 namespace Uno{
 namespace Testing{
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Testing\1.7.1\Assert.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Testing\1.8.0\Assert.uno
 // --------------------------------------------------------------------------------
 
 // public partial static class Assert :8
@@ -82,7 +82,7 @@ void Assert::ReportFailure(uString* filePath, int32_t lineNumber, uString* membe
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Testing\1.7.1\Exceptions\AssertionFailedException.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Testing\1.8.0\Exceptions\AssertionFailedException.uno
 // -------------------------------------------------------------------------------------------------------------
 
 // internal sealed class AssertionFailedException :3
@@ -144,7 +144,7 @@ AssertionFailedException* AssertionFailedException::New4(uString* fileName, int3
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Testing\1.7.1\NamedTestMethod.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Testing\1.8.0\NamedTestMethod.uno
 // -----------------------------------------------------------------------------------------
 
 // internal sealed class NamedTestMethod :3
@@ -167,7 +167,7 @@ uType* NamedTestMethod_typeof()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Testing\1.7.1\Registry.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Testing\1.8.0\Registry.uno
 // ----------------------------------------------------------------------------------
 
 // public sealed class Registry :5
@@ -223,7 +223,7 @@ Registry* Registry::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Testing\1.7.1\Attributes\TestAttribute.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Testing\1.8.0\Attributes\TestAttribute.uno
 // --------------------------------------------------------------------------------------------------
 
 // public sealed class TestAttribute :4

@@ -35,7 +35,7 @@ namespace g{
 namespace Fuse{
 namespace Nodes{
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\DrawRectVisualizer.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\DrawRectVisualizer.uno
 // -------------------------------------------------------------------------------------------
 
 // internal struct DrawRect :33
@@ -127,7 +127,7 @@ DrawRect DrawRect__New2(uArray* verts, ::g::Uno::Recti scissor)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\DrawRectVisualizer.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\DrawRectVisualizer.uno
 // -------------------------------------------------------------------------------------------
 
 // internal sealed class DrawRectVisualizer :63

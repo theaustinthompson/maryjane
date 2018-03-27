@@ -1,4 +1,4 @@
-// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/UnoCore/1.7.1/Source/Uno/Math.uno.
+// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/UnoCore/1.8.0/Source/Uno/Math.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -67,6 +67,7 @@ void Math__Max3_fn(::g::Uno::Float2* a, ::g::Uno::Float2* b, ::g::Uno::Float2* _
 void Math__Max4_fn(::g::Uno::Float3* a, float* b, ::g::Uno::Float3* __retval);
 void Math__Max5_fn(::g::Uno::Float3* a, ::g::Uno::Float3* b, ::g::Uno::Float3* __retval);
 void Math__Max6_fn(::g::Uno::Float4* a, float* b, ::g::Uno::Float4* __retval);
+void Math__Max7_fn(::g::Uno::Float4* a, ::g::Uno::Float4* b, ::g::Uno::Float4* __retval);
 void Math__Max8_fn(int32_t* a, int32_t* b, int32_t* __retval);
 void Math__Max10_fn(::g::Uno::Int2* a, ::g::Uno::Int2* b, ::g::Uno::Int2* __retval);
 void Math__Max13_fn(::g::Uno::Int4* a, int32_t* b, ::g::Uno::Int4* __retval);
@@ -156,6 +157,7 @@ struct Math : uObject
     static ::g::Uno::Float3 Max4(::g::Uno::Float3 a, float b);
     static ::g::Uno::Float3 Max5(::g::Uno::Float3 a, ::g::Uno::Float3 b);
     static ::g::Uno::Float4 Max6(::g::Uno::Float4 a, float b);
+    static ::g::Uno::Float4 Max7(::g::Uno::Float4 a, ::g::Uno::Float4 b);
     static int32_t Max8(int32_t a, int32_t b);
     static ::g::Uno::Int2 Max10(::g::Uno::Int2 a, ::g::Uno::Int2 b);
     static ::g::Uno::Int4 Max13(::g::Uno::Int4 a, int32_t b);

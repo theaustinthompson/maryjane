@@ -1,4 +1,4 @@
-// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/UnoCore/1.7.1/Source/Uno/Time/Timezones/FixedDateTimeZone.uno.
+// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/UnoCore/1.8.0/Source/Uno/Time/Timezones/FixedDateTimeZone.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once

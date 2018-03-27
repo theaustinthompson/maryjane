@@ -1,4 +1,4 @@
-// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/UnoCore/1.7.1/Source/Uno/Diagnostics/ProfileEvent.uno.
+// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/UnoCore/1.8.0/Source/Uno/Diagnostics/ProfileEvent.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -9,7 +9,7 @@ namespace g{
 namespace Uno{
 namespace Diagnostics{
 
-// public abstract class ProfileEvent :3
+// public abstract class ProfileEvent :4
 // {
 struct ProfileEvent_type : uType
 {

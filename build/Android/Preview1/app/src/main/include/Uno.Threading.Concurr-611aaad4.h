@@ -1,4 +1,4 @@
-// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/Uno.Threading/1.7.1/ConcurrentDictionary.uno.
+// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/Uno.Threading/1.8.0/ConcurrentDictionary.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -37,9 +37,14 @@ void ConcurrentDictionary__get_Item_fn(ConcurrentDictionary* __this, void* key, 
 void ConcurrentDictionary__set_Item_fn(ConcurrentDictionary* __this, void* key, void* value);
 void ConcurrentDictionary__get_Keys_fn(ConcurrentDictionary* __this, uObject** __retval);
 void ConcurrentDictionary__New1_fn(uType* __type, ConcurrentDictionary** __retval);
-void ConcurrentDictionary__Remove_fn(ConcurrentDictionary* __this, void* key, bool* __retval);
+void ConcurrentDictionary__Remove_fn(ConcurrentDictionary* __this, void* key);
 void ConcurrentDictionary__Remove1_fn(ConcurrentDictionary* __this, void* keyValue, bool* __retval);
 void ConcurrentDictionary__TryGetValue_fn(ConcurrentDictionary* __this, void* key, uTRef value, bool* __retval);
+void ConcurrentDictionary__UnoCollectionsIDictionaryTKeyTValueAdd_fn(ConcurrentDictionary* __this, void* key, void* value);
+void ConcurrentDictionary__UnoCollectionsIDictionaryTKeyTValueget_Keys_fn(ConcurrentDictionary* __this, uObject** __retval);
+void ConcurrentDictionary__UnoCollectionsIDictionaryTKeyTValueRemove_fn(ConcurrentDictionary* __this, void* key, bool* __retval);
+void ConcurrentDictionary__UnoCollectionsIDictionaryTKeyTValueget_Values_fn(ConcurrentDictionary* __this, uObject** __retval);
+void ConcurrentDictionary__UnoCollectionsIEnumerableUnoCollectionsKeyValuePairTKeyTValueGetEnumerator_fn(ConcurrentDictionary* __this, uObject** __retval);
 void ConcurrentDictionary__get_Values_fn(ConcurrentDictionary* __this, uObject** __retval);
 
 struct ConcurrentDictionary : uObject
@@ -67,7 +72,7 @@ struct ConcurrentDictionary : uObject
     void Item(TKey key, TValue value) { ConcurrentDictionary__set_Item_fn(this, uConstrain(__type->T(0), key), uConstrain(__type->T(1), value)); }
     uObject* Keys();
     template<class TKey>
-    bool Remove(TKey key) { bool __retval; return ConcurrentDictionary__Remove_fn(this, uConstrain(__type->T(0), key), &__retval), __retval; }
+    void Remove(TKey key) { ConcurrentDictionary__Remove_fn(this, uConstrain(__type->T(0), key)); }
     template<class TKey, class TValue>
     bool Remove1(::g::Uno::Collections::KeyValuePair<TKey, TValue> keyValue) { bool __retval; return ConcurrentDictionary__Remove1_fn(this, uConstrain(::g::Uno::Collections::KeyValuePair_typeof()->MakeType(__type->T(0), __type->T(1), NULL), keyValue), &__retval), __retval; }
     template<class TKey, class TValue>

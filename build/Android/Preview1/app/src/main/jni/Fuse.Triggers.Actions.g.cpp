@@ -115,7 +115,7 @@ namespace Fuse{
 namespace Triggers{
 namespace Actions{
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Elements\1.7.4\Triggers\Actions\BringIntoView.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Elements\1.8.1\Triggers\Actions\BringIntoView.uno
 // ----------------------------------------------------------------------------------------------------------
 
 // public sealed class BringIntoView :39
@@ -183,7 +183,7 @@ BringIntoView* BringIntoView::New2()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls\1.7.4\Triggers\BringToFront.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls\1.8.1\Triggers\BringToFront.uno
 // -------------------------------------------------------------------------------------------------
 
 // public sealed class BringToFront :37
@@ -285,7 +285,7 @@ BringToFront* BringToFront::New2()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Triggers\1.7.4\Actions\Callback.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Triggers\1.8.1\Actions\Callback.uno
 // --------------------------------------------------------------------------------------------
 
 // public sealed class Callback :25
@@ -414,7 +414,7 @@ Callback* Callback::New2()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Triggers\1.7.4\Actions\CancelInteractions.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Triggers\1.8.1\Actions\CancelInteractions.uno
 // ------------------------------------------------------------------------------------------------------
 
 // public sealed class CancelInteractions :8
@@ -510,7 +510,7 @@ CancelInteractions* CancelInteractions::New2()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Triggers\1.7.4\Actions\Visibility.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Triggers\1.8.1\Actions\Visibility.uno
 // ----------------------------------------------------------------------------------------------
 
 // public sealed class Collapse :102
@@ -518,7 +518,7 @@ CancelInteractions* CancelInteractions::New2()
 static void Collapse_build(uType* type)
 {
     ::STRINGS[0] = uString::Const("Cannot find an Element/ICollapse");
-    ::STRINGS[1] = uString::Const("C:\\Users\\borde_000\\AppData\\Local\\Fusetools\\Packages\\Fuse.Triggers\\1.7.4\\Actions\\Visibility.uno");
+    ::STRINGS[1] = uString::Const("C:\\Users\\borde_000\\AppData\\Local\\Fusetools\\Packages\\Fuse.Triggers\\1.8.1\\Actions\\Visibility.uno");
     ::STRINGS[2] = uString::Const("Perform");
     ::TYPES[4] = ::g::Fuse::Node_typeof()->MakeMethod(1/*FindByType<Fuse.Triggers.Actions.ICollapse>*/, ::g::Fuse::Triggers::Actions::ICollapse_typeof(), NULL);
     ::TYPES[5] = ::g::Fuse::Triggers::Actions::ICollapse_typeof();
@@ -583,7 +583,7 @@ Collapse* Collapse::New2()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Triggers\1.7.4\Actions\DebugAction.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Triggers\1.8.1\Actions\DebugAction.uno
 // -----------------------------------------------------------------------------------------------
 
 // public sealed class DebugAction :20
@@ -734,7 +734,7 @@ DebugAction* DebugAction::New2()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Triggers\1.7.4\Actions\DebugProperty.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Triggers\1.8.1\Actions\DebugProperty.uno
 // -------------------------------------------------------------------------------------------------
 
 // public sealed class DebugFrame :56
@@ -822,7 +822,7 @@ DebugFrame* DebugFrame::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Triggers\1.7.4\Actions\DebugProperty.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Triggers\1.8.1\Actions\DebugProperty.uno
 // -------------------------------------------------------------------------------------------------
 
 // public sealed class DebugProperty<T> :12
@@ -964,7 +964,7 @@ DebugProperty* DebugProperty::New1(uType* __type, ::g::Uno::UX::Property1* val)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Triggers\1.7.4\Actions\DebugProperty.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Triggers\1.8.1\Actions\DebugProperty.uno
 // -------------------------------------------------------------------------------------------------
 
 // public sealed class DebugTime :43
@@ -1049,7 +1049,7 @@ DebugTime* DebugTime::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.WebView\1.7.4\EvaluateJS.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.WebView\1.8.1\EvaluateJS.uno
 // ----------------------------------------------------------------------------------------------
 
 // public sealed class EvaluateJS :104
@@ -1257,7 +1257,7 @@ EvaluateJS* EvaluateJS::New2()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Triggers\1.7.4\Actions\Focus.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Triggers\1.8.1\Actions\Focus.uno
 // -----------------------------------------------------------------------------------------
 
 // public sealed class GiveFocus :25
@@ -1364,7 +1364,7 @@ GiveFocus* GiveFocus::New2()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Triggers\1.7.4\Actions\Visibility.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Triggers\1.8.1\Actions\Visibility.uno
 // ----------------------------------------------------------------------------------------------
 
 // public sealed class Hide :66
@@ -1372,7 +1372,7 @@ GiveFocus* GiveFocus::New2()
 static void Hide_build(uType* type)
 {
     ::STRINGS[9] = uString::Const("Cannot find an Element/IHide");
-    ::STRINGS[1] = uString::Const("C:\\Users\\borde_000\\AppData\\Local\\Fusetools\\Packages\\Fuse.Triggers\\1.7.4\\Actions\\Visibility.uno");
+    ::STRINGS[1] = uString::Const("C:\\Users\\borde_000\\AppData\\Local\\Fusetools\\Packages\\Fuse.Triggers\\1.8.1\\Actions\\Visibility.uno");
     ::STRINGS[2] = uString::Const("Perform");
     ::TYPES[13] = ::g::Fuse::Node_typeof()->MakeMethod(1/*FindByType<Fuse.Triggers.Actions.IHide>*/, ::g::Fuse::Triggers::Actions::IHide_typeof(), NULL);
     ::TYPES[14] = ::g::Fuse::Triggers::Actions::IHide_typeof();
@@ -1437,7 +1437,7 @@ Hide* Hide::New2()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Triggers\1.7.4\Actions\Visibility.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Triggers\1.8.1\Actions\Visibility.uno
 // ----------------------------------------------------------------------------------------------
 
 // public abstract interface ICollapse :78
@@ -1454,7 +1454,7 @@ uInterfaceType* ICollapse_typeof()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Triggers\1.7.4\Actions\Visibility.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Triggers\1.8.1\Actions\Visibility.uno
 // ----------------------------------------------------------------------------------------------
 
 // public abstract interface IHide :42
@@ -1471,7 +1471,7 @@ uInterfaceType* IHide_typeof()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Triggers\1.7.4\Actions\Visibility.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Triggers\1.8.1\Actions\Visibility.uno
 // ----------------------------------------------------------------------------------------------
 
 // public abstract interface IShow :5
@@ -1488,7 +1488,7 @@ uInterfaceType* IShow_typeof()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Triggers\1.7.4\Actions\DebugProperty.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Triggers\1.8.1\Actions\DebugProperty.uno
 // -------------------------------------------------------------------------------------------------
 
 // public abstract interface ITaggedDebugProperty :6
@@ -1506,7 +1506,7 @@ uInterfaceType* ITaggedDebugProperty_typeof()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Triggers\1.7.4\Actions\Toggle.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Triggers\1.8.1\Actions\Toggle.uno
 // ------------------------------------------------------------------------------------------
 
 // public abstract interface IToggleable :5
@@ -1523,7 +1523,7 @@ uInterfaceType* IToggleable_typeof()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.WebView\1.7.4\EvaluateJS.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.WebView\1.8.1\EvaluateJS.uno
 // ----------------------------------------------------------------------------------------------
 
 // public sealed class JSEventArgs :9
@@ -1594,7 +1594,7 @@ JSEventArgs* JSEventArgs::New2(uString* resultJson)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.WebView\1.7.4\EvaluateJS.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.WebView\1.8.1\EvaluateJS.uno
 // ----------------------------------------------------------------------------------------------
 
 // public delegate void JSEventHandler(object sender, Fuse.Triggers.Actions.JSEventArgs args) :23
@@ -1610,7 +1610,7 @@ uDelegateType* JSEventHandler_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.WebView\1.7.4\WebViewNavActions.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.WebView\1.8.1\WebViewNavActions.uno
 // -----------------------------------------------------------------------------------------------------
 
 // public sealed class LoadHtml :94
@@ -1764,7 +1764,7 @@ LoadHtml* LoadHtml::New2()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.WebView\1.7.4\WebViewNavActions.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.WebView\1.8.1\WebViewNavActions.uno
 // -----------------------------------------------------------------------------------------------------
 
 // public sealed class LoadUrl :52
@@ -1857,7 +1857,7 @@ LoadUrl* LoadUrl::New2()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Triggers\1.7.4\Actions\Playback.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Triggers\1.8.1\Actions\Playback.uno
 // --------------------------------------------------------------------------------------------
 
 // public sealed class Pause :144
@@ -1927,7 +1927,7 @@ Pause* Pause::New2()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Triggers\1.7.4\Actions\Playback.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Triggers\1.8.1\Actions\Playback.uno
 // --------------------------------------------------------------------------------------------
 
 // public class Play :213
@@ -1997,7 +1997,7 @@ Play* Play::New2()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Triggers\1.7.4\Actions\Playback.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Triggers\1.8.1\Actions\Playback.uno
 // --------------------------------------------------------------------------------------------
 
 // public abstract class PlaybackAction :41
@@ -2063,7 +2063,7 @@ void PlaybackAction::Target(uObject* value)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Triggers\1.7.4\Actions\Playback.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Triggers\1.8.1\Actions\Playback.uno
 // --------------------------------------------------------------------------------------------
 
 // public sealed class PlayTo :281
@@ -2071,7 +2071,7 @@ void PlaybackAction::Target(uObject* value)
 static void PlayTo_build(uType* type)
 {
     ::STRINGS[11] = uString::Const("Use the TimelineAction with `How=\"PlayTo\" instead.");
-    ::STRINGS[12] = uString::Const("C:\\Users\\borde_000\\AppData\\Local\\Fusetools\\Packages\\Fuse.Triggers\\1.7.4\\Actions\\Playback.uno");
+    ::STRINGS[12] = uString::Const("C:\\Users\\borde_000\\AppData\\Local\\Fusetools\\Packages\\Fuse.Triggers\\1.8.1\\Actions\\Playback.uno");
     ::STRINGS[13] = uString::Const(".ctor");
     ::TYPES[16] = ::g::Fuse::Node_typeof()->MakeMethod(1/*FindByType<Fuse.Triggers.IPlayback>*/, ::g::Fuse::Triggers::IPlayback_typeof(), NULL);
     ::TYPES[17] = ::g::Fuse::Triggers::IPlayback_typeof();
@@ -2164,7 +2164,7 @@ PlayTo* PlayTo::New2()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Triggers\1.7.4\Actions\Pulse.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Triggers\1.8.1\Actions\Pulse.uno
 // -----------------------------------------------------------------------------------------
 
 // public sealed class Pulse :21
@@ -2258,7 +2258,7 @@ Pulse* Pulse::New2()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Triggers\1.7.4\Actions\Pulse.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Triggers\1.8.1\Actions\Pulse.uno
 // -----------------------------------------------------------------------------------------
 
 // public sealed class PulseBackward :36
@@ -2351,7 +2351,7 @@ PulseBackward* PulseBackward::New2()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Triggers\1.7.4\Actions\Pulse.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Triggers\1.8.1\Actions\Pulse.uno
 // -----------------------------------------------------------------------------------------
 
 // public sealed class PulseForward :51
@@ -2444,7 +2444,7 @@ PulseForward* PulseForward::New2()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.UserEvents\1.7.4\RaiseUserEvent.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.UserEvents\1.8.1\RaiseUserEvent.uno
 // --------------------------------------------------------------------------------------------
 
 // public sealed class RaiseUserEvent :40
@@ -2452,7 +2452,7 @@ PulseForward* PulseForward::New2()
 static void RaiseUserEvent_build(uType* type)
 {
     ::STRINGS[14] = uString::Const("no UserEvent found: ");
-    ::STRINGS[15] = uString::Const("C:\\Users\\borde_000\\AppData\\Local\\Fusetools\\Packages\\Fuse.UserEvents\\1.7.4\\RaiseUserEvent.uno");
+    ::STRINGS[15] = uString::Const("C:\\Users\\borde_000\\AppData\\Local\\Fusetools\\Packages\\Fuse.UserEvents\\1.8.1\\RaiseUserEvent.uno");
     ::STRINGS[2] = uString::Const("Perform");
     ::TYPES[19] = ::g::Uno::Collections::ICollection_typeof()->MakeType(::g::Fuse::Triggers::Actions::UserEventArg_typeof(), NULL);
     ::TYPES[20] = ::g::Uno::Collections::Dictionary_typeof()->MakeType(::g::Uno::String_typeof(), uObject_typeof(), NULL);
@@ -2628,7 +2628,7 @@ RaiseUserEvent* RaiseUserEvent::New2()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Triggers\1.7.4\Actions\Focus.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Triggers\1.8.1\Actions\Focus.uno
 // -----------------------------------------------------------------------------------------
 
 // public sealed class ReleaseFocus :49
@@ -2694,7 +2694,7 @@ ReleaseFocus* ReleaseFocus::New2()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Navigation\1.7.4\NavigationActions.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Navigation\1.8.1\NavigationActions.uno
 // --------------------------------------------------------------------------------------------------------
 
 // public sealed class ReleasePage :16
@@ -2702,7 +2702,7 @@ ReleaseFocus* ReleaseFocus::New2()
 static void ReleasePage_build(uType* type)
 {
     ::STRINGS[16] = uString::Const("Requires a Visual and Navigator parent");
-    ::STRINGS[17] = uString::Const("C:\\Users\\borde_000\\AppData\\Local\\Fusetools\\Packages\\Fuse.Controls.Navigation\\1.7.4\\NavigationActions.uno");
+    ::STRINGS[17] = uString::Const("C:\\Users\\borde_000\\AppData\\Local\\Fusetools\\Packages\\Fuse.Controls.Navigation\\1.8.1\\NavigationActions.uno");
     ::STRINGS[2] = uString::Const("Perform");
     ::TYPES[1] = ::g::Fuse::Node_typeof()->MakeMethod(1/*FindByType<Fuse.Visual>*/, ::g::Fuse::Visual_typeof(), NULL);
     ::TYPES[26] = ::g::Fuse::Controls::Navigator_typeof();
@@ -2796,7 +2796,7 @@ ReleasePage* ReleasePage::New2()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.WebView\1.7.4\WebViewNavActions.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.WebView\1.8.1\WebViewNavActions.uno
 // -----------------------------------------------------------------------------------------------------
 
 // public sealed class Reload :28
@@ -2859,7 +2859,7 @@ Reload* Reload::New2()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Triggers\1.7.4\Actions\Playback.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Triggers\1.8.1\Actions\Playback.uno
 // --------------------------------------------------------------------------------------------
 
 // public sealed class Resume :226
@@ -2867,7 +2867,7 @@ Reload* Reload::New2()
 static void Resume_build(uType* type)
 {
     ::STRINGS[18] = uString::Const("Use `Play` instead of `Resume`");
-    ::STRINGS[12] = uString::Const("C:\\Users\\borde_000\\AppData\\Local\\Fusetools\\Packages\\Fuse.Triggers\\1.7.4\\Actions\\Playback.uno");
+    ::STRINGS[12] = uString::Const("C:\\Users\\borde_000\\AppData\\Local\\Fusetools\\Packages\\Fuse.Triggers\\1.8.1\\Actions\\Playback.uno");
     ::STRINGS[13] = uString::Const(".ctor");
     type->SetFields(10);
     type->Reflection.SetFunctions(1,
@@ -2918,7 +2918,7 @@ Resume* Resume::New3()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls\1.7.4\Triggers\BringToFront.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls\1.8.1\Triggers\BringToFront.uno
 // -------------------------------------------------------------------------------------------------
 
 // public sealed class SendToBack :82
@@ -3020,7 +3020,7 @@ SendToBack* SendToBack::New2()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Triggers\1.7.4\Actions\Set.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Triggers\1.8.1\Actions\Set.uno
 // ---------------------------------------------------------------------------------------
 
 // public sealed class Set<T> :35
@@ -3204,7 +3204,7 @@ Set* Set::New2(uType* __type, ::g::Uno::UX::Property1* target)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Triggers\1.7.4\Actions\Visibility.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Triggers\1.8.1\Actions\Visibility.uno
 // ----------------------------------------------------------------------------------------------
 
 // public sealed class Show :30
@@ -3212,7 +3212,7 @@ Set* Set::New2(uType* __type, ::g::Uno::UX::Property1* target)
 static void Show_build(uType* type)
 {
     ::STRINGS[20] = uString::Const("Cannot find an Element/IShow");
-    ::STRINGS[1] = uString::Const("C:\\Users\\borde_000\\AppData\\Local\\Fusetools\\Packages\\Fuse.Triggers\\1.7.4\\Actions\\Visibility.uno");
+    ::STRINGS[1] = uString::Const("C:\\Users\\borde_000\\AppData\\Local\\Fusetools\\Packages\\Fuse.Triggers\\1.8.1\\Actions\\Visibility.uno");
     ::STRINGS[2] = uString::Const("Perform");
     ::TYPES[29] = ::g::Fuse::Node_typeof()->MakeMethod(1/*FindByType<Fuse.Triggers.Actions.IShow>*/, ::g::Fuse::Triggers::Actions::IShow_typeof(), NULL);
     ::TYPES[30] = ::g::Fuse::Triggers::Actions::IShow_typeof();
@@ -3277,7 +3277,7 @@ Show* Show::New2()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Triggers\1.7.4\Actions\Playback.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Triggers\1.8.1\Actions\Playback.uno
 // --------------------------------------------------------------------------------------------
 
 // public sealed class Stop :112
@@ -3347,7 +3347,7 @@ Stop* Stop::New2()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.WebView\1.7.4\WebViewNavActions.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.WebView\1.8.1\WebViewNavActions.uno
 // -----------------------------------------------------------------------------------------------------
 
 // public sealed class StopLoading :40
@@ -3410,7 +3410,7 @@ StopLoading* StopLoading::New2()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Triggers\1.7.4\Actions\TimelineAction.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Triggers\1.8.1\Actions\TimelineAction.uno
 // --------------------------------------------------------------------------------------------------
 
 // public sealed class TimelineAction :32
@@ -3418,7 +3418,7 @@ StopLoading* StopLoading::New2()
 static void TimelineAction_build(uType* type)
 {
     ::STRINGS[21] = uString::Const("`TimelineAction` called without a `Timeline` `Target`");
-    ::STRINGS[22] = uString::Const("C:\\Users\\borde_000\\AppData\\Local\\Fusetools\\Packages\\Fuse.Triggers\\1.7.4\\Actions\\TimelineAction.uno");
+    ::STRINGS[22] = uString::Const("C:\\Users\\borde_000\\AppData\\Local\\Fusetools\\Packages\\Fuse.Triggers\\1.8.1\\Actions\\TimelineAction.uno");
     ::STRINGS[2] = uString::Const("Perform");
     type->SetFields(9,
         ::g::Fuse::Triggers::Actions::TimelineActionHow_typeof(), offsetof(TimelineAction, _How), 0,
@@ -3608,7 +3608,7 @@ TimelineAction* TimelineAction::New2()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Triggers\1.7.4\Actions\TimelineAction.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Triggers\1.8.1\Actions\TimelineAction.uno
 // --------------------------------------------------------------------------------------------------
 
 // public enum TimelineActionHow :5
@@ -3631,7 +3631,7 @@ uEnumType* TimelineActionHow_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Triggers\1.7.4\Actions\Toggle.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Triggers\1.8.1\Actions\Toggle.uno
 // ------------------------------------------------------------------------------------------
 
 // public sealed class Toggle :29
@@ -3639,7 +3639,7 @@ uEnumType* TimelineActionHow_typeof()
 static void Toggle_build(uType* type)
 {
     ::STRINGS[23] = uString::Const("Could not find `IToggleable` target");
-    ::STRINGS[24] = uString::Const("C:\\Users\\borde_000\\AppData\\Local\\Fusetools\\Packages\\Fuse.Triggers\\1.7.4\\Actions\\Toggle.uno");
+    ::STRINGS[24] = uString::Const("C:\\Users\\borde_000\\AppData\\Local\\Fusetools\\Packages\\Fuse.Triggers\\1.8.1\\Actions\\Toggle.uno");
     ::STRINGS[2] = uString::Const("Perform");
     ::TYPES[31] = ::g::Fuse::Node_typeof()->MakeMethod(1/*FindByType<Fuse.Triggers.Actions.IToggleable>*/, ::g::Fuse::Triggers::Actions::IToggleable_typeof(), NULL);
     ::TYPES[32] = ::g::Fuse::Triggers::Actions::IToggleable_typeof();
@@ -3736,7 +3736,7 @@ Toggle* Toggle::New2()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Elements\1.7.4\Triggers\LayoutAnimation.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Elements\1.8.1\Triggers\LayoutAnimation.uno
 // ----------------------------------------------------------------------------------------------------
 
 // public sealed class TransitionLayout :342
@@ -3744,7 +3744,7 @@ Toggle* Toggle::New2()
 static void TransitionLayout_build(uType* type)
 {
     ::STRINGS[25] = uString::Const("Missing `From` or cannot find `Element` target");
-    ::STRINGS[26] = uString::Const("C:\\Users\\borde_000\\AppData\\Local\\Fusetools\\Packages\\Fuse.Elements\\1.7.4\\Triggers\\LayoutAnimation.uno");
+    ::STRINGS[26] = uString::Const("C:\\Users\\borde_000\\AppData\\Local\\Fusetools\\Packages\\Fuse.Elements\\1.8.1\\Triggers\\LayoutAnimation.uno");
     ::STRINGS[2] = uString::Const("Perform");
     ::TYPES[0] = ::g::Fuse::Elements::Element_typeof();
     ::TYPES[1] = ::g::Fuse::Node_typeof()->MakeMethod(1/*FindByType<Fuse.Visual>*/, ::g::Fuse::Visual_typeof(), NULL);
@@ -3895,7 +3895,7 @@ TransitionLayout* TransitionLayout::New2()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Triggers\1.7.4\Actions\StateTransition.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Triggers\1.8.1\Actions\StateTransition.uno
 // ---------------------------------------------------------------------------------------------------
 
 // public sealed class TransitionState :13
@@ -3903,7 +3903,7 @@ TransitionLayout* TransitionLayout::New2()
 static void TransitionState_build(uType* type)
 {
     ::STRINGS[27] = uString::Const("Missing `Target`");
-    ::STRINGS[28] = uString::Const("C:\\Users\\borde_000\\AppData\\Local\\Fusetools\\Packages\\Fuse.Triggers\\1.7.4\\Actions\\StateTransition.uno");
+    ::STRINGS[28] = uString::Const("C:\\Users\\borde_000\\AppData\\Local\\Fusetools\\Packages\\Fuse.Triggers\\1.8.1\\Actions\\StateTransition.uno");
     ::STRINGS[2] = uString::Const("Perform");
     type->SetFields(9,
         ::g::Fuse::Triggers::StateGroup_typeof(), offsetof(TransitionState, _Target), 0,
@@ -4030,7 +4030,7 @@ TransitionState* TransitionState::New2()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Triggers\1.7.4\Actions\StateTransition.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Triggers\1.8.1\Actions\StateTransition.uno
 // ---------------------------------------------------------------------------------------------------
 
 // public enum TransitionStateType :5
@@ -4045,7 +4045,7 @@ uEnumType* TransitionStateType_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Triggers\1.7.4\Actions\TriggerAction.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Triggers\1.8.1\Actions\TriggerAction.uno
 // -------------------------------------------------------------------------------------------------
 
 // public abstract class TriggerAction :30
@@ -4053,7 +4053,7 @@ uEnumType* TransitionStateType_typeof()
 static void TriggerAction_build(uType* type)
 {
     ::STRINGS[29] = uString::Const("Use `Trigger.When` instead of `Trigger.Direction`");
-    ::STRINGS[30] = uString::Const("C:\\Users\\borde_000\\AppData\\Local\\Fusetools\\Packages\\Fuse.Triggers\\1.7.4\\Actions\\TriggerAction.uno");
+    ::STRINGS[30] = uString::Const("C:\\Users\\borde_000\\AppData\\Local\\Fusetools\\Packages\\Fuse.Triggers\\1.8.1\\Actions\\TriggerAction.uno");
     ::STRINGS[31] = uString::Const("set_Direction");
     type->SetFields(2,
         ::g::Fuse::Triggers::Actions::TriggerWhen_typeof(), offsetof(TriggerAction, _when), 0,
@@ -4323,7 +4323,7 @@ void TriggerAction::When(int32_t value)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Triggers\1.7.4\Actions\TriggerAction.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Triggers\1.8.1\Actions\TriggerAction.uno
 // -------------------------------------------------------------------------------------------------
 
 // public enum TriggerWhen :6
@@ -4343,7 +4343,7 @@ uEnumType* TriggerWhen_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.UserEvents\1.7.4\RaiseUserEvent.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.UserEvents\1.8.1\RaiseUserEvent.uno
 // --------------------------------------------------------------------------------------------
 
 // public sealed class UserEventArg :132
@@ -4560,7 +4560,7 @@ UserEventArg* UserEventArg::New2(uString* name)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.WebView\1.7.4\WebViewNavActions.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.WebView\1.8.1\WebViewNavActions.uno
 // -----------------------------------------------------------------------------------------------------
 
 // public abstract class WebViewNavAction :9

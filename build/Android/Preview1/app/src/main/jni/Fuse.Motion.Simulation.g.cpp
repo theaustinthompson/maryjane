@@ -38,7 +38,7 @@ namespace Fuse{
 namespace Motion{
 namespace Simulation{
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Motion\1.7.4\Simulation\AngularAdapter.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Motion\1.8.1\Simulation\AngularAdapter.uno
 // ---------------------------------------------------------------------------------------------------
 
 // internal sealed class AdapterMultiplier<T> :92
@@ -260,7 +260,7 @@ AdapterMultiplier* AdapterMultiplier::New1(uType* __type, uObject* impl, double 
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Motion\1.7.4\Simulation\AngularAdapter.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Motion\1.8.1\Simulation\AngularAdapter.uno
 // ---------------------------------------------------------------------------------------------------
 
 // internal sealed class AngularAdapter<T> :8
@@ -494,7 +494,7 @@ AngularAdapter* AngularAdapter::New1(uType* __type, uObject* impl)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Motion\1.7.4\Simulation\BoundedRegion2D.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Motion\1.8.1\Simulation\BoundedRegion2D.uno
 // ----------------------------------------------------------------------------------------------------
 
 // internal sealed class BasicBoundedRegion2D :31
@@ -1274,7 +1274,7 @@ BasicBoundedRegion2D* BasicBoundedRegion2D::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Motion\1.7.4\Simulation\BoundedRegion2D.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Motion\1.8.1\Simulation\BoundedRegion2D.uno
 // ----------------------------------------------------------------------------------------------------
 
 // internal abstract interface BoundedRegion2D :7
@@ -1289,7 +1289,7 @@ uInterfaceType* BoundedRegion2D_typeof()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Motion\1.7.4\Simulation\Simulation.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Motion\1.8.1\Simulation\Simulation.uno
 // -----------------------------------------------------------------------------------------------
 
 // internal abstract interface DestinationSimulation<T> :25
@@ -1304,7 +1304,7 @@ uInterfaceType* DestinationSimulation_typeof()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Motion\1.7.4\Simulation\EasingMotion.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Motion\1.8.1\Simulation\EasingMotion.uno
 // -------------------------------------------------------------------------------------------------
 
 // internal sealed class EasingMotion<T> :7
@@ -1778,7 +1778,7 @@ EasingMotion* EasingMotion::New1(uType* __type)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Motion\1.7.4\Simulation\ElasticForce.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Motion\1.8.1\Simulation\ElasticForce.uno
 // -------------------------------------------------------------------------------------------------
 
 // internal sealed class ElasticForce<T> :6
@@ -2310,7 +2310,7 @@ ElasticForce* ElasticForce::New1(uType* __type, float scale)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Motion\1.7.4\Simulation\Friction.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Motion\1.8.1\Simulation\Friction.uno
 // ---------------------------------------------------------------------------------------------
 
 // internal sealed class Friction<T> :6
@@ -2642,7 +2642,7 @@ Friction* Friction::New1(uType* __type)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Motion\1.7.4\Simulation\Simulation.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Motion\1.8.1\Simulation\Simulation.uno
 // -----------------------------------------------------------------------------------------------
 
 // internal abstract interface MotionSimulation<T> :19
@@ -2657,7 +2657,7 @@ uInterfaceType* MotionSimulation_typeof()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Motion\1.7.4\Simulation\BoundedRegion2D.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Motion\1.8.1\Simulation\BoundedRegion2D.uno
 // ----------------------------------------------------------------------------------------------------
 
 // private enum BasicBoundedRegion2D.MoveMode :72
@@ -2676,7 +2676,7 @@ uEnumType* BasicBoundedRegion2D__MoveMode_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Motion\1.7.4\Simulation\PointerVelocity.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Motion\1.8.1\Simulation\PointerVelocity.uno
 // ----------------------------------------------------------------------------------------------------
 
 // public sealed class PointerVelocity<T> :17
@@ -2935,7 +2935,7 @@ PointerVelocity* PointerVelocity::New1(uType* __type)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Motion\1.7.4\Simulation\PointerVelocity.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Motion\1.8.1\Simulation\PointerVelocity.uno
 // ----------------------------------------------------------------------------------------------------
 
 // public enum SampleFlags :6
@@ -2952,7 +2952,7 @@ uEnumType* SampleFlags_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Motion\1.7.4\Simulation\Simulation.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Motion\1.8.1\Simulation\Simulation.uno
 // -----------------------------------------------------------------------------------------------
 
 // internal abstract interface Simulation :5
@@ -2967,7 +2967,7 @@ uInterfaceType* Simulation_typeof()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Motion\1.7.4\Simulation\SmoothSnap.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Motion\1.8.1\Simulation\SmoothSnap.uno
 // -----------------------------------------------------------------------------------------------
 
 // internal sealed class SmoothSnap<T> :5

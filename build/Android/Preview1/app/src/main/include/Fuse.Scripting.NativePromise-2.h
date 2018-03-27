@@ -1,8 +1,9 @@
-// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/Fuse.Scripting/1.7.4/NativePromise.uno.
+// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/Fuse.Scripting/1.8.1/NativePromise.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
 #include <Fuse.Scripting.NativeMember.h>
+namespace g{namespace Fuse{namespace Scripting{struct Context;}}}
 namespace g{namespace Fuse{namespace Scripting{struct NativePromise;}}}
 namespace g{namespace Uno{namespace Threading{struct Future1;}}}
 
@@ -15,7 +16,7 @@ namespace Scripting{
 ::g::Fuse::Scripting::NativeMember_type* NativePromise_typeof();
 void NativePromise__ctor_1_fn(NativePromise* __this, uString* name, uDelegate* futureFactory, uDelegate* resultConverter);
 void NativePromise__ctor_2_fn(NativePromise* __this, uString* name, uDelegate* func, uDelegate* resultConverter);
-void NativePromise__CreateObject_fn(NativePromise* __this, uObject** __retval);
+void NativePromise__CreateObject_fn(NativePromise* __this, ::g::Fuse::Scripting::Context* context, uObject** __retval);
 void NativePromise__Factory_fn(NativePromise* __this, uArray* args, ::g::Uno::Threading::Future1** __retval);
 void NativePromise__New1_fn(uType* __type, uString* name, uDelegate* futureFactory, uDelegate* resultConverter, NativePromise** __retval);
 void NativePromise__New2_fn(uType* __type, uString* name, uDelegate* func, uDelegate* resultConverter, NativePromise** __retval);

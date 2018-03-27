@@ -1,4 +1,4 @@
-// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/Fuse.Controls.Panels/1.7.4/TreeRenderer.Android.uno.
+// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/Fuse.Controls.Panels/1.8.1/TreeRenderer.Android.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -34,6 +34,7 @@ void TreeRenderer__FuseElementsITreeRendererIsVisibleChanged_fn(TreeRenderer* __
 void TreeRenderer__FuseElementsITreeRendererMeasure_fn(TreeRenderer* __this, ::g::Fuse::Elements::Element* e, ::g::Fuse::LayoutParams* lp, ::g::Uno::Float2* size, bool* __retval);
 void TreeRenderer__FuseElementsITreeRendererOpacityChanged_fn(TreeRenderer* __this, ::g::Fuse::Elements::Element* e, float* opacity);
 void TreeRenderer__FuseElementsITreeRendererPlaced_fn(TreeRenderer* __this, ::g::Fuse::Elements::Element* e);
+void TreeRenderer__FuseElementsITreeRendererRenderBoundsChanged_fn(TreeRenderer* __this, ::g::Fuse::Elements::Element* e);
 void TreeRenderer__FuseElementsITreeRendererRooted_fn(TreeRenderer* __this, ::g::Fuse::Elements::Element* e);
 void TreeRenderer__FuseElementsITreeRendererRootingStarted_fn(TreeRenderer* __this, ::g::Fuse::Elements::Element* e);
 void TreeRenderer__FuseElementsITreeRendererTransformChanged_fn(TreeRenderer* __this, ::g::Fuse::Elements::Element* e);

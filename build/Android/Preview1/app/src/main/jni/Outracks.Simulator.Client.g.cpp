@@ -1069,7 +1069,7 @@ static void ConnectingToHost_build(uType* type)
 {
     ::STRINGS[5] = uString::Const("Connecting");
     ::STRINGS[6] = uString::Const("Fetching project data from computer");
-    ::TYPES[34] = ::g::Uno::Collections::EnumerableExtensions_typeof()->MakeMethod(9/*ToArray<Uno.Net.IPEndPoint>*/, ::g::Uno::Net::IPEndPoint_typeof(), NULL);
+    ::TYPES[34] = ::g::Uno::Collections::EnumerableExtensions_typeof()->MakeMethod(8/*ToArray<Uno.Net.IPEndPoint>*/, ::g::Uno::Net::IPEndPoint_typeof(), NULL);
     ::TYPES[35] = ::g::Uno::Runtime::Implementation::Internal::ArrayEnumerable_typeof()->MakeType(::g::Uno::Net::IPEndPoint_typeof(), NULL);
     ::TYPES[5] = ::g::Uno::Action_typeof();
     type->SetDependencies(
@@ -1885,7 +1885,7 @@ uString* DeviceInfo::GetGUID()
     {
         INIT_JNI;
         jclass __cls = JniHelper::GetNativeExternClass();
-        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "GetGUID386", "()Ljava/lang/String;");
+        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "GetGUID378", "()Ljava/lang/String;");
         jobject __jresult = U_JNIVAR->CallStaticObjectMethod(__cls,__mtd);
         uString* __result = JniHelper::JavaToUnoString((jstring)__jresult);
         if (__jresult!=NULL && U_JNIVAR->GetObjectRefType(__jresult) == JNILocalRefType) U_JNIVAR->DeleteLocalRef(__jresult);
@@ -1901,7 +1901,7 @@ uString* DeviceInfo::GetName()
     {
         INIT_JNI;
         jclass __cls = JniHelper::GetNativeExternClass();
-        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "GetName387", "()Ljava/lang/String;");
+        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "GetName379", "()Ljava/lang/String;");
         jobject __jresult = U_JNIVAR->CallStaticObjectMethod(__cls,__mtd);
         uString* __result = JniHelper::JavaToUnoString((jstring)__jresult);
         if (__jresult!=NULL && U_JNIVAR->GetObjectRefType(__jresult) == JNILocalRefType) U_JNIVAR->DeleteLocalRef(__jresult);
@@ -2169,7 +2169,7 @@ static void FakeApp_build(uType* type)
         ::g::Fuse::Animations::IResize_typeof(), offsetof(FakeApp_type, interface16),
         ::g::Fuse::Drawing::ISurfaceDrawable_typeof(), offsetof(FakeApp_type, interface17),
         ::g::Fuse::IRootVisualProvider_typeof(), offsetof(FakeApp_type, interface18));
-    type->SetFields(117,
+    type->SetFields(118,
         ::g::Fuse::App_typeof(), offsetof(FakeApp, _app), 0);
     type->Reflection.SetFunctions(8,
         new uFunction("get_App", NULL, (void*)FakeApp__get_App_fn, 0, false, ::g::Fuse::AppBase_typeof(), 0),
@@ -2189,7 +2189,7 @@ FakeApp_type* FakeApp_typeof()
 
     uTypeOptions options;
     options.BaseDefinition = ::g::Fuse::Controls::Panel_typeof();
-    options.FieldCount = 118;
+    options.FieldCount = 119;
     options.InterfaceCount = 19;
     options.ObjectSize = sizeof(FakeApp);
     options.TypeSize = sizeof(FakeApp_type);
@@ -2632,7 +2632,7 @@ void LoadingScreen::Show(::g::Outracks::Simulator::Client::FakeApp* app, uString
 // {
 static void ModalDialog_build(uType* type)
 {
-    ::TYPES[42] = ::g::Uno::Collections::EnumerableExtensions_typeof()->MakeMethod(9/*ToArray<Fuse.Controls.Control>*/, ::g::Fuse::Controls::Control_typeof(), NULL);
+    ::TYPES[42] = ::g::Uno::Collections::EnumerableExtensions_typeof()->MakeMethod(8/*ToArray<Fuse.Controls.Control>*/, ::g::Fuse::Controls::Control_typeof(), NULL);
     ::TYPES[11] = ::g::Uno::Collections::ICollection_typeof()->MakeType(::g::Fuse::Node_typeof(), NULL);
     ::TYPES[43] = ::g::Uno::Collections::IEnumerable_typeof()->MakeType(::g::Fuse::Controls::Control_typeof(), NULL);
     ::TYPES[9] = ::g::Uno::Collections::IEnumerator_typeof();
@@ -2809,8 +2809,8 @@ static void NativeReflection_build(uType* type)
     ::TYPES[32] = uObject_typeof()->Array();
     ::TYPES[46] = ::g::Outracks::Simulator::Client::ITypeMap_typeof();
     ::TYPES[47] = ::g::Outracks::Optional1_typeof()->MakeType(::g::Outracks::Simulator::Bytecode::Signature_typeof(), NULL);
-    ::TYPES[48] = ::g::Uno::Collections::EnumerableExtensions_typeof()->MakeMethod(9/*ToArray<Uno.Type>*/, ::g::Uno::Type_typeof(), NULL);
-    ::TYPES[49] = ::g::Uno::Collections::EnumerableExtensions_typeof()->MakeMethod(7/*Select<Outracks.Simulator.Bytecode.Parameter, Uno.Type>*/, ::g::Outracks::Simulator::Bytecode::Parameter_typeof(), ::g::Uno::Type_typeof(), NULL);
+    ::TYPES[48] = ::g::Uno::Collections::EnumerableExtensions_typeof()->MakeMethod(8/*ToArray<Uno.Type>*/, ::g::Uno::Type_typeof(), NULL);
+    ::TYPES[49] = ::g::Uno::Collections::EnumerableExtensions_typeof()->MakeMethod(6/*Select<Outracks.Simulator.Bytecode.Parameter, Uno.Type>*/, ::g::Outracks::Simulator::Bytecode::Parameter_typeof(), ::g::Uno::Type_typeof(), NULL);
     ::TYPES[50] = ::g::Uno::Func1_typeof()->MakeType(::g::Outracks::Simulator::Bytecode::Parameter_typeof(), ::g::Uno::Type_typeof(), NULL);
     ::TYPES[38] = ::g::Uno::Type_typeof()->Array();
     ::TYPES[51] = ::g::Uno::Reflection::IFunction_typeof();
@@ -4188,8 +4188,8 @@ static void SimpleTypeMap_build(uType* type)
     ::STRINGS[76] = uString::Const("' is not a closed type");
     ::TYPES[71] = ::g::Uno::Collections::Dictionary_typeof()->MakeType(::g::Uno::String_typeof(), ::g::Uno::Type_typeof(), NULL);
     ::TYPES[72] = ::g::Uno::Type_typeof();
-    ::TYPES[48] = ::g::Uno::Collections::EnumerableExtensions_typeof()->MakeMethod(9/*ToArray<Uno.Type>*/, ::TYPES[72/*Uno.Type*/], NULL);
-    ::TYPES[73] = ::g::Uno::Collections::EnumerableExtensions_typeof()->MakeMethod(7/*Select<Outracks.Simulator.Bytecode.TypeName, Uno.Type>*/, ::g::Outracks::Simulator::Bytecode::TypeName_typeof(), ::TYPES[72/*Uno.Type*/], NULL);
+    ::TYPES[48] = ::g::Uno::Collections::EnumerableExtensions_typeof()->MakeMethod(8/*ToArray<Uno.Type>*/, ::TYPES[72/*Uno.Type*/], NULL);
+    ::TYPES[73] = ::g::Uno::Collections::EnumerableExtensions_typeof()->MakeMethod(6/*Select<Outracks.Simulator.Bytecode.TypeName, Uno.Type>*/, ::g::Outracks::Simulator::Bytecode::TypeName_typeof(), ::TYPES[72/*Uno.Type*/], NULL);
     ::TYPES[74] = ::g::Uno::Func1_typeof()->MakeType(::g::Outracks::Simulator::Bytecode::TypeName_typeof(), ::TYPES[72/*Uno.Type*/], NULL);
     type->SetDependencies(
         ::g::Uno::Type_typeof());
@@ -4647,8 +4647,8 @@ Uninitialized* Uninitialized::New1()
 static void UnoHostReflection_build(uType* type)
 {
     ::TYPES[47] = ::g::Outracks::Optional1_typeof()->MakeType(::g::Outracks::Simulator::Bytecode::Signature_typeof(), NULL);
-    ::TYPES[76] = ::g::Uno::Collections::EnumerableExtensions_typeof()->MakeMethod(9/*ToArray<string>*/, ::g::Uno::String_typeof(), NULL);
-    ::TYPES[77] = ::g::Uno::Collections::EnumerableExtensions_typeof()->MakeMethod(7/*Select<Outracks.Simulator.Bytecode.Parameter, string>*/, ::g::Outracks::Simulator::Bytecode::Parameter_typeof(), ::g::Uno::String_typeof(), NULL);
+    ::TYPES[76] = ::g::Uno::Collections::EnumerableExtensions_typeof()->MakeMethod(8/*ToArray<string>*/, ::g::Uno::String_typeof(), NULL);
+    ::TYPES[77] = ::g::Uno::Collections::EnumerableExtensions_typeof()->MakeMethod(6/*Select<Outracks.Simulator.Bytecode.Parameter, string>*/, ::g::Outracks::Simulator::Bytecode::Parameter_typeof(), ::g::Uno::String_typeof(), NULL);
     ::TYPES[78] = ::g::Uno::Func1_typeof()->MakeType(::g::Outracks::Simulator::Bytecode::Parameter_typeof(), ::g::Uno::String_typeof(), NULL);
     type->SetInterfaces(
         ::g::Outracks::Simulator::Runtime::IReflection_typeof(), offsetof(UnoHostReflection_type, interface0));
@@ -4900,8 +4900,8 @@ static void UserAppState_build(uType* type)
 {
     ::TYPES[79] = type->MakeMethod(1/*SetIfNotEqual<Fuse.Node>*/, ::g::Fuse::Node_typeof(), NULL);
     ::TYPES[80] = type->MakeMethod(1/*SetIfNotEqual<Uno.UX.Resource>*/, ::g::Uno::UX::Resource_typeof(), NULL);
-    ::TYPES[81] = ::g::Uno::Collections::EnumerableExtensions_typeof()->MakeMethod(9/*ToArray<Fuse.Node>*/, ::g::Fuse::Node_typeof(), NULL);
-    ::TYPES[82] = ::g::Uno::Collections::EnumerableExtensions_typeof()->MakeMethod(9/*ToArray<Uno.UX.Resource>*/, ::g::Uno::UX::Resource_typeof(), NULL);
+    ::TYPES[81] = ::g::Uno::Collections::EnumerableExtensions_typeof()->MakeMethod(8/*ToArray<Fuse.Node>*/, ::g::Fuse::Node_typeof(), NULL);
+    ::TYPES[82] = ::g::Uno::Collections::EnumerableExtensions_typeof()->MakeMethod(8/*ToArray<Uno.UX.Resource>*/, ::g::Uno::UX::Resource_typeof(), NULL);
     ::TYPES[83] = ::g::Uno::Collections::ICollection_typeof();
     ::TYPES[84] = ::g::Uno::Collections::IList_typeof();
     ::TYPES[85] = ::g::Uno::Collections::IListExtensions_typeof();

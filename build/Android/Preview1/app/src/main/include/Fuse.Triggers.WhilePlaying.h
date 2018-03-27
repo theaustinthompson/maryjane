@@ -1,4 +1,4 @@
-// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/Fuse.Triggers/1.7.4/WhilePlaying.uno.
+// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/Fuse.Triggers/1.8.1/WhilePlaying.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once

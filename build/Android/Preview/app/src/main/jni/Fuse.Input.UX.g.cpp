@@ -35,7 +35,7 @@ namespace Fuse{
 namespace Input{
 namespace UX{
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Input\UX\AttachedFocusMembers.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Input\UX\AttachedFocusMembers.uno
 // ------------------------------------------------------------------------------------------------------
 
 // public static class AttachedFocusMembers :5
@@ -117,7 +117,7 @@ void AttachedFocusMembers::RemoveFocusLostHandler(::g::Fuse::Visual* node, uDele
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Input\UX\AttachedKeyboardMembers.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Input\UX\AttachedKeyboardMembers.uno
 // ---------------------------------------------------------------------------------------------------------
 
 // public static class AttachedKeyboardMembers :5
@@ -199,7 +199,7 @@ void AttachedKeyboardMembers::RemoveKeyReleasedHandler(::g::Fuse::Visual* node, 
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Input\UX\AttachedPointerMembers.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Input\UX\AttachedPointerMembers.uno
 // --------------------------------------------------------------------------------------------------------
 
 // public static class AttachedPointerMembers :5

@@ -40,7 +40,7 @@ namespace Uno{
 namespace Net{
 namespace Sockets{
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Net.Sockets\1.7.1\Socket.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Net.Sockets\1.8.0\Socket.uno
 // ------------------------------------------------------------------------------------
 
 // public enum AddressFamily :9
@@ -56,7 +56,7 @@ uEnumType* AddressFamily_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Net.Sockets\1.7.1\NetworkStream.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Net.Sockets\1.8.0\NetworkStream.uno
 // -------------------------------------------------------------------------------------------
 
 // public sealed class NetworkStream :10
@@ -200,7 +200,7 @@ NetworkStream* NetworkStream::New1(::g::Uno::Net::Sockets::Socket* socket)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Net.Sockets\1.7.1\Socket.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Net.Sockets\1.8.0\Socket.uno
 // ------------------------------------------------------------------------------------
 
 // public enum ProtocolType :22
@@ -215,7 +215,7 @@ uEnumType* ProtocolType_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Net.Sockets\1.7.1\Socket.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Net.Sockets\1.8.0\Socket.uno
 // ------------------------------------------------------------------------------------
 
 // public enum SelectMode :28
@@ -232,7 +232,7 @@ uEnumType* SelectMode_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Net.Sockets\1.7.1\Socket.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Net.Sockets\1.8.0\Socket.uno
 // ------------------------------------------------------------------------------------
 
 // public sealed class Socket :263
@@ -599,7 +599,7 @@ Socket* Socket::New2(int handle, bool connected)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Net.Sockets\1.7.1\Socket.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Net.Sockets\1.8.0\Socket.uno
 // ------------------------------------------------------------------------------------
 
 // public sealed class SocketException :567
@@ -651,7 +651,7 @@ SocketException* SocketException::New4(uString* message)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Net.Sockets\1.7.1\Socket.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Net.Sockets\1.8.0\Socket.uno
 // ------------------------------------------------------------------------------------
 
 // public enum SocketFlags :45
@@ -666,7 +666,7 @@ uEnumType* SocketFlags_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Net.Sockets\1.7.1\Socket.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Net.Sockets\1.8.0\Socket.uno
 // ------------------------------------------------------------------------------------
 
 // internal extern struct Socket.SocketHandle :270
@@ -704,7 +704,7 @@ bool Socket__SocketHandle::op_Equality(int left, int right)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Net.Sockets\1.7.1\Socket.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Net.Sockets\1.8.0\Socket.uno
 // ------------------------------------------------------------------------------------
 
 // internal sealed extern class SocketHelpers :56
@@ -977,7 +977,7 @@ int32_t SocketHelpers::Shutdown(int sock, int32_t how)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Net.Sockets\1.7.1\Socket.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Net.Sockets\1.8.0\Socket.uno
 // ------------------------------------------------------------------------------------
 
 // public enum SocketShutdown :36
@@ -994,7 +994,7 @@ uEnumType* SocketShutdown_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Net.Sockets\1.7.1\Socket.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Net.Sockets\1.8.0\Socket.uno
 // ------------------------------------------------------------------------------------
 
 // public enum SocketType :16

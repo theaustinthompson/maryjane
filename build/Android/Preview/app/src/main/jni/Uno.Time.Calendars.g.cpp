@@ -21,7 +21,7 @@ namespace Uno{
 namespace Time{
 namespace Calendars{
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\Time\Calendars\Era.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\Time\Calendars\Era.uno
 // ---------------------------------------------------------------------------------------------------
 
 // public sealed class Era :3
@@ -117,7 +117,7 @@ Era* Era::New1(uString* name)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\Time\Calendars\GregorianYearMonthDayCalculator.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\Time\Calendars\GregorianYearMonthDayCalculator.uno
 // -------------------------------------------------------------------------------------------------------------------------------
 
 // internal sealed class GregorianYearMonthDayCalculator :3
@@ -323,7 +323,7 @@ GregorianYearMonthDayCalculator* GregorianYearMonthDayCalculator::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\Time\Calendars\TimeOfDayCalculator.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\Time\Calendars\TimeOfDayCalculator.uno
 // -------------------------------------------------------------------------------------------------------------------
 
 // internal static class TimeOfDayCalculator :3
@@ -518,7 +518,7 @@ int64_t TimeOfDayCalculator::GetTicks2(int32_t hourOfDay, int32_t minuteOfHour, 
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\Time\Calendars\WeekYearCalculator.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\Time\Calendars\WeekYearCalculator.uno
 // ------------------------------------------------------------------------------------------------------------------
 
 // internal sealed class WeekYearCalculator :3
@@ -572,7 +572,7 @@ WeekYearCalculator* WeekYearCalculator::New1(::g::Uno::Time::Calendars::YearMont
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\Time\Calendars\YearMonthDayCalculator.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\Time\Calendars\YearMonthDayCalculator.uno
 // ----------------------------------------------------------------------------------------------------------------------
 
 // internal abstract class YearMonthDayCalculator :3

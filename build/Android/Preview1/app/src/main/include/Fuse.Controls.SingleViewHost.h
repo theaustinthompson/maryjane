@@ -1,4 +1,4 @@
-// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/Fuse.Controls.Panels/1.7.4/SingleViewHost.uno.
+// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/Fuse.Controls.Panels/1.8.1/SingleViewHost.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -58,6 +58,7 @@ void SingleViewHost__FuseElementsITreeRendererIsVisibleChanged_fn(SingleViewHost
 void SingleViewHost__FuseElementsITreeRendererMeasure_fn(SingleViewHost* __this, ::g::Fuse::Elements::Element* e, ::g::Fuse::LayoutParams* lp, ::g::Uno::Float2* size, bool* __retval);
 void SingleViewHost__FuseElementsITreeRendererOpacityChanged_fn(SingleViewHost* __this, ::g::Fuse::Elements::Element* e, float* opacity);
 void SingleViewHost__FuseElementsITreeRendererPlaced_fn(SingleViewHost* __this, ::g::Fuse::Elements::Element* e);
+void SingleViewHost__FuseElementsITreeRendererRenderBoundsChanged_fn(SingleViewHost* __this, ::g::Fuse::Elements::Element* e);
 void SingleViewHost__FuseElementsITreeRendererRooted_fn(SingleViewHost* __this, ::g::Fuse::Elements::Element* e);
 void SingleViewHost__FuseElementsITreeRendererRootingStarted_fn(SingleViewHost* __this, ::g::Fuse::Elements::Element* e);
 void SingleViewHost__FuseElementsITreeRendererTransformChanged_fn(SingleViewHost* __this, ::g::Fuse::Elements::Element* e);

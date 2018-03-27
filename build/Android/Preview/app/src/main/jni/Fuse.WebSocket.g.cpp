@@ -39,7 +39,7 @@ namespace g{
 namespace Fuse{
 namespace WebSocket{
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.WebSockets\1.7.4\WebSocketModule.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.WebSockets\1.8.1\WebSocketModule.uno
 // ---------------------------------------------------------------------------------------------
 
 // private sealed class NativeFunctionModule.FunctionClosure :30
@@ -119,7 +119,7 @@ NativeFunctionModule__FunctionClosure* NativeFunctionModule__FunctionClosure::Ne
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.WebSockets\1.7.4\WebSocketClient.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.WebSockets\1.8.1\WebSocketClient.uno
 // ---------------------------------------------------------------------------------------------
 
 // internal abstract interface IWebSocketClient :81
@@ -134,7 +134,7 @@ uInterfaceType* IWebSocketClient_typeof()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.WebSockets\1.7.4\WebSocketModule.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.WebSockets\1.8.1\WebSocketModule.uno
 // ---------------------------------------------------------------------------------------------
 
 // public abstract class NativeFunctionModule :10
@@ -201,7 +201,7 @@ void NativeFunctionModule::ctor_2(uString* name)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.WebSockets\1.7.4\WebSocketClient.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.WebSockets\1.8.1\WebSocketClient.uno
 // ---------------------------------------------------------------------------------------------
 
 // public sealed class WebSocketClient :6
@@ -403,7 +403,7 @@ WebSocketClient* WebSocketClient::New1(uString* uri, uArray* protocols)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.WebSockets\1.7.4\WebSocketModule.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.WebSockets\1.8.1\WebSocketModule.uno
 // ---------------------------------------------------------------------------------------------
 
 // public sealed class WebSocketClientModule :54
@@ -488,7 +488,7 @@ WebSocketClientModule* WebSocketClientModule::New2()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.WebSockets\1.7.4\WebSocketModule.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.WebSockets\1.8.1\WebSocketModule.uno
 // ---------------------------------------------------------------------------------------------
 
 // internal sealed class WebSocketClientWrapper :71

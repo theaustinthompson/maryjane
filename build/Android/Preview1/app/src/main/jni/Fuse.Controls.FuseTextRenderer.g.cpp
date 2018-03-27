@@ -71,7 +71,7 @@ namespace Fuse{
 namespace Controls{
 namespace FuseTextRenderer{
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Primitives\1.7.4\TextControls\FuseTextRenderer\LoadAsync.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Primitives\1.8.1\TextControls\FuseTextRenderer\LoadAsync.uno
 // ------------------------------------------------------------------------------------------------------------------------------
 
 // internal sealed class AsyncMeasurer :6
@@ -146,7 +146,7 @@ AsyncMeasurer* AsyncMeasurer::New1(::g::Fuse::Controls::FuseTextRenderer::CacheS
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Primitives\1.7.4\TextControls\FuseTextRenderer\CacheState.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Primitives\1.8.1\TextControls\FuseTextRenderer\CacheState.uno
 // -------------------------------------------------------------------------------------------------------------------------------
 
 // internal abstract class CacheState :137
@@ -251,7 +251,7 @@ bool CacheState::TryGetRenderer(::g::Fuse::Controls::FuseTextRenderer::TextContr
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Primitives\1.7.4\TextControls\FuseTextRenderer\CacheState.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Primitives\1.8.1\TextControls\FuseTextRenderer\CacheState.uno
 // -------------------------------------------------------------------------------------------------------------------------------
 
 // internal sealed class EverythingCached :368
@@ -393,7 +393,7 @@ EverythingCached* EverythingCached::New1(::g::Fuse::Controls::FuseTextRenderer::
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Primitives\1.7.4\TextControls\FuseTextRenderer\CacheState.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Primitives\1.8.1\TextControls\FuseTextRenderer\CacheState.uno
 // -------------------------------------------------------------------------------------------------------------------------------
 
 // internal static class Helpers :72
@@ -501,7 +501,7 @@ float Helpers::ToAlignmentNumber(int32_t alignment)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Primitives\1.7.4\TextControls\FuseTextRenderer\CacheState.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Primitives\1.8.1\TextControls\FuseTextRenderer\CacheState.uno
 // -------------------------------------------------------------------------------------------------------------------------------
 
 // internal sealed class LogicalRunsCached :203
@@ -594,7 +594,7 @@ LogicalRunsCached* LogicalRunsCached::New1(uString* renderValue)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Primitives\1.7.4\TextControls\FuseTextRenderer\CacheState.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Primitives\1.8.1\TextControls\FuseTextRenderer\CacheState.uno
 // -------------------------------------------------------------------------------------------------------------------------------
 
 // internal sealed class MeasurementsCached :237
@@ -703,7 +703,7 @@ MeasurementsCached* MeasurementsCached::New1(::g::Fuse::Controls::FuseTextRender
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Primitives\1.7.4\TextControls\FuseTextRenderer\CacheState.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Primitives\1.8.1\TextControls\FuseTextRenderer\CacheState.uno
 // -------------------------------------------------------------------------------------------------------------------------------
 
 // internal sealed class NothingCached :177
@@ -792,7 +792,7 @@ NothingCached* NothingCached::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Primitives\1.7.4\TextControls\FuseTextRenderer\CacheState.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Primitives\1.8.1\TextControls\FuseTextRenderer\CacheState.uno
 // -------------------------------------------------------------------------------------------------------------------------------
 
 // internal sealed class RendererCached :295
@@ -919,7 +919,7 @@ RendererCached* RendererCached::New1(::g::Fuse::Controls::FuseTextRenderer::Logi
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Primitives\1.7.4\TextControls\FuseTextRenderer\CacheState.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Primitives\1.8.1\TextControls\FuseTextRenderer\CacheState.uno
 // -------------------------------------------------------------------------------------------------------------------------------
 
 // internal struct TextControlData :8
@@ -1003,7 +1003,7 @@ TextControlData TextControlData__New1(::g::Fuse::Text::Font* font, ::g::Fuse::Co
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Primitives\1.7.4\TextControls\FuseTextRenderer\FuseTextRenderer.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Primitives\1.8.1\TextControls\FuseTextRenderer\FuseTextRenderer.uno
 // -------------------------------------------------------------------------------------------------------------------------------------
 
 // internal sealed class TextRenderer :14
@@ -1019,7 +1019,7 @@ static void TextRenderer_build(uType* type)
 {
     ::STRINGS[2] = uString::Const("");
     ::STRINGS[3] = uString::Const("this._cacheState == null");
-    ::STRINGS[4] = uString::Const("C:/Users/borde_000/AppData/Local/Fusetools/Packages/Fuse.Controls.Primitives/1.7.4/TextControls/FuseTextRenderer/FuseTextRenderer.uno");
+    ::STRINGS[4] = uString::Const("C:/Users/borde_000/AppData/Local/Fusetools/Packages/Fuse.Controls.Primitives/1.8.1/TextControls/FuseTextRenderer/FuseTextRenderer.uno");
     ::TYPES[3] = ::g::Fuse::Internal::Cache_typeof()->MakeType(::g::Uno::Collections::List_typeof()->MakeType(::g::Fuse::Internal::FontFaceDescriptor_typeof(), NULL), ::g::Fuse::Text::FontFace_typeof(), NULL);
     ::TYPES[4] = ::g::Uno::Func1_typeof()->MakeType(::g::Uno::Collections::List_typeof()->MakeType(::g::Fuse::Internal::FontFaceDescriptor_typeof(), NULL), ::g::Fuse::Text::FontFace_typeof(), NULL);
     ::TYPES[5] = ::g::Fuse::Internal::Cache_typeof()->MakeType(::g::Fuse::Internal::FontFaceDescriptor_typeof(), ::g::Fuse::Text::FontFace_typeof(), NULL);
@@ -1407,7 +1407,7 @@ TextRenderer* TextRenderer::New1(::g::Fuse::Controls::TextControl* control, bool
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Primitives\1.7.4\TextControls\FuseTextRenderer\CacheState.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Primitives\1.8.1\TextControls\FuseTextRenderer\CacheState.uno
 // -------------------------------------------------------------------------------------------------------------------------------
 
 // internal struct Tolerances :54

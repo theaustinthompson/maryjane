@@ -1,4 +1,4 @@
-// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/Fuse.Elements/1.7.4/Triggers/Actions/BringIntoView.uno.
+// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/Fuse.Elements/1.8.1/Triggers/Actions/BringIntoView.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once

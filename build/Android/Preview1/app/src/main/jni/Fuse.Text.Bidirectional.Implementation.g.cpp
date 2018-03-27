@@ -22,7 +22,7 @@ namespace Text{
 namespace Bidirectional{
 namespace Implementation{
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Text\1.7.4\Implementation\JavaBidirectional.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Text\1.8.1\Implementation\JavaBidirectional.uno
 // --------------------------------------------------------------------------------------------------------
 
 // internal static extern class JavaRuns :8
@@ -86,7 +86,7 @@ void JavaRuns__GetRunStart_fn(::g::Java::Object* handle, int32_t* run, int32_t* 
     {
         INIT_JNI;
         jclass __cls = JniHelper::GetNativeExternClass();
-        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "Create312", "(Ljava/lang/String;)Ljava/lang/Object;");
+        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "Create304", "(Ljava/lang/String;)Ljava/lang/Object;");
         uString* _utext=text;
         jstring _text = JniHelper::UnoToJavaString(_utext);
         jobject __jresult = U_JNIVAR->CallStaticObjectMethod(__cls,__mtd,_text);
@@ -123,7 +123,7 @@ int32_t JavaRuns::GetRunCount(::g::Java::Object* handle)
     {
         INIT_JNI;
         jclass __cls = JniHelper::GetNativeExternClass();
-        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "GetRunCount314", "(Ljava/lang/Object;)I");
+        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "GetRunCount306", "(Ljava/lang/Object;)I");
         ::g::Java::Object* _uhandle=handle;
         jobject _handle = (_uhandle==NULL ? NULL : U_JNIVAR->NewLocalRef(::g::Android::Base::Wrappers::IJWrapper::_GetJavaObject(uInterface((uObject*)_uhandle, ::g::Android::Base::Wrappers::IJWrapper_typeof()))));
         jint __jresult = U_JNIVAR->CallStaticIntMethod(__cls,__mtd,_handle);
@@ -141,7 +141,7 @@ int32_t JavaRuns::GetRunLevel(::g::Java::Object* handle, int32_t run)
     {
         INIT_JNI;
         jclass __cls = JniHelper::GetNativeExternClass();
-        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "GetRunLevel315", "(Ljava/lang/Object;I)I");
+        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "GetRunLevel307", "(Ljava/lang/Object;I)I");
         ::g::Java::Object* _uhandle=handle;
         jobject _handle = (_uhandle==NULL ? NULL : U_JNIVAR->NewLocalRef(::g::Android::Base::Wrappers::IJWrapper::_GetJavaObject(uInterface((uObject*)_uhandle, ::g::Android::Base::Wrappers::IJWrapper_typeof()))));
         int32_t _urun=run;
@@ -162,7 +162,7 @@ int32_t JavaRuns::GetRunLimit(::g::Java::Object* handle, int32_t run)
     {
         INIT_JNI;
         jclass __cls = JniHelper::GetNativeExternClass();
-        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "GetRunLimit316", "(Ljava/lang/Object;I)I");
+        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "GetRunLimit308", "(Ljava/lang/Object;I)I");
         ::g::Java::Object* _uhandle=handle;
         jobject _handle = (_uhandle==NULL ? NULL : U_JNIVAR->NewLocalRef(::g::Android::Base::Wrappers::IJWrapper::_GetJavaObject(uInterface((uObject*)_uhandle, ::g::Android::Base::Wrappers::IJWrapper_typeof()))));
         int32_t _urun=run;
@@ -183,7 +183,7 @@ int32_t JavaRuns::GetRunStart(::g::Java::Object* handle, int32_t run)
     {
         INIT_JNI;
         jclass __cls = JniHelper::GetNativeExternClass();
-        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "GetRunStart317", "(Ljava/lang/Object;I)I");
+        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "GetRunStart309", "(Ljava/lang/Object;I)I");
         ::g::Java::Object* _uhandle=handle;
         jobject _handle = (_uhandle==NULL ? NULL : U_JNIVAR->NewLocalRef(::g::Android::Base::Wrappers::IJWrapper::_GetJavaObject(uInterface((uObject*)_uhandle, ::g::Android::Base::Wrappers::IJWrapper_typeof()))));
         int32_t _urun=run;

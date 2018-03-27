@@ -30,7 +30,7 @@ public class AndroidDeviceInterop
         android.util.Log.d("maryjane", (message==null ? "null" : message.toString()));
     }
 
-    public static Object LaunchIntent319(final String action,final String uri,final String packageName,final String className)
+    public static Object LaunchIntent311(final String action,final String uri,final String packageName,final String className)
     {
         Intent pendingIntent = new Intent(action);
         pendingIntent.setData(Uri.parse(uri));
@@ -43,21 +43,21 @@ public class AndroidDeviceInterop
         return pendingIntent;
     }
     
-    public static Object MakeBufferInputStream1320(final Object buf)
+    public static Object MakeBufferInputStream1312(final Object buf)
     {
         return new com.fuse.android.ByteBufferInputStream((com.uno.UnoBackedByteBuffer)buf);
     }
     
-    public static Object MakeMediaDataSource1321(final Object buf)
+    public static Object MakeMediaDataSource1313(final Object buf)
     {
         return new com.fuse.android.ByteBufferMediaDataSource((com.uno.UnoBackedByteBuffer)buf);
     }
     
-    public static Object OpenAssetFileDescriptor322(final UnoObject bundle)
+    public static Object OpenAssetFileDescriptor314(final UnoObject bundle)
     {
         try
         {
-        	String uri = ExternedBlockHost.callUno_Uno_IO_BundleFile_BundlePathGet323(bundle);
+        	String uri = ExternedBlockHost.callUno_Uno_IO_BundleFile_BundlePathGet315(bundle);
         	AssetManager am = com.fuse.Activity.getRootActivity().getAssets();
         	AssetFileDescriptor afd = am.openFd(uri);
         	return afd;

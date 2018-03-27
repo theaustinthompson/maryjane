@@ -23,32 +23,32 @@ public class SurfaceView
         android.util.Log.d("maryjane", (message==null ? "null" : message.toString()));
     }
 
-    public static void AddCallback183(final UnoObject _this, final Object handle)
+    public static void AddCallback175(final UnoObject _this, final Object handle)
     {
         ((android.view.SurfaceView)handle).getHolder().addCallback(new android.view.SurfaceHolder.Callback2() {
         	public void surfaceRedrawNeeded(android.view.SurfaceHolder holder) {
-        		ExternedBlockHost.callUno_Fuse_Controls_Native_Android_SurfaceView_OnSurfaceRedrawNeeded184((UnoObject)_this,(Object)holder,UnoHelper.GetUnoObjectRef((Object)holder));
+        		ExternedBlockHost.callUno_Fuse_Controls_Native_Android_SurfaceView_OnSurfaceRedrawNeeded176((UnoObject)_this,(Object)holder,UnoHelper.GetUnoObjectRef((Object)holder));
         	}
         	public void surfaceChanged(android.view.SurfaceHolder holder, int format, int width, int height) {
-        		ExternedBlockHost.callUno_Fuse_Controls_Native_Android_SurfaceView_OnSurfaceChanged185((UnoObject)_this,(Object)holder,(int)format,(int)width,(int)height,UnoHelper.GetUnoObjectRef((Object)holder));
+        		ExternedBlockHost.callUno_Fuse_Controls_Native_Android_SurfaceView_OnSurfaceChanged177((UnoObject)_this,(Object)holder,(int)format,(int)width,(int)height,UnoHelper.GetUnoObjectRef((Object)holder));
         	}
         	public void surfaceCreated(android.view.SurfaceHolder holder) {
-        		ExternedBlockHost.callUno_Fuse_Controls_Native_Android_SurfaceView_OnSurfaceCreated186((UnoObject)_this,(Object)holder,UnoHelper.GetUnoObjectRef((Object)holder));
+        		ExternedBlockHost.callUno_Fuse_Controls_Native_Android_SurfaceView_OnSurfaceCreated178((UnoObject)_this,(Object)holder,UnoHelper.GetUnoObjectRef((Object)holder));
         	}
         	public void surfaceDestroyed(android.view.SurfaceHolder holder) {
-        		ExternedBlockHost.callUno_Fuse_Controls_Native_Android_SurfaceView_OnSurfaceDestroyed187((UnoObject)_this,(Object)holder,UnoHelper.GetUnoObjectRef((Object)holder));
+        		ExternedBlockHost.callUno_Fuse_Controls_Native_Android_SurfaceView_OnSurfaceDestroyed179((UnoObject)_this,(Object)holder,UnoHelper.GetUnoObjectRef((Object)holder));
         	}
         });
     }
     
-    public static Object Create188()
+    public static Object Create180()
     {
         android.view.SurfaceView surfaceView = new android.view.SurfaceView(com.fuse.Activity.getRootActivity());
         surfaceView.setLayoutParams(new android.widget.FrameLayout.LayoutParams(android.view.ViewGroup.LayoutParams.MATCH_PARENT, android.view.ViewGroup.LayoutParams.MATCH_PARENT));
         return surfaceView;
     }
     
-    public static Object GetSurface189(final Object holder)
+    public static Object GetSurface181(final Object holder)
     {
         return ((android.view.SurfaceHolder)holder).getSurface();
     }

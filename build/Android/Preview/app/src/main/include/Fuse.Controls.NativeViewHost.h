@@ -1,4 +1,4 @@
-// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/Fuse.Controls.Panels/1.7.4/NativeViewHost.uno.
+// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/Fuse.Controls.Panels/1.8.1/NativeViewHost.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -62,6 +62,7 @@ void NativeViewHost__FuseElementsITreeRendererIsVisibleChanged_fn(NativeViewHost
 void NativeViewHost__FuseElementsITreeRendererMeasure_fn(NativeViewHost* __this, ::g::Fuse::Elements::Element* e, ::g::Fuse::LayoutParams* lp, ::g::Uno::Float2* size, bool* __retval);
 void NativeViewHost__FuseElementsITreeRendererOpacityChanged_fn(NativeViewHost* __this, ::g::Fuse::Elements::Element* e, float* opacity);
 void NativeViewHost__FuseElementsITreeRendererPlaced_fn(NativeViewHost* __this, ::g::Fuse::Elements::Element* e);
+void NativeViewHost__FuseElementsITreeRendererRenderBoundsChanged_fn(NativeViewHost* __this, ::g::Fuse::Elements::Element* e);
 void NativeViewHost__FuseElementsITreeRendererRooted_fn(NativeViewHost* __this, ::g::Fuse::Elements::Element* e);
 void NativeViewHost__FuseElementsITreeRendererRootingStarted_fn(NativeViewHost* __this, ::g::Fuse::Elements::Element* e);
 void NativeViewHost__FuseElementsITreeRendererTransformChanged_fn(NativeViewHost* __this, ::g::Fuse::Elements::Element* e);

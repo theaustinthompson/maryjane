@@ -1,4 +1,4 @@
-// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/Uno.Collections/1.0.1/$.uno.
+// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/Uno.Collections/1.8.0/ObservableList.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -13,7 +13,7 @@ namespace g{
 namespace Uno{
 namespace Collections{
 
-// public sealed class ObservableList<T> :8
+// public sealed class ObservableList<T> :6
 // {
 struct ObservableList_type : uType
 {
@@ -23,7 +23,7 @@ struct ObservableList_type : uType
 };
 
 ObservableList_type* ObservableList_typeof();
-void ObservableList__ctor__fn(ObservableList* __this, uDelegate* added1, uDelegate* removed1);
+void ObservableList__ctor__fn(ObservableList* __this, uDelegate* added, uDelegate* removed);
 void ObservableList__Add_fn(ObservableList* __this, void* item);
 void ObservableList__Clear_fn(ObservableList* __this);
 void ObservableList__Contains_fn(ObservableList* __this, void* item, bool* __retval);
@@ -31,17 +31,17 @@ void ObservableList__get_Count_fn(ObservableList* __this, int32_t* __retval);
 void ObservableList__GetEnumerator_fn(ObservableList* __this, uObject** __retval);
 void ObservableList__Insert_fn(ObservableList* __this, int32_t* index, void* item);
 void ObservableList__get_Item_fn(ObservableList* __this, int32_t* index, uTRef __retval);
-void ObservableList__New1_fn(uType* __type, uDelegate* added1, uDelegate* removed1, ObservableList** __retval);
+void ObservableList__New1_fn(uType* __type, uDelegate* added, uDelegate* removed, ObservableList** __retval);
 void ObservableList__Remove_fn(ObservableList* __this, void* item, bool* __retval);
 void ObservableList__RemoveAt_fn(ObservableList* __this, int32_t* index);
 
 struct ObservableList : uObject
 {
-    uStrong< ::g::Uno::Collections::List*> items;
-    uStrong<uDelegate*> added;
-    uStrong<uDelegate*> removed;
+    uStrong< ::g::Uno::Collections::List*> _items;
+    uStrong<uDelegate*> _added;
+    uStrong<uDelegate*> _removed;
 
-    void ctor_(uDelegate* added1, uDelegate* removed1);
+    void ctor_(uDelegate* added, uDelegate* removed);
     template<class T>
     void Add(T item) { ObservableList__Add_fn(this, uConstrain(__type->T(0), item)); }
     void Clear();
@@ -56,7 +56,7 @@ struct ObservableList : uObject
     template<class T>
     bool Remove(T item) { bool __retval; return ObservableList__Remove_fn(this, uConstrain(__type->T(0), item), &__retval), __retval; }
     void RemoveAt(int32_t index);
-    static ObservableList* New1(uType* __type, uDelegate* added1, uDelegate* removed1);
+    static ObservableList* New1(uType* __type, uDelegate* added, uDelegate* removed);
 };
 // }
 

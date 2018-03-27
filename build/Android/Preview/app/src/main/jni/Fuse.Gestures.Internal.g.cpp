@@ -78,7 +78,7 @@ namespace Fuse{
 namespace Gestures{
 namespace Internal{
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Gestures\1.7.4\Internal\Swiper.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Gestures\1.8.1\Internal\Swiper.uno
 // -------------------------------------------------------------------------------------------
 
 // private sealed class SwipeRegion.DoSwiped :156
@@ -147,7 +147,7 @@ SwipeRegion__DoSwiped* SwipeRegion__DoSwiped::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Gestures\1.7.4\Internal\EdgeSwiper.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Gestures\1.8.1\Internal\EdgeSwiper.uno
 // -----------------------------------------------------------------------------------------------
 
 // internal sealed class EdgeSwiper :10
@@ -750,7 +750,7 @@ EdgeSwiper* EdgeSwiper::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Gestures\1.7.4\Internal\TwoFinger.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Gestures\1.8.1\Internal\TwoFinger.uno
 // ----------------------------------------------------------------------------------------------
 
 // private sealed class TwoFinger.Point :90
@@ -806,7 +806,7 @@ TwoFinger__Point* TwoFinger__Point::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Gestures\1.7.4\Internal\Swiper.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Gestures\1.8.1\Internal\Swiper.uno
 // -------------------------------------------------------------------------------------------
 
 // public enum SwipeRegion.ProgressFlags :51
@@ -823,7 +823,7 @@ uEnumType* SwipeRegion__ProgressFlags_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Gestures\1.7.4\Internal\Swiper.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Gestures\1.8.1\Internal\Swiper.uno
 // -------------------------------------------------------------------------------------------
 
 // internal sealed class Swiper :287
@@ -838,7 +838,7 @@ static void Swiper__cctor__fn(uType* __type)
 static void Swiper_build(uType* type)
 {
     ::STRINGS[0] = uString::Const("incomplete swipe detected");
-    ::STRINGS[1] = uString::Const("C:\\Users\\borde_000\\AppData\\Local\\Fusetools\\Packages\\Fuse.Gestures\\1.7.4\\Internal\\Swiper.uno");
+    ::STRINGS[1] = uString::Const("C:\\Users\\borde_000\\AppData\\Local\\Fusetools\\Packages\\Fuse.Gestures\\1.8.1\\Internal\\Swiper.uno");
     ::STRINGS[2] = uString::Const("CheckNeedUpdated");
     ::STRINGS[3] = uString::Const("invalid OnCapture");
     ::STRINGS[4] = uString::Const("Fuse.Input.IGesture.OnCaptureChanged");
@@ -1069,9 +1069,9 @@ void Swiper__FuseInputIGestureOnPointerReleased_fn(Swiper* __this, ::g::Fuse::In
     else if (v > __this->_velocityThreshold)
         on = true;
     else if (pdiff >= 0.0)
-        on = uPtr(__this->_pointerRegion)->Progress() > (double)uPtr(__this->_pointerRegion)->ActivationThreshold;
+        on = uPtr(__this->_pointerRegion)->Progress() >= (double)uPtr(__this->_pointerRegion)->ActivationThreshold;
     else
-        on = !(uPtr(__this->_pointerRegion)->Progress() < (double)uPtr(__this->_pointerRegion)->DeactivationThreshold);
+        on = !(uPtr(__this->_pointerRegion)->Progress() <= (double)uPtr(__this->_pointerRegion)->DeactivationThreshold);
 
     __this->SetActivation(__this->_pointerRegion, on, false);
     return *__retval = 2, void();
@@ -1373,7 +1373,7 @@ Swiper* Swiper::New1(::g::Fuse::Elements::Element* elm)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Gestures\1.7.4\Internal\Swiper.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Gestures\1.8.1\Internal\Swiper.uno
 // -------------------------------------------------------------------------------------------
 
 // internal sealed class SwipeRegion :19
@@ -1616,8 +1616,7 @@ void SwipeRegion::ctor_1()
     PointBody1D = (uObject*)((::g::Fuse::Motion::Simulation::SmoothSnap*)::g::Fuse::Motion::Simulation::SmoothSnap::CreateNormalized(::TYPES[1/*Fuse.Motion.Simulation.SmoothSnap<float>*/]));
     AreaVectorDistance = 100.0f;
     Length = 100.0;
-    ActivationThreshold = 0.5f;
-    DeactivationThreshold = 0.5f;
+    ActivationThreshold = 1.0f;
     IsInterruptible = true;
     TimeMultiplier = 1.0;
     ctor_();
@@ -1878,7 +1877,7 @@ SwipeRegion* SwipeRegion::New2()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Gestures\1.7.4\Internal\Swiper.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Gestures\1.8.1\Internal\Swiper.uno
 // -------------------------------------------------------------------------------------------
 
 // internal enum SwipeRegionArea :13
@@ -1894,7 +1893,7 @@ uEnumType* SwipeRegionArea_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Gestures\1.7.4\Internal\TwoFinger.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Gestures\1.8.1\Internal\TwoFinger.uno
 // ----------------------------------------------------------------------------------------------
 
 // internal sealed class TwoFinger :17
@@ -2372,7 +2371,7 @@ TwoFinger* TwoFinger::New1(::g::Fuse::Visual* n)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Gestures\1.7.4\Internal\TwoFinger.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Gestures\1.8.1\Internal\TwoFinger.uno
 // ----------------------------------------------------------------------------------------------
 
 // internal delegate void TwoFingerEventHandler() :12
@@ -2386,7 +2385,7 @@ uDelegateType* TwoFingerEventHandler_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Gestures\1.7.4\Internal\TwoFinger.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Gestures\1.8.1\Internal\TwoFinger.uno
 // ----------------------------------------------------------------------------------------------
 
 // internal delegate void TwoFingerRotateHandler(float angle) :14
@@ -2401,7 +2400,7 @@ uDelegateType* TwoFingerRotateHandler_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Gestures\1.7.4\Internal\TwoFinger.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Gestures\1.8.1\Internal\TwoFinger.uno
 // ----------------------------------------------------------------------------------------------
 
 // internal delegate void TwoFingerTranslateHandler(float2 amount) :15
@@ -2416,7 +2415,7 @@ uDelegateType* TwoFingerTranslateHandler_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Gestures\1.7.4\Internal\TwoFinger.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Gestures\1.8.1\Internal\TwoFinger.uno
 // ----------------------------------------------------------------------------------------------
 
 // internal delegate void TwoFingerZoomHandler(float factor) :13

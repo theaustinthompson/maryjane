@@ -1,8 +1,9 @@
-// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/Fuse.Scripting/1.7.4/NativeFunction.uno.
+// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/Fuse.Scripting/1.8.1/NativeFunction.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
 #include <Fuse.Scripting.NativeMember.h>
+namespace g{namespace Fuse{namespace Scripting{struct Context;}}}
 namespace g{namespace Fuse{namespace Scripting{struct NativeFunction;}}}
 
 namespace g{
@@ -13,8 +14,7 @@ namespace Scripting{
 // {
 ::g::Fuse::Scripting::NativeMember_type* NativeFunction_typeof();
 void NativeFunction__ctor_1_fn(NativeFunction* __this, uString* name, uDelegate* callback);
-void NativeFunction__CreateCallback_fn(NativeFunction* __this, uDelegate** __retval);
-void NativeFunction__CreateObject_fn(NativeFunction* __this, uObject** __retval);
+void NativeFunction__CreateObject_fn(NativeFunction* __this, ::g::Fuse::Scripting::Context* context, uObject** __retval);
 void NativeFunction__New1_fn(uString* name, uDelegate* callback, NativeFunction** __retval);
 
 struct NativeFunction : ::g::Fuse::Scripting::NativeMember
@@ -22,7 +22,6 @@ struct NativeFunction : ::g::Fuse::Scripting::NativeMember
     uStrong<uDelegate*> _nativeCallback;
 
     void ctor_1(uString* name, uDelegate* callback);
-    uDelegate* CreateCallback();
     static NativeFunction* New1(uString* name, uDelegate* callback);
 };
 // }

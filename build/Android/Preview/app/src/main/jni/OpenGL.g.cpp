@@ -58,7 +58,7 @@ static uType* TYPES[1];
 namespace g{
 namespace OpenGL{
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\OpenGL\GL.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\OpenGL\GL.uno
 // --------------------------------------------------------------------------------------
 
 // public static extern class GL :12
@@ -1147,7 +1147,7 @@ void GL::Viewport(int32_t x, int32_t y, int32_t width, int32_t height)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\OpenGL\GLEnums.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\OpenGL\GLEnums.uno
 // -------------------------------------------------------------------------------------------
 
 // public extern enum GLBlendEquation :216
@@ -1164,7 +1164,7 @@ uEnumType* GLBlendEquation_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\OpenGL\GLEnums.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\OpenGL\GLEnums.uno
 // -------------------------------------------------------------------------------------------
 
 // public extern enum GLBlendingFactor :224
@@ -1189,7 +1189,7 @@ uEnumType* GLBlendingFactor_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\OpenGL\GLBufferHandle.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\OpenGL\GLBufferHandle.uno
 // --------------------------------------------------------------------------------------------------
 
 // public extern struct GLBufferHandle :11
@@ -1232,7 +1232,7 @@ void GLBufferHandle__GetHashCode_fn(uint32_t* __this, uType* __type, int32_t* __
 uint32_t GLBufferHandle::Zero_;
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\OpenGL\GLEnums.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\OpenGL\GLEnums.uno
 // -------------------------------------------------------------------------------------------
 
 // public extern enum GLBufferTarget :38
@@ -1248,7 +1248,7 @@ uEnumType* GLBufferTarget_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\OpenGL\GLEnums.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\OpenGL\GLEnums.uno
 // -------------------------------------------------------------------------------------------
 
 // public extern enum GLBufferUsage :45
@@ -1265,7 +1265,7 @@ uEnumType* GLBufferUsage_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\OpenGL\GLEnums.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\OpenGL\GLEnums.uno
 // -------------------------------------------------------------------------------------------
 
 // public extern enum GLClearBufferMask :281
@@ -1282,7 +1282,7 @@ uEnumType* GLClearBufferMask_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\OpenGL\GLEnums.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\OpenGL\GLEnums.uno
 // -------------------------------------------------------------------------------------------
 
 // public extern enum GLCullFaceMode :126
@@ -1300,7 +1300,7 @@ uEnumType* GLCullFaceMode_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\OpenGL\GLEnums.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\OpenGL\GLEnums.uno
 // -------------------------------------------------------------------------------------------
 
 // public extern enum GLDataType :154
@@ -1321,7 +1321,7 @@ uEnumType* GLDataType_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\OpenGL\GLEnums.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\OpenGL\GLEnums.uno
 // -------------------------------------------------------------------------------------------
 
 // public extern enum GLDepthFunction :113
@@ -1343,7 +1343,7 @@ uEnumType* GLDepthFunction_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\OpenGL\GLEnums.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\OpenGL\GLEnums.uno
 // -------------------------------------------------------------------------------------------
 
 // public extern enum GLEnableCap :104
@@ -1361,7 +1361,7 @@ uEnumType* GLEnableCap_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\OpenGL\GLEnums.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\OpenGL\GLEnums.uno
 // -------------------------------------------------------------------------------------------
 
 // public extern enum GLError :260
@@ -1381,7 +1381,7 @@ uEnumType* GLError_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\OpenGL\GLEnums.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\OpenGL\GLEnums.uno
 // -------------------------------------------------------------------------------------------
 
 // public extern enum GLFramebufferAttachment :240
@@ -1398,7 +1398,7 @@ uEnumType* GLFramebufferAttachment_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\OpenGL\GLFramebufferHandle.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\OpenGL\GLFramebufferHandle.uno
 // -------------------------------------------------------------------------------------------------------
 
 // public extern struct GLFramebufferHandle :11
@@ -1453,7 +1453,7 @@ bool GLFramebufferHandle::op_Inequality(uint32_t left, uint32_t right)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\OpenGL\GLEnums.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\OpenGL\GLEnums.uno
 // -------------------------------------------------------------------------------------------
 
 // public extern enum GLFramebufferStatus :271
@@ -1472,7 +1472,7 @@ uEnumType* GLFramebufferStatus_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\OpenGL\GLEnums.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\OpenGL\GLEnums.uno
 // -------------------------------------------------------------------------------------------
 
 // public extern enum GLFramebufferTarget :248
@@ -1487,7 +1487,7 @@ uEnumType* GLFramebufferTarget_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\OpenGL\GLEnums.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\OpenGL\GLEnums.uno
 // -------------------------------------------------------------------------------------------
 
 // public extern enum GLFrontFaceDirection :135
@@ -1503,7 +1503,7 @@ uEnumType* GLFrontFaceDirection_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\OpenGL\GLEnums.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\OpenGL\GLEnums.uno
 // -------------------------------------------------------------------------------------------
 
 // public extern enum GLIndexType :166
@@ -1519,7 +1519,7 @@ uEnumType* GLIndexType_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\OpenGL\GLEnums.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\OpenGL\GLEnums.uno
 // -------------------------------------------------------------------------------------------
 
 // public extern enum GLInteger4Name :13
@@ -1535,7 +1535,7 @@ uEnumType* GLInteger4Name_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\OpenGL\GLEnums.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\OpenGL\GLEnums.uno
 // -------------------------------------------------------------------------------------------
 
 // public extern enum GLIntegerName :7
@@ -1550,7 +1550,7 @@ uEnumType* GLIntegerName_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\OpenGL\GLEnums.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\OpenGL\GLEnums.uno
 // -------------------------------------------------------------------------------------------
 
 // public extern enum GLPixelFormat :173
@@ -1574,7 +1574,7 @@ uEnumType* GLPixelFormat_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\OpenGL\GLEnums.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\OpenGL\GLEnums.uno
 // -------------------------------------------------------------------------------------------
 
 // public extern enum GLPixelType :188
@@ -1598,7 +1598,7 @@ uEnumType* GLPixelType_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\OpenGL\GLEnums.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\OpenGL\GLEnums.uno
 // -------------------------------------------------------------------------------------------
 
 // public extern enum GLPrimitiveType :142
@@ -1619,7 +1619,7 @@ uEnumType* GLPrimitiveType_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\OpenGL\GLProgramHandle.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\OpenGL\GLProgramHandle.uno
 // ---------------------------------------------------------------------------------------------------
 
 // public extern struct GLProgramHandle :11
@@ -1662,7 +1662,7 @@ void GLProgramHandle__GetHashCode_fn(uint32_t* __this, uType* __type, int32_t* _
 uint32_t GLProgramHandle::Zero_;
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\OpenGL\GLEnums.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\OpenGL\GLEnums.uno
 // -------------------------------------------------------------------------------------------
 
 // public extern enum GLProgramParameter :297
@@ -1681,7 +1681,7 @@ uEnumType* GLProgramParameter_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\OpenGL\GLRenderbufferHandle.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\OpenGL\GLRenderbufferHandle.uno
 // --------------------------------------------------------------------------------------------------------
 
 // public extern struct GLRenderbufferHandle :11
@@ -1736,7 +1736,7 @@ bool GLRenderbufferHandle::op_Inequality(uint32_t left, uint32_t right)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\OpenGL\GLEnums.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\OpenGL\GLEnums.uno
 // -------------------------------------------------------------------------------------------
 
 // public extern enum GLRenderbufferStorage :210
@@ -1751,7 +1751,7 @@ uEnumType* GLRenderbufferStorage_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\OpenGL\GLEnums.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\OpenGL\GLEnums.uno
 // -------------------------------------------------------------------------------------------
 
 // public extern enum GLRenderbufferTarget :254
@@ -1766,7 +1766,7 @@ uEnumType* GLRenderbufferTarget_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\OpenGL\GLShaderHandle.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\OpenGL\GLShaderHandle.uno
 // --------------------------------------------------------------------------------------------------
 
 // public extern struct GLShaderHandle :11
@@ -1809,7 +1809,7 @@ void GLShaderHandle__GetHashCode_fn(uint32_t* __this, uType* __type, int32_t* __
 uint32_t GLShaderHandle::Zero_;
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\OpenGL\GLEnums.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\OpenGL\GLEnums.uno
 // -------------------------------------------------------------------------------------------
 
 // public extern enum GLShaderParameter :289
@@ -1826,7 +1826,7 @@ uEnumType* GLShaderParameter_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\OpenGL\GLEnums.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\OpenGL\GLEnums.uno
 // -------------------------------------------------------------------------------------------
 
 // public extern enum GLShaderType :20
@@ -1842,7 +1842,7 @@ uEnumType* GLShaderType_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\OpenGL\GLEnums.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\OpenGL\GLEnums.uno
 // -------------------------------------------------------------------------------------------
 
 // public extern enum GLStringName :307
@@ -1861,7 +1861,7 @@ uEnumType* GLStringName_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\OpenGL\GLTextureHandle.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\OpenGL\GLTextureHandle.uno
 // ---------------------------------------------------------------------------------------------------
 
 // public extern struct GLTextureHandle :11
@@ -1928,7 +1928,7 @@ bool GLTextureHandle::op_Inequality(uint32_t left, uint32_t right)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\OpenGL\GLEnums.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\OpenGL\GLEnums.uno
 // -------------------------------------------------------------------------------------------
 
 // public extern enum GLTextureParameterName :80
@@ -1946,7 +1946,7 @@ uEnumType* GLTextureParameterName_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\OpenGL\GLEnums.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\OpenGL\GLEnums.uno
 // -------------------------------------------------------------------------------------------
 
 // public extern enum GLTextureParameterValue :89
@@ -1968,7 +1968,7 @@ uEnumType* GLTextureParameterValue_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\OpenGL\GLEnums.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\OpenGL\GLEnums.uno
 // -------------------------------------------------------------------------------------------
 
 // public extern enum GLTextureTarget :66
@@ -1991,7 +1991,7 @@ uEnumType* GLTextureTarget_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\OpenGL\GLEnums.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\OpenGL\GLEnums.uno
 // -------------------------------------------------------------------------------------------
 
 // public extern enum GLTextureUnit :53

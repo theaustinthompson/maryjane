@@ -1,4 +1,4 @@
-// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/Fuse.Models/1.7.4/ModelJavaScript.uno.
+// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/Fuse.Models/1.8.1/ModelJavaScript.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -20,6 +20,8 @@ struct ModelJavaScript__ModelData : uObject
 {
     uStrong<uString*> ModulePath;
     uStrong< ::g::Uno::UX::NameTable*> NameTable;
+    uStrong<uObject*> Arguments;
+    bool HasArguments;
 
     void ctor_();
     static ModelJavaScript__ModelData* New1();

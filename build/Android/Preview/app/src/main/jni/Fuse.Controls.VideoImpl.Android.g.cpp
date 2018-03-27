@@ -49,7 +49,7 @@ namespace Controls{
 namespace VideoImpl{
 namespace Android{
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Video\1.7.4\Android\VideoPlayer.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Video\1.8.1\Android\VideoPlayer.uno
 // -----------------------------------------------------------------------------------------------------
 
 // internal sealed extern class MediaPlayer :149
@@ -483,7 +483,7 @@ void MediaPlayer::remove_Completion(uDelegate* value)
     {
         INIT_JNI;
         jclass __cls = JniHelper::GetNativeExternClass();
-        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "CreateMediaPlayer264", "(Lcom/uno/UnoObject;Ljava/lang/Object;)Ljava/lang/Object;");
+        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "CreateMediaPlayer256", "(Lcom/uno/UnoObject;Ljava/lang/Object;)Ljava/lang/Object;");
         uObject* _uthis=this;
         jobject _this_ = ::g::Uno::Compiler::ExportTargetInterop::Foreign::Android::JavaUnoObject::Box6(_uthis);
         ::g::Java::Object* _usurfaceHandle=surfaceHandle;
@@ -504,7 +504,7 @@ void MediaPlayer::remove_Completion(uDelegate* value)
     {
         INIT_JNI;
         jclass __cls = JniHelper::GetNativeExternClass();
-        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "CreateSurface269", "(Lcom/uno/UnoObject;Ljava/lang/Object;)Ljava/lang/Object;");
+        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "CreateSurface261", "(Lcom/uno/UnoObject;Ljava/lang/Object;)Ljava/lang/Object;");
         uObject* _uthis=this;
         jobject _this_ = ::g::Uno::Compiler::ExportTargetInterop::Foreign::Android::JavaUnoObject::Box6(_uthis);
         ::g::Java::Object* _usurfaceTexture=surfaceTexture;
@@ -525,7 +525,7 @@ void MediaPlayer::remove_Completion(uDelegate* value)
     {
         INIT_JNI;
         jclass __cls = JniHelper::GetNativeExternClass();
-        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "CreateSurfaceTexture270", "(Lcom/uno/UnoObject;I)Ljava/lang/Object;");
+        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "CreateSurfaceTexture262", "(Lcom/uno/UnoObject;I)Ljava/lang/Object;");
         uObject* _uthis=this;
         jobject _this_ = ::g::Uno::Compiler::ExportTargetInterop::Foreign::Android::JavaUnoObject::Box6(_uthis);
         int32_t _uglHandle=glHandle;
@@ -621,7 +621,7 @@ void MediaPlayer::LoadAsyncAsset(::g::Java::Object* handle, uString* assetName)
     {
         INIT_JNI;
         jclass __cls = JniHelper::GetNativeExternClass();
-        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "LoadAsyncAsset279", "(Lcom/uno/UnoObject;Ljava/lang/Object;Ljava/lang/String;)V");
+        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "LoadAsyncAsset271", "(Lcom/uno/UnoObject;Ljava/lang/Object;Ljava/lang/String;)V");
         uObject* _uthis=this;
         jobject _this_ = ::g::Uno::Compiler::ExportTargetInterop::Foreign::Android::JavaUnoObject::Box6(_uthis);
         ::g::Java::Object* _uhandle=handle;
@@ -645,7 +645,7 @@ void MediaPlayer::LoadAsyncUrl(::g::Java::Object* handle, uString* url)
     {
         INIT_JNI;
         jclass __cls = JniHelper::GetNativeExternClass();
-        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "LoadAsyncUrl281", "(Lcom/uno/UnoObject;Ljava/lang/Object;Ljava/lang/String;)V");
+        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "LoadAsyncUrl273", "(Lcom/uno/UnoObject;Ljava/lang/Object;Ljava/lang/String;)V");
         uObject* _uthis=this;
         jobject _this_ = ::g::Uno::Compiler::ExportTargetInterop::Foreign::Android::JavaUnoObject::Box6(_uthis);
         ::g::Java::Object* _uhandle=handle;
@@ -822,7 +822,7 @@ void MediaPlayer::Dispose1(::g::Java::Object* mediaplayerHandle, ::g::Java::Obje
     {
         INIT_JNI;
         jclass __cls = JniHelper::GetNativeExternClass();
-        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "Dispose1272", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V");
+        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "Dispose1264", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V");
         ::g::Java::Object* _umediaplayerHandle=mediaplayerHandle;
         jobject _mediaplayerHandle = (_umediaplayerHandle==NULL ? NULL : U_JNIVAR->NewLocalRef(::g::Android::Base::Wrappers::IJWrapper::_GetJavaObject(uInterface((uObject*)_umediaplayerHandle, ::g::Android::Base::Wrappers::IJWrapper_typeof()))));
         ::g::Java::Object* _usurfaceHandle=surfaceHandle;
@@ -846,7 +846,7 @@ int32_t MediaPlayer::GetCurrentPosition(::g::Java::Object* handle)
     {
         INIT_JNI;
         jclass __cls = JniHelper::GetNativeExternClass();
-        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "GetCurrentPosition273", "(Ljava/lang/Object;)I");
+        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "GetCurrentPosition265", "(Ljava/lang/Object;)I");
         ::g::Java::Object* _uhandle=handle;
         jobject _handle = (_uhandle==NULL ? NULL : U_JNIVAR->NewLocalRef(::g::Android::Base::Wrappers::IJWrapper::_GetJavaObject(uInterface((uObject*)_uhandle, ::g::Android::Base::Wrappers::IJWrapper_typeof()))));
         jint __jresult = U_JNIVAR->CallStaticIntMethod(__cls,__mtd,_handle);
@@ -864,7 +864,7 @@ int32_t MediaPlayer::GetDuration(::g::Java::Object* handle)
     {
         INIT_JNI;
         jclass __cls = JniHelper::GetNativeExternClass();
-        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "GetDuration274", "(Ljava/lang/Object;)I");
+        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "GetDuration266", "(Ljava/lang/Object;)I");
         ::g::Java::Object* _uhandle=handle;
         jobject _handle = (_uhandle==NULL ? NULL : U_JNIVAR->NewLocalRef(::g::Android::Base::Wrappers::IJWrapper::_GetJavaObject(uInterface((uObject*)_uhandle, ::g::Android::Base::Wrappers::IJWrapper_typeof()))));
         jint __jresult = U_JNIVAR->CallStaticIntMethod(__cls,__mtd,_handle);
@@ -882,7 +882,7 @@ int32_t MediaPlayer::GetHeight(::g::Java::Object* handle)
     {
         INIT_JNI;
         jclass __cls = JniHelper::GetNativeExternClass();
-        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "GetHeight275", "(Ljava/lang/Object;)I");
+        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "GetHeight267", "(Ljava/lang/Object;)I");
         ::g::Java::Object* _uhandle=handle;
         jobject _handle = (_uhandle==NULL ? NULL : U_JNIVAR->NewLocalRef(::g::Android::Base::Wrappers::IJWrapper::_GetJavaObject(uInterface((uObject*)_uhandle, ::g::Android::Base::Wrappers::IJWrapper_typeof()))));
         jint __jresult = U_JNIVAR->CallStaticIntMethod(__cls,__mtd,_handle);
@@ -900,7 +900,7 @@ int32_t MediaPlayer::GetOrientation(::g::Java::Object* handle)
     {
         INIT_JNI;
         jclass __cls = JniHelper::GetNativeExternClass();
-        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "GetOrientation276", "(Ljava/lang/Object;)I");
+        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "GetOrientation268", "(Ljava/lang/Object;)I");
         ::g::Java::Object* _uhandle=handle;
         jobject _handle = (_uhandle==NULL ? NULL : U_JNIVAR->NewLocalRef(::g::Android::Base::Wrappers::IJWrapper::_GetJavaObject(uInterface((uObject*)_uhandle, ::g::Android::Base::Wrappers::IJWrapper_typeof()))));
         jint __jresult = U_JNIVAR->CallStaticIntMethod(__cls,__mtd,_handle);
@@ -918,7 +918,7 @@ int32_t MediaPlayer::GetWidth(::g::Java::Object* handle)
     {
         INIT_JNI;
         jclass __cls = JniHelper::GetNativeExternClass();
-        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "GetWidth277", "(Ljava/lang/Object;)I");
+        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "GetWidth269", "(Ljava/lang/Object;)I");
         ::g::Java::Object* _uhandle=handle;
         jobject _handle = (_uhandle==NULL ? NULL : U_JNIVAR->NewLocalRef(::g::Android::Base::Wrappers::IJWrapper::_GetJavaObject(uInterface((uObject*)_uhandle, ::g::Android::Base::Wrappers::IJWrapper_typeof()))));
         jint __jresult = U_JNIVAR->CallStaticIntMethod(__cls,__mtd,_handle);
@@ -936,7 +936,7 @@ bool MediaPlayer::IsHardwareAccelerated()
     {
         INIT_JNI;
         jclass __cls = JniHelper::GetNativeExternClass();
-        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "IsHardwareAccelerated278", "()Z");
+        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "IsHardwareAccelerated270", "()Z");
         jboolean __jresult = U_JNIVAR->CallStaticBooleanMethod(__cls,__mtd);
         bool __result = (bool)__jresult;
         ::g::Android::Base::JNI::CheckException();
@@ -959,7 +959,7 @@ void MediaPlayer::Pause1(::g::Java::Object* handle)
     {
         INIT_JNI;
         jclass __cls = JniHelper::GetNativeExternClass();
-        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "Pause1282", "(Ljava/lang/Object;)V");
+        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "Pause1274", "(Ljava/lang/Object;)V");
         ::g::Java::Object* _uhandle=handle;
         jobject _handle = (_uhandle==NULL ? NULL : U_JNIVAR->NewLocalRef(::g::Android::Base::Wrappers::IJWrapper::_GetJavaObject(uInterface((uObject*)_uhandle, ::g::Android::Base::Wrappers::IJWrapper_typeof()))));
         U_JNIVAR->CallStaticVoidMethod(__cls,__mtd,_handle);
@@ -977,7 +977,7 @@ void MediaPlayer::Play1(::g::Java::Object* handle)
     {
         INIT_JNI;
         jclass __cls = JniHelper::GetNativeExternClass();
-        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "Play1283", "(Ljava/lang/Object;)V");
+        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "Play1275", "(Ljava/lang/Object;)V");
         ::g::Java::Object* _uhandle=handle;
         jobject _handle = (_uhandle==NULL ? NULL : U_JNIVAR->NewLocalRef(::g::Android::Base::Wrappers::IJWrapper::_GetJavaObject(uInterface((uObject*)_uhandle, ::g::Android::Base::Wrappers::IJWrapper_typeof()))));
         U_JNIVAR->CallStaticVoidMethod(__cls,__mtd,_handle);
@@ -995,7 +995,7 @@ void MediaPlayer::SeekTo(::g::Java::Object* handle, int32_t position)
     {
         INIT_JNI;
         jclass __cls = JniHelper::GetNativeExternClass();
-        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "SeekTo284", "(Ljava/lang/Object;I)V");
+        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "SeekTo276", "(Ljava/lang/Object;I)V");
         ::g::Java::Object* _uhandle=handle;
         jobject _handle = (_uhandle==NULL ? NULL : U_JNIVAR->NewLocalRef(::g::Android::Base::Wrappers::IJWrapper::_GetJavaObject(uInterface((uObject*)_uhandle, ::g::Android::Base::Wrappers::IJWrapper_typeof()))));
         int32_t _uposition=position;
@@ -1016,7 +1016,7 @@ void MediaPlayer::SetVolume(::g::Java::Object* handle, float left, float right)
     {
         INIT_JNI;
         jclass __cls = JniHelper::GetNativeExternClass();
-        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "SetVolume285", "(Ljava/lang/Object;FF)V");
+        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "SetVolume277", "(Ljava/lang/Object;FF)V");
         ::g::Java::Object* _uhandle=handle;
         jobject _handle = (_uhandle==NULL ? NULL : U_JNIVAR->NewLocalRef(::g::Android::Base::Wrappers::IJWrapper::_GetJavaObject(uInterface((uObject*)_uhandle, ::g::Android::Base::Wrappers::IJWrapper_typeof()))));
         float _uleft=left;
@@ -1040,7 +1040,7 @@ void MediaPlayer::UpdateTexture1(::g::Java::Object* surfaceTextureHandle)
     {
         INIT_JNI;
         jclass __cls = JniHelper::GetNativeExternClass();
-        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "UpdateTexture1286", "(Ljava/lang/Object;)V");
+        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "UpdateTexture1278", "(Ljava/lang/Object;)V");
         ::g::Java::Object* _usurfaceTextureHandle=surfaceTextureHandle;
         jobject _surfaceTextureHandle = (_usurfaceTextureHandle==NULL ? NULL : U_JNIVAR->NewLocalRef(::g::Android::Base::Wrappers::IJWrapper::_GetJavaObject(uInterface((uObject*)_usurfaceTextureHandle, ::g::Android::Base::Wrappers::IJWrapper_typeof()))));
         U_JNIVAR->CallStaticVoidMethod(__cls,__mtd,_surfaceTextureHandle);
@@ -1053,7 +1053,7 @@ void MediaPlayer::UpdateTexture1(::g::Java::Object* surfaceTextureHandle)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Video\1.7.4\Android\VideoPlayer.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Video\1.8.1\Android\VideoPlayer.uno
 // -----------------------------------------------------------------------------------------------------
 
 // private sealed class VideoLoader.NoHardwareAcceleration :96
@@ -1137,7 +1137,7 @@ VideoLoader__NoHardwareAcceleration* VideoLoader__NoHardwareAcceleration::New5()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Video\1.7.4\Android\VideoPlayer.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Video\1.8.1\Android\VideoPlayer.uno
 // -----------------------------------------------------------------------------------------------------
 
 // internal sealed extern class VideoLoader :14
@@ -1240,7 +1240,7 @@ VideoLoader* VideoLoader::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Video\1.7.4\Android\VideoPlayer.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Video\1.8.1\Android\VideoPlayer.uno
 // -----------------------------------------------------------------------------------------------------
 
 // private sealed class VideoLoader.VideoPromise :16

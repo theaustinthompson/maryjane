@@ -150,7 +150,7 @@ namespace g{
 namespace Fuse{
 namespace Gestures{
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Primitives\1.7.4\RangeControls\CircularRangeBehavior.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Primitives\1.8.1\RangeControls\CircularRangeBehavior.uno
 // --------------------------------------------------------------------------------------------------------------------------
 
 // public sealed class CircularRangeBehavior :76
@@ -167,7 +167,7 @@ static void CircularRangeBehavior_build(uType* type)
     ::STRINGS[0] = uString::Const("Value");
     ::STRINGS[1] = uString::Const("DegreesValue");
     ::STRINGS[2] = uString::Const("RangeControl or BinaryRangeControl");
-    ::STRINGS[3] = uString::Const("C:\\Users\\borde_000\\AppData\\Local\\Fusetools\\Packages\\Fuse.Controls.Primitives\\1.7.4\\RangeControls\\CircularRangeBehavior.uno");
+    ::STRINGS[3] = uString::Const("C:\\Users\\borde_000\\AppData\\Local\\Fusetools\\Packages\\Fuse.Controls.Primitives\\1.8.1\\RangeControls\\CircularRangeBehavior.uno");
     ::STRINGS[4] = uString::Const("OnRooted");
     ::TYPES[0] = ::g::Fuse::Elements::Element_typeof();
     ::TYPES[1] = ::g::Fuse::Controls::RangeControl_typeof();
@@ -792,7 +792,7 @@ CircularRangeBehavior* CircularRangeBehavior::New2()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Gestures\1.7.4\Clicked.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Gestures\1.8.1\Clicked.uno
 // -----------------------------------------------------------------------------------
 
 // public sealed class Clicked :30
@@ -985,7 +985,7 @@ void Clicked::RemoveHandler(::g::Fuse::Visual* visual, uDelegate* handler)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Gestures\1.7.4\Clicked.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Gestures\1.8.1\Clicked.uno
 // -----------------------------------------------------------------------------------
 
 // public sealed class ClickedArgs :7
@@ -1044,7 +1044,7 @@ ClickedArgs* ClickedArgs::New3(::g::Fuse::Input::PointerEventArgs* args, ::g::Fu
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Gestures\1.7.4\Clicked.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Gestures\1.8.1\Clicked.uno
 // -----------------------------------------------------------------------------------
 
 // public delegate void ClickedHandler(object sender, Fuse.Gestures.ClickedArgs args) :12
@@ -1060,7 +1060,7 @@ uDelegateType* ClickedHandler_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Gestures\1.7.4\Internal\Clicker.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Gestures\1.8.1\Internal\Clicker.uno
 // --------------------------------------------------------------------------------------------
 
 // internal sealed class Clicker :101
@@ -1545,7 +1545,7 @@ Clicker* Clicker::New1(::g::Fuse::Visual* visual)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Gestures\1.7.4\Internal\Clicker.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Gestures\1.8.1\Internal\Clicker.uno
 // --------------------------------------------------------------------------------------------
 
 // internal delegate void ClickerEventHandler(Fuse.Input.PointerEventArgs args, int count) :9
@@ -1561,7 +1561,7 @@ uDelegateType* ClickerEventHandler_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Gestures\1.7.4\Internal\Clicker.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Gestures\1.8.1\Internal\Clicker.uno
 // --------------------------------------------------------------------------------------------
 
 // public enum ClickerPointerIndex :11
@@ -1577,7 +1577,7 @@ uEnumType* ClickerPointerIndex_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Gestures\1.7.4\Internal\Clicker.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Gestures\1.8.1\Internal\Clicker.uno
 // --------------------------------------------------------------------------------------------
 
 // public abstract class ClickerTrigger :19
@@ -1742,7 +1742,7 @@ void ClickerTrigger::PointerIndex(int32_t value)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Gestures\1.7.4\Internal\Helpers.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Gestures\1.8.1\Internal\Helpers.uno
 // --------------------------------------------------------------------------------------------
 
 // internal sealed class DegreeSpan :6
@@ -1822,7 +1822,7 @@ DegreeSpan* DegreeSpan::New1(float a, float b)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Primitives\1.7.4\RangeControls\CircularRangeBehavior.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Primitives\1.8.1\RangeControls\CircularRangeBehavior.uno
 // --------------------------------------------------------------------------------------------------------------------------
 
 // internal struct double2 :11
@@ -1916,7 +1916,7 @@ double2 double2__New2(::g::Uno::Float2 v)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Gestures\1.7.4\Clicked.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Gestures\1.8.1\Clicked.uno
 // -----------------------------------------------------------------------------------
 
 // public sealed class DoubleClicked :95
@@ -2071,7 +2071,7 @@ DoubleClicked* DoubleClicked::New2()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Gestures\1.7.4\Tapped.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Gestures\1.8.1\Tapped.uno
 // ----------------------------------------------------------------------------------
 
 // public sealed class DoubleTapped :118
@@ -2255,7 +2255,7 @@ DoubleTapped* DoubleTapped::New3(uDelegate* handler)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Gestures\1.7.4\Tapped.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Gestures\1.8.1\Tapped.uno
 // ----------------------------------------------------------------------------------
 
 // public sealed class DoubleTappedArgs :94
@@ -2314,7 +2314,7 @@ DoubleTappedArgs* DoubleTappedArgs::New3(::g::Fuse::Input::PointerEventArgs* arg
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Gestures\1.7.4\Tapped.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Gestures\1.8.1\Tapped.uno
 // ----------------------------------------------------------------------------------
 
 // public delegate void DoubleTappedHandler(object sender, Fuse.Gestures.DoubleTappedArgs args) :102
@@ -2330,7 +2330,7 @@ uDelegateType* DoubleTappedHandler_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Gestures\1.7.4\WhileEdgeSwiped.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Gestures\1.8.1\WhileEdgeSwiped.uno
 // -------------------------------------------------------------------------------------------
 
 // public enum Edge :10
@@ -2348,7 +2348,7 @@ uEnumType* Edge_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Gestures\1.7.4\WhileEdgeSwiped.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Gestures\1.8.1\WhileEdgeSwiped.uno
 // -------------------------------------------------------------------------------------------
 
 // public sealed class EdgeSwipeAnimation :22
@@ -2620,7 +2620,7 @@ EdgeSwipeAnimation* EdgeSwipeAnimation::New2()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Gestures\1.7.4\TransformGesture.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Gestures\1.8.1\TransformGesture.uno
 // --------------------------------------------------------------------------------------------
 
 // public abstract interface ISizeConstraint :13
@@ -2638,7 +2638,7 @@ uInterfaceType* ISizeConstraint_typeof()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Gestures\1.7.4\KeepInView.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Gestures\1.8.1\KeepInView.uno
 // --------------------------------------------------------------------------------------
 
 // public sealed class KeepFocusInView :106
@@ -2767,7 +2767,7 @@ KeepFocusInView* KeepFocusInView::New3()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Gestures\1.7.4\KeepInView.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Gestures\1.8.1\KeepInView.uno
 // --------------------------------------------------------------------------------------
 
 // public sealed class KeepInView :99
@@ -2845,7 +2845,7 @@ KeepInView* KeepInView::New3()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Gestures\1.7.4\KeepInView.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Gestures\1.8.1\KeepInView.uno
 // --------------------------------------------------------------------------------------
 
 // public class KeepInViewCommon :8
@@ -3058,7 +3058,7 @@ KeepInViewCommon* KeepInViewCommon::New2()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Primitives\1.7.4\RangeControls\LinearRangeBehavior.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Primitives\1.8.1\RangeControls\LinearRangeBehavior.uno
 // ------------------------------------------------------------------------------------------------------------------------
 
 // public sealed class LinearRangeBehavior :38
@@ -3066,7 +3066,7 @@ KeepInViewCommon* KeepInViewCommon::New2()
 static void LinearRangeBehavior_build(uType* type)
 {
     ::STRINGS[6] = uString::Const("RangeControl");
-    ::STRINGS[7] = uString::Const("C:\\Users\\borde_000\\AppData\\Local\\Fusetools\\Packages\\Fuse.Controls.Primitives\\1.7.4\\RangeControls\\LinearRangeBehavior.uno");
+    ::STRINGS[7] = uString::Const("C:\\Users\\borde_000\\AppData\\Local\\Fusetools\\Packages\\Fuse.Controls.Primitives\\1.8.1\\RangeControls\\LinearRangeBehavior.uno");
     ::STRINGS[4] = uString::Const("OnRooted");
     ::STRINGS[8] = uString::Const("Element");
     ::TYPES[1] = ::g::Fuse::Controls::RangeControl_typeof();
@@ -3368,7 +3368,7 @@ LinearRangeBehavior* LinearRangeBehavior::New2()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Gestures\1.7.4\LongPress.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Gestures\1.8.1\LongPress.uno
 // -------------------------------------------------------------------------------------
 
 // public sealed class LongPressed :21
@@ -3520,7 +3520,7 @@ LongPressed* LongPressed::New2()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Gestures\1.7.4\LongPress.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Gestures\1.8.1\LongPress.uno
 // -------------------------------------------------------------------------------------
 
 // public sealed class LongPressedArgs :7
@@ -3579,7 +3579,7 @@ LongPressedArgs* LongPressedArgs::New3(::g::Fuse::Input::PointerEventArgs* args,
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Gestures\1.7.4\LongPress.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Gestures\1.8.1\LongPress.uno
 // -------------------------------------------------------------------------------------
 
 // public delegate void LongPressedHandler(object sender, Fuse.Gestures.LongPressedArgs args) :15
@@ -3595,7 +3595,7 @@ uDelegateType* LongPressedHandler_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.ScrollView\1.7.4\Scroller.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.ScrollView\1.8.1\Scroller.uno
 // -----------------------------------------------------------------------------------------------
 
 // private enum Scroller.MoveUserFlags :418
@@ -3612,7 +3612,7 @@ uEnumType* Scroller__MoveUserFlags_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Gestures\1.7.4\PanGesture.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Gestures\1.8.1\PanGesture.uno
 // --------------------------------------------------------------------------------------
 
 // public sealed class PanGesture :20
@@ -3884,7 +3884,7 @@ PanGesture* PanGesture::New2(::g::Fuse::Elements::InteractiveTransform* target)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Gestures\1.7.4\PointerCapture.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Gestures\1.8.1\PointerCapture.uno
 // ------------------------------------------------------------------------------------------
 
 // public sealed class PointerCapture :20
@@ -4135,7 +4135,7 @@ PointerCapture* PointerCapture::New2()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Gestures\1.7.4\PointerCapture.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Gestures\1.8.1\PointerCapture.uno
 // ------------------------------------------------------------------------------------------
 
 // public enum PointerCaptureOn :8
@@ -4151,7 +4151,7 @@ uEnumType* PointerCaptureOn_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Gestures\1.7.4\Pressed.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Gestures\1.8.1\Pressed.uno
 // -----------------------------------------------------------------------------------
 
 // public sealed class Pressed :14
@@ -4269,7 +4269,7 @@ Pressed* Pressed::New2()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Gestures\1.7.4\Released.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Gestures\1.8.1\Released.uno
 // ------------------------------------------------------------------------------------
 
 // public sealed class Released :18
@@ -4387,7 +4387,7 @@ Released* Released::New2()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Gestures\1.7.4\RotateGesture.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Gestures\1.8.1\RotateGesture.uno
 // -----------------------------------------------------------------------------------------
 
 // public sealed class RotateGesture :20
@@ -4587,7 +4587,7 @@ RotateGesture* RotateGesture::New2(::g::Fuse::Elements::InteractiveTransform* ta
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.ScrollView\1.7.4\Scroller.Actions.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.ScrollView\1.8.1\Scroller.Actions.uno
 // -------------------------------------------------------------------------------------------------------
 
 // public sealed class ScrollableGoto :126
@@ -4595,7 +4595,7 @@ RotateGesture* RotateGesture::New2(::g::Fuse::Elements::InteractiveTransform* ta
 static void ScrollableGoto_build(uType* type)
 {
     ::STRINGS[10] = uString::Const("Use ScrollTo instead, it has the same interface");
-    ::STRINGS[11] = uString::Const("C:\\Users\\borde_000\\AppData\\Local\\Fusetools\\Packages\\Fuse.Controls.ScrollView\\1.7.4\\Scroller.Actions.uno");
+    ::STRINGS[11] = uString::Const("C:\\Users\\borde_000\\AppData\\Local\\Fusetools\\Packages\\Fuse.Controls.ScrollView\\1.8.1\\Scroller.Actions.uno");
     ::STRINGS[12] = uString::Const(".ctor");
     type->SetFields(15);
     type->Reflection.SetFunctions(1,
@@ -4646,7 +4646,7 @@ ScrollableGoto* ScrollableGoto::New3()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.ScrollView\1.7.4\Scroller.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.ScrollView\1.8.1\Scroller.uno
 // -----------------------------------------------------------------------------------------------
 
 // public sealed class Scroller :21
@@ -5060,7 +5060,7 @@ void Scroller::ctor_3()
     _delayStart = true;
     _down = -1;
     ctor_2();
-    ::g::Fuse::Diagnostics::Deprecated(uString::Const("Scroller should not be used directly as it is an internal class. The ScrollView provides the entire interface for scrolling."), this, uString::Const("C:\\Users\\borde_000\\AppData\\Local\\Fusetools\\Packages\\Fuse.Controls.ScrollView\\1.7.4\\Scroller.uno"), 30, ::STRINGS[12/*".ctor"*/]);
+    ::g::Fuse::Diagnostics::Deprecated(uString::Const("Scroller should not be used directly as it is an internal class. The ScrollView provides the entire interface for scrolling."), this, uString::Const("C:\\Users\\borde_000\\AppData\\Local\\Fusetools\\Packages\\Fuse.Controls.ScrollView\\1.8.1\\Scroller.uno"), 30, ::STRINGS[12/*".ctor"*/]);
 }
 
 // internal Scroller(bool ignore) [instance] :24
@@ -5115,7 +5115,7 @@ bool Scroller::DelayStart()
 void Scroller::DelayStart(bool value)
 {
     _delayStart = value;
-    ::g::Fuse::Diagnostics::Deprecated(uString::Const("Scroller.DelayStart is no longer supported."), this, uString::Const("C:\\Users\\borde_000\\AppData\\Local\\Fusetools\\Packages\\Fuse.Controls.ScrollView\\1.7.4\\Scroller.uno"), 49, uString::Const("set_DelayStart"));
+    ::g::Fuse::Diagnostics::Deprecated(uString::Const("Scroller.DelayStart is no longer supported."), this, uString::Const("C:\\Users\\borde_000\\AppData\\Local\\Fusetools\\Packages\\Fuse.Controls.ScrollView\\1.8.1\\Scroller.uno"), 49, uString::Const("set_DelayStart"));
 }
 
 // private float2 FromWindow(float2 p) [instance] :237
@@ -5209,7 +5209,7 @@ void Scroller::OnUpdated()
 
     if ((_region == NULL) || (_scrollable == NULL))
     {
-        ::g::Fuse::Diagnostics::InternalError(uString::Const("Invalid scroller update"), NULL, uString::Const("C:\\Users\\borde_000\\AppData\\Local\\Fusetools\\Packages\\Fuse.Controls.ScrollView\\1.7.4\\Scroller.uno"), 384, uString::Const("OnUpdated"));
+        ::g::Fuse::Diagnostics::InternalError(uString::Const("Invalid scroller update"), NULL, uString::Const("C:\\Users\\borde_000\\AppData\\Local\\Fusetools\\Packages\\Fuse.Controls.ScrollView\\1.8.1\\Scroller.uno"), 384, uString::Const("OnUpdated"));
         return;
     }
 
@@ -5280,14 +5280,14 @@ void Scroller::UpdatePointerEvents(bool forceOff)
     if (shouldListen)
     {
         if (_gesture != NULL)
-            ::g::Fuse::Diagnostics::InternalError(uString::Const("inconsistent gesture state"), NULL, uString::Const("C:\\Users\\borde_000\\AppData\\Local\\Fusetools\\Packages\\Fuse.Controls.ScrollView\\1.7.4\\Scroller.uno"), 129, uString::Const("UpdatePointerEvents"));
+            ::g::Fuse::Diagnostics::InternalError(uString::Const("inconsistent gesture state"), NULL, uString::Const("C:\\Users\\borde_000\\AppData\\Local\\Fusetools\\Packages\\Fuse.Controls.ScrollView\\1.8.1\\Scroller.uno"), 129, uString::Const("UpdatePointerEvents"));
         else
             _gesture = ::g::Fuse::Input::Gestures::Add((uObject*)this, _scrollable, 9);
     }
     else if (_scrollable != NULL)
     {
         if (_gesture == NULL)
-            ::g::Fuse::Diagnostics::InternalError(uString::Const("inconsistent gesture state"), NULL, uString::Const("C:\\Users\\borde_000\\AppData\\Local\\Fusetools\\Packages\\Fuse.Controls.ScrollView\\1.7.4\\Scroller.uno"), 136, uString::Const("UpdatePointerEvents"));
+            ::g::Fuse::Diagnostics::InternalError(uString::Const("inconsistent gesture state"), NULL, uString::Const("C:\\Users\\borde_000\\AppData\\Local\\Fusetools\\Packages\\Fuse.Controls.ScrollView\\1.8.1\\Scroller.uno"), 136, uString::Const("UpdatePointerEvents"));
         else
         {
             uPtr(_gesture)->Dispose();
@@ -5325,7 +5325,7 @@ bool Scroller::UserScroll()
 // public void set_UserScroll(bool value) [instance] :105
 void Scroller::UserScroll(bool value)
 {
-    ::g::Fuse::Diagnostics::Deprecated(uString::Const("This value bound to the ScrollView now, set ScrollView.UserScroll instead"), this, uString::Const("C:\\Users\\borde_000\\AppData\\Local\\Fusetools\\Packages\\Fuse.Controls.ScrollView\\1.7.4\\Scroller.uno"), 108, uString::Const("set_UserScroll"));
+    ::g::Fuse::Diagnostics::Deprecated(uString::Const("This value bound to the ScrollView now, set ScrollView.UserScroll instead"), this, uString::Const("C:\\Users\\borde_000\\AppData\\Local\\Fusetools\\Packages\\Fuse.Controls.ScrollView\\1.8.1\\Scroller.uno"), 108, uString::Const("set_UserScroll"));
 }
 
 // public Scroller New() [static] :27
@@ -5345,7 +5345,7 @@ Scroller* Scroller::New3(bool ignore)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.ScrollView\1.7.4\Scroller.Actions.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.ScrollView\1.8.1\Scroller.Actions.uno
 // -------------------------------------------------------------------------------------------------------
 
 // public class ScrollTo :56
@@ -5353,7 +5353,7 @@ Scroller* Scroller::New3(bool ignore)
 static void ScrollTo_build(uType* type)
 {
     ::STRINGS[13] = uString::Const("Unabled to locate ScrollView");
-    ::STRINGS[11] = uString::Const("C:\\Users\\borde_000\\AppData\\Local\\Fusetools\\Packages\\Fuse.Controls.ScrollView\\1.7.4\\Scroller.Actions.uno");
+    ::STRINGS[11] = uString::Const("C:\\Users\\borde_000\\AppData\\Local\\Fusetools\\Packages\\Fuse.Controls.ScrollView\\1.8.1\\Scroller.Actions.uno");
     ::STRINGS[14] = uString::Const("Perform");
     ::TYPES[25] = ::g::Fuse::Node_typeof()->MakeMethod(1/*FindByType<Fuse.Controls.ScrollView>*/, ::g::Fuse::Controls::ScrollView_typeof(), NULL);
     type->SetFields(9,
@@ -5539,7 +5539,7 @@ ScrollTo* ScrollTo::New2()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.ScrollView\1.7.4\Scroller.Actions.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.ScrollView\1.8.1\Scroller.Actions.uno
 // -------------------------------------------------------------------------------------------------------
 
 // public enum ScrollToHow :9
@@ -5555,10 +5555,10 @@ uEnumType* ScrollToHow_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Gestures\1.7.4\Swipe.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Gestures\1.8.1\Swipe.uno
 // ---------------------------------------------------------------------------------
 
-// public sealed class SetSwipeActive :377
+// public sealed class SetSwipeActive :403
 // {
 static void SetSwipeActive_build(uType* type)
 {
@@ -5593,31 +5593,31 @@ static void SetSwipeActive_build(uType* type)
     return type;
 }
 
-// public generated SetSwipeActive() :377
+// public generated SetSwipeActive() :403
 void SetSwipeActive__ctor_2_fn(SetSwipeActive* __this)
 {
     __this->ctor_2();
 }
 
-// public generated bool get_Bypass() :386
+// public generated bool get_Bypass() :412
 void SetSwipeActive__get_Bypass_fn(SetSwipeActive* __this, bool* __retval)
 {
     *__retval = __this->Bypass();
 }
 
-// public generated void set_Bypass(bool value) :386
+// public generated void set_Bypass(bool value) :412
 void SetSwipeActive__set_Bypass_fn(SetSwipeActive* __this, bool* value)
 {
     __this->Bypass(*value);
 }
 
-// public generated SetSwipeActive New() :377
+// public generated SetSwipeActive New() :403
 void SetSwipeActive__New2_fn(SetSwipeActive** __retval)
 {
     *__retval = SetSwipeActive::New2();
 }
 
-// protected override sealed void Perform(Fuse.Node target) :388
+// protected override sealed void Perform(Fuse.Node target) :414
 void SetSwipeActive__Perform_fn(SetSwipeActive* __this, ::g::Fuse::Node* target)
 {
     uStackFrame __("Fuse.Gestures.SetSwipeActive", "Perform(Fuse.Node)");
@@ -5626,73 +5626,73 @@ void SetSwipeActive__Perform_fn(SetSwipeActive* __this, ::g::Fuse::Node* target)
         uPtr(__this->Target())->SetActive(__this->Value(), NULL, __this->Bypass());
 }
 
-// public generated Fuse.Gestures.SwipeGesture get_Target() :380
+// public generated Fuse.Gestures.SwipeGesture get_Target() :406
 void SetSwipeActive__get_Target_fn(SetSwipeActive* __this, ::g::Fuse::Gestures::SwipeGesture** __retval)
 {
     *__retval = __this->Target();
 }
 
-// public generated void set_Target(Fuse.Gestures.SwipeGesture value) :380
+// public generated void set_Target(Fuse.Gestures.SwipeGesture value) :406
 void SetSwipeActive__set_Target_fn(SetSwipeActive* __this, ::g::Fuse::Gestures::SwipeGesture* value)
 {
     __this->Target(value);
 }
 
-// public generated bool get_Value() :383
+// public generated bool get_Value() :409
 void SetSwipeActive__get_Value_fn(SetSwipeActive* __this, bool* __retval)
 {
     *__retval = __this->Value();
 }
 
-// public generated void set_Value(bool value) :383
+// public generated void set_Value(bool value) :409
 void SetSwipeActive__set_Value_fn(SetSwipeActive* __this, bool* value)
 {
     __this->Value(*value);
 }
 
-// public generated SetSwipeActive() [instance] :377
+// public generated SetSwipeActive() [instance] :403
 void SetSwipeActive::ctor_2()
 {
     ctor_1();
 }
 
-// public generated bool get_Bypass() [instance] :386
+// public generated bool get_Bypass() [instance] :412
 bool SetSwipeActive::Bypass()
 {
     return _Bypass;
 }
 
-// public generated void set_Bypass(bool value) [instance] :386
+// public generated void set_Bypass(bool value) [instance] :412
 void SetSwipeActive::Bypass(bool value)
 {
     _Bypass = value;
 }
 
-// public generated Fuse.Gestures.SwipeGesture get_Target() [instance] :380
+// public generated Fuse.Gestures.SwipeGesture get_Target() [instance] :406
 ::g::Fuse::Gestures::SwipeGesture* SetSwipeActive::Target()
 {
     return _Target;
 }
 
-// public generated void set_Target(Fuse.Gestures.SwipeGesture value) [instance] :380
+// public generated void set_Target(Fuse.Gestures.SwipeGesture value) [instance] :406
 void SetSwipeActive::Target(::g::Fuse::Gestures::SwipeGesture* value)
 {
     _Target = value;
 }
 
-// public generated bool get_Value() [instance] :383
+// public generated bool get_Value() [instance] :409
 bool SetSwipeActive::Value()
 {
     return _Value;
 }
 
-// public generated void set_Value(bool value) [instance] :383
+// public generated void set_Value(bool value) [instance] :409
 void SetSwipeActive::Value(bool value)
 {
     _Value = value;
 }
 
-// public generated SetSwipeActive New() [static] :377
+// public generated SetSwipeActive New() [static] :403
 SetSwipeActive* SetSwipeActive::New2()
 {
     SetSwipeActive* obj1 = (SetSwipeActive*)uNew(SetSwipeActive_typeof());
@@ -5701,10 +5701,10 @@ SetSwipeActive* SetSwipeActive::New2()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Gestures\1.7.4\Swipe.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Gestures\1.8.1\Swipe.uno
 // ---------------------------------------------------------------------------------
 
-// public sealed class Swiped :534
+// public sealed class Swiped :560
 // {
 static void Swiped_build(uType* type)
 {
@@ -5765,31 +5765,31 @@ static void Swiped_build(uType* type)
     return type;
 }
 
-// public Swiped(Fuse.Gestures.SwipeGesture source) :540
+// public Swiped(Fuse.Gestures.SwipeGesture source) :566
 void Swiped__ctor_5_fn(Swiped* __this, ::g::Fuse::Gestures::SwipeGesture* source)
 {
     __this->ctor_5(source);
 }
 
-// public Fuse.Gestures.SwipedHow get_How() :553
+// public Fuse.Gestures.SwipedHow get_How() :579
 void Swiped__get_How_fn(Swiped* __this, int32_t* __retval)
 {
     *__retval = __this->How();
 }
 
-// public void set_How(Fuse.Gestures.SwipedHow value) :554
+// public void set_How(Fuse.Gestures.SwipedHow value) :580
 void Swiped__set_How_fn(Swiped* __this, int32_t* value)
 {
     __this->How(*value);
 }
 
-// public Swiped New(Fuse.Gestures.SwipeGesture source) :540
+// public Swiped New(Fuse.Gestures.SwipeGesture source) :566
 void Swiped__New2_fn(::g::Fuse::Gestures::SwipeGesture* source, Swiped** __retval)
 {
     *__retval = Swiped::New2(source);
 }
 
-// protected override sealed void OnRooted() :558
+// protected override sealed void OnRooted() :584
 void Swiped__OnRooted_fn(Swiped* __this)
 {
     uStackFrame __("Fuse.Gestures.Swiped", "OnRooted()");
@@ -5798,13 +5798,13 @@ void Swiped__OnRooted_fn(Swiped* __this)
     uPtr(__this->_region)->add_Swiped(uDelegate::New(::TYPES[26/*Uno.Action<bool, bool>*/], (void*)Swiped__OnSwiped_fn, __this));
 }
 
-// private void OnSwiped(bool v, bool cancelled) :571
+// private void OnSwiped(bool v, bool cancelled) :597
 void Swiped__OnSwiped_fn(Swiped* __this, bool* v, bool* cancelled)
 {
     __this->OnSwiped(*v, *cancelled);
 }
 
-// protected override sealed void OnUnrooted() :565
+// protected override sealed void OnUnrooted() :591
 void Swiped__OnUnrooted_fn(Swiped* __this)
 {
     uStackFrame __("Fuse.Gestures.Swiped", "OnUnrooted()");
@@ -5812,38 +5812,38 @@ void Swiped__OnUnrooted_fn(Swiped* __this)
     ::g::Fuse::Triggers::Trigger__OnUnrooted_fn(__this);
 }
 
-// public generated Fuse.Gestures.SwipeGesture get_Source() :537
+// public generated Fuse.Gestures.SwipeGesture get_Source() :563
 void Swiped__get_Source_fn(Swiped* __this, ::g::Fuse::Gestures::SwipeGesture** __retval)
 {
     *__retval = __this->Source();
 }
 
-// private generated void set_Source(Fuse.Gestures.SwipeGesture value) :537
+// private generated void set_Source(Fuse.Gestures.SwipeGesture value) :563
 void Swiped__set_Source_fn(Swiped* __this, ::g::Fuse::Gestures::SwipeGesture* value)
 {
     __this->Source(value);
 }
 
-// public Swiped(Fuse.Gestures.SwipeGesture source) [instance] :540
+// public Swiped(Fuse.Gestures.SwipeGesture source) [instance] :566
 void Swiped::ctor_5(::g::Fuse::Gestures::SwipeGesture* source)
 {
     ctor_4();
     Source(source);
 }
 
-// public Fuse.Gestures.SwipedHow get_How() [instance] :553
+// public Fuse.Gestures.SwipedHow get_How() [instance] :579
 int32_t Swiped::How()
 {
     return _how;
 }
 
-// public void set_How(Fuse.Gestures.SwipedHow value) [instance] :554
+// public void set_How(Fuse.Gestures.SwipedHow value) [instance] :580
 void Swiped::How(int32_t value)
 {
     _how = value;
 }
 
-// private void OnSwiped(bool v, bool cancelled) [instance] :571
+// private void OnSwiped(bool v, bool cancelled) [instance] :597
 void Swiped::OnSwiped(bool v, bool cancelled)
 {
     uStackFrame __("Fuse.Gestures.Swiped", "OnSwiped(bool,bool)");
@@ -5863,19 +5863,19 @@ void Swiped::OnSwiped(bool v, bool cancelled)
         Pulse();
 }
 
-// public generated Fuse.Gestures.SwipeGesture get_Source() [instance] :537
+// public generated Fuse.Gestures.SwipeGesture get_Source() [instance] :563
 ::g::Fuse::Gestures::SwipeGesture* Swiped::Source()
 {
     return _Source;
 }
 
-// private generated void set_Source(Fuse.Gestures.SwipeGesture value) [instance] :537
+// private generated void set_Source(Fuse.Gestures.SwipeGesture value) [instance] :563
 void Swiped::Source(::g::Fuse::Gestures::SwipeGesture* value)
 {
     _Source = value;
 }
 
-// public Swiped New(Fuse.Gestures.SwipeGesture source) [static] :540
+// public Swiped New(Fuse.Gestures.SwipeGesture source) [static] :566
 Swiped* Swiped::New2(::g::Fuse::Gestures::SwipeGesture* source)
 {
     Swiped* obj1 = (Swiped*)uNew(Swiped_typeof());
@@ -5884,10 +5884,10 @@ Swiped* Swiped::New2(::g::Fuse::Gestures::SwipeGesture* source)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Gestures\1.7.4\Swipe.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Gestures\1.8.1\Swipe.uno
 // ---------------------------------------------------------------------------------
 
-// public enum SwipedHow :495
+// public enum SwipedHow :521
 uEnumType* SwipedHow_typeof()
 {
     static uSStrong<uEnumType*> type;
@@ -5902,7 +5902,7 @@ uEnumType* SwipedHow_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Gestures\1.7.4\Swipe.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Gestures\1.8.1\Swipe.uno
 // ---------------------------------------------------------------------------------
 
 // public enum SwipeDirection :15
@@ -5920,7 +5920,7 @@ uEnumType* SwipeDirection_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Gestures\1.7.4\Swipe.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Gestures\1.8.1\Swipe.uno
 // ---------------------------------------------------------------------------------
 
 // public sealed class SwipeGesture :55
@@ -5937,7 +5937,7 @@ static void SwipeGesture_build(uType* type)
     ::STRINGS[15] = uString::Const("GesturePriority");
     ::STRINGS[9] = uString::Const("IsActive");
     ::STRINGS[8] = uString::Const("Element");
-    ::STRINGS[16] = uString::Const("C:\\Users\\borde_000\\AppData\\Local\\Fusetools\\Packages\\Fuse.Gestures\\1.7.4\\Swipe.uno");
+    ::STRINGS[16] = uString::Const("C:\\Users\\borde_000\\AppData\\Local\\Fusetools\\Packages\\Fuse.Gestures\\1.8.1\\Swipe.uno");
     ::STRINGS[4] = uString::Const("OnRooted");
     ::TYPES[0] = ::g::Fuse::Elements::Element_typeof();
     type->SetDependencies(
@@ -5959,9 +5959,10 @@ static void SwipeGesture_build(uType* type)
         ::g::Uno::Bool_typeof(), offsetof(SwipeGesture, _hasDirection), 0,
         ::g::Fuse::Gestures::SwipeDirection_typeof(), offsetof(SwipeGesture, _direction), 0,
         ::g::Fuse::Input::GesturePriority_typeof(), offsetof(SwipeGesture, _gesturePriority), 0,
+        ::g::Uno::Bool_typeof(), offsetof(SwipeGesture, _hasThreshold), 0,
         ::g::Uno::UX::Selector_typeof(), (uintptr_t)&SwipeGesture::GesturePriorityName_, uFieldFlagsStatic,
         ::g::Uno::UX::Selector_typeof(), (uintptr_t)&SwipeGesture::_isActiveName_, uFieldFlagsStatic);
-    type->Reflection.SetFunctions(20,
+    type->Reflection.SetFunctions(22,
         new uFunction("get_Direction", NULL, (void*)SwipeGesture__get_Direction_fn, 0, false, ::g::Fuse::Gestures::SwipeDirection_typeof(), 0),
         new uFunction("set_Direction", NULL, (void*)SwipeGesture__set_Direction_fn, 0, false, uVoid_typeof(), 1, ::g::Fuse::Gestures::SwipeDirection_typeof()),
         new uFunction("get_Edge", NULL, (void*)SwipeGesture__get_Edge_fn, 0, false, ::g::Fuse::Gestures::Edge_typeof(), 0),
@@ -5980,6 +5981,8 @@ static void SwipeGesture_build(uType* type)
         new uFunction("set_LengthNode", NULL, (void*)SwipeGesture__set_LengthNode_fn, 0, false, uVoid_typeof(), 1, ::TYPES[0/*Fuse.Elements.Element*/]),
         new uFunction(".ctor", NULL, (void*)SwipeGesture__New2_fn, 0, true, type, 0),
         new uFunction("SetIsActive", NULL, (void*)SwipeGesture__SetIsActive_fn, 0, false, uVoid_typeof(), 2, ::g::Uno::Bool_typeof(), ::g::Uno::UX::IPropertyListener_typeof()),
+        new uFunction("get_Threshold", NULL, (void*)SwipeGesture__get_Threshold_fn, 0, false, ::g::Uno::Float2_typeof(), 0),
+        new uFunction("set_Threshold", NULL, (void*)SwipeGesture__set_Threshold_fn, 0, false, uVoid_typeof(), 1, ::g::Uno::Float2_typeof()),
         new uFunction("get_Type", NULL, (void*)SwipeGesture__get_Type_fn, 0, false, ::g::Fuse::Gestures::SwipeType_typeof(), 0),
         new uFunction("set_Type", NULL, (void*)SwipeGesture__set_Type_fn, 0, false, uVoid_typeof(), 1, ::g::Fuse::Gestures::SwipeType_typeof()));
 }
@@ -5991,7 +5994,7 @@ SwipeGesture_type* SwipeGesture_typeof()
 
     uTypeOptions options;
     options.BaseDefinition = ::g::Fuse::Behavior_typeof();
-    options.FieldCount = 26;
+    options.FieldCount = 27;
     options.InterfaceCount = 7;
     options.DependencyCount = 1;
     options.ObjectSize = sizeof(SwipeGesture);
@@ -6027,97 +6030,97 @@ void SwipeGesture__ctor_3_fn(SwipeGesture* __this)
     __this->ctor_3();
 }
 
-// public Fuse.Gestures.SwipeDirection get_Direction() :140
+// public Fuse.Gestures.SwipeDirection get_Direction() :147
 void SwipeGesture__get_Direction_fn(SwipeGesture* __this, int32_t* __retval)
 {
     *__retval = __this->Direction();
 }
 
-// public void set_Direction(Fuse.Gestures.SwipeDirection value) :141
+// public void set_Direction(Fuse.Gestures.SwipeDirection value) :148
 void SwipeGesture__set_Direction_fn(SwipeGesture* __this, int32_t* value)
 {
     __this->Direction(*value);
 }
 
-// public Fuse.Gestures.Edge get_Edge() :96
+// public Fuse.Gestures.Edge get_Edge() :103
 void SwipeGesture__get_Edge_fn(SwipeGesture* __this, int32_t* __retval)
 {
     *__retval = __this->Edge();
 }
 
-// public void set_Edge(Fuse.Gestures.Edge value) :97
+// public void set_Edge(Fuse.Gestures.Edge value) :104
 void SwipeGesture__set_Edge_fn(SwipeGesture* __this, int32_t* value)
 {
     __this->Edge(*value);
 }
 
-// public Fuse.Input.GesturePriority get_GesturePriority() :226
+// public Fuse.Input.GesturePriority get_GesturePriority() :233
 void SwipeGesture__get_GesturePriority_fn(SwipeGesture* __this, int32_t* __retval)
 {
     *__retval = __this->GesturePriority();
 }
 
-// public void set_GesturePriority(Fuse.Input.GesturePriority value) :227
+// public void set_GesturePriority(Fuse.Input.GesturePriority value) :234
 void SwipeGesture__set_GesturePriority_fn(SwipeGesture* __this, int32_t* value)
 {
     __this->GesturePriority(*value);
 }
 
-// public float get_HitSize() :202
+// public float get_HitSize() :209
 void SwipeGesture__get_HitSize_fn(SwipeGesture* __this, float* __retval)
 {
     *__retval = __this->HitSize();
 }
 
-// public void set_HitSize(float value) :203
+// public void set_HitSize(float value) :210
 void SwipeGesture__set_HitSize_fn(SwipeGesture* __this, float* value)
 {
     __this->HitSize(*value);
 }
 
-// public bool get_IsActive() :275
+// public bool get_IsActive() :301
 void SwipeGesture__get_IsActive_fn(SwipeGesture* __this, bool* __retval)
 {
     *__retval = __this->IsActive();
 }
 
-// public void set_IsActive(bool value) :276
+// public void set_IsActive(bool value) :302
 void SwipeGesture__set_IsActive_fn(SwipeGesture* __this, bool* value)
 {
     __this->IsActive(*value);
 }
 
-// public bool get_IsEnabled() :208
+// public bool get_IsEnabled() :215
 void SwipeGesture__get_IsEnabled_fn(SwipeGesture* __this, bool* __retval)
 {
     *__retval = __this->IsEnabled();
 }
 
-// public void set_IsEnabled(bool value) :209
+// public void set_IsEnabled(bool value) :216
 void SwipeGesture__set_IsEnabled_fn(SwipeGesture* __this, bool* value)
 {
     __this->IsEnabled(*value);
 }
 
-// public float get_Length() :180
+// public float get_Length() :187
 void SwipeGesture__get_Length_fn(SwipeGesture* __this, float* __retval)
 {
     *__retval = __this->Length();
 }
 
-// public void set_Length(float value) :181
+// public void set_Length(float value) :188
 void SwipeGesture__set_Length_fn(SwipeGesture* __this, float* value)
 {
     __this->Length(*value);
 }
 
-// public Fuse.Elements.Element get_LengthNode() :191
+// public Fuse.Elements.Element get_LengthNode() :198
 void SwipeGesture__get_LengthNode_fn(SwipeGesture* __this, ::g::Fuse::Elements::Element** __retval)
 {
     *__retval = __this->LengthNode();
 }
 
-// public void set_LengthNode(Fuse.Elements.Element value) :192
+// public void set_LengthNode(Fuse.Elements.Element value) :199
 void SwipeGesture__set_LengthNode_fn(SwipeGesture* __this, ::g::Fuse::Elements::Element* value)
 {
     __this->LengthNode(value);
@@ -6129,7 +6132,7 @@ void SwipeGesture__New2_fn(SwipeGesture** __retval)
     *__retval = SwipeGesture::New2();
 }
 
-// protected override sealed void OnRooted() :230
+// protected override sealed void OnRooted() :256
 void SwipeGesture__OnRooted_fn(SwipeGesture* __this)
 {
     uStackFrame __("Fuse.Gestures.SwipeGesture", "OnRooted()");
@@ -6138,7 +6141,7 @@ void SwipeGesture__OnRooted_fn(SwipeGesture* __this)
 
     if (element == NULL)
     {
-        ::g::Fuse::Diagnostics::UserRootError(::STRINGS[8/*"Element"*/], __this->Parent(), __this, ::STRINGS[16/*"C:\\Users\\...*/], 236, ::STRINGS[4/*"OnRooted"*/]);
+        ::g::Fuse::Diagnostics::UserRootError(::STRINGS[8/*"Element"*/], __this->Parent(), __this, ::STRINGS[16/*"C:\\Users\\...*/], 262, ::STRINGS[4/*"OnRooted"*/]);
         return;
     }
 
@@ -6148,7 +6151,7 @@ void SwipeGesture__OnRooted_fn(SwipeGesture* __this)
     uPtr(__this->_region)->AddPropertyListener((uObject*)__this);
 }
 
-// protected override sealed void OnUnrooted() :258
+// protected override sealed void OnUnrooted() :284
 void SwipeGesture__OnUnrooted_fn(SwipeGesture* __this)
 {
     uStackFrame __("Fuse.Gestures.SwipeGesture", "OnUnrooted()");
@@ -6164,22 +6167,34 @@ void SwipeGesture__OnUnrooted_fn(SwipeGesture* __this)
     ::g::Fuse::Node__OnUnrooted_fn(__this);
 }
 
-// internal Fuse.Gestures.Internal.SwipeRegion get_Region() :255
+// internal Fuse.Gestures.Internal.SwipeRegion get_Region() :281
 void SwipeGesture__get_Region_fn(SwipeGesture* __this, ::g::Fuse::Gestures::Internal::SwipeRegion** __retval)
 {
     *__retval = __this->Region();
 }
 
-// internal void SetActive(bool value, Uno.UX.IPropertyListener origin, [bool bypass]) :284
+// internal void SetActive(bool value, Uno.UX.IPropertyListener origin, [bool bypass]) :310
 void SwipeGesture__SetActive_fn(SwipeGesture* __this, bool* value, uObject* origin, bool* bypass)
 {
     __this->SetActive(*value, origin, *bypass);
 }
 
-// public void SetIsActive(bool value, Uno.UX.IPropertyListener origin) :279
+// public void SetIsActive(bool value, Uno.UX.IPropertyListener origin) :305
 void SwipeGesture__SetIsActive_fn(SwipeGesture* __this, bool* value, uObject* origin)
 {
     __this->SetIsActive(*value, origin);
+}
+
+// public float2 get_Threshold() :247
+void SwipeGesture__get_Threshold_fn(SwipeGesture* __this, ::g::Uno::Float2* __retval)
+{
+    *__retval = __this->Threshold();
+}
+
+// public void set_Threshold(float2 value) :248
+void SwipeGesture__set_Threshold_fn(SwipeGesture* __this, ::g::Uno::Float2* value)
+{
+    __this->Threshold(*value);
 }
 
 // public Fuse.Gestures.SwipeType get_Type() :74
@@ -6194,7 +6209,7 @@ void SwipeGesture__set_Type_fn(SwipeGesture* __this, int32_t* value)
     __this->Type(*value);
 }
 
-// private void Uno.UX.IPropertyListener.OnPropertyChanged(Uno.UX.PropertyObject obj, Uno.UX.Selector prop) :246
+// private void Uno.UX.IPropertyListener.OnPropertyChanged(Uno.UX.PropertyObject obj, Uno.UX.Selector prop) :272
 void SwipeGesture__UnoUXIPropertyListenerOnPropertyChanged_fn(SwipeGesture* __this, ::g::Uno::UX::PropertyObject* obj, ::g::Uno::UX::Selector* prop)
 {
     uStackFrame __("Fuse.Gestures.SwipeGesture", "Uno.UX.IPropertyListener.OnPropertyChanged(Uno.UX.PropertyObject,Uno.UX.Selector)");
@@ -6218,13 +6233,13 @@ void SwipeGesture::ctor_3()
     Direction(0);
 }
 
-// public Fuse.Gestures.SwipeDirection get_Direction() [instance] :140
+// public Fuse.Gestures.SwipeDirection get_Direction() [instance] :147
 int32_t SwipeGesture::Direction()
 {
     return _direction;
 }
 
-// public void set_Direction(Fuse.Gestures.SwipeDirection value) [instance] :141
+// public void set_Direction(Fuse.Gestures.SwipeDirection value) [instance] :148
 void SwipeGesture::Direction(int32_t value)
 {
     uStackFrame __("Fuse.Gestures.SwipeGesture", "set_Direction(Fuse.Gestures.SwipeDirection)");
@@ -6261,13 +6276,13 @@ void SwipeGesture::Direction(int32_t value)
     }
 }
 
-// public Fuse.Gestures.Edge get_Edge() [instance] :96
+// public Fuse.Gestures.Edge get_Edge() [instance] :103
 int32_t SwipeGesture::Edge()
 {
     return _edge;
 }
 
-// public void set_Edge(Fuse.Gestures.Edge value) [instance] :97
+// public void set_Edge(Fuse.Gestures.Edge value) [instance] :104
 void SwipeGesture::Edge(int32_t value)
 {
     uStackFrame __("Fuse.Gestures.SwipeGesture", "set_Edge(Fuse.Gestures.Edge)");
@@ -6308,97 +6323,97 @@ void SwipeGesture::Edge(int32_t value)
     }
 }
 
-// public Fuse.Input.GesturePriority get_GesturePriority() [instance] :226
+// public Fuse.Input.GesturePriority get_GesturePriority() [instance] :233
 int32_t SwipeGesture::GesturePriority()
 {
     uStackFrame __("Fuse.Gestures.SwipeGesture", "get_GesturePriority()");
     return uPtr(_region)->GesturePriority();
 }
 
-// public void set_GesturePriority(Fuse.Input.GesturePriority value) [instance] :227
+// public void set_GesturePriority(Fuse.Input.GesturePriority value) [instance] :234
 void SwipeGesture::GesturePriority(int32_t value)
 {
     uStackFrame __("Fuse.Gestures.SwipeGesture", "set_GesturePriority(Fuse.Input.GesturePriority)");
     uPtr(_region)->GesturePriority(value);
 }
 
-// public float get_HitSize() [instance] :202
+// public float get_HitSize() [instance] :209
 float SwipeGesture::HitSize()
 {
     uStackFrame __("Fuse.Gestures.SwipeGesture", "get_HitSize()");
     return uPtr(_region)->AreaVectorDistance;
 }
 
-// public void set_HitSize(float value) [instance] :203
+// public void set_HitSize(float value) [instance] :210
 void SwipeGesture::HitSize(float value)
 {
     uStackFrame __("Fuse.Gestures.SwipeGesture", "set_HitSize(float)");
     uPtr(_region)->AreaVectorDistance = value;
 }
 
-// public bool get_IsActive() [instance] :275
+// public bool get_IsActive() [instance] :301
 bool SwipeGesture::IsActive()
 {
     uStackFrame __("Fuse.Gestures.SwipeGesture", "get_IsActive()");
     return uPtr(_region)->IsActive();
 }
 
-// public void set_IsActive(bool value) [instance] :276
+// public void set_IsActive(bool value) [instance] :302
 void SwipeGesture::IsActive(bool value)
 {
     uStackFrame __("Fuse.Gestures.SwipeGesture", "set_IsActive(bool)");
     SetIsActive(value, (uObject*)this);
 }
 
-// public bool get_IsEnabled() [instance] :208
+// public bool get_IsEnabled() [instance] :215
 bool SwipeGesture::IsEnabled()
 {
     uStackFrame __("Fuse.Gestures.SwipeGesture", "get_IsEnabled()");
     return uPtr(_region)->IsEnabled();
 }
 
-// public void set_IsEnabled(bool value) [instance] :209
+// public void set_IsEnabled(bool value) [instance] :216
 void SwipeGesture::IsEnabled(bool value)
 {
     uStackFrame __("Fuse.Gestures.SwipeGesture", "set_IsEnabled(bool)");
     uPtr(_region)->IsEnabled(value);
 }
 
-// public float get_Length() [instance] :180
+// public float get_Length() [instance] :187
 float SwipeGesture::Length()
 {
     uStackFrame __("Fuse.Gestures.SwipeGesture", "get_Length()");
     return (float)uPtr(_region)->Length;
 }
 
-// public void set_Length(float value) [instance] :181
+// public void set_Length(float value) [instance] :188
 void SwipeGesture::Length(float value)
 {
     uStackFrame __("Fuse.Gestures.SwipeGesture", "set_Length(float)");
     uPtr(_region)->Length = (double)value;
 }
 
-// public Fuse.Elements.Element get_LengthNode() [instance] :191
+// public Fuse.Elements.Element get_LengthNode() [instance] :198
 ::g::Fuse::Elements::Element* SwipeGesture::LengthNode()
 {
     uStackFrame __("Fuse.Gestures.SwipeGesture", "get_LengthNode()");
     return uPtr(_region)->LengthElement;
 }
 
-// public void set_LengthNode(Fuse.Elements.Element value) [instance] :192
+// public void set_LengthNode(Fuse.Elements.Element value) [instance] :199
 void SwipeGesture::LengthNode(::g::Fuse::Elements::Element* value)
 {
     uStackFrame __("Fuse.Gestures.SwipeGesture", "set_LengthNode(Fuse.Elements.Element)");
     uPtr(_region)->LengthElement = value;
 }
 
-// internal Fuse.Gestures.Internal.SwipeRegion get_Region() [instance] :255
+// internal Fuse.Gestures.Internal.SwipeRegion get_Region() [instance] :281
 ::g::Fuse::Gestures::Internal::SwipeRegion* SwipeGesture::Region()
 {
     return _region;
 }
 
-// internal void SetActive(bool value, Uno.UX.IPropertyListener origin, [bool bypass]) [instance] :284
+// internal void SetActive(bool value, Uno.UX.IPropertyListener origin, [bool bypass]) [instance] :310
 void SwipeGesture::SetActive(bool value, uObject* origin, bool bypass)
 {
     uStackFrame __("Fuse.Gestures.SwipeGesture", "SetActive(bool,Uno.UX.IPropertyListener,[bool])");
@@ -6409,11 +6424,27 @@ void SwipeGesture::SetActive(bool value, uObject* origin, bool bypass)
         uPtr(_swiper)->SetActivation(_region, value, bypass);
 }
 
-// public void SetIsActive(bool value, Uno.UX.IPropertyListener origin) [instance] :279
+// public void SetIsActive(bool value, Uno.UX.IPropertyListener origin) [instance] :305
 void SwipeGesture::SetIsActive(bool value, uObject* origin)
 {
     uStackFrame __("Fuse.Gestures.SwipeGesture", "SetIsActive(bool,Uno.UX.IPropertyListener)");
     SetActive(value, origin, false);
+}
+
+// public float2 get_Threshold() [instance] :247
+::g::Uno::Float2 SwipeGesture::Threshold()
+{
+    uStackFrame __("Fuse.Gestures.SwipeGesture", "get_Threshold()");
+    return ::g::Uno::Float2__New2(uPtr(_region)->ActivationThreshold, 1.0f - uPtr(_region)->DeactivationThreshold);
+}
+
+// public void set_Threshold(float2 value) [instance] :248
+void SwipeGesture::Threshold(::g::Uno::Float2 value)
+{
+    uStackFrame __("Fuse.Gestures.SwipeGesture", "set_Threshold(float2)");
+    _hasThreshold = true;
+    uPtr(_region)->ActivationThreshold = value.Item(0);
+    uPtr(_region)->DeactivationThreshold = (1.0f - value.Item(1));
 }
 
 // public Fuse.Gestures.SwipeType get_Type() [instance] :74
@@ -6430,6 +6461,12 @@ void SwipeGesture::Type(int32_t value)
     uPtr(_region)->IsInterruptible = (Type() != 0);
     uPtr(_region)->RevertActive = (Type() != 1);
     uPtr(_region)->AutoTrigger = (Type() == 2);
+
+    if ((_type == 1) && !_hasThreshold)
+    {
+        uPtr(_region)->ActivationThreshold = 0.5f;
+        uPtr(_region)->DeactivationThreshold = 0.5f;
+    }
 }
 
 // public SwipeGesture New() [static] :57
@@ -6441,7 +6478,7 @@ SwipeGesture* SwipeGesture::New2()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Gestures\1.7.4\Internal\Helpers.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Gestures\1.8.1\Internal\Helpers.uno
 // --------------------------------------------------------------------------------------------
 
 // internal sealed class SwipeGestureHelper :45
@@ -6519,7 +6556,7 @@ SwipeGestureHelper* SwipeGestureHelper::New1(float lengthThreshold, uArray* span
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Gestures\1.7.4\Swipe.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Gestures\1.8.1\Swipe.uno
 // ---------------------------------------------------------------------------------
 
 // public enum SwipeType :24
@@ -6536,10 +6573,10 @@ uEnumType* SwipeType_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Gestures\1.7.4\Swipe.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Gestures\1.8.1\Swipe.uno
 // ---------------------------------------------------------------------------------
 
-// public sealed class SwipingAnimation :324
+// public sealed class SwipingAnimation :350
 // {
 static void SwipingAnimation_build(uType* type)
 {
@@ -6601,25 +6638,25 @@ SwipingAnimation_type* SwipingAnimation_typeof()
     return type;
 }
 
-// public SwipingAnimation(Fuse.Gestures.SwipeGesture source) :332
+// public SwipingAnimation(Fuse.Gestures.SwipeGesture source) :358
 void SwipingAnimation__ctor_5_fn(SwipingAnimation* __this, ::g::Fuse::Gestures::SwipeGesture* source)
 {
     __this->ctor_5(source);
 }
 
-// public SwipingAnimation New(Fuse.Gestures.SwipeGesture source) :332
+// public SwipingAnimation New(Fuse.Gestures.SwipeGesture source) :358
 void SwipingAnimation__New2_fn(::g::Fuse::Gestures::SwipeGesture* source, SwipingAnimation** __retval)
 {
     *__retval = SwipingAnimation::New2(source);
 }
 
-// private void OnProgressChanged(double progress) :357
+// private void OnProgressChanged(double progress) :383
 void SwipingAnimation__OnProgressChanged1_fn(SwipingAnimation* __this, double* progress)
 {
     __this->OnProgressChanged1(*progress);
 }
 
-// protected override sealed void OnRooted() :337
+// protected override sealed void OnRooted() :363
 void SwipingAnimation__OnRooted_fn(SwipingAnimation* __this)
 {
     uStackFrame __("Fuse.Gestures.SwipingAnimation", "OnRooted()");
@@ -6629,7 +6666,7 @@ void SwipingAnimation__OnRooted_fn(SwipingAnimation* __this)
     __this->OnProgressChanged1(uPtr(uPtr(__this->Source())->Region())->Progress());
 }
 
-// protected override sealed void OnUnrooted() :345
+// protected override sealed void OnUnrooted() :371
 void SwipingAnimation__OnUnrooted_fn(SwipingAnimation* __this)
 {
     uStackFrame __("Fuse.Gestures.SwipingAnimation", "OnUnrooted()");
@@ -6637,19 +6674,19 @@ void SwipingAnimation__OnUnrooted_fn(SwipingAnimation* __this)
     ::g::Fuse::Triggers::Trigger__OnUnrooted_fn(__this);
 }
 
-// public generated Fuse.Gestures.SwipeGesture get_Source() :327
+// public generated Fuse.Gestures.SwipeGesture get_Source() :353
 void SwipingAnimation__get_Source_fn(SwipingAnimation* __this, ::g::Fuse::Gestures::SwipeGesture** __retval)
 {
     *__retval = __this->Source();
 }
 
-// private generated void set_Source(Fuse.Gestures.SwipeGesture value) :327
+// private generated void set_Source(Fuse.Gestures.SwipeGesture value) :353
 void SwipingAnimation__set_Source_fn(SwipingAnimation* __this, ::g::Fuse::Gestures::SwipeGesture* value)
 {
     __this->Source(value);
 }
 
-// private void Uno.UX.IPropertyListener.OnPropertyChanged(Uno.UX.PropertyObject sender, Uno.UX.Selector prop) :351
+// private void Uno.UX.IPropertyListener.OnPropertyChanged(Uno.UX.PropertyObject sender, Uno.UX.Selector prop) :377
 void SwipingAnimation__UnoUXIPropertyListenerOnPropertyChanged_fn(SwipingAnimation* __this, ::g::Uno::UX::PropertyObject* sender, ::g::Uno::UX::Selector* prop)
 {
     uStackFrame __("Fuse.Gestures.SwipingAnimation", "Uno.UX.IPropertyListener.OnPropertyChanged(Uno.UX.PropertyObject,Uno.UX.Selector)");
@@ -6661,14 +6698,14 @@ void SwipingAnimation__UnoUXIPropertyListenerOnPropertyChanged_fn(SwipingAnimati
     __this->OnProgressChanged1(uPtr(__this->_region)->Progress());
 }
 
-// public SwipingAnimation(Fuse.Gestures.SwipeGesture source) [instance] :332
+// public SwipingAnimation(Fuse.Gestures.SwipeGesture source) [instance] :358
 void SwipingAnimation::ctor_5(::g::Fuse::Gestures::SwipeGesture* source)
 {
     ctor_4();
     Source(source);
 }
 
-// private void OnProgressChanged(double progress) [instance] :357
+// private void OnProgressChanged(double progress) [instance] :383
 void SwipingAnimation::OnProgressChanged1(double progress)
 {
     uStackFrame __("Fuse.Gestures.SwipingAnimation", "OnProgressChanged(double)");
@@ -6676,19 +6713,19 @@ void SwipingAnimation::OnProgressChanged1(double progress)
     Seek(progress, (diff >= 0.0) ? 0 : 1);
 }
 
-// public generated Fuse.Gestures.SwipeGesture get_Source() [instance] :327
+// public generated Fuse.Gestures.SwipeGesture get_Source() [instance] :353
 ::g::Fuse::Gestures::SwipeGesture* SwipingAnimation::Source()
 {
     return _Source;
 }
 
-// private generated void set_Source(Fuse.Gestures.SwipeGesture value) [instance] :327
+// private generated void set_Source(Fuse.Gestures.SwipeGesture value) [instance] :353
 void SwipingAnimation::Source(::g::Fuse::Gestures::SwipeGesture* value)
 {
     _Source = value;
 }
 
-// public SwipingAnimation New(Fuse.Gestures.SwipeGesture source) [static] :332
+// public SwipingAnimation New(Fuse.Gestures.SwipeGesture source) [static] :358
 SwipingAnimation* SwipingAnimation::New2(::g::Fuse::Gestures::SwipeGesture* source)
 {
     SwipingAnimation* obj1 = (SwipingAnimation*)uNew(SwipingAnimation_typeof());
@@ -6697,7 +6734,7 @@ SwipingAnimation* SwipingAnimation::New2(::g::Fuse::Gestures::SwipeGesture* sour
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Gestures\1.7.4\Tapped.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Gestures\1.8.1\Tapped.uno
 // ----------------------------------------------------------------------------------
 
 // public sealed class Tapped :35
@@ -6919,7 +6956,7 @@ void Tapped::RemoveHandler(::g::Fuse::Visual* visual, uDelegate* handler)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Gestures\1.7.4\Tapped.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Gestures\1.8.1\Tapped.uno
 // ----------------------------------------------------------------------------------
 
 // public sealed class TappedArgs :9
@@ -6978,7 +7015,7 @@ TappedArgs* TappedArgs::New3(::g::Fuse::Input::PointerEventArgs* args, ::g::Fuse
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Gestures\1.7.4\Tapped.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Gestures\1.8.1\Tapped.uno
 // ----------------------------------------------------------------------------------
 
 // public delegate void TappedHandler(object sender, Fuse.Gestures.TappedArgs args) :17
@@ -6994,10 +7031,10 @@ uDelegateType* TappedHandler_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Gestures\1.7.4\Swipe.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Gestures\1.8.1\Swipe.uno
 // ---------------------------------------------------------------------------------
 
-// public sealed class ToggleSwipeActive :410
+// public sealed class ToggleSwipeActive :436
 // {
 static void ToggleSwipeActive_build(uType* type)
 {
@@ -7026,19 +7063,19 @@ static void ToggleSwipeActive_build(uType* type)
     return type;
 }
 
-// public generated ToggleSwipeActive() :410
+// public generated ToggleSwipeActive() :436
 void ToggleSwipeActive__ctor_2_fn(ToggleSwipeActive* __this)
 {
     __this->ctor_2();
 }
 
-// public generated ToggleSwipeActive New() :410
+// public generated ToggleSwipeActive New() :436
 void ToggleSwipeActive__New2_fn(ToggleSwipeActive** __retval)
 {
     *__retval = ToggleSwipeActive::New2();
 }
 
-// protected override sealed void Perform(Fuse.Node target) :415
+// protected override sealed void Perform(Fuse.Node target) :441
 void ToggleSwipeActive__Perform_fn(ToggleSwipeActive* __this, ::g::Fuse::Node* target)
 {
     uStackFrame __("Fuse.Gestures.ToggleSwipeActive", "Perform(Fuse.Node)");
@@ -7047,37 +7084,37 @@ void ToggleSwipeActive__Perform_fn(ToggleSwipeActive* __this, ::g::Fuse::Node* t
         uPtr(__this->Target())->SetActive(!uPtr(__this->Target())->IsActive(), NULL, false);
 }
 
-// public generated Fuse.Gestures.SwipeGesture get_Target() :413
+// public generated Fuse.Gestures.SwipeGesture get_Target() :439
 void ToggleSwipeActive__get_Target_fn(ToggleSwipeActive* __this, ::g::Fuse::Gestures::SwipeGesture** __retval)
 {
     *__retval = __this->Target();
 }
 
-// public generated void set_Target(Fuse.Gestures.SwipeGesture value) :413
+// public generated void set_Target(Fuse.Gestures.SwipeGesture value) :439
 void ToggleSwipeActive__set_Target_fn(ToggleSwipeActive* __this, ::g::Fuse::Gestures::SwipeGesture* value)
 {
     __this->Target(value);
 }
 
-// public generated ToggleSwipeActive() [instance] :410
+// public generated ToggleSwipeActive() [instance] :436
 void ToggleSwipeActive::ctor_2()
 {
     ctor_1();
 }
 
-// public generated Fuse.Gestures.SwipeGesture get_Target() [instance] :413
+// public generated Fuse.Gestures.SwipeGesture get_Target() [instance] :439
 ::g::Fuse::Gestures::SwipeGesture* ToggleSwipeActive::Target()
 {
     return _Target;
 }
 
-// public generated void set_Target(Fuse.Gestures.SwipeGesture value) [instance] :413
+// public generated void set_Target(Fuse.Gestures.SwipeGesture value) [instance] :439
 void ToggleSwipeActive::Target(::g::Fuse::Gestures::SwipeGesture* value)
 {
     _Target = value;
 }
 
-// public generated ToggleSwipeActive New() [static] :410
+// public generated ToggleSwipeActive New() [static] :436
 ToggleSwipeActive* ToggleSwipeActive::New2()
 {
     ToggleSwipeActive* obj1 = (ToggleSwipeActive*)uNew(ToggleSwipeActive_typeof());
@@ -7086,7 +7123,7 @@ ToggleSwipeActive* ToggleSwipeActive::New2()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Gestures\1.7.4\TransformGesture.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Gestures\1.8.1\TransformGesture.uno
 // --------------------------------------------------------------------------------------------
 
 // public abstract class TransformGesture :43
@@ -7255,7 +7292,7 @@ void TransformGesture::Update()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Gestures\1.7.4\Internal\Clicker.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Gestures\1.8.1\Internal\Clicker.uno
 // --------------------------------------------------------------------------------------------
 
 // public abstract class WhileClickerTrigger :70
@@ -7373,7 +7410,7 @@ void WhileClickerTrigger::GesturePriority(int32_t value)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Gestures\1.7.4\WhileHovering.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Gestures\1.8.1\WhileHovering.uno
 // -----------------------------------------------------------------------------------------
 
 // public sealed class WhileHovering :29
@@ -7523,7 +7560,7 @@ WhileHovering* WhileHovering::New2()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Gestures\1.7.4\Pressed.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Gestures\1.8.1\Pressed.uno
 // -----------------------------------------------------------------------------------
 
 // public sealed class WhilePressed :49
@@ -7812,10 +7849,10 @@ WhilePressed* WhilePressed::New2()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Gestures\1.7.4\Swipe.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Gestures\1.8.1\Swipe.uno
 // ---------------------------------------------------------------------------------
 
-// public sealed class WhileSwipeActive :436
+// public sealed class WhileSwipeActive :462
 // {
 static void WhileSwipeActive_build(uType* type)
 {
@@ -7880,25 +7917,25 @@ WhileSwipeActive_type* WhileSwipeActive_typeof()
     return type;
 }
 
-// public WhileSwipeActive(Fuse.Gestures.SwipeGesture source) :463
+// public WhileSwipeActive(Fuse.Gestures.SwipeGesture source) :489
 void WhileSwipeActive__ctor_6_fn(WhileSwipeActive* __this, ::g::Fuse::Gestures::SwipeGesture* source)
 {
     __this->ctor_6(source);
 }
 
-// public WhileSwipeActive New(Fuse.Gestures.SwipeGesture source) :463
+// public WhileSwipeActive New(Fuse.Gestures.SwipeGesture source) :489
 void WhileSwipeActive__New2_fn(::g::Fuse::Gestures::SwipeGesture* source, WhileSwipeActive** __retval)
 {
     *__retval = WhileSwipeActive::New2(source);
 }
 
-// private void OnProgressChanged(double progress) :488
+// private void OnProgressChanged(double progress) :514
 void WhileSwipeActive__OnProgressChanged1_fn(WhileSwipeActive* __this, double* progress)
 {
     __this->OnProgressChanged1(*progress);
 }
 
-// protected override sealed void OnRooted() :468
+// protected override sealed void OnRooted() :494
 void WhileSwipeActive__OnRooted_fn(WhileSwipeActive* __this)
 {
     uStackFrame __("Fuse.Gestures.WhileSwipeActive", "OnRooted()");
@@ -7908,7 +7945,7 @@ void WhileSwipeActive__OnRooted_fn(WhileSwipeActive* __this)
     __this->OnProgressChanged1(uPtr(uPtr(__this->Source())->Region())->Progress());
 }
 
-// protected override sealed void OnUnrooted() :476
+// protected override sealed void OnUnrooted() :502
 void WhileSwipeActive__OnUnrooted_fn(WhileSwipeActive* __this)
 {
     uStackFrame __("Fuse.Gestures.WhileSwipeActive", "OnUnrooted()");
@@ -7916,31 +7953,31 @@ void WhileSwipeActive__OnUnrooted_fn(WhileSwipeActive* __this)
     ::g::Fuse::Triggers::Trigger__OnUnrooted_fn(__this);
 }
 
-// public generated Fuse.Gestures.SwipeGesture get_Source() :439
+// public generated Fuse.Gestures.SwipeGesture get_Source() :465
 void WhileSwipeActive__get_Source_fn(WhileSwipeActive* __this, ::g::Fuse::Gestures::SwipeGesture** __retval)
 {
     *__retval = __this->Source();
 }
 
-// private generated void set_Source(Fuse.Gestures.SwipeGesture value) :439
+// private generated void set_Source(Fuse.Gestures.SwipeGesture value) :465
 void WhileSwipeActive__set_Source_fn(WhileSwipeActive* __this, ::g::Fuse::Gestures::SwipeGesture* value)
 {
     __this->Source(value);
 }
 
-// public float get_Threshold() :458
+// public float get_Threshold() :484
 void WhileSwipeActive__get_Threshold_fn(WhileSwipeActive* __this, float* __retval)
 {
     *__retval = __this->Threshold();
 }
 
-// public void set_Threshold(float value) :459
+// public void set_Threshold(float value) :485
 void WhileSwipeActive__set_Threshold_fn(WhileSwipeActive* __this, float* value)
 {
     __this->Threshold(*value);
 }
 
-// private void Uno.UX.IPropertyListener.OnPropertyChanged(Uno.UX.PropertyObject sender, Uno.UX.Selector prop) :482
+// private void Uno.UX.IPropertyListener.OnPropertyChanged(Uno.UX.PropertyObject sender, Uno.UX.Selector prop) :508
 void WhileSwipeActive__UnoUXIPropertyListenerOnPropertyChanged_fn(WhileSwipeActive* __this, ::g::Uno::UX::PropertyObject* sender, ::g::Uno::UX::Selector* prop)
 {
     uStackFrame __("Fuse.Gestures.WhileSwipeActive", "Uno.UX.IPropertyListener.OnPropertyChanged(Uno.UX.PropertyObject,Uno.UX.Selector)");
@@ -7952,7 +7989,7 @@ void WhileSwipeActive__UnoUXIPropertyListenerOnPropertyChanged_fn(WhileSwipeActi
     __this->OnProgressChanged1(uPtr(__this->_region)->Progress());
 }
 
-// public WhileSwipeActive(Fuse.Gestures.SwipeGesture source) [instance] :463
+// public WhileSwipeActive(Fuse.Gestures.SwipeGesture source) [instance] :489
 void WhileSwipeActive::ctor_6(::g::Fuse::Gestures::SwipeGesture* source)
 {
     _threshold = 1.0f;
@@ -7960,37 +7997,37 @@ void WhileSwipeActive::ctor_6(::g::Fuse::Gestures::SwipeGesture* source)
     Source(source);
 }
 
-// private void OnProgressChanged(double progress) [instance] :488
+// private void OnProgressChanged(double progress) [instance] :514
 void WhileSwipeActive::OnProgressChanged1(double progress)
 {
     SetActive(progress >= (double)Threshold());
 }
 
-// public generated Fuse.Gestures.SwipeGesture get_Source() [instance] :439
+// public generated Fuse.Gestures.SwipeGesture get_Source() [instance] :465
 ::g::Fuse::Gestures::SwipeGesture* WhileSwipeActive::Source()
 {
     return _Source;
 }
 
-// private generated void set_Source(Fuse.Gestures.SwipeGesture value) [instance] :439
+// private generated void set_Source(Fuse.Gestures.SwipeGesture value) [instance] :465
 void WhileSwipeActive::Source(::g::Fuse::Gestures::SwipeGesture* value)
 {
     _Source = value;
 }
 
-// public float get_Threshold() [instance] :458
+// public float get_Threshold() [instance] :484
 float WhileSwipeActive::Threshold()
 {
     return _threshold;
 }
 
-// public void set_Threshold(float value) [instance] :459
+// public void set_Threshold(float value) [instance] :485
 void WhileSwipeActive::Threshold(float value)
 {
     _threshold = value;
 }
 
-// public WhileSwipeActive New(Fuse.Gestures.SwipeGesture source) [static] :463
+// public WhileSwipeActive New(Fuse.Gestures.SwipeGesture source) [static] :489
 WhileSwipeActive* WhileSwipeActive::New2(::g::Fuse::Gestures::SwipeGesture* source)
 {
     WhileSwipeActive* obj1 = (WhileSwipeActive*)uNew(WhileSwipeActive_typeof());
@@ -7999,10 +8036,10 @@ WhileSwipeActive* WhileSwipeActive::New2(::g::Fuse::Gestures::SwipeGesture* sour
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Gestures\1.7.4\Swipe.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Gestures\1.8.1\Swipe.uno
 // ---------------------------------------------------------------------------------
 
-// public sealed class WhileSwiping :592
+// public sealed class WhileSwiping :618
 // {
 static void WhileSwiping_build(uType* type)
 {
@@ -8064,25 +8101,25 @@ WhileSwiping_type* WhileSwiping_typeof()
     return type;
 }
 
-// public WhileSwiping(Fuse.Gestures.SwipeGesture source) :600
+// public WhileSwiping(Fuse.Gestures.SwipeGesture source) :626
 void WhileSwiping__ctor_6_fn(WhileSwiping* __this, ::g::Fuse::Gestures::SwipeGesture* source)
 {
     __this->ctor_6(source);
 }
 
-// public WhileSwiping New(Fuse.Gestures.SwipeGesture source) :600
+// public WhileSwiping New(Fuse.Gestures.SwipeGesture source) :626
 void WhileSwiping__New2_fn(::g::Fuse::Gestures::SwipeGesture* source, WhileSwiping** __retval)
 {
     *__retval = WhileSwiping::New2(source);
 }
 
-// private void OnInProgressChanged(bool inProgress) :625
+// private void OnInProgressChanged(bool inProgress) :651
 void WhileSwiping__OnInProgressChanged_fn(WhileSwiping* __this, bool* inProgress)
 {
     __this->OnInProgressChanged(*inProgress);
 }
 
-// protected override sealed void OnRooted() :605
+// protected override sealed void OnRooted() :631
 void WhileSwiping__OnRooted_fn(WhileSwiping* __this)
 {
     uStackFrame __("Fuse.Gestures.WhileSwiping", "OnRooted()");
@@ -8092,7 +8129,7 @@ void WhileSwiping__OnRooted_fn(WhileSwiping* __this)
     __this->OnInProgressChanged(uPtr(__this->_region)->InProgress());
 }
 
-// protected override sealed void OnUnrooted() :613
+// protected override sealed void OnUnrooted() :639
 void WhileSwiping__OnUnrooted_fn(WhileSwiping* __this)
 {
     uStackFrame __("Fuse.Gestures.WhileSwiping", "OnUnrooted()");
@@ -8100,19 +8137,19 @@ void WhileSwiping__OnUnrooted_fn(WhileSwiping* __this)
     ::g::Fuse::Triggers::Trigger__OnUnrooted_fn(__this);
 }
 
-// public generated Fuse.Gestures.SwipeGesture get_Source() :595
+// public generated Fuse.Gestures.SwipeGesture get_Source() :621
 void WhileSwiping__get_Source_fn(WhileSwiping* __this, ::g::Fuse::Gestures::SwipeGesture** __retval)
 {
     *__retval = __this->Source();
 }
 
-// private generated void set_Source(Fuse.Gestures.SwipeGesture value) :595
+// private generated void set_Source(Fuse.Gestures.SwipeGesture value) :621
 void WhileSwiping__set_Source_fn(WhileSwiping* __this, ::g::Fuse::Gestures::SwipeGesture* value)
 {
     __this->Source(value);
 }
 
-// private void Uno.UX.IPropertyListener.OnPropertyChanged(Uno.UX.PropertyObject sender, Uno.UX.Selector prop) :619
+// private void Uno.UX.IPropertyListener.OnPropertyChanged(Uno.UX.PropertyObject sender, Uno.UX.Selector prop) :645
 void WhileSwiping__UnoUXIPropertyListenerOnPropertyChanged_fn(WhileSwiping* __this, ::g::Uno::UX::PropertyObject* sender, ::g::Uno::UX::Selector* prop)
 {
     uStackFrame __("Fuse.Gestures.WhileSwiping", "Uno.UX.IPropertyListener.OnPropertyChanged(Uno.UX.PropertyObject,Uno.UX.Selector)");
@@ -8124,32 +8161,32 @@ void WhileSwiping__UnoUXIPropertyListenerOnPropertyChanged_fn(WhileSwiping* __th
     __this->OnInProgressChanged(uPtr(__this->_region)->InProgress());
 }
 
-// public WhileSwiping(Fuse.Gestures.SwipeGesture source) [instance] :600
+// public WhileSwiping(Fuse.Gestures.SwipeGesture source) [instance] :626
 void WhileSwiping::ctor_6(::g::Fuse::Gestures::SwipeGesture* source)
 {
     ctor_5();
     Source(source);
 }
 
-// private void OnInProgressChanged(bool inProgress) [instance] :625
+// private void OnInProgressChanged(bool inProgress) [instance] :651
 void WhileSwiping::OnInProgressChanged(bool inProgress)
 {
     SetActive(inProgress);
 }
 
-// public generated Fuse.Gestures.SwipeGesture get_Source() [instance] :595
+// public generated Fuse.Gestures.SwipeGesture get_Source() [instance] :621
 ::g::Fuse::Gestures::SwipeGesture* WhileSwiping::Source()
 {
     return _Source;
 }
 
-// private generated void set_Source(Fuse.Gestures.SwipeGesture value) [instance] :595
+// private generated void set_Source(Fuse.Gestures.SwipeGesture value) [instance] :621
 void WhileSwiping::Source(::g::Fuse::Gestures::SwipeGesture* value)
 {
     _Source = value;
 }
 
-// public WhileSwiping New(Fuse.Gestures.SwipeGesture source) [static] :600
+// public WhileSwiping New(Fuse.Gestures.SwipeGesture source) [static] :626
 WhileSwiping* WhileSwiping::New2(::g::Fuse::Gestures::SwipeGesture* source)
 {
     WhileSwiping* obj1 = (WhileSwiping*)uNew(WhileSwiping_typeof());
@@ -8158,7 +8195,7 @@ WhileSwiping* WhileSwiping::New2(::g::Fuse::Gestures::SwipeGesture* source)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Gestures\1.7.4\ZoomGesture.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Gestures\1.8.1\ZoomGesture.uno
 // ---------------------------------------------------------------------------------------
 
 // public sealed class ZoomGesture :34

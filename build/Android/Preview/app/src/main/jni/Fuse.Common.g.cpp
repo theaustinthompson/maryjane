@@ -29,7 +29,7 @@ namespace g{
 namespace Fuse{
 namespace Common{
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.7.4\Blitter.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.8.1\Blitter.uno
 // ---------------------------------------------------------------------------------
 
 // internal sealed class Blitter :6

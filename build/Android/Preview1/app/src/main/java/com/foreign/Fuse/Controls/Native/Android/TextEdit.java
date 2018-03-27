@@ -23,7 +23,7 @@ public class TextEdit
         android.util.Log.d("maryjane", (message==null ? "null" : message.toString()));
     }
 
-    public static void MakeItPlain194(final Object handle)
+    public static void MakeItPlain186(final Object handle)
     {
         android.widget.TextView t = (android.widget.TextView)handle;
         t.setIncludeFontPadding(false);

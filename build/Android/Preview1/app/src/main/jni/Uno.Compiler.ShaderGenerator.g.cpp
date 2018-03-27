@@ -8,7 +8,7 @@ namespace Uno{
 namespace Compiler{
 namespace ShaderGenerator{
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\Compiler\ShaderGenerator\ShaderStageInlineAttribute.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\Compiler\ShaderGenerator\ShaderStageInlineAttribute.uno
 // ------------------------------------------------------------------------------------------------------------------------------------
 
 // public sealed class ShaderStageInlineAttribute :4

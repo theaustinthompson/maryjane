@@ -1,4 +1,4 @@
-// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/UnoCore/1.7.1/Source/Uno/Time/DateTimeZone.uno.
+// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/UnoCore/1.8.0/Source/Uno/Time/DateTimeZone.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -43,10 +43,10 @@ struct DateTimeZone : uObject
     static uSStrong<DateTimeZone*>& UtcZone() { return DateTimeZone_typeof()->Init(), UtcZone_; }
 
     void ctor_(uString* id1, bool isFixed1, ::g::Uno::Time::Offset minOffset, ::g::Uno::Time::Offset maxOffset);
-    ::g::Uno::Time::ZonedDateTime* AtStrictly(::g::Uno::Time::LocalDateTime* localDateTime);
+    ::g::Uno::Time::ZonedDateTime* AtStrictly(::g::Uno::Time::LocalDateTime localDateTime);
     bool Equals2(DateTimeZone* obj);
     bool EqualsImpl(DateTimeZone* zone) { bool __retval; return (((DateTimeZone_type*)__type)->fp_EqualsImpl)(this, zone, &__retval), __retval; }
-    ::g::Uno::Time::Offset GetUtcOffset(::g::Uno::Time::LocalDateTime* dateTime);
+    ::g::Uno::Time::Offset GetUtcOffset(::g::Uno::Time::LocalDateTime dateTime);
     uString* Id();
     ::g::Uno::Time::Offset MaxOffset();
     ::g::Uno::Time::Offset MinOffset();
@@ -56,13 +56,14 @@ struct DateTimeZone : uObject
 
 }}} // ::g::Uno::Time
 
+#include <Uno.Time.LocalDateTime.h>
 #include <Uno.Time.Offset.h>
 
 namespace g{
 namespace Uno{
 namespace Time{
 
-inline ::g::Uno::Time::Offset DateTimeZone::GetUtcOffset(::g::Uno::Time::LocalDateTime* dateTime) { ::g::Uno::Time::Offset __retval; return (((DateTimeZone_type*)__type)->fp_GetUtcOffset)(this, dateTime, &__retval), __retval; }
+inline ::g::Uno::Time::Offset DateTimeZone::GetUtcOffset(::g::Uno::Time::LocalDateTime dateTime) { ::g::Uno::Time::Offset __retval; return (((DateTimeZone_type*)__type)->fp_GetUtcOffset)(this, &dateTime, &__retval), __retval; }
 // }
 
 }}} // ::g::Uno::Time

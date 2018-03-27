@@ -7,7 +7,7 @@
 namespace g{
 namespace Android{
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Targets\Android\Uno\Base\Bootstrapper.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Targets\Android\Uno\Base\Bootstrapper.uno
 // -----------------------------------------------------------------------------------------------------------
 
 // internal static extern class Bootstrapper :9

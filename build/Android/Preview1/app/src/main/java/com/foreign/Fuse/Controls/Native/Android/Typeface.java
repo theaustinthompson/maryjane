@@ -23,19 +23,19 @@ public class Typeface
         android.util.Log.d("maryjane", (message==null ? "null" : message.toString()));
     }
 
-    public static Object CreateFromBundleFile227(final String bundlePath)
+    public static Object CreateFromBundleFile219(final String bundlePath)
     {
         android.content.res.AssetManager assetManager = (com.fuse.Activity.getRootActivity()).getAssets();
         android.graphics.Typeface typeface = android.graphics.Typeface.createFromAsset(assetManager, bundlePath);
         return typeface;
     }
     
-    public static Object CreateFromFileImpl228(final String path)
+    public static Object CreateFromFileImpl220(final String path)
     {
         return android.graphics.Typeface.createFromFile(path);
     }
     
-    public static Object GetDefault229()
+    public static Object GetDefault221()
     {
         return android.graphics.Typeface.DEFAULT;
     }

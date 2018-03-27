@@ -1,4 +1,4 @@
-// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/Fuse.Controls.Panels/1.7.4/Layouts/GridLayout.uno.
+// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/Fuse.Controls.Panels/1.8.1/Layouts/GridLayout.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -32,6 +32,7 @@ void GridLayout__CalcTotalExtentAndOffset_fn(GridLayout* __this, uType* __type, 
 void GridLayout__get_CellSpacing_fn(GridLayout* __this, float* __retval);
 void GridLayout__set_CellSpacing_fn(GridLayout* __this, float* value);
 void GridLayout__Changed_fn(GridLayout* __this);
+void GridLayout__CheckMeasureSettings_fn(GridLayout* __this, bool* hasX, bool* hasY);
 void GridLayout__get_ChildOrder_fn(GridLayout* __this, int32_t* __retval);
 void GridLayout__set_ChildOrder_fn(GridLayout* __this, int32_t* value);
 void GridLayout__get_ColumnCount_fn(GridLayout* __this, int32_t* __retval);
@@ -61,6 +62,7 @@ void GridLayout__GetRow_fn(::g::Fuse::Visual* elm, int32_t* __retval);
 void GridLayout__GetRowData_fn(GridLayout* __this, int32_t* row, ::g::Fuse::Layouts::Row** __retval);
 void GridLayout__GetRowSpan_fn(::g::Fuse::Visual* elm, int32_t* __retval);
 void GridLayout__GetTotalProportion_fn(GridLayout* __this, uType* __type, uObject* list, bool* expand, float* __retval);
+void GridLayout__HasDefaultMetric_fn(GridLayout* __this, uType* __type, uObject* list, bool* __retval);
 void GridLayout__IsMarginBoxDependent_fn(GridLayout* __this, ::g::Fuse::Visual* child, int32_t* __retval);
 void GridLayout__Measure_fn(GridLayout* __this, ::g::Fuse::Visual* container, ::g::Fuse::LayoutParams* lp, ::g::Uno::Float2* __retval);
 void GridLayout__ModifyCount_fn(GridLayout* __this, uType* __type, uObject* list, int32_t* count, ::g::Fuse::Layouts::DefinitionBase* primordial);
@@ -110,6 +112,7 @@ struct GridLayout : ::g::Fuse::Layouts::Layout
     static uSStrong< ::g::Fuse::PropertyHandle*>& _columnSpanProperty() { return GridLayout_typeof()->Init(), _columnSpanProperty_; }
     uStrong< ::g::Uno::Collections::RootableList*> _rows;
     uStrong< ::g::Uno::Collections::RootableList*> _columns;
+    bool _checkMeasureWarning;
 
     void ctor_2();
     bool AddListener(::g::Fuse::Layouts::DefinitionBase* item);
@@ -121,6 +124,7 @@ struct GridLayout : ::g::Fuse::Layouts::Layout
     float CellSpacing();
     void CellSpacing(float value);
     void Changed();
+    void CheckMeasureSettings(bool hasX, bool hasY);
     int32_t ChildOrder();
     void ChildOrder(int32_t value);
     int32_t ColumnCount();
@@ -145,6 +149,7 @@ struct GridLayout : ::g::Fuse::Layouts::Layout
     ::g::Fuse::Layouts::Column* GetColumnData(int32_t column);
     ::g::Fuse::Layouts::Row* GetRowData(int32_t row);
     float GetTotalProportion(uType* __type, uObject* list, bool expand);
+    bool HasDefaultMetric(uType* __type, uObject* list);
     ::g::Uno::Float2 Measure(::g::Fuse::Visual* container, ::g::Fuse::LayoutParams lp);
     void ModifyCount(uType* __type, uObject* list, int32_t count, ::g::Fuse::Layouts::DefinitionBase* primordial);
     void ModifyDefault(uType* __type, ::g::Uno::Collections::RootableList* list, ::g::Fuse::Layouts::DefinitionBase* primordial);

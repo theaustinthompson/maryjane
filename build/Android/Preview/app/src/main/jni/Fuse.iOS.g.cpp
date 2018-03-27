@@ -14,7 +14,7 @@ namespace g{
 namespace Fuse{
 namespace iOS{
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.iOS\1.7.4\StatusBarConfig.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.iOS\1.8.1\StatusBarConfig.uno
 // --------------------------------------------------------------------------------------
 
 // public sealed class StatusBarConfig :28

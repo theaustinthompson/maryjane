@@ -1,4 +1,4 @@
-// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/Fuse.Drawing.Primitives/1.7.4/Circle.uno.
+// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/Fuse.Drawing.Primitives/1.8.1/Circle.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once

@@ -1,4 +1,4 @@
-// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/Uno.Testing/1.7.1/Attributes/TestAttribute.uno.
+// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/Uno.Testing/1.8.0/Attributes/TestAttribute.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once

@@ -1,4 +1,4 @@
-// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/Fuse.Controls.Panels/1.7.4/GraphicsView.ux.uno.
+// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/Fuse.Controls.Panels/1.8.1/GraphicsView.ux.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -34,6 +34,7 @@ void DefaultTreeRenderer__Measure_fn(DefaultTreeRenderer* __this, ::g::Fuse::Ele
 void DefaultTreeRenderer__New1_fn(DefaultTreeRenderer** __retval);
 void DefaultTreeRenderer__OpacityChanged_fn(DefaultTreeRenderer* __this, ::g::Fuse::Elements::Element* e, float* opacity);
 void DefaultTreeRenderer__Placed_fn(DefaultTreeRenderer* __this, ::g::Fuse::Elements::Element* e);
+void DefaultTreeRenderer__RenderBoundsChanged_fn(DefaultTreeRenderer* __this, ::g::Fuse::Elements::Element* e);
 void DefaultTreeRenderer__Rooted_fn(DefaultTreeRenderer* __this, ::g::Fuse::Elements::Element* e);
 void DefaultTreeRenderer__RootingStarted_fn(DefaultTreeRenderer* __this, ::g::Fuse::Elements::Element* e);
 void DefaultTreeRenderer__TransformChanged_fn(DefaultTreeRenderer* __this, ::g::Fuse::Elements::Element* e);
@@ -55,6 +56,7 @@ struct DefaultTreeRenderer : uObject
     bool Measure(::g::Fuse::Elements::Element* e, ::g::Fuse::LayoutParams lp, ::g::Uno::Float2* size);
     void OpacityChanged(::g::Fuse::Elements::Element* e, float opacity);
     void Placed(::g::Fuse::Elements::Element* e);
+    void RenderBoundsChanged(::g::Fuse::Elements::Element* e);
     void Rooted(::g::Fuse::Elements::Element* e);
     void RootingStarted(::g::Fuse::Elements::Element* e);
     void TransformChanged(::g::Fuse::Elements::Element* e);

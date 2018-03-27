@@ -1,4 +1,4 @@
-// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/Fuse.Controls.Primitives/1.7.4/Shapes/Ellipse.uno.
+// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/Fuse.Controls.Primitives/1.8.1/Shapes/Ellipse.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -30,11 +30,10 @@ namespace g{
 namespace Fuse{
 namespace Controls{
 
-// public partial sealed class Ellipse :28
+// public partial sealed class Ellipse :27
 // {
 ::g::Fuse::Controls::Shape_type* Ellipse_typeof();
 void Ellipse__ctor_8_fn(Ellipse* __this);
-void Ellipse__CreateNativeView_fn(Ellipse* __this, uObject** __retval);
 void Ellipse__CreateSurfacePath_fn(Ellipse* __this, ::g::Fuse::Drawing::Surface* surface, ::g::Fuse::Drawing::SurfacePath** __retval);
 void Ellipse__New3_fn(Ellipse** __retval);
 void Ellipse__OnHitTestLocalVisual_fn(Ellipse* __this, ::g::Fuse::HitTestContext* htc);

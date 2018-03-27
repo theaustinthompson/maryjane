@@ -1,4 +1,4 @@
-// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/UnoCore/1.7.1/Backends/CPlusPlus/Uno/ObjectModel.cpp.
+// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/UnoCore/1.8.0/Backends/CPlusPlus/Uno/ObjectModel.cpp.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #include <Uno/_internal.h>
@@ -23,6 +23,7 @@
 #include <Uno.InvalidCastException.h>
 #include <Uno.InvalidOperationException.h>
 #include <Uno.NullReferenceException.h>
+#include <Uno.TypeInitializatio-3e1d0e85.h>
 #include <Uno.Type.h>
 
 #ifdef DEBUG_GENERICS
@@ -778,22 +779,38 @@ void uType::Init()
     if (State >= uTypeStateInitializing)
         return;
 
+    auto prevState = State;
     State = uTypeStateInitializing;
 
-    if (Base)
-        Base->Init();
+    try
+    {
+        if (Base)
+            Base->Init();
 
-    // Note: If Base is the same as this, it won't start initializing again due
-    // to the above early return, so we don't need to check the state again here
+        // Note: If Base is the same as this, it won't start initializing again due
+        // to the above early return, so we don't need to check the state again here
 
-    for (size_t i = 0; i < PrecalcCount; i++)
-        PrecalcTypes[i]->Init();
+        for (size_t i = 0; i < PrecalcCount; i++)
+            PrecalcTypes[i]->Init();
 
-    if (fp_cctor_)
-        (*fp_cctor_)(this);
+        try
+        {
+            if (fp_cctor_)
+                (*fp_cctor_)(this);
+        }
+        catch (const uThrowable& t)
+        {
+            U_THROW(::g::Uno::TypeInitializationException::New4(uString::Utf8(FullName), t.Exception));
+        }
 
-    for (size_t i = 0; i < DependencyCount; i++)
-        DependencyTypes[i]->Init();
+        for (size_t i = 0; i < DependencyCount; i++)
+            DependencyTypes[i]->Init();
+    }
+    catch (...)
+    {
+        State = prevState;
+        throw;
+    }
 
     State = uTypeStateInitialized;
 }
@@ -801,8 +818,15 @@ void uType::Init()
 void uInitRtti(uType*(*factories[])())
 {
     // 1. Fill _RuntimeTypes
+
+    // Disable building while filling _RuntimeTypes
+    U_ASSERT(!_IsBuilding);
+    _IsBuilding = true;
+
     for (size_t i = 0; factories[i]; i++)
         (*factories[i])();
+
+    _IsBuilding = false;
 
     // 2. ARC/RTTI calculations
     uBuildTypes();

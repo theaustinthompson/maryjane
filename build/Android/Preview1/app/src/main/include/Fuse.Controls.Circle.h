@@ -1,4 +1,4 @@
-// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/Fuse.Controls.Primitives/1.7.4/Shapes/Circle.uno.
+// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/Fuse.Controls.Primitives/1.8.1/Shapes/Circle.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -34,33 +34,26 @@ namespace g{
 namespace Fuse{
 namespace Controls{
 
-// public partial sealed class Circle :58
+// public partial sealed class Circle :57
 // {
 ::g::Fuse::Controls::Shape_type* Circle_typeof();
 void Circle__ctor_8_fn(Circle* __this);
 void Circle__get_CanvasAngles_fn(Circle* __this, ::g::Uno::Float2* __retval);
 void Circle__get_Center_fn(Circle* __this, ::g::Uno::Float2* __retval);
-void Circle__CreateNativeView_fn(Circle* __this, uObject** __retval);
 void Circle__CreateSurfacePath_fn(Circle* __this, ::g::Fuse::Drawing::Surface* surface, ::g::Fuse::Drawing::SurfacePath** __retval);
 void Circle__DrawFill_fn(Circle* __this, ::g::Fuse::DrawContext* dc, ::g::Fuse::Drawing::Brush* fill);
 void Circle__DrawStroke_fn(Circle* __this, ::g::Fuse::DrawContext* dc, ::g::Fuse::Drawing::Stroke* stroke);
-void Circle__InvalidateSurfacePath_fn(Circle* __this);
-void Circle__get_NativeCircle_fn(Circle* __this, uObject** __retval);
 void Circle__get_NeedSurface_fn(Circle* __this, bool* __retval);
 void Circle__New3_fn(Circle** __retval);
 void Circle__OnHitTestLocalVisual_fn(Circle* __this, ::g::Fuse::HitTestContext* htc);
-void Circle__PushPropertiesToNativeView_fn(Circle* __this);
 void Circle__get_Radius_fn(Circle* __this, float* __retval);
-void Circle__UpdateNativeCircle_fn(Circle* __this);
 
 struct Circle : ::g::Fuse::Controls::EllipticalShape
 {
     void ctor_8();
     ::g::Uno::Float2 CanvasAngles();
     ::g::Uno::Float2 Center();
-    uObject* NativeCircle();
     float Radius();
-    void UpdateNativeCircle();
     static Circle* New3();
 };
 // }

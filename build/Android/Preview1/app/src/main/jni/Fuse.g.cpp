@@ -355,7 +355,7 @@ static uType* TYPES[97];
 namespace g{
 namespace Fuse{
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\AlternateRoot.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\AlternateRoot.uno
 // --------------------------------------------------------------------------------------
 
 // public sealed class AlternateRoot :30
@@ -667,7 +667,7 @@ AlternateRoot* AlternateRoot::New2()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Android\1.7.4\AndroidProperties.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Android\1.8.1\AndroidProperties.uno
 // --------------------------------------------------------------------------------------------
 
 // public static extern class AndroidProperties :9
@@ -721,7 +721,7 @@ int32_t AndroidProperties::GetBuildVersion()
     {
         INIT_JNI;
         jclass __cls = JniHelper::GetNativeExternClass();
-        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "GetBuildVersion377", "()I");
+        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "GetBuildVersion369", "()I");
         jint __jresult = U_JNIVAR->CallStaticIntMethod(__cls,__mtd);
         int32_t __result = (int32_t)__jresult;
         ::g::Android::Base::JNI::CheckException();
@@ -736,7 +736,7 @@ uString* AndroidProperties::GetReleaseVersion()
     {
         INIT_JNI;
         jclass __cls = JniHelper::GetNativeExternClass();
-        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "GetReleaseVersion378", "()Ljava/lang/String;");
+        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "GetReleaseVersion370", "()Ljava/lang/String;");
         jobject __jresult = U_JNIVAR->CallStaticObjectMethod(__cls,__mtd);
         uString* __result = JniHelper::JavaToUnoString((jstring)__jresult);
         if (__jresult!=NULL && U_JNIVAR->GetObjectRefType(__jresult) == JNILocalRefType) U_JNIVAR->DeleteLocalRef(__jresult);
@@ -759,7 +759,7 @@ uString* AndroidProperties::ReleaseVersion()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Android\1.7.4\AndroidApp.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Android\1.8.1\AndroidApp.uno
 // -------------------------------------------------------------------------------------
 
 // public abstract extern class App :13
@@ -902,7 +902,7 @@ void App::PropagateBackground()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\AppBase.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\AppBase.uno
 // --------------------------------------------------------------------------------
 
 // public abstract class AppBase :41
@@ -970,25 +970,25 @@ void AppBase__ctor_2_fn(AppBase* __this)
     __this->ctor_2();
 }
 
-// public generated float4 get_Background() :218
+// public generated float4 get_Background() :226
 void AppBase__get_Background_fn(AppBase* __this, ::g::Uno::Float4* __retval)
 {
     *__retval = __this->Background();
 }
 
-// public generated void set_Background(float4 value) :218
+// public generated void set_Background(float4 value) :226
 void AppBase__set_Background_fn(AppBase* __this, ::g::Uno::Float4* value)
 {
     __this->Background(*value);
 }
 
-// public static new Fuse.AppBase get_Current() :176
+// public static new Fuse.AppBase get_Current() :184
 void AppBase__get_Current2_fn(AppBase** __retval)
 {
     *__retval = AppBase::Current2();
 }
 
-// internal static Fuse.RootViewport get_CurrentRootViewport() :188
+// internal static Fuse.RootViewport get_CurrentRootViewport() :196
 void AppBase__get_CurrentRootViewport_fn(::g::Fuse::RootViewport** __retval)
 {
     *__retval = AppBase::CurrentRootViewport();
@@ -1012,19 +1012,19 @@ void AppBase__OnLowMemory_fn(AppBase* __this)
     __this->OnLowMemory();
 }
 
-// public void OnUnhandledException(Uno.Exception e, [bool propagate]) :149
+// public void OnUnhandledException(Uno.Exception e, [bool propagate]) :157
 void AppBase__OnUnhandledException_fn(AppBase* __this, ::g::Uno::Exception* e, bool* propagate)
 {
     __this->OnUnhandledException(e, *propagate);
 }
 
-// internal static void OnUnhandledExceptionInternal(Uno.Exception e) :166
+// internal static void OnUnhandledExceptionInternal(Uno.Exception e) :174
 void AppBase__OnUnhandledExceptionInternal_fn(::g::Uno::Exception* e)
 {
     AppBase::OnUnhandledExceptionInternal(e);
 }
 
-// protected virtual void OnUpdate() :242
+// protected virtual void OnUpdate() :250
 void AppBase__OnUpdate_fn(AppBase* __this)
 {
     ::g::Fuse::UpdateManager::Update();
@@ -1043,7 +1043,7 @@ void AppBase__get_Properties_fn(AppBase* __this, ::g::Fuse::Properties** __retva
     *__retval = __this->Properties();
 }
 
-// public Uno.Collections.IList<Uno.UX.Resource> get_Resources() :237
+// public Uno.Collections.IList<Uno.UX.Resource> get_Resources() :245
 void AppBase__get_Resources_fn(AppBase* __this, uObject** __retval)
 {
     *__retval = __this->Resources();
@@ -1061,19 +1061,19 @@ void AppBase__set_RootViewport_fn(AppBase* __this, ::g::Fuse::RootViewport* valu
     __this->RootViewport(value);
 }
 
-// internal static void TestSetRootViewport(Fuse.RootViewport rv) :181
+// internal static void TestSetRootViewport(Fuse.RootViewport rv) :189
 void AppBase__TestSetRootViewport_fn(::g::Fuse::RootViewport* rv)
 {
     AppBase::TestSetRootViewport(rv);
 }
 
-// public generated void add_UnhandledException(Fuse.UnhandledExceptionHandler value) :142
+// public generated void add_UnhandledException(Fuse.UnhandledExceptionHandler value) :146
 void AppBase__add_UnhandledException_fn(AppBase* __this, uDelegate* value)
 {
     __this->add_UnhandledException(value);
 }
 
-// public generated void remove_UnhandledException(Fuse.UnhandledExceptionHandler value) :142
+// public generated void remove_UnhandledException(Fuse.UnhandledExceptionHandler value) :146
 void AppBase__remove_UnhandledException_fn(AppBase* __this, uDelegate* value)
 {
     __this->remove_UnhandledException(value);
@@ -1091,13 +1091,13 @@ void AppBase::ctor_2()
     ::g::Fuse::Platform::AppEvents::add_LowMemoryWarning(uDelegate::New(::TYPES[2/*Uno.Action*/], (void*)AppBase__OnLowMemory_fn, this));
 }
 
-// public generated float4 get_Background() [instance] :218
+// public generated float4 get_Background() [instance] :226
 ::g::Uno::Float4 AppBase::Background()
 {
     return _Background;
 }
 
-// public generated void set_Background(float4 value) [instance] :218
+// public generated void set_Background(float4 value) [instance] :226
 void AppBase::Background(::g::Uno::Float4 value)
 {
     ::g::Uno::Float4 value_ = value;
@@ -1118,7 +1118,7 @@ void AppBase::OnLowMemory()
     ::g::Fuse::Resources::DisposalManager::Clean(2);
 }
 
-// public void OnUnhandledException(Uno.Exception e, [bool propagate]) [instance] :149
+// public void OnUnhandledException(Uno.Exception e, [bool propagate]) [instance] :157
 void AppBase::OnUnhandledException(::g::Uno::Exception* e, bool propagate)
 {
     uStackFrame __("Fuse.AppBase", "OnUnhandledException(Uno.Exception,[bool])");
@@ -1156,7 +1156,7 @@ float AppBase::PixelsPerPoint()
     return (ind1 != NULL) ? ind1 : (::g::Fuse::Properties*)(_properties = ::g::Fuse::Properties::New1());
 }
 
-// public Uno.Collections.IList<Uno.UX.Resource> get_Resources() [instance] :237
+// public Uno.Collections.IList<Uno.UX.Resource> get_Resources() [instance] :245
 uObject* AppBase::Resources()
 {
     uStackFrame __("Fuse.AppBase", "get_Resources()");
@@ -1175,21 +1175,21 @@ void AppBase::RootViewport(::g::Fuse::RootViewport* value)
     _RootViewport = value;
 }
 
-// public generated void add_UnhandledException(Fuse.UnhandledExceptionHandler value) [instance] :142
+// public generated void add_UnhandledException(Fuse.UnhandledExceptionHandler value) [instance] :146
 void AppBase::add_UnhandledException(uDelegate* value)
 {
     uStackFrame __("Fuse.AppBase", "add_UnhandledException(Fuse.UnhandledExceptionHandler)");
     UnhandledException1 = uCast<uDelegate*>(::g::Uno::Delegate::Combine(UnhandledException1, value), ::TYPES[3/*Fuse.UnhandledExceptionHandler*/]);
 }
 
-// public generated void remove_UnhandledException(Fuse.UnhandledExceptionHandler value) [instance] :142
+// public generated void remove_UnhandledException(Fuse.UnhandledExceptionHandler value) [instance] :146
 void AppBase::remove_UnhandledException(uDelegate* value)
 {
     uStackFrame __("Fuse.AppBase", "remove_UnhandledException(Fuse.UnhandledExceptionHandler)");
     UnhandledException1 = uCast<uDelegate*>(::g::Uno::Delegate::Remove(UnhandledException1, value), ::TYPES[3/*Fuse.UnhandledExceptionHandler*/]);
 }
 
-// internal static void OnUnhandledExceptionInternal(Uno.Exception e) [static] :166
+// internal static void OnUnhandledExceptionInternal(Uno.Exception e) [static] :174
 void AppBase::OnUnhandledExceptionInternal(::g::Uno::Exception* e)
 {
     uStackFrame __("Fuse.AppBase", "OnUnhandledExceptionInternal(Uno.Exception)");
@@ -1199,19 +1199,19 @@ void AppBase::OnUnhandledExceptionInternal(::g::Uno::Exception* e)
         uPtr(app)->OnUnhandledException(e, true);
 }
 
-// internal static void TestSetRootViewport(Fuse.RootViewport rv) [static] :181
+// internal static void TestSetRootViewport(Fuse.RootViewport rv) [static] :189
 void AppBase::TestSetRootViewport(::g::Fuse::RootViewport* rv)
 {
     AppBase::_testRootViewport_ = rv;
 }
 
-// public static new Fuse.AppBase get_Current() [static] :176
+// public static new Fuse.AppBase get_Current() [static] :184
 AppBase* AppBase::Current2()
 {
     return uAs<AppBase*>(::g::Uno::Platform::CoreApp::Current(), AppBase_typeof());
 }
 
-// internal static Fuse.RootViewport get_CurrentRootViewport() [static] :188
+// internal static Fuse.RootViewport get_CurrentRootViewport() [static] :196
 ::g::Fuse::RootViewport* AppBase::CurrentRootViewport()
 {
     uStackFrame __("Fuse.AppBase", "get_CurrentRootViewport()");
@@ -1231,7 +1231,7 @@ AppBase* AppBase::Current2()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.7.4\Json.Parse.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.8.1\Json.Parse.uno
 // ------------------------------------------------------------------------------------
 
 // private sealed class Json.Array :83
@@ -1314,7 +1314,7 @@ Json__Array* Json__Array::New1(uArray* array)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Behavior.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Behavior.uno
 // ---------------------------------------------------------------------------------
 
 // public abstract class Behavior :6
@@ -1375,7 +1375,7 @@ void Behavior::ctor_2()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Binding.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Binding.uno
 // --------------------------------------------------------------------------------
 
 // public abstract class Binding :5
@@ -1383,7 +1383,7 @@ void Behavior::ctor_2()
 static void Binding_build(uType* type)
 {
     ::STRINGS[2] = uString::Const("double Binding rooting detected");
-    ::STRINGS[3] = uString::Const("C:\\Users\\borde_000\\AppData\\Local\\Fusetools\\Packages\\Fuse.Nodes\\1.7.4\\Binding.uno");
+    ::STRINGS[3] = uString::Const("C:\\Users\\borde_000\\AppData\\Local\\Fusetools\\Packages\\Fuse.Nodes\\1.8.1\\Binding.uno");
     ::STRINGS[4] = uString::Const("Root");
     ::STRINGS[5] = uString::Const("double Binding unrooting detected");
     ::STRINGS[6] = uString::Const("Unroot");
@@ -1491,7 +1491,7 @@ void Binding::Unroot()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Marshal\1.7.4\Computer.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Marshal\1.8.1\Computer.uno
 // -----------------------------------------------------------------------------------
 
 // internal sealed class BoolComputer :136
@@ -1572,7 +1572,7 @@ BoolComputer* BoolComputer::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Marshal\1.7.4\Computer.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Marshal\1.8.1\Computer.uno
 // -----------------------------------------------------------------------------------
 
 // public enum Computer.BoolOp :27
@@ -1591,7 +1591,7 @@ uEnumType* Computer__BoolOp_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.7.4\Box.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.8.1\Box.uno
 // -----------------------------------------------------------------------------
 
 // public struct Box :5
@@ -1701,7 +1701,7 @@ Box Box__Transform(Box box, ::g::Uno::Float4x4 transform)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.7.4\CacheFramebuffer.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.8.1\CacheFramebuffer.uno
 // ------------------------------------------------------------------------------------------
 
 // internal sealed class CacheFramebuffer :8
@@ -2011,7 +2011,7 @@ CacheFramebuffer* CacheFramebuffer::New1(int32_t width, int32_t height, int32_t 
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Visual.Interacting.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Visual.Interacting.uno
 // -------------------------------------------------------------------------------------------
 
 // public enum Visual.CancelInteractionsType :54
@@ -2027,7 +2027,7 @@ uEnumType* Visual__CancelInteractionsType_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.7.4\Collision.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.8.1\Collision.uno
 // -----------------------------------------------------------------------------------
 
 // public static class Collision :4
@@ -2160,7 +2160,7 @@ bool Collision::RayIntersectsBox(::g::Fuse::Ray ray, ::g::Fuse::Box box, float* 
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Marshal\1.7.4\Computer.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Marshal\1.8.1\Computer.uno
 // -----------------------------------------------------------------------------------
 
 // public sealed class ComputeException :7
@@ -2218,7 +2218,7 @@ ComputeException* ComputeException::New4(uString* op, uObject* a, uObject* b)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Marshal\1.7.4\Computer.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Marshal\1.8.1\Computer.uno
 // -----------------------------------------------------------------------------------
 
 // internal abstract class Computer :14
@@ -2252,7 +2252,7 @@ void Computer::ctor_()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Marshal\1.7.4\Computer.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Marshal\1.8.1\Computer.uno
 // -----------------------------------------------------------------------------------
 
 // internal abstract class Computer<T> :38
@@ -2357,7 +2357,7 @@ void Computer1::ctor_1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\NodeGroup.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\NodeGroup.uno
 // ----------------------------------------------------------------------------------
 
 // internal enum NodeGroupBase.ConstructFlags :46
@@ -2373,7 +2373,7 @@ uEnumType* NodeGroupBase__ConstructFlags_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Node.DataContext.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Node.DataContext.uno
 // -----------------------------------------------------------------------------------------
 
 // public enum Node.ContextDataResult :36
@@ -2390,7 +2390,7 @@ uEnumType* Node__ContextDataResult_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Node.DataContext.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Node.DataContext.uno
 // -----------------------------------------------------------------------------------------
 
 // public enum Node.DataType :27
@@ -2406,7 +2406,7 @@ uEnumType* Node__DataType_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Node.ScriptClass.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Node.ScriptClass.uno
 // -----------------------------------------------------------------------------------------
 
 // private sealed class Node.DataWatcher :37
@@ -2535,7 +2535,7 @@ Node__DataWatcher* Node__DataWatcher::New1(::g::Fuse::Node* node, ::g::Fuse::Scr
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Triggers\1.7.4\Deferred.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Triggers\1.8.1\Deferred.uno
 // ------------------------------------------------------------------------------------
 
 // public sealed class Deferred :129
@@ -2543,7 +2543,7 @@ Node__DataWatcher* Node__DataWatcher::New1(::g::Fuse::Node* node, ::g::Fuse::Scr
 static void Deferred_build(uType* type)
 {
     ::STRINGS[12] = uString::Const("Duplicate call to Deferred.Perform");
-    ::STRINGS[13] = uString::Const("C:\\Users\\borde_000\\AppData\\Local\\Fusetools\\Packages\\Fuse.Triggers\\1.7.4\\Deferred.uno");
+    ::STRINGS[13] = uString::Const("C:\\Users\\borde_000\\AppData\\Local\\Fusetools\\Packages\\Fuse.Triggers\\1.8.1\\Deferred.uno");
     ::STRINGS[14] = uString::Const("Fuse.IDeferred.Perform");
     ::STRINGS[15] = uString::Const("");
     ::TYPES[9] = ::g::Uno::Collections::List_typeof()->MakeType(::g::Fuse::Node_typeof(), NULL);
@@ -2746,7 +2746,7 @@ Deferred* Deferred::New2()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Triggers\1.7.4\Deferred.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Triggers\1.8.1\Deferred.uno
 // ------------------------------------------------------------------------------------
 
 // internal static class DeferredManager :20
@@ -2899,7 +2899,7 @@ bool DeferredManager::HasPending()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.7.4\Diagnostics.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.8.1\Diagnostics.uno
 // -------------------------------------------------------------------------------------
 
 // public sealed class Diagnostic :21
@@ -3060,7 +3060,7 @@ Diagnostic* Diagnostic::New1(int32_t type, uString* message, uObject* sourceObje
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.7.4\Diagnostics.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.8.1\Diagnostics.uno
 // -------------------------------------------------------------------------------------
 
 // public delegate void DiagnosticHandler(Fuse.Diagnostic d) :107
@@ -3075,7 +3075,7 @@ uDelegateType* DiagnosticHandler_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.7.4\Diagnostics.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.8.1\Diagnostics.uno
 // -------------------------------------------------------------------------------------
 
 // public static class Diagnostics :127
@@ -3396,7 +3396,7 @@ void Diagnostics::remove_DiagnosticReported(uDelegate* value)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.7.4\Diagnostics.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.8.1\Diagnostics.uno
 // -------------------------------------------------------------------------------------
 
 // public enum DiagnosticType :7
@@ -3417,14 +3417,14 @@ uEnumType* DiagnosticType_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\DrawContext.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\DrawContext.uno
 // ------------------------------------------------------------------------------------
 
 // public sealed class DrawContext :28
 // {
 static void DrawContext_build(uType* type)
 {
-    ::STRINGS[25] = uString::Const("C:\\Users\\borde_000\\AppData\\Local\\Fusetools\\Packages\\Fuse.Nodes\\1.7.4\\DrawContext.uno");
+    ::STRINGS[25] = uString::Const("C:\\Users\\borde_000\\AppData\\Local\\Fusetools\\Packages\\Fuse.Nodes\\1.8.1\\DrawContext.uno");
     ::STRINGS[26] = uString::Const("CaptureRootbuffer");
     ::STRINGS[15] = uString::Const("");
     ::STRINGS[27] = uString::Const("Clear");
@@ -4123,7 +4123,7 @@ DrawContext* DrawContext::New1(uObject* viewport)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\NodeGroup.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\NodeGroup.uno
 // ----------------------------------------------------------------------------------
 
 // private sealed class NodeGroupBase.EmptyNode :151
@@ -4199,7 +4199,7 @@ NodeGroupBase__EmptyNode* NodeGroupBase__EmptyNode::New2()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\PreviewState.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\PreviewState.uno
 // -------------------------------------------------------------------------------------
 
 // private sealed class PreviewStateData.Entry :69
@@ -4252,7 +4252,7 @@ PreviewStateData__Entry* PreviewStateData__Entry::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Visual.Children.Enumerable.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Visual.Children.Enumerable.uno
 // ---------------------------------------------------------------------------------------------------
 
 // private sealed class Visual.Enumerator<T> :24
@@ -4389,7 +4389,7 @@ Visual__Enumerator* Visual__Enumerator::New1(uType* __type, ::g::Fuse::Visual* p
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.7.4\FastMatrix.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.8.1\FastMatrix.uno
 // ------------------------------------------------------------------------------------
 
 // public sealed class FastMatrix :5
@@ -4926,7 +4926,7 @@ FastMatrix* FastMatrix::New2(FastMatrix* orig)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Visual.FastProperties1.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Visual.FastProperties1.uno
 // -----------------------------------------------------------------------------------------------
 
 // internal enum FastProperty1 :4
@@ -4969,7 +4969,7 @@ uEnumType* FastProperty1_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Visual.FastProperties1.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Visual.FastProperties1.uno
 // -----------------------------------------------------------------------------------------------
 
 // internal class FastProperty1Link :46
@@ -5022,7 +5022,7 @@ FastProperty1Link* FastProperty1Link::New1(int32_t p)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Visual.FastProperties1.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Visual.FastProperties1.uno
 // -----------------------------------------------------------------------------------------------
 
 // internal sealed class FastProperty1Link<T> :57
@@ -5067,7 +5067,7 @@ void FastProperty1Link1__New2_fn(uType* __type, int32_t* p, void* value, FastPro
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Visual.FastProperties2.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Visual.FastProperties2.uno
 // -----------------------------------------------------------------------------------------------
 
 // internal enum FastProperty2 :4
@@ -5097,7 +5097,7 @@ uEnumType* FastProperty2_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Visual.FastProperties2.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Visual.FastProperties2.uno
 // -----------------------------------------------------------------------------------------------
 
 // internal class FastProperty2Link :26
@@ -5150,7 +5150,7 @@ FastProperty2Link* FastProperty2Link::New1(int32_t p)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Visual.FastProperties2.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Visual.FastProperties2.uno
 // -----------------------------------------------------------------------------------------------
 
 // internal sealed class FastProperty2Link<T> :37
@@ -5195,7 +5195,7 @@ void FastProperty2Link1__New2_fn(uType* __type, int32_t* p, void* value, FastPro
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Marshal\1.7.4\FileSourceConverter.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Marshal\1.8.1\FileSourceConverter.uno
 // ----------------------------------------------------------------------------------------------
 
 // internal sealed class FileSourceConverter :8
@@ -5335,7 +5335,7 @@ FileSourceConverter* FileSourceConverter::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\IViewport.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\IViewport.uno
 // ----------------------------------------------------------------------------------
 
 // internal sealed class FixedViewport :181
@@ -5577,7 +5577,7 @@ FixedViewport* FixedViewport::New1(::g::Uno::Int2 pixelSize, float pixelsPerPoin
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\LayoutParams.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\LayoutParams.uno
 // -------------------------------------------------------------------------------------
 
 // private enum LayoutParams.Flags :14
@@ -5603,7 +5603,7 @@ uEnumType* LayoutParams__Flags_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Marshal\1.7.4\Computer.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Marshal\1.8.1\Computer.uno
 // -----------------------------------------------------------------------------------
 
 // internal sealed class Float2Computer :224
@@ -5712,7 +5712,7 @@ Float2Computer* Float2Computer::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Marshal\1.7.4\Computer.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Marshal\1.8.1\Computer.uno
 // -----------------------------------------------------------------------------------
 
 // internal sealed class Float3Computer :252
@@ -5821,7 +5821,7 @@ Float3Computer* Float3Computer::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Marshal\1.7.4\Computer.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Marshal\1.8.1\Computer.uno
 // -----------------------------------------------------------------------------------
 
 // internal sealed class Float4Computer :280
@@ -5930,7 +5930,7 @@ Float4Computer* Float4Computer::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.7.4\Font.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.8.1\Font.uno
 // ------------------------------------------------------------------------------
 
 // public class Font :27
@@ -6135,7 +6135,7 @@ float Font::PlatformDefaultSize()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.7.4\FramebufferPool.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.8.1\FramebufferPool.uno
 // -----------------------------------------------------------------------------------------
 
 // public static class FramebufferPool :9
@@ -6262,7 +6262,7 @@ int32_t FramebufferPool::Frame()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.7.4\FramebufferPool.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.8.1\FramebufferPool.uno
 // -----------------------------------------------------------------------------------------
 
 // internal sealed class FramebufferPoolImpl :60
@@ -6602,7 +6602,7 @@ FramebufferPoolImpl* FramebufferPoolImpl::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\IViewport.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\IViewport.uno
 // ----------------------------------------------------------------------------------
 
 // internal sealed class FrustumViewport :124
@@ -6735,7 +6735,7 @@ FrustumViewport* FrustumViewport::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.7.4\GraphicsWorker.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.8.1\GraphicsWorker.uno
 // ----------------------------------------------------------------------------------------
 
 // public static class GraphicsWorker :14
@@ -6750,7 +6750,7 @@ static void GraphicsWorker_build(uType* type)
 {
     ::STRINGS[49] = uString::Const("_exceptionQueue mismatch");
     ::STRINGS[50] = uString::Const("GraphicsWorker failed");
-    ::STRINGS[51] = uString::Const("C:\\Users\\borde_000\\AppData\\Local\\Fusetools\\Packages\\Fuse.Common\\1.7.4\\GraphicsWorker.uno");
+    ::STRINGS[51] = uString::Const("C:\\Users\\borde_000\\AppData\\Local\\Fusetools\\Packages\\Fuse.Common\\1.8.1\\GraphicsWorker.uno");
     ::STRINGS[52] = uString::Const("Run");
     ::TYPES[41] = ::g::Uno::Threading::ConcurrentQueue_typeof()->MakeType(::g::Uno::Exception_typeof(), NULL);
     ::TYPES[42] = ::g::Uno::Exception_typeof();
@@ -6911,7 +6911,7 @@ void GraphicsWorker::Start()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Translation.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Translation.uno
 // ------------------------------------------------------------------------------------
 
 // private sealed class TranslationModes.HeightMode :136
@@ -6980,7 +6980,7 @@ TranslationModes__HeightMode* TranslationModes__HeightMode::New2()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\HitTestContext.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\HitTestContext.uno
 // ---------------------------------------------------------------------------------------
 
 // public delegate void HitTestCallback(Fuse.HitTestResult result) :6
@@ -6995,7 +6995,7 @@ uDelegateType* HitTestCallback_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\HitTestContext.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\HitTestContext.uno
 // ---------------------------------------------------------------------------------------
 
 // public sealed class HitTestContext :19
@@ -7221,7 +7221,7 @@ HitTestContext* HitTestContext::New1(::g::Uno::Float2 windowPoint, uDelegate* ca
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Visual.HitTest.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Visual.HitTest.uno
 // ---------------------------------------------------------------------------------------
 
 // private sealed class Visual.HitTestRecord :80
@@ -7288,7 +7288,7 @@ Visual__HitTestRecord* Visual__HitTestRecord::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\HitTestContext.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\HitTestContext.uno
 // ---------------------------------------------------------------------------------------
 
 // public sealed class HitTestResult :10
@@ -7419,7 +7419,7 @@ HitTestResult* HitTestResult::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Visual.HitTest.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Visual.HitTest.uno
 // ---------------------------------------------------------------------------------------
 
 // internal enum Visual.HitTestTransformMode :10
@@ -7435,7 +7435,7 @@ uEnumType* Visual__HitTestTransformMode_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Translation.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Translation.uno
 // ------------------------------------------------------------------------------------
 
 // public abstract interface IActualPlacement :54
@@ -7455,7 +7455,7 @@ uInterfaceType* IActualPlacement_typeof()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.7.4\IObject.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.8.1\IObject.uno
 // ---------------------------------------------------------------------------------
 
 // public abstract interface IArray :17
@@ -7473,7 +7473,7 @@ uInterfaceType* IArray_typeof()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Visual.BeginRemove.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Visual.BeginRemove.uno
 // -------------------------------------------------------------------------------------------
 
 // public abstract interface IBeginRemoveVisualListener :56
@@ -7490,7 +7490,7 @@ uInterfaceType* IBeginRemoveVisualListener_typeof()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\IViewport.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\IViewport.uno
 // ----------------------------------------------------------------------------------
 
 // public abstract interface ICommonViewport :6
@@ -7510,7 +7510,7 @@ uInterfaceType* ICommonViewport_typeof()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Marshal\1.7.4\Marshal.Convert.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Marshal\1.8.1\Marshal.Convert.uno
 // ------------------------------------------------------------------------------------------
 
 // public abstract interface Marshal.IConverter :9
@@ -7528,7 +7528,7 @@ uInterfaceType* Marshal__IConverter_typeof()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Node.DataContext.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Node.DataContext.uno
 // -----------------------------------------------------------------------------------------
 
 // public abstract interface Node.IDataListener :175
@@ -7545,7 +7545,7 @@ uInterfaceType* Node__IDataListener_typeof()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Triggers\1.7.4\Deferred.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Triggers\1.8.1\Deferred.uno
 // ------------------------------------------------------------------------------------
 
 // internal abstract interface IDeferred :10
@@ -7560,7 +7560,7 @@ uInterfaceType* IDeferred_typeof()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Scaling.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Scaling.uno
 // --------------------------------------------------------------------------------
 
 // private sealed class ScalingModes.IdentityMode :13
@@ -7652,7 +7652,7 @@ ScalingModes__IdentityMode* ScalingModes__IdentityMode::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\RootViewport.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\RootViewport.uno
 // -------------------------------------------------------------------------------------
 
 // public abstract interface IFrame :12
@@ -7671,7 +7671,7 @@ uInterfaceType* IFrame_typeof()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\IFrustum.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\IFrustum.uno
 // ---------------------------------------------------------------------------------
 
 // public abstract interface IFrustum :5
@@ -7693,7 +7693,7 @@ uInterfaceType* IFrustum_typeof()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.7.4\Resources\ILoading.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.8.1\Resources\ILoading.uno
 // --------------------------------------------------------------------------------------------
 
 // internal abstract interface ILoading :9
@@ -7708,7 +7708,7 @@ uInterfaceType* ILoading_typeof()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.7.4\Resources\ILoading.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.8.1\Resources\ILoading.uno
 // --------------------------------------------------------------------------------------------
 
 // internal static class ILoadingStatic :14
@@ -7743,7 +7743,7 @@ uClassType* ILoadingStatic_typeof()
 ::g::Uno::UX::Selector ILoadingStatic::IsLoadingName_;
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\NameRegistry.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\NameRegistry.uno
 // -------------------------------------------------------------------------------------
 
 // public abstract interface INameListener :8
@@ -7760,7 +7760,7 @@ uInterfaceType* INameListener_typeof()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\IViewport.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\IViewport.uno
 // ----------------------------------------------------------------------------------
 
 // internal sealed class InheritViewport :229
@@ -7934,7 +7934,7 @@ InheritViewport* InheritViewport::New1(uObject* baseView, ::g::Fuse::FrustumView
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Node.Rooting.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Node.Rooting.uno
 // -------------------------------------------------------------------------------------
 
 // internal abstract interface INotifyUnrooted :15
@@ -7949,7 +7949,7 @@ uInterfaceType* INotifyUnrooted_typeof()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Visual.Interacting.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Visual.Interacting.uno
 // -------------------------------------------------------------------------------------------
 
 // private struct Visual.InteractionItem :8
@@ -7977,7 +7977,7 @@ uStructType* Visual__InteractionItem_typeof()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Visual.Layout.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Visual.Layout.uno
 // --------------------------------------------------------------------------------------
 
 // public enum InvalidateLayoutReason :42
@@ -7994,7 +7994,7 @@ uEnumType* InvalidateLayoutReason_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.7.4\IObject.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.8.1\IObject.uno
 // ---------------------------------------------------------------------------------
 
 // public abstract interface IObject :39
@@ -8013,7 +8013,7 @@ uInterfaceType* IObject_typeof()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Visual.Children.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Visual.Children.uno
 // ----------------------------------------------------------------------------------------
 
 // public abstract interface IParentObserver :10
@@ -8032,7 +8032,7 @@ uInterfaceType* IParentObserver_typeof()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\PreviewState.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\PreviewState.uno
 // -------------------------------------------------------------------------------------
 
 // internal abstract interface IPreviewStateSaver :105
@@ -8047,7 +8047,7 @@ uInterfaceType* IPreviewStateSaver_typeof()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.7.4\Properties.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.8.1\Properties.uno
 // ------------------------------------------------------------------------------------
 
 // public abstract interface IProperties :10
@@ -8064,7 +8064,7 @@ uInterfaceType* IProperties_typeof()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\IViewport.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\IViewport.uno
 // ----------------------------------------------------------------------------------
 
 // public abstract interface IRenderViewport :34
@@ -8084,7 +8084,7 @@ uInterfaceType* IRenderViewport_typeof()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\AppBase.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\AppBase.uno
 // --------------------------------------------------------------------------------
 
 // public abstract interface IRootVisualProvider :14
@@ -8101,7 +8101,7 @@ uInterfaceType* IRootVisualProvider_typeof()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Scaling.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Scaling.uno
 // --------------------------------------------------------------------------------
 
 // public abstract interface IScalingMode :6
@@ -8118,7 +8118,7 @@ uInterfaceType* IScalingMode_typeof()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.7.4\Diagnostics.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.8.1\Diagnostics.uno
 // -------------------------------------------------------------------------------------
 
 // public abstract interface IScriptException :101
@@ -8136,7 +8136,7 @@ uInterfaceType* IScriptException_typeof()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Node.DataContext.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Node.DataContext.uno
 // -----------------------------------------------------------------------------------------
 
 // public abstract interface Node.ISiblingDataProvider :13
@@ -8153,7 +8153,7 @@ uInterfaceType* Node__ISiblingDataProvider_typeof()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Node.DataContext.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Node.DataContext.uno
 // -----------------------------------------------------------------------------------------
 
 // public abstract interface Node.ISubtreeDataProvider :21
@@ -8170,7 +8170,7 @@ uInterfaceType* Node__ISubtreeDataProvider_typeof()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Visual.Templates.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Visual.Templates.uno
 // -----------------------------------------------------------------------------------------
 
 // public abstract interface ITemplateSource :9
@@ -8187,7 +8187,7 @@ uInterfaceType* ITemplateSource_typeof()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Transform.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Transform.uno
 // ----------------------------------------------------------------------------------
 
 // public abstract interface ITransformMode :295
@@ -8205,7 +8205,7 @@ uInterfaceType* ITransformMode_typeof()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Transform.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Transform.uno
 // ----------------------------------------------------------------------------------
 
 // public abstract interface ITransformRelative :285
@@ -8224,7 +8224,7 @@ uInterfaceType* ITransformRelative_typeof()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Translation.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Translation.uno
 // ------------------------------------------------------------------------------------
 
 // public abstract interface ITranslationMode :61
@@ -8241,7 +8241,7 @@ uInterfaceType* ITranslationMode_typeof()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.7.4\UpdateManager.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.8.1\UpdateManager.uno
 // ---------------------------------------------------------------------------------------
 
 // public abstract interface IUpdateListener :39
@@ -8258,7 +8258,7 @@ uInterfaceType* IUpdateListener_typeof()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\IViewport.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\IViewport.uno
 // ----------------------------------------------------------------------------------
 
 // public abstract interface IViewport :64
@@ -8276,7 +8276,7 @@ uInterfaceType* IViewport_typeof()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Marshal\1.7.4\FileSourceConverter.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Marshal\1.8.1\FileSourceConverter.uno
 // ----------------------------------------------------------------------------------------------
 
 // internal sealed class JSFileSource :31
@@ -8338,7 +8338,7 @@ JSFileSource* JSFileSource::New1(uString* path)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.7.4\Json.Parse.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.8.1\Json.Parse.uno
 // ------------------------------------------------------------------------------------
 
 // public partial static class Json :7
@@ -8627,7 +8627,7 @@ void Json::ToLiteral3(uString* s, ::g::Uno::Text::StringBuilder* sb)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\KeyboardBootstrapper.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\KeyboardBootstrapper.uno
 // ---------------------------------------------------------------------------------------------
 
 // internal sealed class KeyboardBootstrapper :10
@@ -8760,7 +8760,7 @@ void KeyboardBootstrapper::OnTextInput(uObject* sender, ::g::Uno::Platform::Text
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Visual.Layout.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Visual.Layout.uno
 // --------------------------------------------------------------------------------------
 
 // public enum Layer :8
@@ -8778,7 +8778,7 @@ uEnumType* Layer_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Visual.Layout.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Visual.Layout.uno
 // --------------------------------------------------------------------------------------
 
 // public enum LayoutDependent :50
@@ -8797,7 +8797,7 @@ uEnumType* LayoutDependent_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\LayoutParams.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\LayoutParams.uno
 // -------------------------------------------------------------------------------------
 
 // public struct LayoutParams :12
@@ -9340,7 +9340,7 @@ LayoutParams LayoutParams::DeriveClone()
 
     if (!LayoutParams::_warnDeriveClone_)
     {
-        ::g::Fuse::Diagnostics::Deprecated(uString::Const("Use CloneAndDerive instead of DeriveClone"), uBox(LayoutParams_typeof(), *this), uString::Const("C:\\Users\\borde_000\\AppData\\Local\\Fusetools\\Packages\\Fuse.Nodes\\1.7.4\\LayoutParams.uno"), 127, uString::Const("DeriveClone"));
+        ::g::Fuse::Diagnostics::Deprecated(uString::Const("Use CloneAndDerive instead of DeriveClone"), uBox(LayoutParams_typeof(), *this), uString::Const("C:\\Users\\borde_000\\AppData\\Local\\Fusetools\\Packages\\Fuse.Nodes\\1.8.1\\LayoutParams.uno"), 127, uString::Const("DeriveClone"));
         LayoutParams::_warnDeriveClone_ = true;
     }
 
@@ -9707,7 +9707,7 @@ LayoutParams LayoutParams::TrueClone()
 
     if (!LayoutParams::_warnTrueClone_)
     {
-        ::g::Fuse::Diagnostics::Deprecated(uString::Const("Use Clone instead of TrueClone"), uBox(LayoutParams_typeof(), *this), uString::Const("C:\\Users\\borde_000\\AppData\\Local\\Fusetools\\Packages\\Fuse.Nodes\\1.7.4\\LayoutParams.uno"), 98, uString::Const("TrueClone"));
+        ::g::Fuse::Diagnostics::Deprecated(uString::Const("Use Clone instead of TrueClone"), uBox(LayoutParams_typeof(), *this), uString::Const("C:\\Users\\borde_000\\AppData\\Local\\Fusetools\\Packages\\Fuse.Nodes\\1.8.1\\LayoutParams.uno"), 98, uString::Const("TrueClone"));
         LayoutParams::_warnTrueClone_ = true;
     }
 
@@ -9765,7 +9765,7 @@ LayoutParams LayoutParams__CreateXY(::g::Uno::Float2 size, bool hasX, bool hasY)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.7.4\UpdateManager.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.8.1\UpdateManager.uno
 // ---------------------------------------------------------------------------------------
 
 // public enum LayoutPriority :22
@@ -9785,7 +9785,7 @@ uEnumType* LayoutPriority_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Visual.Layout.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Visual.Layout.uno
 // --------------------------------------------------------------------------------------
 
 // public enum LayoutRole :30
@@ -9803,7 +9803,7 @@ uEnumType* LayoutRole_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Translation.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Translation.uno
 // ------------------------------------------------------------------------------------
 
 // private sealed class TranslationModes.LocalMode :68
@@ -9895,7 +9895,7 @@ TranslationModes__LocalMode* TranslationModes__LocalMode::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Visual.Layout.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Visual.Layout.uno
 // --------------------------------------------------------------------------------------
 
 // internal sealed class LostMarginBoxArgs :85
@@ -9973,7 +9973,7 @@ LostMarginBoxArgs* LostMarginBoxArgs::New2(::g::Fuse::Visual* elm)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Visual.Layout.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Visual.Layout.uno
 // --------------------------------------------------------------------------------------
 
 // internal delegate void LostMarginBoxHandler(object sender, Fuse.LostMarginBoxArgs args) :94
@@ -9989,7 +9989,7 @@ uDelegateType* LostMarginBoxHandler_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Visual.Layout.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Visual.Layout.uno
 // --------------------------------------------------------------------------------------
 
 // public enum MarginBoxDependent :62
@@ -10006,7 +10006,7 @@ uEnumType* MarginBoxDependent_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Marshal\1.7.4\Marshal.Cast.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Marshal\1.8.1\Marshal.Cast.uno
 // ---------------------------------------------------------------------------------------
 
 // public partial static class Marshal :12
@@ -11234,7 +11234,7 @@ bool Marshal::TryConvertTo(uType* t, uObject* o, uObject** res, uObject* diagnos
     }
 
     if (diagnosticSource != NULL)
-        ::g::Fuse::Diagnostics::UserError(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition1(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition1(::STRINGS[54/*"Cannot conv...*/], o), uString::Const("' to target type '")), t), ::STRINGS[11/*"'"*/]), diagnosticSource, uString::Const("C:\\Users\\borde_000\\AppData\\Local\\Fusetools\\Packages\\Fuse.Marshal\\1.7.4\\Marshal.Convert.uno"), 103, uString::Const("TryConvertTo"), NULL);
+        ::g::Fuse::Diagnostics::UserError(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition1(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition1(::STRINGS[54/*"Cannot conv...*/], o), uString::Const("' to target type '")), t), ::STRINGS[11/*"'"*/]), diagnosticSource, uString::Const("C:\\Users\\borde_000\\AppData\\Local\\Fusetools\\Packages\\Fuse.Marshal\\1.8.1\\Marshal.Convert.uno"), 103, uString::Const("TryConvertTo"), NULL);
 
     *res = NULL;
     return false;
@@ -11712,7 +11712,7 @@ bool Marshal::TryToZeroFloat4(uObject* o, ::g::Uno::Float4* value, int32_t* size
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Marshal\1.7.4\Marshal.Cast.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Marshal\1.8.1\Marshal.Cast.uno
 // ---------------------------------------------------------------------------------------
 
 // public sealed class MarshalException :7
@@ -11769,7 +11769,7 @@ MarshalException* MarshalException::New4(uObject* v, uType* t)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\MobileBootstrapping.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\MobileBootstrapping.uno
 // --------------------------------------------------------------------------------------------
 
 // internal sealed extern class MobileBootstrapping :6
@@ -11923,7 +11923,7 @@ void MobileBootstrapping::OnTerminating(int32_t state)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\NameRegistry.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\NameRegistry.uno
 // -------------------------------------------------------------------------------------
 
 // public static class NameRegistry :14
@@ -12204,7 +12204,7 @@ void NameRegistry::SetName(::g::Fuse::Node* obj, ::g::Uno::UX::Selector name)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.7.4\NameValuePair.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.8.1\NameValuePair.uno
 // ---------------------------------------------------------------------------------------
 
 // public sealed class NameValuePair :17
@@ -12383,7 +12383,7 @@ uObject* NameValuePair::ObjectFromArray(uObject* list)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Node.Bindings.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Node.Bindings.uno
 // --------------------------------------------------------------------------------------
 
 // public interfacemodifiers class Node :10
@@ -13225,7 +13225,7 @@ bool Node::CheckDataKey(uString* key)
 
     if (::g::Uno::String::op_Equality(key, NULL))
     {
-        ::g::Fuse::Diagnostics::InternalError(uString::Const("null provided as DataContext key"), NULL, uString::Const("C:\\Users\\borde_000\\AppData\\Local\\Fusetools\\Packages\\Fuse.Nodes\\1.7.4\\Node.DataContext.uno"), 187, uString::Const("CheckDataKey"));
+        ::g::Fuse::Diagnostics::InternalError(uString::Const("null provided as DataContext key"), NULL, uString::Const("C:\\Users\\borde_000\\AppData\\Local\\Fusetools\\Packages\\Fuse.Nodes\\1.8.1\\Node.DataContext.uno"), 187, uString::Const("CheckDataKey"));
         return false;
     }
 
@@ -13712,10 +13712,10 @@ Node__NodeDataSubscription* Node::SubscribeData(uString* key, uObject* listener)
     uStackFrame __("Fuse.Node", "SubscribeData(string,Fuse.Node.IDataListener)");
 
     if (!IsRootingStarted())
-        ::g::Fuse::Diagnostics::InternalError(uString::Const("SubscribeData called prior to rooting"), this, uString::Const("C:\\Users\\borde_000\\AppData\\Local\\Fusetools\\Packages\\Fuse.Nodes\\1.7.4\\Node.DataContext.uno"), 246, uString::Const("SubscribeData"));
+        ::g::Fuse::Diagnostics::InternalError(uString::Const("SubscribeData called prior to rooting"), this, uString::Const("C:\\Users\\borde_000\\AppData\\Local\\Fusetools\\Packages\\Fuse.Nodes\\1.8.1\\Node.DataContext.uno"), 246, uString::Const("SubscribeData"));
 
     if (::g::Uno::String::op_Equality(key, ::STRINGS[15/*""*/]))
-        ::g::Fuse::Diagnostics::UserError(uString::Const("Binding to an empty key, `{}`, is deprecated due to ambiguity. Use the `data()` expression instead."), this, uString::Const("C:\\Users\\borde_000\\AppData\\Local\\Fusetools\\Packages\\Fuse.Nodes\\1.7.4\\Node.DataContext.uno"), 253, uString::Const("SubscribeData"), NULL);
+        ::g::Fuse::Diagnostics::UserError(uString::Const("Binding to an empty key, `{}`, is deprecated due to ambiguity. Use the `data()` expression instead."), this, uString::Const("C:\\Users\\borde_000\\AppData\\Local\\Fusetools\\Packages\\Fuse.Nodes\\1.8.1\\Node.DataContext.uno"), 253, uString::Const("SubscribeData"), NULL);
 
     Node__NodeDataSubscription* dw = Node__NodeDataSubscription::New1(this, 0, key, listener);
     return dw;
@@ -13727,7 +13727,7 @@ Node__NodeDataSubscription* Node::SubscribePrimeDataContext(uObject* listener)
     uStackFrame __("Fuse.Node", "SubscribePrimeDataContext(Fuse.Node.IDataListener)");
 
     if (!IsRootingStarted())
-        ::g::Fuse::Diagnostics::InternalError(uString::Const("SubscribeData called prior to rooting"), this, uString::Const("C:\\Users\\borde_000\\AppData\\Local\\Fusetools\\Packages\\Fuse.Nodes\\1.7.4\\Node.DataContext.uno"), 264, uString::Const("SubscribePrimeDataContext"));
+        ::g::Fuse::Diagnostics::InternalError(uString::Const("SubscribeData called prior to rooting"), this, uString::Const("C:\\Users\\borde_000\\AppData\\Local\\Fusetools\\Packages\\Fuse.Nodes\\1.8.1\\Node.DataContext.uno"), 264, uString::Const("SubscribePrimeDataContext"));
 
     Node__NodeDataSubscription* dw = Node__NodeDataSubscription::New1(this, 1, NULL, listener);
     return dw;
@@ -13753,7 +13753,7 @@ bool Node::TryFindData(int32_t type, uString* key, uObject** result, uObject** p
     {
         if (::g::Uno::String::op_Inequality(key, NULL))
         {
-            ::g::Fuse::Diagnostics::InternalError(uString::Const("Invalid key for DataType.Prime"), this, uString::Const("C:\\Users\\borde_000\\AppData\\Local\\Fusetools\\Packages\\Fuse.Nodes\\1.7.4\\Node.DataContext.uno"), 85, uString::Const("TryFindData"));
+            ::g::Fuse::Diagnostics::InternalError(uString::Const("Invalid key for DataType.Prime"), this, uString::Const("C:\\Users\\borde_000\\AppData\\Local\\Fusetools\\Packages\\Fuse.Nodes\\1.8.1\\Node.DataContext.uno"), 85, uString::Const("TryFindData"));
             return false;
         }
     }
@@ -14002,7 +14002,7 @@ int32_t Node::RootCaptureIndex()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Node.DataContext.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Node.DataContext.uno
 // -----------------------------------------------------------------------------------------
 
 // internal sealed class Node.NodeDataSubscription :277
@@ -14146,7 +14146,7 @@ Node__NodeDataSubscription* Node__NodeDataSubscription::New1(::g::Fuse::Node* or
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\NodeGroup.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\NodeGroup.uno
 // ----------------------------------------------------------------------------------
 
 // public sealed class NodeGroup :290
@@ -14253,7 +14253,7 @@ NodeGroup* NodeGroup::New2()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\NodeGroup.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\NodeGroup.uno
 // ----------------------------------------------------------------------------------
 
 // public abstract class NodeGroupBase :16
@@ -14455,7 +14455,7 @@ void NodeGroupBase::AddContent()
 
     if (Parent() == NULL)
     {
-        ::g::Fuse::Diagnostics::InternalError(uString::Const("AddContent called prior to having a Parent"), this, uString::Const("C:\\Users\\borde_000\\AppData\\Local\\Fusetools\\Packages\\Fuse.Nodes\\1.7.4\\NodeGroup.uno"), 161, uString::Const("AddContent"));
+        ::g::Fuse::Diagnostics::InternalError(uString::Const("AddContent called prior to having a Parent"), this, uString::Const("C:\\Users\\borde_000\\AppData\\Local\\Fusetools\\Packages\\Fuse.Nodes\\1.8.1\\NodeGroup.uno"), 161, uString::Const("AddContent"));
         return;
     }
 
@@ -14486,7 +14486,7 @@ void NodeGroupBase::AddContent()
 
             if (n1 == NULL)
             {
-                ::g::Fuse::Diagnostics::InternalError(uString::Const("Template contains a non-Node"), this, uString::Const("C:\\Users\\borde_000\\AppData\\Local\\Fusetools\\Packages\\Fuse.Nodes\\1.7.4\\NodeGroup.uno"), 194, uString::Const("AddContent"));
+                ::g::Fuse::Diagnostics::InternalError(uString::Const("Template contains a non-Node"), this, uString::Const("C:\\Users\\borde_000\\AppData\\Local\\Fusetools\\Packages\\Fuse.Nodes\\1.8.1\\NodeGroup.uno"), 194, uString::Const("AddContent"));
                 n1 = NodeGroupBase__EmptyNode::New2();
             }
 
@@ -14651,7 +14651,7 @@ void NodeGroupBase::UseContent(bool value)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Marshal\1.7.4\Computer.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Marshal\1.8.1\Computer.uno
 // -----------------------------------------------------------------------------------
 
 // internal sealed class NumberComputer :102
@@ -14790,14 +14790,14 @@ NumberComputer* NumberComputer::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.7.4\Json.Parse.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.8.1\Json.Parse.uno
 // ------------------------------------------------------------------------------------
 
 // internal sealed class Json.Object :55
 // {
 static void Json__Object_build(uType* type)
 {
-    ::TYPES[55] = ::g::Uno::Collections::EnumerableExtensions_typeof()->MakeMethod(9/*ToArray<string>*/, ::g::Uno::String_typeof(), NULL);
+    ::TYPES[55] = ::g::Uno::Collections::EnumerableExtensions_typeof()->MakeMethod(8/*ToArray<string>*/, ::g::Uno::String_typeof(), NULL);
     type->SetInterfaces(
         ::g::Fuse::IObject_typeof(), offsetof(Json__Object_type, interface0));
     type->SetFields(0,
@@ -14890,7 +14890,7 @@ Json__Object* Json__Object::New1(::g::Uno::Collections::Dictionary* dict)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\OrthographicFrustum.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\OrthographicFrustum.uno
 // --------------------------------------------------------------------------------------------
 
 // public sealed class OrthographicFrustum :7
@@ -15145,7 +15145,7 @@ OrthographicFrustum* OrthographicFrustum::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Visual.ScriptClass.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Visual.ScriptClass.uno
 // -------------------------------------------------------------------------------------------
 
 // private sealed class Visual.ParameterProperty :19
@@ -15241,7 +15241,7 @@ Visual__ParameterProperty* Visual__ParameterProperty::New1(::g::Fuse::Visual* vi
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Translation.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Translation.uno
 // ------------------------------------------------------------------------------------
 
 // private sealed class TranslationModes.ParentSizeMode :91
@@ -15349,7 +15349,7 @@ TranslationModes__ParentSizeMode* TranslationModes__ParentSizeMode::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.7.4\Version.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.8.1\Version.uno
 // ---------------------------------------------------------------------------------
 
 // internal sealed class Version.Parser :10
@@ -15511,7 +15511,7 @@ Version__Parser* Version__Parser::New1(::g::Uno::IO::TextReader* textReader)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Visual.BeginRemove.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Visual.BeginRemove.uno
 // -------------------------------------------------------------------------------------------
 
 // public sealed class PendingRemoveVisual :5
@@ -15696,7 +15696,7 @@ PendingRemoveVisual* PendingRemoveVisual::New1(::g::Fuse::Visual* child, ::g::Fu
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\PerspectiveFrustum.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\PerspectiveFrustum.uno
 // -------------------------------------------------------------------------------------------
 
 // public sealed class PerspectiveFrustum :8
@@ -15869,7 +15869,7 @@ PerspectiveFrustum* PerspectiveFrustum::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Translation.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Translation.uno
 // ------------------------------------------------------------------------------------
 
 // public sealed class PlacedArgs :21
@@ -16096,7 +16096,7 @@ PlacedArgs* PlacedArgs::New2(bool hasPrev, ::g::Uno::Float2 prevPosition, ::g::U
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Translation.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Translation.uno
 // ------------------------------------------------------------------------------------
 
 // public delegate void PlacedHandler(object sender, Fuse.PlacedArgs args) :52
@@ -16112,7 +16112,7 @@ uDelegateType* PlacedHandler_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\PreviewState.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\PreviewState.uno
 // -------------------------------------------------------------------------------------
 
 // internal sealed class PreviewState :8
@@ -16120,7 +16120,7 @@ uDelegateType* PlacedHandler_typeof()
 static void PreviewState_build(uType* type)
 {
     ::STRINGS[65] = uString::Const("Attempting to restore an already consumed state");
-    ::STRINGS[66] = uString::Const("C:\\Users\\borde_000\\AppData\\Local\\Fusetools\\Packages\\Fuse.Nodes\\1.7.4\\PreviewState.uno");
+    ::STRINGS[66] = uString::Const("C:\\Users\\borde_000\\AppData\\Local\\Fusetools\\Packages\\Fuse.Nodes\\1.8.1\\PreviewState.uno");
     ::STRINGS[67] = uString::Const("SetState");
     ::TYPES[60] = ::g::Uno::Collections::List_typeof()->MakeType(::g::Fuse::IPreviewStateSaver_typeof(), NULL);
     ::TYPES[61] = ::g::Fuse::RootViewport_typeof();
@@ -16278,7 +16278,7 @@ PreviewState* PreviewState::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\PreviewState.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\PreviewState.uno
 // -------------------------------------------------------------------------------------
 
 // internal sealed class PreviewStateData :64
@@ -16387,7 +16387,7 @@ PreviewStateData* PreviewStateData::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.7.4\Properties.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.8.1\Properties.uno
 // ------------------------------------------------------------------------------------
 
 // public sealed class Properties :15
@@ -16771,7 +16771,7 @@ Properties* Properties::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.7.4\Properties.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.8.1\Properties.uno
 // ------------------------------------------------------------------------------------
 
 // public sealed class PropertyHandle :5
@@ -16820,7 +16820,7 @@ PropertyHandle* PropertyHandle::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.7.4\Ray.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.8.1\Ray.uno
 // -----------------------------------------------------------------------------
 
 // public struct Ray :5
@@ -16907,7 +16907,7 @@ Ray Ray__Transform(Ray ray, ::g::Uno::Float4x4 transform)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Transform.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Transform.uno
 // ----------------------------------------------------------------------------------
 
 // public abstract class RelativeTransform<TransformMode> :325
@@ -17162,7 +17162,7 @@ void RelativeTransform::RelativeTo(uObject* value)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\DrawContext.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\DrawContext.uno
 // ------------------------------------------------------------------------------------
 
 // internal sealed class RenderTargetEntry :11
@@ -17220,7 +17220,7 @@ RenderTargetEntry* RenderTargetEntry::New1(::g::Uno::Graphics::RenderTarget* rt,
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Visual.Layout.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Visual.Layout.uno
 // --------------------------------------------------------------------------------------
 
 // public sealed class RequestBringIntoViewArgs :74
@@ -17301,7 +17301,7 @@ RequestBringIntoViewArgs* RequestBringIntoViewArgs::New2(::g::Fuse::Visual* elm)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Visual.Layout.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Visual.Layout.uno
 // --------------------------------------------------------------------------------------
 
 // public delegate void RequestBringIntoViewHandler(object sender, Fuse.RequestBringIntoViewArgs args) :83
@@ -17317,7 +17317,7 @@ uDelegateType* RequestBringIntoViewHandler_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Visual.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Visual.uno
 // -------------------------------------------------------------------------------
 
 // public sealed class RequiresRootedException :7
@@ -17372,7 +17372,7 @@ RequiresRootedException* RequiresRootedException::New4()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Desktop\1.7.4\DesktopApp.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Desktop\1.8.1\DesktopApp.uno
 // -------------------------------------------------------------------------------------
 
 // internal sealed class RootPanel :10
@@ -17400,7 +17400,7 @@ static void RootPanel_build(uType* type)
         ::g::Fuse::IActualPlacement_typeof(), offsetof(::g::Fuse::Controls::Panel_type, interface15),
         ::g::Fuse::Animations::IResize_typeof(), offsetof(::g::Fuse::Controls::Panel_type, interface16),
         ::g::Fuse::Drawing::ISurfaceDrawable_typeof(), offsetof(::g::Fuse::Controls::Panel_type, interface17));
-    type->SetFields(117);
+    type->SetFields(118);
 }
 
 ::g::Fuse::Controls::Panel_type* RootPanel_typeof()
@@ -17410,7 +17410,7 @@ static void RootPanel_build(uType* type)
 
     uTypeOptions options;
     options.BaseDefinition = ::g::Fuse::Controls::Panel_typeof();
-    options.FieldCount = 117;
+    options.FieldCount = 118;
     options.InterfaceCount = 18;
     options.DependencyCount = 1;
     options.ObjectSize = sizeof(RootPanel);
@@ -17494,7 +17494,7 @@ RootPanel* RootPanel::New4()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Node.Rooting.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Node.Rooting.uno
 // -------------------------------------------------------------------------------------
 
 // internal enum RootStage :7
@@ -17512,7 +17512,7 @@ uEnumType* RootStage_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Android\1.7.4\AndroidApp.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Android\1.8.1\AndroidApp.uno
 // -------------------------------------------------------------------------------------
 
 // private sealed class App.RootViewHost :16
@@ -17582,7 +17582,7 @@ App__RootViewHost* App__RootViewHost::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\RootViewport.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\RootViewport.uno
 // -------------------------------------------------------------------------------------
 
 // public class RootViewport :33
@@ -17590,7 +17590,7 @@ App__RootViewHost* App__RootViewHost::New1()
 static void RootViewport_build(uType* type)
 {
     ::STRINGS[68] = uString::Const("Incorrect state type for PreviewSetState");
-    ::STRINGS[69] = uString::Const("C:\\Users\\borde_000\\AppData\\Local\\Fusetools\\Packages\\Fuse.Nodes\\1.7.4\\RootViewport.uno");
+    ::STRINGS[69] = uString::Const("C:\\Users\\borde_000\\AppData\\Local\\Fusetools\\Packages\\Fuse.Nodes\\1.8.1\\RootViewport.uno");
     ::STRINGS[70] = uString::Const("RestorePreviewState");
     ::TYPES[65] = ::g::Fuse::IFrame_typeof();
     ::TYPES[26] = ::g::Uno::EventHandler_typeof();
@@ -18130,7 +18130,7 @@ RootViewport* RootViewport::New3(uObject* frame)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Transform.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Transform.uno
 // ----------------------------------------------------------------------------------
 
 // public sealed class Rotation :59
@@ -18543,7 +18543,7 @@ Rotation* Rotation::New2()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Visual.Children.SafeIterator.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Visual.Children.SafeIterator.uno
 // -----------------------------------------------------------------------------------------------------
 
 // private sealed class Visual.SafeIterator :53
@@ -18788,7 +18788,7 @@ Visual__SafeIterator* Visual__SafeIterator::New1(::g::Fuse::Visual* v)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Scaling.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Scaling.uno
 // --------------------------------------------------------------------------------
 
 // public sealed class Scaling :43
@@ -19078,7 +19078,7 @@ Scaling* Scaling::New2()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Scaling.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Scaling.uno
 // --------------------------------------------------------------------------------
 
 // public static class ScalingModes :11
@@ -19114,7 +19114,7 @@ uClassType* ScalingModes_typeof()
 uSStrong<uObject*> ScalingModes::Identity_;
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Transform.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Transform.uno
 // ----------------------------------------------------------------------------------
 
 // public sealed class Shear :209
@@ -19343,7 +19343,7 @@ Shear* Shear::New2()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Marshal\1.7.4\Marshal.Convert.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Marshal\1.8.1\Marshal.Convert.uno
 // ------------------------------------------------------------------------------------------
 
 // private sealed class Marshal.SingleArray :15
@@ -19429,7 +19429,7 @@ Marshal__SingleArray* Marshal__SingleArray::New1(uObject* obj)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Marshal\1.7.4\Computer.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Marshal\1.8.1\Computer.uno
 // -----------------------------------------------------------------------------------
 
 // internal sealed class Size2Computer :196
@@ -19538,7 +19538,7 @@ Size2Computer* Size2Computer::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Marshal\1.7.4\Computer.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Marshal\1.8.1\Computer.uno
 // -----------------------------------------------------------------------------------
 
 // internal sealed class SizeComputer :158
@@ -19677,7 +19677,7 @@ SizeComputer* SizeComputer::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Translation.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Translation.uno
 // ------------------------------------------------------------------------------------
 
 // private class TranslationModes.SizeMode :75
@@ -19778,7 +19778,7 @@ TranslationModes__SizeMode* TranslationModes__SizeMode::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.7.4\UpdateManager.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.8.1\UpdateManager.uno
 // ---------------------------------------------------------------------------------------
 
 // internal sealed class Stage :81
@@ -19907,7 +19907,7 @@ Stage* Stage::New1(int32_t _updateStage)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Marshal\1.7.4\Computer.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Marshal\1.8.1\Computer.uno
 // -----------------------------------------------------------------------------------
 
 // internal sealed class StringComputer :77
@@ -19999,7 +19999,7 @@ StringComputer* StringComputer::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.7.4\SystemFont.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.8.1\SystemFont.uno
 // ------------------------------------------------------------------------------------
 
 // public enum SystemFont.Style :51
@@ -20015,7 +20015,7 @@ uEnumType* SystemFont__Style_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.7.4\SystemFont.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.8.1\SystemFont.uno
 // ------------------------------------------------------------------------------------
 
 // public sealed class SystemFont :36
@@ -20070,7 +20070,7 @@ SystemFont* SystemFont::New3(uString* family, int32_t style, int32_t weight)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\RootViewport.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\RootViewport.uno
 // -------------------------------------------------------------------------------------
 
 // internal sealed extern class SystemUIFrame :19
@@ -20166,7 +20166,7 @@ SystemUIFrame* SystemUIFrame::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Visual.Templates.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Visual.Templates.uno
 // -----------------------------------------------------------------------------------------
 
 // internal struct TemplateSourceImpl :14
@@ -20259,7 +20259,7 @@ int32_t TemplateSourceImpl::Count()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.7.4\Diagnostics.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.8.1\Diagnostics.uno
 // -------------------------------------------------------------------------------------
 
 // private sealed class Diagnostics.Temporal :148
@@ -20328,7 +20328,7 @@ Diagnostics__Temporal* Diagnostics__Temporal::New1(::g::Fuse::Diagnostic* diag)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Triggers\1.7.4\Deferred.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Triggers\1.8.1\Deferred.uno
 // ------------------------------------------------------------------------------------
 
 // internal static class TestDeferredManager :96
@@ -20366,7 +20366,7 @@ bool TestDeferredManager::HasPending()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.7.4\Time.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.8.1\Time.uno
 // ------------------------------------------------------------------------------
 
 // public static class Time :6
@@ -20489,7 +20489,7 @@ double Time::FrameTimeBase()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.7.4\Timer.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.8.1\Timer.uno
 // -------------------------------------------------------------------------------
 
 // public sealed class Timer :7
@@ -20621,7 +20621,7 @@ void Timer::Wait(double duration, uDelegate* callback)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Toast.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Toast.uno
 // ------------------------------------------------------------------------------
 
 // public sealed class Toast :5
@@ -20792,7 +20792,7 @@ Toast* Toast::Post(::g::Fuse::Visual* visual, double duration)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Transform.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Transform.uno
 // ----------------------------------------------------------------------------------
 
 // public abstract class Transform :25
@@ -20900,7 +20900,7 @@ void Transform::OnMatrixChanged(uObject* igoreSender, uObject* ignoreArgs)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Translation.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Translation.uno
 // ------------------------------------------------------------------------------------
 
 // public sealed class Translation :149
@@ -21180,7 +21180,7 @@ Translation* Translation::New2()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Translation.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Translation.uno
 // ------------------------------------------------------------------------------------
 
 // public static class TranslationModes :66
@@ -21251,7 +21251,7 @@ uSStrong<uObject*> TranslationModes::Height_;
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\VisualBounds.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\VisualBounds.uno
 // -------------------------------------------------------------------------------------
 
 // internal enum VisualBounds.Type :324
@@ -21267,7 +21267,7 @@ uEnumType* VisualBounds__Type_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Marshal\1.7.4\Computer.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Marshal\1.8.1\Computer.uno
 // -----------------------------------------------------------------------------------
 
 // public enum Computer.TypeOp :16
@@ -21287,7 +21287,7 @@ uEnumType* Computer__TypeOp_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\AppBase.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\AppBase.uno
 // --------------------------------------------------------------------------------
 
 // public sealed class UnhandledExceptionArgs :20
@@ -21395,7 +21395,7 @@ UnhandledExceptionArgs* UnhandledExceptionArgs::New2(::g::Uno::Exception* e)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\AppBase.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\AppBase.uno
 // --------------------------------------------------------------------------------
 
 // public delegate void UnhandledExceptionHandler(object sender, Fuse.UnhandledExceptionArgs args) :32
@@ -21411,7 +21411,7 @@ uDelegateType* UnhandledExceptionHandler_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.7.4\UpdateManager.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.8.1\UpdateManager.uno
 // ---------------------------------------------------------------------------------------
 
 // internal sealed class UpdateAction :66
@@ -21483,7 +21483,7 @@ UpdateAction* UpdateAction::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.7.4\UpdateManager.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.8.1\UpdateManager.uno
 // ---------------------------------------------------------------------------------------
 
 // internal sealed class UpdateDispatcher :137
@@ -21552,7 +21552,7 @@ UpdateDispatcher* UpdateDispatcher::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.7.4\UpdateManager.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.8.1\UpdateManager.uno
 // ---------------------------------------------------------------------------------------
 
 // internal sealed class UpdateListener :44
@@ -21630,7 +21630,7 @@ UpdateListener* UpdateListener::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.7.4\UpdateManager.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.8.1\UpdateManager.uno
 // ---------------------------------------------------------------------------------------
 
 // public static class UpdateManager :145
@@ -22312,7 +22312,7 @@ int32_t UpdateManager::FrameIndex()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.7.4\UpdateManager.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.8.1\UpdateManager.uno
 // ---------------------------------------------------------------------------------------
 
 // public enum UpdateStage :7
@@ -22330,7 +22330,7 @@ uEnumType* UpdateStage_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.UserEvents\1.7.4\UserEvent.ScriptClass.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.UserEvents\1.8.1\UserEvent.ScriptClass.uno
 // ---------------------------------------------------------------------------------------------------
 
 // public partial sealed class UserEvent :9
@@ -22346,10 +22346,10 @@ static void UserEvent_build(uType* type)
 {
     ::STRINGS[73] = uString::Const("raise");
     ::STRINGS[74] = uString::Const("UserEvent requires a Name");
-    ::STRINGS[75] = uString::Const("C:\\Users\\borde_000\\AppData\\Local\\Fusetools\\Packages\\Fuse.UserEvents\\1.7.4\\UserEvent.uno");
+    ::STRINGS[75] = uString::Const("C:\\Users\\borde_000\\AppData\\Local\\Fusetools\\Packages\\Fuse.UserEvents\\1.8.1\\UserEvent.uno");
     ::STRINGS[76] = uString::Const("OnRooted");
     ::STRINGS[77] = uString::Const("Raise must be called with zero arguments, or one argument defining the arguments to the event");
-    ::STRINGS[78] = uString::Const("C:\\Users\\borde_000\\AppData\\Local\\Fusetools\\Packages\\Fuse.UserEvents\\1.7.4\\UserEvent.ScriptClass.uno");
+    ::STRINGS[78] = uString::Const("C:\\Users\\borde_000\\AppData\\Local\\Fusetools\\Packages\\Fuse.UserEvents\\1.8.1\\UserEvent.ScriptClass.uno");
     ::STRINGS[79] = uString::Const("Raise must be called with a JavaScript object to define name/value pairs");
     ::STRINGS[80] = uString::Const("Trying to Raise on unrooted UserEvent");
     ::STRINGS[81] = uString::Const("Raise");
@@ -22586,7 +22586,7 @@ UserEvent* UserEvent::ScanTree(::g::Fuse::Node* at, ::g::Uno::UX::Selector name,
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.UserEvents\1.7.4\UserEvent.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.UserEvents\1.8.1\UserEvent.uno
 // ---------------------------------------------------------------------------------------
 
 // public sealed class UserEventArgs :9
@@ -22794,7 +22794,7 @@ UserEventArgs* UserEventArgs::New2(::g::Fuse::UserEventDispatch* dispatch, ::g::
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.UserEvents\1.7.4\UserEvent.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.UserEvents\1.8.1\UserEvent.uno
 // ---------------------------------------------------------------------------------------
 
 // internal sealed class UserEventDispatch :48
@@ -22979,7 +22979,7 @@ UserEventDispatch* UserEventDispatch::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.UserEvents\1.7.4\UserEvent.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.UserEvents\1.8.1\UserEvent.uno
 // ---------------------------------------------------------------------------------------
 
 // public delegate void UserEventHandler(object sender, Fuse.UserEventArgs args) :46
@@ -22995,7 +22995,7 @@ uDelegateType* UserEventHandler_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.7.4\Version.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.8.1\Version.uno
 // ---------------------------------------------------------------------------------
 
 // public static class Version :8
@@ -23003,7 +23003,7 @@ uDelegateType* UserEventHandler_typeof()
 // static Version() :74
 static void Version__cctor__fn(uType* __type)
 {
-    uString* versionString = uString::Const("1.7.4");
+    uString* versionString = uString::Const("1.8.1");
     Version::String_ = versionString;
 
     try
@@ -23019,7 +23019,7 @@ static void Version__cctor__fn(uType* __type)
     catch (const uThrowable& __t)
     {
         ::g::Uno::Exception* e = __t.Exception;
-        ::g::Fuse::Diagnostics::InternalError(::g::Uno::String::Format(uString::Const("Failed to parse version-string: \"{0}\""), uArray::Init<uObject*>(::TYPES[8/*object[]*/], 1, versionString)), NULL, uString::Const("C:\\Users\\borde_000\\AppData\\Local\\Fusetools\\Packages\\Fuse.Common\\1.7.4\\Version.uno"), 89, uString::Const(".cctor"));
+        ::g::Fuse::Diagnostics::InternalError(::g::Uno::String::Format(uString::Const("Failed to parse version-string: \"{0}\""), uArray::Init<uObject*>(::TYPES[8/*object[]*/], 1, versionString)), NULL, uString::Const("C:\\Users\\borde_000\\AppData\\Local\\Fusetools\\Packages\\Fuse.Common\\1.8.1\\Version.uno"), 89, uString::Const(".cctor"));
     }
 }
 
@@ -23057,7 +23057,7 @@ int32_t Version::Patch_;
 uSStrong<uString*> Version::String_;
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\IViewport.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\IViewport.uno
 // ----------------------------------------------------------------------------------
 
 // public static class ViewportHelpers :81
@@ -23135,7 +23135,7 @@ void ViewportHelpers__WorldToLocalRay_fn(uObject* viewport, uObject* world, ::g:
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Visual.BeginRemove.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Visual.BeginRemove.uno
 // -------------------------------------------------------------------------------------------
 
 // public interfacemodifiers class Visual :61
@@ -28003,7 +28003,7 @@ int32_t Visual::ZOrderComparator(Visual* a, Visual* b)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Visual.EventStorage.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Visual.EventStorage.uno
 // --------------------------------------------------------------------------------------------
 
 // private enum Visual.VisualBits :13
@@ -28029,7 +28029,7 @@ uEnumType* Visual__VisualBits_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\VisualBounds.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\VisualBounds.uno
 // -------------------------------------------------------------------------------------
 
 // public sealed class VisualBounds :12
@@ -28795,7 +28795,7 @@ VisualBounds* VisualBounds::Infinite()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Visual.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Visual.uno
 // -------------------------------------------------------------------------------
 
 // public enum VisualContext :9
@@ -28812,7 +28812,7 @@ uEnumType* VisualContext_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Event.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Event.uno
 // ------------------------------------------------------------------------------
 
 // public abstract class VisualEvent<THandler, TArgs> :43
@@ -28820,7 +28820,7 @@ uEnumType* VisualContext_typeof()
 static void VisualEvent_build(uType* type)
 {
     ::STRINGS[85] = uString::Const("Invalid RaiseType for event");
-    ::STRINGS[86] = uString::Const("C:/Users/borde_000/AppData/Local/Fusetools/Packages/Fuse.Nodes/1.7.4/Event.uno");
+    ::STRINGS[86] = uString::Const("C:/Users/borde_000/AppData/Local/Fusetools/Packages/Fuse.Nodes/1.8.1/Event.uno");
     ::TYPES[93] = ::g::Uno::Collections::List_typeof();
     ::TYPES[42] = ::g::Uno::Exception_typeof();
     ::TYPES[27] = ::g::Fuse::Visual_typeof();
@@ -29080,7 +29080,7 @@ void VisualEvent::RaiseWithoutBubble(::g::Fuse::VisualEventArgs* args, int32_t t
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Event.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Event.uno
 // ------------------------------------------------------------------------------
 
 // public class VisualEventArgs :161
@@ -29211,7 +29211,7 @@ VisualEventArgs* VisualEventArgs::New2(::g::Fuse::Visual* visual)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Event.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Event.uno
 // ------------------------------------------------------------------------------
 
 // public delegate void VisualEventHandler(object sender, Fuse.VisualEventArgs args) :185
@@ -29227,7 +29227,7 @@ uDelegateType* VisualEventHandler_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Event.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Event.uno
 // ------------------------------------------------------------------------------
 
 // public enum VisualEventMode :8
@@ -29244,7 +29244,7 @@ uEnumType* VisualEventMode_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Event.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Event.uno
 // ------------------------------------------------------------------------------
 
 // internal static class VisualListCache :21
@@ -29318,7 +29318,7 @@ void VisualListCache::Release(::g::Uno::Collections::List* list)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.7.4\SystemFont.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.8.1\SystemFont.uno
 // ------------------------------------------------------------------------------------
 
 // public enum SystemFont.Weight :38
@@ -29341,7 +29341,7 @@ uEnumType* SystemFont__Weight_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.7.4\Translation.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Nodes\1.8.1\Translation.uno
 // ------------------------------------------------------------------------------------
 
 // private sealed class TranslationModes.WidthMode :128
@@ -29410,7 +29410,7 @@ TranslationModes__WidthMode* TranslationModes__WidthMode::New2()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.7.4\WrapException.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Common\1.8.1\WrapException.uno
 // ---------------------------------------------------------------------------------------
 
 // internal sealed class WrapException :12

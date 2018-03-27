@@ -66,13 +66,13 @@
 #include <Uno/ObjectMonitor.h>
 #include <Uno/Support.h>
 static uString* STRINGS[3];
-static uType* TYPES[13];
+static uType* TYPES[15];
 
 namespace g{
 namespace Uno{
 namespace Threading{
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Threading\1.7.1\IDispatcher.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Threading\1.8.0\IDispatcher.uno
 // ---------------------------------------------------------------------------------------
 
 // private sealed class IDispatcherExtensions.Arg1Invoke<T> :27
@@ -128,7 +128,7 @@ void IDispatcherExtensions__Arg1Invoke::Run()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Threading\1.7.1\AutoResetEvent.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Threading\1.8.0\AutoResetEvent.uno
 // ------------------------------------------------------------------------------------------
 
 // public sealed class AutoResetEvent :6
@@ -186,7 +186,7 @@ AutoResetEvent* AutoResetEvent::New2(bool initialState)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Threading\1.7.1\Tasks\Tasks.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Threading\1.8.0\Tasks\Tasks.uno
 // ---------------------------------------------------------------------------------------
 
 // internal sealed class CancellationToken :33
@@ -275,7 +275,7 @@ CancellationToken* CancellationToken::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Threading\1.7.1\Tasks\Tasks.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Threading\1.8.0\Tasks\Tasks.uno
 // ---------------------------------------------------------------------------------------
 
 // internal sealed class CancellationTokenSource :8
@@ -353,7 +353,7 @@ CancellationTokenSource* CancellationTokenSource::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Threading\1.7.1\Future.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Threading\1.8.0\Future.uno
 // ----------------------------------------------------------------------------------
 
 // private sealed class Future<T>.Closure<T> :158
@@ -409,7 +409,7 @@ void Future1__Closure::Run()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Threading\1.7.1\ConcurrentDictionary.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Threading\1.8.0\ConcurrentDictionary.uno
 // ------------------------------------------------------------------------------------------------
 
 // public sealed class ConcurrentDictionary<TKey, TValue> :6
@@ -417,42 +417,46 @@ void Future1__Closure::Run()
 static void ConcurrentDictionary_build(uType* type)
 {
     ::TYPES[0] = ::g::Uno::Collections::Dictionary_typeof();
-    ::TYPES[1] = ::g::Uno::Collections::KeyValuePair_typeof();
-    ::TYPES[2] = ::g::Uno::Collections::ICollection_typeof();
-    ::TYPES[3] = ::g::Uno::Collections::List__Enumerator_typeof();
-    ::TYPES[4] = ::g::Uno::Collections::List_typeof();
+    ::TYPES[1] = ::g::Uno::Collections::IDictionary_typeof();
+    ::TYPES[2] = ::g::Uno::Collections::KeyValuePair_typeof();
+    ::TYPES[3] = ::g::Uno::Collections::ICollection_typeof();
+    ::TYPES[4] = ::g::Uno::Collections::IEnumerable_typeof();
+    ::TYPES[5] = ::g::Uno::Collections::List__Enumerator_typeof();
+    ::TYPES[6] = ::g::Uno::Collections::List_typeof();
     type->SetPrecalc(
         ::g::Uno::Collections::Dictionary_typeof()->MakeType(type->T(0), type->T(1), NULL),
         ::g::Uno::Collections::List__Enumerator_typeof()->MakeType(::g::Uno::Collections::KeyValuePair_typeof()->MakeType(type->T(0), type->T(1), NULL), NULL),
         ::g::Uno::Collections::ICollection_typeof()->MakeType(::g::Uno::Collections::KeyValuePair_typeof()->MakeType(type->T(0), type->T(1), NULL), NULL),
+        ::g::Uno::Collections::IDictionary_typeof()->MakeType(type->T(0), type->T(1), NULL),
+        ::g::Uno::Collections::IEnumerable_typeof()->MakeType(::g::Uno::Collections::KeyValuePair_typeof()->MakeType(type->T(0), type->T(1), NULL), NULL),
         ::g::Uno::Collections::KeyValuePair_typeof()->MakeType(type->T(0), type->T(1), NULL),
         ::g::Uno::Collections::List_typeof()->MakeType(type->T(0), NULL),
         ::g::Uno::Collections::List_typeof()->MakeType(type->T(1), NULL),
         ::g::Uno::Collections::List_typeof()->MakeType(::g::Uno::Collections::KeyValuePair_typeof()->MakeType(type->T(0), type->T(1), NULL), NULL));
     type->SetInterfaces(
-        ::g::Uno::Collections::IDictionary_typeof()->MakeType(type->T(0), type->T(1), NULL), offsetof(ConcurrentDictionary_type, interface0),
-        ::TYPES[2/*Uno.Collections.ICollection`1*/]->MakeType(::TYPES[1/*Uno.Collections.KeyValuePair`2*/]->MakeType(type->T(0), type->T(1), NULL), NULL), offsetof(ConcurrentDictionary_type, interface1),
-        ::g::Uno::Collections::IEnumerable_typeof()->MakeType(::TYPES[1/*Uno.Collections.KeyValuePair`2*/]->MakeType(type->T(0), type->T(1), NULL), NULL), offsetof(ConcurrentDictionary_type, interface2));
+        ::TYPES[1/*Uno.Collections.IDictionary`2*/]->MakeType(type->T(0), type->T(1), NULL), offsetof(ConcurrentDictionary_type, interface0),
+        ::TYPES[3/*Uno.Collections.ICollection`1*/]->MakeType(::TYPES[2/*Uno.Collections.KeyValuePair`2*/]->MakeType(type->T(0), type->T(1), NULL), NULL), offsetof(ConcurrentDictionary_type, interface1),
+        ::TYPES[4/*Uno.Collections.IEnumerable`1*/]->MakeType(::TYPES[2/*Uno.Collections.KeyValuePair`2*/]->MakeType(type->T(0), type->T(1), NULL), NULL), offsetof(ConcurrentDictionary_type, interface2));
     type->SetFields(0,
         ::TYPES[0/*Uno.Collections.Dictionary`2*/]->MakeType(type->T(0), type->T(1), NULL), offsetof(ConcurrentDictionary, _dictionary), 0,
         uObject_typeof(), offsetof(ConcurrentDictionary, _mutex), 0);
     type->Reflection.SetFunctions(16,
         new uFunction("Add", NULL, (void*)ConcurrentDictionary__Add_fn, 0, false, uVoid_typeof(), 2, type->T(0), type->T(1)),
-        new uFunction("Add", NULL, (void*)ConcurrentDictionary__Add1_fn, 0, false, uVoid_typeof(), 1, ::TYPES[1/*Uno.Collections.KeyValuePair`2*/]->MakeType(type->T(0), type->T(1), NULL)),
+        new uFunction("Add", NULL, (void*)ConcurrentDictionary__Add1_fn, 0, false, uVoid_typeof(), 1, ::TYPES[2/*Uno.Collections.KeyValuePair`2*/]->MakeType(type->T(0), type->T(1), NULL)),
         new uFunction("AddOrUpdate", NULL, (void*)ConcurrentDictionary__AddOrUpdate_fn, 0, false, uVoid_typeof(), 3, type->T(0), type->T(1), ::g::Uno::Func2_typeof()->MakeType(type->T(0), type->T(1), type->T(1), NULL)),
         new uFunction("Clear", NULL, (void*)ConcurrentDictionary__Clear_fn, 0, false, uVoid_typeof(), 0),
-        new uFunction("Contains", NULL, (void*)ConcurrentDictionary__Contains_fn, 0, false, ::g::Uno::Bool_typeof(), 1, ::TYPES[1/*Uno.Collections.KeyValuePair`2*/]->MakeType(type->T(0), type->T(1), NULL)),
+        new uFunction("Contains", NULL, (void*)ConcurrentDictionary__Contains_fn, 0, false, ::g::Uno::Bool_typeof(), 1, ::TYPES[2/*Uno.Collections.KeyValuePair`2*/]->MakeType(type->T(0), type->T(1), NULL)),
         new uFunction("ContainsKey", NULL, (void*)ConcurrentDictionary__ContainsKey_fn, 0, false, ::g::Uno::Bool_typeof(), 1, type->T(0)),
         new uFunction("get_Count", NULL, (void*)ConcurrentDictionary__get_Count_fn, 0, false, ::g::Uno::Int_typeof(), 0),
-        new uFunction("GetEnumerator", NULL, (void*)ConcurrentDictionary__GetEnumerator_fn, 0, false, ::g::Uno::Collections::IEnumerator1_typeof()->MakeType(::TYPES[1/*Uno.Collections.KeyValuePair`2*/]->MakeType(type->T(0), type->T(1), NULL), NULL), 0),
+        new uFunction("GetEnumerator", NULL, (void*)ConcurrentDictionary__GetEnumerator_fn, 0, false, ::g::Uno::Collections::IEnumerator1_typeof()->MakeType(::TYPES[2/*Uno.Collections.KeyValuePair`2*/]->MakeType(type->T(0), type->T(1), NULL), NULL), 0),
         new uFunction("get_Item", NULL, (void*)ConcurrentDictionary__get_Item_fn, 0, false, type->T(1), 1, type->T(0)),
         new uFunction("set_Item", NULL, (void*)ConcurrentDictionary__set_Item_fn, 0, false, uVoid_typeof(), 2, type->T(0), type->T(1)),
-        new uFunction("get_Keys", NULL, (void*)ConcurrentDictionary__get_Keys_fn, 0, false, ::TYPES[2/*Uno.Collections.ICollection`1*/]->MakeType(type->T(0), NULL), 0),
+        new uFunction("get_Keys", NULL, (void*)ConcurrentDictionary__get_Keys_fn, 0, false, ::TYPES[3/*Uno.Collections.ICollection`1*/]->MakeType(type->T(0), NULL), 0),
         new uFunction(".ctor", type, (void*)ConcurrentDictionary__New1_fn, 0, true, type, 0),
-        new uFunction("Remove", NULL, (void*)ConcurrentDictionary__Remove_fn, 0, false, ::g::Uno::Bool_typeof(), 1, type->T(0)),
-        new uFunction("Remove", NULL, (void*)ConcurrentDictionary__Remove1_fn, 0, false, ::g::Uno::Bool_typeof(), 1, ::TYPES[1/*Uno.Collections.KeyValuePair`2*/]->MakeType(type->T(0), type->T(1), NULL)),
+        new uFunction("Remove", NULL, (void*)ConcurrentDictionary__Remove_fn, 0, false, uVoid_typeof(), 1, type->T(0)),
+        new uFunction("Remove", NULL, (void*)ConcurrentDictionary__Remove1_fn, 0, false, ::g::Uno::Bool_typeof(), 1, ::TYPES[2/*Uno.Collections.KeyValuePair`2*/]->MakeType(type->T(0), type->T(1), NULL)),
         new uFunction("TryGetValue", NULL, (void*)ConcurrentDictionary__TryGetValue_fn, 0, false, ::g::Uno::Bool_typeof(), 2, type->T(0), type->T(1)->ByRef()),
-        new uFunction("get_Values", NULL, (void*)ConcurrentDictionary__get_Values_fn, 0, false, ::TYPES[2/*Uno.Collections.ICollection`1*/]->MakeType(type->T(1), NULL), 0));
+        new uFunction("get_Values", NULL, (void*)ConcurrentDictionary__get_Values_fn, 0, false, ::TYPES[3/*Uno.Collections.ICollection`1*/]->MakeType(type->T(1), NULL), 0));
 }
 
 ConcurrentDictionary_type* ConcurrentDictionary_typeof()
@@ -464,19 +468,26 @@ ConcurrentDictionary_type* ConcurrentDictionary_typeof()
     options.FieldCount = 2;
     options.GenericCount = 2;
     options.InterfaceCount = 3;
-    options.PrecalcCount = 7;
+    options.PrecalcCount = 9;
     options.ObjectSize = sizeof(ConcurrentDictionary);
     options.TypeSize = sizeof(ConcurrentDictionary_type);
     type = (ConcurrentDictionary_type*)uClassType::New("Uno.Threading.ConcurrentDictionary`2", options);
     type->fp_build_ = ConcurrentDictionary_build;
     type->fp_ctor_ = (void*)ConcurrentDictionary__New1_fn;
+    type->interface2.fp_GetEnumerator = (void(*)(uObject*, uObject**))ConcurrentDictionary__UnoCollectionsIEnumerableUnoCollectionsKeyValuePairTKeyTValueGetEnumerator_fn;
+    type->interface0.fp_Add = (void(*)(uObject*, void*, void*))ConcurrentDictionary__UnoCollectionsIDictionaryTKeyTValueAdd_fn;
+    type->interface0.fp_Remove = (void(*)(uObject*, void*, bool*))ConcurrentDictionary__UnoCollectionsIDictionaryTKeyTValueRemove_fn;
+    type->interface0.fp_get_Keys = (void(*)(uObject*, uObject**))ConcurrentDictionary__UnoCollectionsIDictionaryTKeyTValueget_Keys_fn;
+    type->interface0.fp_get_Values = (void(*)(uObject*, uObject**))ConcurrentDictionary__UnoCollectionsIDictionaryTKeyTValueget_Values_fn;
     type->interface0.fp_TryGetValue = (void(*)(uObject*, void*, uTRef, bool*))ConcurrentDictionary__TryGetValue_fn;
+    type->interface0.fp_ContainsKey = (void(*)(uObject*, void*, bool*))ConcurrentDictionary__ContainsKey_fn;
+    type->interface0.fp_get_Item = (void(*)(uObject*, void*, uTRef))ConcurrentDictionary__get_Item_fn;
+    type->interface0.fp_set_Item = (void(*)(uObject*, void*, void*))ConcurrentDictionary__set_Item_fn;
     type->interface1.fp_Clear = (void(*)(uObject*))ConcurrentDictionary__Clear_fn;
     type->interface1.fp_Add = (void(*)(uObject*, void*))ConcurrentDictionary__Add1_fn;
     type->interface1.fp_Remove = (void(*)(uObject*, void*, bool*))ConcurrentDictionary__Remove1_fn;
     type->interface1.fp_Contains = (void(*)(uObject*, void*, bool*))ConcurrentDictionary__Contains_fn;
     type->interface1.fp_get_Count = (void(*)(uObject*, int32_t*))ConcurrentDictionary__get_Count_fn;
-    type->interface2.fp_GetEnumerator = (void(*)(uObject*, uObject**))ConcurrentDictionary__GetEnumerator_fn;
     return type;
 }
 
@@ -486,41 +497,21 @@ void ConcurrentDictionary__ctor__fn(ConcurrentDictionary* __this)
     __this->ctor_();
 }
 
-// public void Add(TKey key, TValue value) :50
+// public void Add(TKey key, TValue value) :80
 void ConcurrentDictionary__Add_fn(ConcurrentDictionary* __this, void* key, void* value)
 {
+    uType* __types[] = {
+        __this->__type->Precalced(3/*Uno.Collections.IDictionary<TKey, TValue>*/),
+    };
     uStackFrame __("Uno.Threading.ConcurrentDictionary`2", "Add(TKey,TValue)");
-    ::g::Uno::Threading::Monitor::Enter(__this->_mutex);
-
-    {
-        try
-        {
-            {
-                ::g::Uno::Collections::Dictionary__Add_fn(uPtr(__this->_dictionary), key, value);
-            }
-        }
-
-        catch (const uThrowable& __t)
-        {
-            {
-                ::g::Uno::Threading::Monitor::Exit(__this->_mutex);
-            }
-                        throw __t;
-            goto __after_finally_0;
-        }
-
-        {
-            ::g::Uno::Threading::Monitor::Exit(__this->_mutex);
-        }
-        __after_finally_0:;
-    }
+    ::g::Uno::Collections::IDictionary::Add_ex(uInterface((uObject*)__this, __types[0]), key, value);
 }
 
-// public void Add(Uno.Collections.KeyValuePair<TKey, TValue> keyValue) :114
+// public void Add(Uno.Collections.KeyValuePair<TKey, TValue> keyValue) :137
 void ConcurrentDictionary__Add1_fn(ConcurrentDictionary* __this, void* keyValue)
 {
     uType* __types[] = {
-        __this->__type->Precalced(3/*Uno.Collections.KeyValuePair<TKey, TValue>*/),
+        __this->__type->Precalced(5/*Uno.Collections.KeyValuePair<TKey, TValue>*/),
         __this->__type->Precalced(2/*Uno.Collections.ICollection<Uno.Collections.KeyValuePair<TKey, TValue>>*/),
     };
     uStackFrame __("Uno.Threading.ConcurrentDictionary`2", "Add(Uno.Collections.KeyValuePair<TKey, TValue>)");
@@ -542,17 +533,17 @@ void ConcurrentDictionary__Add1_fn(ConcurrentDictionary* __this, void* keyValue)
                 ::g::Uno::Threading::Monitor::Exit(__this->_mutex);
             }
                         throw __t;
-            goto __after_finally_1;
+            goto __after_finally_0;
         }
 
         {
             ::g::Uno::Threading::Monitor::Exit(__this->_mutex);
         }
-        __after_finally_1:;
+        __after_finally_0:;
     }
 }
 
-// public void AddOrUpdate(TKey key, TValue addValue, Uno.Func<TKey, TValue, TValue> updateFun) :88
+// public void AddOrUpdate(TKey key, TValue addValue, Uno.Func<TKey, TValue, TValue> updateFun) :111
 void ConcurrentDictionary__AddOrUpdate_fn(ConcurrentDictionary* __this, void* key, void* addValue, uDelegate* updateFun)
 {
     uStackFrame __("Uno.Threading.ConcurrentDictionary`2", "AddOrUpdate(TKey,TValue,Uno.Func<TKey, TValue, TValue>)");
@@ -576,27 +567,27 @@ void ConcurrentDictionary__AddOrUpdate_fn(ConcurrentDictionary* __this, void* ke
                 ::g::Uno::Threading::Monitor::Exit(__this->_mutex);
             }
                         throw __t;
-            goto __after_finally_2;
+            goto __after_finally_1;
         }
 
         {
             ::g::Uno::Threading::Monitor::Exit(__this->_mutex);
         }
-        __after_finally_2:;
+        __after_finally_1:;
     }
 }
 
-// public void Clear() :99
+// public void Clear() :122
 void ConcurrentDictionary__Clear_fn(ConcurrentDictionary* __this)
 {
     __this->Clear();
 }
 
-// public bool Contains(Uno.Collections.KeyValuePair<TKey, TValue> keyValue) :126
+// public bool Contains(Uno.Collections.KeyValuePair<TKey, TValue> keyValue) :149
 void ConcurrentDictionary__Contains_fn(ConcurrentDictionary* __this, void* keyValue, bool* __retval)
 {
     uType* __types[] = {
-        __this->__type->Precalced(3/*Uno.Collections.KeyValuePair<TKey, TValue>*/),
+        __this->__type->Precalced(5/*Uno.Collections.KeyValuePair<TKey, TValue>*/),
         __this->__type->Precalced(2/*Uno.Collections.ICollection<Uno.Collections.KeyValuePair<TKey, TValue>>*/),
     };
     uStackFrame __("Uno.Threading.ConcurrentDictionary`2", "Contains(Uno.Collections.KeyValuePair<TKey, TValue>)");
@@ -621,17 +612,17 @@ void ConcurrentDictionary__Contains_fn(ConcurrentDictionary* __this, void* keyVa
                 ::g::Uno::Threading::Monitor::Exit(__this->_mutex);
             }
                         throw __t;
-            goto __after_finally_3;
+            goto __after_finally_2;
         }
 
         {
             ::g::Uno::Threading::Monitor::Exit(__this->_mutex);
         }
-        __after_finally_3:;
+        __after_finally_2:;
     }
 }
 
-// public bool ContainsKey(TKey key) :68
+// public bool ContainsKey(TKey key) :91
 void ConcurrentDictionary__ContainsKey_fn(ConcurrentDictionary* __this, void* key, bool* __retval)
 {
     uStackFrame __("Uno.Threading.ConcurrentDictionary`2", "ContainsKey(TKey)");
@@ -654,33 +645,33 @@ void ConcurrentDictionary__ContainsKey_fn(ConcurrentDictionary* __this, void* ke
                 ::g::Uno::Threading::Monitor::Exit(__this->_mutex);
             }
                         throw __t;
-            goto __after_finally_4;
+            goto __after_finally_3;
         }
 
         {
             ::g::Uno::Threading::Monitor::Exit(__this->_mutex);
         }
-        __after_finally_4:;
+        __after_finally_3:;
     }
 }
 
-// public int get_Count() :107
+// public int get_Count() :130
 void ConcurrentDictionary__get_Count_fn(ConcurrentDictionary* __this, int32_t* __retval)
 {
     *__retval = __this->Count();
 }
 
-// public Uno.Collections.IEnumerator<Uno.Collections.KeyValuePair<TKey, TValue>> GetEnumerator() :12
+// public Uno.Collections.IEnumerator<Uno.Collections.KeyValuePair<TKey, TValue>> GetEnumerator() :23
 void ConcurrentDictionary__GetEnumerator_fn(ConcurrentDictionary* __this, uObject** __retval)
 {
     *__retval = __this->GetEnumerator();
 }
 
-// public TValue get_Item(TKey key) :76
+// public TValue get_Item(TKey key) :99
 void ConcurrentDictionary__get_Item_fn(ConcurrentDictionary* __this, void* key, uTRef __retval)
 {
     uStackFrame __("Uno.Threading.ConcurrentDictionary`2", "get_Item(TKey)");
-    uT ret10(__this->__type->T(1), U_ALLOCA(__this->__type->T(1)->ValueSize));
+    uT ret11(__this->__type->T(1), U_ALLOCA(__this->__type->T(1)->ValueSize));
     uT __uno_retval(__this->__type->T(1), U_ALLOCA(__this->__type->T(1)->ValueSize));
     ::g::Uno::Threading::Monitor::Enter(__this->_mutex);
 
@@ -688,7 +679,7 @@ void ConcurrentDictionary__get_Item_fn(ConcurrentDictionary* __this, void* key, 
         try
         {
             {
-                __uno_retval = (::g::Uno::Collections::Dictionary__get_Item_fn(uPtr(__this->_dictionary), key, &ret10), ret10);
+                __uno_retval = (::g::Uno::Collections::Dictionary__get_Item_fn(uPtr(__this->_dictionary), key, &ret11), ret11);
                 ::g::Uno::Threading::Monitor::Exit(__this->_mutex);
                 return __retval.Store(__uno_retval), void();
             }
@@ -700,17 +691,17 @@ void ConcurrentDictionary__get_Item_fn(ConcurrentDictionary* __this, void* key, 
                 ::g::Uno::Threading::Monitor::Exit(__this->_mutex);
             }
                         throw __t;
-            goto __after_finally_5;
+            goto __after_finally_4;
         }
 
         {
             ::g::Uno::Threading::Monitor::Exit(__this->_mutex);
         }
-        __after_finally_5:;
+        __after_finally_4:;
     }
 }
 
-// public void set_Item(TKey key, TValue value) :81
+// public void set_Item(TKey key, TValue value) :104
 void ConcurrentDictionary__set_Item_fn(ConcurrentDictionary* __this, void* key, void* value)
 {
     uStackFrame __("Uno.Threading.ConcurrentDictionary`2", "set_Item(TKey,TValue)");
@@ -730,17 +721,17 @@ void ConcurrentDictionary__set_Item_fn(ConcurrentDictionary* __this, void* key, 
                 ::g::Uno::Threading::Monitor::Exit(__this->_mutex);
             }
                         throw __t;
-            goto __after_finally_6;
+            goto __after_finally_5;
         }
 
         {
             ::g::Uno::Threading::Monitor::Exit(__this->_mutex);
         }
-        __after_finally_6:;
+        __after_finally_5:;
     }
 }
 
-// public Uno.Collections.ICollection<TKey> get_Keys() :25
+// public Uno.Collections.ICollection<TKey> get_Keys() :42
 void ConcurrentDictionary__get_Keys_fn(ConcurrentDictionary* __this, uObject** __retval)
 {
     *__retval = __this->Keys();
@@ -752,18 +743,68 @@ void ConcurrentDictionary__New1_fn(uType* __type, ConcurrentDictionary** __retva
     *__retval = ConcurrentDictionary::New1(__type);
 }
 
-// public bool Remove(TKey key) :62
-void ConcurrentDictionary__Remove_fn(ConcurrentDictionary* __this, void* key, bool* __retval)
+// public void Remove(TKey key) :86
+void ConcurrentDictionary__Remove_fn(ConcurrentDictionary* __this, void* key)
 {
+    uType* __types[] = {
+        __this->__type->Precalced(3/*Uno.Collections.IDictionary<TKey, TValue>*/),
+    };
     uStackFrame __("Uno.Threading.ConcurrentDictionary`2", "Remove(TKey)");
+    bool ret6;
+    ::g::Uno::Collections::IDictionary::Remove_ex(uInterface((uObject*)__this, __types[0]), key, &ret6);
+}
+
+// public bool Remove(Uno.Collections.KeyValuePair<TKey, TValue> keyValue) :143
+void ConcurrentDictionary__Remove1_fn(ConcurrentDictionary* __this, void* keyValue, bool* __retval)
+{
+    uType* __types[] = {
+        __this->__type->Precalced(5/*Uno.Collections.KeyValuePair<TKey, TValue>*/),
+        __this->__type->Precalced(2/*Uno.Collections.ICollection<Uno.Collections.KeyValuePair<TKey, TValue>>*/),
+    };
+    uStackFrame __("Uno.Threading.ConcurrentDictionary`2", "Remove(Uno.Collections.KeyValuePair<TKey, TValue>)");
+    uT keyValue_(__types[0], U_ALLOCA(__types[0]->ValueSize));
     bool ret7;
+    keyValue_ = keyValue;
     ::g::Uno::Threading::Monitor::Enter(__this->_mutex);
 
     {
         try
         {
             {
-                bool __uno_retval = (::g::Uno::Collections::Dictionary__Remove_fn(uPtr(__this->_dictionary), key, &ret7), ret7);
+                bool __uno_retval = (::g::Uno::Collections::ICollection::Remove_ex(uInterface(uPtr((uObject*)__this->_dictionary), __types[1]), keyValue_, &ret7), ret7);
+                ::g::Uno::Threading::Monitor::Exit(__this->_mutex);
+                return *__retval = __uno_retval, void();
+            }
+        }
+
+        catch (const uThrowable& __t)
+        {
+            {
+                ::g::Uno::Threading::Monitor::Exit(__this->_mutex);
+            }
+                        throw __t;
+            goto __after_finally_6;
+        }
+
+        {
+            ::g::Uno::Threading::Monitor::Exit(__this->_mutex);
+        }
+        __after_finally_6:;
+    }
+}
+
+// public bool TryGetValue(TKey key, TValue& value) :61
+void ConcurrentDictionary__TryGetValue_fn(ConcurrentDictionary* __this, void* key, uTRef value, bool* __retval)
+{
+    uStackFrame __("Uno.Threading.ConcurrentDictionary`2", "TryGetValue(TKey,TValue&)");
+    bool ret8;
+    ::g::Uno::Threading::Monitor::Enter(__this->_mutex);
+
+    {
+        try
+        {
+            {
+                bool __uno_retval = (::g::Uno::Collections::Dictionary__TryGetValue_fn(uPtr(__this->_dictionary), key, value, &ret8), ret8);
                 ::g::Uno::Threading::Monitor::Exit(__this->_mutex);
                 return *__retval = __uno_retval, void();
             }
@@ -785,26 +826,17 @@ void ConcurrentDictionary__Remove_fn(ConcurrentDictionary* __this, void* key, bo
     }
 }
 
-// public bool Remove(Uno.Collections.KeyValuePair<TKey, TValue> keyValue) :120
-void ConcurrentDictionary__Remove1_fn(ConcurrentDictionary* __this, void* keyValue, bool* __retval)
+// private void Uno.Collections.IDictionary<TKey, TValue>.Add(TKey key, TValue value) :67
+void ConcurrentDictionary__UnoCollectionsIDictionaryTKeyTValueAdd_fn(ConcurrentDictionary* __this, void* key, void* value)
 {
-    uType* __types[] = {
-        __this->__type->Precalced(3/*Uno.Collections.KeyValuePair<TKey, TValue>*/),
-        __this->__type->Precalced(2/*Uno.Collections.ICollection<Uno.Collections.KeyValuePair<TKey, TValue>>*/),
-    };
-    uStackFrame __("Uno.Threading.ConcurrentDictionary`2", "Remove(Uno.Collections.KeyValuePair<TKey, TValue>)");
-    uT keyValue_(__types[0], U_ALLOCA(__types[0]->ValueSize));
-    bool ret8;
-    keyValue_ = keyValue;
+    uStackFrame __("Uno.Threading.ConcurrentDictionary`2", "Uno.Collections.IDictionary<TKey, TValue>.Add(TKey,TValue)");
     ::g::Uno::Threading::Monitor::Enter(__this->_mutex);
 
     {
         try
         {
             {
-                bool __uno_retval = (::g::Uno::Collections::ICollection::Remove_ex(uInterface(uPtr((uObject*)__this->_dictionary), __types[1]), keyValue_, &ret8), ret8);
-                ::g::Uno::Threading::Monitor::Exit(__this->_mutex);
-                return *__retval = __uno_retval, void();
+                ::g::Uno::Collections::Dictionary__Add_fn(uPtr(__this->_dictionary), key, value);
             }
         }
 
@@ -824,18 +856,22 @@ void ConcurrentDictionary__Remove1_fn(ConcurrentDictionary* __this, void* keyVal
     }
 }
 
-// public bool TryGetValue(TKey key, TValue& value) :56
-void ConcurrentDictionary__TryGetValue_fn(ConcurrentDictionary* __this, void* key, uTRef value, bool* __retval)
+// private Uno.Collections.ICollection<TKey> Uno.Collections.IDictionary<TKey, TValue>.get_Keys() :31
+void ConcurrentDictionary__UnoCollectionsIDictionaryTKeyTValueget_Keys_fn(ConcurrentDictionary* __this, uObject** __retval)
 {
-    uStackFrame __("Uno.Threading.ConcurrentDictionary`2", "TryGetValue(TKey,TValue&)");
-    bool ret9;
+    uType* __types[] = {
+        __this->__type->Precalced(6/*Uno.Collections.List<TKey>*/),
+    };
+    uStackFrame __("Uno.Threading.ConcurrentDictionary`2", "Uno.Collections.IDictionary<TKey, TValue>.get_Keys()");
     ::g::Uno::Threading::Monitor::Enter(__this->_mutex);
 
     {
         try
         {
             {
-                bool __uno_retval = (::g::Uno::Collections::Dictionary__TryGetValue_fn(uPtr(__this->_dictionary), key, value, &ret9), ret9);
+                ::g::Uno::Collections::List* result = (::g::Uno::Collections::List*)::g::Uno::Collections::List::New2(__types[0], uPtr(__this->_dictionary)->Count());
+                result->AddRange((uObject*)((::g::Uno::Collections::Dictionary__KeyCollection*)uPtr(__this->_dictionary)->Keys()));
+                uObject* __uno_retval = (uObject*)result;
                 ::g::Uno::Threading::Monitor::Exit(__this->_mutex);
                 return *__retval = __uno_retval, void();
             }
@@ -857,7 +893,116 @@ void ConcurrentDictionary__TryGetValue_fn(ConcurrentDictionary* __this, void* ke
     }
 }
 
-// public Uno.Collections.ICollection<TValue> get_Values() :39
+// private bool Uno.Collections.IDictionary<TKey, TValue>.Remove(TKey key) :73
+void ConcurrentDictionary__UnoCollectionsIDictionaryTKeyTValueRemove_fn(ConcurrentDictionary* __this, void* key, bool* __retval)
+{
+    uStackFrame __("Uno.Threading.ConcurrentDictionary`2", "Uno.Collections.IDictionary<TKey, TValue>.Remove(TKey)");
+    bool ret9;
+    ::g::Uno::Threading::Monitor::Enter(__this->_mutex);
+
+    {
+        try
+        {
+            {
+                bool __uno_retval = (::g::Uno::Collections::Dictionary__Remove_fn(uPtr(__this->_dictionary), key, &ret9), ret9);
+                ::g::Uno::Threading::Monitor::Exit(__this->_mutex);
+                return *__retval = __uno_retval, void();
+            }
+        }
+
+        catch (const uThrowable& __t)
+        {
+            {
+                ::g::Uno::Threading::Monitor::Exit(__this->_mutex);
+            }
+                        throw __t;
+            goto __after_finally_10;
+        }
+
+        {
+            ::g::Uno::Threading::Monitor::Exit(__this->_mutex);
+        }
+        __after_finally_10:;
+    }
+}
+
+// private Uno.Collections.ICollection<TValue> Uno.Collections.IDictionary<TKey, TValue>.get_Values() :47
+void ConcurrentDictionary__UnoCollectionsIDictionaryTKeyTValueget_Values_fn(ConcurrentDictionary* __this, uObject** __retval)
+{
+    uType* __types[] = {
+        __this->__type->Precalced(7/*Uno.Collections.List<TValue>*/),
+    };
+    uStackFrame __("Uno.Threading.ConcurrentDictionary`2", "Uno.Collections.IDictionary<TKey, TValue>.get_Values()");
+    ::g::Uno::Threading::Monitor::Enter(__this->_mutex);
+
+    {
+        try
+        {
+            {
+                ::g::Uno::Collections::List* result = (::g::Uno::Collections::List*)::g::Uno::Collections::List::New2(__types[0], uPtr(__this->_dictionary)->Count());
+                result->AddRange((uObject*)((::g::Uno::Collections::Dictionary__ValueCollection*)uPtr(__this->_dictionary)->Values()));
+                uObject* __uno_retval = (uObject*)result;
+                ::g::Uno::Threading::Monitor::Exit(__this->_mutex);
+                return *__retval = __uno_retval, void();
+            }
+        }
+
+        catch (const uThrowable& __t)
+        {
+            {
+                ::g::Uno::Threading::Monitor::Exit(__this->_mutex);
+            }
+                        throw __t;
+            goto __after_finally_11;
+        }
+
+        {
+            ::g::Uno::Threading::Monitor::Exit(__this->_mutex);
+        }
+        __after_finally_11:;
+    }
+}
+
+// private Uno.Collections.IEnumerator<Uno.Collections.KeyValuePair<TKey, TValue>> Uno.Collections.IEnumerable<Uno.Collections.KeyValuePair<TKey, TValue>>.GetEnumerator() :12
+void ConcurrentDictionary__UnoCollectionsIEnumerableUnoCollectionsKeyValuePairTKeyTValueGetEnumerator_fn(ConcurrentDictionary* __this, uObject** __retval)
+{
+    uType* __types[] = {
+        __this->__type->Precalced(1/*Uno.Collections.List<Uno.Collections.KeyValuePair<TKey, TValue>>.Enumerator*/),
+        __this->__type->Precalced(8/*Uno.Collections.List<Uno.Collections.KeyValuePair<TKey, TValue>>*/),
+    };
+    uStackFrame __("Uno.Threading.ConcurrentDictionary`2", "Uno.Collections.IEnumerable<Uno.Collections.KeyValuePair<TKey, TValue>>.GetEnumerator()");
+    uT ret10(__types[0], U_ALLOCA(__types[0]->ValueSize));
+    ::g::Uno::Threading::Monitor::Enter(__this->_mutex);
+
+    {
+        try
+        {
+            {
+                ::g::Uno::Collections::List* result = (::g::Uno::Collections::List*)::g::Uno::Collections::List::New2(__types[1], uPtr(__this->_dictionary)->Count());
+                result->AddRange((uObject*)__this->_dictionary);
+                uObject* __uno_retval = uBoxPtr(__types[0], (::g::Uno::Collections::List__GetEnumerator_fn(result, &ret10), ret10));
+                ::g::Uno::Threading::Monitor::Exit(__this->_mutex);
+                return *__retval = __uno_retval, void();
+            }
+        }
+
+        catch (const uThrowable& __t)
+        {
+            {
+                ::g::Uno::Threading::Monitor::Exit(__this->_mutex);
+            }
+                        throw __t;
+            goto __after_finally_12;
+        }
+
+        {
+            ::g::Uno::Threading::Monitor::Exit(__this->_mutex);
+        }
+        __after_finally_12:;
+    }
+}
+
+// public Uno.Collections.ICollection<TValue> get_Values() :58
 void ConcurrentDictionary__get_Values_fn(ConcurrentDictionary* __this, uObject** __retval)
 {
     *__retval = __this->Values();
@@ -873,7 +1018,7 @@ void ConcurrentDictionary::ctor_()
     _mutex = ::g::Uno::Object::New();
 }
 
-// public void Clear() [instance] :99
+// public void Clear() [instance] :122
 void ConcurrentDictionary::Clear()
 {
     uStackFrame __("Uno.Threading.ConcurrentDictionary`2", "Clear()");
@@ -893,17 +1038,17 @@ void ConcurrentDictionary::Clear()
                 ::g::Uno::Threading::Monitor::Exit(_mutex);
             }
                         throw __t;
-            goto __after_finally_10;
+            goto __after_finally_13;
         }
 
         {
             ::g::Uno::Threading::Monitor::Exit(_mutex);
         }
-        __after_finally_10:;
+        __after_finally_13:;
     }
 }
 
-// public int get_Count() [instance] :107
+// public int get_Count() [instance] :130
 int32_t ConcurrentDictionary::Count()
 {
     uStackFrame __("Uno.Threading.ConcurrentDictionary`2", "get_Count()");
@@ -925,119 +1070,6 @@ int32_t ConcurrentDictionary::Count()
                 ::g::Uno::Threading::Monitor::Exit(_mutex);
             }
                         throw __t;
-            goto __after_finally_11;
-        }
-
-        {
-            ::g::Uno::Threading::Monitor::Exit(_mutex);
-        }
-        __after_finally_11:;
-    }
-}
-
-// public Uno.Collections.IEnumerator<Uno.Collections.KeyValuePair<TKey, TValue>> GetEnumerator() [instance] :12
-uObject* ConcurrentDictionary::GetEnumerator()
-{
-    uType* __types[] = {
-        __type->Precalced(1/*Uno.Collections.List<Uno.Collections.KeyValuePair<TKey, TValue>>.Enumerator*/),
-        __type->Precalced(6/*Uno.Collections.List<Uno.Collections.KeyValuePair<TKey, TValue>>*/),
-    };
-    uStackFrame __("Uno.Threading.ConcurrentDictionary`2", "GetEnumerator()");
-    uT ret6(__types[0], U_ALLOCA(__types[0]->ValueSize));
-    ::g::Uno::Threading::Monitor::Enter(_mutex);
-
-    {
-        try
-        {
-            {
-                ::g::Uno::Collections::List* result = (::g::Uno::Collections::List*)::g::Uno::Collections::List::New2(__types[1], uPtr(_dictionary)->Count());
-                result->AddRange((uObject*)_dictionary);
-                uObject* __uno_retval = uBoxPtr(__types[0], (::g::Uno::Collections::List__GetEnumerator_fn(result, &ret6), ret6));
-                ::g::Uno::Threading::Monitor::Exit(_mutex);
-                return __uno_retval;
-            }
-        }
-
-        catch (const uThrowable& __t)
-        {
-            {
-                ::g::Uno::Threading::Monitor::Exit(_mutex);
-            }
-                        throw __t;
-            goto __after_finally_12;
-        }
-
-        {
-            ::g::Uno::Threading::Monitor::Exit(_mutex);
-        }
-        __after_finally_12:;
-    }
-}
-
-// public Uno.Collections.ICollection<TKey> get_Keys() [instance] :25
-uObject* ConcurrentDictionary::Keys()
-{
-    uType* __types[] = {
-        __type->Precalced(4/*Uno.Collections.List<TKey>*/),
-    };
-    uStackFrame __("Uno.Threading.ConcurrentDictionary`2", "get_Keys()");
-    ::g::Uno::Threading::Monitor::Enter(_mutex);
-
-    {
-        try
-        {
-            {
-                ::g::Uno::Collections::List* result = (::g::Uno::Collections::List*)::g::Uno::Collections::List::New2(__types[0], uPtr(_dictionary)->Count());
-                result->AddRange((uObject*)((::g::Uno::Collections::Dictionary__KeyCollection*)uPtr(_dictionary)->Keys()));
-                uObject* __uno_retval = (uObject*)result;
-                ::g::Uno::Threading::Monitor::Exit(_mutex);
-                return __uno_retval;
-            }
-        }
-
-        catch (const uThrowable& __t)
-        {
-            {
-                ::g::Uno::Threading::Monitor::Exit(_mutex);
-            }
-                        throw __t;
-            goto __after_finally_13;
-        }
-
-        {
-            ::g::Uno::Threading::Monitor::Exit(_mutex);
-        }
-        __after_finally_13:;
-    }
-}
-
-// public Uno.Collections.ICollection<TValue> get_Values() [instance] :39
-uObject* ConcurrentDictionary::Values()
-{
-    uType* __types[] = {
-        __type->Precalced(5/*Uno.Collections.List<TValue>*/),
-    };
-    uStackFrame __("Uno.Threading.ConcurrentDictionary`2", "get_Values()");
-    ::g::Uno::Threading::Monitor::Enter(_mutex);
-
-    {
-        try
-        {
-            {
-                ::g::Uno::Collections::List* result = (::g::Uno::Collections::List*)::g::Uno::Collections::List::New2(__types[0], uPtr(_dictionary)->Count());
-                result->AddRange((uObject*)((::g::Uno::Collections::Dictionary__ValueCollection*)uPtr(_dictionary)->Values()));
-                uObject* __uno_retval = (uObject*)result;
-                ::g::Uno::Threading::Monitor::Exit(_mutex);
-                return __uno_retval;
-            }
-        }
-
-        catch (const uThrowable& __t)
-        {
-            {
-                ::g::Uno::Threading::Monitor::Exit(_mutex);
-            }
-                        throw __t;
             goto __after_finally_14;
         }
 
@@ -1046,6 +1078,36 @@ uObject* ConcurrentDictionary::Values()
         }
         __after_finally_14:;
     }
+}
+
+// public Uno.Collections.IEnumerator<Uno.Collections.KeyValuePair<TKey, TValue>> GetEnumerator() [instance] :23
+uObject* ConcurrentDictionary::GetEnumerator()
+{
+    uType* __types[] = {
+        __type->Precalced(4/*Uno.Collections.IEnumerable<Uno.Collections.KeyValuePair<TKey, TValue>>*/),
+    };
+    uStackFrame __("Uno.Threading.ConcurrentDictionary`2", "GetEnumerator()");
+    return (uObject*)::g::Uno::Collections::IEnumerable::GetEnumerator(uInterface((uObject*)this, __types[0]));
+}
+
+// public Uno.Collections.ICollection<TKey> get_Keys() [instance] :42
+uObject* ConcurrentDictionary::Keys()
+{
+    uType* __types[] = {
+        __type->Precalced(3/*Uno.Collections.IDictionary<TKey, TValue>*/),
+    };
+    uStackFrame __("Uno.Threading.ConcurrentDictionary`2", "get_Keys()");
+    return (uObject*)::g::Uno::Collections::IDictionary::Keys(uInterface((uObject*)this, __types[0]));
+}
+
+// public Uno.Collections.ICollection<TValue> get_Values() [instance] :58
+uObject* ConcurrentDictionary::Values()
+{
+    uType* __types[] = {
+        __type->Precalced(3/*Uno.Collections.IDictionary<TKey, TValue>*/),
+    };
+    uStackFrame __("Uno.Threading.ConcurrentDictionary`2", "get_Values()");
+    return (uObject*)::g::Uno::Collections::IDictionary::Values(uInterface((uObject*)this, __types[0]));
 }
 
 // public generated ConcurrentDictionary New() [static] :6
@@ -1057,18 +1119,18 @@ ConcurrentDictionary* ConcurrentDictionary::New1(uType* __type)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Threading\1.7.1\ConcurrentQueue.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Threading\1.8.0\ConcurrentQueue.uno
 // -------------------------------------------------------------------------------------------
 
 // public sealed class ConcurrentQueue<T> :8
 // {
 static void ConcurrentQueue_build(uType* type)
 {
-    ::TYPES[5] = ::g::Uno::Collections::Queue_typeof();
+    ::TYPES[7] = ::g::Uno::Collections::Queue_typeof();
     type->SetPrecalc(
         ::g::Uno::Collections::Queue_typeof()->MakeType(type->T(0), NULL));
     type->SetFields(0,
-        ::TYPES[5/*Uno.Collections.Queue`1*/]->MakeType(type->T(0), NULL), offsetof(ConcurrentQueue, _queue), 0,
+        ::TYPES[7/*Uno.Collections.Queue`1*/]->MakeType(type->T(0), NULL), offsetof(ConcurrentQueue, _queue), 0,
         uObject_typeof(), offsetof(ConcurrentQueue, _mutex), 0);
     type->Reflection.SetFunctions(5,
         new uFunction("get_Count", NULL, (void*)ConcurrentQueue__get_Count_fn, 0, false, ::g::Uno::Int_typeof(), 0),
@@ -1247,7 +1309,7 @@ ConcurrentQueue* ConcurrentQueue::New1(uType* __type)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Threading\1.7.1\ThreadPool.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Threading\1.8.0\ThreadPool.uno
 // --------------------------------------------------------------------------------------
 
 // private sealed class ThreadPool.DefaultWorkItem :15
@@ -1311,7 +1373,7 @@ ThreadPool__DefaultWorkItem* ThreadPool__DefaultWorkItem::New1(uDelegate* action
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Threading\1.7.1\EventWaitHandle.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Threading\1.8.0\EventWaitHandle.uno
 // -------------------------------------------------------------------------------------------
 
 // public enum EventResetMode :6
@@ -1327,7 +1389,7 @@ uEnumType* EventResetMode_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Threading\1.7.1\EventWaitHandle.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Threading\1.8.0\EventWaitHandle.uno
 // -------------------------------------------------------------------------------------------
 
 // public class EventWaitHandle :13
@@ -1437,7 +1499,7 @@ bool EventWaitHandle::WaitOne1(int32_t timeoutMillis)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Threading\1.7.1\Future.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Threading\1.8.0\Future.uno
 // ----------------------------------------------------------------------------------
 
 // public abstract class Future :7
@@ -1506,7 +1568,7 @@ void Future::State(int32_t value)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Threading\1.7.1\Future.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Threading\1.8.0\Future.uno
 // ----------------------------------------------------------------------------------
 
 // public abstract class Future<T> :15
@@ -1647,7 +1709,7 @@ void Future1__Invoke_fn(Future1* __this, uType* __type, uDelegate* action, void*
     };
     uStackFrame __("Uno.Threading.Future`1", "Invoke`1(Uno.Action<T1>,T1)");
     Future1__Closure* ret7;
-    ::g::Uno::Threading::IDispatcher::Invoke(uInterface(uPtr(__this->_dispatcher), ::g::Uno::Threading::IDispatcher_typeof()), uDelegate::New(::TYPES[11/*Uno.Action*/], (void*)Future1__Closure__Run_fn, (Future1__Closure__New1_fn(__types[0], action, arg, &ret7), ret7)));
+    ::g::Uno::Threading::IDispatcher::Invoke(uInterface(uPtr(__this->_dispatcher), ::g::Uno::Threading::IDispatcher_typeof()), uDelegate::New(::TYPES[13/*Uno.Action*/], (void*)Future1__Closure__Run_fn, (Future1__Closure__New1_fn(__types[0], action, arg, &ret7), ret7)));
 }
 
 // public Uno.Threading.Future<T> Then(Uno.Action<T> action) :113
@@ -1686,7 +1748,7 @@ void Future1::ctor_2(uObject* dispatcher)
 
     _dispatcher = dispatcher;
     State(0);
-    _catchables = ((::g::Uno::Collections::Queue*)::g::Uno::Collections::Queue::New1(::TYPES[5/*Uno.Collections.Queue`1*/]->MakeType(::g::Uno::Action1_typeof()->MakeType(::TYPES[7/*Uno.Exception*/], NULL), NULL)));
+    _catchables = ((::g::Uno::Collections::Queue*)::g::Uno::Collections::Queue::New1(::TYPES[7/*Uno.Collections.Queue`1*/]->MakeType(::g::Uno::Action1_typeof()->MakeType(::TYPES[9/*Uno.Exception*/], NULL), NULL)));
     _chainables = ((::g::Uno::Collections::Queue*)::g::Uno::Collections::Queue::New1(__types[0]));
     _thenables = ((::g::Uno::Collections::Queue*)::g::Uno::Collections::Queue::New1(__types[1]));
 }
@@ -1797,7 +1859,7 @@ Future1* Future1::Then1(uDelegate* fulfilled, uDelegate* rejected)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Threading\1.7.1\FutureState.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Threading\1.8.0\FutureState.uno
 // ---------------------------------------------------------------------------------------
 
 // public enum FutureState :7
@@ -1814,7 +1876,7 @@ uEnumType* FutureState_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Threading\1.7.1\IDispatcher.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Threading\1.8.0\IDispatcher.uno
 // ---------------------------------------------------------------------------------------
 
 // public abstract interface IDispatcher :5
@@ -1831,7 +1893,7 @@ uInterfaceType* IDispatcher_typeof()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Threading\1.7.1\IDispatcher.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Threading\1.8.0\IDispatcher.uno
 // ---------------------------------------------------------------------------------------
 
 // public static class IDispatcherExtensions :10
@@ -1866,11 +1928,11 @@ void IDispatcherExtensions__Invoke1_fn(uType* __type, uObject* dispatcher, uDele
     };
     uStackFrame __("Uno.Threading.IDispatcherExtensions", "Invoke1`1(Uno.Threading.IDispatcher,Uno.Action<T>,T)");
     IDispatcherExtensions__Arg1Invoke* ret1;
-    ::g::Uno::Threading::IDispatcher::Invoke(uInterface(uPtr(dispatcher), ::g::Uno::Threading::IDispatcher_typeof()), uDelegate::New(::TYPES[11/*Uno.Action*/], (void*)IDispatcherExtensions__Arg1Invoke__Run_fn, (IDispatcherExtensions__Arg1Invoke__New1_fn(__types[0], action, arg, &ret1), ret1)));
+    ::g::Uno::Threading::IDispatcher::Invoke(uInterface(uPtr(dispatcher), ::g::Uno::Threading::IDispatcher_typeof()), uDelegate::New(::TYPES[13/*Uno.Action*/], (void*)IDispatcherExtensions__Arg1Invoke__Run_fn, (IDispatcherExtensions__Arg1Invoke__New1_fn(__types[0], action, arg, &ret1), ret1)));
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Threading\1.7.1\Tasks\Tasks.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Threading\1.8.0\Tasks\Tasks.uno
 // ---------------------------------------------------------------------------------------
 
 // internal abstract interface ITaskScheduler :205
@@ -1885,7 +1947,7 @@ uInterfaceType* ITaskScheduler_typeof()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\Threading\MainThreadAttribute.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\Threading\MainThreadAttribute.uno
 // --------------------------------------------------------------------------------------------------------------
 
 // public sealed class MainThreadAttribute :5
@@ -1938,7 +2000,7 @@ MainThreadAttribute* MainThreadAttribute::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Threading\1.7.1\ManualResetEvent.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Threading\1.8.0\ManualResetEvent.uno
 // --------------------------------------------------------------------------------------------
 
 // public sealed class ManualResetEvent :6
@@ -1996,7 +2058,7 @@ ManualResetEvent* ManualResetEvent::New2(bool initialState)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\Threading\Monitor.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\Threading\Monitor.uno
 // --------------------------------------------------------------------------------------------------
 
 // public static class Monitor :8
@@ -2053,7 +2115,7 @@ void Monitor::Exit(uObject* obj)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Threading\1.7.1\Mutex.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Threading\1.8.0\Mutex.uno
 // ---------------------------------------------------------------------------------
 
 // public sealed class Mutex :8
@@ -2164,7 +2226,7 @@ Mutex* Mutex::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Threading\1.7.1\Implementation\Posix\PthreadHelpers.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Threading\1.8.0\Implementation\Posix\PthreadHelpers.uno
 // ---------------------------------------------------------------------------------------------------------------
 
 // public struct PthreadHelpers.MutexHandle :40
@@ -2188,7 +2250,7 @@ uStructType* PthreadHelpers__MutexHandle_typeof()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Threading\1.7.1\ThreadPool.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Threading\1.8.0\ThreadPool.uno
 // --------------------------------------------------------------------------------------
 
 // private sealed class ThreadPool.ParameterizedWorkItem<TState> :31
@@ -2227,14 +2289,14 @@ void ThreadPool__ParameterizedWorkItem__Invoke_fn(ThreadPool__ParameterizedWorkI
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Threading\1.7.1\Promise.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Threading\1.8.0\Promise.uno
 // -----------------------------------------------------------------------------------
 
 // public class Promise<T> :48
 // {
 static void Promise_build(uType* type)
 {
-    ::TYPES[6] = ::g::Uno::Threading::TaskFuture_typeof();
+    ::TYPES[8] = ::g::Uno::Threading::TaskFuture_typeof();
     type->SetBase(::g::Uno::Threading::Future1_typeof()->MakeType(type->T(0), NULL));
     type->SetPrecalc(
         ::g::Uno::Threading::TaskFuture_typeof()->MakeType(type->T(0), NULL));
@@ -2421,7 +2483,7 @@ Promise* Promise::New3(uType* __type, uObject* dispatcher)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Threading\1.7.1\Implementation\Posix\PthreadHelpers.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Threading\1.8.0\Implementation\Posix\PthreadHelpers.uno
 // ---------------------------------------------------------------------------------------------------------------
 
 // internal static extern class PthreadHelpers :5
@@ -2622,7 +2684,7 @@ bool PthreadHelpers::WaitOneResetEvent(uPosixResetEvent * resetEventHandle, int3
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Threading\1.7.1\Implementation\Posix\PthreadHelpers.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Threading\1.8.0\Implementation\Posix\PthreadHelpers.uno
 // ---------------------------------------------------------------------------------------------------------------
 
 // public struct PthreadHelpers.ResetEventHandle :108
@@ -2646,7 +2708,7 @@ uStructType* PthreadHelpers__ResetEventHandle_typeof()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Threading\1.7.1\SyncDispatcher.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Threading\1.8.0\SyncDispatcher.uno
 // ------------------------------------------------------------------------------------------
 
 // internal sealed class SyncDispatcher :7
@@ -2712,16 +2774,16 @@ SyncDispatcher* SyncDispatcher::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Threading\1.7.1\Tasks\Tasks.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Threading\1.8.0\Tasks\Tasks.uno
 // ---------------------------------------------------------------------------------------
 
 // internal sealed class Task :64
 // {
 static void Task_build(uType* type)
 {
-    ::TYPES[7] = ::g::Uno::Exception_typeof();
-    ::TYPES[8] = ::TYPES[7/*Uno.Exception*/]->Array();
-    ::TYPES[9] = ::g::Uno::Threading::ITaskScheduler_typeof();
+    ::TYPES[9] = ::g::Uno::Exception_typeof();
+    ::TYPES[10] = ::TYPES[9/*Uno.Exception*/]->Array();
+    ::TYPES[11] = ::g::Uno::Threading::ITaskScheduler_typeof();
     type->SetInterfaces(
         ::g::Uno::IDisposable_typeof(), offsetof(Task_type, interface0));
     type->SetFields(0,
@@ -2881,7 +2943,7 @@ void Task::Execute()
             }
             ::g::Uno::Exception* e = __t.Exception;
             Status(1);
-            Exception(::g::Uno::AggregateException::New7(uArray::Init< ::g::Uno::Exception*>(::TYPES[8/*Uno.Exception[]*/], 1, e)));
+            Exception(::g::Uno::AggregateException::New7(uArray::Init< ::g::Uno::Exception*>(::TYPES[10/*Uno.Exception[]*/], 1, e)));
             goto __after_finally_18;
         }
 
@@ -2940,12 +3002,12 @@ Task* Task::Run1(uDelegate* taskDelegate, uObject* scheduler)
 {
     uStackFrame __("Uno.Threading.Task", "Run(Uno.Threading.TaskDelegate,Uno.Threading.ITaskScheduler)");
     Task* task = Task::New1(taskDelegate);
-    ::g::Uno::Threading::ITaskScheduler::ScheduleTask(uInterface(uPtr(scheduler), ::TYPES[9/*Uno.Threading.ITaskScheduler*/]), task);
+    ::g::Uno::Threading::ITaskScheduler::ScheduleTask(uInterface(uPtr(scheduler), ::TYPES[11/*Uno.Threading.ITaskScheduler*/]), task);
     return task;
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Threading\1.7.1\Tasks\Tasks.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Threading\1.8.0\Tasks\Tasks.uno
 // ---------------------------------------------------------------------------------------
 
 // internal delegate void TaskDelegate(Uno.Threading.CancellationToken cancellationToken) :60
@@ -2960,15 +3022,15 @@ uDelegateType* TaskDelegate_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Threading\1.7.1\Promise.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Threading\1.8.0\Promise.uno
 // -----------------------------------------------------------------------------------
 
 // internal sealed class TaskFuture<T> :93
 // {
 static void TaskFuture_build(uType* type)
 {
-    ::TYPES[10] = ::g::Uno::Threading::TaskDelegate_typeof();
-    ::TYPES[7] = ::g::Uno::Exception_typeof();
+    ::TYPES[12] = ::g::Uno::Threading::TaskDelegate_typeof();
+    ::TYPES[9] = ::g::Uno::Exception_typeof();
     type->SetBase(::g::Uno::Threading::Future1_typeof()->MakeType(type->T(0), NULL));
     type->SetInterfaces(
         ::g::Uno::IDisposable_typeof(), offsetof(::g::Uno::Threading::Future_type, interface0));
@@ -3056,7 +3118,7 @@ void TaskFuture::ctor_3(uDelegate* func)
     uStackFrame __("Uno.Threading.TaskFuture`1", ".ctor(Uno.Func<T>)");
     ctor_1();
     _func = func;
-    _task = ::g::Uno::Threading::Task::Run(uDelegate::New(::TYPES[10/*Uno.Threading.TaskDelegate*/], (void*)TaskFuture__Invoke1_fn, this));
+    _task = ::g::Uno::Threading::Task::Run(uDelegate::New(::TYPES[12/*Uno.Threading.TaskDelegate*/], (void*)TaskFuture__Invoke1_fn, this));
 }
 
 // public TaskFuture(Uno.Threading.IDispatcher dispatcher, Uno.Func<T> func) [instance] :99
@@ -3065,7 +3127,7 @@ void TaskFuture::ctor_4(uObject* dispatcher, uDelegate* func)
     uStackFrame __("Uno.Threading.TaskFuture`1", ".ctor(Uno.Threading.IDispatcher,Uno.Func<T>)");
     ctor_2(dispatcher);
     _func = func;
-    _task = ::g::Uno::Threading::Task::Run(uDelegate::New(::TYPES[10/*Uno.Threading.TaskDelegate*/], (void*)TaskFuture__Invoke1_fn, this));
+    _task = ::g::Uno::Threading::Task::Run(uDelegate::New(::TYPES[12/*Uno.Threading.TaskDelegate*/], (void*)TaskFuture__Invoke1_fn, this));
 }
 
 // private void Invoke(Uno.Threading.CancellationToken cancellationToken) [instance] :111
@@ -3111,7 +3173,7 @@ TaskFuture* TaskFuture::New2(uType* __type, uObject* dispatcher, uDelegate* func
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Threading\1.7.1\Tasks\Tasks.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Threading\1.8.0\Tasks\Tasks.uno
 // ---------------------------------------------------------------------------------------
 
 // internal enum TaskStatus :51
@@ -3129,7 +3191,7 @@ uEnumType* TaskStatus_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Threading\1.7.1\Thread.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Threading\1.8.0\Thread.uno
 // ----------------------------------------------------------------------------------
 
 // public sealed class Thread :19
@@ -3291,7 +3353,7 @@ Thread* Thread::CurrentThread()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Threading\1.7.1\Implementation\Posix\PthreadHelpers.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Threading\1.8.0\Implementation\Posix\PthreadHelpers.uno
 // ---------------------------------------------------------------------------------------------------------------
 
 // public struct PthreadHelpers.ThreadHandle :10
@@ -3315,7 +3377,7 @@ uStructType* PthreadHelpers__ThreadHandle_typeof()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Threading\1.7.1\ThreadPool.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Threading\1.8.0\ThreadPool.uno
 // --------------------------------------------------------------------------------------
 
 // public sealed class ThreadPool :7
@@ -3489,15 +3551,15 @@ ThreadPool* ThreadPool::New1(int32_t poolSize)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Threading\1.7.1\Tasks\Tasks.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Threading\1.8.0\Tasks\Tasks.uno
 // ---------------------------------------------------------------------------------------
 
 // internal sealed class ThreadPoolTaskScheduler :210
 // {
 static void ThreadPoolTaskScheduler_build(uType* type)
 {
-    ::TYPES[11] = ::g::Uno::Action_typeof();
-    ::TYPES[12] = ::g::Uno::Platform::ApplicationStateTransitionHandler_typeof();
+    ::TYPES[13] = ::g::Uno::Action_typeof();
+    ::TYPES[14] = ::g::Uno::Platform::ApplicationStateTransitionHandler_typeof();
     type->SetDependencies(
         ::g::Uno::Platform::CoreApp_typeof());
     type->SetInterfaces(
@@ -3583,7 +3645,7 @@ void ThreadPoolTaskScheduler::Dispose()
 void ThreadPoolTaskScheduler::ScheduleTask(::g::Uno::Threading::Task* task)
 {
     uStackFrame __("Uno.Threading.ThreadPoolTaskScheduler", "ScheduleTask(Uno.Threading.Task)");
-    uPtr(_threadPool)->QueueAction(uDelegate::New(::TYPES[11/*Uno.Action*/], (void*)::g::Uno::Threading::Task__Execute_fn, uPtr(task)));
+    uPtr(_threadPool)->QueueAction(uDelegate::New(::TYPES[13/*Uno.Action*/], (void*)::g::Uno::Threading::Task__Execute_fn, uPtr(task)));
 }
 
 // public ThreadPoolTaskScheduler New() [static] :235
@@ -3610,14 +3672,14 @@ ThreadPoolTaskScheduler* ThreadPoolTaskScheduler::Default()
     if (ThreadPoolTaskScheduler::_default_ == NULL)
     {
         ThreadPoolTaskScheduler::_default_ = ThreadPoolTaskScheduler::New1();
-        ::g::Uno::Platform::CoreApp::add_Terminating(uDelegate::New(::TYPES[12/*Uno.Platform.ApplicationStateTransitionHandler*/], (void*)ThreadPoolTaskScheduler__OnAppTerminating_fn));
+        ::g::Uno::Platform::CoreApp::add_Terminating(uDelegate::New(::TYPES[14/*Uno.Platform.ApplicationStateTransitionHandler*/], (void*)ThreadPoolTaskScheduler__OnAppTerminating_fn));
     }
 
     return ThreadPoolTaskScheduler::_default_;
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Threading\1.7.1\Thread.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Threading\1.8.0\Thread.uno
 // ----------------------------------------------------------------------------------
 
 // public delegate void ThreadStart() :8
@@ -3631,7 +3693,7 @@ uDelegateType* ThreadStart_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Threading\1.7.1\Thread.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Threading\1.8.0\Thread.uno
 // ----------------------------------------------------------------------------------
 
 // public sealed class ThreadStateException :11
@@ -3685,7 +3747,7 @@ ThreadStateException* ThreadStateException::New4(uString* message)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Threading\1.7.1\ThreadPool.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Threading\1.8.0\ThreadPool.uno
 // --------------------------------------------------------------------------------------
 
 // private abstract class ThreadPool.WorkItem :10

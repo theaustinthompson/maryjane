@@ -11,10 +11,16 @@
 #include <Fuse.PreviewStateData.h>
 #include <Fuse.Properties.h>
 #include <Fuse.PropertyHandle.h>
+#include <Fuse.Reactive.Expression.h>
+#include <Fuse.Reactive.IExpression.h>
+#include <Fuse.Reactive.JavaScr-6ae501cc.h>
+#include <Fuse.Reactive.VarArgFunction.h>
+#include <Fuse.Reactive.Vector.h>
 #include <Fuse.Scripting.FileModule.h>
 #include <Fuse.Scripting.Module.h>
 #include <Fuse.Visual.h>
 #include <Uno.Bool.h>
+#include <Uno.Int.h>
 #include <Uno.IO.BundleFile.h>
 #include <Uno.Object.h>
 #include <Uno.String.h>
@@ -27,7 +33,7 @@ namespace g{
 namespace Fuse{
 namespace Models{
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Models\1.7.4\ModelJavaScript.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Models\1.8.1\ModelJavaScript.uno
 // -----------------------------------------------------------------------------------------
 
 // private sealed class ModelJavaScript.ModelData :15
@@ -36,7 +42,9 @@ static void ModelJavaScript__ModelData_build(uType* type)
 {
     type->SetFields(0,
         ::g::Uno::String_typeof(), offsetof(ModelJavaScript__ModelData, ModulePath), 0,
-        ::g::Uno::UX::NameTable_typeof(), offsetof(ModelJavaScript__ModelData, NameTable), 0);
+        ::g::Uno::UX::NameTable_typeof(), offsetof(ModelJavaScript__ModelData, NameTable), 0,
+        ::g::Fuse::Reactive::IExpression_typeof(), offsetof(ModelJavaScript__ModelData, Arguments), 0,
+        ::g::Uno::Bool_typeof(), offsetof(ModelJavaScript__ModelData, HasArguments), 0);
 }
 
 uType* ModelJavaScript__ModelData_typeof()
@@ -45,7 +53,7 @@ uType* ModelJavaScript__ModelData_typeof()
     if (type != NULL) return type;
 
     uTypeOptions options;
-    options.FieldCount = 2;
+    options.FieldCount = 4;
     options.ObjectSize = sizeof(ModelJavaScript__ModelData);
     options.TypeSize = sizeof(uType);
     type = uClassType::New("Fuse.Models.ModelJavaScript.ModelData", options);
@@ -80,7 +88,7 @@ ModelJavaScript__ModelData* ModelJavaScript__ModelData::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Models\1.7.4\ModelJavaScript.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Models\1.8.1\ModelJavaScript.uno
 // -----------------------------------------------------------------------------------------
 
 // public sealed class ModelJavaScript :13
@@ -109,11 +117,17 @@ static void ModelJavaScript_build(uType* type)
     type->SetFields(24,
         ::g::Uno::String_typeof(), offsetof(ModelJavaScript, _previewStateModelId), 0,
         ::g::Uno::String_typeof(), offsetof(ModelJavaScript, _modulePath), 0,
+        ::g::Fuse::Reactive::IExpression_typeof(), offsetof(ModelJavaScript, _args), 0,
+        ::g::Uno::Bool_typeof(), offsetof(ModelJavaScript, _hasArgs), 0,
         ::g::Fuse::PropertyHandle_typeof(), (uintptr_t)&ModelJavaScript::_modelHandle_, uFieldFlagsStatic);
-    type->Reflection.SetFunctions(4,
+    type->Reflection.SetFunctions(8,
         new uFunction("CreateFromPreviewState", NULL, (void*)ModelJavaScript__CreateFromPreviewState_fn, 0, true, type, 2, ::g::Fuse::Visual_typeof(), ::g::Uno::String_typeof()),
+        new uFunction("GetModel", NULL, (void*)ModelJavaScript__GetModel_fn, 0, true, ::g::Uno::String_typeof(), 1, ::g::Fuse::Visual_typeof()),
+        new uFunction("GetModelArgs", NULL, (void*)ModelJavaScript__GetModelArgs_fn, 0, true, ::g::Fuse::Reactive::IExpression_typeof(), 1, ::g::Fuse::Visual_typeof()),
+        new uFunction("GetModelNameTable", NULL, (void*)ModelJavaScript__GetModelNameTable_fn, 0, true, ::g::Uno::UX::NameTable_typeof(), 1, ::g::Fuse::Visual_typeof()),
         new uFunction("SetAppModel", NULL, (void*)ModelJavaScript__SetAppModel_fn, 0, true, uVoid_typeof(), 2, ::g::Fuse::IRootVisualProvider_typeof(), ::g::Uno::String_typeof()),
         new uFunction("SetModel", NULL, (void*)ModelJavaScript__SetModel_fn, 0, true, uVoid_typeof(), 2, ::g::Fuse::Visual_typeof(), ::g::Uno::String_typeof()),
+        new uFunction("SetModelArgs", NULL, (void*)ModelJavaScript__SetModelArgs_fn, 0, true, uVoid_typeof(), 2, ::g::Fuse::Visual_typeof(), ::g::Fuse::Reactive::IExpression_typeof()),
         new uFunction("SetModelNameTable", NULL, (void*)ModelJavaScript__SetModelNameTable_fn, 0, true, uVoid_typeof(), 2, ::g::Fuse::Visual_typeof(), ::g::Uno::UX::NameTable_typeof()));
 }
 
@@ -124,15 +138,14 @@ ModelJavaScript_type* ModelJavaScript_typeof()
 
     uTypeOptions options;
     options.BaseDefinition = ::g::Fuse::Reactive::JavaScript_typeof();
-    options.FieldCount = 27;
+    options.FieldCount = 29;
     options.InterfaceCount = 11;
     options.ObjectSize = sizeof(ModelJavaScript);
     options.TypeSize = sizeof(ModelJavaScript_type);
     type = (ModelJavaScript_type*)uClassType::New("Fuse.Models.ModelJavaScript", options);
     type->fp_build_ = ModelJavaScript_build;
     type->fp_cctor_ = ModelJavaScript__cctor_1_fn;
-    type->fp_OnRooted = (void(*)(::g::Fuse::Node*))ModelJavaScript__OnRooted_fn;
-    type->fp_OnUnrooted = (void(*)(::g::Fuse::Node*))ModelJavaScript__OnUnrooted_fn;
+    type->fp_OnBeforeSubscribeToDependenciesAndDispatchEvaluate = (void(*)(::g::Fuse::Reactive::JavaScript*))ModelJavaScript__OnBeforeSubscribeToDependenciesAndDispatchEvaluate_fn;
     type->interface10.fp_Save = (void(*)(uObject*, ::g::Fuse::PreviewStateData*))ModelJavaScript__FuseIPreviewStateSaverSave_fn;
     type->interface9.fp_Subscribe = (void(*)(uObject*, uObject*, uString*, uObject*, uObject**))::g::Fuse::Reactive::JavaScript__FuseReactiveIContextSubscribe_fn;
     type->interface9.fp_SubscribeResource = (void(*)(uObject*, uObject*, uString*, uObject*, uObject**))::g::Fuse::Reactive::JavaScript__FuseReactiveIContextSubscribeResource_fn;
@@ -159,31 +172,25 @@ ModelJavaScript_type* ModelJavaScript_typeof()
     return type;
 }
 
-// internal ModelJavaScript(Uno.UX.NameTable nt, string modulePath, string previewStateId) :129
-void ModelJavaScript__ctor_4_fn(ModelJavaScript* __this, ::g::Uno::UX::NameTable* nt, uString* modulePath, uString* previewStateId)
+// private ModelJavaScript(Fuse.Models.ModelJavaScript.ModelData md, [string previewStateId]) :192
+void ModelJavaScript__ctor_4_fn(ModelJavaScript* __this, ModelJavaScript__ModelData* md, uString* previewStateId)
 {
-    __this->ctor_4(nt, modulePath, previewStateId);
+    __this->ctor_4(md, previewStateId);
 }
 
-// private static void Complete(Fuse.Models.ModelJavaScript.ModelData md, Fuse.Visual v) :40
-void ModelJavaScript__Complete_fn(ModelJavaScript__ModelData* md, ::g::Fuse::Visual* v)
-{
-    ModelJavaScript::Complete(md, v);
-}
-
-// public static Fuse.Models.ModelJavaScript CreateFromPreviewState(Fuse.Visual where, string modulePath) :106
+// public static Fuse.Models.ModelJavaScript CreateFromPreviewState(Fuse.Visual where, string modulePath) :162
 void ModelJavaScript__CreateFromPreviewState_fn(::g::Fuse::Visual* where, uString* modulePath, ModelJavaScript** __retval)
 {
     *__retval = ModelJavaScript::CreateFromPreviewState(where, modulePath);
 }
 
-// private void Dispose() :161
+// private void Dispose() :220
 void ModelJavaScript__Dispose_fn(ModelJavaScript* __this)
 {
     __this->Dispose();
 }
 
-// private void Fuse.IPreviewStateSaver.Save(Fuse.PreviewStateData data) :155
+// private void Fuse.IPreviewStateSaver.Save(Fuse.PreviewStateData data) :214
 void ModelJavaScript__FuseIPreviewStateSaverSave_fn(ModelJavaScript* __this, ::g::Fuse::PreviewStateData* data)
 {
     uStackFrame __("Fuse.Models.ModelJavaScript", "Fuse.IPreviewStateSaver.Save(Fuse.PreviewStateData)");
@@ -191,17 +198,47 @@ void ModelJavaScript__FuseIPreviewStateSaverSave_fn(ModelJavaScript* __this, ::g
     uPtr(data)->Set(__this->_previewStateModelId, __this);
 }
 
-// internal ModelJavaScript New(Uno.UX.NameTable nt, string modulePath, string previewStateId) :129
-void ModelJavaScript__New3_fn(::g::Uno::UX::NameTable* nt, uString* modulePath, uString* previewStateId, ModelJavaScript** __retval)
+// private string GenerateArgsStringAndPopulateDependencies() :116
+void ModelJavaScript__GenerateArgsStringAndPopulateDependencies_fn(ModelJavaScript* __this, uString** __retval)
 {
-    *__retval = ModelJavaScript::New3(nt, modulePath, previewStateId);
+    *__retval = __this->GenerateArgsStringAndPopulateDependencies();
 }
 
-// protected override sealed void OnRooted() :138
-void ModelJavaScript__OnRooted_fn(ModelJavaScript* __this)
+// public static string GetModel(Fuse.Visual v) :34
+void ModelJavaScript__GetModel_fn(::g::Fuse::Visual* v, uString** __retval)
 {
-    uStackFrame __("Fuse.Models.ModelJavaScript", "OnRooted()");
-    ::g::Fuse::Reactive::JavaScript__OnRooted_fn(__this);
+    *__retval = ModelJavaScript::GetModel(v);
+}
+
+// public static Fuse.Reactive.IExpression GetModelArgs(Fuse.Visual v) :63
+void ModelJavaScript__GetModelArgs_fn(::g::Fuse::Visual* v, uObject** __retval)
+{
+    *__retval = ModelJavaScript::GetModelArgs(v);
+}
+
+// public static Uno.UX.NameTable GetModelNameTable(Fuse.Visual v) :48
+void ModelJavaScript__GetModelNameTable_fn(::g::Fuse::Visual* v, ::g::Uno::UX::NameTable** __retval)
+{
+    *__retval = ModelJavaScript::GetModelNameTable(v);
+}
+
+// private static Fuse.Models.ModelJavaScript.ModelData GetOrCreateModelData(Fuse.Visual v) :79
+void ModelJavaScript__GetOrCreateModelData_fn(::g::Fuse::Visual* v, ModelJavaScript__ModelData** __retval)
+{
+    *__retval = ModelJavaScript::GetOrCreateModelData(v);
+}
+
+// private ModelJavaScript New(Fuse.Models.ModelJavaScript.ModelData md, [string previewStateId]) :192
+void ModelJavaScript__New3_fn(ModelJavaScript__ModelData* md, uString* previewStateId, ModelJavaScript** __retval)
+{
+    *__retval = ModelJavaScript::New3(md, previewStateId);
+}
+
+// protected override sealed void OnBeforeSubscribeToDependenciesAndDispatchEvaluate() :202
+void ModelJavaScript__OnBeforeSubscribeToDependenciesAndDispatchEvaluate_fn(ModelJavaScript* __this)
+{
+    uStackFrame __("Fuse.Models.ModelJavaScript", "OnBeforeSubscribeToDependenciesAndDispatchEvaluate()");
+    __this->SetupModel();
 
     if (::g::Uno::String::op_Inequality(__this->_previewStateModelId, NULL))
     {
@@ -212,51 +249,63 @@ void ModelJavaScript__OnRooted_fn(ModelJavaScript* __this)
     }
 }
 
-// protected override sealed void OnUnrooted() :150
-void ModelJavaScript__OnUnrooted_fn(ModelJavaScript* __this)
+// private static void OnModelDataChanged(Fuse.Models.ModelJavaScript.ModelData md, Fuse.Visual v) :68
+void ModelJavaScript__OnModelDataChanged_fn(ModelJavaScript__ModelData* md, ::g::Fuse::Visual* v)
 {
-    uStackFrame __("Fuse.Models.ModelJavaScript", "OnUnrooted()");
-    ::g::Fuse::Reactive::JavaScript__OnUnrooted_fn(__this);
+    ModelJavaScript::OnModelDataChanged(md, v);
 }
 
-// public static void SetAppModel(Fuse.IRootVisualProvider rootVisualProvider, string modulePath) :70
+// public static void SetAppModel(Fuse.IRootVisualProvider rootVisualProvider, string modulePath) :92
 void ModelJavaScript__SetAppModel_fn(uObject* rootVisualProvider, uString* modulePath)
 {
     ModelJavaScript::SetAppModel(rootVisualProvider, modulePath);
 }
 
-// public static void SetModel(Fuse.Visual v, string modulePath) :24
+// public static void SetModel(Fuse.Visual v, string modulePath) :26
 void ModelJavaScript__SetModel_fn(::g::Fuse::Visual* v, uString* modulePath)
 {
     ModelJavaScript::SetModel(v, modulePath);
 }
 
-// public static void SetModelNameTable(Fuse.Visual v, Uno.UX.NameTable nt) :52
+// public static void SetModelArgs(Fuse.Visual v, Fuse.Reactive.IExpression args) :54
+void ModelJavaScript__SetModelArgs_fn(::g::Fuse::Visual* v, uObject* args)
+{
+    ModelJavaScript::SetModelArgs(v, args);
+}
+
+// public static void SetModelNameTable(Fuse.Visual v, Uno.UX.NameTable nt) :40
 void ModelJavaScript__SetModelNameTable_fn(::g::Fuse::Visual* v, ::g::Uno::UX::NameTable* nt)
 {
     ModelJavaScript::SetModelNameTable(v, nt);
 }
 
-// private void SetupModel() :78
+// private void SetupModel() :133
 void ModelJavaScript__SetupModel_fn(ModelJavaScript* __this)
 {
     __this->SetupModel();
 }
 
-uSStrong< ::g::Fuse::PropertyHandle*> ModelJavaScript::_modelHandle_;
-
-// internal ModelJavaScript(Uno.UX.NameTable nt, string modulePath, string previewStateId) [instance] :129
-void ModelJavaScript::ctor_4(::g::Uno::UX::NameTable* nt, uString* modulePath, uString* previewStateId)
+// private static Fuse.Reactive.IExpression[] UnpackArgs(Fuse.Reactive.IExpression argsExpr) :100
+void ModelJavaScript__UnpackArgs_fn(uObject* argsExpr, uArray** __retval)
 {
-    uStackFrame __("Fuse.Models.ModelJavaScript", ".ctor(Uno.UX.NameTable,string,string)");
-    ctor_3(nt);
-    _previewStateModelId = previewStateId;
-    _modulePath = modulePath;
-    FileName(uString::Const("(model-script)"));
-    SetupModel();
+    *__retval = ModelJavaScript::UnpackArgs(argsExpr);
 }
 
-// private void Dispose() [instance] :161
+uSStrong< ::g::Fuse::PropertyHandle*> ModelJavaScript::_modelHandle_;
+
+// private ModelJavaScript(Fuse.Models.ModelJavaScript.ModelData md, [string previewStateId]) [instance] :192
+void ModelJavaScript::ctor_4(ModelJavaScript__ModelData* md, uString* previewStateId)
+{
+    uStackFrame __("Fuse.Models.ModelJavaScript", ".ctor(Fuse.Models.ModelJavaScript.ModelData,[string])");
+    ctor_3(uPtr(md)->NameTable);
+    _previewStateModelId = previewStateId;
+    _modulePath = md->ModulePath;
+    _args = md->Arguments;
+    _hasArgs = md->HasArguments;
+    FileName(uString::Const("(model-script)"));
+}
+
+// private void Dispose() [instance] :220
 void ModelJavaScript::Dispose()
 {
     uStackFrame __("Fuse.Models.ModelJavaScript", "Dispose()");
@@ -264,7 +313,28 @@ void ModelJavaScript::Dispose()
     DisposeModuleInstance();
 }
 
-// private void SetupModel() [instance] :78
+// private string GenerateArgsStringAndPopulateDependencies() [instance] :116
+uString* ModelJavaScript::GenerateArgsStringAndPopulateDependencies()
+{
+    uStackFrame __("Fuse.Models.ModelJavaScript", "GenerateArgsStringAndPopulateDependencies()");
+    uString* argsString = uString::Const("");
+
+    if (!_hasArgs)
+        return argsString;
+
+    uArray* args = ModelJavaScript::UnpackArgs(_args);
+
+    for (int32_t i = 0; i < uPtr(args)->Length(); ++i)
+    {
+        uString* depName = ::g::Uno::String::op_Addition1(uString::Const("__modelArg"), uBox<int32_t>(::g::Uno::Int_typeof(), i));
+        argsString = ::g::Uno::String::op_Addition2(argsString, ::g::Uno::String::op_Addition2(uString::Const(", "), depName));
+        ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(Dependencies()), ::g::Uno::Collections::ICollection_typeof()->MakeType(::g::Fuse::Reactive::JavaScript__Dependency_typeof(), NULL)), ::g::Fuse::Reactive::JavaScript__Dependency::New1(depName, uPtr(args)->Strong<uObject*>(i)));
+    }
+
+    return argsString;
+}
+
+// private void SetupModel() [instance] :133
 void ModelJavaScript::SetupModel()
 {
     uStackFrame __("Fuse.Models.ModelJavaScript", "SetupModel()");
@@ -276,7 +346,8 @@ void ModelJavaScript::SetupModel()
     }
 
     ::g::Fuse::Models::ZoneJS::Initialize();
-    uString* code = ::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(uString::Const("var Model = require('FuseJS/Internal/Model');\n"
+    uString* argsString = GenerateArgsStringAndPopulateDependencies();
+    uString* code = ::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(uString::Const("var Model = require('FuseJS/Internal/Model');\n"
         "var ViewModelAdapter = require('FuseJS/Internal/ViewModelAdapter')\n"
         "var self = this;\n"
         "var modelClass = require('"), _modulePath), uString::Const("');\n"
@@ -284,7 +355,7 @@ void ModelJavaScript::SetupModel()
         "")), uString::Const("if (!(modelClass instanceof Function)) { throw new Error('\"")), _modulePath), uString::Const("\" does not export a class or function required to construct a Model'); }\n"
         "")), uString::Const("var modelInstance = Object.create(modelClass.prototype);\n"
         "")), uString::Const("module.exports = new Model(modelInstance, function() {\n"
-        "")), uString::Const("    modelClass.call(modelInstance);\n"
+        "")), uString::Const("    modelClass.call(modelInstance")), argsString), uString::Const(");\n"
         "")), uString::Const("    ViewModelAdapter.adaptView(self, module, modelInstance);\n"
         "")), uString::Const("    return modelInstance;\n"
         "")), uString::Const("});\n"
@@ -292,24 +363,12 @@ void ModelJavaScript::SetupModel()
     Code(code);
 }
 
-// private static void Complete(Fuse.Models.ModelJavaScript.ModelData md, Fuse.Visual v) [static] :40
-void ModelJavaScript::Complete(ModelJavaScript__ModelData* md, ::g::Fuse::Visual* v)
-{
-    uStackFrame __("Fuse.Models.ModelJavaScript", "Complete(Fuse.Models.ModelJavaScript.ModelData,Fuse.Visual)");
-    ModelJavaScript_typeof()->Init();
-    uPtr(v)->RemoveAllChildren(::g::Fuse::Visual_typeof()->MakeMethod(8/*RemoveAllChildren<Fuse.Models.ModelJavaScript>*/, ModelJavaScript_typeof(), NULL));
-
-    if ((uPtr(md)->NameTable == NULL) || ::g::Uno::String::op_Equality(uPtr(md)->ModulePath, NULL))
-        return;
-
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(v->Children()), ::g::Uno::Collections::ICollection_typeof()->MakeType(::g::Fuse::Node_typeof(), NULL)), ModelJavaScript::New3(uPtr(md)->NameTable, uPtr(md)->ModulePath, NULL));
-}
-
-// public static Fuse.Models.ModelJavaScript CreateFromPreviewState(Fuse.Visual where, string modulePath) [static] :106
+// public static Fuse.Models.ModelJavaScript CreateFromPreviewState(Fuse.Visual where, string modulePath) [static] :162
 ModelJavaScript* ModelJavaScript::CreateFromPreviewState(::g::Fuse::Visual* where, uString* modulePath)
 {
     uStackFrame __("Fuse.Models.ModelJavaScript", "CreateFromPreviewState(Fuse.Visual,string)");
     ModelJavaScript_typeof()->Init();
+    ModelJavaScript__ModelData* collection1;
     uString* previewStateId = uString::Const("ModelJavaScript-App");
     ::g::Fuse::PreviewState* previewState = ::g::Fuse::PreviewState::Find(where);
 
@@ -326,19 +385,74 @@ ModelJavaScript* ModelJavaScript::CreateFromPreviewState(::g::Fuse::Visual* wher
         }
     }
 
-    ModelJavaScript* js = ModelJavaScript::New3(NULL, modulePath, previewStateId);
-    return js;
+    collection1 = ModelJavaScript__ModelData::New1();
+    uPtr(collection1)->ModulePath = modulePath;
+    ModelJavaScript__ModelData* md = collection1;
+    return ModelJavaScript::New3(md, previewStateId);
 }
 
-// internal ModelJavaScript New(Uno.UX.NameTable nt, string modulePath, string previewStateId) [static] :129
-ModelJavaScript* ModelJavaScript::New3(::g::Uno::UX::NameTable* nt, uString* modulePath, uString* previewStateId)
+// public static string GetModel(Fuse.Visual v) [static] :34
+uString* ModelJavaScript::GetModel(::g::Fuse::Visual* v)
 {
-    ModelJavaScript* obj3 = (ModelJavaScript*)uNew(ModelJavaScript_typeof());
-    obj3->ctor_4(nt, modulePath, previewStateId);
-    return obj3;
+    uStackFrame __("Fuse.Models.ModelJavaScript", "GetModel(Fuse.Visual)");
+    ModelJavaScript_typeof()->Init();
+    return uPtr(ModelJavaScript::GetOrCreateModelData(v))->ModulePath;
 }
 
-// public static void SetAppModel(Fuse.IRootVisualProvider rootVisualProvider, string modulePath) [static] :70
+// public static Fuse.Reactive.IExpression GetModelArgs(Fuse.Visual v) [static] :63
+uObject* ModelJavaScript::GetModelArgs(::g::Fuse::Visual* v)
+{
+    uStackFrame __("Fuse.Models.ModelJavaScript", "GetModelArgs(Fuse.Visual)");
+    ModelJavaScript_typeof()->Init();
+    return uPtr(ModelJavaScript::GetOrCreateModelData(v))->Arguments;
+}
+
+// public static Uno.UX.NameTable GetModelNameTable(Fuse.Visual v) [static] :48
+::g::Uno::UX::NameTable* ModelJavaScript::GetModelNameTable(::g::Fuse::Visual* v)
+{
+    uStackFrame __("Fuse.Models.ModelJavaScript", "GetModelNameTable(Fuse.Visual)");
+    ModelJavaScript_typeof()->Init();
+    return uPtr(ModelJavaScript::GetOrCreateModelData(v))->NameTable;
+}
+
+// private static Fuse.Models.ModelJavaScript.ModelData GetOrCreateModelData(Fuse.Visual v) [static] :79
+ModelJavaScript__ModelData* ModelJavaScript::GetOrCreateModelData(::g::Fuse::Visual* v)
+{
+    uStackFrame __("Fuse.Models.ModelJavaScript", "GetOrCreateModelData(Fuse.Visual)");
+    ModelJavaScript_typeof()->Init();
+    ModelJavaScript__ModelData* md = uAs<ModelJavaScript__ModelData*>(uPtr(uPtr(v)->Properties())->Get(ModelJavaScript::_modelHandle_), ModelJavaScript__ModelData_typeof());
+
+    if (md == NULL)
+    {
+        md = ModelJavaScript__ModelData::New1();
+        uPtr(uPtr(v)->Properties())->Set(ModelJavaScript::_modelHandle_, md);
+    }
+
+    return md;
+}
+
+// private ModelJavaScript New(Fuse.Models.ModelJavaScript.ModelData md, [string previewStateId]) [static] :192
+ModelJavaScript* ModelJavaScript::New3(ModelJavaScript__ModelData* md, uString* previewStateId)
+{
+    ModelJavaScript* obj2 = (ModelJavaScript*)uNew(ModelJavaScript_typeof());
+    obj2->ctor_4(md, previewStateId);
+    return obj2;
+}
+
+// private static void OnModelDataChanged(Fuse.Models.ModelJavaScript.ModelData md, Fuse.Visual v) [static] :68
+void ModelJavaScript::OnModelDataChanged(ModelJavaScript__ModelData* md, ::g::Fuse::Visual* v)
+{
+    uStackFrame __("Fuse.Models.ModelJavaScript", "OnModelDataChanged(Fuse.Models.ModelJavaScript.ModelData,Fuse.Visual)");
+    ModelJavaScript_typeof()->Init();
+    uPtr(v)->RemoveAllChildren(::g::Fuse::Visual_typeof()->MakeMethod(8/*RemoveAllChildren<Fuse.Models.ModelJavaScript>*/, ModelJavaScript_typeof(), NULL));
+
+    if ((uPtr(md)->NameTable == NULL) || ::g::Uno::String::op_Equality(uPtr(md)->ModulePath, NULL))
+        return;
+
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(v->Children()), ::g::Uno::Collections::ICollection_typeof()->MakeType(::g::Fuse::Node_typeof(), NULL)), ModelJavaScript::New3(md, NULL));
+}
+
+// public static void SetAppModel(Fuse.IRootVisualProvider rootVisualProvider, string modulePath) [static] :92
 void ModelJavaScript::SetAppModel(uObject* rootVisualProvider, uString* modulePath)
 {
     uStackFrame __("Fuse.Models.ModelJavaScript", "SetAppModel(Fuse.IRootVisualProvider,string)");
@@ -348,46 +462,61 @@ void ModelJavaScript::SetAppModel(uObject* rootVisualProvider, uString* modulePa
     ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(uPtr(::g::Fuse::IRootVisualProvider::Root(uInterface(rootVisualProvider, ::g::Fuse::IRootVisualProvider_typeof())))->Children()), ::g::Uno::Collections::ICollection_typeof()->MakeType(::g::Fuse::Node_typeof(), NULL)), appModel);
 }
 
-// public static void SetModel(Fuse.Visual v, string modulePath) [static] :24
+// public static void SetModel(Fuse.Visual v, string modulePath) [static] :26
 void ModelJavaScript::SetModel(::g::Fuse::Visual* v, uString* modulePath)
 {
     uStackFrame __("Fuse.Models.ModelJavaScript", "SetModel(Fuse.Visual,string)");
     ModelJavaScript_typeof()->Init();
-    ModelJavaScript__ModelData* collection1;
-    ModelJavaScript__ModelData* md = uAs<ModelJavaScript__ModelData*>(uPtr(uPtr(v)->Properties())->Get(ModelJavaScript::_modelHandle_), ModelJavaScript__ModelData_typeof());
-
-    if (md == NULL)
-    {
-        md = (collection1 = ModelJavaScript__ModelData::New1(), uPtr(collection1)->ModulePath = modulePath, collection1);
-        uPtr(uPtr(v)->Properties())->Set(ModelJavaScript::_modelHandle_, md);
-    }
-    else
-        uPtr(md)->ModulePath = modulePath;
-
-    ModelJavaScript::Complete(md, v);
+    ModelJavaScript__ModelData* md = ModelJavaScript::GetOrCreateModelData(v);
+    uPtr(md)->ModulePath = modulePath;
+    ModelJavaScript::OnModelDataChanged(md, v);
 }
 
-// public static void SetModelNameTable(Fuse.Visual v, Uno.UX.NameTable nt) [static] :52
+// public static void SetModelArgs(Fuse.Visual v, Fuse.Reactive.IExpression args) [static] :54
+void ModelJavaScript::SetModelArgs(::g::Fuse::Visual* v, uObject* args)
+{
+    uStackFrame __("Fuse.Models.ModelJavaScript", "SetModelArgs(Fuse.Visual,Fuse.Reactive.IExpression)");
+    ModelJavaScript_typeof()->Init();
+    ModelJavaScript__ModelData* md = ModelJavaScript::GetOrCreateModelData(v);
+    uPtr(md)->Arguments = args;
+    md->HasArguments = true;
+    ModelJavaScript::OnModelDataChanged(md, v);
+}
+
+// public static void SetModelNameTable(Fuse.Visual v, Uno.UX.NameTable nt) [static] :40
 void ModelJavaScript::SetModelNameTable(::g::Fuse::Visual* v, ::g::Uno::UX::NameTable* nt)
 {
     uStackFrame __("Fuse.Models.ModelJavaScript", "SetModelNameTable(Fuse.Visual,Uno.UX.NameTable)");
     ModelJavaScript_typeof()->Init();
-    ModelJavaScript__ModelData* collection2;
-    ModelJavaScript__ModelData* md = uAs<ModelJavaScript__ModelData*>(uPtr(uPtr(v)->Properties())->Get(ModelJavaScript::_modelHandle_), ModelJavaScript__ModelData_typeof());
+    ModelJavaScript__ModelData* md = ModelJavaScript::GetOrCreateModelData(v);
+    uPtr(md)->NameTable = nt;
+    ModelJavaScript::OnModelDataChanged(md, v);
+}
 
-    if (md == NULL)
+// private static Fuse.Reactive.IExpression[] UnpackArgs(Fuse.Reactive.IExpression argsExpr) [static] :100
+uArray* ModelJavaScript::UnpackArgs(uObject* argsExpr)
+{
+    uStackFrame __("Fuse.Models.ModelJavaScript", "UnpackArgs(Fuse.Reactive.IExpression)");
+    ModelJavaScript_typeof()->Init();
+    ::g::Fuse::Reactive::Expression* ret3;
+    ::g::Fuse::Reactive::Vector* vector = uAs< ::g::Fuse::Reactive::Vector*>(argsExpr, ::g::Fuse::Reactive::Vector_typeof());
+
+    if (vector != NULL)
     {
-        md = (collection2 = ModelJavaScript__ModelData::New1(), uPtr(collection2)->NameTable = nt, collection2);
-        uPtr(uPtr(v)->Properties())->Set(ModelJavaScript::_modelHandle_, md);
-    }
-    else
-        uPtr(md)->NameTable = nt;
+        uObject* vectorArgs = uPtr(vector)->Arguments();
+        uArray* outputArgs = uArray::New(::g::Fuse::Reactive::IExpression_typeof()->Array(), ::g::Uno::Collections::ICollection::Count(uInterface(uPtr(vectorArgs), ::g::Uno::Collections::ICollection_typeof()->MakeType(::g::Fuse::Reactive::Expression_typeof(), NULL))));
 
-    ModelJavaScript::Complete(md, v);
+        for (int32_t i = 0; i < ::g::Uno::Collections::ICollection::Count(uInterface(vectorArgs, ::g::Uno::Collections::ICollection_typeof()->MakeType(::g::Fuse::Reactive::Expression_typeof(), NULL))); ++i)
+            uPtr(outputArgs)->Strong<uObject*>(i) = (uObject*)(::g::Uno::Collections::IList::get_Item_ex(uInterface(uPtr(vectorArgs), ::g::Uno::Collections::IList_typeof()->MakeType(::g::Fuse::Reactive::Expression_typeof(), NULL)), uCRef<int32_t>(i), &ret3), ret3);
+
+        return outputArgs;
+    }
+
+    return uArray::Init<uObject*>(::g::Fuse::Reactive::IExpression_typeof()->Array(), 1, argsExpr);
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Models\1.7.4\ZoneJS.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Models\1.8.1\ZoneJS.uno
 // --------------------------------------------------------------------------------
 
 // internal sealed class ZoneJS :7
@@ -477,7 +606,7 @@ void ZoneJS::Initialize()
 ::g::Fuse::Scripting::Module* ZoneJS::LoadModule()
 {
     uStackFrame __("Fuse.Models.ZoneJS", "LoadModule()");
-    return ::g::Fuse::Scripting::FileModule::New2(::g::Uno::UX::FileSource::op_Implicit(::g::FuseModels_bundle::zone148e81cc()));
+    return ::g::Fuse::Scripting::FileModule::New2(::g::Uno::UX::FileSource::op_Implicit(::g::FuseModels_bundle::zonec3815532()));
 }
 
 // internal ZoneJS New() [static] :11

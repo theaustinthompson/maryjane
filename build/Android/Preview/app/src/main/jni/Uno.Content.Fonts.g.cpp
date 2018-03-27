@@ -66,7 +66,7 @@ namespace Uno{
 namespace Content{
 namespace Fonts{
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\Content\Fonts\BitmapFont.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\Content\Fonts\BitmapFont.uno
 // ---------------------------------------------------------------------------------------------------------
 
 // public sealed class BitmapFont :7
@@ -156,7 +156,7 @@ BitmapFont* BitmapFont::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\Content\Fonts\BitmapFont.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\Content\Fonts\BitmapFont.uno
 // ---------------------------------------------------------------------------------------------------------
 
 // public struct BitmapFont.CharPair :18
@@ -226,7 +226,7 @@ BitmapFont__CharPair BitmapFont__CharPair__New1(char16_t left, char16_t right)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\Content\Fonts\CppFontFace.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\Content\Fonts\CppFontFace.uno
 // ----------------------------------------------------------------------------------------------------------
 
 // internal sealed extern class CppFontFace :19
@@ -427,7 +427,7 @@ CppFontFace* CppFontFace::New2(::g::Uno::IO::BundleFile* file)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\Content\Fonts\CppFontFace.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\Content\Fonts\CppFontFace.uno
 // ----------------------------------------------------------------------------------------------------------
 
 // internal extern struct CppFontFaceHandle :11
@@ -451,7 +451,7 @@ uStructType* CppFontFaceHandle_typeof()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\Content\Fonts\DefaultTextTransform.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\Content\Fonts\DefaultTextTransform.uno
 // -------------------------------------------------------------------------------------------------------------------
 
 // public sealed class DefaultTextTransform :6
@@ -459,7 +459,7 @@ uStructType* CppFontFaceHandle_typeof()
 static void DefaultTextTransform_build(uType* type)
 {
     ::STRINGS[0] = uString::Const("DefaultTextTransform: Not implemented on mobile");
-    ::STRINGS[1] = uString::Const("C:/Users/borde_000/AppData/Local/Fusetools/Packages/UnoCore/1.7.1/Source/Uno/Content/Fonts/DefaultTextTransform.uno");
+    ::STRINGS[1] = uString::Const("C:/Users/borde_000/AppData/Local/Fusetools/Packages/UnoCore/1.8.0/Source/Uno/Content/Fonts/DefaultTextTransform.uno");
     type->SetDependencies(
         ::g::Uno::Diagnostics::Debug_typeof());
     type->SetFields(0,
@@ -536,7 +536,7 @@ DefaultTextTransform* DefaultTextTransform::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\Content\Fonts\FontFace.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\Content\Fonts\FontFace.uno
 // -------------------------------------------------------------------------------------------------------
 
 // public abstract class FontFace :8
@@ -610,7 +610,7 @@ FontFace* FontFace::Load1(::g::Uno::IO::BundleFile* file)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\Content\Fonts\FontFaceHelpers.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\Content\Fonts\FontFaceHelpers.uno
 // --------------------------------------------------------------------------------------------------------------
 
 // public static class FontFaceHelpers :15
@@ -768,7 +768,7 @@ void FontFaceHelpers__RenderSpriteFont_fn(::g::Uno::Content::Fonts::FontFace* fo
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\Content\Fonts\BitmapFont.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\Content\Fonts\BitmapFont.uno
 // ---------------------------------------------------------------------------------------------------------
 
 // public struct BitmapFont.GlyphInfo :9
@@ -805,7 +805,7 @@ uStructType* BitmapFont__GlyphInfo_typeof()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\Content\Fonts\RenderedGlyph.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\Content\Fonts\RenderedGlyph.uno
 // ------------------------------------------------------------------------------------------------------------
 
 // public struct RenderedGlyph :6
@@ -868,7 +868,7 @@ RenderedGlyph RenderedGlyph__New1(::g::Uno::Float2 advance, ::g::Uno::Float2 bea
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\Content\Fonts\SpriteFontShader.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\Content\Fonts\SpriteFontShader.uno
 // ---------------------------------------------------------------------------------------------------------------
 
 // public sealed class SpriteFontShader :22
@@ -960,7 +960,7 @@ SpriteFontShader* SpriteFontShader::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\Content\Fonts\TextRenderer.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\Content\Fonts\TextRenderer.uno
 // -----------------------------------------------------------------------------------------------------------
 
 // public sealed class TextRenderer :10
@@ -1394,7 +1394,7 @@ TextRenderer* TextRenderer::New1(int32_t maxCharCount, ::g::Uno::Content::Fonts:
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\Content\Fonts\TextShader.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\Content\Fonts\TextShader.uno
 // ---------------------------------------------------------------------------------------------------------
 
 // public abstract class TextShader :52
@@ -1430,7 +1430,7 @@ void TextShader::ctor_()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\Content\Fonts\TextShader.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\Content\Fonts\TextShader.uno
 // ---------------------------------------------------------------------------------------------------------
 
 // public sealed class TextShaderData :8
@@ -1520,7 +1520,7 @@ TextShaderData* TextShaderData::New1(::g::Uno::Graphics::IndexBuffer* ibo, ::g::
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\Content\Fonts\TextTransform.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\Content\Fonts\TextTransform.uno
 // ------------------------------------------------------------------------------------------------------------
 
 // public abstract class TextTransform :6

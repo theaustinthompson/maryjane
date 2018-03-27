@@ -22,7 +22,7 @@ namespace Fuse{
 namespace Reactive{
 namespace Internal{
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Reactive.Bindings\1.7.4\Internal\PatchList.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Reactive.Bindings\1.8.1\Internal\PatchList.uno
 // -------------------------------------------------------------------------------------------------------
 
 // private struct SimpleAlgorithm<T>.Location :121
@@ -60,7 +60,7 @@ void SimpleAlgorithm__Location__ToString_fn(SimpleAlgorithm__Location* __this, u
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Reactive.Bindings\1.7.4\Internal\PatchList.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Reactive.Bindings\1.8.1\Internal\PatchList.uno
 // -------------------------------------------------------------------------------------------------------
 
 // internal enum PatchAlgorithm :23
@@ -76,7 +76,7 @@ uEnumType* PatchAlgorithm_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Reactive.Bindings\1.7.4\Internal\PatchList.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Reactive.Bindings\1.8.1\Internal\PatchList.uno
 // -------------------------------------------------------------------------------------------------------
 
 // internal struct PatchItem :16
@@ -105,7 +105,7 @@ uStructType* PatchItem_typeof()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Reactive.Bindings\1.7.4\Internal\PatchList.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Reactive.Bindings\1.8.1\Internal\PatchList.uno
 // -------------------------------------------------------------------------------------------------------
 
 // internal sealed class PatchList :38
@@ -264,7 +264,7 @@ PatchList* PatchList::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Reactive.Bindings\1.7.4\Internal\PatchList.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Reactive.Bindings\1.8.1\Internal\PatchList.uno
 // -------------------------------------------------------------------------------------------------------
 
 // internal enum PatchOp :6
@@ -281,7 +281,7 @@ uEnumType* PatchOp_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Reactive.Bindings\1.7.4\Internal\PatchList.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Reactive.Bindings\1.8.1\Internal\PatchList.uno
 // -------------------------------------------------------------------------------------------------------
 
 // internal sealed class SimpleAlgorithm<T> :98

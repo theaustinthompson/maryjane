@@ -26,7 +26,7 @@ public class AndroidSystemFont
         android.util.Log.d("maryjane", (message==null ? "null" : message.toString()));
     }
 
-    public static void AddFonts106()
+    public static void AddFonts108()
     {
         try
         {
@@ -34,25 +34,25 @@ public class AndroidSystemFont
         	for (FontListParser.Family family : config.families)
         	{
         		String firstFamilyName = family.names.size() > 0 ? family.names.get(0) : null;
-        		ExternedBlockHost.callUno_Fuse_Internal_AndroidSystemFont_AddFamily107((String)firstFamilyName,(String)family.lang,(String)family.variant);
+        		ExternedBlockHost.callUno_Fuse_Internal_AndroidSystemFont_AddFamily109((String)firstFamilyName,(String)family.lang,(String)family.variant);
         		for (FontListParser.Font font : family.fonts)
         		{
-        			ExternedBlockHost.callUno_Fuse_Internal_AndroidSystemFont_AddFont108((String)font.fontName,(int)font.ttcIndex,(int)font.weight,(boolean)font.isItalic);
+        			ExternedBlockHost.callUno_Fuse_Internal_AndroidSystemFont_AddFont110((String)font.fontName,(int)font.ttcIndex,(int)font.weight,(boolean)font.isItalic);
         		}
         		for (int i = 1; i < family.names.size(); ++i)
         		{
         			String alias = family.names.get(i);
-        			ExternedBlockHost.callUno_Fuse_Internal_AndroidSystemFont_AddAlias109((String)alias,(String)firstFamilyName,(int)FontListParser.NormalWeight);
+        			ExternedBlockHost.callUno_Fuse_Internal_AndroidSystemFont_AddAlias111((String)alias,(String)firstFamilyName,(int)FontListParser.NormalWeight);
         		}
         	}
         	for (FontListParser.Alias alias : config.aliases)
         	{
-        		ExternedBlockHost.callUno_Fuse_Internal_AndroidSystemFont_AddAlias109((String)alias.name,(String)alias.toName,(int)alias.weight);
+        		ExternedBlockHost.callUno_Fuse_Internal_AndroidSystemFont_AddAlias111((String)alias.name,(String)alias.toName,(int)alias.weight);
         	}
         	}
         catch (Exception e)
         {
-        	ExternedBlockHost.callUno_Fuse_Internal_AndroidSystemFont_ThrowUno110((String)e.toString());
+        	ExternedBlockHost.callUno_Fuse_Internal_AndroidSystemFont_ThrowUno112((String)e.toString());
         }
     }
     

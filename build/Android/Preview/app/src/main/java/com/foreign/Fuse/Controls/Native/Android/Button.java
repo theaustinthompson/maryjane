@@ -23,12 +23,12 @@ public class Button
         android.util.Log.d("maryjane", (message==null ? "null" : message.toString()));
     }
 
-    public static Object Create113()
+    public static Object Create115()
     {
         return new android.widget.Button(com.fuse.Activity.getRootActivity());
     }
     
-    public static void SetText114(final Object handle,final String text)
+    public static void SetText116(final Object handle,final String text)
     {
         ((android.widget.Button)handle).setText(text);
     }

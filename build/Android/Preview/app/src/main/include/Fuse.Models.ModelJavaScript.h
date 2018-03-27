@@ -1,4 +1,4 @@
-// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/Fuse.Models/1.7.4/ModelJavaScript.uno.
+// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/Fuse.Models/1.8.1/ModelJavaScript.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -34,18 +34,24 @@ struct ModelJavaScript_type : ::g::Fuse::Reactive::JavaScript_type
 };
 
 ModelJavaScript_type* ModelJavaScript_typeof();
-void ModelJavaScript__ctor_4_fn(ModelJavaScript* __this, ::g::Uno::UX::NameTable* nt, uString* modulePath, uString* previewStateId);
-void ModelJavaScript__Complete_fn(ModelJavaScript__ModelData* md, ::g::Fuse::Visual* v);
+void ModelJavaScript__ctor_4_fn(ModelJavaScript* __this, ModelJavaScript__ModelData* md, uString* previewStateId);
 void ModelJavaScript__CreateFromPreviewState_fn(::g::Fuse::Visual* where, uString* modulePath, ModelJavaScript** __retval);
 void ModelJavaScript__Dispose_fn(ModelJavaScript* __this);
 void ModelJavaScript__FuseIPreviewStateSaverSave_fn(ModelJavaScript* __this, ::g::Fuse::PreviewStateData* data);
-void ModelJavaScript__New3_fn(::g::Uno::UX::NameTable* nt, uString* modulePath, uString* previewStateId, ModelJavaScript** __retval);
-void ModelJavaScript__OnRooted_fn(ModelJavaScript* __this);
-void ModelJavaScript__OnUnrooted_fn(ModelJavaScript* __this);
+void ModelJavaScript__GenerateArgsStringAndPopulateDependencies_fn(ModelJavaScript* __this, uString** __retval);
+void ModelJavaScript__GetModel_fn(::g::Fuse::Visual* v, uString** __retval);
+void ModelJavaScript__GetModelArgs_fn(::g::Fuse::Visual* v, uObject** __retval);
+void ModelJavaScript__GetModelNameTable_fn(::g::Fuse::Visual* v, ::g::Uno::UX::NameTable** __retval);
+void ModelJavaScript__GetOrCreateModelData_fn(::g::Fuse::Visual* v, ModelJavaScript__ModelData** __retval);
+void ModelJavaScript__New3_fn(ModelJavaScript__ModelData* md, uString* previewStateId, ModelJavaScript** __retval);
+void ModelJavaScript__OnBeforeSubscribeToDependenciesAndDispatchEvaluate_fn(ModelJavaScript* __this);
+void ModelJavaScript__OnModelDataChanged_fn(ModelJavaScript__ModelData* md, ::g::Fuse::Visual* v);
 void ModelJavaScript__SetAppModel_fn(uObject* rootVisualProvider, uString* modulePath);
 void ModelJavaScript__SetModel_fn(::g::Fuse::Visual* v, uString* modulePath);
+void ModelJavaScript__SetModelArgs_fn(::g::Fuse::Visual* v, uObject* args);
 void ModelJavaScript__SetModelNameTable_fn(::g::Fuse::Visual* v, ::g::Uno::UX::NameTable* nt);
 void ModelJavaScript__SetupModel_fn(ModelJavaScript* __this);
+void ModelJavaScript__UnpackArgs_fn(uObject* argsExpr, uArray** __retval);
 
 struct ModelJavaScript : ::g::Fuse::Reactive::JavaScript
 {
@@ -53,16 +59,25 @@ struct ModelJavaScript : ::g::Fuse::Reactive::JavaScript
     static uSStrong< ::g::Fuse::PropertyHandle*>& _modelHandle() { return ModelJavaScript_typeof()->Init(), _modelHandle_; }
     uStrong<uString*> _previewStateModelId;
     uStrong<uString*> _modulePath;
+    uStrong<uObject*> _args;
+    bool _hasArgs;
 
-    void ctor_4(::g::Uno::UX::NameTable* nt, uString* modulePath, uString* previewStateId);
+    void ctor_4(ModelJavaScript__ModelData* md, uString* previewStateId);
     void Dispose();
+    uString* GenerateArgsStringAndPopulateDependencies();
     void SetupModel();
-    static void Complete(ModelJavaScript__ModelData* md, ::g::Fuse::Visual* v);
     static ModelJavaScript* CreateFromPreviewState(::g::Fuse::Visual* where, uString* modulePath);
-    static ModelJavaScript* New3(::g::Uno::UX::NameTable* nt, uString* modulePath, uString* previewStateId);
+    static uString* GetModel(::g::Fuse::Visual* v);
+    static uObject* GetModelArgs(::g::Fuse::Visual* v);
+    static ::g::Uno::UX::NameTable* GetModelNameTable(::g::Fuse::Visual* v);
+    static ModelJavaScript__ModelData* GetOrCreateModelData(::g::Fuse::Visual* v);
+    static ModelJavaScript* New3(ModelJavaScript__ModelData* md, uString* previewStateId);
+    static void OnModelDataChanged(ModelJavaScript__ModelData* md, ::g::Fuse::Visual* v);
     static void SetAppModel(uObject* rootVisualProvider, uString* modulePath);
     static void SetModel(::g::Fuse::Visual* v, uString* modulePath);
+    static void SetModelArgs(::g::Fuse::Visual* v, uObject* args);
     static void SetModelNameTable(::g::Fuse::Visual* v, ::g::Uno::UX::NameTable* nt);
+    static uArray* UnpackArgs(uObject* argsExpr);
 };
 // }
 

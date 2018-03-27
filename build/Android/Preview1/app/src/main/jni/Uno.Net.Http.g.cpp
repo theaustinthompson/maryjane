@@ -12,7 +12,6 @@
 #include <Uno.ArgumentNullException.h>
 #include <Uno.Bool.h>
 #include <Uno.Byte.h>
-#include <Uno.Char.h>
 #include <Uno.Collections.Dictionary-2.h>
 #include <Uno.Collections.IDictionary-2.h>
 #include <Uno.Collections.List-1.h>
@@ -24,10 +23,6 @@
 #include <Uno.GC.h>
 #include <Uno.Int.h>
 #include <Uno.Long.h>
-#include <Uno.Net.Http.Absolute-f205092.h>
-#include <Uno.Net.Http.HashParser.h>
-#include <Uno.Net.Http.HostInfo.h>
-#include <Uno.Net.Http.HostInfoParser.h>
 #include <Uno.Net.Http.HttpDefa-b19f5e55.h>
 #include <Uno.Net.Http.HttpMess-1d2e0b2f.h>
 #include <Uno.Net.Http.HttpMess-2de79056.h>
@@ -43,13 +38,6 @@
 #include <Uno.Net.Http.Implemen-c964dca9.h>
 #include <Uno.Net.Http.InvalidR-d0abcd6.h>
 #include <Uno.Net.Http.InvalidS-7f541f1c.h>
-#include <Uno.Net.Http.QueryParser.h>
-#include <Uno.Net.Http.SchemePa-1d577c7e.h>
-#include <Uno.Net.Http.SchemeParser.h>
-#include <Uno.Net.Http.UriForma-83749d5f.h>
-#include <Uno.Net.Http.UriScheme.h>
-#include <Uno.Net.Http.UriSchemeType.h>
-#include <Uno.Net.Http.UserInfoParser.h>
 #include <Uno.Object.h>
 #include <Uno.ObjectDisposedException.h>
 #include <Uno.Platform.Applicat-bf686309.h>
@@ -57,90 +45,15 @@
 #include <Uno.Platform.CoreApp.h>
 #include <Uno.String.h>
 #include <Uno.Threading.IDispatcher.h>
-static uString* STRINGS[84];
-static uType* TYPES[6];
+static uString* STRINGS[44];
+static uType* TYPES[3];
 
 namespace g{
 namespace Uno{
 namespace Net{
 namespace Http{
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Net.Http\1.7.1\UriParsers\AbsolutePathParser.uno
-// --------------------------------------------------------------------------------------------------------
-
-// public sealed class AbsolutePathParser :6
-// {
-static void AbsolutePathParser_build(uType* type)
-{
-    ::STRINGS[0] = uString::Const("/");
-    type->Reflection.SetFunctions(2,
-        new uFunction(".ctor", NULL, (void*)AbsolutePathParser__New1_fn, 0, true, type, 0),
-        new uFunction("Parse", NULL, (void*)AbsolutePathParser__Parse_fn, 0, true, ::g::Uno::String_typeof(), 4, ::g::Uno::String_typeof(), ::g::Uno::Int_typeof(), ::g::Uno::Int_typeof(), ::g::Uno::Int_typeof()->ByRef()));
-}
-
-uType* AbsolutePathParser_typeof()
-{
-    static uSStrong<uType*> type;
-    if (type != NULL) return type;
-
-    uTypeOptions options;
-    options.ObjectSize = sizeof(AbsolutePathParser);
-    options.TypeSize = sizeof(uType);
-    type = uClassType::New("Uno.Net.Http.AbsolutePathParser", options);
-    type->fp_build_ = AbsolutePathParser_build;
-    type->fp_ctor_ = (void*)AbsolutePathParser__New1_fn;
-    return type;
-}
-
-// public generated AbsolutePathParser() :6
-void AbsolutePathParser__ctor__fn(AbsolutePathParser* __this)
-{
-    __this->ctor_();
-}
-
-// public generated AbsolutePathParser New() :6
-void AbsolutePathParser__New1_fn(AbsolutePathParser** __retval)
-{
-    *__retval = AbsolutePathParser::New1();
-}
-
-// public static string Parse(string uriString, int idx, int endIdx, int& startPartIdx) :8
-void AbsolutePathParser__Parse_fn(uString* uriString, int32_t* idx, int32_t* endIdx, int32_t* startPartIdx, uString** __retval)
-{
-    *__retval = AbsolutePathParser::Parse(uriString, *idx, *endIdx, startPartIdx);
-}
-
-// public generated AbsolutePathParser() [instance] :6
-void AbsolutePathParser::ctor_()
-{
-}
-
-// public generated AbsolutePathParser New() [static] :6
-AbsolutePathParser* AbsolutePathParser::New1()
-{
-    AbsolutePathParser* obj1 = (AbsolutePathParser*)uNew(AbsolutePathParser_typeof());
-    obj1->ctor_();
-    return obj1;
-}
-
-// public static string Parse(string uriString, int idx, int endIdx, int& startPartIdx) [static] :8
-uString* AbsolutePathParser::Parse(uString* uriString, int32_t idx, int32_t endIdx, int32_t* startPartIdx)
-{
-    uStackFrame __("Uno.Net.Http.AbsolutePathParser", "Parse(string,int,int,int&)");
-    int32_t start = ::g::Uno::String::IndexOf3(uPtr(uriString), ::STRINGS[0/*"/"*/], idx);
-
-    if ((start < 0) || (start >= endIdx))
-    {
-        *startPartIdx = endIdx;
-        return ::STRINGS[0/*"/"*/];
-    }
-
-    *startPartIdx = start;
-    return ::g::Uno::String::Substring1(uriString, start, endIdx - start);
-}
-// }
-
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Net.Http\1.7.1\HttpMessageHandlerRequest.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Net.Http\1.8.0\HttpMessageHandlerRequest.uno
 // ----------------------------------------------------------------------------------------------------
 
 // private sealed class HttpMessageHandlerRequest.DispatchClosure :138
@@ -215,7 +128,7 @@ HttpMessageHandlerRequest__DispatchClosure* HttpMessageHandlerRequest__DispatchC
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Net.Http\1.7.1\HttpMessageHandlerRequest.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Net.Http\1.8.0\HttpMessageHandlerRequest.uno
 // ----------------------------------------------------------------------------------------------------
 
 // private sealed class HttpMessageHandlerRequest.DispatchClosure<TArg1> :161
@@ -283,450 +196,7 @@ void HttpMessageHandlerRequest__DispatchClosure1::Run()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Net.Http\1.7.1\UriParsers\HashParser.uno
-// ------------------------------------------------------------------------------------------------
-
-// public sealed class HashParser :6
-// {
-static void HashParser_build(uType* type)
-{
-    type->Reflection.SetFunctions(2,
-        new uFunction(".ctor", NULL, (void*)HashParser__New1_fn, 0, true, type, 0),
-        new uFunction("Parse", NULL, (void*)HashParser__Parse_fn, 0, true, ::g::Uno::String_typeof(), 3, ::g::Uno::String_typeof(), ::g::Uno::Int_typeof(), ::g::Uno::Int_typeof()->ByRef()));
-}
-
-uType* HashParser_typeof()
-{
-    static uSStrong<uType*> type;
-    if (type != NULL) return type;
-
-    uTypeOptions options;
-    options.ObjectSize = sizeof(HashParser);
-    options.TypeSize = sizeof(uType);
-    type = uClassType::New("Uno.Net.Http.HashParser", options);
-    type->fp_build_ = HashParser_build;
-    type->fp_ctor_ = (void*)HashParser__New1_fn;
-    return type;
-}
-
-// public generated HashParser() :6
-void HashParser__ctor__fn(HashParser* __this)
-{
-    __this->ctor_();
-}
-
-// public generated HashParser New() :6
-void HashParser__New1_fn(HashParser** __retval)
-{
-    *__retval = HashParser::New1();
-}
-
-// public static string Parse(string uriString, int idx, int& startPartIdx) :8
-void HashParser__Parse_fn(uString* uriString, int32_t* idx, int32_t* startPartIdx, uString** __retval)
-{
-    *__retval = HashParser::Parse(uriString, *idx, startPartIdx);
-}
-
-// public generated HashParser() [instance] :6
-void HashParser::ctor_()
-{
-}
-
-// public generated HashParser New() [static] :6
-HashParser* HashParser::New1()
-{
-    HashParser* obj1 = (HashParser*)uNew(HashParser_typeof());
-    obj1->ctor_();
-    return obj1;
-}
-
-// public static string Parse(string uriString, int idx, int& startPartIdx) [static] :8
-uString* HashParser::Parse(uString* uriString, int32_t idx, int32_t* startPartIdx)
-{
-    uStackFrame __("Uno.Net.Http.HashParser", "Parse(string,int,int&)");
-
-    if (idx >= uPtr(uriString)->Length())
-        return ::g::Uno::String::Empty();
-
-    int32_t start = ::g::Uno::String::IndexOf1(uPtr(uriString), '#', idx);
-
-    if (start >= 0)
-    {
-        *startPartIdx = start;
-        return ::g::Uno::String::Substring(uPtr(uriString), *startPartIdx);
-    }
-
-    return ::g::Uno::String::Empty();
-}
-// }
-
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Net.Http\1.7.1\UriParsers\HostInfoParser.uno
-// ----------------------------------------------------------------------------------------------------
-
-// public sealed class HostInfo :6
-// {
-static void HostInfo_build(uType* type)
-{
-    type->SetFields(0,
-        ::g::Uno::String_typeof(), offsetof(HostInfo, _Authority), 0,
-        ::g::Uno::String_typeof(), offsetof(HostInfo, _Host), 0,
-        ::g::Uno::Int_typeof(), offsetof(HostInfo, _Port), 0);
-    type->Reflection.SetFunctions(7,
-        new uFunction("get_Authority", NULL, (void*)HostInfo__get_Authority_fn, 0, false, ::g::Uno::String_typeof(), 0),
-        new uFunction("set_Authority", NULL, (void*)HostInfo__set_Authority_fn, 0, false, uVoid_typeof(), 1, ::g::Uno::String_typeof()),
-        new uFunction("get_Host", NULL, (void*)HostInfo__get_Host_fn, 0, false, ::g::Uno::String_typeof(), 0),
-        new uFunction("set_Host", NULL, (void*)HostInfo__set_Host_fn, 0, false, uVoid_typeof(), 1, ::g::Uno::String_typeof()),
-        new uFunction(".ctor", NULL, (void*)HostInfo__New1_fn, 0, true, type, 0),
-        new uFunction("get_Port", NULL, (void*)HostInfo__get_Port_fn, 0, false, ::g::Uno::Int_typeof(), 0),
-        new uFunction("set_Port", NULL, (void*)HostInfo__set_Port_fn, 0, false, uVoid_typeof(), 1, ::g::Uno::Int_typeof()));
-}
-
-uType* HostInfo_typeof()
-{
-    static uSStrong<uType*> type;
-    if (type != NULL) return type;
-
-    uTypeOptions options;
-    options.FieldCount = 3;
-    options.ObjectSize = sizeof(HostInfo);
-    options.TypeSize = sizeof(uType);
-    type = uClassType::New("Uno.Net.Http.HostInfo", options);
-    type->fp_build_ = HostInfo_build;
-    type->fp_ctor_ = (void*)HostInfo__New1_fn;
-    return type;
-}
-
-// public generated HostInfo() :6
-void HostInfo__ctor__fn(HostInfo* __this)
-{
-    __this->ctor_();
-}
-
-// public generated string get_Authority() :8
-void HostInfo__get_Authority_fn(HostInfo* __this, uString** __retval)
-{
-    *__retval = __this->Authority();
-}
-
-// public generated void set_Authority(string value) :8
-void HostInfo__set_Authority_fn(HostInfo* __this, uString* value)
-{
-    __this->Authority(value);
-}
-
-// public generated string get_Host() :10
-void HostInfo__get_Host_fn(HostInfo* __this, uString** __retval)
-{
-    *__retval = __this->Host();
-}
-
-// public generated void set_Host(string value) :10
-void HostInfo__set_Host_fn(HostInfo* __this, uString* value)
-{
-    __this->Host(value);
-}
-
-// public generated HostInfo New() :6
-void HostInfo__New1_fn(HostInfo** __retval)
-{
-    *__retval = HostInfo::New1();
-}
-
-// public generated int get_Port() :12
-void HostInfo__get_Port_fn(HostInfo* __this, int32_t* __retval)
-{
-    *__retval = __this->Port();
-}
-
-// public generated void set_Port(int value) :12
-void HostInfo__set_Port_fn(HostInfo* __this, int32_t* value)
-{
-    __this->Port(*value);
-}
-
-// public generated HostInfo() [instance] :6
-void HostInfo::ctor_()
-{
-}
-
-// public generated string get_Authority() [instance] :8
-uString* HostInfo::Authority()
-{
-    return _Authority;
-}
-
-// public generated void set_Authority(string value) [instance] :8
-void HostInfo::Authority(uString* value)
-{
-    _Authority = value;
-}
-
-// public generated string get_Host() [instance] :10
-uString* HostInfo::Host()
-{
-    return _Host;
-}
-
-// public generated void set_Host(string value) [instance] :10
-void HostInfo::Host(uString* value)
-{
-    _Host = value;
-}
-
-// public generated int get_Port() [instance] :12
-int32_t HostInfo::Port()
-{
-    return _Port;
-}
-
-// public generated void set_Port(int value) [instance] :12
-void HostInfo::Port(int32_t value)
-{
-    _Port = value;
-}
-
-// public generated HostInfo New() [static] :6
-HostInfo* HostInfo::New1()
-{
-    HostInfo* obj1 = (HostInfo*)uNew(HostInfo_typeof());
-    obj1->ctor_();
-    return obj1;
-}
-// }
-
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Net.Http\1.7.1\UriParsers\HostInfoParser.uno
-// ----------------------------------------------------------------------------------------------------
-
-// public sealed class HostInfoParser :15
-// {
-// static generated HostInfoParser() :15
-static void HostInfoParser__cctor__fn(uType* __type)
-{
-    ::g::Uno::Collections::List* collection1;
-    HostInfoParser::_invalidChars_ = (collection1 = (::g::Uno::Collections::List*)::g::Uno::Collections::List::New1(::TYPES[0/*Uno.Collections.List<string>*/]), ::g::Uno::Collections::List__Add_fn(uPtr(collection1), ::STRINGS[1/*".."*/]), ::g::Uno::Collections::List__Add_fn(uPtr(collection1), ::STRINGS[2/*","*/]), ::g::Uno::Collections::List__Add_fn(uPtr(collection1), ::STRINGS[3/*"\\"*/]), ::g::Uno::Collections::List__Add_fn(uPtr(collection1), ::STRINGS[4/*"|"*/]), ::g::Uno::Collections::List__Add_fn(uPtr(collection1), ::STRINGS[5/*"<"*/]), ::g::Uno::Collections::List__Add_fn(uPtr(collection1), ::STRINGS[6/*">"*/]), ::g::Uno::Collections::List__Add_fn(uPtr(collection1), ::STRINGS[7/*"'"*/]), ::g::Uno::Collections::List__Add_fn(uPtr(collection1), ::STRINGS[8/*";"*/]), ::g::Uno::Collections::List__Add_fn(uPtr(collection1), ::STRINGS[9/*":"*/]), ::g::Uno::Collections::List__Add_fn(uPtr(collection1), ::STRINGS[10/*"["*/]), ::g::Uno::Collections::List__Add_fn(uPtr(collection1), ::STRINGS[11/*"]"*/]), ::g::Uno::Collections::List__Add_fn(uPtr(collection1), ::STRINGS[12/*"{"*/]), ::g::Uno::Collections::List__Add_fn(uPtr(collection1), ::STRINGS[13/*"}"*/]), ::g::Uno::Collections::List__Add_fn(uPtr(collection1), ::STRINGS[14/*"("*/]), ::g::Uno::Collections::List__Add_fn(uPtr(collection1), ::STRINGS[15/*")"*/]), ::g::Uno::Collections::List__Add_fn(uPtr(collection1), ::STRINGS[16/*"="*/]), ::g::Uno::Collections::List__Add_fn(uPtr(collection1), ::STRINGS[17/*"+"*/]), collection1);
-}
-
-static void HostInfoParser_build(uType* type)
-{
-    ::STRINGS[1] = uString::Const("..");
-    ::STRINGS[2] = uString::Const(",");
-    ::STRINGS[3] = uString::Const("\\");
-    ::STRINGS[4] = uString::Const("|");
-    ::STRINGS[5] = uString::Const("<");
-    ::STRINGS[6] = uString::Const(">");
-    ::STRINGS[7] = uString::Const("'");
-    ::STRINGS[8] = uString::Const(";");
-    ::STRINGS[9] = uString::Const(":");
-    ::STRINGS[10] = uString::Const("[");
-    ::STRINGS[11] = uString::Const("]");
-    ::STRINGS[12] = uString::Const("{");
-    ::STRINGS[13] = uString::Const("}");
-    ::STRINGS[14] = uString::Const("(");
-    ::STRINGS[15] = uString::Const(")");
-    ::STRINGS[16] = uString::Const("=");
-    ::STRINGS[17] = uString::Const("+");
-    ::STRINGS[18] = uString::Const("The port number specified in uriString is not valid or cannot be parsed.");
-    ::STRINGS[19] = uString::Const(".");
-    ::STRINGS[20] = uString::Const("There is an invalid character sequence in uriString.");
-    ::STRINGS[0] = uString::Const("/");
-    ::STRINGS[21] = uString::Const("The host specified in uriString is not valid or cannot be parsed.");
-    ::TYPES[0] = ::g::Uno::Collections::List_typeof()->MakeType(::g::Uno::String_typeof(), NULL);
-    ::TYPES[1] = ::g::Uno::Collections::List__Enumerator_typeof()->MakeType(::g::Uno::String_typeof(), NULL);
-    type->SetDependencies(
-        ::g::Uno::Net::Http::UriScheme_typeof());
-    type->SetFields(0,
-        ::TYPES[0/*Uno.Collections.List<string>*/], (uintptr_t)&HostInfoParser::_invalidChars_, uFieldFlagsStatic);
-    type->Reflection.SetFunctions(2,
-        new uFunction(".ctor", NULL, (void*)HostInfoParser__New1_fn, 0, true, type, 0),
-        new uFunction("Parse", NULL, (void*)HostInfoParser__Parse_fn, 0, true, ::g::Uno::Net::Http::HostInfo_typeof(), 4, ::g::Uno::String_typeof(), ::g::Uno::String_typeof(), ::g::Uno::Int_typeof(), ::g::Uno::Int_typeof()->ByRef()));
-}
-
-uType* HostInfoParser_typeof()
-{
-    static uSStrong<uType*> type;
-    if (type != NULL) return type;
-
-    uTypeOptions options;
-    options.FieldCount = 1;
-    options.DependencyCount = 1;
-    options.ObjectSize = sizeof(HostInfoParser);
-    options.TypeSize = sizeof(uType);
-    type = uClassType::New("Uno.Net.Http.HostInfoParser", options);
-    type->fp_build_ = HostInfoParser_build;
-    type->fp_ctor_ = (void*)HostInfoParser__New1_fn;
-    type->fp_cctor_ = HostInfoParser__cctor__fn;
-    return type;
-}
-
-// public generated HostInfoParser() :15
-void HostInfoParser__ctor__fn(HostInfoParser* __this)
-{
-    __this->ctor_();
-}
-
-// private static int ExtractPort(string portString, int defaultPort) :75
-void HostInfoParser__ExtractPort_fn(uString* portString, int32_t* defaultPort, int32_t* __retval)
-{
-    *__retval = HostInfoParser::ExtractPort(portString, *defaultPort);
-}
-
-// private static int GetDafaultPort(string scheme) :93
-void HostInfoParser__GetDafaultPort_fn(uString* scheme, int32_t* __retval)
-{
-    *__retval = HostInfoParser::GetDafaultPort(scheme);
-}
-
-// private static bool IsHostValid(string userInfo) :64
-void HostInfoParser__IsHostValid_fn(uString* userInfo, bool* __retval)
-{
-    *__retval = HostInfoParser::IsHostValid(userInfo);
-}
-
-// public generated HostInfoParser New() :15
-void HostInfoParser__New1_fn(HostInfoParser** __retval)
-{
-    *__retval = HostInfoParser::New1();
-}
-
-// public static Uno.Net.Http.HostInfo Parse(string uriString, string scheme, int endIdx, int& idx) :19
-void HostInfoParser__Parse_fn(uString* uriString, uString* scheme, int32_t* endIdx, int32_t* idx, ::g::Uno::Net::Http::HostInfo** __retval)
-{
-    *__retval = HostInfoParser::Parse(uriString, scheme, *endIdx, idx);
-}
-
-uSStrong< ::g::Uno::Collections::List*> HostInfoParser::_invalidChars_;
-
-// public generated HostInfoParser() [instance] :15
-void HostInfoParser::ctor_()
-{
-}
-
-// private static int ExtractPort(string portString, int defaultPort) [static] :75
-int32_t HostInfoParser::ExtractPort(uString* portString, int32_t defaultPort)
-{
-    uStackFrame __("Uno.Net.Http.HostInfoParser", "ExtractPort(string,int)");
-    HostInfoParser_typeof()->Init();
-    int32_t port = 0;
-
-    if (::g::Uno::String::IsNullOrEmpty(portString))
-        port = defaultPort;
-    else
-    {
-        if (!::g::Uno::Int::TryParse(portString, &port))
-            U_THROW(::g::Uno::Net::Http::UriFormatException::New4(::STRINGS[18/*"The port nu...*/]));
-    }
-
-    return port;
-}
-
-// private static int GetDafaultPort(string scheme) [static] :93
-int32_t HostInfoParser::GetDafaultPort(uString* scheme)
-{
-    uStackFrame __("Uno.Net.Http.HostInfoParser", "GetDafaultPort(string)");
-    HostInfoParser_typeof()->Init();
-    int32_t ret5;
-    return (::g::Uno::Collections::Dictionary__get_Item_fn(uPtr(::g::Uno::Net::Http::UriScheme::DefaultPorts()), ::g::Uno::String::ToLower(uPtr(scheme)), &ret5), ret5);
-}
-
-// private static bool IsHostValid(string userInfo) [static] :64
-bool HostInfoParser::IsHostValid(uString* userInfo)
-{
-    uStackFrame __("Uno.Net.Http.HostInfoParser", "IsHostValid(string)");
-    HostInfoParser_typeof()->Init();
-    ::g::Uno::Collections::List__Enumerator<uStrong<uString*> > ret6;
-    ::g::Uno::Collections::List__Enumerator<uStrong<uString*> > enum3 = (::g::Uno::Collections::List__GetEnumerator_fn(uPtr(HostInfoParser::_invalidChars_), &ret6), ret6);
-
-    {
-        try
-        {
-            {
-                while (enum3.MoveNext(::TYPES[1/*Uno.Collections.List<string>.Enumerator*/]))
-                {
-                    uString* chars = enum3.Current(::TYPES[1/*Uno.Collections.List<string>.Enumerator*/]);
-
-                    if (::g::Uno::String::IndexOf3(uPtr(userInfo), chars, 0) >= 0)
-                    {
-                        bool __uno_retval = false;
-                        enum3.Dispose(::TYPES[1/*Uno.Collections.List<string>.Enumerator*/]);
-                        return __uno_retval;
-                    }
-                }
-            }
-        }
-
-        catch (const uThrowable& __t)
-        {
-            {
-                enum3.Dispose(::TYPES[1/*Uno.Collections.List<string>.Enumerator*/]);
-            }
-                        throw __t;
-            goto __after_finally_0;
-        }
-
-        {
-            enum3.Dispose(::TYPES[1/*Uno.Collections.List<string>.Enumerator*/]);
-        }
-        __after_finally_0:;
-    }
-
-    return !::g::Uno::String::StartsWith(uPtr(userInfo), ::STRINGS[19/*"."*/]);
-}
-
-// public generated HostInfoParser New() [static] :15
-HostInfoParser* HostInfoParser::New1()
-{
-    HostInfoParser* obj4 = (HostInfoParser*)uNew(HostInfoParser_typeof());
-    obj4->ctor_();
-    return obj4;
-}
-
-// public static Uno.Net.Http.HostInfo Parse(string uriString, string scheme, int endIdx, int& idx) [static] :19
-::g::Uno::Net::Http::HostInfo* HostInfoParser::Parse(uString* uriString, uString* scheme, int32_t endIdx, int32_t* idx)
-{
-    uStackFrame __("Uno.Net.Http.HostInfoParser", "Parse(string,string,int,int&)");
-    HostInfoParser_typeof()->Init();
-    ::g::Uno::Net::Http::HostInfo* collection2;
-
-    if (*idx >= endIdx)
-        U_THROW(::g::Uno::Net::Http::UriFormatException::New4(::STRINGS[20/*"There is an...*/]));
-
-    int32_t end = ::g::Uno::String::IndexOf3(uPtr(uriString), ::STRINGS[0/*"/"*/], *idx);
-
-    if ((end < 0) || (end >= endIdx))
-        end = endIdx;
-
-    uString* hostInfoString = ::g::Uno::String::Substring1(uriString, *idx, end - *idx);
-    *idx = end;
-
-    if (::g::Uno::String::IsNullOrEmpty(hostInfoString))
-        U_THROW(::g::Uno::Net::Http::UriFormatException::New4(::STRINGS[21/*"The host sp...*/]));
-
-    int32_t delim = ::g::Uno::String::IndexOf3(uPtr(hostInfoString), ::STRINGS[9/*":"*/], 0);
-    collection2 = ::g::Uno::Net::Http::HostInfo::New1();
-    uPtr(collection2)->Authority(hostInfoString);
-    hostInfoString;
-    ::g::Uno::Net::Http::HostInfo* hostInfo = collection2;
-
-    if (delim > 0)
-    {
-        uString* portString = ::g::Uno::String::Substring(uPtr(hostInfoString), delim + 1);
-        uPtr(hostInfo)->Host(::g::Uno::String::Substring1(hostInfoString, 0, delim));
-        hostInfo->Port(HostInfoParser::ExtractPort(portString, HostInfoParser::GetDafaultPort(scheme)));
-    }
-    else
-    {
-        uPtr(hostInfo)->Host(hostInfoString);
-        hostInfo->Port(HostInfoParser::GetDafaultPort(scheme));
-    }
-
-    if (!HostInfoParser::IsHostValid(uPtr(hostInfo)->Host()))
-        U_THROW(::g::Uno::Net::Http::UriFormatException::New4(::STRINGS[21/*"The host sp...*/]));
-
-    return hostInfo;
-}
-// }
-
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Net.Http\1.7.1\HttpDefaultDispatcher.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Net.Http\1.8.0\HttpDefaultDispatcher.uno
 // ------------------------------------------------------------------------------------------------
 
 // internal sealed class HttpDefaultDispatcher :6
@@ -792,7 +262,7 @@ HttpDefaultDispatcher* HttpDefaultDispatcher::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Net.Http\1.7.1\HttpMessageCache.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Net.Http\1.8.0\HttpMessageCache.uno
 // -------------------------------------------------------------------------------------------
 
 // public static class HttpMessageCache :3
@@ -801,14 +271,14 @@ HttpDefaultDispatcher* HttpDefaultDispatcher::New1()
 static void HttpMessageCache__cctor__fn(uType* __type)
 {
     ::g::Uno::Platform::CoreApp_typeof()->Init();
-    ::g::Uno::Platform::CoreApp::add_Started(uDelegate::New(::TYPES[2/*Uno.Platform.ApplicationStateTransitionHandler*/], (void*)HttpMessageCache__OnApplicationStarted_fn));
+    ::g::Uno::Platform::CoreApp::add_Started(uDelegate::New(::TYPES[0/*Uno.Platform.ApplicationStateTransitionHandler*/], (void*)HttpMessageCache__OnApplicationStarted_fn));
 }
 
 static void HttpMessageCache_build(uType* type)
 {
-    ::STRINGS[22] = uString::Const("Uno.Net.Http.HttpMessageCache: Changes to IsCacheEnabled are ignored after initialization.");
-    ::STRINGS[23] = uString::Const("C:/Users/borde_000/AppData/Local/Fusetools/Packages/Uno.Net.Http/1.7.1/HttpMessageCache.uno");
-    ::TYPES[2] = ::g::Uno::Platform::ApplicationStateTransitionHandler_typeof();
+    ::STRINGS[0] = uString::Const("Uno.Net.Http.HttpMessageCache: Changes to IsCacheEnabled are ignored after initialization.");
+    ::STRINGS[1] = uString::Const("C:/Users/borde_000/AppData/Local/Fusetools/Packages/Uno.Net.Http/1.8.0/HttpMessageCache.uno");
+    ::TYPES[0] = ::g::Uno::Platform::ApplicationStateTransitionHandler_typeof();
     type->SetDependencies(
         ::g::Uno::Platform::CoreApp_typeof(),
         ::g::Uno::Diagnostics::Debug_typeof());
@@ -875,7 +345,7 @@ void HttpMessageCache::Init()
         return;
 
     HttpMessageCache::_isInitialized_ = true;
-    ::g::Uno::Platform::CoreApp::remove_Started(uDelegate::New(::TYPES[2/*Uno.Platform.ApplicationStateTransitionHandler*/], (void*)HttpMessageCache__OnApplicationStarted_fn));
+    ::g::Uno::Platform::CoreApp::remove_Started(uDelegate::New(::TYPES[0/*Uno.Platform.ApplicationStateTransitionHandler*/], (void*)HttpMessageCache__OnApplicationStarted_fn));
 
     if (!HttpMessageCache::IsCacheEnabled())
         return;
@@ -906,13 +376,13 @@ void HttpMessageCache::IsCacheEnabled(bool value)
     HttpMessageCache_typeof()->Init();
 
     if (HttpMessageCache::_isInitialized_)
-        ::g::Uno::Diagnostics::Debug::Log3(::STRINGS[22/*"Uno.Net.Htt...*/], 0, ::STRINGS[23/*"C:/Users/bo...*/], 15);
+        ::g::Uno::Diagnostics::Debug::Log3(::STRINGS[0/*"Uno.Net.Htt...*/], 0, ::STRINGS[1/*"C:/Users/bo...*/], 15);
     else
         HttpMessageCache::_isCacheDisabled_ = !value;
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Net.Http\1.7.1\HttpMessageHandler.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Net.Http\1.8.0\HttpMessageHandler.uno
 // ---------------------------------------------------------------------------------------------
 
 // public sealed class HttpMessageHandler :8
@@ -1031,13 +501,13 @@ void HttpMessageHandler::AbortPendingRequests()
                 enum2.Dispose(::g::Uno::Collections::List__Enumerator_typeof()->MakeType(::g::Uno::Net::Http::HttpMessageHandlerRequest_typeof(), NULL));
             }
                         throw __t;
-            goto __after_finally_1;
+            goto __after_finally_0;
         }
 
         {
             enum2.Dispose(::g::Uno::Collections::List__Enumerator_typeof()->MakeType(::g::Uno::Net::Http::HttpMessageHandlerRequest_typeof(), NULL));
         }
-        __after_finally_1:;
+        __after_finally_0:;
     }
 }
 
@@ -1109,13 +579,13 @@ void HttpMessageHandler::Dispose()
                 enum1.Dispose(::g::Uno::Collections::List__Enumerator_typeof()->MakeType(::g::Uno::Net::Http::HttpMessageHandlerRequest_typeof(), NULL));
             }
                         throw __t;
-            goto __after_finally_2;
+            goto __after_finally_1;
         }
 
         {
             enum1.Dispose(::g::Uno::Collections::List__Enumerator_typeof()->MakeType(::g::Uno::Net::Http::HttpMessageHandlerRequest_typeof(), NULL));
         }
-        __after_finally_2:;
+        __after_finally_1:;
     }
 
     _pendingRequests = NULL;
@@ -1130,7 +600,7 @@ HttpMessageHandler* HttpMessageHandler::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Net.Http\1.7.1\HttpMessageHandlerRequest.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Net.Http\1.8.0\HttpMessageHandlerRequest.uno
 // ----------------------------------------------------------------------------------------------------
 
 // public sealed class HttpMessageHandlerRequest :8
@@ -1948,7 +1418,7 @@ HttpMessageHandlerRequest* HttpMessageHandlerRequest::New1(::g::Uno::Net::Http::
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Net.Http\1.7.1\HttpRequestState.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Net.Http\1.8.0\HttpRequestState.uno
 // -------------------------------------------------------------------------------------------
 
 // public enum HttpRequestState :3
@@ -1972,7 +1442,7 @@ uEnumType* HttpRequestState_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Net.Http\1.7.1\HttpResponseType.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Net.Http\1.8.0\HttpResponseType.uno
 // -------------------------------------------------------------------------------------------
 
 // public enum HttpResponseType :3
@@ -1989,7 +1459,7 @@ uEnumType* HttpResponseType_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Net.Http\1.7.1\HttpStatusReasonPhrase.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Net.Http\1.8.0\HttpStatusReasonPhrase.uno
 // -------------------------------------------------------------------------------------------------
 
 // public static class HttpStatusReasonPhrase :5
@@ -2002,63 +1472,63 @@ static void HttpStatusReasonPhrase__cctor__fn(uType* __type)
     ::g::Uno::Collections::Dictionary* collection3;
     ::g::Uno::Collections::Dictionary* collection2;
     ::g::Uno::Collections::Dictionary* collection1;
-    HttpStatusReasonPhrase::Informational_ = (uObject*)(collection5 = (::g::Uno::Collections::Dictionary*)::g::Uno::Collections::Dictionary::New1(::TYPES[3/*Uno.Collections.Dictionary<int, string>*/]), ::g::Uno::Collections::Dictionary__Add_fn(uPtr(collection5), uCRef<int32_t>(100), ::STRINGS[24/*"Continue"*/]), ::g::Uno::Collections::Dictionary__Add_fn(uPtr(collection5), uCRef<int32_t>(101), ::STRINGS[25/*"Switching P...*/]), collection5);
-    HttpStatusReasonPhrase::Success_ = (uObject*)(collection4 = (::g::Uno::Collections::Dictionary*)::g::Uno::Collections::Dictionary::New1(::TYPES[3/*Uno.Collections.Dictionary<int, string>*/]), ::g::Uno::Collections::Dictionary__Add_fn(uPtr(collection4), uCRef<int32_t>(200), ::STRINGS[26/*"OK"*/]), ::g::Uno::Collections::Dictionary__Add_fn(uPtr(collection4), uCRef<int32_t>(201), ::STRINGS[27/*"Created"*/]), ::g::Uno::Collections::Dictionary__Add_fn(uPtr(collection4), uCRef<int32_t>(202), ::STRINGS[28/*"Accepted"*/]), ::g::Uno::Collections::Dictionary__Add_fn(uPtr(collection4), uCRef<int32_t>(203), ::STRINGS[29/*"Non-Authori...*/]), ::g::Uno::Collections::Dictionary__Add_fn(uPtr(collection4), uCRef<int32_t>(204), ::STRINGS[30/*"No Content"*/]), ::g::Uno::Collections::Dictionary__Add_fn(uPtr(collection4), uCRef<int32_t>(205), ::STRINGS[31/*"Reset Content"*/]), ::g::Uno::Collections::Dictionary__Add_fn(uPtr(collection4), uCRef<int32_t>(206), ::STRINGS[32/*"Partial Con...*/]), collection4);
-    HttpStatusReasonPhrase::Redirection_ = (uObject*)(collection3 = (::g::Uno::Collections::Dictionary*)::g::Uno::Collections::Dictionary::New1(::TYPES[3/*Uno.Collections.Dictionary<int, string>*/]), ::g::Uno::Collections::Dictionary__Add_fn(uPtr(collection3), uCRef<int32_t>(300), ::STRINGS[33/*"Multiple Ch...*/]), ::g::Uno::Collections::Dictionary__Add_fn(uPtr(collection3), uCRef<int32_t>(301), ::STRINGS[34/*"Moved Perma...*/]), ::g::Uno::Collections::Dictionary__Add_fn(uPtr(collection3), uCRef<int32_t>(302), ::STRINGS[35/*"Found"*/]), ::g::Uno::Collections::Dictionary__Add_fn(uPtr(collection3), uCRef<int32_t>(303), ::STRINGS[36/*"See Other"*/]), ::g::Uno::Collections::Dictionary__Add_fn(uPtr(collection3), uCRef<int32_t>(304), ::STRINGS[37/*"Not Modified"*/]), ::g::Uno::Collections::Dictionary__Add_fn(uPtr(collection3), uCRef<int32_t>(305), ::STRINGS[38/*"Use Proxy"*/]), ::g::Uno::Collections::Dictionary__Add_fn(uPtr(collection3), uCRef<int32_t>(307), ::STRINGS[39/*"Temporary R...*/]), collection3);
-    HttpStatusReasonPhrase::ClientErrors_ = (uObject*)(collection2 = (::g::Uno::Collections::Dictionary*)::g::Uno::Collections::Dictionary::New1(::TYPES[3/*Uno.Collections.Dictionary<int, string>*/]), ::g::Uno::Collections::Dictionary__Add_fn(uPtr(collection2), uCRef<int32_t>(400), ::STRINGS[40/*"Bad Request"*/]), ::g::Uno::Collections::Dictionary__Add_fn(uPtr(collection2), uCRef<int32_t>(401), ::STRINGS[41/*"Unauthorized"*/]), ::g::Uno::Collections::Dictionary__Add_fn(uPtr(collection2), uCRef<int32_t>(402), ::STRINGS[42/*"Payment Req...*/]), ::g::Uno::Collections::Dictionary__Add_fn(uPtr(collection2), uCRef<int32_t>(403), ::STRINGS[43/*"Forbidden"*/]), ::g::Uno::Collections::Dictionary__Add_fn(uPtr(collection2), uCRef<int32_t>(404), ::STRINGS[44/*"Not Found"*/]), ::g::Uno::Collections::Dictionary__Add_fn(uPtr(collection2), uCRef<int32_t>(405), ::STRINGS[45/*"Method Not ...*/]), ::g::Uno::Collections::Dictionary__Add_fn(uPtr(collection2), uCRef<int32_t>(406), ::STRINGS[46/*"Not Accepta...*/]), ::g::Uno::Collections::Dictionary__Add_fn(uPtr(collection2), uCRef<int32_t>(407), ::STRINGS[47/*"Proxy Authe...*/]), ::g::Uno::Collections::Dictionary__Add_fn(uPtr(collection2), uCRef<int32_t>(408), ::STRINGS[48/*"Request Tim...*/]), ::g::Uno::Collections::Dictionary__Add_fn(uPtr(collection2), uCRef<int32_t>(409), ::STRINGS[49/*"Conflict"*/]), ::g::Uno::Collections::Dictionary__Add_fn(uPtr(collection2), uCRef<int32_t>(410), ::STRINGS[50/*"Gone"*/]), ::g::Uno::Collections::Dictionary__Add_fn(uPtr(collection2), uCRef<int32_t>(411), ::STRINGS[51/*"Length Requ...*/]), ::g::Uno::Collections::Dictionary__Add_fn(uPtr(collection2), uCRef<int32_t>(412), ::STRINGS[52/*"Preconditio...*/]), ::g::Uno::Collections::Dictionary__Add_fn(uPtr(collection2), uCRef<int32_t>(413), ::STRINGS[53/*"Request Ent...*/]), ::g::Uno::Collections::Dictionary__Add_fn(uPtr(collection2), uCRef<int32_t>(414), ::STRINGS[54/*"Request-URI...*/]), ::g::Uno::Collections::Dictionary__Add_fn(uPtr(collection2), uCRef<int32_t>(415), ::STRINGS[55/*"Unsupported...*/]), ::g::Uno::Collections::Dictionary__Add_fn(uPtr(collection2), uCRef<int32_t>(416), ::STRINGS[56/*"Requested r...*/]), ::g::Uno::Collections::Dictionary__Add_fn(uPtr(collection2), uCRef<int32_t>(417), ::STRINGS[57/*"Expectation...*/]), collection2);
-    HttpStatusReasonPhrase::ServerErrors_ = (uObject*)(collection1 = (::g::Uno::Collections::Dictionary*)::g::Uno::Collections::Dictionary::New1(::TYPES[3/*Uno.Collections.Dictionary<int, string>*/]), ::g::Uno::Collections::Dictionary__Add_fn(uPtr(collection1), uCRef<int32_t>(500), ::STRINGS[58/*"Internal Se...*/]), ::g::Uno::Collections::Dictionary__Add_fn(uPtr(collection1), uCRef<int32_t>(501), ::STRINGS[59/*"Not Impleme...*/]), ::g::Uno::Collections::Dictionary__Add_fn(uPtr(collection1), uCRef<int32_t>(502), ::STRINGS[60/*"Bad Gateway"*/]), ::g::Uno::Collections::Dictionary__Add_fn(uPtr(collection1), uCRef<int32_t>(503), ::STRINGS[61/*"Service Una...*/]), ::g::Uno::Collections::Dictionary__Add_fn(uPtr(collection1), uCRef<int32_t>(504), ::STRINGS[62/*"Gateway Tim...*/]), ::g::Uno::Collections::Dictionary__Add_fn(uPtr(collection1), uCRef<int32_t>(505), ::STRINGS[63/*"HTTP Versio...*/]), collection1);
+    HttpStatusReasonPhrase::Informational_ = (uObject*)(collection5 = (::g::Uno::Collections::Dictionary*)::g::Uno::Collections::Dictionary::New1(::TYPES[1/*Uno.Collections.Dictionary<int, string>*/]), ::g::Uno::Collections::Dictionary__Add_fn(uPtr(collection5), uCRef<int32_t>(100), ::STRINGS[2/*"Continue"*/]), ::g::Uno::Collections::Dictionary__Add_fn(uPtr(collection5), uCRef<int32_t>(101), ::STRINGS[3/*"Switching P...*/]), collection5);
+    HttpStatusReasonPhrase::Success_ = (uObject*)(collection4 = (::g::Uno::Collections::Dictionary*)::g::Uno::Collections::Dictionary::New1(::TYPES[1/*Uno.Collections.Dictionary<int, string>*/]), ::g::Uno::Collections::Dictionary__Add_fn(uPtr(collection4), uCRef<int32_t>(200), ::STRINGS[4/*"OK"*/]), ::g::Uno::Collections::Dictionary__Add_fn(uPtr(collection4), uCRef<int32_t>(201), ::STRINGS[5/*"Created"*/]), ::g::Uno::Collections::Dictionary__Add_fn(uPtr(collection4), uCRef<int32_t>(202), ::STRINGS[6/*"Accepted"*/]), ::g::Uno::Collections::Dictionary__Add_fn(uPtr(collection4), uCRef<int32_t>(203), ::STRINGS[7/*"Non-Authori...*/]), ::g::Uno::Collections::Dictionary__Add_fn(uPtr(collection4), uCRef<int32_t>(204), ::STRINGS[8/*"No Content"*/]), ::g::Uno::Collections::Dictionary__Add_fn(uPtr(collection4), uCRef<int32_t>(205), ::STRINGS[9/*"Reset Content"*/]), ::g::Uno::Collections::Dictionary__Add_fn(uPtr(collection4), uCRef<int32_t>(206), ::STRINGS[10/*"Partial Con...*/]), collection4);
+    HttpStatusReasonPhrase::Redirection_ = (uObject*)(collection3 = (::g::Uno::Collections::Dictionary*)::g::Uno::Collections::Dictionary::New1(::TYPES[1/*Uno.Collections.Dictionary<int, string>*/]), ::g::Uno::Collections::Dictionary__Add_fn(uPtr(collection3), uCRef<int32_t>(300), ::STRINGS[11/*"Multiple Ch...*/]), ::g::Uno::Collections::Dictionary__Add_fn(uPtr(collection3), uCRef<int32_t>(301), ::STRINGS[12/*"Moved Perma...*/]), ::g::Uno::Collections::Dictionary__Add_fn(uPtr(collection3), uCRef<int32_t>(302), ::STRINGS[13/*"Found"*/]), ::g::Uno::Collections::Dictionary__Add_fn(uPtr(collection3), uCRef<int32_t>(303), ::STRINGS[14/*"See Other"*/]), ::g::Uno::Collections::Dictionary__Add_fn(uPtr(collection3), uCRef<int32_t>(304), ::STRINGS[15/*"Not Modified"*/]), ::g::Uno::Collections::Dictionary__Add_fn(uPtr(collection3), uCRef<int32_t>(305), ::STRINGS[16/*"Use Proxy"*/]), ::g::Uno::Collections::Dictionary__Add_fn(uPtr(collection3), uCRef<int32_t>(307), ::STRINGS[17/*"Temporary R...*/]), collection3);
+    HttpStatusReasonPhrase::ClientErrors_ = (uObject*)(collection2 = (::g::Uno::Collections::Dictionary*)::g::Uno::Collections::Dictionary::New1(::TYPES[1/*Uno.Collections.Dictionary<int, string>*/]), ::g::Uno::Collections::Dictionary__Add_fn(uPtr(collection2), uCRef<int32_t>(400), ::STRINGS[18/*"Bad Request"*/]), ::g::Uno::Collections::Dictionary__Add_fn(uPtr(collection2), uCRef<int32_t>(401), ::STRINGS[19/*"Unauthorized"*/]), ::g::Uno::Collections::Dictionary__Add_fn(uPtr(collection2), uCRef<int32_t>(402), ::STRINGS[20/*"Payment Req...*/]), ::g::Uno::Collections::Dictionary__Add_fn(uPtr(collection2), uCRef<int32_t>(403), ::STRINGS[21/*"Forbidden"*/]), ::g::Uno::Collections::Dictionary__Add_fn(uPtr(collection2), uCRef<int32_t>(404), ::STRINGS[22/*"Not Found"*/]), ::g::Uno::Collections::Dictionary__Add_fn(uPtr(collection2), uCRef<int32_t>(405), ::STRINGS[23/*"Method Not ...*/]), ::g::Uno::Collections::Dictionary__Add_fn(uPtr(collection2), uCRef<int32_t>(406), ::STRINGS[24/*"Not Accepta...*/]), ::g::Uno::Collections::Dictionary__Add_fn(uPtr(collection2), uCRef<int32_t>(407), ::STRINGS[25/*"Proxy Authe...*/]), ::g::Uno::Collections::Dictionary__Add_fn(uPtr(collection2), uCRef<int32_t>(408), ::STRINGS[26/*"Request Tim...*/]), ::g::Uno::Collections::Dictionary__Add_fn(uPtr(collection2), uCRef<int32_t>(409), ::STRINGS[27/*"Conflict"*/]), ::g::Uno::Collections::Dictionary__Add_fn(uPtr(collection2), uCRef<int32_t>(410), ::STRINGS[28/*"Gone"*/]), ::g::Uno::Collections::Dictionary__Add_fn(uPtr(collection2), uCRef<int32_t>(411), ::STRINGS[29/*"Length Requ...*/]), ::g::Uno::Collections::Dictionary__Add_fn(uPtr(collection2), uCRef<int32_t>(412), ::STRINGS[30/*"Preconditio...*/]), ::g::Uno::Collections::Dictionary__Add_fn(uPtr(collection2), uCRef<int32_t>(413), ::STRINGS[31/*"Request Ent...*/]), ::g::Uno::Collections::Dictionary__Add_fn(uPtr(collection2), uCRef<int32_t>(414), ::STRINGS[32/*"Request-URI...*/]), ::g::Uno::Collections::Dictionary__Add_fn(uPtr(collection2), uCRef<int32_t>(415), ::STRINGS[33/*"Unsupported...*/]), ::g::Uno::Collections::Dictionary__Add_fn(uPtr(collection2), uCRef<int32_t>(416), ::STRINGS[34/*"Requested r...*/]), ::g::Uno::Collections::Dictionary__Add_fn(uPtr(collection2), uCRef<int32_t>(417), ::STRINGS[35/*"Expectation...*/]), collection2);
+    HttpStatusReasonPhrase::ServerErrors_ = (uObject*)(collection1 = (::g::Uno::Collections::Dictionary*)::g::Uno::Collections::Dictionary::New1(::TYPES[1/*Uno.Collections.Dictionary<int, string>*/]), ::g::Uno::Collections::Dictionary__Add_fn(uPtr(collection1), uCRef<int32_t>(500), ::STRINGS[36/*"Internal Se...*/]), ::g::Uno::Collections::Dictionary__Add_fn(uPtr(collection1), uCRef<int32_t>(501), ::STRINGS[37/*"Not Impleme...*/]), ::g::Uno::Collections::Dictionary__Add_fn(uPtr(collection1), uCRef<int32_t>(502), ::STRINGS[38/*"Bad Gateway"*/]), ::g::Uno::Collections::Dictionary__Add_fn(uPtr(collection1), uCRef<int32_t>(503), ::STRINGS[39/*"Service Una...*/]), ::g::Uno::Collections::Dictionary__Add_fn(uPtr(collection1), uCRef<int32_t>(504), ::STRINGS[40/*"Gateway Tim...*/]), ::g::Uno::Collections::Dictionary__Add_fn(uPtr(collection1), uCRef<int32_t>(505), ::STRINGS[41/*"HTTP Versio...*/]), collection1);
 }
 
 static void HttpStatusReasonPhrase_build(uType* type)
 {
-    ::STRINGS[24] = uString::Const("Continue");
-    ::STRINGS[25] = uString::Const("Switching Protocols");
-    ::STRINGS[26] = uString::Const("OK");
-    ::STRINGS[27] = uString::Const("Created");
-    ::STRINGS[28] = uString::Const("Accepted");
-    ::STRINGS[29] = uString::Const("Non-Authoritative Information");
-    ::STRINGS[30] = uString::Const("No Content");
-    ::STRINGS[31] = uString::Const("Reset Content");
-    ::STRINGS[32] = uString::Const("Partial Content");
-    ::STRINGS[33] = uString::Const("Multiple Choices");
-    ::STRINGS[34] = uString::Const("Moved Permanently");
-    ::STRINGS[35] = uString::Const("Found");
-    ::STRINGS[36] = uString::Const("See Other");
-    ::STRINGS[37] = uString::Const("Not Modified");
-    ::STRINGS[38] = uString::Const("Use Proxy");
-    ::STRINGS[39] = uString::Const("Temporary Redirect");
-    ::STRINGS[40] = uString::Const("Bad Request");
-    ::STRINGS[41] = uString::Const("Unauthorized");
-    ::STRINGS[42] = uString::Const("Payment Required");
-    ::STRINGS[43] = uString::Const("Forbidden");
-    ::STRINGS[44] = uString::Const("Not Found");
-    ::STRINGS[45] = uString::Const("Method Not Allowed");
-    ::STRINGS[46] = uString::Const("Not Acceptable");
-    ::STRINGS[47] = uString::Const("Proxy Authentication Required");
-    ::STRINGS[48] = uString::Const("Request Time-out");
-    ::STRINGS[49] = uString::Const("Conflict");
-    ::STRINGS[50] = uString::Const("Gone");
-    ::STRINGS[51] = uString::Const("Length Required");
-    ::STRINGS[52] = uString::Const("Precondition Failed");
-    ::STRINGS[53] = uString::Const("Request Entity Too Large");
-    ::STRINGS[54] = uString::Const("Request-URI Too Large");
-    ::STRINGS[55] = uString::Const("Unsupported Media Type");
-    ::STRINGS[56] = uString::Const("Requested range not satisfiable");
-    ::STRINGS[57] = uString::Const("Expectation Failed");
-    ::STRINGS[58] = uString::Const("Internal Server Error");
-    ::STRINGS[59] = uString::Const("Not Implemented");
-    ::STRINGS[60] = uString::Const("Bad Gateway");
-    ::STRINGS[61] = uString::Const("Service Unavailable");
-    ::STRINGS[62] = uString::Const("Gateway Time-out");
-    ::STRINGS[63] = uString::Const("HTTP Version not supported");
-    ::TYPES[3] = ::g::Uno::Collections::Dictionary_typeof()->MakeType(::g::Uno::Int_typeof(), ::g::Uno::String_typeof(), NULL);
-    ::TYPES[4] = ::g::Uno::Collections::IDictionary_typeof()->MakeType(::g::Uno::Int_typeof(), ::g::Uno::String_typeof(), NULL);
+    ::STRINGS[2] = uString::Const("Continue");
+    ::STRINGS[3] = uString::Const("Switching Protocols");
+    ::STRINGS[4] = uString::Const("OK");
+    ::STRINGS[5] = uString::Const("Created");
+    ::STRINGS[6] = uString::Const("Accepted");
+    ::STRINGS[7] = uString::Const("Non-Authoritative Information");
+    ::STRINGS[8] = uString::Const("No Content");
+    ::STRINGS[9] = uString::Const("Reset Content");
+    ::STRINGS[10] = uString::Const("Partial Content");
+    ::STRINGS[11] = uString::Const("Multiple Choices");
+    ::STRINGS[12] = uString::Const("Moved Permanently");
+    ::STRINGS[13] = uString::Const("Found");
+    ::STRINGS[14] = uString::Const("See Other");
+    ::STRINGS[15] = uString::Const("Not Modified");
+    ::STRINGS[16] = uString::Const("Use Proxy");
+    ::STRINGS[17] = uString::Const("Temporary Redirect");
+    ::STRINGS[18] = uString::Const("Bad Request");
+    ::STRINGS[19] = uString::Const("Unauthorized");
+    ::STRINGS[20] = uString::Const("Payment Required");
+    ::STRINGS[21] = uString::Const("Forbidden");
+    ::STRINGS[22] = uString::Const("Not Found");
+    ::STRINGS[23] = uString::Const("Method Not Allowed");
+    ::STRINGS[24] = uString::Const("Not Acceptable");
+    ::STRINGS[25] = uString::Const("Proxy Authentication Required");
+    ::STRINGS[26] = uString::Const("Request Time-out");
+    ::STRINGS[27] = uString::Const("Conflict");
+    ::STRINGS[28] = uString::Const("Gone");
+    ::STRINGS[29] = uString::Const("Length Required");
+    ::STRINGS[30] = uString::Const("Precondition Failed");
+    ::STRINGS[31] = uString::Const("Request Entity Too Large");
+    ::STRINGS[32] = uString::Const("Request-URI Too Large");
+    ::STRINGS[33] = uString::Const("Unsupported Media Type");
+    ::STRINGS[34] = uString::Const("Requested range not satisfiable");
+    ::STRINGS[35] = uString::Const("Expectation Failed");
+    ::STRINGS[36] = uString::Const("Internal Server Error");
+    ::STRINGS[37] = uString::Const("Not Implemented");
+    ::STRINGS[38] = uString::Const("Bad Gateway");
+    ::STRINGS[39] = uString::Const("Service Unavailable");
+    ::STRINGS[40] = uString::Const("Gateway Time-out");
+    ::STRINGS[41] = uString::Const("HTTP Version not supported");
+    ::TYPES[1] = ::g::Uno::Collections::Dictionary_typeof()->MakeType(::g::Uno::Int_typeof(), ::g::Uno::String_typeof(), NULL);
+    ::TYPES[2] = ::g::Uno::Collections::IDictionary_typeof()->MakeType(::g::Uno::Int_typeof(), ::g::Uno::String_typeof(), NULL);
     type->SetFields(0,
-        ::TYPES[4/*Uno.Collections.IDictionary<int, string>*/], (uintptr_t)&HttpStatusReasonPhrase::Informational_, uFieldFlagsStatic,
-        ::TYPES[4/*Uno.Collections.IDictionary<int, string>*/], (uintptr_t)&HttpStatusReasonPhrase::Success_, uFieldFlagsStatic,
-        ::TYPES[4/*Uno.Collections.IDictionary<int, string>*/], (uintptr_t)&HttpStatusReasonPhrase::Redirection_, uFieldFlagsStatic,
-        ::TYPES[4/*Uno.Collections.IDictionary<int, string>*/], (uintptr_t)&HttpStatusReasonPhrase::ClientErrors_, uFieldFlagsStatic,
-        ::TYPES[4/*Uno.Collections.IDictionary<int, string>*/], (uintptr_t)&HttpStatusReasonPhrase::ServerErrors_, uFieldFlagsStatic);
+        ::TYPES[2/*Uno.Collections.IDictionary<int, string>*/], (uintptr_t)&HttpStatusReasonPhrase::Informational_, uFieldFlagsStatic,
+        ::TYPES[2/*Uno.Collections.IDictionary<int, string>*/], (uintptr_t)&HttpStatusReasonPhrase::Success_, uFieldFlagsStatic,
+        ::TYPES[2/*Uno.Collections.IDictionary<int, string>*/], (uintptr_t)&HttpStatusReasonPhrase::Redirection_, uFieldFlagsStatic,
+        ::TYPES[2/*Uno.Collections.IDictionary<int, string>*/], (uintptr_t)&HttpStatusReasonPhrase::ClientErrors_, uFieldFlagsStatic,
+        ::TYPES[2/*Uno.Collections.IDictionary<int, string>*/], (uintptr_t)&HttpStatusReasonPhrase::ServerErrors_, uFieldFlagsStatic);
     type->Reflection.SetFields(5,
         new uField("ClientErrors", 3),
         new uField("Informational", 0),
@@ -2107,33 +1577,33 @@ uString* HttpStatusReasonPhrase::GetFromStatusCode(int32_t statusCode)
     bool ret10;
     uString* description;
 
-    if ((::g::Uno::Collections::IDictionary::TryGetValue_ex(uInterface(uPtr(HttpStatusReasonPhrase::Informational_), ::TYPES[4/*Uno.Collections.IDictionary<int, string>*/]), uCRef<int32_t>(statusCode), (void**)(&description), &ret6), ret6))
+    if ((::g::Uno::Collections::IDictionary::TryGetValue_ex(uInterface(uPtr(HttpStatusReasonPhrase::Informational_), ::TYPES[2/*Uno.Collections.IDictionary<int, string>*/]), uCRef<int32_t>(statusCode), (void**)(&description), &ret6), ret6))
         return description;
 
-    if ((::g::Uno::Collections::IDictionary::TryGetValue_ex(uInterface(uPtr(HttpStatusReasonPhrase::Success_), ::TYPES[4/*Uno.Collections.IDictionary<int, string>*/]), uCRef<int32_t>(statusCode), (void**)(&description), &ret7), ret7))
+    if ((::g::Uno::Collections::IDictionary::TryGetValue_ex(uInterface(uPtr(HttpStatusReasonPhrase::Success_), ::TYPES[2/*Uno.Collections.IDictionary<int, string>*/]), uCRef<int32_t>(statusCode), (void**)(&description), &ret7), ret7))
         return description;
 
-    if ((::g::Uno::Collections::IDictionary::TryGetValue_ex(uInterface(uPtr(HttpStatusReasonPhrase::Redirection_), ::TYPES[4/*Uno.Collections.IDictionary<int, string>*/]), uCRef<int32_t>(statusCode), (void**)(&description), &ret8), ret8))
+    if ((::g::Uno::Collections::IDictionary::TryGetValue_ex(uInterface(uPtr(HttpStatusReasonPhrase::Redirection_), ::TYPES[2/*Uno.Collections.IDictionary<int, string>*/]), uCRef<int32_t>(statusCode), (void**)(&description), &ret8), ret8))
         return description;
 
-    if ((::g::Uno::Collections::IDictionary::TryGetValue_ex(uInterface(uPtr(HttpStatusReasonPhrase::ClientErrors_), ::TYPES[4/*Uno.Collections.IDictionary<int, string>*/]), uCRef<int32_t>(statusCode), (void**)(&description), &ret9), ret9))
+    if ((::g::Uno::Collections::IDictionary::TryGetValue_ex(uInterface(uPtr(HttpStatusReasonPhrase::ClientErrors_), ::TYPES[2/*Uno.Collections.IDictionary<int, string>*/]), uCRef<int32_t>(statusCode), (void**)(&description), &ret9), ret9))
         return description;
 
-    if ((::g::Uno::Collections::IDictionary::TryGetValue_ex(uInterface(uPtr(HttpStatusReasonPhrase::ServerErrors_), ::TYPES[4/*Uno.Collections.IDictionary<int, string>*/]), uCRef<int32_t>(statusCode), (void**)(&description), &ret10), ret10))
+    if ((::g::Uno::Collections::IDictionary::TryGetValue_ex(uInterface(uPtr(HttpStatusReasonPhrase::ServerErrors_), ::TYPES[2/*Uno.Collections.IDictionary<int, string>*/]), uCRef<int32_t>(statusCode), (void**)(&description), &ret10), ret10))
         return description;
 
     return NULL;
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Net.Http\1.7.1\HttpMessageHandlerRequest.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Net.Http\1.8.0\HttpMessageHandlerRequest.uno
 // ----------------------------------------------------------------------------------------------------
 
 // public sealed class InvalidResponseTypeException :496
 // {
 static void InvalidResponseTypeException_build(uType* type)
 {
-    ::STRINGS[64] = uString::Const("Response type is invalid.");
+    ::STRINGS[42] = uString::Const("Response type is invalid.");
     type->SetFields(4);
     type->Reflection.SetFunctions(1,
         new uFunction(".ctor", NULL, (void*)InvalidResponseTypeException__New4_fn, 0, true, type, 0));
@@ -2170,7 +1640,7 @@ void InvalidResponseTypeException__New4_fn(InvalidResponseTypeException** __retv
 // public InvalidResponseTypeException() [instance] :498
 void InvalidResponseTypeException::ctor_3()
 {
-    ctor_1(::STRINGS[64/*"Response ty...*/]);
+    ctor_1(::STRINGS[42/*"Response ty...*/]);
 }
 
 // public InvalidResponseTypeException New() [static] :498
@@ -2182,14 +1652,14 @@ InvalidResponseTypeException* InvalidResponseTypeException::New4()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Net.Http\1.7.1\HttpMessageHandlerRequest.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Net.Http\1.8.0\HttpMessageHandlerRequest.uno
 // ----------------------------------------------------------------------------------------------------
 
 // public sealed class InvalidStateException :502
 // {
 static void InvalidStateException_build(uType* type)
 {
-    ::STRINGS[65] = uString::Const("The object is in an invalid state.");
+    ::STRINGS[43] = uString::Const("The object is in an invalid state.");
     type->SetFields(4);
     type->Reflection.SetFunctions(2,
         new uFunction(".ctor", NULL, (void*)InvalidStateException__New4_fn, 0, true, type, 0),
@@ -2239,7 +1709,7 @@ void InvalidStateException__New5_fn(uString* message, InvalidStateException** __
 // public InvalidStateException() [instance] :504
 void InvalidStateException::ctor_3()
 {
-    ctor_1(::STRINGS[65/*"The object ...*/]);
+    ctor_1(::STRINGS[43/*"The object ...*/]);
 }
 
 // public InvalidStateException(string message) [instance] :507
@@ -2265,7 +1735,7 @@ InvalidStateException* InvalidStateException::New5(uString* message)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Net.Http\1.7.1\HttpMessageHandlerRequest.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Net.Http\1.8.0\HttpMessageHandlerRequest.uno
 // ----------------------------------------------------------------------------------------------------
 
 // private sealed class HttpMessageHandlerRequest.ProgressClosure :186
@@ -2345,223 +1815,7 @@ HttpMessageHandlerRequest__ProgressClosure* HttpMessageHandlerRequest__ProgressC
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Net.Http\1.7.1\UriParsers\QueryParser.uno
-// -------------------------------------------------------------------------------------------------
-
-// public sealed class QueryParser :6
-// {
-static void QueryParser_build(uType* type)
-{
-    type->SetDependencies(
-        ::g::Uno::Net::Http::UriScheme_typeof());
-    type->Reflection.SetFunctions(2,
-        new uFunction(".ctor", NULL, (void*)QueryParser__New1_fn, 0, true, type, 0),
-        new uFunction("Parse", NULL, (void*)QueryParser__Parse_fn, 0, true, ::g::Uno::String_typeof(), 4, ::g::Uno::String_typeof(), ::g::Uno::String_typeof(), ::g::Uno::Int_typeof(), ::g::Uno::Int_typeof()->ByRef()));
-}
-
-uType* QueryParser_typeof()
-{
-    static uSStrong<uType*> type;
-    if (type != NULL) return type;
-
-    uTypeOptions options;
-    options.DependencyCount = 1;
-    options.ObjectSize = sizeof(QueryParser);
-    options.TypeSize = sizeof(uType);
-    type = uClassType::New("Uno.Net.Http.QueryParser", options);
-    type->fp_build_ = QueryParser_build;
-    type->fp_ctor_ = (void*)QueryParser__New1_fn;
-    return type;
-}
-
-// public generated QueryParser() :6
-void QueryParser__ctor__fn(QueryParser* __this)
-{
-    __this->ctor_();
-}
-
-// public generated QueryParser New() :6
-void QueryParser__New1_fn(QueryParser** __retval)
-{
-    *__retval = QueryParser::New1();
-}
-
-// public static string Parse(string uriString, string scheme, int idx, int& startPartIdx) :8
-void QueryParser__Parse_fn(uString* uriString, uString* scheme, int32_t* idx, int32_t* startPartIdx, uString** __retval)
-{
-    *__retval = QueryParser::Parse(uriString, scheme, *idx, startPartIdx);
-}
-
-// public generated QueryParser() [instance] :6
-void QueryParser::ctor_()
-{
-}
-
-// public generated QueryParser New() [static] :6
-QueryParser* QueryParser::New1()
-{
-    QueryParser* obj1 = (QueryParser*)uNew(QueryParser_typeof());
-    obj1->ctor_();
-    return obj1;
-}
-
-// public static string Parse(string uriString, string scheme, int idx, int& startPartIdx) [static] :8
-uString* QueryParser::Parse(uString* uriString, uString* scheme, int32_t idx, int32_t* startPartIdx)
-{
-    uStackFrame __("Uno.Net.Http.QueryParser", "Parse(string,string,int,int&)");
-
-    if ((idx >= uPtr(uriString)->Length()) || !::g::Uno::Net::Http::UriScheme::IsHttpScheme(scheme))
-        return ::g::Uno::String::Empty();
-
-    int32_t startQuery = ::g::Uno::String::IndexOf1(uPtr(uriString), '?', idx);
-    int32_t startHash = ::g::Uno::String::IndexOf1(uriString, '#', idx);
-
-    if (startHash < 0)
-        startHash = uPtr(uriString)->Length();
-
-    if ((startQuery >= 0) && (startQuery < startHash))
-    {
-        *startPartIdx = startQuery;
-        return ::g::Uno::String::Substring1(uPtr(uriString), *startPartIdx, startHash - *startPartIdx);
-    }
-
-    return ::g::Uno::String::Empty();
-}
-// }
-
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Net.Http\1.7.1\UriParsers\SchemeParser.uno
-// --------------------------------------------------------------------------------------------------
-
-// public sealed class SchemeParser :12
-// {
-static void SchemeParser_build(uType* type)
-{
-    ::STRINGS[9] = uString::Const(":");
-    ::STRINGS[66] = uString::Const("The scheme isn't specified in uriString.");
-    ::STRINGS[67] = uString::Const("The scheme specified in uriString is not correctly formed.");
-    ::STRINGS[68] = uString::Const("The length of the scheme specified in uriString exceeds 1023 characters.");
-    ::STRINGS[20] = uString::Const("There is an invalid character sequence in uriString.");
-    type->SetDependencies(
-        ::g::Uno::Net::Http::UriScheme_typeof());
-    type->Reflection.SetFunctions(2,
-        new uFunction(".ctor", NULL, (void*)SchemeParser__New1_fn, 0, true, type, 0),
-        new uFunction("Parse", NULL, (void*)SchemeParser__Parse_fn, 0, true, ::g::Uno::Net::Http::SchemeParserResult_typeof(), 2, ::g::Uno::String_typeof(), ::g::Uno::Int_typeof()->ByRef()));
-}
-
-uType* SchemeParser_typeof()
-{
-    static uSStrong<uType*> type;
-    if (type != NULL) return type;
-
-    uTypeOptions options;
-    options.DependencyCount = 1;
-    options.ObjectSize = sizeof(SchemeParser);
-    options.TypeSize = sizeof(uType);
-    type = uClassType::New("Uno.Net.Http.SchemeParser", options);
-    type->fp_build_ = SchemeParser_build;
-    type->fp_ctor_ = (void*)SchemeParser__New1_fn;
-    return type;
-}
-
-// public generated SchemeParser() :12
-void SchemeParser__ctor__fn(SchemeParser* __this)
-{
-    __this->ctor_();
-}
-
-// public generated SchemeParser New() :12
-void SchemeParser__New1_fn(SchemeParser** __retval)
-{
-    *__retval = SchemeParser::New1();
-}
-
-// public static Uno.Net.Http.SchemeParserResult Parse(string uriString, int& idx) :15
-void SchemeParser__Parse_fn(uString* uriString, int32_t* idx, ::g::Uno::Net::Http::SchemeParserResult* __retval)
-{
-    *__retval = SchemeParser::Parse(uriString, idx);
-}
-
-// public generated SchemeParser() [instance] :12
-void SchemeParser::ctor_()
-{
-}
-
-// public generated SchemeParser New() [static] :12
-SchemeParser* SchemeParser::New1()
-{
-    SchemeParser* obj1 = (SchemeParser*)uNew(SchemeParser_typeof());
-    obj1->ctor_();
-    return obj1;
-}
-
-// public static Uno.Net.Http.SchemeParserResult Parse(string uriString, int& idx) [static] :15
-::g::Uno::Net::Http::SchemeParserResult SchemeParser::Parse(uString* uriString, int32_t* idx)
-{
-    uStackFrame __("Uno.Net.Http.SchemeParser", "Parse(string,int&)");
-    ::g::Uno::Net::Http::SchemeParserResult result;
-    int32_t end = ::g::Uno::String::IndexOf3(uPtr(uriString), ::STRINGS[9/*":"*/], *idx);
-
-    if (end < 0)
-        U_THROW(::g::Uno::Net::Http::UriFormatException::New4(::STRINGS[66/*"The scheme ...*/]));
-
-    if (((*idx + 2) >= uriString->Length()) || (end == *idx))
-        U_THROW(::g::Uno::Net::Http::UriFormatException::New4(::STRINGS[67/*"The scheme ...*/]));
-
-    if ((end - *idx) > 1023)
-        U_THROW(::g::Uno::Net::Http::UriFormatException::New4(::STRINGS[68/*"The length ...*/]));
-
-    result.Scheme = ::g::Uno::String::Substring1(uriString, *idx, end - *idx);
-    result.Type = ::g::Uno::Net::Http::UriScheme::GetSchemeType(result.Scheme);
-
-    if (result.Type == 2)
-        return result;
-
-    *idx = end + 1;
-
-    if (result.Type == 0)
-    {
-        if ((((*idx + 1) >= uPtr(uriString)->Length()) || (uPtr(uriString)->Item(*idx) != '/')) || (uPtr(uriString)->Item(*idx + 1) != '/'))
-            U_THROW(::g::Uno::Net::Http::UriFormatException::New4(::STRINGS[20/*"There is an...*/]));
-
-        *idx = *idx + 2;
-    }
-
-    return result;
-}
-// }
-
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Net.Http\1.7.1\UriParsers\SchemeParser.uno
-// --------------------------------------------------------------------------------------------------
-
-// public struct SchemeParserResult :6
-// {
-static void SchemeParserResult_build(uType* type)
-{
-    type->SetFields(0,
-        ::g::Uno::Net::Http::UriSchemeType_typeof(), offsetof(SchemeParserResult, Type), 0,
-        ::g::Uno::String_typeof(), offsetof(SchemeParserResult, Scheme), 0);
-    type->Reflection.SetFields(2,
-        new uField("Scheme", 1),
-        new uField("Type", 0));
-}
-
-uStructType* SchemeParserResult_typeof()
-{
-    static uSStrong<uStructType*> type;
-    if (type != NULL) return type;
-
-    uTypeOptions options;
-    options.FieldCount = 2;
-    options.Alignment = alignof(SchemeParserResult);
-    options.ValueSize = sizeof(SchemeParserResult);
-    options.TypeSize = sizeof(uStructType);
-    type = uStructType::New("Uno.Net.Http.SchemeParserResult", options);
-    type->fp_build_ = SchemeParserResult_build;
-    return type;
-}
-// }
-
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Net.Http\1.7.1\HttpMessageHandler.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Net.Http\1.8.0\HttpMessageHandler.uno
 // ---------------------------------------------------------------------------------------------
 
 // internal static class HttpMessageHandler.StaticData :10
@@ -2616,337 +1870,6 @@ void HttpMessageHandler__StaticData::DecrementPendingRequests()
 void HttpMessageHandler__StaticData::IncrementPendingRequests()
 {
     HttpMessageHandler__StaticData_typeof()->Init();
-}
-// }
-
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Net.Http\1.7.1\UriFormatException.uno
-// ---------------------------------------------------------------------------------------------
-
-// public sealed class UriFormatException :6
-// {
-static void UriFormatException_build(uType* type)
-{
-    type->SetFields(4);
-    type->Reflection.SetFunctions(1,
-        new uFunction(".ctor", NULL, (void*)UriFormatException__New4_fn, 0, true, type, 1, ::g::Uno::String_typeof()));
-}
-
-::g::Uno::Exception_type* UriFormatException_typeof()
-{
-    static uSStrong< ::g::Uno::Exception_type*> type;
-    if (type != NULL) return type;
-
-    uTypeOptions options;
-    options.BaseDefinition = ::g::Uno::Exception_typeof();
-    options.FieldCount = 4;
-    options.ObjectSize = sizeof(UriFormatException);
-    options.TypeSize = sizeof(::g::Uno::Exception_type);
-    type = (::g::Uno::Exception_type*)uClassType::New("Uno.Net.Http.UriFormatException", options);
-    type->fp_build_ = UriFormatException_build;
-    return type;
-}
-
-// public UriFormatException(string message) :8
-void UriFormatException__ctor_3_fn(UriFormatException* __this, uString* message)
-{
-    __this->ctor_3(message);
-}
-
-// public UriFormatException New(string message) :8
-void UriFormatException__New4_fn(uString* message, UriFormatException** __retval)
-{
-    *__retval = UriFormatException::New4(message);
-}
-
-// public UriFormatException(string message) [instance] :8
-void UriFormatException::ctor_3(uString* message)
-{
-    ctor_1(message);
-}
-
-// public UriFormatException New(string message) [static] :8
-UriFormatException* UriFormatException::New4(uString* message)
-{
-    UriFormatException* obj1 = (UriFormatException*)uNew(UriFormatException_typeof());
-    obj1->ctor_3(message);
-    return obj1;
-}
-// }
-
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Net.Http\1.7.1\UriScheme.uno
-// ------------------------------------------------------------------------------------
-
-// public sealed class UriScheme :13
-// {
-// static generated UriScheme() :13
-static void UriScheme__cctor__fn(uType* __type)
-{
-    ::g::Uno::Collections::List* collection2;
-    ::g::Uno::Collections::List* collection1;
-    UriScheme::KnownInternetSchemes_ = (collection2 = (::g::Uno::Collections::List*)::g::Uno::Collections::List::New1(::TYPES[0/*Uno.Collections.List<string>*/]), ::g::Uno::Collections::List__Add_fn(uPtr(collection2), ::STRINGS[69/*"http"*/]), ::g::Uno::Collections::List__Add_fn(uPtr(collection2), ::STRINGS[70/*"https"*/]), ::g::Uno::Collections::List__Add_fn(uPtr(collection2), ::STRINGS[71/*"ftp"*/]), ::g::Uno::Collections::List__Add_fn(uPtr(collection2), ::STRINGS[72/*"gopher"*/]), ::g::Uno::Collections::List__Add_fn(uPtr(collection2), ::STRINGS[73/*"nntp"*/]), ::g::Uno::Collections::List__Add_fn(uPtr(collection2), ::STRINGS[74/*"telnet"*/]), ::g::Uno::Collections::List__Add_fn(uPtr(collection2), ::STRINGS[75/*"wais"*/]), ::g::Uno::Collections::List__Add_fn(uPtr(collection2), ::STRINGS[76/*"file"*/]), ::g::Uno::Collections::List__Add_fn(uPtr(collection2), ::STRINGS[77/*"prospero"*/]), ::g::Uno::Collections::List__Add_fn(uPtr(collection2), ::STRINGS[78/*"ws"*/]), ::g::Uno::Collections::List__Add_fn(uPtr(collection2), ::STRINGS[79/*"wss"*/]), collection2);
-    UriScheme::KnownNonInternetSchemes_ = (collection1 = (::g::Uno::Collections::List*)::g::Uno::Collections::List::New1(::TYPES[0/*Uno.Collections.List<string>*/]), ::g::Uno::Collections::List__Add_fn(uPtr(collection1), ::STRINGS[80/*"mailto"*/]), ::g::Uno::Collections::List__Add_fn(uPtr(collection1), ::STRINGS[81/*"news"*/]), collection1);
-}
-
-static void UriScheme_build(uType* type)
-{
-    ::STRINGS[69] = uString::Const("http");
-    ::STRINGS[70] = uString::Const("https");
-    ::STRINGS[71] = uString::Const("ftp");
-    ::STRINGS[72] = uString::Const("gopher");
-    ::STRINGS[73] = uString::Const("nntp");
-    ::STRINGS[74] = uString::Const("telnet");
-    ::STRINGS[75] = uString::Const("wais");
-    ::STRINGS[76] = uString::Const("file");
-    ::STRINGS[77] = uString::Const("prospero");
-    ::STRINGS[78] = uString::Const("ws");
-    ::STRINGS[79] = uString::Const("wss");
-    ::STRINGS[80] = uString::Const("mailto");
-    ::STRINGS[81] = uString::Const("news");
-    ::TYPES[0] = ::g::Uno::Collections::List_typeof()->MakeType(::g::Uno::String_typeof(), NULL);
-    ::TYPES[5] = ::g::Uno::Collections::Dictionary_typeof()->MakeType(::g::Uno::String_typeof(), ::g::Uno::Int_typeof(), NULL);
-    type->SetFields(0,
-        ::TYPES[5/*Uno.Collections.Dictionary<string, int>*/], (uintptr_t)&UriScheme::_defaultPorts_, uFieldFlagsStatic,
-        ::TYPES[0/*Uno.Collections.List<string>*/], (uintptr_t)&UriScheme::KnownInternetSchemes_, uFieldFlagsStatic,
-        ::TYPES[0/*Uno.Collections.List<string>*/], (uintptr_t)&UriScheme::KnownNonInternetSchemes_, uFieldFlagsStatic);
-    type->Reflection.SetFields(2,
-        new uField("KnownInternetSchemes", 1),
-        new uField("KnownNonInternetSchemes", 2));
-    type->Reflection.SetFunctions(4,
-        new uFunction("get_DefaultPorts", NULL, (void*)UriScheme__get_DefaultPorts_fn, 0, true, ::TYPES[5/*Uno.Collections.Dictionary<string, int>*/], 0),
-        new uFunction("GetSchemeType", NULL, (void*)UriScheme__GetSchemeType_fn, 0, true, ::g::Uno::Net::Http::UriSchemeType_typeof(), 1, ::g::Uno::String_typeof()),
-        new uFunction("IsHttpScheme", NULL, (void*)UriScheme__IsHttpScheme_fn, 0, true, ::g::Uno::Bool_typeof(), 1, ::g::Uno::String_typeof()),
-        new uFunction(".ctor", NULL, (void*)UriScheme__New1_fn, 0, true, type, 0));
-}
-
-uType* UriScheme_typeof()
-{
-    static uSStrong<uType*> type;
-    if (type != NULL) return type;
-
-    uTypeOptions options;
-    options.FieldCount = 3;
-    options.ObjectSize = sizeof(UriScheme);
-    options.TypeSize = sizeof(uType);
-    type = uClassType::New("Uno.Net.Http.UriScheme", options);
-    type->fp_build_ = UriScheme_build;
-    type->fp_ctor_ = (void*)UriScheme__New1_fn;
-    type->fp_cctor_ = UriScheme__cctor__fn;
-    return type;
-}
-
-// public generated UriScheme() :13
-void UriScheme__ctor__fn(UriScheme* __this)
-{
-    __this->ctor_();
-}
-
-// public static Uno.Collections.Dictionary<string, int> get_DefaultPorts() :23
-void UriScheme__get_DefaultPorts_fn(::g::Uno::Collections::Dictionary** __retval)
-{
-    *__retval = UriScheme::DefaultPorts();
-}
-
-// public static Uno.Net.Http.UriSchemeType GetSchemeType(string scheme) :46
-void UriScheme__GetSchemeType_fn(uString* scheme, int32_t* __retval)
-{
-    *__retval = UriScheme::GetSchemeType(scheme);
-}
-
-// public static bool IsHttpScheme(string scheme) :60
-void UriScheme__IsHttpScheme_fn(uString* scheme, bool* __retval)
-{
-    *__retval = UriScheme::IsHttpScheme(scheme);
-}
-
-// public generated UriScheme New() :13
-void UriScheme__New1_fn(UriScheme** __retval)
-{
-    *__retval = UriScheme::New1();
-}
-
-uSStrong< ::g::Uno::Collections::Dictionary*> UriScheme::_defaultPorts_;
-uSStrong< ::g::Uno::Collections::List*> UriScheme::KnownInternetSchemes_;
-uSStrong< ::g::Uno::Collections::List*> UriScheme::KnownNonInternetSchemes_;
-
-// public generated UriScheme() [instance] :13
-void UriScheme::ctor_()
-{
-}
-
-// public static Uno.Net.Http.UriSchemeType GetSchemeType(string scheme) [static] :46
-int32_t UriScheme::GetSchemeType(uString* scheme)
-{
-    uStackFrame __("Uno.Net.Http.UriScheme", "GetSchemeType(string)");
-    UriScheme_typeof()->Init();
-    bool ret4;
-    bool ret5;
-    uString* s = ::g::Uno::String::ToLower(uPtr(scheme));
-
-    if ((::g::Uno::Collections::List__Contains_fn(uPtr(UriScheme::KnownInternetSchemes_), s, &ret4), ret4))
-        return 0;
-
-    if ((::g::Uno::Collections::List__Contains_fn(uPtr(UriScheme::KnownNonInternetSchemes_), s, &ret5), ret5))
-        return 1;
-
-    return 2;
-}
-
-// public static bool IsHttpScheme(string scheme) [static] :60
-bool UriScheme::IsHttpScheme(uString* scheme)
-{
-    uStackFrame __("Uno.Net.Http.UriScheme", "IsHttpScheme(string)");
-    UriScheme_typeof()->Init();
-    uString* s = ::g::Uno::String::ToLower(uPtr(scheme));
-    return ::g::Uno::String::op_Equality(s, ::STRINGS[69/*"http"*/]) || ::g::Uno::String::op_Equality(s, ::STRINGS[70/*"https"*/]);
-}
-
-// public generated UriScheme New() [static] :13
-UriScheme* UriScheme::New1()
-{
-    UriScheme* obj3 = (UriScheme*)uNew(UriScheme_typeof());
-    obj3->ctor_();
-    return obj3;
-}
-
-// public static Uno.Collections.Dictionary<string, int> get_DefaultPorts() [static] :23
-::g::Uno::Collections::Dictionary* UriScheme::DefaultPorts()
-{
-    uStackFrame __("Uno.Net.Http.UriScheme", "get_DefaultPorts()");
-    UriScheme_typeof()->Init();
-
-    if (UriScheme::_defaultPorts_ == NULL)
-    {
-        UriScheme::_defaultPorts_ = ((::g::Uno::Collections::Dictionary*)::g::Uno::Collections::Dictionary::New1(::TYPES[5/*Uno.Collections.Dictionary<string, int>*/]));
-        ::g::Uno::Collections::Dictionary__Add_fn(uPtr(UriScheme::_defaultPorts_), ::STRINGS[69/*"http"*/], uCRef<int32_t>(80));
-        ::g::Uno::Collections::Dictionary__Add_fn(uPtr(UriScheme::_defaultPorts_), ::STRINGS[70/*"https"*/], uCRef<int32_t>(443));
-        ::g::Uno::Collections::Dictionary__Add_fn(uPtr(UriScheme::_defaultPorts_), ::STRINGS[71/*"ftp"*/], uCRef<int32_t>(21));
-        ::g::Uno::Collections::Dictionary__Add_fn(uPtr(UriScheme::_defaultPorts_), ::STRINGS[72/*"gopher"*/], uCRef<int32_t>(70));
-        ::g::Uno::Collections::Dictionary__Add_fn(uPtr(UriScheme::_defaultPorts_), ::STRINGS[74/*"telnet"*/], uCRef<int32_t>(119));
-        ::g::Uno::Collections::Dictionary__Add_fn(uPtr(UriScheme::_defaultPorts_), ::STRINGS[75/*"wais"*/], uCRef<int32_t>(-1));
-        ::g::Uno::Collections::Dictionary__Add_fn(uPtr(UriScheme::_defaultPorts_), ::STRINGS[76/*"file"*/], uCRef<int32_t>(-1));
-        ::g::Uno::Collections::Dictionary__Add_fn(uPtr(UriScheme::_defaultPorts_), ::STRINGS[77/*"prospero"*/], uCRef<int32_t>(-1));
-        ::g::Uno::Collections::Dictionary__Add_fn(uPtr(UriScheme::_defaultPorts_), ::STRINGS[80/*"mailto"*/], uCRef<int32_t>(25));
-        ::g::Uno::Collections::Dictionary__Add_fn(uPtr(UriScheme::_defaultPorts_), ::STRINGS[81/*"news"*/], uCRef<int32_t>(-1));
-        ::g::Uno::Collections::Dictionary__Add_fn(uPtr(UriScheme::_defaultPorts_), ::STRINGS[78/*"ws"*/], uCRef<int32_t>(80));
-        ::g::Uno::Collections::Dictionary__Add_fn(uPtr(UriScheme::_defaultPorts_), ::STRINGS[79/*"wss"*/], uCRef<int32_t>(443));
-    }
-
-    return UriScheme::_defaultPorts_;
-}
-// }
-
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Net.Http\1.7.1\UriScheme.uno
-// ------------------------------------------------------------------------------------
-
-// public enum UriSchemeType :6
-uEnumType* UriSchemeType_typeof()
-{
-    static uSStrong<uEnumType*> type;
-    if (type != NULL) return type;
-
-    type = uEnumType::New("Uno.Net.Http.UriSchemeType", ::g::Uno::Int_typeof(), 3);
-    type->SetLiterals(
-        "Internet", 0LL,
-        "NonInternet", 1LL,
-        "Unknown", 2LL);
-    return type;
-}
-
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Net.Http\1.7.1\UriParsers\UserInfoParser.uno
-// ----------------------------------------------------------------------------------------------------
-
-// public sealed class UserInfoParser :6
-// {
-static void UserInfoParser_build(uType* type)
-{
-    ::STRINGS[3] = uString::Const("\\");
-    ::STRINGS[9] = uString::Const(":");
-    ::STRINGS[20] = uString::Const("There is an invalid character sequence in uriString.");
-    ::STRINGS[82] = uString::Const("@");
-    ::STRINGS[83] = uString::Const("The user name or password specified in uriString is not valid.");
-    type->Reflection.SetFunctions(2,
-        new uFunction(".ctor", NULL, (void*)UserInfoParser__New1_fn, 0, true, type, 0),
-        new uFunction("Parse", NULL, (void*)UserInfoParser__Parse_fn, 0, true, ::g::Uno::String_typeof(), 3, ::g::Uno::String_typeof(), ::g::Uno::Int_typeof(), ::g::Uno::Int_typeof()->ByRef()));
-}
-
-uType* UserInfoParser_typeof()
-{
-    static uSStrong<uType*> type;
-    if (type != NULL) return type;
-
-    uTypeOptions options;
-    options.ObjectSize = sizeof(UserInfoParser);
-    options.TypeSize = sizeof(uType);
-    type = uClassType::New("Uno.Net.Http.UserInfoParser", options);
-    type->fp_build_ = UserInfoParser_build;
-    type->fp_ctor_ = (void*)UserInfoParser__New1_fn;
-    return type;
-}
-
-// public generated UserInfoParser() :6
-void UserInfoParser__ctor__fn(UserInfoParser* __this)
-{
-    __this->ctor_();
-}
-
-// private static bool IsValid(string userInfo) :31
-void UserInfoParser__IsValid_fn(uString* userInfo, bool* __retval)
-{
-    *__retval = UserInfoParser::IsValid(userInfo);
-}
-
-// public generated UserInfoParser New() :6
-void UserInfoParser__New1_fn(UserInfoParser** __retval)
-{
-    *__retval = UserInfoParser::New1();
-}
-
-// public static string Parse(string uriString, int endIdx, int& idx) :8
-void UserInfoParser__Parse_fn(uString* uriString, int32_t* endIdx, int32_t* idx, uString** __retval)
-{
-    *__retval = UserInfoParser::Parse(uriString, *endIdx, idx);
-}
-
-// public generated UserInfoParser() [instance] :6
-void UserInfoParser::ctor_()
-{
-}
-
-// private static bool IsValid(string userInfo) [static] :31
-bool UserInfoParser::IsValid(uString* userInfo)
-{
-    uStackFrame __("Uno.Net.Http.UserInfoParser", "IsValid(string)");
-    return (((::g::Uno::String::IndexOf3(uPtr(userInfo), ::STRINGS[3/*"\\"*/], 0) < 0) && !::g::Uno::String::EndsWith(uPtr(userInfo), ::STRINGS[9/*":"*/])) && !::g::Uno::String::StartsWith(uPtr(userInfo), ::STRINGS[9/*":"*/])) && !::g::Uno::String::IsNullOrEmpty(userInfo);
-}
-
-// public generated UserInfoParser New() [static] :6
-UserInfoParser* UserInfoParser::New1()
-{
-    UserInfoParser* obj1 = (UserInfoParser*)uNew(UserInfoParser_typeof());
-    obj1->ctor_();
-    return obj1;
-}
-
-// public static string Parse(string uriString, int endIdx, int& idx) [static] :8
-uString* UserInfoParser::Parse(uString* uriString, int32_t endIdx, int32_t* idx)
-{
-    uStackFrame __("Uno.Net.Http.UserInfoParser", "Parse(string,int,int&)");
-
-    if (*idx >= endIdx)
-        U_THROW(::g::Uno::Net::Http::UriFormatException::New4(::STRINGS[20/*"There is an...*/]));
-
-    int32_t end = ::g::Uno::String::IndexOf3(uPtr(uriString), ::STRINGS[82/*"@"*/], *idx);
-
-    if ((end < 0) || (end >= endIdx))
-        return ::g::Uno::String::Empty();
-
-    uString* userInfo = ::g::Uno::String::Substring1(uriString, *idx, end - *idx);
-
-    if (!UserInfoParser::IsValid(userInfo))
-        U_THROW(::g::Uno::Net::Http::UriFormatException::New4(::STRINGS[83/*"The user na...*/]));
-
-    *idx = end + 1;
-    return userInfo;
 }
 // }
 

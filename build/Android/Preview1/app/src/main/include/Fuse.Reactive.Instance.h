@@ -1,4 +1,4 @@
-// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/Fuse.Reactive.Bindings/1.7.4/Instance.uno.
+// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/Fuse.Reactive.Bindings/1.8.1/Instance.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -24,17 +24,24 @@ namespace Reactive{
 // {
 ::g::Fuse::Reactive::Instantiator_type* Instance_typeof();
 void Instance__ctor_5_fn(Instance* __this);
+void Instance__get_IsEnabled_fn(Instance* __this, bool* __retval);
+void Instance__set_IsEnabled_fn(Instance* __this, bool* value);
 void Instance__get_Item_fn(Instance* __this, uObject** __retval);
 void Instance__set_Item_fn(Instance* __this, uObject* value);
 void Instance__New4_fn(Instance** __retval);
+void Instance__UpdateItems_fn(Instance* __this);
 
 struct Instance : ::g::Fuse::Reactive::Instantiator
 {
     uStrong<uObject*> _item;
+    bool _isEnabled;
 
     void ctor_5();
+    bool IsEnabled();
+    void IsEnabled(bool value);
     uObject* Item();
     void Item(uObject* value);
+    void UpdateItems();
     static Instance* New4();
 };
 // }

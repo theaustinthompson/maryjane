@@ -1,6 +1,7 @@
 // This file was generated based on '(multiple files)'.
 // WARNING: Changes might be lost if you edit this file directly.
 
+#include <chrono>
 #include <sys/time.h>
 #include <time.h>
 #include <Uno.Bool.h>
@@ -35,7 +36,7 @@ namespace g{
 namespace Uno{
 namespace Diagnostics{
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\Diagnostics\AllocateEvent.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\Diagnostics\AllocateEvent.uno
 // ----------------------------------------------------------------------------------------------------------
 
 // public sealed class AllocateEvent :3
@@ -68,10 +69,10 @@ void AllocateEvent__get_Type_fn(AllocateEvent* __this, int32_t* __retval)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\Diagnostics\Profile.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\Diagnostics\Profile.uno
 // ----------------------------------------------------------------------------------------------------
 
-// public sealed class AlwaysProfileAttribute :9
+// public sealed class AlwaysProfileAttribute :10
 // {
 static void AlwaysProfileAttribute_build(uType* type)
 {
@@ -94,25 +95,25 @@ uType* AlwaysProfileAttribute_typeof()
     return type;
 }
 
-// public generated AlwaysProfileAttribute() :9
+// public generated AlwaysProfileAttribute() :10
 void AlwaysProfileAttribute__ctor_1_fn(AlwaysProfileAttribute* __this)
 {
     __this->ctor_1();
 }
 
-// public generated AlwaysProfileAttribute New() :9
+// public generated AlwaysProfileAttribute New() :10
 void AlwaysProfileAttribute__New1_fn(AlwaysProfileAttribute** __retval)
 {
     *__retval = AlwaysProfileAttribute::New1();
 }
 
-// public generated AlwaysProfileAttribute() [instance] :9
+// public generated AlwaysProfileAttribute() [instance] :10
 void AlwaysProfileAttribute::ctor_1()
 {
     ctor_();
 }
 
-// public generated AlwaysProfileAttribute New() [static] :9
+// public generated AlwaysProfileAttribute New() [static] :10
 AlwaysProfileAttribute* AlwaysProfileAttribute::New1()
 {
     AlwaysProfileAttribute* obj1 = (AlwaysProfileAttribute*)uNew(AlwaysProfileAttribute_typeof());
@@ -121,7 +122,7 @@ AlwaysProfileAttribute* AlwaysProfileAttribute::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\Diagnostics\Debug.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\Diagnostics\Debug.uno
 // --------------------------------------------------------------------------------------------------
 
 // public delegate void AssertionHandler(bool value, string expression, string filename, int line, object[] operands) :21
@@ -140,7 +141,7 @@ uDelegateType* AssertionHandler_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\Diagnostics\Clock.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\Diagnostics\Clock.uno
 // --------------------------------------------------------------------------------------------------
 
 // public static class Clock :9
@@ -177,7 +178,7 @@ void Clock__GetTicks_fn(int64_t* __retval)
     *__retval = Clock::GetTicks();
 }
 
-// public static int GetTimezoneOffset(int year, int month, int day) :91
+// public static int GetTimezoneOffset(int year, int month, int day) :77
 void Clock__GetTimezoneOffset_fn(int32_t* year, int32_t* month, int32_t* day, int32_t* __retval)
 {
     *__retval = Clock::GetTimezoneOffset(*year, *month, *day);
@@ -195,13 +196,11 @@ double Clock::GetSeconds()
 // public static long GetTicks() [static] :60
 int64_t Clock::GetTicks()
 {
-    // this method is more accurate for android
-    struct timespec now;
-    clock_gettime(CLOCK_REALTIME, &now);
-    return (long long)now.tv_sec * 10000000 + (long long)now.tv_nsec / 100;
+    auto start = std::chrono::system_clock::now();
+    return std::chrono::duration_cast<std::chrono::duration<int64_t, std::ratio<1, 10000000>>>(start.time_since_epoch()).count();
 }
 
-// public static int GetTimezoneOffset(int year, int month, int day) [static] :91
+// public static int GetTimezoneOffset(int year, int month, int day) [static] :77
 int32_t Clock::GetTimezoneOffset(int32_t year, int32_t month, int32_t day)
 {
     struct tm stm;
@@ -233,7 +232,7 @@ int32_t Clock::GetTimezoneOffset(int32_t year, int32_t month, int32_t day)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\Diagnostics\Debug.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\Diagnostics\Debug.uno
 // --------------------------------------------------------------------------------------------------
 
 // public static class Debug :27
@@ -360,7 +359,7 @@ void Debug::SetLogHandler(uDelegate* handler)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\Diagnostics\Debug.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\Diagnostics\Debug.uno
 // --------------------------------------------------------------------------------------------------
 
 // public enum DebugMessageType :8
@@ -380,7 +379,7 @@ uEnumType* DebugMessageType_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\Diagnostics\EnterEvent.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\Diagnostics\EnterEvent.uno
 // -------------------------------------------------------------------------------------------------------
 
 // public sealed class EnterEvent :3
@@ -413,7 +412,7 @@ void EnterEvent__get_Type_fn(EnterEvent* __this, int32_t* __retval)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\Diagnostics\EventType.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\Diagnostics\EventType.uno
 // ------------------------------------------------------------------------------------------------------
 
 // public enum EventType :3
@@ -431,7 +430,7 @@ uEnumType* EventType_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\Diagnostics\ExitEvent.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\Diagnostics\ExitEvent.uno
 // ------------------------------------------------------------------------------------------------------
 
 // public sealed class ExitEvent :3
@@ -493,7 +492,7 @@ ExitEvent* ExitEvent::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\Diagnostics\FreeEvent.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\Diagnostics\FreeEvent.uno
 // ------------------------------------------------------------------------------------------------------
 
 // public sealed class FreeEvent :3
@@ -526,7 +525,7 @@ void FreeEvent__get_Type_fn(FreeEvent* __this, int32_t* __retval)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\Diagnostics\IdMap.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\Diagnostics\IdMap.uno
 // --------------------------------------------------------------------------------------------------
 
 // public sealed class IdMap<T> :6
@@ -595,7 +594,7 @@ IdMap* IdMap::New1(uType* __type, bool twoWay)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\Diagnostics\Debug.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\Diagnostics\Debug.uno
 // --------------------------------------------------------------------------------------------------
 
 // public delegate void LogHandler(string message, Uno.Diagnostics.DebugMessageType type) :24
@@ -611,10 +610,10 @@ uDelegateType* LogHandler_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\Diagnostics\Profile.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\Diagnostics\Profile.uno
 // ----------------------------------------------------------------------------------------------------
 
-// public sealed class NeverProfileAttribute :10
+// public sealed class NeverProfileAttribute :12
 // {
 static void NeverProfileAttribute_build(uType* type)
 {
@@ -637,25 +636,25 @@ uType* NeverProfileAttribute_typeof()
     return type;
 }
 
-// public generated NeverProfileAttribute() :10
+// public generated NeverProfileAttribute() :12
 void NeverProfileAttribute__ctor_1_fn(NeverProfileAttribute* __this)
 {
     __this->ctor_1();
 }
 
-// public generated NeverProfileAttribute New() :10
+// public generated NeverProfileAttribute New() :12
 void NeverProfileAttribute__New1_fn(NeverProfileAttribute** __retval)
 {
     *__retval = NeverProfileAttribute::New1();
 }
 
-// public generated NeverProfileAttribute() [instance] :10
+// public generated NeverProfileAttribute() [instance] :12
 void NeverProfileAttribute::ctor_1()
 {
     ctor_();
 }
 
-// public generated NeverProfileAttribute New() [static] :10
+// public generated NeverProfileAttribute New() [static] :12
 NeverProfileAttribute* NeverProfileAttribute::New1()
 {
     NeverProfileAttribute* obj1 = (NeverProfileAttribute*)uNew(NeverProfileAttribute_typeof());
@@ -664,10 +663,10 @@ NeverProfileAttribute* NeverProfileAttribute::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\Diagnostics\Profile.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\Diagnostics\Profile.uno
 // ----------------------------------------------------------------------------------------------------
 
-// public static class Profile :12
+// public static class Profile :15
 // {
 static void Profile_build(uType* type)
 {
@@ -693,10 +692,10 @@ uClassType* Profile_typeof()
 double Profile::StartTimeStamp_;
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\Diagnostics\ProfileData.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\Diagnostics\ProfileData.uno
 // --------------------------------------------------------------------------------------------------------
 
-// public sealed class ProfileData :5
+// public sealed class ProfileData :6
 // {
 static void ProfileData_build(uType* type)
 {
@@ -730,19 +729,19 @@ uType* ProfileData_typeof()
     return type;
 }
 
-// public generated ProfileData() :5
+// public generated ProfileData() :6
 void ProfileData__ctor__fn(ProfileData* __this)
 {
     __this->ctor_();
 }
 
-// public generated ProfileData New() :5
+// public generated ProfileData New() :6
 void ProfileData__New1_fn(ProfileData** __retval)
 {
     *__retval = ProfileData::New1();
 }
 
-// public generated ProfileData() [instance] :5
+// public generated ProfileData() [instance] :6
 void ProfileData::ctor_()
 {
     FunctionIds = ((::g::Uno::Collections::List*)::g::Uno::Collections::List::New1(::TYPES[2/*Uno.Collections.List<string>*/]));
@@ -750,7 +749,7 @@ void ProfileData::ctor_()
     TypeMap = ((::g::Uno::Diagnostics::IdMap*)::g::Uno::Diagnostics::IdMap::New1(::TYPES[4/*Uno.Diagnostics.IdMap<string>*/], true));
 }
 
-// public generated ProfileData New() [static] :5
+// public generated ProfileData New() [static] :6
 ProfileData* ProfileData::New1()
 {
     ProfileData* obj1 = (ProfileData*)uNew(ProfileData_typeof());
@@ -759,10 +758,10 @@ ProfileData* ProfileData::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\Diagnostics\ProfileEvent.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\Diagnostics\ProfileEvent.uno
 // ---------------------------------------------------------------------------------------------------------
 
-// public abstract class ProfileEvent :3
+// public abstract class ProfileEvent :4
 // {
 static void ProfileEvent_build(uType* type)
 {
@@ -788,13 +787,13 @@ ProfileEvent_type* ProfileEvent_typeof()
     return type;
 }
 
-// protected ProfileEvent() :8
+// protected ProfileEvent() :9
 void ProfileEvent__ctor__fn(ProfileEvent* __this)
 {
     __this->ctor_();
 }
 
-// protected ProfileEvent() [instance] :8
+// protected ProfileEvent() [instance] :9
 void ProfileEvent::ctor_()
 {
     TimeStamp = (::g::Uno::Diagnostics::Clock::GetSeconds() - ::g::Uno::Diagnostics::Profile::StartTimeStamp_);

@@ -48,7 +48,7 @@ public class AndroidSurface
         android.util.Log.d("maryjane", (message==null ? "null" : message.toString()));
     }
 
-    public static void ConcatTransform289(final Object cp,final Object m)
+    public static void ConcatTransform281(final Object cp,final Object m)
     {
         GraphicsSurfaceContext ctx = (GraphicsSurfaceContext) cp;
         Canvas canvas = ctx.canvas;
@@ -57,14 +57,14 @@ public class AndroidSurface
         canvas.concat(matrix);
     }
     
-    public static Object CreateFillPaint290()
+    public static Object CreateFillPaint282()
     {
         Paint paint = new Paint();
         paint.setFlags(Paint.ANTI_ALIAS_FLAG);
         return paint;
     }
     
-    public static Object CreateLinearGradient291(final com.uno.IntArray colors,final com.uno.FloatArray stops)
+    public static Object CreateLinearGradient283(final com.uno.IntArray colors,final com.uno.FloatArray stops)
     {
         LinearGradientStore store = new LinearGradientStore();
         store.colors = colors.copyArray();
@@ -72,13 +72,19 @@ public class AndroidSurface
         return store;
     }
     
-    public static Object CreateStrokedPaint292(final float width,final int fjoin,final int fcap,final float miterLimit)
+    public static Object CreateStrokedPaint284(final float width,final int fjoin,final int fcap,final float miterLimit)
     {
+        //supported by test SurfaceTest.EnumChecks
+        Paint.Join[] joinMap = { Paint.Join.MITER, Paint.Join.ROUND, Paint.Join.BEVEL };
+        Paint.Join join = joinMap[Math.max(0,Math.min(2,fjoin))];
+        Paint.Cap[] capMap = { Paint.Cap.BUTT, Paint.Cap.ROUND, Paint.Cap.SQUARE };
+        Paint.Cap cap = capMap[Math.max(0,Math.min(2,fcap))];
+        
         Paint paint = new Paint();
         
         paint.setStrokeMiter(miterLimit);
-        paint.setStrokeCap(Paint.Cap.BUTT);
-        paint.setStrokeJoin(Paint.Join.MITER);
+        paint.setStrokeCap(cap);
+        paint.setStrokeJoin(join);
         paint.setStyle(Paint.Style.STROKE);
         paint.setStrokeWidth(width);
         paint.setFlags(Paint.ANTI_ALIAS_FLAG);
@@ -86,7 +92,7 @@ public class AndroidSurface
         return paint;
     }
     
-    public static void FillPathImage293(final Object cp,final Object pathAsObject,final Object imageAsObject,final float originX,final float originY,final float tileSizeX,final float tileSizeY,final float width,final float height,final boolean eoFill,final Object paintAsObject)
+    public static void FillPathImage285(final Object cp,final Object pathAsObject,final Object imageAsObject,final float originX,final float originY,final float tileSizeX,final float tileSizeY,final float width,final float height,final boolean eoFill,final Object paintAsObject)
     {
         // TODO: reimplement - should wait for upstream changes first
         // see comments on this function in the CoreGraphicsSurface implementation
@@ -128,7 +134,7 @@ public class AndroidSurface
         canvas.restoreToCount(index);
     }
     
-    public static void FillPathLinearGradient294(final Object cp,final Object path,final Object gradientStore,final float startX,final float startY,final float endX,final float endY,final boolean eoFill,final Object pretendPaint)
+    public static void FillPathLinearGradient286(final Object cp,final Object path,final Object gradientStore,final float startX,final float startY,final float endX,final float endY,final boolean eoFill,final Object pretendPaint)
     {
         GraphicsSurfaceContext context = (GraphicsSurfaceContext) cp;
         
@@ -158,7 +164,7 @@ public class AndroidSurface
         canvas.restoreToCount(index);
     }
     
-    public static void FillPathSolidColor295(final Object cp,final Object pathAsObject,final int color,final boolean eoFill,final Object pretendPaint)
+    public static void FillPathSolidColor287(final Object cp,final Object pathAsObject,final int color,final boolean eoFill,final Object pretendPaint)
     {
         GraphicsSurfaceContext context = (GraphicsSurfaceContext) cp;
         Path path = (Path) pathAsObject;
@@ -175,58 +181,58 @@ public class AndroidSurface
         context.canvas.drawPath(path, paint);
     }
     
-    public static Object NewContext296()
+    public static Object NewContext288()
     {
         return new GraphicsSurfaceContext();
     }
     
-    public static void PathClose297(final Object pathAsObject)
+    public static void PathClose289(final Object pathAsObject)
     {
         Path path = (Path) pathAsObject;
         path.close();
     }
     
-    public static Object PathCreateMutable298()
+    public static Object PathCreateMutable290()
     {
         return new Path();
     }
     
-    public static void PathCurveTo299(final Object pathAsObject,final float x,final float y,final float ax,final float ay,final float bx,final float by)
+    public static void PathCurveTo291(final Object pathAsObject,final float x,final float y,final float ax,final float ay,final float bx,final float by)
     {
         Path path = (Path) pathAsObject;
         path.cubicTo(ax, ay, bx, by, x, y);
     }
     
-    public static void PathLineTo300(final Object pathAsObject,final float x,final float y)
+    public static void PathLineTo292(final Object pathAsObject,final float x,final float y)
     {
         Path path = (Path) pathAsObject;
         path.lineTo(x, y);
     }
     
-    public static void PathMoveTo301(final Object pathAsObject,final float x,final float y)
+    public static void PathMoveTo293(final Object pathAsObject,final float x,final float y)
     {
         Path path = (Path) pathAsObject;
         path.moveTo( x, y );
     }
     
-    public static void recycleBitmap302(final Object bit)
+    public static void recycleBitmap294(final Object bit)
     {
         ((Bitmap) bit).recycle();
     }
     
-    public static void RestoreContextState303(final Object cp)
+    public static void RestoreContextState295(final Object cp)
     {
         GraphicsSurfaceContext ctx = (GraphicsSurfaceContext) cp;
         ctx.canvas.restore();
     }
     
-    public static int SaveContextState304(final Object cp)
+    public static int SaveContextState296(final Object cp)
     {
         GraphicsSurfaceContext ctx = (GraphicsSurfaceContext) cp;
         return ctx.canvas.save();
     }
     
-    public static Object ToMatrix305(final UnoObject _this, final com.uno.FloatArray matrix)
+    public static Object ToMatrix297(final UnoObject _this, final com.uno.FloatArray matrix)
     {
         android.graphics.Matrix m = new android.graphics.Matrix();
         m.setValues(matrix.copyArray());

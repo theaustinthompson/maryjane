@@ -1,4 +1,4 @@
-// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/UnoCore/1.7.1/Source/Uno/Time/Text/PatternPart.uno.
+// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/UnoCore/1.8.0/Source/Uno/Time/Text/PatternPart.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -13,7 +13,7 @@ namespace Uno{
 namespace Time{
 namespace Text{
 
-// internal sealed class SignPart<T> :143
+// internal sealed class SignPart<T> :139
 // {
 ::g::Uno::Time::Text::PatternPart_type* SignPart_typeof();
 void SignPart__ctor_1_fn(SignPart* __this, bool* obligatory, uDelegate* setter, uDelegate* getter);

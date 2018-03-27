@@ -134,13 +134,18 @@ public class SystemUI
         }});
     }
     
-    public static float GetDensity83()
+    public static int GetAPILevel83()
     {
-        DisplayMetrics m = (DisplayMetrics)com.foreign.Fuse.Platform.SystemUI.GetDisplayMetrics84();
+        return android.os.Build.VERSION.SDK_INT;
+    }
+    
+    public static float GetDensity84()
+    {
+        DisplayMetrics m = (DisplayMetrics)com.foreign.Fuse.Platform.SystemUI.GetDisplayMetrics85();
         return m.density;
     }
     
-    public static Object GetDisplayMetrics84()
+    public static Object GetDisplayMetrics85()
     {
         DisplayMetrics metrics = new DisplayMetrics();
         if (android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN_MR1) {
@@ -152,7 +157,12 @@ public class SystemUI
         }
     }
     
-    public static float GetStatusBarHeight85()
+    public static String GetOSVersion86()
+    {
+        return android.os.Build.VERSION.RELEASE;
+    }
+    
+    public static float GetStatusBarHeight87()
     {
         int result = 0;
         if (ExternedBlockHost.callUno_Fuse_Platform_SystemUI__systemUIStateGet79()==0)
@@ -164,19 +174,19 @@ public class SystemUI
         	}
         	if (result == 0)
         	{
-        		if (ExternedBlockHost.callUno_Fuse_Platform_SystemUI_hasCachedStatusBarSizeGet86())
+        		if (ExternedBlockHost.callUno_Fuse_Platform_SystemUI_hasCachedStatusBarSizeGet88())
         		{
-        		result = ExternedBlockHost.callUno_Fuse_Platform_SystemUI_cachedOpenSizeGet87();
+        		result = ExternedBlockHost.callUno_Fuse_Platform_SystemUI_cachedOpenSizeGet89();
         		}
         	} else {
-        		ExternedBlockHost.callUno_Fuse_Platform_SystemUI_hasCachedStatusBarSizeSet86(true);
-        		ExternedBlockHost.callUno_Fuse_Platform_SystemUI_cachedOpenSizeSet87(result);
+        		ExternedBlockHost.callUno_Fuse_Platform_SystemUI_hasCachedStatusBarSizeSet88(true);
+        		ExternedBlockHost.callUno_Fuse_Platform_SystemUI_cachedOpenSizeSet89(result);
         	}
         }
         return (float)result;
     }
     
-    public static int GetSuperLayoutHeight88()
+    public static int GetSuperLayoutHeight90()
     {
         return (int)((FrameLayout)ExternedBlockHost.callUno_Fuse_Platform_SystemUI_SuperLayoutGet70()).getHeight();
     }
@@ -212,7 +222,7 @@ public class SystemUI
         }});
     }
     
-    public static void HookOntoRawActivityEvents89()
+    public static void HookOntoRawActivityEvents91()
     {
         com.fuse.Activity.SubscribeToLifecycleChange(new com.fuse.Activity.ActivityListener()
         {
@@ -220,10 +230,10 @@ public class SystemUI
         	@Override public void onStart() {}
         	@Override public void onWindowFocusChanged(boolean hasFocus) {}
         
-        	@Override public void onPause() { com.foreign.Fuse.Platform.SystemUI.OnPause90(); }
-        	@Override public void onResume() { com.foreign.Fuse.Platform.SystemUI.OnResume91(); }
-        	@Override public void onDestroy() { ExternedBlockHost.callUno_Fuse_Platform_SystemUI_OnDestroy92(); }
-        	@Override public void onConfigurationChanged(android.content.res.Configuration config) { ExternedBlockHost.callUno_Fuse_Platform_SystemUI_OnConfigChanged93(); }
+        	@Override public void onPause() { com.foreign.Fuse.Platform.SystemUI.OnPause92(); }
+        	@Override public void onResume() { com.foreign.Fuse.Platform.SystemUI.OnResume93(); }
+        	@Override public void onDestroy() { ExternedBlockHost.callUno_Fuse_Platform_SystemUI_OnDestroy94(); }
+        	@Override public void onConfigurationChanged(android.content.res.Configuration config) { ExternedBlockHost.callUno_Fuse_Platform_SystemUI_OnConfigChanged95(); }
         });
     }
     
@@ -231,7 +241,7 @@ public class SystemUI
     {
         return new OnLayoutChangeListener() {
         
-        	int lastWidth = (int)ExternedBlockHost.callUno_Fuse_Platform_SystemUI_GetRealDisplayWidth94();
+        	int lastWidth = (int)ExternedBlockHost.callUno_Fuse_Platform_SystemUI_GetRealDisplayWidth96();
         	int lastHeight = ExternedBlockHost.callUno_Fuse_Platform_SystemUI_GetRealDisplayHeight75();
         
         	@Override
@@ -241,15 +251,15 @@ public class SystemUI
         		if (newWidth!=lastWidth || newHeight!=lastHeight) {
         			lastHeight = newHeight;
         			lastWidth = newWidth;
-        			ExternedBlockHost.callUno_Fuse_Platform_SystemUI_cppOnConfigChanged95();
+        			ExternedBlockHost.callUno_Fuse_Platform_SystemUI_cppOnConfigChanged97();
         			ViewTreeObserver.OnGlobalLayoutListener kl = ((ViewTreeObserver.OnGlobalLayoutListener)ExternedBlockHost.callUno_Fuse_Platform_SystemUI__keyboardListenerGet66());
-        			if (kl!=null) ExternedBlockHost.callUno_Fuse_Platform_SystemUI_ResendFrameSizes96();
+        			if (kl!=null) ExternedBlockHost.callUno_Fuse_Platform_SystemUI_ResendFrameSizes98();
         		}
         	}
         };
     }
     
-    public static void OnCreate97()
+    public static void OnCreate99()
     {
         Activity activity = com.fuse.Activity.getRootActivity();
         
@@ -262,26 +272,26 @@ public class SystemUI
         // layouts
         if (ExternedBlockHost.callUno_Fuse_Platform_SystemUI_SuperLayoutGet70()==null) com.foreign.Fuse.Platform.SystemUI.CreateLayouts71();
         activity.getWindow().setContentView(((FrameLayout)ExternedBlockHost.callUno_Fuse_Platform_SystemUI_SuperLayoutGet70()));
-        ViewTreeObserver.OnGlobalLayoutListener kl = new ViewTreeObserver.OnGlobalLayoutListener() { public void onGlobalLayout() { com.foreign.Fuse.Platform.SystemUI.unoOnGlobalLayout98(); }};
+        ViewTreeObserver.OnGlobalLayoutListener kl = new ViewTreeObserver.OnGlobalLayoutListener() { public void onGlobalLayout() { com.foreign.Fuse.Platform.SystemUI.unoOnGlobalLayout100(); }};
         ExternedBlockHost.callUno_Fuse_Platform_SystemUI__keyboardListenerSet66(kl,UnoHelper.GetUnoObjectRef(kl));
         com.foreign.Fuse.Platform.SystemUI.Attach64(ExternedBlockHost.callUno_Fuse_Platform_SystemUI_RootLayoutGet72());
-        com.foreign.Fuse.Platform.SystemUI.HookOntoRawActivityEvents89();
+        com.foreign.Fuse.Platform.SystemUI.HookOntoRawActivityEvents91();
     }
     
-    public static void OnPause90()
+    public static void OnPause92()
     {
         ((FrameLayout)ExternedBlockHost.callUno_Fuse_Platform_SystemUI_RootLayoutGet72()).setVisibility(View.GONE);
     }
     
-    public static void OnResume91()
+    public static void OnResume93()
     {
-        ExternedBlockHost.callUno_Fuse_Platform_SystemUI_UpdateStatusBar99();
+        ExternedBlockHost.callUno_Fuse_Platform_SystemUI_UpdateStatusBar101();
         ((FrameLayout)ExternedBlockHost.callUno_Fuse_Platform_SystemUI_RootLayoutGet72()).setVisibility(View.VISIBLE);
     }
     
-    public static void SetAsRootView100(final Object view)
+    public static void SetAsRootView102(final Object view)
     {
-        com.foreign.Fuse.Platform.SystemUI.OnCreate97();
+        com.foreign.Fuse.Platform.SystemUI.OnCreate99();
         
         final View uview = (View)view;
         com.fuse.Activity.getRootActivity().runOnUiThread(new Runnable() { public void run() {
@@ -313,7 +323,7 @@ public class SystemUI
         	uview.setLayoutParams(lp);
     }
     
-    public static void ShowStatusBar101()
+    public static void ShowStatusBar103()
     {
         com.fuse.Activity.getRootActivity().runOnUiThread(new Runnable() { public void run()
         {
@@ -330,24 +340,24 @@ public class SystemUI
         		com.foreign.Fuse.Platform.SystemUI.HideActionBar81();
         	}
         	ExternedBlockHost.callUno_Fuse_Platform_SystemUI_CompensateRootLayoutForSystemUI76();
-        	ExternedBlockHost.callUno_Fuse_Platform_SystemUI_cppOnTopFrameChanged82((int)(int)com.foreign.Fuse.Platform.SystemUI.GetStatusBarHeight85());
+        	ExternedBlockHost.callUno_Fuse_Platform_SystemUI_cppOnTopFrameChanged82((int)(int)com.foreign.Fuse.Platform.SystemUI.GetStatusBarHeight87());
         }});
     }
     
-    public static void unoOnGlobalLayout98()
+    public static void unoOnGlobalLayout100()
     {
         int heightDiff = ExternedBlockHost.callUno_Fuse_Platform_SystemUI_GetRealDisplayHeight75()-((FrameLayout)ExternedBlockHost.callUno_Fuse_Platform_SystemUI_SuperLayoutGet70()).getHeight();
-        heightDiff -= com.foreign.Fuse.Platform.SystemUI.GetStatusBarHeight85();
+        heightDiff -= com.foreign.Fuse.Platform.SystemUI.GetStatusBarHeight87();
         int contentViewTop = com.fuse.Activity.getRootActivity().getWindow().findViewById(Window.ID_ANDROID_CONTENT).getTop();
         boolean keyboardClosed = (heightDiff-contentViewTop)<(ExternedBlockHost.callUno_Fuse_Platform_SystemUI_GetRealDisplayHeight75()/4);
-        if (heightDiff!=ExternedBlockHost.callUno_Fuse_Platform_SystemUI_lastKeyboardHeightGet102() || ExternedBlockHost.callUno_Fuse_Platform_SystemUI_firstSizingGet103()) {
+        if (heightDiff!=ExternedBlockHost.callUno_Fuse_Platform_SystemUI_lastKeyboardHeightGet104() || ExternedBlockHost.callUno_Fuse_Platform_SystemUI_firstSizingGet105()) {
         	if (keyboardClosed) {
-        		ExternedBlockHost.callUno_Fuse_Platform_SystemUI_onHideKeyboard104((int)heightDiff,(boolean)ExternedBlockHost.callUno_Fuse_Platform_SystemUI_firstSizingGet103());
+        		ExternedBlockHost.callUno_Fuse_Platform_SystemUI_onHideKeyboard106((int)heightDiff,(boolean)ExternedBlockHost.callUno_Fuse_Platform_SystemUI_firstSizingGet105());
         	} else {
-        		ExternedBlockHost.callUno_Fuse_Platform_SystemUI_onShowKeyboard105((int)heightDiff,(boolean)ExternedBlockHost.callUno_Fuse_Platform_SystemUI_firstSizingGet103());
+        		ExternedBlockHost.callUno_Fuse_Platform_SystemUI_onShowKeyboard107((int)heightDiff,(boolean)ExternedBlockHost.callUno_Fuse_Platform_SystemUI_firstSizingGet105());
         	}
         }
-        ExternedBlockHost.callUno_Fuse_Platform_SystemUI_firstSizingSet103(false);
+        ExternedBlockHost.callUno_Fuse_Platform_SystemUI_firstSizingSet105(false);
     }
     
 }

@@ -23,7 +23,7 @@ public class CanvasViewGroup
         android.util.Log.d("maryjane", (message==null ? "null" : message.toString()));
     }
 
-    public static void InstallDrawlistener115(final UnoObject _this, final Object handle,final com.foreign.Uno.Action_Object callback)
+    public static void InstallDrawlistener117(final UnoObject _this, final Object handle,final com.foreign.Uno.Action_Object callback)
     {
         com.fuse.android.views.CanvasViewGroup viewGroup = (com.fuse.android.views.CanvasViewGroup)handle;
         viewGroup.setWillNotDraw(false);
@@ -35,7 +35,7 @@ public class CanvasViewGroup
         });
     }
     
-    public static Object Instantiate116()
+    public static Object Instantiate118()
     {
         android.widget.FrameLayout frameLayout = new com.fuse.android.views.CanvasViewGroup(com.apps.maryjane.maryjane.GetRootActivity());
         frameLayout.setFocusable(true);

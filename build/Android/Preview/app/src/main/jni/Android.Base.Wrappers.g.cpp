@@ -81,7 +81,7 @@ namespace Android{
 namespace Base{
 namespace Wrappers{
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Targets\Android\Uno\Base\Wrappers.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Targets\Android\Uno\Base\Wrappers.uno
 // -------------------------------------------------------------------------------------------------------
 
 // public sealed extern class BindingSubclassAttribute :14
@@ -134,7 +134,7 @@ BindingSubclassAttribute* BindingSubclassAttribute::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Targets\Android\Uno\Base\Wrappers.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Targets\Android\Uno\Base\Wrappers.uno
 // -------------------------------------------------------------------------------------------------------
 
 // public abstract extern interface IJWrapper :20
@@ -152,7 +152,7 @@ uInterfaceType* IJWrapper_typeof()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Targets\Android\Uno\Base\Wrappers.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Targets\Android\Uno\Base\Wrappers.uno
 // -------------------------------------------------------------------------------------------------------
 
 // public static extern class JavaObjectHelper :139
@@ -210,7 +210,7 @@ uObject* JavaObjectHelper::JObjectToJWrapper(jobject tmpRes, bool stackArg)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Targets\Android\Uno\Base\Wrappers.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Targets\Android\Uno\Base\Wrappers.uno
 // -------------------------------------------------------------------------------------------------------
 
 // public extern class JWrapper :27

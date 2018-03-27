@@ -24,7 +24,7 @@ namespace Fuse{
 namespace Resources{
 namespace Exif{
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Elements\1.7.4\Resources\Exif\Exif.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Elements\1.8.1\Resources\Exif\Exif.uno
 // -----------------------------------------------------------------------------------------------
 
 // internal sealed extern class ExifAndroidImpl :181
@@ -97,7 +97,7 @@ int32_t ExifAndroidImpl::GetOrientation(::g::Java::Object* stream)
     {
         INIT_JNI;
         jclass __cls = JniHelper::GetNativeExternClass();
-        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "GetOrientation111", "(Ljava/lang/Object;)I");
+        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "GetOrientation113", "(Ljava/lang/Object;)I");
         ::g::Java::Object* _ustream=stream;
         jobject _stream = (_ustream==NULL ? NULL : U_JNIVAR->NewLocalRef(::g::Android::Base::Wrappers::IJWrapper::_GetJavaObject(uInterface((uObject*)_ustream, ::g::Android::Base::Wrappers::IJWrapper_typeof()))));
         jint __jresult = U_JNIVAR->CallStaticIntMethod(__cls,__mtd,_stream);
@@ -115,7 +115,7 @@ int32_t ExifAndroidImpl::GetOrientation(::g::Java::Object* stream)
     {
         INIT_JNI;
         jclass __cls = JniHelper::GetNativeExternClass();
-        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "InputStreamFromByteArray112", "(Ljava/lang/Object;)Ljava/lang/Object;");
+        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "InputStreamFromByteArray114", "(Ljava/lang/Object;)Ljava/lang/Object;");
         ::g::Java::Object* _ubuf=buf;
         jobject _buf = (_ubuf==NULL ? NULL : U_JNIVAR->NewLocalRef(::g::Android::Base::Wrappers::IJWrapper::_GetJavaObject(uInterface((uObject*)_ubuf, ::g::Android::Base::Wrappers::IJWrapper_typeof()))));
         jobject __jresult = U_JNIVAR->CallStaticObjectMethod(__cls,__mtd,_buf);
@@ -136,7 +136,7 @@ ExifAndroidImpl* ExifAndroidImpl::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Elements\1.7.4\Resources\Exif\Exif.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Elements\1.8.1\Resources\Exif\Exif.uno
 // -----------------------------------------------------------------------------------------------
 
 // public struct ExifData :21
@@ -144,7 +144,7 @@ ExifAndroidImpl* ExifAndroidImpl::New1()
 static void ExifData_build(uType* type)
 {
     ::STRINGS[0] = uString::Const("Reserved Exif orientation {0}, assuming identity");
-    ::STRINGS[1] = uString::Const("C:\\Users\\borde_000\\AppData\\Local\\Fusetools\\Packages\\Fuse.Elements\\1.7.4\\Resources\\Exif\\Exif.uno");
+    ::STRINGS[1] = uString::Const("C:\\Users\\borde_000\\AppData\\Local\\Fusetools\\Packages\\Fuse.Elements\\1.8.1\\Resources\\Exif\\Exif.uno");
     ::STRINGS[2] = uString::Const(".ctor");
     ::TYPES[0] = uObject_typeof()->Array();
     type->SetFields(0,
@@ -267,7 +267,7 @@ ExifData ExifData__New1(int32_t orientation)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Elements\1.7.4\Resources\Exif\Exif.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Elements\1.8.1\Resources\Exif\Exif.uno
 // -----------------------------------------------------------------------------------------------
 
 // public enum ImageOrientation :12

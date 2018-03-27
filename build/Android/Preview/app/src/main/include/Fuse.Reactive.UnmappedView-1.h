@@ -1,4 +1,4 @@
-// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/Fuse.Reactive/1.7.4/ObserverMap.uno.
+// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/Fuse.Reactive/1.8.1/ObserverMap.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once

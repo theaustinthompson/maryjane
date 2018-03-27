@@ -1,4 +1,4 @@
-// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/Fuse.Scripting/1.7.4/NativeProperty.uno.
+// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/Fuse.Scripting/1.8.1/NativeProperty.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -22,7 +22,7 @@ NativeProperty_type* NativeProperty_typeof();
 void NativeProperty__ctor_1_fn(NativeProperty* __this, uString* name);
 void NativeProperty__ctor_2_fn(NativeProperty* __this, uString* name, uDelegate* getHandler, uDelegate* setHandler, uDelegate* valueConverter);
 void NativeProperty__ctor_3_fn(NativeProperty* __this, uString* name, void* value);
-void NativeProperty__CreateObject_fn(NativeProperty* __this, uObject** __retval);
+void NativeProperty__CreateObject_fn(NativeProperty* __this, ::g::Fuse::Scripting::Context* context, uObject** __retval);
 void NativeProperty__GetProperty_fn(NativeProperty* __this, uTRef __retval);
 void NativeProperty__GetProperty1_fn(NativeProperty* __this, ::g::Fuse::Scripting::Context* context, uArray* args, uObject** __retval);
 void NativeProperty__New1_fn(uType* __type, uString* name, NativeProperty** __retval);
@@ -36,7 +36,7 @@ struct NativeProperty : ::g::Fuse::Scripting::NativeMember
     uStrong<uDelegate*> _setHandler;
     uStrong<uDelegate*> _getHandler;
     uStrong<uDelegate*> _valueConverter;
-    uTField _readonlyValue() { return __type->Field(this, 6); }
+    uTField _readonlyValue() { return __type->Field(this, 7); }
     bool _isReadonly;
 
     void ctor_1(uString* name);

@@ -1,4 +1,4 @@
-// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/Fuse.Reactive.Bindings/1.7.4/Instantiator.uno.
+// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/Fuse.Reactive.Bindings/1.8.1/Instantiator.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -28,7 +28,7 @@ namespace g{
 namespace Fuse{
 namespace Reactive{
 
-// public partial class Instantiator :101
+// public partial class Instantiator :116
 // {
 struct Instantiator_type : ::g::Fuse::Node_type
 {
@@ -50,6 +50,8 @@ void Instantiator__CompleteWindowItems_fn(Instantiator* __this, bool* one, bool*
 void Instantiator__CompleteWindowItemsAction_fn(Instantiator* __this);
 void Instantiator__get_DataCount_fn(Instantiator* __this, int32_t* __retval);
 void Instantiator__DataIndexOfChild_fn(Instantiator* __this, ::g::Fuse::Node* child, int32_t* __retval);
+void Instantiator__get_Defaults_fn(Instantiator* __this, int32_t* __retval);
+void Instantiator__set_Defaults_fn(Instantiator* __this, int32_t* value);
 void Instantiator__get_Defer_fn(Instantiator* __this, int32_t* __retval);
 void Instantiator__set_Defer_fn(Instantiator* __this, int32_t* value);
 void Instantiator__get_DeferredPriority_fn(Instantiator* __this, float* __retval);
@@ -74,6 +76,8 @@ void Instantiator__get_IdentityKey_fn(Instantiator* __this, uString** __retval);
 void Instantiator__set_IdentityKey_fn(Instantiator* __this, uString* value);
 void Instantiator__get_Limit_fn(Instantiator* __this, int32_t* __retval);
 void Instantiator__set_Limit_fn(Instantiator* __this, int32_t* value);
+void Instantiator__get_Match_fn(Instantiator* __this, uString** __retval);
+void Instantiator__set_Match_fn(Instantiator* __this, uString* value);
 void Instantiator__get_MatchKey_fn(Instantiator* __this, uString** __retval);
 void Instantiator__set_MatchKey_fn(Instantiator* __this, uString* value);
 void Instantiator__New2_fn(Instantiator** __retval);
@@ -114,7 +118,10 @@ struct Instantiator : ::g::Fuse::Behavior
     float _deferredPriority;
     uWeak<uObject*> _weakTemplateSource;
     uStrong<uObject*> _templateSource;
+    uStrong<uString*> _templateKey;
     uStrong<uString*> _matchKey;
+    uStrong<uString*> _match;
+    int32_t _defaults;
     uStrong< ::g::Uno::Collections::Dictionary*> _dataMap;
     bool _pendingNew;
     uStrong< ::g::Uno::Collections::Dictionary*> _availableItemsById;
@@ -122,7 +129,6 @@ struct Instantiator : ::g::Fuse::Behavior
     bool _pendingAvailableItems;
     uStrong< ::g::Fuse::Reactive::ItemsWindowList*> _watcher;
     bool _pendingUpdateWindowItems;
-    uStrong<uString*> _TemplateKey;
     uStrong<uDelegate*> UpdatedWindowItems1;
 
     void ctor_3();
@@ -137,6 +143,8 @@ struct Instantiator : ::g::Fuse::Behavior
     void CompleteWindowItemsAction();
     int32_t DataCount();
     int32_t DataIndexOfChild(::g::Fuse::Node* child);
+    int32_t Defaults();
+    void Defaults(int32_t value);
     int32_t Defer();
     void Defer(int32_t value);
     float DeferredPriority();
@@ -153,6 +161,8 @@ struct Instantiator : ::g::Fuse::Behavior
     void IdentityKey(uString* value);
     int32_t Limit();
     void Limit(int32_t value);
+    uString* Match();
+    void Match(uString* value);
     uString* MatchKey();
     void MatchKey(uString* value);
     int32_t Offset();

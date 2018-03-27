@@ -1,4 +1,4 @@
-// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/Fuse.Controls.Video/1.7.4/Video.ScriptClass.uno.
+// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/Fuse.Controls.Video/1.8.1/Video.ScriptClass.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -77,8 +77,8 @@ void Video__Pause_fn(Video* __this);
 void Video__get_Playback_fn(Video* __this, uObject** __retval);
 void Video__set_Playback_fn(Video* __this, uObject* value);
 void Video__PlayTo_fn(Video* __this, double* progress);
-void Video__get_Position_fn(Video* __this, double* __retval);
-void Video__set_Position_fn(Video* __this, double* value);
+void Video__get_Position1_fn(Video* __this, double* __retval);
+void Video__set_Position1_fn(Video* __this, double* value);
 void Video__get_Progress_fn(Video* __this, double* __retval);
 void Video__set_Progress_fn(Video* __this, double* value);
 void Video__add_ProgressChanged_fn(Video* __this, uDelegate* value);
@@ -165,8 +165,8 @@ struct Video : ::g::Fuse::Controls::Panel
     uObject* Playback();
     void Playback(uObject* value);
     void PlayTo(double progress);
-    double Position();
-    void Position(double value);
+    double Position1();
+    void Position1(double value);
     double Progress();
     void Progress(double value);
     void add_ProgressChanged(uDelegate* value);

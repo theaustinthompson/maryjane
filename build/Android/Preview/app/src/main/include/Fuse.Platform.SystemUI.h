@@ -1,27 +1,26 @@
-// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/Fuse.Platform/1.7.4/Android/SystemUI.uno.
+// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/Fuse.Platform/1.8.1/Android/SystemUI.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
 #include <Uno.h>
 namespace g{namespace Fuse{namespace Platform{struct SystemUI;}}}
-namespace g{namespace Fuse{namespace Platform{struct SystemUIWillResizeEventArgs;}}}
 namespace g{namespace Java{struct Object;}}
 namespace g{namespace Uno{struct Float2;}}
+namespace g{namespace Uno{struct Float4;}}
+namespace g{namespace Uno{struct Int3;}}
 namespace g{namespace Uno{struct Rect;}}
 
 namespace g{
 namespace Fuse{
 namespace Platform{
 
-// public static extern class SystemUI :18
+// internal static extern class SystemUI :18
 // {
 uClassType* SystemUI_typeof();
 void SystemUI___GetRootDisplaySize_fn(::g::Uno::Float2* __retval);
+void SystemUI__get_APILevel_fn(int32_t* __retval);
 void SystemUI__Attach_fn(::g::Java::Object* _layout);
 void SystemUI__get_BottomFrame_fn(::g::Uno::Rect* __retval);
-void SystemUI__set_BottomFrame_fn(::g::Uno::Rect* value);
-void SystemUI__add_BottomFrameWillResize_fn(uDelegate* value);
-void SystemUI__remove_BottomFrameWillResize_fn(uDelegate* value);
 void SystemUI__CalcRealSizes_fn();
 void SystemUI__CompensateRootLayoutForSystemUI_fn();
 void SystemUI__cppOnBottomFrameChanged_fn(int32_t* height);
@@ -31,13 +30,17 @@ void SystemUI__CreateLayouts_fn();
 void SystemUI__get_Density_fn(float* __retval);
 void SystemUI__set_Density_fn(float* value);
 void SystemUI__Detach_fn();
+void SystemUI__get_DeviceMargins_fn(::g::Uno::Float4* __retval);
 void SystemUI__EnterFullscreen_fn();
 void SystemUI__get_Frame_fn(::g::Uno::Rect* __retval);
 void SystemUI__set_Frame_fn(::g::Uno::Rect* value);
 void SystemUI__add_FrameChanged_fn(uDelegate* value);
 void SystemUI__remove_FrameChanged_fn(uDelegate* value);
+void SystemUI__GetAPILevel_fn(int32_t* __retval);
+void SystemUI__GetBottomBarFrame_fn(::g::Uno::Rect* __retval);
 void SystemUI__GetDensity_fn(float* __retval);
 void SystemUI__GetDisplayMetrics_fn(::g::Java::Object** __retval);
+void SystemUI__GetOSVersion_fn(uString** __retval);
 void SystemUI__GetRealDisplayHeight_fn(int32_t* __retval);
 void SystemUI__GetRealDisplayWidth_fn(int32_t* __retval);
 void SystemUI__GetStatusBarFrame_fn(::g::Uno::Rect* __retval);
@@ -50,6 +53,8 @@ void SystemUI__get_IsBottomFrameVisible_fn(bool* __retval);
 void SystemUI__get_IsTopFrameVisible_fn(bool* __retval);
 void SystemUI__set_IsTopFrameVisible_fn(bool* value);
 void SystemUI__MakePostV11LayoutChangeListener_fn(::g::Java::Object** __retval);
+void SystemUI__add_MarginsChanged_fn(uDelegate* value);
+void SystemUI__remove_MarginsChanged_fn(uDelegate* value);
 void SystemUI__OnConfigChanged_fn();
 void SystemUI__OnCreate_fn();
 void SystemUI__OnDestroy_fn();
@@ -58,17 +63,18 @@ void SystemUI__onHideKeyboard_fn(int32_t* keyboardHeight, bool* force);
 void SystemUI__OnPause_fn();
 void SystemUI__OnResume_fn();
 void SystemUI__onShowKeyboard_fn(int32_t* keyboardHeight, bool* force);
-void SystemUI__OnWillResize_fn(::g::Fuse::Platform::SystemUIWillResizeEventArgs* args);
+void SystemUI__OnWillResize_fn();
+void SystemUI__get_OSVersion_fn(::g::Uno::Int3* __retval);
 void SystemUI__ResendFrameSizes_fn();
 void SystemUI__ResetGeometry_fn();
 void SystemUI__get_RootView_fn(::g::Java::Object** __retval);
 void SystemUI__set_RootView_fn(::g::Java::Object* value);
+void SystemUI__get_SafeMargins_fn(::g::Uno::Float4* __retval);
 void SystemUI__SetAsRootView_fn(::g::Java::Object* view);
 void SystemUI__SetFrame_fn(::g::Java::Object* view, int32_t* originX, int32_t* originY, int32_t* height);
 void SystemUI__ShowStatusBar_fn();
+void SystemUI__get_StaticMargins_fn(::g::Uno::Float4* __retval);
 void SystemUI__get_TopFrame_fn(::g::Uno::Rect* __retval);
-void SystemUI__add_TopFrameWillResize_fn(uDelegate* value);
-void SystemUI__remove_TopFrameWillResize_fn(uDelegate* value);
 void SystemUI__unoOnGlobalLayout_fn();
 void SystemUI__UpdateStatusBar_fn();
 
@@ -102,18 +108,16 @@ struct SystemUI : uObject
     static int32_t& _topFrameSize() { return SystemUI_typeof()->Init(), _topFrameSize_; }
     static int32_t _bottomFrameSize_;
     static int32_t& _bottomFrameSize() { return SystemUI_typeof()->Init(), _bottomFrameSize_; }
+    static int32_t _staticBottomFrameSize_;
+    static int32_t& _staticBottomFrameSize() { return SystemUI_typeof()->Init(), _staticBottomFrameSize_; }
+    static float _density_;
+    static float& _density() { return SystemUI_typeof()->Init(), _density_; }
     static ::g::Uno::Rect _frame_;
     static ::g::Uno::Rect& _frame() { return SystemUI_typeof()->Init(), _frame_; }
-    static ::g::Uno::Rect _BottomFrame_;
-    static ::g::Uno::Rect& _BottomFrame() { return SystemUI_typeof()->Init(), _BottomFrame_; }
-    static float _Density_;
-    static float& _Density() { return SystemUI_typeof()->Init(), _Density_; }
-    static uSStrong<uDelegate*> BottomFrameWillResize1_;
-    static uSStrong<uDelegate*>& BottomFrameWillResize1() { return SystemUI_typeof()->Init(), BottomFrameWillResize1_; }
     static uSStrong<uDelegate*> FrameChanged1_;
     static uSStrong<uDelegate*>& FrameChanged1() { return SystemUI_typeof()->Init(), FrameChanged1_; }
-    static uSStrong<uDelegate*> TopFrameWillResize1_;
-    static uSStrong<uDelegate*>& TopFrameWillResize1() { return SystemUI_typeof()->Init(), TopFrameWillResize1_; }
+    static uSStrong<uDelegate*> MarginsChanged1_;
+    static uSStrong<uDelegate*>& MarginsChanged1() { return SystemUI_typeof()->Init(), MarginsChanged1_; }
 
     static ::g::Uno::Float2 _GetRootDisplaySize();
     static void Attach(::g::Java::Object* _layout);
@@ -125,8 +129,11 @@ struct SystemUI : uObject
     static void CreateLayouts();
     static void Detach();
     static void EnterFullscreen();
+    static int32_t GetAPILevel();
+    static ::g::Uno::Rect GetBottomBarFrame();
     static float GetDensity();
     static ::g::Java::Object* GetDisplayMetrics();
+    static uString* GetOSVersion();
     static int32_t GetRealDisplayHeight();
     static int32_t GetRealDisplayWidth();
     static ::g::Uno::Rect GetStatusBarFrame();
@@ -144,7 +151,7 @@ struct SystemUI : uObject
     static void OnPause();
     static void OnResume();
     static void onShowKeyboard(int32_t keyboardHeight, bool force);
-    static void OnWillResize(::g::Fuse::Platform::SystemUIWillResizeEventArgs* args);
+    static void OnWillResize();
     static void ResendFrameSizes();
     static void ResetGeometry();
     static void SetAsRootView(::g::Java::Object* view);
@@ -152,24 +159,26 @@ struct SystemUI : uObject
     static void ShowStatusBar();
     static void unoOnGlobalLayout();
     static void UpdateStatusBar();
+    static int32_t APILevel();
     static ::g::Uno::Rect BottomFrame();
-    static void BottomFrame(::g::Uno::Rect value);
     static float Density();
     static void Density(float value);
+    static ::g::Uno::Float4 DeviceMargins();
     static ::g::Uno::Rect Frame();
     static void Frame(::g::Uno::Rect value);
     static bool IsBottomFrameVisible();
     static bool IsTopFrameVisible();
     static void IsTopFrameVisible(bool value);
+    static ::g::Uno::Int3 OSVersion();
     static ::g::Java::Object* RootView();
     static void RootView(::g::Java::Object* value);
+    static ::g::Uno::Float4 SafeMargins();
+    static ::g::Uno::Float4 StaticMargins();
     static ::g::Uno::Rect TopFrame();
-    static void add_BottomFrameWillResize(uDelegate* value);
-    static void remove_BottomFrameWillResize(uDelegate* value);
     static void add_FrameChanged(uDelegate* value);
     static void remove_FrameChanged(uDelegate* value);
-    static void add_TopFrameWillResize(uDelegate* value);
-    static void remove_TopFrameWillResize(uDelegate* value);
+    static void add_MarginsChanged(uDelegate* value);
+    static void remove_MarginsChanged(uDelegate* value);
 };
 // }
 

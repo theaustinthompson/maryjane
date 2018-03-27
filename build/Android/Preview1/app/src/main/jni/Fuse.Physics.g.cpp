@@ -70,7 +70,7 @@ namespace g{
 namespace Fuse{
 namespace Physics{
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Physics\1.7.4\Draggable.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Physics\1.8.1\Draggable.uno
 // ------------------------------------------------------------------------------------
 
 // public enum Axis2D :5
@@ -87,7 +87,7 @@ uEnumType* Axis2D_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Physics\1.7.4\Body.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Physics\1.8.1\Body.uno
 // -------------------------------------------------------------------------------
 
 // internal sealed class Body :7
@@ -429,7 +429,7 @@ void Body::SetFriction(::g::Fuse::Visual* n, float friction)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Physics\1.7.4\BodyAttr.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Physics\1.8.1\BodyAttr.uno
 // -----------------------------------------------------------------------------------
 
 // public static class BodyAttr :5
@@ -483,7 +483,7 @@ void BodyAttr::SetFriction(::g::Fuse::Visual* n, float friction)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Physics\1.7.4\Draggable.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Physics\1.8.1\Draggable.uno
 // ------------------------------------------------------------------------------------
 
 // public sealed class Draggable :15
@@ -776,7 +776,7 @@ Draggable* Draggable::New2()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Physics\1.7.4\ForceFieldTriggers.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Physics\1.8.1\ForceFieldTriggers.uno
 // ---------------------------------------------------------------------------------------------
 
 // public sealed class EnteredForceField :77
@@ -849,7 +849,7 @@ void EnteredForceField__New2_fn(EnteredForceField** __retval)
     *__retval = EnteredForceField::New2();
 }
 
-// protected internal override sealed void SetForce(Fuse.Physics.Body body, float force) :83
+// internal override sealed void SetForce(Fuse.Physics.Body body, float force) :83
 void EnteredForceField__SetForce_fn(EnteredForceField* __this, ::g::Fuse::Physics::Body* body, float* force)
 {
     uStackFrame __("Fuse.Physics.EnteredForceField", "SetForce(Fuse.Physics.Body,float)");
@@ -900,7 +900,7 @@ EnteredForceField* EnteredForceField::New2()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Physics\1.7.4\ForceFieldTriggers.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Physics\1.8.1\ForceFieldTriggers.uno
 // ---------------------------------------------------------------------------------------------
 
 // public sealed class ExitedForceField :114
@@ -973,7 +973,7 @@ void ExitedForceField__New2_fn(ExitedForceField** __retval)
     *__retval = ExitedForceField::New2();
 }
 
-// protected internal override sealed void SetForce(Fuse.Physics.Body body, float force) :120
+// internal override sealed void SetForce(Fuse.Physics.Body body, float force) :120
 void ExitedForceField__SetForce_fn(ExitedForceField* __this, ::g::Fuse::Physics::Body* body, float* force)
 {
     uStackFrame __("Fuse.Physics.ExitedForceField", "SetForce(Fuse.Physics.Body,float)");
@@ -1024,7 +1024,7 @@ ExitedForceField* ExitedForceField::New2()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Physics\1.7.4\ForceField.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Physics\1.8.1\ForceField.uno
 // -------------------------------------------------------------------------------------
 
 // public abstract class ForceField :4
@@ -1130,7 +1130,7 @@ void ForceField::ctor_3()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Physics\1.7.4\ForceFieldTriggers.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Physics\1.8.1\ForceFieldTriggers.uno
 // ---------------------------------------------------------------------------------------------
 
 // public sealed class ForceFieldEventArgs :22
@@ -1249,7 +1249,7 @@ ForceFieldEventArgs* ForceFieldEventArgs::New2(::g::Fuse::Physics::Body* body, :
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Physics\1.7.4\ForceFieldTriggers.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Physics\1.8.1\ForceFieldTriggers.uno
 // ---------------------------------------------------------------------------------------------
 
 // public delegate void ForceFieldEventHandler(object sender, Fuse.Physics.ForceFieldEventArgs args) :36
@@ -1265,7 +1265,7 @@ uDelegateType* ForceFieldEventHandler_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Physics\1.7.4\ForceFieldTriggers.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Physics\1.8.1\ForceFieldTriggers.uno
 // ---------------------------------------------------------------------------------------------
 
 // public abstract class ForceFieldEventTrigger :38
@@ -1341,7 +1341,7 @@ void ForceFieldEventTrigger__remove_Handler_fn(ForceFieldEventTrigger* __this, u
     __this->remove_Handler(value);
 }
 
-// protected internal void OnTriggered(Fuse.Physics.Body body) :42
+// internal void OnTriggered(Fuse.Physics.Body body) :42
 void ForceFieldEventTrigger__OnTriggered_fn(ForceFieldEventTrigger* __this, ::g::Fuse::Physics::Body* body)
 {
     __this->OnTriggered(body);
@@ -1367,7 +1367,7 @@ void ForceFieldEventTrigger::remove_Handler(uDelegate* value)
     Handler1 = uCast<uDelegate*>(::g::Uno::Delegate::Remove(Handler1, value), ::TYPES[6/*Fuse.Physics.ForceFieldEventHandler*/]);
 }
 
-// protected internal void OnTriggered(Fuse.Physics.Body body) [instance] :42
+// internal void OnTriggered(Fuse.Physics.Body body) [instance] :42
 void ForceFieldEventTrigger::OnTriggered(::g::Fuse::Physics::Body* body)
 {
     uStackFrame __("Fuse.Physics.ForceFieldEventTrigger", "OnTriggered(Fuse.Physics.Body)");
@@ -1381,7 +1381,7 @@ void ForceFieldEventTrigger::OnTriggered(::g::Fuse::Physics::Body* body)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Physics\1.7.4\ForceFieldTriggers.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Physics\1.8.1\ForceFieldTriggers.uno
 // ---------------------------------------------------------------------------------------------
 
 // public abstract class ForceFieldTrigger :6
@@ -1493,7 +1493,7 @@ void ForceFieldTrigger::SetForce1(::g::Fuse::Physics::ForceField* field, ::g::Fu
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Physics\1.7.4\ForceFieldTriggers.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Physics\1.8.1\ForceFieldTriggers.uno
 // ---------------------------------------------------------------------------------------------
 
 // public sealed class InForceFieldAnimation :156
@@ -1580,7 +1580,7 @@ void InForceFieldAnimation__New2_fn(InForceFieldAnimation** __retval)
     *__retval = InForceFieldAnimation::New2();
 }
 
-// protected internal override sealed void SetForce(Fuse.Physics.Body body, float force) :173
+// internal override sealed void SetForce(Fuse.Physics.Body body, float force) :173
 void InForceFieldAnimation__SetForce_fn(InForceFieldAnimation* __this, ::g::Fuse::Physics::Body* body, float* force)
 {
     uStackFrame __("Fuse.Physics.InForceFieldAnimation", "SetForce(Fuse.Physics.Body,float)");
@@ -1642,7 +1642,7 @@ InForceFieldAnimation* InForceFieldAnimation::New2()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Physics\1.7.4\World.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Physics\1.8.1\World.uno
 // --------------------------------------------------------------------------------
 
 // internal abstract interface IRule :6
@@ -1657,7 +1657,7 @@ uInterfaceType* IRule_typeof()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Physics\1.7.4\PointAttractor.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Physics\1.8.1\PointAttractor.uno
 // -----------------------------------------------------------------------------------------
 
 // public sealed class PointAttractor :8
@@ -2054,7 +2054,7 @@ PointAttractor* PointAttractor::New2()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Physics\1.7.4\Spring.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Physics\1.8.1\Spring.uno
 // ---------------------------------------------------------------------------------
 
 // public sealed class Spring :7
@@ -2286,7 +2286,7 @@ Spring* Spring::New2()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Physics\1.7.4\Draggable.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Physics\1.8.1\Draggable.uno
 // ------------------------------------------------------------------------------------
 
 // public sealed class WhileDragging :133
@@ -2401,7 +2401,7 @@ WhileDragging* WhileDragging::New2()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Physics\1.7.4\World.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Physics\1.8.1\World.uno
 // --------------------------------------------------------------------------------
 
 // public sealed class World :13

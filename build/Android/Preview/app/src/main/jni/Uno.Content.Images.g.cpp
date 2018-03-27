@@ -16,7 +16,7 @@ namespace Uno{
 namespace Content{
 namespace Images{
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\Content\Images\Bitmap.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\Content\Images\Bitmap.uno
 // ------------------------------------------------------------------------------------------------------
 
 // public sealed class Bitmap :6

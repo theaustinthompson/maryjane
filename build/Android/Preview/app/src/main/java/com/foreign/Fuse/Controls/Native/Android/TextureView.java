@@ -23,21 +23,21 @@ public class TextureView
         android.util.Log.d("maryjane", (message==null ? "null" : message.toString()));
     }
 
-    public static Object Create210()
+    public static Object Create202()
     {
         android.view.TextureView textureView = new android.view.TextureView(com.fuse.Activity.getRootActivity());
         textureView.setLayoutParams(new android.widget.FrameLayout.LayoutParams(android.view.ViewGroup.LayoutParams.FILL_PARENT, android.view.ViewGroup.LayoutParams.FILL_PARENT));
         return textureView;
     }
     
-    public static void InstallSurfaceListener211(final UnoObject _this, final Object handle)
+    public static void InstallSurfaceListener203(final UnoObject _this, final Object handle)
     {
         ((android.view.TextureView)handle).setSurfaceTextureListener(new android.view.TextureView.SurfaceTextureListener() {
         	public void onSurfaceTextureAvailable(android.graphics.SurfaceTexture surface, int width, int height) {
-        		ExternedBlockHost.callUno_Fuse_Controls_Native_Android_TextureView_OnSurfaceTextureAvailable212((UnoObject)_this,(Object)new android.view.Surface(surface),UnoHelper.GetUnoObjectRef((Object)new android.view.Surface(surface)));
+        		ExternedBlockHost.callUno_Fuse_Controls_Native_Android_TextureView_OnSurfaceTextureAvailable204((UnoObject)_this,(Object)new android.view.Surface(surface),UnoHelper.GetUnoObjectRef((Object)new android.view.Surface(surface)));
         	}
         	public boolean onSurfaceTextureDestroyed(android.graphics.SurfaceTexture surface) {
-        		ExternedBlockHost.callUno_Fuse_Controls_Native_Android_TextureView_OnSurfaceTextureDestroyed213((UnoObject)_this);
+        		ExternedBlockHost.callUno_Fuse_Controls_Native_Android_TextureView_OnSurfaceTextureDestroyed205((UnoObject)_this);
         		return true;
         	}
         	public void onSurfaceTextureSizeChanged(android.graphics.SurfaceTexture surface, int width, int height) {

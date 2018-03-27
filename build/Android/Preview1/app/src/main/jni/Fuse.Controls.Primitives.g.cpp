@@ -25,7 +25,7 @@ namespace Fuse{
 namespace Controls{
 namespace Primitives{
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Primitives\1.7.4\ShadowElement.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Controls.Primitives\1.8.1\ShadowElement.uno
 // ----------------------------------------------------------------------------------------------------
 
 // internal sealed class ShadowElement :11
@@ -56,7 +56,7 @@ static void ShadowElement_build(uType* type)
         ::g::Fuse::Triggers::Actions::ICollapse_typeof(), offsetof(::g::Fuse::Elements::Element_type, interface14),
         ::g::Fuse::IActualPlacement_typeof(), offsetof(::g::Fuse::Elements::Element_type, interface15),
         ::g::Fuse::Animations::IResize_typeof(), offsetof(::g::Fuse::Elements::Element_type, interface16));
-    type->SetFields(103,
+    type->SetFields(104,
         ::g::Uno::Float_typeof(), offsetof(ShadowElement, _minSmoothness), 0,
         ::TYPES[1/*Fuse.Controls.Rectangle*/], offsetof(ShadowElement, _rectangleParent), 0,
         ::TYPES[2/*Fuse.Controls.Circle*/], offsetof(ShadowElement, _circleParent), 0,
@@ -72,7 +72,7 @@ static void ShadowElement_build(uType* type)
 
     uTypeOptions options;
     options.BaseDefinition = ::g::Fuse::Elements::Element_typeof();
-    options.FieldCount = 109;
+    options.FieldCount = 110;
     options.InterfaceCount = 17;
     options.DependencyCount = 2;
     options.ObjectSize = sizeof(ShadowElement);

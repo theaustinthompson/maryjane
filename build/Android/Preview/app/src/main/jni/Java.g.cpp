@@ -6,7 +6,7 @@
 namespace g{
 namespace Java{
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.7.1\Source\Uno\Compiler\ExportTargetInterop\Foreign\Android\Object.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\UnoCore\1.8.0\Source\Uno\Compiler\ExportTargetInterop\Foreign\Android\Object.uno
 // ------------------------------------------------------------------------------------------------------------------------------------
 
 // public abstract extern class Object :5

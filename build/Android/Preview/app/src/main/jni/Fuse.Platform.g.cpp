@@ -9,25 +9,27 @@
 #include <Fuse.Platform.Lifecycle.h>
 #include <Fuse.Platform.StatusB-487afe75.h>
 #include <Fuse.Platform.StatusBarStyle.h>
-#include <Fuse.Platform.SystemU-2024c55a.h>
 #include <Fuse.Platform.SystemU-a6dfc5d1.h>
 #include <Fuse.Platform.SystemUI.h>
-#include <Fuse.Platform.SystemUIID.h>
 #include <Fuse.Platform.SysUIState.h>
 #include <Java.Object.h>
 #include <jni.h>
 #include <Uno.Action.h>
 #include <Uno.Action1-1.h>
 #include <Uno.Bool.h>
+#include <Uno.Char.h>
 #include <Uno.Compiler.ExportTa-39be7c2b.h>
 #include <Uno.Delegate.h>
 #include <Uno.Double.h>
 #include <Uno.EventArgs.h>
 #include <Uno.EventHandler.h>
 #include <Uno.EventHandler1-1.h>
+#include <Uno.Exception.h>
 #include <Uno.Float.h>
 #include <Uno.Float2.h>
+#include <Uno.Float4.h>
 #include <Uno.Int.h>
+#include <Uno.Int3.h>
 #include <Uno.Object.h>
 #include <Uno.Platform.Applicat-bf686309.h>
 #include <Uno.Platform.ApplicationState.h>
@@ -37,13 +39,13 @@
 #include <Uno.String.h>
 #include <Uno/Graphics/GLHelper.h>
 #include <Uno/JNIHelper.h>
-static uType* TYPES[7];
+static uType* TYPES[8];
 
 namespace g{
 namespace Fuse{
 namespace Platform{
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Platform\1.7.4\AppAlerts.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Platform\1.8.1\AppAlerts.uno
 // -------------------------------------------------------------------------------------
 
 // internal static class AppEvents :13
@@ -125,7 +127,7 @@ void AppEvents::remove_LowMemoryWarning(uDelegate* value)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Platform\1.7.4\Lifecycle.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Platform\1.8.1\Lifecycle.uno
 // -------------------------------------------------------------------------------------
 
 // public enum ApplicationState :5
@@ -144,7 +146,7 @@ uEnumType* ApplicationState_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Platform\1.7.4\InterApp.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Platform\1.8.1\InterApp.uno
 // ------------------------------------------------------------------------------------
 
 // public static class InterApp :9
@@ -229,7 +231,7 @@ void InterApp::remove_ReceivedURI(uDelegate* value)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Platform\1.7.4\Lifecycle.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Platform\1.8.1\Lifecycle.uno
 // -------------------------------------------------------------------------------------
 
 // public static class Lifecycle :22
@@ -581,7 +583,7 @@ void Lifecycle::remove_Terminating(uDelegate* value)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Platform\1.7.4\iOS\SystemUI.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Platform\1.8.1\iOS\SystemUI.uno
 // ----------------------------------------------------------------------------------------
 
 // public enum StatusBarAnimation :14
@@ -598,7 +600,7 @@ uEnumType* StatusBarAnimation_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Platform\1.7.4\iOS\SystemUI.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Platform\1.8.1\iOS\SystemUI.uno
 // ----------------------------------------------------------------------------------------
 
 // public enum StatusBarStyle :8
@@ -614,21 +616,24 @@ uEnumType* StatusBarStyle_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Platform\1.7.4\Android\SystemUI.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Platform\1.8.1\Android\SystemUI.uno
 // --------------------------------------------------------------------------------------------
 
-// public static extern class SystemUI :18
+// internal static extern class SystemUI :18
 // {
 // static generated SystemUI() :18
 static void SystemUI__cctor__fn(uType* __type)
 {
     SystemUI::firstSizing_ = true;
+    SystemUI::_density_ = 1.0f;
 }
 
 static void SystemUI_build(uType* type)
 {
-    ::TYPES[6] = ::g::Uno::EventHandler1_typeof()->MakeType(::g::Fuse::Platform::SystemUIWillResizeEventArgs_typeof(), NULL);
+    ::TYPES[6] = ::g::Uno::Exception_typeof();
+    ::TYPES[7] = ::g::Uno::Char_typeof()->Array();
     ::TYPES[0] = ::g::Uno::EventHandler_typeof();
+    ::TYPES[1] = ::g::Uno::Action_typeof();
     type->SetDependencies(
         ::g::Uno::EventArgs_typeof());
     type->SetFields(0,
@@ -646,41 +651,11 @@ static void SystemUI_build(uType* type)
         ::g::Uno::Int_typeof(), (uintptr_t)&SystemUI::_systemUIState_, uFieldFlagsStatic,
         ::g::Uno::Int_typeof(), (uintptr_t)&SystemUI::_topFrameSize_, uFieldFlagsStatic,
         ::g::Uno::Int_typeof(), (uintptr_t)&SystemUI::_bottomFrameSize_, uFieldFlagsStatic,
+        ::g::Uno::Int_typeof(), (uintptr_t)&SystemUI::_staticBottomFrameSize_, uFieldFlagsStatic,
+        ::g::Uno::Float_typeof(), (uintptr_t)&SystemUI::_density_, uFieldFlagsStatic,
         ::g::Uno::Rect_typeof(), (uintptr_t)&SystemUI::_frame_, uFieldFlagsStatic,
-        ::g::Uno::Rect_typeof(), (uintptr_t)&SystemUI::_BottomFrame_, uFieldFlagsStatic,
-        ::g::Uno::Float_typeof(), (uintptr_t)&SystemUI::_Density_, uFieldFlagsStatic,
-        ::TYPES[6/*Uno.EventHandler<Fuse.Platform.SystemUIWillResizeEventArgs>*/], (uintptr_t)&SystemUI::BottomFrameWillResize1_, uFieldFlagsStatic,
         ::TYPES[0/*Uno.EventHandler*/], (uintptr_t)&SystemUI::FrameChanged1_, uFieldFlagsStatic,
-        ::TYPES[6/*Uno.EventHandler<Fuse.Platform.SystemUIWillResizeEventArgs>*/], (uintptr_t)&SystemUI::TopFrameWillResize1_, uFieldFlagsStatic);
-    type->Reflection.SetFunctions(28,
-        new uFunction("Attach", NULL, (void*)SystemUI__Attach_fn, 0, true, uVoid_typeof(), 1, ::g::Java::Object_typeof()),
-        new uFunction("get_BottomFrame", NULL, (void*)SystemUI__get_BottomFrame_fn, 0, true, ::g::Uno::Rect_typeof(), 0),
-        new uFunction("add_BottomFrameWillResize", NULL, (void*)SystemUI__add_BottomFrameWillResize_fn, 0, true, uVoid_typeof(), 1, ::TYPES[6/*Uno.EventHandler<Fuse.Platform.SystemUIWillResizeEventArgs>*/]),
-        new uFunction("remove_BottomFrameWillResize", NULL, (void*)SystemUI__remove_BottomFrameWillResize_fn, 0, true, uVoid_typeof(), 1, ::TYPES[6/*Uno.EventHandler<Fuse.Platform.SystemUIWillResizeEventArgs>*/]),
-        new uFunction("CalcRealSizes", NULL, (void*)SystemUI__CalcRealSizes_fn, 0, true, uVoid_typeof(), 0),
-        new uFunction("CompensateRootLayoutForSystemUI", NULL, (void*)SystemUI__CompensateRootLayoutForSystemUI_fn, 0, true, uVoid_typeof(), 0),
-        new uFunction("CreateLayouts", NULL, (void*)SystemUI__CreateLayouts_fn, 0, true, uVoid_typeof(), 0),
-        new uFunction("get_Density", NULL, (void*)SystemUI__get_Density_fn, 0, true, ::g::Uno::Float_typeof(), 0),
-        new uFunction("Detach", NULL, (void*)SystemUI__Detach_fn, 0, true, uVoid_typeof(), 0),
-        new uFunction("get_Frame", NULL, (void*)SystemUI__get_Frame_fn, 0, true, ::g::Uno::Rect_typeof(), 0),
-        new uFunction("add_FrameChanged", NULL, (void*)SystemUI__add_FrameChanged_fn, 0, true, uVoid_typeof(), 1, ::TYPES[0/*Uno.EventHandler*/]),
-        new uFunction("remove_FrameChanged", NULL, (void*)SystemUI__remove_FrameChanged_fn, 0, true, uVoid_typeof(), 1, ::TYPES[0/*Uno.EventHandler*/]),
-        new uFunction("GetDisplayMetrics", NULL, (void*)SystemUI__GetDisplayMetrics_fn, 0, true, ::g::Java::Object_typeof(), 0),
-        new uFunction("GetRealDisplayHeight", NULL, (void*)SystemUI__GetRealDisplayHeight_fn, 0, true, ::g::Uno::Int_typeof(), 0),
-        new uFunction("GetRealDisplayWidth", NULL, (void*)SystemUI__GetRealDisplayWidth_fn, 0, true, ::g::Uno::Int_typeof(), 0),
-        new uFunction("HideStatusBar", NULL, (void*)SystemUI__HideStatusBar_fn, 0, true, uVoid_typeof(), 0),
-        new uFunction("get_IsBottomFrameVisible", NULL, (void*)SystemUI__get_IsBottomFrameVisible_fn, 0, true, ::g::Uno::Bool_typeof(), 0),
-        new uFunction("get_IsTopFrameVisible", NULL, (void*)SystemUI__get_IsTopFrameVisible_fn, 0, true, ::g::Uno::Bool_typeof(), 0),
-        new uFunction("set_IsTopFrameVisible", NULL, (void*)SystemUI__set_IsTopFrameVisible_fn, 0, true, uVoid_typeof(), 1, ::g::Uno::Bool_typeof()),
-        new uFunction("OnCreate", NULL, (void*)SystemUI__OnCreate_fn, 0, true, uVoid_typeof(), 0),
-        new uFunction("ResendFrameSizes", NULL, (void*)SystemUI__ResendFrameSizes_fn, 0, true, uVoid_typeof(), 0),
-        new uFunction("get_RootView", NULL, (void*)SystemUI__get_RootView_fn, 0, true, ::g::Java::Object_typeof(), 0),
-        new uFunction("set_RootView", NULL, (void*)SystemUI__set_RootView_fn, 0, true, uVoid_typeof(), 1, ::g::Java::Object_typeof()),
-        new uFunction("ShowStatusBar", NULL, (void*)SystemUI__ShowStatusBar_fn, 0, true, uVoid_typeof(), 0),
-        new uFunction("get_TopFrame", NULL, (void*)SystemUI__get_TopFrame_fn, 0, true, ::g::Uno::Rect_typeof(), 0),
-        new uFunction("add_TopFrameWillResize", NULL, (void*)SystemUI__add_TopFrameWillResize_fn, 0, true, uVoid_typeof(), 1, ::TYPES[6/*Uno.EventHandler<Fuse.Platform.SystemUIWillResizeEventArgs>*/]),
-        new uFunction("remove_TopFrameWillResize", NULL, (void*)SystemUI__remove_TopFrameWillResize_fn, 0, true, uVoid_typeof(), 1, ::TYPES[6/*Uno.EventHandler<Fuse.Platform.SystemUIWillResizeEventArgs>*/]),
-        new uFunction("UpdateStatusBar", NULL, (void*)SystemUI__UpdateStatusBar_fn, 0, true, uVoid_typeof(), 0));
+        ::TYPES[1/*Uno.Action*/], (uintptr_t)&SystemUI::MarginsChanged1_, uFieldFlagsStatic);
 }
 
 uClassType* SystemUI_typeof()
@@ -689,7 +664,7 @@ uClassType* SystemUI_typeof()
     if (type != NULL) return type;
 
     uTypeOptions options;
-    options.FieldCount = 20;
+    options.FieldCount = 19;
     options.DependencyCount = 1;
     options.TypeSize = sizeof(uClassType);
     type = uClassType::New("Fuse.Platform.SystemUI", options);
@@ -698,331 +673,361 @@ uClassType* SystemUI_typeof()
     return type;
 }
 
-// private static float2 _GetRootDisplaySize() :631
+// private static float2 _GetRootDisplaySize() :632
 void SystemUI___GetRootDisplaySize_fn(::g::Uno::Float2* __retval)
 {
     *__retval = SystemUI::_GetRootDisplaySize();
 }
 
-// public static void Attach(Java.Object _layout) :492
+// public static int get_APILevel() :640
+void SystemUI__get_APILevel_fn(int32_t* __retval)
+{
+    *__retval = SystemUI::APILevel();
+}
+
+// public static void Attach(Java.Object _layout) :526
 void SystemUI__Attach_fn(::g::Java::Object* _layout)
 {
     SystemUI::Attach(_layout);
 }
 
-// public static generated Uno.Rect get_BottomFrame() :24
+// private static Uno.Rect get_BottomFrame() :21
 void SystemUI__get_BottomFrame_fn(::g::Uno::Rect* __retval)
 {
     *__retval = SystemUI::BottomFrame();
 }
 
-// private static generated void set_BottomFrame(Uno.Rect value) :24
-void SystemUI__set_BottomFrame_fn(::g::Uno::Rect* value)
-{
-    SystemUI::BottomFrame(*value);
-}
-
-// public static generated void add_BottomFrameWillResize(Uno.EventHandler<Fuse.Platform.SystemUIWillResizeEventArgs> value) :21
-void SystemUI__add_BottomFrameWillResize_fn(uDelegate* value)
-{
-    SystemUI::add_BottomFrameWillResize(value);
-}
-
-// public static generated void remove_BottomFrameWillResize(Uno.EventHandler<Fuse.Platform.SystemUIWillResizeEventArgs> value) :21
-void SystemUI__remove_BottomFrameWillResize_fn(uDelegate* value)
-{
-    SystemUI::remove_BottomFrameWillResize(value);
-}
-
-// public static void CalcRealSizes() :320
+// public static void CalcRealSizes() :354
 void SystemUI__CalcRealSizes_fn()
 {
     SystemUI::CalcRealSizes();
 }
 
-// public static void CompensateRootLayoutForSystemUI() :464
+// public static void CompensateRootLayoutForSystemUI() :498
 void SystemUI__CompensateRootLayoutForSystemUI_fn()
 {
     SystemUI::CompensateRootLayoutForSystemUI();
 }
 
-// private static void cppOnBottomFrameChanged(int height) :565
+// private static void cppOnBottomFrameChanged(int height) :599
 void SystemUI__cppOnBottomFrameChanged_fn(int32_t* height)
 {
     SystemUI::cppOnBottomFrameChanged(*height);
 }
 
-// private static void cppOnConfigChanged() :415
+// private static void cppOnConfigChanged() :449
 void SystemUI__cppOnConfigChanged_fn()
 {
     SystemUI::cppOnConfigChanged();
 }
 
-// private static void cppOnTopFrameChanged(int height) :596
+// private static void cppOnTopFrameChanged(int height) :622
 void SystemUI__cppOnTopFrameChanged_fn(int32_t* height)
 {
     SystemUI::cppOnTopFrameChanged(*height);
 }
 
-// public static void CreateLayouts() :131
+// public static void CreateLayouts() :166
 void SystemUI__CreateLayouts_fn()
 {
     SystemUI::CreateLayouts();
 }
 
-// public static generated float get_Density() :44
+// public static float get_Density() :77
 void SystemUI__get_Density_fn(float* __retval)
 {
     *__retval = SystemUI::Density();
 }
 
-// private static generated void set_Density(float value) :44
+// private static void set_Density(float value) :78
 void SystemUI__set_Density_fn(float* value)
 {
     SystemUI::Density(*value);
 }
 
-// public static void Detach() :501
+// public static void Detach() :535
 void SystemUI__Detach_fn()
 {
     SystemUI::Detach();
 }
 
-// private static void EnterFullscreen() :269
+// public static float4 get_DeviceMargins() :27
+void SystemUI__get_DeviceMargins_fn(::g::Uno::Float4* __retval)
+{
+    *__retval = SystemUI::DeviceMargins();
+}
+
+// private static void EnterFullscreen() :304
 void SystemUI__EnterFullscreen_fn()
 {
     SystemUI::EnterFullscreen();
 }
 
-// public static Uno.Rect get_Frame() :48
+// public static Uno.Rect get_Frame() :83
 void SystemUI__get_Frame_fn(::g::Uno::Rect* __retval)
 {
     *__retval = SystemUI::Frame();
 }
 
-// private static void set_Frame(Uno.Rect value) :49
+// private static void set_Frame(Uno.Rect value) :84
 void SystemUI__set_Frame_fn(::g::Uno::Rect* value)
 {
     SystemUI::Frame(*value);
 }
 
-// public static generated void add_FrameChanged(Uno.EventHandler value) :59
+// public static generated void add_FrameChanged(Uno.EventHandler value) :94
 void SystemUI__add_FrameChanged_fn(uDelegate* value)
 {
     SystemUI::add_FrameChanged(value);
 }
 
-// public static generated void remove_FrameChanged(Uno.EventHandler value) :59
+// public static generated void remove_FrameChanged(Uno.EventHandler value) :94
 void SystemUI__remove_FrameChanged_fn(uDelegate* value)
 {
     SystemUI::remove_FrameChanged(value);
 }
 
-// private static float GetDensity() :434
+// private static int GetAPILevel() :665
+void SystemUI__GetAPILevel_fn(int32_t* __retval)
+{
+    *__retval = SystemUI::GetAPILevel();
+}
+
+// private static extern Uno.Rect GetBottomBarFrame() :336
+void SystemUI__GetBottomBarFrame_fn(::g::Uno::Rect* __retval)
+{
+    *__retval = SystemUI::GetBottomBarFrame();
+}
+
+// private static float GetDensity() :468
 void SystemUI__GetDensity_fn(float* __retval)
 {
     *__retval = SystemUI::GetDensity();
 }
 
-// public static Java.Object GetDisplayMetrics() :357
+// public static Java.Object GetDisplayMetrics() :391
 void SystemUI__GetDisplayMetrics_fn(::g::Java::Object** __retval)
 {
     *__retval = SystemUI::GetDisplayMetrics();
 }
 
-// public static int GetRealDisplayHeight() :375
+// private static string GetOSVersion() :671
+void SystemUI__GetOSVersion_fn(uString** __retval)
+{
+    *__retval = SystemUI::GetOSVersion();
+}
+
+// public static int GetRealDisplayHeight() :409
 void SystemUI__GetRealDisplayHeight_fn(int32_t* __retval)
 {
     *__retval = SystemUI::GetRealDisplayHeight();
 }
 
-// public static int GetRealDisplayWidth() :369
+// public static int GetRealDisplayWidth() :403
 void SystemUI__GetRealDisplayWidth_fn(int32_t* __retval)
 {
     *__retval = SystemUI::GetRealDisplayWidth();
 }
 
-// private static extern Uno.Rect GetStatusBarFrame() :294
+// private static extern Uno.Rect GetStatusBarFrame() :329
 void SystemUI__GetStatusBarFrame_fn(::g::Uno::Rect* __retval)
 {
     *__retval = SystemUI::GetStatusBarFrame();
 }
 
-// private static float GetStatusBarHeight() :181
+// private static float GetStatusBarHeight() :216
 void SystemUI__GetStatusBarHeight_fn(float* __retval)
 {
     *__retval = SystemUI::GetStatusBarHeight();
 }
 
-// private static int GetSuperLayoutHeight() :551
+// private static int GetSuperLayoutHeight() :585
 void SystemUI__GetSuperLayoutHeight_fn(int32_t* __retval)
 {
     *__retval = SystemUI::GetSuperLayoutHeight();
 }
 
-// private static void HideActionBar() :169
+// private static void HideActionBar() :204
 void SystemUI__HideActionBar_fn()
 {
     SystemUI::HideActionBar();
 }
 
-// public static void HideStatusBar() :229
+// public static void HideStatusBar() :264
 void SystemUI__HideStatusBar_fn()
 {
     SystemUI::HideStatusBar();
 }
 
-// private static void HookOntoRawActivityEvents() :70
+// private static void HookOntoRawActivityEvents() :105
 void SystemUI__HookOntoRawActivityEvents_fn()
 {
     SystemUI::HookOntoRawActivityEvents();
 }
 
-// public static bool get_IsBottomFrameVisible() :164
+// public static bool get_IsBottomFrameVisible() :199
 void SystemUI__get_IsBottomFrameVisible_fn(bool* __retval)
 {
     *__retval = SystemUI::IsBottomFrameVisible();
 }
 
-// public static bool get_IsTopFrameVisible() :150
+// public static bool get_IsTopFrameVisible() :185
 void SystemUI__get_IsTopFrameVisible_fn(bool* __retval)
 {
     *__retval = SystemUI::IsTopFrameVisible();
 }
 
-// public static void set_IsTopFrameVisible(bool value) :153
+// public static void set_IsTopFrameVisible(bool value) :188
 void SystemUI__set_IsTopFrameVisible_fn(bool* value)
 {
     SystemUI::IsTopFrameVisible(*value);
 }
 
-// private static Java.Object MakePostV11LayoutChangeListener() :442
+// private static Java.Object MakePostV11LayoutChangeListener() :476
 void SystemUI__MakePostV11LayoutChangeListener_fn(::g::Java::Object** __retval)
 {
     *__retval = SystemUI::MakePostV11LayoutChangeListener();
 }
 
-// private static void OnConfigChanged() :105
+// public static generated void add_MarginsChanged(Uno.Action value) :23
+void SystemUI__add_MarginsChanged_fn(uDelegate* value)
+{
+    SystemUI::add_MarginsChanged(value);
+}
+
+// public static generated void remove_MarginsChanged(Uno.Action value) :23
+void SystemUI__remove_MarginsChanged_fn(uDelegate* value)
+{
+    SystemUI::remove_MarginsChanged(value);
+}
+
+// private static void OnConfigChanged() :140
 void SystemUI__OnConfigChanged_fn()
 {
     SystemUI::OnConfigChanged();
 }
 
-// public static void OnCreate() :111
+// public static void OnCreate() :146
 void SystemUI__OnCreate_fn()
 {
     SystemUI::OnCreate();
 }
 
-// private static void OnDestroy() :99
+// private static void OnDestroy() :134
 void SystemUI__OnDestroy_fn()
 {
     SystemUI::OnDestroy();
 }
 
-// private static void OnFrameChanged() :60
+// private static void OnFrameChanged() :95
 void SystemUI__OnFrameChanged_fn()
 {
     SystemUI::OnFrameChanged();
 }
 
-// private static void onHideKeyboard(int keyboardHeight, bool force) :540
+// private static void onHideKeyboard(int keyboardHeight, bool force) :574
 void SystemUI__onHideKeyboard_fn(int32_t* keyboardHeight, bool* force)
 {
     SystemUI::onHideKeyboard(*keyboardHeight, *force);
 }
 
-// private static void OnPause() :87
+// private static void OnPause() :122
 void SystemUI__OnPause_fn()
 {
     SystemUI::OnPause();
 }
 
-// private static void OnResume() :93
+// private static void OnResume() :128
 void SystemUI__OnResume_fn()
 {
     SystemUI::OnResume();
 }
 
-// private static void onShowKeyboard(int keyboardHeight, bool force) :530
+// private static void onShowKeyboard(int keyboardHeight, bool force) :564
 void SystemUI__onShowKeyboard_fn(int32_t* keyboardHeight, bool* force)
 {
     SystemUI::onShowKeyboard(*keyboardHeight, *force);
 }
 
-// private static void OnWillResize(Fuse.Platform.SystemUIWillResizeEventArgs args) :301
-void SystemUI__OnWillResize_fn(::g::Fuse::Platform::SystemUIWillResizeEventArgs* args)
+// private static void OnWillResize() :343
+void SystemUI__OnWillResize_fn()
 {
-    SystemUI::OnWillResize(args);
+    SystemUI::OnWillResize();
 }
 
-// public static void ResendFrameSizes() :556
+// public static int3 get_OSVersion() :643
+void SystemUI__get_OSVersion_fn(::g::Uno::Int3* __retval)
+{
+    *__retval = SystemUI::OSVersion();
+}
+
+// public static void ResendFrameSizes() :590
 void SystemUI__ResendFrameSizes_fn()
 {
     SystemUI::ResendFrameSizes();
 }
 
-// private static void ResetGeometry() :422
+// private static void ResetGeometry() :456
 void SystemUI__ResetGeometry_fn()
 {
     SystemUI::ResetGeometry();
 }
 
-// public static Java.Object get_RootView() :387
+// public static Java.Object get_RootView() :421
 void SystemUI__get_RootView_fn(::g::Java::Object** __retval)
 {
     *__retval = SystemUI::RootView();
 }
 
-// public static void set_RootView(Java.Object value) :388
+// public static void set_RootView(Java.Object value) :422
 void SystemUI__set_RootView_fn(::g::Java::Object* value)
 {
     SystemUI::RootView(value);
 }
 
-// private static void SetAsRootView(Java.Object view) :392
+// public static float4 get_SafeMargins() :36
+void SystemUI__get_SafeMargins_fn(::g::Uno::Float4* __retval)
+{
+    *__retval = SystemUI::SafeMargins();
+}
+
+// private static void SetAsRootView(Java.Object view) :426
 void SystemUI__SetAsRootView_fn(::g::Java::Object* view)
 {
     SystemUI::SetAsRootView(view);
 }
 
-// private static void SetFrame(Java.Object view, int originX, int originY, int height) :474
+// private static void SetFrame(Java.Object view, int originX, int originY, int height) :508
 void SystemUI__SetFrame_fn(::g::Java::Object* view, int32_t* originX, int32_t* originY, int32_t* height)
 {
     SystemUI::SetFrame(view, *originX, *originY, *height);
 }
 
-// public static void ShowStatusBar() :206
+// public static void ShowStatusBar() :241
 void SystemUI__ShowStatusBar_fn()
 {
     SystemUI::ShowStatusBar();
 }
 
-// public static Uno.Rect get_TopFrame() :23
+// public static float4 get_StaticMargins() :46
+void SystemUI__get_StaticMargins_fn(::g::Uno::Float4* __retval)
+{
+    *__retval = SystemUI::StaticMargins();
+}
+
+// private static Uno.Rect get_TopFrame() :20
 void SystemUI__get_TopFrame_fn(::g::Uno::Rect* __retval)
 {
     *__retval = SystemUI::TopFrame();
 }
 
-// public static generated void add_TopFrameWillResize(Uno.EventHandler<Fuse.Platform.SystemUIWillResizeEventArgs> value) :20
-void SystemUI__add_TopFrameWillResize_fn(uDelegate* value)
-{
-    SystemUI::add_TopFrameWillResize(value);
-}
-
-// public static generated void remove_TopFrameWillResize(Uno.EventHandler<Fuse.Platform.SystemUIWillResizeEventArgs> value) :20
-void SystemUI__remove_TopFrameWillResize_fn(uDelegate* value)
-{
-    SystemUI::remove_TopFrameWillResize(value);
-}
-
-// private static void unoOnGlobalLayout() :514
+// private static void unoOnGlobalLayout() :548
 void SystemUI__unoOnGlobalLayout_fn()
 {
     SystemUI::unoOnGlobalLayout();
 }
 
-// public static void UpdateStatusBar() :249
+// public static void UpdateStatusBar() :284
 void SystemUI__UpdateStatusBar_fn()
 {
     SystemUI::UpdateStatusBar();
@@ -1042,14 +1047,13 @@ int32_t SystemUI::cachedOpenSize_;
 int32_t SystemUI::_systemUIState_;
 int32_t SystemUI::_topFrameSize_;
 int32_t SystemUI::_bottomFrameSize_;
+int32_t SystemUI::_staticBottomFrameSize_;
+float SystemUI::_density_;
 ::g::Uno::Rect SystemUI::_frame_;
-::g::Uno::Rect SystemUI::_BottomFrame_;
-float SystemUI::_Density_;
-uSStrong<uDelegate*> SystemUI::BottomFrameWillResize1_;
 uSStrong<uDelegate*> SystemUI::FrameChanged1_;
-uSStrong<uDelegate*> SystemUI::TopFrameWillResize1_;
+uSStrong<uDelegate*> SystemUI::MarginsChanged1_;
 
-// private static float2 _GetRootDisplaySize() [static] :631
+// private static float2 _GetRootDisplaySize() [static] :632
 ::g::Uno::Float2 SystemUI::_GetRootDisplaySize()
 {
     SystemUI_typeof()->Init();
@@ -1058,7 +1062,7 @@ uSStrong<uDelegate*> SystemUI::TopFrameWillResize1_;
     return ::g::Uno::Float2__New2(w, h);
 }
 
-// public static void Attach(Java.Object _layout) [static] :492
+// public static void Attach(Java.Object _layout) [static] :526
 void SystemUI::Attach(::g::Java::Object* _layout)
 {
     SystemUI_typeof()->Init();
@@ -1077,7 +1081,7 @@ void SystemUI::Attach(::g::Java::Object* _layout)
     
 }
 
-// public static void CalcRealSizes() [static] :320
+// public static void CalcRealSizes() [static] :354
 void SystemUI::CalcRealSizes()
 {
     SystemUI_typeof()->Init();
@@ -1093,7 +1097,7 @@ void SystemUI::CalcRealSizes()
     
 }
 
-// public static void CompensateRootLayoutForSystemUI() [static] :464
+// public static void CompensateRootLayoutForSystemUI() [static] :498
 void SystemUI::CompensateRootLayoutForSystemUI()
 {
     SystemUI_typeof()->Init();
@@ -1106,7 +1110,7 @@ void SystemUI::CompensateRootLayoutForSystemUI()
     }
 }
 
-// private static void cppOnBottomFrameChanged(int height) [static] :565
+// private static void cppOnBottomFrameChanged(int height) [static] :599
 void SystemUI::cppOnBottomFrameChanged(int32_t height)
 {
     uStackFrame __("Fuse.Platform.SystemUI", "cppOnBottomFrameChanged(int)");
@@ -1119,20 +1123,15 @@ void SystemUI::cppOnBottomFrameChanged(int32_t height)
     ::g::Uno::Float2 end_size = ::g::Uno::Float2__New2(size.X, (float)height);
     ::g::Uno::Rect startFrame = ::g::Uno::Rect__New2(start_pos, start_size);
     ::g::Uno::Rect endFrame = ::g::Uno::Rect__New2(end_pos, end_size);
-
-    if ((SystemUI::_bottomFrameSize_ == 0) && (height > 0))
-        resizeReason = 0;
-    else if ((SystemUI::_bottomFrameSize_ > 0) && (height == 0))
-        resizeReason = 2;
-    else if (((SystemUI::_bottomFrameSize_ > 0) && (height > 0)) && (height != SystemUI::_bottomFrameSize_))
-        resizeReason = 1;
-
     SystemUI::_bottomFrameSize_ = height;
-    ::g::Fuse::Platform::SystemUIWillResizeEventArgs* args = ::g::Fuse::Platform::SystemUIWillResizeEventArgs::New2(1, resizeReason, endFrame, startFrame, 1.0, 0);
-    SystemUI::OnWillResize(args);
+
+    if (height < 150)
+        SystemUI::_staticBottomFrameSize_ = height;
+
+    SystemUI::OnWillResize();
 }
 
-// private static void cppOnConfigChanged() [static] :415
+// private static void cppOnConfigChanged() [static] :449
 void SystemUI::cppOnConfigChanged()
 {
     SystemUI_typeof()->Init();
@@ -1140,7 +1139,7 @@ void SystemUI::cppOnConfigChanged()
     SystemUI::ResetGeometry();
 }
 
-// private static void cppOnTopFrameChanged(int height) [static] :596
+// private static void cppOnTopFrameChanged(int height) [static] :622
 void SystemUI::cppOnTopFrameChanged(int32_t height)
 {
     uStackFrame __("Fuse.Platform.SystemUI", "cppOnTopFrameChanged(int)");
@@ -1148,29 +1147,12 @@ void SystemUI::cppOnTopFrameChanged(int32_t height)
 
     if (SystemUI::_topFrameSize_ != height)
     {
-        int32_t resizeReason = 1;
-        ::g::Uno::Float2 size = SystemUI::_GetRootDisplaySize();
-        ::g::Uno::Float2 start_pos = ::g::Uno::Float2__New2(0.0f, size.Y - (float)SystemUI::_topFrameSize_);
-        ::g::Uno::Float2 start_size = ::g::Uno::Float2__New2(size.X, (float)SystemUI::_topFrameSize_);
-        ::g::Uno::Float2 end_pos = ::g::Uno::Float2__New2(0.0f, size.Y - (float)height);
-        ::g::Uno::Float2 end_size = ::g::Uno::Float2__New2(size.X, (float)height);
-        ::g::Uno::Rect startFrame = ::g::Uno::Rect__New2(start_pos, start_size);
-        ::g::Uno::Rect endFrame = ::g::Uno::Rect__New2(end_pos, end_size);
-
-        if ((SystemUI::_topFrameSize_ == 0) && (height > 0))
-            resizeReason = 0;
-        else if ((SystemUI::_topFrameSize_ > 0) && (height == 0))
-            resizeReason = 2;
-        else if (((SystemUI::_topFrameSize_ > 0) && (height > 0)) && (height != SystemUI::_topFrameSize_))
-            resizeReason = 1;
-
         SystemUI::_topFrameSize_ = height;
-        ::g::Fuse::Platform::SystemUIWillResizeEventArgs* args = ::g::Fuse::Platform::SystemUIWillResizeEventArgs::New2(0, resizeReason, endFrame, startFrame, 1.0, 0);
-        SystemUI::OnWillResize(args);
+        SystemUI::OnWillResize();
     }
 }
 
-// public static void CreateLayouts() [static] :131
+// public static void CreateLayouts() [static] :166
 void SystemUI::CreateLayouts()
 {
     SystemUI_typeof()->Init();
@@ -1186,7 +1168,7 @@ void SystemUI::CreateLayouts()
     
 }
 
-// public static void Detach() [static] :501
+// public static void Detach() [static] :535
 void SystemUI::Detach()
 {
     SystemUI_typeof()->Init();
@@ -1202,7 +1184,7 @@ void SystemUI::Detach()
     
 }
 
-// private static void EnterFullscreen() [static] :269
+// private static void EnterFullscreen() [static] :304
 void SystemUI::EnterFullscreen()
 {
     SystemUI_typeof()->Init();
@@ -1218,87 +1200,14 @@ void SystemUI::EnterFullscreen()
     
 }
 
-// private static float GetDensity() [static] :434
-float SystemUI::GetDensity()
+// private static int GetAPILevel() [static] :665
+int32_t SystemUI::GetAPILevel()
 {
     SystemUI_typeof()->Init();
     {
         INIT_JNI;
         jclass __cls = JniHelper::GetNativeExternClass();
-        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "GetDensity83", "()F");
-        jfloat __jresult = U_JNIVAR->CallStaticFloatMethod(__cls,__mtd);
-        float __result = (float)__jresult;
-        ::g::Android::Base::JNI::CheckException();
-        return __result;
-    }
-    
-}
-
-// public static Java.Object GetDisplayMetrics() [static] :357
-::g::Java::Object* SystemUI::GetDisplayMetrics()
-{
-    SystemUI_typeof()->Init();
-    {
-        INIT_JNI;
-        jclass __cls = JniHelper::GetNativeExternClass();
-        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "GetDisplayMetrics84", "()Ljava/lang/Object;");
-        jobject __jresult = U_JNIVAR->CallStaticObjectMethod(__cls,__mtd);
-        ::g::Java::Object* __result = (::g::Java::Object*)::g::Android::Base::Wrappers::JavaObjectHelper::JObjectToJWrapper(__jresult, false);
-        ::g::Android::Base::JNI::CheckException();
-        return __result;
-    }
-    
-}
-
-// public static int GetRealDisplayHeight() [static] :375
-int32_t SystemUI::GetRealDisplayHeight()
-{
-    SystemUI_typeof()->Init();
-    SystemUI::CalcRealSizes();
-    return SystemUI::realHeight_;
-}
-
-// public static int GetRealDisplayWidth() [static] :369
-int32_t SystemUI::GetRealDisplayWidth()
-{
-    SystemUI_typeof()->Init();
-    SystemUI::CalcRealSizes();
-    return SystemUI::realWidth_;
-}
-
-// private static extern Uno.Rect GetStatusBarFrame() [static] :294
-::g::Uno::Rect SystemUI::GetStatusBarFrame()
-{
-    SystemUI_typeof()->Init();
-    ::g::Uno::Float2 dispSize = SystemUI::_GetRootDisplaySize();
-    float height = SystemUI::GetStatusBarHeight();
-    return ::g::Uno::Rect__New2(::g::Uno::Float2__New2(0.0f, 0.0f), ::g::Uno::Float2__New2(dispSize.X, height));
-}
-
-// private static float GetStatusBarHeight() [static] :181
-float SystemUI::GetStatusBarHeight()
-{
-    SystemUI_typeof()->Init();
-    {
-        INIT_JNI;
-        jclass __cls = JniHelper::GetNativeExternClass();
-        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "GetStatusBarHeight85", "()F");
-        jfloat __jresult = U_JNIVAR->CallStaticFloatMethod(__cls,__mtd);
-        float __result = (float)__jresult;
-        ::g::Android::Base::JNI::CheckException();
-        return __result;
-    }
-    
-}
-
-// private static int GetSuperLayoutHeight() [static] :551
-int32_t SystemUI::GetSuperLayoutHeight()
-{
-    SystemUI_typeof()->Init();
-    {
-        INIT_JNI;
-        jclass __cls = JniHelper::GetNativeExternClass();
-        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "GetSuperLayoutHeight88", "()I");
+        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "GetAPILevel83", "()I");
         jint __jresult = U_JNIVAR->CallStaticIntMethod(__cls,__mtd);
         int32_t __result = (int32_t)__jresult;
         ::g::Android::Base::JNI::CheckException();
@@ -1307,7 +1216,122 @@ int32_t SystemUI::GetSuperLayoutHeight()
     
 }
 
-// private static void HideActionBar() [static] :169
+// private static extern Uno.Rect GetBottomBarFrame() [static] :336
+::g::Uno::Rect SystemUI::GetBottomBarFrame()
+{
+    SystemUI_typeof()->Init();
+    ::g::Uno::Float2 dispSize = SystemUI::_GetRootDisplaySize();
+    int32_t height = SystemUI::_bottomFrameSize_;
+    return ::g::Uno::Rect__New2(::g::Uno::Float2__New2(0.0f, 0.0f), ::g::Uno::Float2__New2(dispSize.X, (float)height));
+}
+
+// private static float GetDensity() [static] :468
+float SystemUI::GetDensity()
+{
+    SystemUI_typeof()->Init();
+    {
+        INIT_JNI;
+        jclass __cls = JniHelper::GetNativeExternClass();
+        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "GetDensity84", "()F");
+        jfloat __jresult = U_JNIVAR->CallStaticFloatMethod(__cls,__mtd);
+        float __result = (float)__jresult;
+        ::g::Android::Base::JNI::CheckException();
+        return __result;
+    }
+    
+}
+
+// public static Java.Object GetDisplayMetrics() [static] :391
+::g::Java::Object* SystemUI::GetDisplayMetrics()
+{
+    SystemUI_typeof()->Init();
+    {
+        INIT_JNI;
+        jclass __cls = JniHelper::GetNativeExternClass();
+        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "GetDisplayMetrics85", "()Ljava/lang/Object;");
+        jobject __jresult = U_JNIVAR->CallStaticObjectMethod(__cls,__mtd);
+        ::g::Java::Object* __result = (::g::Java::Object*)::g::Android::Base::Wrappers::JavaObjectHelper::JObjectToJWrapper(__jresult, false);
+        ::g::Android::Base::JNI::CheckException();
+        return __result;
+    }
+    
+}
+
+// private static string GetOSVersion() [static] :671
+uString* SystemUI::GetOSVersion()
+{
+    SystemUI_typeof()->Init();
+    {
+        INIT_JNI;
+        jclass __cls = JniHelper::GetNativeExternClass();
+        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "GetOSVersion86", "()Ljava/lang/String;");
+        jobject __jresult = U_JNIVAR->CallStaticObjectMethod(__cls,__mtd);
+        uString* __result = JniHelper::JavaToUnoString((jstring)__jresult);
+        if (__jresult!=NULL && U_JNIVAR->GetObjectRefType(__jresult) == JNILocalRefType) U_JNIVAR->DeleteLocalRef(__jresult);
+        ::g::Android::Base::JNI::CheckException();
+        return __result;
+    }
+    
+}
+
+// public static int GetRealDisplayHeight() [static] :409
+int32_t SystemUI::GetRealDisplayHeight()
+{
+    SystemUI_typeof()->Init();
+    SystemUI::CalcRealSizes();
+    return SystemUI::realHeight_;
+}
+
+// public static int GetRealDisplayWidth() [static] :403
+int32_t SystemUI::GetRealDisplayWidth()
+{
+    SystemUI_typeof()->Init();
+    SystemUI::CalcRealSizes();
+    return SystemUI::realWidth_;
+}
+
+// private static extern Uno.Rect GetStatusBarFrame() [static] :329
+::g::Uno::Rect SystemUI::GetStatusBarFrame()
+{
+    SystemUI_typeof()->Init();
+    ::g::Uno::Float2 dispSize = SystemUI::_GetRootDisplaySize();
+    float height = SystemUI::GetStatusBarHeight();
+    return ::g::Uno::Rect__New2(::g::Uno::Float2__New2(0.0f, 0.0f), ::g::Uno::Float2__New2(dispSize.X, height));
+}
+
+// private static float GetStatusBarHeight() [static] :216
+float SystemUI::GetStatusBarHeight()
+{
+    SystemUI_typeof()->Init();
+    {
+        INIT_JNI;
+        jclass __cls = JniHelper::GetNativeExternClass();
+        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "GetStatusBarHeight87", "()F");
+        jfloat __jresult = U_JNIVAR->CallStaticFloatMethod(__cls,__mtd);
+        float __result = (float)__jresult;
+        ::g::Android::Base::JNI::CheckException();
+        return __result;
+    }
+    
+}
+
+// private static int GetSuperLayoutHeight() [static] :585
+int32_t SystemUI::GetSuperLayoutHeight()
+{
+    SystemUI_typeof()->Init();
+    {
+        INIT_JNI;
+        jclass __cls = JniHelper::GetNativeExternClass();
+        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "GetSuperLayoutHeight90", "()I");
+        jint __jresult = U_JNIVAR->CallStaticIntMethod(__cls,__mtd);
+        int32_t __result = (int32_t)__jresult;
+        ::g::Android::Base::JNI::CheckException();
+        return __result;
+    }
+    
+}
+
+// private static void HideActionBar() [static] :204
 void SystemUI::HideActionBar()
 {
     SystemUI_typeof()->Init();
@@ -1323,7 +1347,7 @@ void SystemUI::HideActionBar()
     
 }
 
-// public static void HideStatusBar() [static] :229
+// public static void HideStatusBar() [static] :264
 void SystemUI::HideStatusBar()
 {
     SystemUI_typeof()->Init();
@@ -1339,14 +1363,14 @@ void SystemUI::HideStatusBar()
     
 }
 
-// private static void HookOntoRawActivityEvents() [static] :70
+// private static void HookOntoRawActivityEvents() [static] :105
 void SystemUI::HookOntoRawActivityEvents()
 {
     SystemUI_typeof()->Init();
     {
         INIT_JNI;
         jclass __cls = JniHelper::GetNativeExternClass();
-        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "HookOntoRawActivityEvents89", "()V");
+        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "HookOntoRawActivityEvents91", "()V");
         U_JNIVAR->CallStaticVoidMethod(__cls,__mtd);
         
         ::g::Android::Base::JNI::CheckException();
@@ -1355,7 +1379,7 @@ void SystemUI::HookOntoRawActivityEvents()
     
 }
 
-// private static Java.Object MakePostV11LayoutChangeListener() [static] :442
+// private static Java.Object MakePostV11LayoutChangeListener() [static] :476
 ::g::Java::Object* SystemUI::MakePostV11LayoutChangeListener()
 {
     SystemUI_typeof()->Init();
@@ -1371,21 +1395,21 @@ void SystemUI::HookOntoRawActivityEvents()
     
 }
 
-// private static void OnConfigChanged() [static] :105
+// private static void OnConfigChanged() [static] :140
 void SystemUI::OnConfigChanged()
 {
     SystemUI_typeof()->Init();
     SystemUI::CompensateRootLayoutForSystemUI();
 }
 
-// public static void OnCreate() [static] :111
+// public static void OnCreate() [static] :146
 void SystemUI::OnCreate()
 {
     SystemUI_typeof()->Init();
     {
         INIT_JNI;
         jclass __cls = JniHelper::GetNativeExternClass();
-        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "OnCreate97", "()V");
+        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "OnCreate99", "()V");
         U_JNIVAR->CallStaticVoidMethod(__cls,__mtd);
         
         ::g::Android::Base::JNI::CheckException();
@@ -1394,7 +1418,7 @@ void SystemUI::OnCreate()
     
 }
 
-// private static void OnDestroy() [static] :99
+// private static void OnDestroy() [static] :134
 void SystemUI::OnDestroy()
 {
     SystemUI_typeof()->Init();
@@ -1402,7 +1426,7 @@ void SystemUI::OnDestroy()
     SystemUI::_bottomFrameSize_ = 0;
 }
 
-// private static void OnFrameChanged() [static] :60
+// private static void OnFrameChanged() [static] :95
 void SystemUI::OnFrameChanged()
 {
     uStackFrame __("Fuse.Platform.SystemUI", "OnFrameChanged()");
@@ -1413,7 +1437,7 @@ void SystemUI::OnFrameChanged()
         uPtr(handler)->Invoke(2, NULL, (::g::Uno::EventArgs*)::g::Uno::EventArgs::Empty());
 }
 
-// private static void onHideKeyboard(int keyboardHeight, bool force) [static] :540
+// private static void onHideKeyboard(int keyboardHeight, bool force) [static] :574
 void SystemUI::onHideKeyboard(int32_t keyboardHeight, bool force)
 {
     uStackFrame __("Fuse.Platform.SystemUI", "onHideKeyboard(int,bool)");
@@ -1427,14 +1451,14 @@ void SystemUI::onHideKeyboard(int32_t keyboardHeight, bool force)
     }
 }
 
-// private static void OnPause() [static] :87
+// private static void OnPause() [static] :122
 void SystemUI::OnPause()
 {
     SystemUI_typeof()->Init();
     {
         INIT_JNI;
         jclass __cls = JniHelper::GetNativeExternClass();
-        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "OnPause90", "()V");
+        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "OnPause92", "()V");
         U_JNIVAR->CallStaticVoidMethod(__cls,__mtd);
         
         ::g::Android::Base::JNI::CheckException();
@@ -1443,14 +1467,14 @@ void SystemUI::OnPause()
     
 }
 
-// private static void OnResume() [static] :93
+// private static void OnResume() [static] :128
 void SystemUI::OnResume()
 {
     SystemUI_typeof()->Init();
     {
         INIT_JNI;
         jclass __cls = JniHelper::GetNativeExternClass();
-        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "OnResume91", "()V");
+        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "OnResume93", "()V");
         U_JNIVAR->CallStaticVoidMethod(__cls,__mtd);
         
         ::g::Android::Base::JNI::CheckException();
@@ -1459,7 +1483,7 @@ void SystemUI::OnResume()
     
 }
 
-// private static void onShowKeyboard(int keyboardHeight, bool force) [static] :530
+// private static void onShowKeyboard(int keyboardHeight, bool force) [static] :564
 void SystemUI::onShowKeyboard(int32_t keyboardHeight, bool force)
 {
     uStackFrame __("Fuse.Platform.SystemUI", "onShowKeyboard(int,bool)");
@@ -1473,30 +1497,17 @@ void SystemUI::onShowKeyboard(int32_t keyboardHeight, bool force)
     }
 }
 
-// private static void OnWillResize(Fuse.Platform.SystemUIWillResizeEventArgs args) [static] :301
-void SystemUI::OnWillResize(::g::Fuse::Platform::SystemUIWillResizeEventArgs* args)
+// private static void OnWillResize() [static] :343
+void SystemUI::OnWillResize()
 {
-    uStackFrame __("Fuse.Platform.SystemUI", "OnWillResize(Fuse.Platform.SystemUIWillResizeEventArgs)");
+    uStackFrame __("Fuse.Platform.SystemUI", "OnWillResize()");
     SystemUI_typeof()->Init();
 
-    if (uPtr(args)->ID() == 0)
-    {
-        uDelegate* handler = SystemUI::TopFrameWillResize1_;
-
-        if (::g::Uno::Delegate::op_Inequality(handler, NULL))
-            uPtr(handler)->Invoke(2, NULL, args);
-    }
-    else
-    {
-        SystemUI::BottomFrame(uPtr(args)->EndFrame());
-        uDelegate* handler1 = SystemUI::BottomFrameWillResize1_;
-
-        if (::g::Uno::Delegate::op_Inequality(handler1, NULL))
-            uPtr(handler1)->Invoke(2, NULL, args);
-    }
+    if (::g::Uno::Delegate::op_Inequality(SystemUI::MarginsChanged1_, NULL))
+        uPtr(SystemUI::MarginsChanged1_)->InvokeVoid();
 }
 
-// public static void ResendFrameSizes() [static] :556
+// public static void ResendFrameSizes() [static] :590
 void SystemUI::ResendFrameSizes()
 {
     uStackFrame __("Fuse.Platform.SystemUI", "ResendFrameSizes()");
@@ -1507,7 +1518,7 @@ void SystemUI::ResendFrameSizes()
     SystemUI::cppOnBottomFrameChanged(heightDiff);
 }
 
-// private static void ResetGeometry() [static] :422
+// private static void ResetGeometry() [static] :456
 void SystemUI::ResetGeometry()
 {
     SystemUI_typeof()->Init();
@@ -1520,14 +1531,14 @@ void SystemUI::ResetGeometry()
     SystemUI::Density(density);
 }
 
-// private static void SetAsRootView(Java.Object view) [static] :392
+// private static void SetAsRootView(Java.Object view) [static] :426
 void SystemUI::SetAsRootView(::g::Java::Object* view)
 {
     SystemUI_typeof()->Init();
     {
         INIT_JNI;
         jclass __cls = JniHelper::GetNativeExternClass();
-        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "SetAsRootView100", "(Ljava/lang/Object;)V");
+        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "SetAsRootView102", "(Ljava/lang/Object;)V");
         ::g::Java::Object* _uview=view;
         jobject _view = (_uview==NULL ? NULL : U_JNIVAR->NewLocalRef(::g::Android::Base::Wrappers::IJWrapper::_GetJavaObject(uInterface((uObject*)_uview, ::g::Android::Base::Wrappers::IJWrapper_typeof()))));
         U_JNIVAR->CallStaticVoidMethod(__cls,__mtd,_view);
@@ -1539,7 +1550,7 @@ void SystemUI::SetAsRootView(::g::Java::Object* view)
     
 }
 
-// private static void SetFrame(Java.Object view, int originX, int originY, int height) [static] :474
+// private static void SetFrame(Java.Object view, int originX, int originY, int height) [static] :508
 void SystemUI::SetFrame(::g::Java::Object* view, int32_t originX, int32_t originY, int32_t height)
 {
     SystemUI_typeof()->Init();
@@ -1567,14 +1578,14 @@ void SystemUI::SetFrame(::g::Java::Object* view, int32_t originX, int32_t origin
     
 }
 
-// public static void ShowStatusBar() [static] :206
+// public static void ShowStatusBar() [static] :241
 void SystemUI::ShowStatusBar()
 {
     SystemUI_typeof()->Init();
     {
         INIT_JNI;
         jclass __cls = JniHelper::GetNativeExternClass();
-        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "ShowStatusBar101", "()V");
+        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "ShowStatusBar103", "()V");
         U_JNIVAR->CallStaticVoidMethod(__cls,__mtd);
         
         ::g::Android::Base::JNI::CheckException();
@@ -1583,14 +1594,14 @@ void SystemUI::ShowStatusBar()
     
 }
 
-// private static void unoOnGlobalLayout() [static] :514
+// private static void unoOnGlobalLayout() [static] :548
 void SystemUI::unoOnGlobalLayout()
 {
     SystemUI_typeof()->Init();
     {
         INIT_JNI;
         jclass __cls = JniHelper::GetNativeExternClass();
-        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "unoOnGlobalLayout98", "()V");
+        WITH_STATIC_JAVA_METHOD(__mtd, __cls, "unoOnGlobalLayout100", "()V");
         U_JNIVAR->CallStaticVoidMethod(__cls,__mtd);
         
         ::g::Android::Base::JNI::CheckException();
@@ -1599,7 +1610,7 @@ void SystemUI::unoOnGlobalLayout()
     
 }
 
-// public static void UpdateStatusBar() [static] :249
+// public static void UpdateStatusBar() [static] :284
 void SystemUI::UpdateStatusBar()
 {
     SystemUI_typeof()->Init();
@@ -1624,42 +1635,49 @@ void SystemUI::UpdateStatusBar()
     }
 }
 
-// public static generated Uno.Rect get_BottomFrame() [static] :24
+// public static int get_APILevel() [static] :640
+int32_t SystemUI::APILevel()
+{
+    SystemUI_typeof()->Init();
+    return SystemUI::GetAPILevel();
+}
+
+// private static Uno.Rect get_BottomFrame() [static] :21
 ::g::Uno::Rect SystemUI::BottomFrame()
 {
     SystemUI_typeof()->Init();
-    return SystemUI::_BottomFrame_;
+    return SystemUI::GetBottomBarFrame();
 }
 
-// private static generated void set_BottomFrame(Uno.Rect value) [static] :24
-void SystemUI::BottomFrame(::g::Uno::Rect value)
-{
-    SystemUI_typeof()->Init();
-    SystemUI::_BottomFrame_ = value;
-}
-
-// public static generated float get_Density() [static] :44
+// public static float get_Density() [static] :77
 float SystemUI::Density()
 {
     SystemUI_typeof()->Init();
-    return SystemUI::_Density_;
+    return SystemUI::_density_;
 }
 
-// private static generated void set_Density(float value) [static] :44
+// private static void set_Density(float value) [static] :78
 void SystemUI::Density(float value)
 {
     SystemUI_typeof()->Init();
-    SystemUI::_Density_ = value;
+    SystemUI::_density_ = value;
 }
 
-// public static Uno.Rect get_Frame() [static] :48
+// public static float4 get_DeviceMargins() [static] :27
+::g::Uno::Float4 SystemUI::DeviceMargins()
+{
+    SystemUI_typeof()->Init();
+    return ::g::Uno::Float4__New1(0.0f);
+}
+
+// public static Uno.Rect get_Frame() [static] :83
 ::g::Uno::Rect SystemUI::Frame()
 {
     SystemUI_typeof()->Init();
     return SystemUI::_frame_;
 }
 
-// private static void set_Frame(Uno.Rect value) [static] :49
+// private static void set_Frame(Uno.Rect value) [static] :84
 void SystemUI::Frame(::g::Uno::Rect value)
 {
     uStackFrame __("Fuse.Platform.SystemUI", "set_Frame(Uno.Rect)");
@@ -1672,21 +1690,21 @@ void SystemUI::Frame(::g::Uno::Rect value)
     SystemUI::OnFrameChanged();
 }
 
-// public static bool get_IsBottomFrameVisible() [static] :164
+// public static bool get_IsBottomFrameVisible() [static] :199
 bool SystemUI::IsBottomFrameVisible()
 {
     SystemUI_typeof()->Init();
     return (SystemUI::BottomFrame().Top - SystemUI::BottomFrame().Bottom) > 0.0f;
 }
 
-// public static bool get_IsTopFrameVisible() [static] :150
+// public static bool get_IsTopFrameVisible() [static] :185
 bool SystemUI::IsTopFrameVisible()
 {
     SystemUI_typeof()->Init();
     return (double)SystemUI::GetStatusBarHeight() > 0.0;
 }
 
-// public static void set_IsTopFrameVisible(bool value) [static] :153
+// public static void set_IsTopFrameVisible(bool value) [static] :188
 void SystemUI::IsTopFrameVisible(bool value)
 {
     SystemUI_typeof()->Init();
@@ -1697,44 +1715,80 @@ void SystemUI::IsTopFrameVisible(bool value)
         SystemUI::HideStatusBar();
 }
 
-// public static Java.Object get_RootView() [static] :387
+// public static int3 get_OSVersion() [static] :643
+::g::Uno::Int3 SystemUI::OSVersion()
+{
+    uStackFrame __("Fuse.Platform.SystemUI", "get_OSVersion()");
+    SystemUI_typeof()->Init();
+    int32_t major = 0;
+    int32_t minor = 0;
+    int32_t revision = 0;
+
+    try
+    {
+        {
+            uString* ver = SystemUI::GetOSVersion();
+            uArray* parts = ::g::Uno::String::Split(uPtr(ver), uArray::Init<int32_t>(::TYPES[7/*char[]*/], 1, '.'));
+
+            if (uPtr(parts)->Length() > 0)
+                ::g::Uno::Int::TryParse(uPtr(parts)->Strong<uString*>(0), &major);
+
+            if (uPtr(parts)->Length() > 1)
+                ::g::Uno::Int::TryParse(uPtr(parts)->Strong<uString*>(1), &minor);
+
+            if (uPtr(parts)->Length() > 2)
+                ::g::Uno::Int::TryParse(uPtr(parts)->Strong<uString*>(2), &revision);
+        }
+    }
+
+    catch (const uThrowable& __t)
+    {
+        ::g::Uno::Exception* ex = __t.Exception;
+    }
+
+    return ::g::Uno::Int3__New2(major, minor, revision);
+}
+
+// public static Java.Object get_RootView() [static] :421
 ::g::Java::Object* SystemUI::RootView()
 {
     SystemUI_typeof()->Init();
     return SystemUI::RootLayout_;
 }
 
-// public static void set_RootView(Java.Object value) [static] :388
+// public static void set_RootView(Java.Object value) [static] :422
 void SystemUI::RootView(::g::Java::Object* value)
 {
     SystemUI_typeof()->Init();
     SystemUI::SetAsRootView(value);
 }
 
-// public static Uno.Rect get_TopFrame() [static] :23
+// public static float4 get_SafeMargins() [static] :36
+::g::Uno::Float4 SystemUI::SafeMargins()
+{
+    SystemUI_typeof()->Init();
+    float top = SystemUI::TopFrame().Height();
+    float bottom = SystemUI::BottomFrame().Height();
+    return ::g::Uno::Float4__op_Division1(::g::Uno::Float4__New2(0.0f, top, 0.0f, bottom), SystemUI::Density());
+}
+
+// public static float4 get_StaticMargins() [static] :46
+::g::Uno::Float4 SystemUI::StaticMargins()
+{
+    SystemUI_typeof()->Init();
+    float top = SystemUI::TopFrame().Height();
+    int32_t bottom = SystemUI::_staticBottomFrameSize_;
+    return ::g::Uno::Float4__op_Division1(::g::Uno::Float4__New2(0.0f, top, 0.0f, (float)bottom), SystemUI::Density());
+}
+
+// private static Uno.Rect get_TopFrame() [static] :20
 ::g::Uno::Rect SystemUI::TopFrame()
 {
     SystemUI_typeof()->Init();
     return SystemUI::GetStatusBarFrame();
 }
 
-// public static generated void add_BottomFrameWillResize(Uno.EventHandler<Fuse.Platform.SystemUIWillResizeEventArgs> value) [static] :21
-void SystemUI::add_BottomFrameWillResize(uDelegate* value)
-{
-    uStackFrame __("Fuse.Platform.SystemUI", "add_BottomFrameWillResize(Uno.EventHandler<Fuse.Platform.SystemUIWillResizeEventArgs>)");
-    SystemUI_typeof()->Init();
-    SystemUI::BottomFrameWillResize1_ = uCast<uDelegate*>(::g::Uno::Delegate::Combine(SystemUI::BottomFrameWillResize1_, value), ::TYPES[6/*Uno.EventHandler<Fuse.Platform.SystemUIWillResizeEventArgs>*/]);
-}
-
-// public static generated void remove_BottomFrameWillResize(Uno.EventHandler<Fuse.Platform.SystemUIWillResizeEventArgs> value) [static] :21
-void SystemUI::remove_BottomFrameWillResize(uDelegate* value)
-{
-    uStackFrame __("Fuse.Platform.SystemUI", "remove_BottomFrameWillResize(Uno.EventHandler<Fuse.Platform.SystemUIWillResizeEventArgs>)");
-    SystemUI_typeof()->Init();
-    SystemUI::BottomFrameWillResize1_ = uCast<uDelegate*>(::g::Uno::Delegate::Remove(SystemUI::BottomFrameWillResize1_, value), ::TYPES[6/*Uno.EventHandler<Fuse.Platform.SystemUIWillResizeEventArgs>*/]);
-}
-
-// public static generated void add_FrameChanged(Uno.EventHandler value) [static] :59
+// public static generated void add_FrameChanged(Uno.EventHandler value) [static] :94
 void SystemUI::add_FrameChanged(uDelegate* value)
 {
     uStackFrame __("Fuse.Platform.SystemUI", "add_FrameChanged(Uno.EventHandler)");
@@ -1742,7 +1796,7 @@ void SystemUI::add_FrameChanged(uDelegate* value)
     SystemUI::FrameChanged1_ = uCast<uDelegate*>(::g::Uno::Delegate::Combine(SystemUI::FrameChanged1_, value), ::TYPES[0/*Uno.EventHandler*/]);
 }
 
-// public static generated void remove_FrameChanged(Uno.EventHandler value) [static] :59
+// public static generated void remove_FrameChanged(Uno.EventHandler value) [static] :94
 void SystemUI::remove_FrameChanged(uDelegate* value)
 {
     uStackFrame __("Fuse.Platform.SystemUI", "remove_FrameChanged(Uno.EventHandler)");
@@ -1750,43 +1804,27 @@ void SystemUI::remove_FrameChanged(uDelegate* value)
     SystemUI::FrameChanged1_ = uCast<uDelegate*>(::g::Uno::Delegate::Remove(SystemUI::FrameChanged1_, value), ::TYPES[0/*Uno.EventHandler*/]);
 }
 
-// public static generated void add_TopFrameWillResize(Uno.EventHandler<Fuse.Platform.SystemUIWillResizeEventArgs> value) [static] :20
-void SystemUI::add_TopFrameWillResize(uDelegate* value)
+// public static generated void add_MarginsChanged(Uno.Action value) [static] :23
+void SystemUI::add_MarginsChanged(uDelegate* value)
 {
-    uStackFrame __("Fuse.Platform.SystemUI", "add_TopFrameWillResize(Uno.EventHandler<Fuse.Platform.SystemUIWillResizeEventArgs>)");
+    uStackFrame __("Fuse.Platform.SystemUI", "add_MarginsChanged(Uno.Action)");
     SystemUI_typeof()->Init();
-    SystemUI::TopFrameWillResize1_ = uCast<uDelegate*>(::g::Uno::Delegate::Combine(SystemUI::TopFrameWillResize1_, value), ::TYPES[6/*Uno.EventHandler<Fuse.Platform.SystemUIWillResizeEventArgs>*/]);
+    SystemUI::MarginsChanged1_ = uCast<uDelegate*>(::g::Uno::Delegate::Combine(SystemUI::MarginsChanged1_, value), ::TYPES[1/*Uno.Action*/]);
 }
 
-// public static generated void remove_TopFrameWillResize(Uno.EventHandler<Fuse.Platform.SystemUIWillResizeEventArgs> value) [static] :20
-void SystemUI::remove_TopFrameWillResize(uDelegate* value)
+// public static generated void remove_MarginsChanged(Uno.Action value) [static] :23
+void SystemUI::remove_MarginsChanged(uDelegate* value)
 {
-    uStackFrame __("Fuse.Platform.SystemUI", "remove_TopFrameWillResize(Uno.EventHandler<Fuse.Platform.SystemUIWillResizeEventArgs>)");
+    uStackFrame __("Fuse.Platform.SystemUI", "remove_MarginsChanged(Uno.Action)");
     SystemUI_typeof()->Init();
-    SystemUI::TopFrameWillResize1_ = uCast<uDelegate*>(::g::Uno::Delegate::Remove(SystemUI::TopFrameWillResize1_, value), ::TYPES[6/*Uno.EventHandler<Fuse.Platform.SystemUIWillResizeEventArgs>*/]);
+    SystemUI::MarginsChanged1_ = uCast<uDelegate*>(::g::Uno::Delegate::Remove(SystemUI::MarginsChanged1_, value), ::TYPES[1/*Uno.Action*/]);
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Platform\1.7.4\SystemUI.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Platform\1.8.1\SystemUI.uno
 // ------------------------------------------------------------------------------------
 
-// public enum SystemUIID :8
-uEnumType* SystemUIID_typeof()
-{
-    static uSStrong<uEnumType*> type;
-    if (type != NULL) return type;
-
-    type = uEnumType::New("Fuse.Platform.SystemUIID", ::g::Uno::Int_typeof(), 2);
-    type->SetLiterals(
-        "TopFrame", 0LL,
-        "BottomFrame", 1LL);
-    return type;
-}
-
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Platform\1.7.4\SystemUI.uno
-// ------------------------------------------------------------------------------------
-
-// public enum SystemUIResizeReason :14
+// internal enum SystemUIResizeReason :8
 uEnumType* SystemUIResizeReason_typeof()
 {
     static uSStrong<uEnumType*> type;
@@ -1800,257 +1838,10 @@ uEnumType* SystemUIResizeReason_typeof()
     return type;
 }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Platform\1.7.4\SystemUI.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Platform\1.8.1\SystemUI.uno
 // ------------------------------------------------------------------------------------
 
-// public sealed class SystemUIWillResizeEventArgs :28
-// {
-static void SystemUIWillResizeEventArgs_build(uType* type)
-{
-    type->SetFields(0,
-        ::g::Uno::Int_typeof(), offsetof(SystemUIWillResizeEventArgs, _AnimationCurve), 0,
-        ::g::Uno::Double_typeof(), offsetof(SystemUIWillResizeEventArgs, _AnimationDuration), 0,
-        ::g::Uno::Rect_typeof(), offsetof(SystemUIWillResizeEventArgs, _EndFrame), 0,
-        ::g::Fuse::Platform::SystemUIID_typeof(), offsetof(SystemUIWillResizeEventArgs, _ID), 0,
-        ::g::Uno::Bool_typeof(), offsetof(SystemUIWillResizeEventArgs, _IsAnimated), 0,
-        ::g::Fuse::Platform::SystemUIResizeReason_typeof(), offsetof(SystemUIWillResizeEventArgs, _ResizeReason), 0,
-        ::g::Uno::Rect_typeof(), offsetof(SystemUIWillResizeEventArgs, _StartFrame), 0);
-    type->Reflection.SetFunctions(8,
-        new uFunction("get_AnimationCurve", NULL, (void*)SystemUIWillResizeEventArgs__get_AnimationCurve_fn, 0, false, ::g::Uno::Int_typeof(), 0),
-        new uFunction("get_AnimationDuration", NULL, (void*)SystemUIWillResizeEventArgs__get_AnimationDuration_fn, 0, false, ::g::Uno::Double_typeof(), 0),
-        new uFunction("get_EndFrame", NULL, (void*)SystemUIWillResizeEventArgs__get_EndFrame_fn, 0, false, ::g::Uno::Rect_typeof(), 0),
-        new uFunction("get_ID", NULL, (void*)SystemUIWillResizeEventArgs__get_ID_fn, 0, false, ::g::Fuse::Platform::SystemUIID_typeof(), 0),
-        new uFunction("get_IsAnimated", NULL, (void*)SystemUIWillResizeEventArgs__get_IsAnimated_fn, 0, false, ::g::Uno::Bool_typeof(), 0),
-        new uFunction(".ctor", NULL, (void*)SystemUIWillResizeEventArgs__New2_fn, 0, true, type, 6, ::g::Fuse::Platform::SystemUIID_typeof(), ::g::Fuse::Platform::SystemUIResizeReason_typeof(), ::g::Uno::Rect_typeof(), ::g::Uno::Rect_typeof(), ::g::Uno::Double_typeof(), ::g::Uno::Int_typeof()),
-        new uFunction("get_ResizeReason", NULL, (void*)SystemUIWillResizeEventArgs__get_ResizeReason_fn, 0, false, ::g::Fuse::Platform::SystemUIResizeReason_typeof(), 0),
-        new uFunction("get_StartFrame", NULL, (void*)SystemUIWillResizeEventArgs__get_StartFrame_fn, 0, false, ::g::Uno::Rect_typeof(), 0));
-}
-
-uType* SystemUIWillResizeEventArgs_typeof()
-{
-    static uSStrong<uType*> type;
-    if (type != NULL) return type;
-
-    uTypeOptions options;
-    options.BaseDefinition = ::g::Uno::EventArgs_typeof();
-    options.FieldCount = 7;
-    options.ObjectSize = sizeof(SystemUIWillResizeEventArgs);
-    options.TypeSize = sizeof(uType);
-    type = uClassType::New("Fuse.Platform.SystemUIWillResizeEventArgs", options);
-    type->fp_build_ = SystemUIWillResizeEventArgs_build;
-    return type;
-}
-
-// public SystemUIWillResizeEventArgs(Fuse.Platform.SystemUIID id, Fuse.Platform.SystemUIResizeReason resizeReason, Uno.Rect endFrame, [Uno.Rect startFrame], [double animationDuration], [int animationCurve]) :39
-void SystemUIWillResizeEventArgs__ctor_1_fn(SystemUIWillResizeEventArgs* __this, int32_t* id, int32_t* resizeReason, ::g::Uno::Rect* endFrame, ::g::Uno::Rect* startFrame, double* animationDuration, int32_t* animationCurve)
-{
-    __this->ctor_1(*id, *resizeReason, *endFrame, *startFrame, *animationDuration, *animationCurve);
-}
-
-// public generated int get_AnimationCurve() :36
-void SystemUIWillResizeEventArgs__get_AnimationCurve_fn(SystemUIWillResizeEventArgs* __this, int32_t* __retval)
-{
-    *__retval = __this->AnimationCurve();
-}
-
-// private generated void set_AnimationCurve(int value) :36
-void SystemUIWillResizeEventArgs__set_AnimationCurve_fn(SystemUIWillResizeEventArgs* __this, int32_t* value)
-{
-    __this->AnimationCurve(*value);
-}
-
-// public generated double get_AnimationDuration() :35
-void SystemUIWillResizeEventArgs__get_AnimationDuration_fn(SystemUIWillResizeEventArgs* __this, double* __retval)
-{
-    *__retval = __this->AnimationDuration();
-}
-
-// private generated void set_AnimationDuration(double value) :35
-void SystemUIWillResizeEventArgs__set_AnimationDuration_fn(SystemUIWillResizeEventArgs* __this, double* value)
-{
-    __this->AnimationDuration(*value);
-}
-
-// public generated Uno.Rect get_EndFrame() :33
-void SystemUIWillResizeEventArgs__get_EndFrame_fn(SystemUIWillResizeEventArgs* __this, ::g::Uno::Rect* __retval)
-{
-    *__retval = __this->EndFrame();
-}
-
-// private generated void set_EndFrame(Uno.Rect value) :33
-void SystemUIWillResizeEventArgs__set_EndFrame_fn(SystemUIWillResizeEventArgs* __this, ::g::Uno::Rect* value)
-{
-    __this->EndFrame(*value);
-}
-
-// public generated Fuse.Platform.SystemUIID get_ID() :30
-void SystemUIWillResizeEventArgs__get_ID_fn(SystemUIWillResizeEventArgs* __this, int32_t* __retval)
-{
-    *__retval = __this->ID();
-}
-
-// private generated void set_ID(Fuse.Platform.SystemUIID value) :30
-void SystemUIWillResizeEventArgs__set_ID_fn(SystemUIWillResizeEventArgs* __this, int32_t* value)
-{
-    __this->ID(*value);
-}
-
-// public generated bool get_IsAnimated() :34
-void SystemUIWillResizeEventArgs__get_IsAnimated_fn(SystemUIWillResizeEventArgs* __this, bool* __retval)
-{
-    *__retval = __this->IsAnimated();
-}
-
-// private generated void set_IsAnimated(bool value) :34
-void SystemUIWillResizeEventArgs__set_IsAnimated_fn(SystemUIWillResizeEventArgs* __this, bool* value)
-{
-    __this->IsAnimated(*value);
-}
-
-// public SystemUIWillResizeEventArgs New(Fuse.Platform.SystemUIID id, Fuse.Platform.SystemUIResizeReason resizeReason, Uno.Rect endFrame, [Uno.Rect startFrame], [double animationDuration], [int animationCurve]) :39
-void SystemUIWillResizeEventArgs__New2_fn(int32_t* id, int32_t* resizeReason, ::g::Uno::Rect* endFrame, ::g::Uno::Rect* startFrame, double* animationDuration, int32_t* animationCurve, SystemUIWillResizeEventArgs** __retval)
-{
-    *__retval = SystemUIWillResizeEventArgs::New2(*id, *resizeReason, *endFrame, *startFrame, *animationDuration, *animationCurve);
-}
-
-// public generated Fuse.Platform.SystemUIResizeReason get_ResizeReason() :31
-void SystemUIWillResizeEventArgs__get_ResizeReason_fn(SystemUIWillResizeEventArgs* __this, int32_t* __retval)
-{
-    *__retval = __this->ResizeReason();
-}
-
-// private generated void set_ResizeReason(Fuse.Platform.SystemUIResizeReason value) :31
-void SystemUIWillResizeEventArgs__set_ResizeReason_fn(SystemUIWillResizeEventArgs* __this, int32_t* value)
-{
-    __this->ResizeReason(*value);
-}
-
-// public generated Uno.Rect get_StartFrame() :32
-void SystemUIWillResizeEventArgs__get_StartFrame_fn(SystemUIWillResizeEventArgs* __this, ::g::Uno::Rect* __retval)
-{
-    *__retval = __this->StartFrame();
-}
-
-// private generated void set_StartFrame(Uno.Rect value) :32
-void SystemUIWillResizeEventArgs__set_StartFrame_fn(SystemUIWillResizeEventArgs* __this, ::g::Uno::Rect* value)
-{
-    __this->StartFrame(*value);
-}
-
-// public SystemUIWillResizeEventArgs(Fuse.Platform.SystemUIID id, Fuse.Platform.SystemUIResizeReason resizeReason, Uno.Rect endFrame, [Uno.Rect startFrame], [double animationDuration], [int animationCurve]) [instance] :39
-void SystemUIWillResizeEventArgs::ctor_1(int32_t id, int32_t resizeReason, ::g::Uno::Rect endFrame, ::g::Uno::Rect startFrame, double animationDuration, int32_t animationCurve)
-{
-    ctor_();
-    ID(id);
-    ResizeReason(resizeReason);
-    StartFrame(startFrame);
-    EndFrame(endFrame);
-
-    if (animationDuration != 0.0)
-    {
-        IsAnimated(true);
-        AnimationDuration(animationDuration);
-        AnimationCurve(animationCurve);
-    }
-}
-
-// public generated int get_AnimationCurve() [instance] :36
-int32_t SystemUIWillResizeEventArgs::AnimationCurve()
-{
-    return _AnimationCurve;
-}
-
-// private generated void set_AnimationCurve(int value) [instance] :36
-void SystemUIWillResizeEventArgs::AnimationCurve(int32_t value)
-{
-    _AnimationCurve = value;
-}
-
-// public generated double get_AnimationDuration() [instance] :35
-double SystemUIWillResizeEventArgs::AnimationDuration()
-{
-    return _AnimationDuration;
-}
-
-// private generated void set_AnimationDuration(double value) [instance] :35
-void SystemUIWillResizeEventArgs::AnimationDuration(double value)
-{
-    _AnimationDuration = value;
-}
-
-// public generated Uno.Rect get_EndFrame() [instance] :33
-::g::Uno::Rect SystemUIWillResizeEventArgs::EndFrame()
-{
-    return _EndFrame;
-}
-
-// private generated void set_EndFrame(Uno.Rect value) [instance] :33
-void SystemUIWillResizeEventArgs::EndFrame(::g::Uno::Rect value)
-{
-    _EndFrame = value;
-}
-
-// public generated Fuse.Platform.SystemUIID get_ID() [instance] :30
-int32_t SystemUIWillResizeEventArgs::ID()
-{
-    return _ID;
-}
-
-// private generated void set_ID(Fuse.Platform.SystemUIID value) [instance] :30
-void SystemUIWillResizeEventArgs::ID(int32_t value)
-{
-    _ID = value;
-}
-
-// public generated bool get_IsAnimated() [instance] :34
-bool SystemUIWillResizeEventArgs::IsAnimated()
-{
-    return _IsAnimated;
-}
-
-// private generated void set_IsAnimated(bool value) [instance] :34
-void SystemUIWillResizeEventArgs::IsAnimated(bool value)
-{
-    _IsAnimated = value;
-}
-
-// public generated Fuse.Platform.SystemUIResizeReason get_ResizeReason() [instance] :31
-int32_t SystemUIWillResizeEventArgs::ResizeReason()
-{
-    return _ResizeReason;
-}
-
-// private generated void set_ResizeReason(Fuse.Platform.SystemUIResizeReason value) [instance] :31
-void SystemUIWillResizeEventArgs::ResizeReason(int32_t value)
-{
-    _ResizeReason = value;
-}
-
-// public generated Uno.Rect get_StartFrame() [instance] :32
-::g::Uno::Rect SystemUIWillResizeEventArgs::StartFrame()
-{
-    return _StartFrame;
-}
-
-// private generated void set_StartFrame(Uno.Rect value) [instance] :32
-void SystemUIWillResizeEventArgs::StartFrame(::g::Uno::Rect value)
-{
-    _StartFrame = value;
-}
-
-// public SystemUIWillResizeEventArgs New(Fuse.Platform.SystemUIID id, Fuse.Platform.SystemUIResizeReason resizeReason, Uno.Rect endFrame, [Uno.Rect startFrame], [double animationDuration], [int animationCurve]) [static] :39
-SystemUIWillResizeEventArgs* SystemUIWillResizeEventArgs::New2(int32_t id, int32_t resizeReason, ::g::Uno::Rect endFrame, ::g::Uno::Rect startFrame, double animationDuration, int32_t animationCurve)
-{
-    SystemUIWillResizeEventArgs* obj1 = (SystemUIWillResizeEventArgs*)uNew(SystemUIWillResizeEventArgs_typeof());
-    obj1->ctor_1(id, resizeReason, endFrame, startFrame, animationDuration, animationCurve);
-    return obj1;
-}
-// }
-
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Fuse.Platform\1.7.4\SystemUI.uno
-// ------------------------------------------------------------------------------------
-
-// internal enum SysUIState :21
+// internal enum SysUIState :15
 uEnumType* SysUIState_typeof()
 {
     static uSStrong<uEnumType*> type;

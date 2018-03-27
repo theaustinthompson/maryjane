@@ -1,4 +1,4 @@
-// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/Fuse.Controls.Panels/1.7.4/ClientPanel.uno.
+// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/Fuse.Controls.Panels/1.8.1/ClientPanel.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -19,14 +19,17 @@
 #include <Uno.Collections.ICollection-1.h>
 #include <Uno.Collections.IEnumerable-1.h>
 #include <Uno.Collections.IList-1.h>
+#include <Uno.Float4.h>
 #include <Uno.UX.IPropertyListener.h>
 namespace g{namespace Fuse{namespace Controls{struct ClientPanel;}}}
+namespace g{namespace Uno{namespace UX{struct Property1;}}}
+namespace g{namespace Uno{namespace UX{struct Selector;}}}
 
 namespace g{
 namespace Fuse{
 namespace Controls{
 
-// public partial sealed class ClientPanel :31
+// public partial sealed class ClientPanel :11
 // {
 ::g::Fuse::Controls::Panel_type* ClientPanel_typeof();
 void ClientPanel__ctor_8_fn(ClientPanel* __this);
@@ -35,6 +38,10 @@ void ClientPanel__New5_fn(ClientPanel** __retval);
 
 struct ClientPanel : ::g::Fuse::Controls::DockPanel
 {
+    uStrong< ::g::Uno::UX::Property1*> this_Padding_inst;
+    static ::g::Uno::UX::Selector __selector0_;
+    static ::g::Uno::UX::Selector& __selector0() { return ClientPanel_typeof()->Init(), __selector0_; }
+
     void ctor_8();
     void InitializeUX();
     static ClientPanel* New5();

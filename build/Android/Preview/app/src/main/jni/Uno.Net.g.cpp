@@ -39,7 +39,7 @@ namespace g{
 namespace Uno{
 namespace Net{
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Net.Sockets\1.7.1\Dns.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Net.Sockets\1.8.0\Dns.uno
 // ---------------------------------------------------------------------------------
 
 // public sealed class Dns :16
@@ -217,7 +217,7 @@ Dns* Dns::New1()
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Net.Sockets\1.7.1\IPAddress.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Net.Sockets\1.8.0\IPAddress.uno
 // ---------------------------------------------------------------------------------------
 
 // public abstract class EndPoint :9
@@ -281,7 +281,7 @@ void EndPoint::AddressFamily(int32_t value)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Net.Sockets\1.7.1\IPAddress.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Net.Sockets\1.8.0\IPAddress.uno
 // ---------------------------------------------------------------------------------------
 
 // public sealed class IPAddress :47
@@ -664,7 +664,7 @@ uArray* IPAddress::ParseIPv6Address(uString* address)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Net.Sockets\1.7.1\IPAddress.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Net.Sockets\1.8.0\IPAddress.uno
 // ---------------------------------------------------------------------------------------
 
 // public sealed class IPEndPoint :24
@@ -782,7 +782,7 @@ IPEndPoint* IPEndPoint::New1(::g::Uno::Net::IPAddress* address, int32_t port)
 }
 // }
 
-// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Net.Sockets\1.7.1\NetworkHelpers.uno
+// C:\Users\borde_000\AppData\Local\Fusetools\Packages\Uno.Net.Sockets\1.8.0\NetworkHelpers.uno
 // --------------------------------------------------------------------------------------------
 
 // internal sealed extern class NetworkHelpers :8

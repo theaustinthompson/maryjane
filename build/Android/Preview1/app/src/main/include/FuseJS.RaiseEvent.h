@@ -1,4 +1,4 @@
-// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/FuseJS/1.7.4/UserEvents.uno.
+// This file was generated based on C:/Users/borde_000/AppData/Local/Fusetools/Packages/FuseJS/1.8.1/UserEvents.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
