@@ -6,6 +6,6 @@
   ],
   "Includes": [
     "*",
-    "Auth.js:Bundle"
+    "Auth.js:Bundle" 
   ]
 }

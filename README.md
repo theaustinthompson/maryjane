@@ -25,3 +25,5 @@ Before this sample will work, you need to setup an app in the Facebook Developer
 5. Instead of following through the quickstart, go to settings from the side menu, and make sure "Client OAuth Login" and "Embedded Browser OAuth Login" is enabled.
 
 ![Settings](facebookapp5.png)
+
+##Read Me##
